@@ -1,0 +1,6 @@
+session.menuFile:	~/.fluxbox/menu
+session.keyFile: ~/.fluxbox/keys
+session.configVersion:	10
+session.screen0.toolbar.widthPercent: 100
+session.screen0.strftimeFormat: %d %b, %a %02k:%M:%S
+session.screen0.toolbar.tools: prevworkspace, workspacename, nextworkspace, clock, prevwindow, nextwindow, iconbar, systemtray
