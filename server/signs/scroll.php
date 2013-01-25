@@ -1,10 +1,14 @@
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
 <?php
 
-$xml = simplexml_load_file('http://www.socallinuxexpo.org/sign.xml');
+#$xml = simplexml_load_file('http://scale10x.unbuilt.org/sign.xml');
+$xml = simplexml_load_file('sign.xml');
 
 $starttime = mktime(00, 00, 00, 01, 20, 2012) / 60;
 
-$rightnow = round(time() / 60);
+#$rightnow = round(time() / 60);
+$rightnow = 22117980;
 $minsafter = $rightnow - $starttime;
 
 $data = array();
@@ -26,7 +30,7 @@ foreach ($xml->node AS $node) {
 	} else {
 		$name = (string) $node->name;
 	}
-	$data[] = array((string) $node->Day, $thistime, $name, (string) $node->presentation, (string) $node->Room, (string) $node->Categories);
+	$data[] = array((string) $node->Day, $thistime, $name, (string) $node->presentation, (string) $node->Room);
 	$realtime = explode(" ", $thistime);
 	$realstime = explode(" ", $thisend);
 	$handm = explode(":", $realtime[0]);
@@ -61,52 +65,77 @@ foreach ($xml->node AS $node) {
 	}
 }
 asort($order, SORT_NUMERIC);
-function listheader() {
 ?>
-				<tr bgcolor="#d0e4fe">
-					<td><b>Start</b></td>
-					<td><b>Track</b></td>
-					<td><b>Presenter</b></td>
-					<td><b>Presentation</b></td>
-					<td><b>Room</b></td>
-				</tr>
-<?php
-}
-?>
-<html>
-	<head>
-		<meta http-equiv="refresh" content="300" >
-		<title>SCALE 10x</title>
-	</head>
-	<body>
+
 	<style type="text/css" media="screen">
         <!---		body { background-color:#d0e4fe; } --->
 		body { background-color:#ffffff; } 
 		font { font-family: Tahoma, Geneva, sans-serif; color:black; text-align:left; font-size:14px; }
     	</style>
-		<marquee behavior="scroll" direction="up" scrollamount="2" height="400">
-			<table  cellpadding=2 cellspacing=1>
-			<?php listheader(); ?>
-<?php $odd = 0; foreach ($order AS $key => $value) {
-	if (($times[$key][0] - 90) <= $minsafter && ($times[$key][1] + 5) >= $minsafter && $data[$key][5] != "Break") {
-	// if ($times[$key][0] > 0 && $data[$key][5] != "Break") {
-		$odd++; if ( $odd % 2 == 0 ) { $color = "bgcolor=\"#d0e4fe\""; } else { $color=''; }
-	if ($odd % 10 == 0) { listheader(); }
-?>
-				<tr <?php echo "$color"; ?> >
-				<!--	<td> <font><?php echo $data[$key][0]; ?> </font></td> -->
-					<td width="12%"> <font><?php if ($times[$key][0] < $minsafter) { echo "In-Progress"; }
-						else { echo $data[$key][1]; } ?> </font></td>
-					<td> <font><?php echo $data[$key][5]; ?> </font></td>
-					<td> <font><?php echo $data[$key][2]; ?> </font></td>
-					<td> <font><?php echo $data[$key][3]; ?> </font></td>
-					<td width="15%"> <font><?php echo $data[$key][4]; ?> </font></td>
-				</tr>
-<?php
-	}
-}
-?>
-			</table>
-		</marquee>
-	</body>
-</html>
+		<!-- <marquee behavior="scroll" direction="up" scrollamount="2" height="300"> -->
+		  <div id="scheduleCarousel" class="carousel slide">
+		    <div class="carousel-inner">	  
+		      <div id="schedule-one-content" class="active item">
+			    <table cellpadding=2 cellspacing=1 class="table table-bordered">
+          <tr bgcolor="#fff"><th>Day</th><th>Start Time</th><th>Presenter</th><th>Topic</th><th>Room</th><th></th></tr>
+		      <tbody id="schedule-one-content" class="active item">
+    <?php $odd = 0; $count = 1; foreach ($order AS $key => $value) {
+	    if (($times[$key][0] - 60) <= $minsafter && ($times[$key][1] + 10) >= $minsafter) {
+	    // if ($times[$key][0] > 0) {
+		    $odd++; 
+		    if ( $odd % 2 == 0 ) { $color = "bgcolor=\"#d0e4fe\""; } else { $color="bgcolor=\"#fff\""; }
+		    if ( $count % 8 == 0 ) {
+		      $schedule_page = $count % 7;
+		      print "</table>";
+		      print "</div>";
+		      print "<div id=\"schedule-two-content\" class=\"item\">";
+			    print "<table cellpadding=2 cellspacing=1 class=\"table table-bordered\">";
+			    print "<tr bgcolor='#fff'><th>Day</th><th>Start Time</th><th>Presenter</th><th>Topic</th><th>Room</th><th></th></tr>";
+		    }
+		    $count++; 
+
+    ?>
+				    <tr <?php echo "$color"; ?> >
+				      <!-- Day -->
+				      <td> <i class="icon-calendar"></i> <font><?php echo $data[$key][0]; ?> </font></td>
+				      
+				      <!-- Time -->
+					    <td width="12%">
+					      <i class="icon-time"></i>
+					      <font><?php if ($times[$key][0] < $minsafter) { echo "In-Progress $minsafter " . $times[$key][0]; }
+						    else { echo $data[$key][1]; } ?> </font>
+					    </td>
+					    
+				      <!-- Presenter -->
+					    <td> <font><?php echo $data[$key][2]; ?> </font></td>
+					    
+					    <!-- Topic -->
+					    <td> <i class="icon-bullhorn"></i> <font><?php echo $data[$key][3]; ?> </font></td>
+					    
+					    <!-- Room -->
+					    <td width="15%"> <i class="icon-info-sign"></i> <font><?php echo $data[$key][4]; ?> </font></td>
+					    <td> <font><?php echo $data[$key][5]; ?> </font></td>
+				    </tr>
+    <?php
+	    }
+    }
+    ?>
+			    </table>
+			    </div>
+			  </div>
+			</div>
+  <!-- </marquee> -->
+
+<script src="js/jquery-1.8.2.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript">
+
+  $(document).ready(function() {
+    $('#scheduleCarousel').carousel('cycle',{
+      interval: 10000
+    });
+  });
+
+  
+
+</script>
