@@ -1,0 +1,104 @@
+/*!
+ * Custom Style v2.0.4
+ *
+ */
+
+@import url(/bootstrap/css/bootstrap.css);
+
+body {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color:#d0e4fe;
+}
+font { 
+  font-family: 'Arial Black', Gadget, sans-serif; 
+  color:black; 
+  text-align:center; 
+  font-size:36px; 
+}
+
+#header {
+  background: #AAA;
+  -webkit-border-radius: 6px 6px 0px 0px;
+  -moz-border-radius: 6px 6px 0px 0px;
+  border-radius: 6px 6px 0px 0px;
+  padding: 0px 20px 0px 25px;    
+}
+
+#contents {
+  background: #AAA;
+  -webkit-border-radius: 0px 0px 6px 6px;
+  -moz-border-radius: 0px 0px 6px 6px;
+  border-radius: 0px 0px 6px 6px;
+  padding: 0px 20px 0px 25px;  
+}
+
+#sponsors {
+  background: #fff;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  border-radius: 6px 6px 6px 6px;
+}
+
+.tweet {
+  margin: 0px;
+  margin-bottom: 10px;
+  padding: 0px;
+}
+
+.span1.tweeticon {
+  margin: 0px;
+  padding: 0px;
+  margin-left: 5px;
+}
+
+.tweetusericon {
+  background-color: #FFD700;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  border-radius: 6px 6px 6px 6px;
+  padding: 0px;
+  margin: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.span2.tweetuser {
+  padding: 0px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 5px;
+}
+
+.tweetuser_name {
+  font-size: 20px;
+}
+
+.tweetcomment {
+  color: #7A7677;
+  font-size: 16px;
+  height: 100%;
+  background-color: #D0E4FE;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  border-radius: 6px 6px 6px 6px;
+}
+
+.knobspan {
+  padding-bottom: 5px;
+}
+
+.span4.logospan {
+  padding-top: 10px;
+  width: 263px;
+}
+
+.tagspan h2 {
+  padding-top: 10px;
+  font-size: 30px;
+}
+
