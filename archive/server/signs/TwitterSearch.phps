@@ -252,7 +252,7 @@ class TwitterSearch {
             curl_setopt ($ch, CURLOPT_POSTFIELDS, $postargs);
         }
         
-        curl_setopt($ch, CURLOPT_VERBOSE, 1);
+        curl_setopt($ch, CURLOPT_VERBOSE, 0);
         curl_setopt($ch, CURLOPT_NOBODY, 0);
         curl_setopt($ch, CURLOPT_HEADER, 0);
         curl_setopt($ch, CURLOPT_USERAGENT, $this->user_agent);
