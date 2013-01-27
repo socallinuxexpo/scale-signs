@@ -1,46 +1,70 @@
-<?
+<?php
 
 function search_twitter()
 {
 
 	require "TwitterSearch.phps";
 	
-	$search = new TwitterSearch('#scale10x');
+	//$search = new TwitterSearch('#scale11x');
+	$search = new TwitterSearch();
+	$search->rpp(100);
+	$search->with("#scale11x");
 	$results = $search->results();
 	
+	$count = 0;
+	
+	//print_r($results);
+	
+  print '<div class="item active">';
 	foreach ($results as $i => $value) {
 	
-		//print_r($value);
+	  $total_results = count($results);
 		$logo = $value->profile_image_url;
 		$user = $value->from_user;
 		$user_name = $value->from_user_name;
 		$comment = $value->text;
-	
-		#print "<img class=\"avatar\" alt=\"$user_name\" src=\"$logo\">";
+		$created = $value->created_at;
 
-		print "<p style=\"background-color: #fff;vertical-align: middle\">";
-		print  "<b style=\"inherit;\">$user_name</b> ";
-		print "(@$user)<br>";
-		print "$comment";
-		print "</p>";
+    if ($count % 4 == 0 && $count > 0) {
+      print '</div>';
+      print '<div class="item">';
+    }
+    
+    print '<div class="tweet row">';
+		  print '<div class="span4 tweetusericon">';
+        print "<div class='span1 tweeticon'>";		  
+	        print "<img class=\"img-rounded\" src=\"$logo\">";
+	      print "</div>";
+		    print "<div class='span2 tweetuser'>";
+		      print " <span class='tweetuser_name'>$user_name</span><br />@$user ";
+	      print "</div>";		    
+	    print "</div>";
+	    print "<div class=\"span8 tweetcomment\">$comment $created</div>";
+		print '</div>';
+    
+		$count += 1;
 
 	}
-	
+  print '</div>';
 }
 
 ?>
 
-<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<meta http-equiv="refresh" content="300" >
-		<title>SCALE 10x</title>
-	</head>
-	<body bgcolor="#d0e4fe">
+<div id="twitterCarousel" class="carousel slide">
+  <div class="carousel-inner">	  
+    <?php search_twitter(); ?>
+  </div>
+</div>
 
-<marquee behavior="scroll" scrollamount="2" direction="up" width=100%>
-	<?php search_twitter() ?>
-</marquee>
+<script src="js/jquery-1.8.2.js"></script>    
+<script src="js/jquery.marquee.js"></script>    
+<script src="bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript">
 
-</body>
-</html>
+  $(document).ready(function() {
+      $('#twitterCarousel').carousel({
+        interval: 10000
+      });
+  });
+  
+</script>
