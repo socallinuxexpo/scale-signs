@@ -3,34 +3,47 @@
 <?php
 
 #$xml = simplexml_load_file('http://scale10x.unbuilt.org/sign.xml');
-$xml = simplexml_load_file('sign.xml');
+$xml = simplexml_load_file('http://www.socallinuxexpo.org/scale11x/sign.xml');
+#$xml = simplexml_load_file('sign.xml');
 
-$starttime = mktime(00, 00, 00, 01, 20, 2012) / 60;
+$starttime = mktime(0, 0, 0, 2, 22, 2013) / 60;
 
 #$rightnow = round(time() / 60);
-$rightnow = 22117980;
+$rightnow = mktime(17, 30, 0, 2, 23, 2013) / 60;
 $minsafter = $rightnow - $starttime;
+
+#print "Start Time: $starttime Right Now: $rightnow Minutes After: $minsafter <br/>";
 
 $data = array();
 $order = array();
 $times = array();
 
 foreach ($xml->node AS $node) {
-	$pos = strpos((string) $node->{'Time-Slot'}, ",");
-	$lpos = strrpos((string) $node->{'Time-Slot'}, ",");
+
+  // Remove HTML tags
+  $node->{'Time'} = preg_replace('/<[^>]*>/', '', $node->{'Time'});
+  $node->{'Day'} = preg_replace('/<[^>]*>/', '', $node->{'Day'});
+  
+  $node->{'Topic'} = preg_replace('/\s+/', '', $node->{'Topic'});
+  
+	$pos = strpos((string) $node->{'Time'}, ",");
+	$lpos = strrpos((string) $node->{'Time'}, ",");
 	if ($pos === false) {
-		$thistime = (string) $node->{'Time-Slot'};
-		$thisend = (string) $node->{'Time-Slot'};
+		$thistime = (string) $node->{'Time'};
+		$thisend = (string) $node->{'Time'};
 	} else {
-		$thistime = substr((string) $node->{'Time-Slot'}, 0, $pos);
-		$thisend = substr((string) $node->{'Time-Slot'}, $lpos + 2);
+		$thistime = substr((string) $node->{'Time'}, 0, $pos);
+		$thisend = substr((string) $node->{'Time'}, $lpos + 2);
 	}
-	if ((string) $node->name == "- -") {
+	
+	if ((string) $node->Speaker == "- -") {
 		$name = '';
 	} else {
-		$name = (string) $node->name;
+		$name = (string) $node->Speaker;
 	}
-	$data[] = array((string) $node->Day, $thistime, $name, (string) $node->presentation, (string) $node->Room);
+	$data[] = array((string) $node->Day, $thistime, $name, (string) $node->Title, (string) $node->Room, (string) $node->Topic);
+	
+	/*
 	$realtime = explode(" ", $thistime);
 	$realstime = explode(" ", $thisend);
 	$handm = explode(":", $realtime[0]);
@@ -45,6 +58,20 @@ foreach ($xml->node AS $node) {
 	} else {
 		$mfromme = ($handme[0] * 60) + 60 + $handme[1];
 	}
+	*/
+	$realtime = $thistime;
+	$realstime = $thisend;
+	$handm = explode(":", $realtime);
+	$handme = explode(":", $realstime);
+	$mfromm = ($handm[0] * 60) + $handm[1];
+	$mfromme = ($handme[0] * 60) + 60 + $handme[1];
+
+#	print "realtime: " . $realtime . " realstime: " . $realstime . "<br />";
+#	print "handm0: " . $handm[0] . " handm1: " . $handm[1] . "<br />";
+#	print "handme0: " . $handme[0] . " handme1: " . $handme[1] . "<br />";
+#	
+#	print "mfromm: " . $mfromm . " mfromme: " . $mfromme . "<br />";
+	
 	switch ((string) $node->Day) {
 		case "Friday";
 			$order[] = $mfromm;
@@ -65,6 +92,9 @@ foreach ($xml->node AS $node) {
 	}
 }
 asort($order, SORT_NUMERIC);
+#print_r($times);
+#print_r($order);
+#print_r($data);
 ?>
 
 	<style type="text/css" media="screen">
@@ -72,59 +102,86 @@ asort($order, SORT_NUMERIC);
 		body { background-color:#ffffff; } 
 		font { font-family: Tahoma, Geneva, sans-serif; color:black; text-align:left; font-size:14px; }
     	</style>
-		<!-- <marquee behavior="scroll" direction="up" scrollamount="2" height="300"> -->
 		  <div id="scheduleCarousel" class="carousel slide">
 		    <div class="carousel-inner">	  
 		      <div id="schedule-one-content" class="active item">
 			    <table cellpadding=2 cellspacing=1 class="table table-bordered">
-          <tr bgcolor="#fff"><th>Day</th><th>Start Time</th><th>Presenter</th><th>Topic</th><th>Room</th><th></th></tr>
+          <tr bgcolor="#fff"><th>Day</th><th>Start Time</th><th>Presenter</th><th>Topic</th><th>Room</th></tr>
 		      <tbody id="schedule-one-content" class="active item">
-    <?php $odd = 0; $count = 1; foreach ($order AS $key => $value) {
-	    if (($times[$key][0] - 60) <= $minsafter && ($times[$key][1] + 10) >= $minsafter) {
-	    // if ($times[$key][0] > 0) {
-		    $odd++; 
-		    if ( $odd % 2 == 0 ) { $color = "bgcolor=\"#d0e4fe\""; } else { $color="bgcolor=\"#fff\""; }
-		    if ( $count % 8 == 0 ) {
-		      $schedule_page = $count % 7;
-		      print "</table>";
-		      print "</div>";
-		      print "<div id=\"schedule-two-content\" class=\"item\">";
-			    print "<table cellpadding=2 cellspacing=1 class=\"table table-bordered\">";
-			    print "<tr bgcolor='#fff'><th>Day</th><th>Start Time</th><th>Presenter</th><th>Topic</th><th>Room</th><th></th></tr>";
-		    }
-		    $count++; 
+    <?php 
+      $odd = 0; $count = 0; $schedule_page = 1;
+      foreach ($order AS $key => $value) {
+	      if (($times[$key][0] - 60) <= $minsafter && ($times[$key][1] + 10) >= $minsafter) {
+	      // if ($times[$key][0] > 0) {
+		      $odd++; 
+		      if ( $odd % 2 == 0 ) { $color = "bgcolor=\"#d0e4fe\""; } else { $color="bgcolor=\"#fff\""; }
+		      		      
+		      if ( $count % 5 == 0 && $count > 0) {
+		        $schedule_page = $schedule_page + 1;
+		        print "</table>";
+		        print "</div>";
+		        print "<div id=\"schedule-$schedule_page-content\" class=\"item\">";
+			      print "<table cellpadding=2 cellspacing=1 class=\"table table-bordered\">";
+			      print "<tr bgcolor='#fff'><th>Day</th><th>Start Time</th><th>Presenter</th><th>Topic</th><th>Room</th></tr>";
+		      }
+		      $count++; 
 
     ?>
-				    <tr <?php echo "$color"; ?> >
+				    <tr class="<?php echo $data[$key][5]; ?>" <?php echo "$color"; ?> >
 				      <!-- Day -->
-				      <td> <i class="icon-calendar"></i> <font><?php echo $data[$key][0]; ?> </font></td>
+				      <td> <i class="icon-calendar"></i> <?php echo $data[$key][0]; ?> </td>
 				      
 				      <!-- Time -->
+				      <?php
+				        // Convert to human friendly format
+                $talk_time = date("h:i A", strtotime($data[$key][1]));
+			        ?>
 					    <td width="12%">
 					      <i class="icon-time"></i>
-					      <font><?php if ($times[$key][0] < $minsafter) { echo "In-Progress $minsafter " . $times[$key][0]; }
-						    else { echo $data[$key][1]; } ?> </font>
+					      <?php if ($times[$key][0] < $minsafter) { echo "In-Progres"; }
+						    else { echo $talk_time; } ?>
 					    </td>
 					    
 				      <!-- Presenter -->
-					    <td> <font><?php echo $data[$key][2]; ?> </font></td>
+				      <?php
+				        if ( strlen($data[$key][2]) >= 20 ) { 
+                  $speakerName = substr($data[$key][2], 0, 20) . "...";
+  					    } else {
+  					      $speakerName = $data[$key][2];
+					      }
+  					    
+					    ?>
+					    <td class="schedulePresenter"> <i class="icon-user"></i> <?php echo $speakerName; ?> </td>
 					    
 					    <!-- Topic -->
-					    <td> <i class="icon-bullhorn"></i> <font><?php echo $data[$key][3]; ?> </font></td>
+					    <?php 
+					      if ( strlen($data[$key][3]) >= 55 ) {
+					        $talk_title = substr($data[$key][3], 0, 55) . "...";					        
+					      } else {
+					        $talk_title = $data[$key][3];					      
+					      }
+
+				      ?>
+					    <td> <i class="icon-bullhorn"></i> <?php echo $talk_title; ?> </td>
 					    
 					    <!-- Room -->
-					    <td width="15%"> <i class="icon-info-sign"></i> <font><?php echo $data[$key][4]; ?> </font></td>
-					    <td> <font><?php echo $data[$key][5]; ?> </font></td>
+					    <td width="15%"> <i class="icon-info-sign"></i> <?php echo $data[$key][4]; ?> </td>
 				    </tr>
     <?php
-	    }
+    
     }
+    }
+    if ( $count < ($schedule_page * 5) ) {
+      $filler = ($schedule_page * 5) - $count;
+      for ($i = 0; $i < $filler; $i++) {
+        print "<tr bgcolor='#fff'><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>";
+      }
+    }    
     ?>
 			    </table>
 			    </div>
 			  </div>
 			</div>
-  <!-- </marquee> -->
 
 <script src="js/jquery-1.8.2.js"></script>
 <script src="bootstrap/js/bootstrap.js"></script>
