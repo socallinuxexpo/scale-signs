@@ -22,7 +22,7 @@ font {
   -webkit-border-radius: 6px 6px 0px 0px;
   -moz-border-radius: 6px 6px 0px 0px;
   border-radius: 6px 6px 0px 0px;
-  width: 98%;
+  width: 99%;
 }
 
 #header {
@@ -192,7 +192,7 @@ font {
 /* Normal looking time card */
 .clock div.card {
 	background: #444;
-	padding: 5px 0;
+	padding: 5px 2px;
 	color: #fff;
 	width: 1em;
 	text-align: center;
@@ -218,12 +218,15 @@ font {
 
 }
 
-.schedulePresenterShrink {
-  font-size: 0.25em;
+#scheduleCarousel {
+  font-size: 1.5em;
 }
 
-.schedulePresenter {
-
+.copyright {
+  font-size: 1.5em;
+  float: right;
+  font-weight: bold;
+  padding-right: 10px;
 }
 
 /* Colors for Schedule */
