@@ -30,7 +30,7 @@ function search_twitter()
       print '<div class="item">';
     }
     
-    print '<div class="tweet row">';
+    print '<div class="tweet row-fluid">';
 		  print '<div class="span4 tweetusericon">';
         print "<div class='span1 tweeticon'>";		  
 	        print "<img class=\"img-rounded\" src=\"$logo\">";
@@ -50,7 +50,7 @@ function search_twitter()
 
 ?>
 
-<div id="twitterCarousel" class="carousel slide">
+<div id="twitterCarousel" class="carousel carousel-fade">
   <div class="carousel-inner">	  
     <?php search_twitter(); ?>
   </div>
