@@ -6,9 +6,9 @@
 @import url(/bootstrap/css/bootstrap.css);
 
 body {
-  padding-top: 1px;
-  padding-bottom: 1px;
-  background-color:#d0e4fe;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background: #AAA;
 }
 font { 
   font-family: 'Arial Black', Gadget, sans-serif; 
