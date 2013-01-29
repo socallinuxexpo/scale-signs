@@ -17,12 +17,21 @@ font {
   font-size:36px; 
 }
 
+#mainContainer {
+  background: #AAA;
+  -webkit-border-radius: 6px 6px 0px 0px;
+  -moz-border-radius: 6px 6px 0px 0px;
+  border-radius: 6px 6px 0px 0px;
+  width: 98%;
+}
+
 #header {
   background: #AAA;
   -webkit-border-radius: 6px 6px 0px 0px;
   -moz-border-radius: 6px 6px 0px 0px;
   border-radius: 6px 6px 0px 0px;
-  padding: 0px 20px 0px 25px;    
+  padding: 0px 20px 0px 25px;
+  width: 100%;
 }
 
 #contents {
@@ -30,14 +39,48 @@ font {
   -webkit-border-radius: 0px 0px 6px 6px;
   -moz-border-radius: 0px 0px 6px 6px;
   border-radius: 0px 0px 6px 6px;
-  padding: 0px 20px 0px 25px;  
+  padding: 0px 5px 0px 25px;  
+  margin-left: 5px;
 }
 
 #sponsors {
+  background: #AAA;
+}
+
+.sponsorList {
+	list-style: none;
+}
+
+/*
+.carousel .item {-webkit-transition: opacity 3s; -moz-transition: opacity 3s; -ms-transition: opacity 3s; -o-transition: opacity 3s; transition: opacity 3s;}
+.carousel .active.left {left:0;opacity:0;z-index:2;}
+.carousel .next {left:0;opacity:1;z-index:1;}
+*/
+
+.carousel.carousel-fade .item {
+  opacity:0;
+}
+
+.carousel.carousel-fade .active.item {
+    opacity:1;
+}
+
+.carousel-inner .sponsor-logo {
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 5px;
   background: #fff;
   -webkit-border-radius: 6px 6px 6px 6px;
   -moz-border-radius: 6px 6px 6px 6px;
   border-radius: 6px 6px 6px 6px;
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+}
+
+.sponsor-logo img {
+
 }
 
 #twitter{
@@ -122,14 +165,14 @@ font {
 	font-weight: bold;
 	list-style: none;
 	margin: 0;
-  font-size: 24px;
+  font-size: 36px;
   color:rgba(250,250,250,.3);
 }
 
 .clock li {
 	float: left;
-	width: 25px;
-	height: 60px;
+	width: 38px;
+	height: 66px;
 	position: relative;
 	
 	/* This setting affects how much the cards stand out from the page.
@@ -156,22 +199,22 @@ font {
 	border-radius: 5px;
 	position: relative;
 
-    /* Box shadow */
-    box-shadow: 0 0 30px #4A4A4A;
+  /* Box shadow */
+  box-shadow: 0 0 30px #4A4A4A;
 
-    /* Background gradient */
-    background: -webkit-gradient(
-        linear,
-        left bottom,
-        left top,
-        color-stop(0, #090909),
-        color-stop(1, #323232)
-    );
-    background: -moz-linear-gradient(
-        center bottom,
-        #090909 0%,
-        #323232 100%
-    );
+  /* Background gradient */
+  background: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0, #090909),
+      color-stop(1, #323232)
+  );
+  background: -moz-linear-gradient(
+      center bottom,
+      #090909 0%,
+      #323232 100%
+  );
 
 }
 

@@ -26,51 +26,88 @@
 
   <body>
 
-  <div id="header" class="container">
-    <div class="row">
-      <div class="span2 knobspan"><img src="http://www.socallinuxexpo.org/sites/all/themes/custom/ui_toolkit/img/11x_knob100.png" height="126" width="100" /></div>    
-      <div class="span4 logospan"><img src="images/scale11x-logo60.png" height="60" width="263" /></div>
-      <div class="span6 tagspan">
-        <h2 class="brand">Southern California Linux Expo</h2>
-        <ul class="clock">
-          <li><div id="h1" class="card">&nbsp;</div></li>
-          <li><div id="h2" class="card">&nbsp;</div></li>          
-          <li class="separator">:</li>
-          <li><div id="m1" class="card">&nbsp;</div></li>
-          <li><div id="m2" class="card">&nbsp;</div></li>          
-          <li class="separator">:</li>
-          <li><div id="s1" class="card">&nbsp;</div></li>
-          <li><div id="s2" class="card">&nbsp;</div></li>
-          <li class="separator">&nbsp;</li>          
-          <li><div id="meridiem1" class="card">&nbsp;</div></li>
-          <li><div id="meridiem2" class="card">&nbsp;</div></li>                              
-
-        </ul>
+  <!-- Begin Main Container -->
+  <div id="mainContainer" class="container" style="background: #AAA;">
+    <!-- Begin Fluid Row -->
+    <div class="row-fluid">  
+      <!-- Begin Header Div -->
+      <div id="header" class="span12 container">
+        <!-- Begin Row Div -->
+        <div class="row-fluid">
+          <div class="span2"></div>
+          <!-- Begin span6 -->
+          <div class="span8">
+            <!-- Begin Knob Div -->
+            <div class="span2 knobspan">
+              <img src="http://www.socallinuxexpo.org/sites/all/themes/custom/ui_toolkit/img/11x_knob100.png" height="126" width="100" />
+            </div>
+            <!-- End Knob -->           
+            <!-- Begin & End of Logo Span -->
+            <div class="span4 logospan"><img src="/images/scale11x-logo60.png" height="60" width="263" /></div>
+            <!-- Begin Tag Span and Clock -->
+            <div class="span6 tagspan">
+              <h2 class="brand">Southern California Linux Expo</h2>
+              <ul class="clock">
+                <li><div id="h1" class="card">&nbsp;</div></li>
+                <li><div id="h2" class="card">&nbsp;</div></li>          
+                <li class="separator">:</li>
+                <li><div id="m1" class="card">&nbsp;</div></li>
+                <li><div id="m2" class="card">&nbsp;</div></li>          
+                <li class="separator">:</li>
+                <li><div id="s1" class="card">&nbsp;</div></li>
+                <li><div id="s2" class="card">&nbsp;</div></li>
+                <li class="separator">&nbsp;</li>          
+                <li><div id="meridiem1" class="card">&nbsp;</div></li>
+                <li><div id="meridiem2" class="card">&nbsp;</div></li>
+              </ul>
+            </div>
+            <!-- End Tag Span & Clock -->
+          </div>
+          <!-- End Span6 -->
+          <div class="span2"></div>
+        </div>
+        <!-- End Row Div -->
       </div>
+      <!-- End Header Div -->
     </div>
+    <!-- End Fluid Row -->
+  
+    <!-- Begin Fluid Row -->
+    <div class="row-fluid">
+      <!-- Begin Sponsor Span -->
+      <div id="sponsorSpan" class="span2">
+        <div id="sponsors" class="row-fluid">
+        </div>
+      </div>
+      <!-- End Sponsor Span -->
+      <!-- Begin Main Div -->
+      <div class="span10">
+
+        <!-- Begin Schedule & Twitter Div -->
+        <div id="contents" class="span10 container">
+            <!-- Schedule -->
+            <div id="schedule" class="row-fluid">
+            </div>
+            
+            <!-- Twitter -->
+            <div id="twitter" class="row-fluid">
+              <h2>#scale11x</h2>
+              <div id="twitter-stream-content"></div>
+            </div>
+
+            <footer>
+              <p>&copy; Southern California Linux Expo 2013</p>
+            </footer>
+
+        </div> 
+        <!-- End Schedule & Twitter Div -->
+      </div>
+      <!-- End Main Div -->
+    </div>
+    <!-- End Fluid Row -->
   </div>
-
-  <div id="contents" class="container">
-
-      <!-- Main hero unit for a primary marketing message or call to action -->
-      <div id="schedule" class="row">
-      </div>
-
-      <div id="sponsors" class="row">
-      </div>
-      
-      <!-- Example row of columns -->
-      <div id="twitter" class="row">
-        <h2>#scale11x</h2>
-        <div id="twitter-stream-content"></div>
-      </div>
-
-      <footer>
-        <p>&copy; Southern California Linux Expo 2013</p>
-      </footer>
-
-    </div> <!-- /container -->
-
+  <!-- End Main Container -->
+  
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -102,19 +139,19 @@
 
       var loadSponsorsUrl = "sponsors.html";
       $("#sponsors").load(loadSponsorsUrl);
-      //$("#sponsors").show();
+      $("#sponsors").show();
       
       var loadTwitterUrl = "twitter.php";
       $("#twitter-stream-content").load(loadTwitterUrl);
       $('#twitter-stream-content').show();
       
-      var twitterRefreshId = setInterval(function() {
-        $("#twitter-stream-content").fadeOut("slow").load(loadTwitterUrl).fadeIn("slow");
-      }, 60000);
+      //var twitterRefreshId = setInterval(function() {
+      //  $("#twitter-stream-content").fadeOut("slow").load(loadTwitterUrl).fadeIn("slow");
+      //}, 60000);
 
-      var scheduleRefreshId = setInterval(function() {
-        $("#schedule").fadeOut("slow").load(loadScheduleUrl).fadeIn("slow");
-      }, 60000);
+      //var scheduleRefreshId = setInterval(function() {
+      //  $("#schedule").fadeOut("slow").load(loadScheduleUrl).fadeIn("slow");
+      //}, 60000);
       
     });
         
