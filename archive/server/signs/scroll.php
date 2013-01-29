@@ -104,7 +104,7 @@ asort($order, SORT_NUMERIC);
     	</style>
 		  <div id="scheduleCarousel" class="carousel carousel-fade">
 		    <div class="carousel-inner">	  
-		      <div id="schedule-one-content" class="active item">
+		      <div id="schedule-1-content" class="active item">
 			    <table cellpadding=2 cellspacing=1 class="table table-bordered">
           <tr bgcolor="#fff"><th>Day</th><th>Start Time</th><th>Presenter</th><th>Topic</th><th>Room</th></tr>
 		      <tbody>
@@ -189,8 +189,7 @@ asort($order, SORT_NUMERIC);
 <script type="text/javascript">
 
   $(document).ready(function() {
-    $('#scheduleCarousel').carousel('cycle',{
-      pause: "",
+    $('#scheduleCarousel').carousel({
       interval: 10000,
     });
   });
