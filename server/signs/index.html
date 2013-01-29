@@ -136,7 +136,7 @@
       $("#schedule").load(loadScheduleUrl);
       $("#schedule").show();
 
-      var loadSponsorsUrl = "sponsors.html";
+      var loadSponsorsUrl = "sponsors.php";
       $("#sponsors").load(loadSponsorsUrl);
       $("#sponsors").show();
       
@@ -148,6 +148,10 @@
       //  $("#twitter-stream-content").fadeOut("slow").load(loadTwitterUrl).fadeIn("slow");
       //}, 60000);
 
+      var sponsorsRefreshId = setInterval(function() {
+        $("#sponsors").fadeOut("slow").load(loadSponsorsUrl).fadeIn("slow");
+      }, 60000);
+      
       //var scheduleRefreshId = setInterval(function() {
       //  $("#schedule").fadeOut("slow").load(loadScheduleUrl).fadeIn("slow");
       //}, 60000);
