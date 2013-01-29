@@ -102,13 +102,14 @@ asort($order, SORT_NUMERIC);
 		body { background-color:#ffffff; } 
 		font { font-family: Tahoma, Geneva, sans-serif; color:black; text-align:left; font-size:14px; }
     	</style>
-		  <div id="scheduleCarousel" class="carousel slide">
+		  <div id="scheduleCarousel" class="carousel carousel-fade">
 		    <div class="carousel-inner">	  
 		      <div id="schedule-one-content" class="active item">
 			    <table cellpadding=2 cellspacing=1 class="table table-bordered">
           <tr bgcolor="#fff"><th>Day</th><th>Start Time</th><th>Presenter</th><th>Topic</th><th>Room</th></tr>
-		      <tbody id="schedule-one-content" class="active item">
+		      <tbody>
     <?php 
+      $items_per_page = 10;
       $odd = 0; $count = 0; $schedule_page = 1;
       foreach ($order AS $key => $value) {
 	      if (($times[$key][0] - 60) <= $minsafter && ($times[$key][1] + 10) >= $minsafter) {
@@ -116,7 +117,7 @@ asort($order, SORT_NUMERIC);
 		      $odd++; 
 		      if ( $odd % 2 == 0 ) { $color = "bgcolor=\"#d0e4fe\""; } else { $color="bgcolor=\"#fff\""; }
 		      		      
-		      if ( $count % 5 == 0 && $count > 0) {
+		      if ( $count % $items_per_page == 0 && $count > 0) {
 		        $schedule_page = $schedule_page + 1;
 		        print "</table>";
 		        print "</div>";
@@ -171,8 +172,8 @@ asort($order, SORT_NUMERIC);
     
     }
     }
-    if ( $count < ($schedule_page * 5) ) {
-      $filler = ($schedule_page * 5) - $count;
+    if ( $count < ($schedule_page * $items_per_page) ) {
+      $filler = ($schedule_page * $items_per_page) - $count;
       for ($i = 0; $i < $filler; $i++) {
         print "<tr bgcolor='#fff'><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>";
       }
@@ -189,7 +190,8 @@ asort($order, SORT_NUMERIC);
 
   $(document).ready(function() {
     $('#scheduleCarousel').carousel('cycle',{
-      interval: 10000
+      pause: "",
+      interval: 10000,
     });
   });
 
