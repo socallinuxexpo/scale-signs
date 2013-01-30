@@ -5,23 +5,25 @@
 
 @import url(/bootstrap/css/bootstrap.css);
 
-body {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color:#d0e4fe;
+html {
+  background-color: #AAA;
 }
+
+body {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #AAA !important;
+}
+
 font { 
   font-family: 'Arial Black', Gadget, sans-serif; 
   color:black; 
   text-align:center; 
-  font-size:36px; 
+  /* font-size:36px;  */
 }
 
 #mainContainer {
-  background: #AAA;
-  -webkit-border-radius: 6px 6px 0px 0px;
-  -moz-border-radius: 6px 6px 0px 0px;
-  border-radius: 6px 6px 0px 0px;
+  background-color: #AAA;
   width: 99%;
 }
 
@@ -66,16 +68,14 @@ font {
 }
 
 .carousel-inner .sponsor-logo {
-  padding-top: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 2px;
   margin-top: 5px;
-  background: #fff;
+  background: #eee;
   -webkit-border-radius: 6px 6px 6px 6px;
   -moz-border-radius: 6px 6px 6px 6px;
   border-radius: 6px 6px 6px 6px;
-  width: 100px;
-  height: 100px;
+  width: 220px;
+  height: 220px;
   vertical-align: middle;
 }
 
@@ -98,14 +98,14 @@ font {
   padding: 0px;
 }
 
-.span1.tweeticon {
+.tweeticon {
   margin: 0px;
-  padding: 0px;
+  padding-left: 5px;
   margin-left: 5px;
 }
 
 .tweetusericon {
-  background-color: #FFD700;
+  background-color: #D0E4FE;
   -webkit-border-radius: 6px 6px 6px 6px;
   -moz-border-radius: 6px 6px 6px 6px;
   border-radius: 6px 6px 6px 6px;
@@ -124,7 +124,7 @@ font {
 }
 
 .tweetuser_name {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .tweetcomment {
@@ -138,6 +138,11 @@ font {
   -webkit-border-radius: 6px 6px 6px 6px;
   -moz-border-radius: 6px 6px 6px 6px;
   border-radius: 6px 6px 6px 6px;
+}
+
+.promote {
+  background-color: #FFD700;
+  color: #000;
 }
 
 .span2.knobspan {
