@@ -9,7 +9,7 @@ $xml = simplexml_load_file('http://www.socallinuxexpo.org/scale11x/sign.xml');
 $starttime = mktime(0, 0, 0, 2, 22, 2013) / 60;
 
 #$rightnow = round(time() / 60);
-$rightnow = mktime(17, 30, 0, 2, 23, 2013) / 60;
+$rightnow = mktime(10, 30, 0, 2, 24, 2013) / 60;
 $minsafter = $rightnow - $starttime;
 
 #print "Start Time: $starttime Right Now: $rightnow Minutes After: $minsafter <br/>";
