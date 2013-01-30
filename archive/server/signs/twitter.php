@@ -5,6 +5,15 @@ function search_twitter()
 
 	require "TwitterSearch.phps";
 	
+  // Any Twitter Accounts to Highlight
+  $promote = array(
+    "socallinuxexpo",
+  );
+  
+  // Any to block from the signs
+  $blacklist = array(
+  );
+	
 	//$search = new TwitterSearch('#scale11x');
 	$search = new TwitterSearch();
 	$search->rpp(100);
@@ -25,21 +34,36 @@ function search_twitter()
 		$comment = $value->text;
 		$created = $value->created_at;
 
+    if (in_array($user, $blacklist)) {
+      continue;
+    }
+    
     if ($count % 4 == 0 && $count > 0) {
       print '</div>';
       print '<div class="item">';
     }
     
-    print '<div class="tweet row-fluid">';
-		  print '<div class="span4 tweetusericon">';
-        print "<div class='span1 tweeticon'>";		  
+    print '<div class="tweet row-fluid" style="">';
+    //
+    // Promote certain users
+    //
+    if (in_array($user, $promote)) {
+      print '<div class="span4 tweetusericon promote">';
+    } else {
+      print '<div class="span4 tweetusericon">';
+    }
+        print "<div class='span2 tweeticon'>";		  
 	        print "<img class=\"img-rounded\" src=\"$logo\">";
 	      print "</div>";
-		    print "<div class='span2 tweetuser'>";
+		    print "<div class='span10 tweetuser'>";
 		      print " <span class='tweetuser_name'>$user_name</span><br />@$user ";
 	      print "</div>";		    
 	    print "</div>";
-	    print "<div class=\"span8 tweetcomment\">$comment $created</div>";
+    if (in_array($user, $promote)) {	    
+	    print "<div class=\"span8 tweetcomment promote\">$comment $created</div>";
+    } else {
+	    print "<div class=\"span8 tweetcomment\">$comment $created</div>";    
+    }
 		print '</div>';
     
 		$count += 1;
@@ -61,10 +85,10 @@ function search_twitter()
 <script src="bootstrap/js/bootstrap.js"></script>
 <script type="text/javascript">
 
-  $(document).ready(function() {
-      $('#twitterCarousel').carousel({
-        interval: 10000
-      });
-  });
+  //$(document).ready(function() {
+  //    $('#twitterCarousel').carousel({
+  //      interval: 10000
+  //    });
+  //});
   
 </script>

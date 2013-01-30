@@ -4,7 +4,7 @@
       <div class="carousel-inner">
 <?php 
   $logos = range(1, 32);
-  $logos_per_page = 5;
+  $logos_per_page = 10;
 
   shuffle($logos);  
   for ($i = 0; $i < 32 ; $i++) {
