@@ -150,11 +150,13 @@
 
       /* Reload & Shuffle sponsors every 2 minutes */
       var sponsorsRefreshId = setInterval(function() {
-        $("#sponsors").fadeOut("slow").load(loadSponsorsUrl).fadeIn("slow");
+        //$("#sponsors").fadeOut("slow").load(loadSponsorsUrl).fadeIn("slow");
+        $("#sponsors").load(loadSponsorsUrl);        
       }, 120000);
       
       var scheduleRefreshId = setInterval(function() {
-        $("#schedule").fadeOut("slow").load(loadScheduleUrl).fadeIn("slow");
+        //$("#schedule").fadeOut("slow").load(loadScheduleUrl).fadeIn("slow");
+        $("#schedule").load(loadScheduleUrl);        
       }, 60000);
       
     });
