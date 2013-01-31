@@ -32,7 +32,11 @@ function search_twitter()
 		$user = $value->from_user;
 		$user_name = $value->from_user_name;
 		$comment = $value->text;
-		$created = $value->created_at;
+		
+		$created = date("F d, Y h:i a", strtotime($value->created_at));
+		$rightnow = round(time() / 60);
+		
+		$time_diff = $rightnow - $created;
 
     if (in_array($user, $blacklist)) {
       continue;
@@ -42,16 +46,16 @@ function search_twitter()
       print '</div>';
       print '<div class="item">';
     }
-    
-    print '<div class="tweet row-fluid" style="">';
+
+    if (in_array($user, $promote)) {    
+      print '<div class="tweet tweetpromote row-fluid" style="">';
+    } else {
+      print '<div class="tweet row-fluid" style="">';
+    }
     //
     // Promote certain users
     //
-    if (in_array($user, $promote)) {
-      print '<div class="span4 tweetusericon promote">';
-    } else {
       print '<div class="span4 tweetusericon">';
-    }
         print "<div class='span2 tweeticon'>";		  
 	        print "<img class=\"img-rounded\" src=\"$logo\">";
 	      print "</div>";
@@ -59,11 +63,7 @@ function search_twitter()
 		      print " <span class='tweetuser_name'>$user_name</span><br />@$user ";
 	      print "</div>";		    
 	    print "</div>";
-    if (in_array($user, $promote)) {	    
-	    print "<div class=\"span8 tweetcomment promote\">$comment $created</div>";
-    } else {
-	    print "<div class=\"span8 tweetcomment\">$comment $created</div>";    
-    }
+	    print "<div class=\"span8 tweetcomment\">$comment <span class=\"tweet-time\">$created</span></div>";    
 		print '</div>';
     
 		$count += 1;

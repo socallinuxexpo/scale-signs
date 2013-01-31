@@ -9,7 +9,7 @@ $xml = simplexml_load_file('http://www.socallinuxexpo.org/scale11x/sign.xml');
 $starttime = mktime(0, 0, 0, 2, 22, 2013) / 60;
 
 #$rightnow = round(time() / 60);
-$rightnow = mktime(10, 30, 0, 2, 24, 2013) / 60;
+$rightnow = mktime(12, 30, 0, 2, 22, 2013) / 60;
 $minsafter = $rightnow - $starttime;
 
 $data = array();
@@ -186,9 +186,9 @@ asort($order, SORT_NUMERIC);
 			
 			<ul class="thumbnails">
 			    <?php foreach ($topics as $topic) {
-			    	print "<li class=\"span2 $topic\">";
+			    	print "<li class=\"span3 $topic\">";
 			      print '<div class="thumbnail">';
-			      print "<h4 class='topicThumb'>$topic</h4>";
+			      print "<span class='topicThumb'>$topic</span>";
 			      print '</div>';
 			      print "</li>";
 			    }
