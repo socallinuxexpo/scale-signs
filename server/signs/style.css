@@ -83,6 +83,12 @@ font {
 
 }
 
+.topicThumb {
+  text-align: center;
+  left-margin: auto;
+  right-margin: auto;
+}
+
 #twitter{
   background: #fff;
   padding-left: 5px;
@@ -235,19 +241,10 @@ font {
 }
 
 /* Colors for Schedule */
-.Keynote {
-  background: #D31111;
-  color: #fff;
-}
 
-.General {
-  background: #97A67A;
-  color: #fff;
-}
-
-.DevOps {
-  background: #565448;
-  color: #fff;
+.BeginnersTutorials {
+  background-color: #3353AF;
+  color: #FFF;
 }
 
 .CloudandVirtualization {
@@ -260,23 +257,23 @@ font {
   color: #000;
 }
 
+.DevOps {
+  background: #565448;
+  color: #fff;
+}
+
+.General {
+  background: #97A67A;
+  color: #fff;
+}
+
 .Kernel {
   background: #AD9134;
   color: #fff;
 }
 
-.OpenSourceSoftwareInEducation {
-  background: #72B20F;
-  color: #fff;
-}
-
-.SysAdmin {
-  background: #C4C249;
-  color: #000;
-}
-
-.PostgreSQL {
-  background: #0AACA0;
+.Keynote {
+  background: #D31111;
   color: #fff;
 }
 
@@ -290,7 +287,47 @@ font {
   color: #fff;
 }
 
+.OpenNMS {
+  background: #009900;
+  color: #fff; 
+}
+
+.OpenSourceSoftwareInEducation {
+  background: #72B20F;
+  color: #fff;
+}
+
+.PostgreSQL {
+  background: #0AACA0;
+  color: #fff;
+}
+
 .ScaleU {
   background: #405E5E;
+  color: #fff;
+}
+
+.Sponsored {
+  background: #123;
+  color: #fff;
+}
+
+.SysAdmin {
+  background: #C4C249;
+  color: #000;
+}
+
+.UbuCon {
+  background: #774022;
+  color: #fff;
+}
+
+.UpSCALE {
+  background: #956140;
+  color: #fff;
+}
+
+.Youth {
+  background: #098C09;
   color: #fff;
 }

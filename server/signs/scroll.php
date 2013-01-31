@@ -9,10 +9,8 @@ $xml = simplexml_load_file('http://www.socallinuxexpo.org/scale11x/sign.xml');
 $starttime = mktime(0, 0, 0, 2, 22, 2013) / 60;
 
 #$rightnow = round(time() / 60);
-$rightnow = mktime(14, 30, 0, 2, 22, 2013) / 60;
+$rightnow = mktime(10, 0, 0, 2, 22, 2013) / 60;
 $minsafter = $rightnow - $starttime;
-
-#print "Start Time: $starttime Right Now: $rightnow Minutes After: $minsafter <br/>";
 
 $data = array();
 $order = array();
@@ -24,6 +22,7 @@ foreach ($xml->node AS $node) {
   $node->{'Time'} = preg_replace('/<[^>]*>/', '', $node->{'Time'});
   $node->{'Day'} = preg_replace('/<[^>]*>/', '', $node->{'Day'});
   
+  // Remove Spaces so we can use it for a CSS class
   $node->{'Topic'} = preg_replace('/\s+/', '', $node->{'Topic'});
   
 	$pos = strpos((string) $node->{'Time'}, ",");
@@ -65,12 +64,6 @@ foreach ($xml->node AS $node) {
 	$handme = explode(":", $realstime);
 	$mfromm = ($handm[0] * 60) + $handm[1];
 	$mfromme = ($handme[0] * 60) + 60 + $handme[1];
-
-#	print "realtime: " . $realtime . " realstime: " . $realstime . "<br />";
-#	print "handm0: " . $handm[0] . " handm1: " . $handm[1] . "<br />";
-#	print "handme0: " . $handme[0] . " handme1: " . $handme[1] . "<br />";
-#	
-#	print "mfromm: " . $mfromm . " mfromme: " . $mfromme . "<br />";
 	
 	switch ((string) $node->Day) {
 		case "Friday";
@@ -92,16 +85,12 @@ foreach ($xml->node AS $node) {
 	}
 }
 asort($order, SORT_NUMERIC);
-#print_r($times);
-#print_r($order);
-#print_r($data);
+
 ?>
 
 	<style type="text/css" media="screen">
-        <!---		body { background-color:#d0e4fe; } --->
-		body { background-color:#ffffff; } 
 		font { font-family: Tahoma, Geneva, sans-serif; color:black; text-align:left; font-size:14px; }
-    	</style>
+	</style>
 		  <div id="scheduleCarousel" class="carousel carousel-fade">
 		    <div class="carousel-inner">	  
 		      <div id="schedule-1-content" class="active item">
@@ -109,11 +98,22 @@ asort($order, SORT_NUMERIC);
           <tr bgcolor="#fff"><th>Day</th><th>Start Time</th><th>Presenter</th><th>Topic</th><th>Room</th></tr>
 		      <tbody>
     <?php 
+      $topics = array();
       $items_per_page = 10;
       $odd = 0; $count = 0; $schedule_page = 1;
       foreach ($order AS $key => $value) {
+      
 	      if (($times[$key][0] - 60) <= $minsafter && ($times[$key][1] + 10) >= $minsafter) {
 	      // if ($times[$key][0] > 0) {
+	      
+          //
+          // Check if the topic of the current talk is in the array
+          // ..if not. add it.
+          //
+          if (! in_array($data[$key][5], $topics)) {
+            $topics[] = $data[$key][5];
+          }
+	      
 		      $odd++; 
 		      if ( $odd % 2 == 0 ) { $color = "bgcolor=\"#d0e4fe\""; } else { $color="bgcolor=\"#fff\""; }
 		      		      
@@ -183,6 +183,17 @@ asort($order, SORT_NUMERIC);
 			    </div>
 			  </div>
 			</div>
+			
+			<ul class="thumbnails">
+			    <?php foreach ($topics as $topic) {
+			    	print "<li class=\"span2 $topic\">";
+			      print '<div class="thumbnail">';
+			      print "<h4 class='topicThumb'>$topic</h4>";
+			      print '</div>';
+			      print "</li>";
+			    }
+			    ?>
+			</ul>
 
 <script src="js/jquery-1.8.2.js"></script>
 <script src="bootstrap/js/bootstrap.js"></script>
