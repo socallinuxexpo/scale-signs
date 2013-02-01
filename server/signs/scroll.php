@@ -58,6 +58,7 @@ foreach ($xml->node AS $node) {
 		$mfromme = ($handme[0] * 60) + 60 + $handme[1];
 	}
 	*/
+	
 	$realtime = $thistime;
 	$realstime = $thisend;
 	$handm = explode(":", $realtime);
@@ -186,7 +187,7 @@ asort($order, SORT_NUMERIC);
 			
 			<ul class="thumbnails">
 			    <?php foreach ($topics as $topic) {
-			    	print "<li class=\"span3 $topic\">";
+			    	print "<li class=\"span2 $topic\">";
 			      print '<div class="thumbnail">';
 			      print "<span class='topicThumb'>$topic</span>";
 			      print '</div>';
