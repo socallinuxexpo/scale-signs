@@ -147,9 +147,11 @@
       $("#twitter-stream-content").load(loadTwitterUrl);
       $('#twitter-stream-content').show();
       
-      //var twitterRefreshId = setInterval(function() {
-      //  $("#twitter-stream-content").fadeOut("slow").load(loadTwitterUrl).fadeIn("slow");
-      //}, 60000);
+      /* Reload and Refresh Twitter once a minute */
+      var twitterRefreshId = setInterval(function() {
+        //("#twitter-stream-content").fadeOut("slow").load(loadTwitterUrl).fadeIn("slow");
+        $("#twitter-stream-content").load(loadTwitterUrl);        
+      }, 60000);
 
       /* Reload & Shuffle sponsors every 2 minutes */
       var sponsorsRefreshId = setInterval(function() {
@@ -157,6 +159,7 @@
         $("#sponsors").load(loadSponsorsUrl);        
       }, 120000);
       
+      /* Reload and Refresh Twitter once a minute */
       var scheduleRefreshId = setInterval(function() {
         //$("#schedule").fadeOut("slow").load(loadScheduleUrl).fadeIn("slow");
         $("#schedule").load(loadScheduleUrl);        

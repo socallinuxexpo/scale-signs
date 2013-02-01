@@ -85,10 +85,10 @@ function search_twitter()
 <script src="bootstrap/js/bootstrap.js"></script>
 <script type="text/javascript">
 
-  //$(document).ready(function() {
-  //    $('#twitterCarousel').carousel({
-  //      interval: 10000
-  //    });
-  //});
+  $(document).ready(function() {
+      $('#twitterCarousel').carousel({
+        interval: 10000
+      });
+  });
   
 </script>
