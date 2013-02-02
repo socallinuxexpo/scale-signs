@@ -32,7 +32,11 @@ function search_twitter()
 		$user = $value->from_user;
 		$user_name = $value->from_user_name;
 		$comment = $value->text;
-		$created = $value->created_at;
+		
+		$created = date("F d, Y h:i a", strtotime($value->created_at));
+		$rightnow = round(time() / 60);
+		
+		$time_diff = $rightnow - $created;
 
     if (in_array($user, $blacklist)) {
       continue;
@@ -42,29 +46,37 @@ function search_twitter()
       print '</div>';
       print '<div class="item">';
     }
-    
-    print '<div class="tweet row-fluid" style="">';
+
+    if (in_array($user, $promote)) {    
+      print '<div class="tweet tweetpromote row-fluid">';
+    } else {
+      print '<div class="tweet row-fluid">';
+    }
     //
     // Promote certain users
     //
-    if (in_array($user, $promote)) {
-      print '<div class="span4 tweetusericon promote">';
-    } else {
+      print "<!-- Begin TweetUserIcon -->";
       print '<div class="span4 tweetusericon">';
-    }
+      
+        print "<!-- Begin TweetIcon -->";
         print "<div class='span2 tweeticon'>";		  
 	        print "<img class=\"img-rounded\" src=\"$logo\">";
 	      print "</div>";
-		    print "<div class='span10 tweetuser'>";
+        print "<!-- End TweetIcon -->";
+	              
+	      print "<!-- Begin Tweet User -->";
+		    print "<div class='span8 tweetuser'>";
 		      print " <span class='tweetuser_name'>$user_name</span><br />@$user ";
-	      print "</div>";		    
+	      print "</div>";
+	      print "<!-- End Tweet User -->";
+	    
 	    print "</div>";
-    if (in_array($user, $promote)) {	    
-	    print "<div class=\"span8 tweetcomment promote\">$comment $created</div>";
-    } else {
-	    print "<div class=\"span8 tweetcomment\">$comment $created</div>";    
-    }
+	    print "<!-- End Tweet User Icon -->";
+	    
+	    print "<div class=\"span8 tweetcomment\">$comment</div>";
+  		print "<div class=\"tweet-time\">$created</div>";
 		print '</div>';
+
     
 		$count += 1;
 
@@ -85,10 +97,10 @@ function search_twitter()
 <script src="bootstrap/js/bootstrap.js"></script>
 <script type="text/javascript">
 
-  //$(document).ready(function() {
-  //    $('#twitterCarousel').carousel({
-  //      interval: 10000
-  //    });
-  //});
+  $(document).ready(function() {
+      $('#twitterCarousel').carousel({
+        interval: 10000
+      });
+  });
   
 </script>

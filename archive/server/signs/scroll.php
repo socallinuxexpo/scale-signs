@@ -8,15 +8,70 @@ $xml = simplexml_load_file('http://www.socallinuxexpo.org/scale11x/sign.xml');
 
 $starttime = mktime(0, 0, 0, 2, 22, 2013) / 60;
 
-#$rightnow = round(time() / 60);
-$rightnow = mktime(10, 30, 0, 2, 24, 2013) / 60;
+$rightnow = round(time() / 60);
+#$rightnow = mktime(8, 30, 0, 2, 21, 2013) / 60;
+#$rightnow = mktime(9, 0, 0, 2, 22, 2013) / 60;
 $minsafter = $rightnow - $starttime;
-
-#print "Start Time: $starttime Right Now: $rightnow Minutes After: $minsafter <br/>";
 
 $data = array();
 $order = array();
 $times = array();
+
+if ($rightnow < $starttime ) {
+
+?>
+
+
+<style type="text/css" media="screen">
+	font { font-family: Tahoma, Geneva, sans-serif; color:black; text-align:left; font-size:14px; }
+</style>
+	  <div id="scheduleCarousel" class="carousel carousel-fade">
+	    <div class="carousel-inner">	  
+	      <div id="schedule-1-content" class="active item">
+		    <table cellpadding=2 cellspacing=1 class="table">
+	      <tbody>
+    <?php for ($i = 0; $i < 5; $i++) { print "<tr><td colspan=6 bgcolor=#fff>&nbsp;</td></tr>"; } ?>
+    <tr>
+    <td>&nbsp;</td>
+    <td id="timerCell" colspan=3 bgcolor=#fff>
+
+        <h3>SCALE 11x Begins:</h3>
+        <ul class="timer">
+          <li><div id="timer_d1" class="card">&nbsp;</div></li>
+          <li><div id="timer_d2" class="card">&nbsp;</div></li>
+          <li class="timer_separator"> Days</li>
+          
+          <li><div id="timer_h1" class="card">&nbsp;</div></li>
+          <li><div id="timer_h2" class="card">&nbsp;</div></li>          
+          <li class="timer_separator"> Hours</li>
+          
+          <li><div id="timer_m1" class="card">&nbsp;</div></li>
+          <li><div id="timer_m2" class="card">&nbsp;</div></li>          
+          <li class="timer_separator"> Minutes</li>
+          
+          <li><div id="timer_s1" class="card">&nbsp;</div></li>
+          <li><div id="timer_s2" class="card">&nbsp;</div></li>
+          <li class="timer_separator"> Seconds</li>    
+        </ul>
+
+    </td>
+    <td>&nbsp;</td>
+    </tr>
+    <?php for ($i = 0; $i < 4; $i++) { print "<tr><td colspan=6 bgcolor=#fff>&nbsp;</td></tr>"; } ?>    
+    </tbody>
+    </table>
+    </div>
+  </div>
+</div>
+
+  <script type="text/javascript">  
+	    updateTimer();
+	    setInterval('updateTimer()', 1000 );
+  </script>
+  
+<?php
+
+} else {
 
 foreach ($xml->node AS $node) {
 
@@ -24,6 +79,7 @@ foreach ($xml->node AS $node) {
   $node->{'Time'} = preg_replace('/<[^>]*>/', '', $node->{'Time'});
   $node->{'Day'} = preg_replace('/<[^>]*>/', '', $node->{'Day'});
   
+  // Remove Spaces so we can use it for a CSS class
   $node->{'Topic'} = preg_replace('/\s+/', '', $node->{'Topic'});
   
 	$pos = strpos((string) $node->{'Time'}, ",");
@@ -59,18 +115,13 @@ foreach ($xml->node AS $node) {
 		$mfromme = ($handme[0] * 60) + 60 + $handme[1];
 	}
 	*/
+	
 	$realtime = $thistime;
 	$realstime = $thisend;
 	$handm = explode(":", $realtime);
 	$handme = explode(":", $realstime);
 	$mfromm = ($handm[0] * 60) + $handm[1];
 	$mfromme = ($handme[0] * 60) + 60 + $handme[1];
-
-#	print "realtime: " . $realtime . " realstime: " . $realstime . "<br />";
-#	print "handm0: " . $handm[0] . " handm1: " . $handm[1] . "<br />";
-#	print "handme0: " . $handme[0] . " handme1: " . $handme[1] . "<br />";
-#	
-#	print "mfromm: " . $mfromm . " mfromme: " . $mfromme . "<br />";
 	
 	switch ((string) $node->Day) {
 		case "Friday";
@@ -92,16 +143,12 @@ foreach ($xml->node AS $node) {
 	}
 }
 asort($order, SORT_NUMERIC);
-#print_r($times);
-#print_r($order);
-#print_r($data);
+
 ?>
 
 	<style type="text/css" media="screen">
-        <!---		body { background-color:#d0e4fe; } --->
-		body { background-color:#ffffff; } 
 		font { font-family: Tahoma, Geneva, sans-serif; color:black; text-align:left; font-size:14px; }
-    	</style>
+	</style>
 		  <div id="scheduleCarousel" class="carousel carousel-fade">
 		    <div class="carousel-inner">	  
 		      <div id="schedule-1-content" class="active item">
@@ -109,11 +156,22 @@ asort($order, SORT_NUMERIC);
           <tr bgcolor="#fff"><th>Day</th><th>Start Time</th><th>Presenter</th><th>Topic</th><th>Room</th></tr>
 		      <tbody>
     <?php 
-      $items_per_page = 10;
+      $topics = array();
+      $items_per_page = 9;
       $odd = 0; $count = 0; $schedule_page = 1;
       foreach ($order AS $key => $value) {
+      
 	      if (($times[$key][0] - 60) <= $minsafter && ($times[$key][1] + 10) >= $minsafter) {
 	      // if ($times[$key][0] > 0) {
+	      
+          //
+          // Check if the topic of the current talk is in the array
+          // ..if not. add it.
+          //
+          if (! in_array($data[$key][5], $topics)) {
+            $topics[] = $data[$key][5];
+          }
+	      
 		      $odd++; 
 		      if ( $odd % 2 == 0 ) { $color = "bgcolor=\"#d0e4fe\""; } else { $color="bgcolor=\"#fff\""; }
 		      		      
@@ -183,6 +241,17 @@ asort($order, SORT_NUMERIC);
 			    </div>
 			  </div>
 			</div>
+			
+			<ul class="thumbnails">
+			    <?php foreach ($topics as $topic) {
+			    	print "<li class=\"span2 $topic\">";
+			      print '<div class="thumbnail">';
+			      print "<span class='topicThumb'>$topic</span>";
+			      print '</div>';
+			      print "</li>";
+			    }
+			    ?>
+			</ul>
 
 <script src="js/jquery-1.8.2.js"></script>
 <script src="bootstrap/js/bootstrap.js"></script>
@@ -194,6 +263,8 @@ asort($order, SORT_NUMERIC);
     });
   });
 
-  
-
 </script>
+
+<?php
+}
+?>

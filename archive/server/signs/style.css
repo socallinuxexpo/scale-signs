@@ -22,9 +22,13 @@ font {
   /* font-size:36px;  */
 }
 
-#mainContainer {
-  background-color: #AAA;
-  width: 99%;
+#contents {
+  background: #AAA;
+  -webkit-border-radius: 0px 0px 6px 6px;
+  -moz-border-radius: 0px 0px 6px 6px;
+  border-radius: 0px 0px 6px 6px;
+  padding: 0px 5px 0px 25px;  
+  margin-left: 5px;
 }
 
 #header {
@@ -36,51 +40,29 @@ font {
   width: 100%;
 }
 
-#contents {
-  background: #AAA;
-  -webkit-border-radius: 0px 0px 6px 6px;
-  -moz-border-radius: 0px 0px 6px 6px;
-  border-radius: 0px 0px 6px 6px;
-  padding: 0px 5px 0px 25px;  
-  margin-left: 5px;
+#footer {
+
+}
+
+#mainContainer {
+  background-color: #AAA;
+  width: 99%;
+}
+
+#scheduleCarousel {
+  background: #fff;
+  /* font-size: 1.5em; */
 }
 
 #sponsors {
   background: #AAA;
 }
 
-.sponsorList {
-	list-style: none;
-}
-
-/*
-.carousel .item {-webkit-transition: opacity 3s; -moz-transition: opacity 3s; -ms-transition: opacity 3s; -o-transition: opacity 3s; transition: opacity 3s;}
-.carousel .active.left {left:0;opacity:0;z-index:2;}
-.carousel .next {left:0;opacity:1;z-index:1;}
-*/
-
-.carousel.carousel-fade .item {
-  opacity:0;
-}
-
-.carousel.carousel-fade .active.item {
-    opacity:1;
-}
-
-.carousel-inner .sponsor-logo {
-  padding: 2px;
-  margin-top: 5px;
-  background: #eee;
-  -webkit-border-radius: 6px 6px 6px 6px;
-  -moz-border-radius: 6px 6px 6px 6px;
-  border-radius: 6px 6px 6px 6px;
-  width: 220px;
-  height: 220px;
-  vertical-align: middle;
-}
-
-.sponsor-logo img {
-
+#timerCell {
+  background-color: #FFD700;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #twitter{
@@ -92,78 +74,24 @@ font {
   border-radius: 6px 6px 6px 6px;  
 }
 
-.tweet {
-  margin: 0px;
-  margin-bottom: 10px;
-  padding: 0px;
+.carousel.carousel-fade .item {
+  opacity:0;
 }
 
-.tweeticon {
-  margin: 0px;
-  padding-left: 5px;
-  margin-left: 5px;
+.carousel.carousel-fade .active.item {
+    opacity:1;
 }
 
-.tweetusericon {
-  background-color: #D0E4FE;
-  -webkit-border-radius: 6px 6px 6px 6px;
-  -moz-border-radius: 6px 6px 6px 6px;
-  border-radius: 6px 6px 6px 6px;
-  padding: 0px;
-  margin: 0px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.span2.tweetuser {
-  padding: 0px;
-  font-size: 12px;
-  font-weight: bold;
-  text-align: left;
-  margin-left: 5px;
-}
-
-.tweetuser_name {
-  font-size: 24px;
-}
-
-.tweetcomment {
-  color: #7A7677;
-  font-size: 16px;
-  height: 100%;
-  background-color: #D0E4FE;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  -webkit-border-radius: 6px 6px 6px 6px;
-  -moz-border-radius: 6px 6px 6px 6px;
-  border-radius: 6px 6px 6px 6px;
-}
-
-.promote {
-  background-color: #FFD700;
-  color: #000;
-}
-
-.span2.knobspan {
-  padding-bottom: 5px;
-  width: 100px;
-}
-
-.span4.logospan {
-  padding-top: 10px;
-  width: 263px;
-}
-
-.span6.tagspan {
-  padding-top: 0px;
-}
-
-.tagspan h2 {
-  padding-top: 0px;
+.carousel-inner .sponsor-logo {
+  padding: 2px;
   margin-top: 0px;
-  margin-bottom: 5px;
-  font-size: 30px;
+  background: #eee;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  border-radius: 6px 6px 6px 6px;
+  width: 220px;
+  height: 220px;
+  vertical-align: middle;
 }
 
 .clock {
@@ -223,31 +151,194 @@ font {
 
 }
 
-#scheduleCarousel {
-  font-size: 1.5em;
-}
-
 .copyright {
   font-size: 1.5em;
   float: right;
   font-weight: bold;
-  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.promote {
+  background-color: #FFD700;
+  color: #000;
+}
+
+.sponsorList {
+	list-style: none;
+}
+
+/*
+.carousel .item {-webkit-transition: opacity 3s; -moz-transition: opacity 3s; -ms-transition: opacity 3s; -o-transition: opacity 3s; transition: opacity 3s;}
+.carousel .active.left {left:0;opacity:0;z-index:2;}
+.carousel .next {left:0;opacity:1;z-index:1;}
+*/
+
+.sponsor-logo img {
+
+}
+
+.table td {
+  text-align: center;
+}
+
+.thumbnail {
+  text-align: center;
+}
+
+.timer {
+	font-weight: bold;
+	list-style: none;
+	margin-left: 175px;
+	margin-right: auto;
+	text-align: center;
+  font-size: 36px;
+  color:rgba(250,250,250,.3);
+}
+
+.timer li {
+	float: left;
+	width: 52px;
+	/* height: 66px; */
+	position: relative;
+	
+	/* This setting affects how much the cards stand out from the page.
+	 * Lower numbers make the effect wider/larger, higher make it more shallow. */
+	-webkit-perspective: 70;
+}
+
+.timer li.timer_separator {
+	color: #444;
+	text-shadow: #fff 0 -1px 3px;
+	font-weight: lighter;
+	width: 150px;
+	text-align: left;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/* Normal looking time card */
+.timer div.card {
+	background: #444;
+	padding: 5px 2px;
+	color: #fff;
+	width: 1em;
+	text-align: center;
+	border-radius: 5px;
+	position: relative;
+
+  /* Box shadow */
+  box-shadow: 0 0 30px #4A4A4A;
+
+  /* Background gradient */
+  background: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0, #090909),
+      color-stop(1, #323232)
+  );
+  background: -moz-linear-gradient(
+      center bottom,
+      #090909 0%,
+      #323232 100%
+  );
+
+}
+
+.topicThumb {
+  text-align: center;
+  left-margin: auto;
+  right-margin: auto;
+  font-size: 18px;
+}
+
+.tweet {
+  position: relative;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  border-radius: 6px 6px 6px 6px;
+  background-color: #D0E4FE;
+  margin: 0px;
+  margin-bottom: 10px;
+  padding: 0px;
+}
+
+.tweetpromote {
+  background-color: #FFD700;
+  color: #000;
+}
+
+.tweeticon {
+  margin: 0px;
+  padding-left: 5px;
+  margin-left: 5px;
+}
+
+.tweet-time {
+  color: #AAA;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+}
+
+.tweetusericon {
+  padding: 0px;
+  margin: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.span2.tweetuser {
+  padding: 0px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 5px;
+}
+
+.tweetuser_name {
+  font-size: 24px;
+}
+
+.tweetcomment {
+  position: relative;
+  font-size: 16px;
+  height: 100%;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.span2.knobspan {
+  padding-bottom: 5px;
+  width: 100px;
+}
+
+.span4.logospan {
+  padding-top: 10px;
+  width: 263px;
+}
+
+.span6.tagspan {
+  padding-top: 0px;
+}
+
+.tagspan h2 {
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-size: 30px;
 }
 
 /* Colors for Schedule */
-.Keynote {
-  background: #D31111;
-  color: #fff;
-}
 
-.General {
-  background: #97A67A;
-  color: #fff;
-}
-
-.DevOps {
-  background: #565448;
-  color: #fff;
+.BeginnersTutorials {
+  background-color: #3353AF;
+  color: #FFF;
 }
 
 .CloudandVirtualization {
@@ -260,23 +351,23 @@ font {
   color: #000;
 }
 
+.DevOps {
+  background: #565448;
+  color: #fff;
+}
+
+.General {
+  background: #97A67A;
+  color: #fff;
+}
+
 .Kernel {
   background: #AD9134;
   color: #fff;
 }
 
-.OpenSourceSoftwareInEducation {
-  background: #72B20F;
-  color: #fff;
-}
-
-.SysAdmin {
-  background: #C4C249;
-  color: #000;
-}
-
-.PostgreSQL {
-  background: #0AACA0;
+.Keynote {
+  background: #D31111;
   color: #fff;
 }
 
@@ -290,7 +381,47 @@ font {
   color: #fff;
 }
 
+.OpenNMS {
+  background: #009900;
+  color: #fff; 
+}
+
+.OpenSourceSoftwareInEducation {
+  background: #72B20F;
+  color: #fff;
+}
+
+.PostgreSQL {
+  background: #0AACA0;
+  color: #fff;
+}
+
 .ScaleU {
   background: #405E5E;
+  color: #fff;
+}
+
+.Sponsored {
+  background: #123;
+  color: #fff;
+}
+
+.SysAdmin {
+  background: #C4C249;
+  color: #000;
+}
+
+.Ubucon {
+  background: #774022;
+  color: #fff;
+}
+
+.UpSCALE {
+  background: #956140;
+  color: #fff;
+}
+
+.Youth {
+  background: #098C09;
   color: #fff;
 }

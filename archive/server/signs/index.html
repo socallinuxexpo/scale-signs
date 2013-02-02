@@ -31,7 +31,7 @@
     <!-- Begin Fluid Row -->
     <div class="row-fluid">  
       <!-- Begin Header Div -->
-      <div id="header" class="span12 container">
+      <div id="header" class="span12 container-fluid">
         <!-- Begin Row Div -->
         <div class="row-fluid">
           <div class="span2"></div>
@@ -101,11 +101,14 @@
       <!-- End Main Div -->
     </div>
     <!-- End Fluid Row -->
-    <footer class="copyright"><p>&copy; Southern California Linux Expo 2013</p></footer>    
+    
+    <!-- Begin Footer Fluid Row -->
+      <div id="footer" class="row-fluid">
+        <footer class="copyright"><p>&copy; Southern California Linux Expo 2013</p></footer>
+      </div>
+    <!-- End Fluid Row -->    
   </div>
   <!-- End Main Container -->
-
-
   
     <!-- Le javascript
     ================================================== -->
@@ -114,6 +117,7 @@
     <script src="js/jquery.marquee.js"></script>    
     <script src="bootstrap/js/bootstrap.js"></script>
     <script src="js/clock.js"></script>
+    <script src="js/timer.js"></script>    
     
     <script type="text/javascript">
     
@@ -144,17 +148,22 @@
       $("#twitter-stream-content").load(loadTwitterUrl);
       $('#twitter-stream-content').show();
       
-      //var twitterRefreshId = setInterval(function() {
-      //  $("#twitter-stream-content").fadeOut("slow").load(loadTwitterUrl).fadeIn("slow");
-      //}, 60000);
+      /* Reload and Refresh Twitter once a minute */
+      var twitterRefreshId = setInterval(function() {
+        //("#twitter-stream-content").fadeOut("slow").load(loadTwitterUrl).fadeIn("slow");
+        $("#twitter-stream-content").load(loadTwitterUrl);        
+      }, 60000);
 
       /* Reload & Shuffle sponsors every 2 minutes */
       var sponsorsRefreshId = setInterval(function() {
-        $("#sponsors").fadeOut("slow").load(loadSponsorsUrl).fadeIn("slow");
+        //$("#sponsors").fadeOut("slow").load(loadSponsorsUrl).fadeIn("slow");
+        $("#sponsors").load(loadSponsorsUrl);        
       }, 120000);
       
+      /* Reload and Refresh Twitter once a minute */
       var scheduleRefreshId = setInterval(function() {
-        $("#schedule").fadeOut("slow").load(loadScheduleUrl).fadeIn("slow");
+        //$("#schedule").fadeOut("slow").load(loadScheduleUrl).fadeIn("slow");
+        $("#schedule").load(loadScheduleUrl);        
       }, 60000);
       
     });
