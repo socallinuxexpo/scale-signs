@@ -48,23 +48,35 @@ function search_twitter()
     }
 
     if (in_array($user, $promote)) {    
-      print '<div class="tweet tweetpromote row-fluid" style="">';
+      print '<div class="tweet tweetpromote row-fluid">';
     } else {
-      print '<div class="tweet row-fluid" style="">';
+      print '<div class="tweet row-fluid">';
     }
     //
     // Promote certain users
     //
+      print "<!-- Begin TweetUserIcon -->";
       print '<div class="span4 tweetusericon">';
+      
+        print "<!-- Begin TweetIcon -->";
         print "<div class='span2 tweeticon'>";		  
 	        print "<img class=\"img-rounded\" src=\"$logo\">";
 	      print "</div>";
-		    print "<div class='span10 tweetuser'>";
+        print "<!-- End TweetIcon -->";
+	              
+	      print "<!-- Begin Tweet User -->";
+		    print "<div class='span8 tweetuser'>";
 		      print " <span class='tweetuser_name'>$user_name</span><br />@$user ";
-	      print "</div>";		    
+	      print "</div>";
+	      print "<!-- End Tweet User -->";
+	    
 	    print "</div>";
-	    print "<div class=\"span8 tweetcomment\">$comment <span class=\"tweet-time\">$created</span></div>";    
+	    print "<!-- End Tweet User Icon -->";
+	    
+	    print "<div class=\"span8 tweetcomment\">$comment</div>";
+  		print "<div class=\"tweet-time\">$created</div>";
 		print '</div>';
+
     
 		$count += 1;
 
