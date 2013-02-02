@@ -50,11 +50,19 @@ font {
 }
 
 #scheduleCarousel {
+  background: #fff;
   /* font-size: 1.5em; */
 }
 
 #sponsors {
   background: #AAA;
+}
+
+#timerCell {
+  background-color: #FFD700;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #twitter{
@@ -169,8 +177,73 @@ font {
 
 }
 
+.table td {
+  text-align: center;
+}
+
 .thumbnail {
   text-align: center;
+}
+
+.timer {
+	font-weight: bold;
+	list-style: none;
+	margin-left: 175px;
+	margin-right: auto;
+	text-align: center;
+  font-size: 36px;
+  color:rgba(250,250,250,.3);
+}
+
+.timer li {
+	float: left;
+	width: 52px;
+	/* height: 66px; */
+	position: relative;
+	
+	/* This setting affects how much the cards stand out from the page.
+	 * Lower numbers make the effect wider/larger, higher make it more shallow. */
+	-webkit-perspective: 70;
+}
+
+.timer li.timer_separator {
+	color: #444;
+	text-shadow: #fff 0 -1px 3px;
+	font-weight: lighter;
+	width: 150px;
+	text-align: left;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/* Normal looking time card */
+.timer div.card {
+	background: #444;
+	padding: 5px 2px;
+	color: #fff;
+	width: 1em;
+	text-align: center;
+	border-radius: 5px;
+	position: relative;
+
+  /* Box shadow */
+  box-shadow: 0 0 30px #4A4A4A;
+
+  /* Background gradient */
+  background: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0, #090909),
+      color-stop(1, #323232)
+  );
+  background: -moz-linear-gradient(
+      center bottom,
+      #090909 0%,
+      #323232 100%
+  );
+
 }
 
 .topicThumb {
@@ -181,6 +254,7 @@ font {
 }
 
 .tweet {
+  position: relative;
   -webkit-border-radius: 6px 6px 6px 6px;
   -moz-border-radius: 6px 6px 6px 6px;
   border-radius: 6px 6px 6px 6px;
@@ -202,10 +276,13 @@ font {
 }
 
 .tweet-time {
+  color: #AAA;
+  font-weight: bold;
   position: absolute;
   bottom: 0px;
   right: 0px;
   padding-right: 5px;
+  padding-bottom: 2px;
 }
 
 .tweetusericon {

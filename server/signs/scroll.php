@@ -8,13 +8,70 @@ $xml = simplexml_load_file('http://www.socallinuxexpo.org/scale11x/sign.xml');
 
 $starttime = mktime(0, 0, 0, 2, 22, 2013) / 60;
 
-#$rightnow = round(time() / 60);
-$rightnow = mktime(12, 30, 0, 2, 22, 2013) / 60;
+$rightnow = round(time() / 60);
+#$rightnow = mktime(8, 30, 0, 2, 21, 2013) / 60;
+#$rightnow = mktime(9, 0, 0, 2, 22, 2013) / 60;
 $minsafter = $rightnow - $starttime;
 
 $data = array();
 $order = array();
 $times = array();
+
+if ($rightnow < $starttime ) {
+
+?>
+
+
+<style type="text/css" media="screen">
+	font { font-family: Tahoma, Geneva, sans-serif; color:black; text-align:left; font-size:14px; }
+</style>
+	  <div id="scheduleCarousel" class="carousel carousel-fade">
+	    <div class="carousel-inner">	  
+	      <div id="schedule-1-content" class="active item">
+		    <table cellpadding=2 cellspacing=1 class="table">
+	      <tbody>
+    <?php for ($i = 0; $i < 5; $i++) { print "<tr><td colspan=6 bgcolor=#fff>&nbsp;</td></tr>"; } ?>
+    <tr>
+    <td>&nbsp;</td>
+    <td id="timerCell" colspan=3 bgcolor=#fff>
+
+        <h3>SCALE 11x Begins:</h3>
+        <ul class="timer">
+          <li><div id="timer_d1" class="card">&nbsp;</div></li>
+          <li><div id="timer_d2" class="card">&nbsp;</div></li>
+          <li class="timer_separator"> Days</li>
+          
+          <li><div id="timer_h1" class="card">&nbsp;</div></li>
+          <li><div id="timer_h2" class="card">&nbsp;</div></li>          
+          <li class="timer_separator"> Hours</li>
+          
+          <li><div id="timer_m1" class="card">&nbsp;</div></li>
+          <li><div id="timer_m2" class="card">&nbsp;</div></li>          
+          <li class="timer_separator"> Minutes</li>
+          
+          <li><div id="timer_s1" class="card">&nbsp;</div></li>
+          <li><div id="timer_s2" class="card">&nbsp;</div></li>
+          <li class="timer_separator"> Seconds</li>    
+        </ul>
+
+    </td>
+    <td>&nbsp;</td>
+    </tr>
+    <?php for ($i = 0; $i < 4; $i++) { print "<tr><td colspan=6 bgcolor=#fff>&nbsp;</td></tr>"; } ?>    
+    </tbody>
+    </table>
+    </div>
+  </div>
+</div>
+
+  <script type="text/javascript">  
+	    updateTimer();
+	    setInterval('updateTimer()', 1000 );
+  </script>
+  
+<?php
+
+} else {
 
 foreach ($xml->node AS $node) {
 
@@ -100,7 +157,7 @@ asort($order, SORT_NUMERIC);
 		      <tbody>
     <?php 
       $topics = array();
-      $items_per_page = 10;
+      $items_per_page = 9;
       $odd = 0; $count = 0; $schedule_page = 1;
       foreach ($order AS $key => $value) {
       
@@ -206,6 +263,8 @@ asort($order, SORT_NUMERIC);
     });
   });
 
-  
-
 </script>
+
+<?php
+}
+?>
