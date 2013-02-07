@@ -6,13 +6,31 @@
 @import url(/bootstrap/css/bootstrap.css);
 
 html {
+  font-size: 62.5%;
   background-color: #AAA;
 }
 
 body {
+  font-size: 1em;
   padding-top: 0px;
   padding-bottom: 0px;
   background-color: #AAA !important;
+}
+
+@media (max-width: 300px) {
+        html { font-size: 70%; }
+}
+
+@media (min-width: 500px) {
+        html { font-size: 80%; }
+}
+
+@media (min-width: 700px) {
+        html { font-size: 120%; }
+}
+
+@media (min-width: 1200px) {
+        html { font-size: 200%; }
 }
 
 font { 
@@ -51,6 +69,7 @@ font {
 
 #scheduleCarousel {
   background: #fff;
+  box-shadow: 0 0 30px #4A4A4A;  
   /* font-size: 1.5em; */
 }
 
@@ -71,7 +90,8 @@ font {
   padding-right: 5px;
   -webkit-border-radius: 6px 6px 6px 6px;
   -moz-border-radius: 6px 6px 6px 6px;
-  border-radius: 6px 6px 6px 6px;  
+  border-radius: 6px 6px 6px 6px;
+  box-shadow: 0 0 30px #4A4A4A;    
 }
 
 .carousel.carousel-fade .item {
