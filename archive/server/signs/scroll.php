@@ -101,7 +101,7 @@ asort($order, SORT_NUMERIC);
 		      <tbody>
     <?php 
       $topics = array();
-      $items_per_page = 9;
+      $items_per_page = 8;
       $odd = 0; $count = 0; $schedule_page = 1;
       foreach ($order AS $key => $value) {
       
