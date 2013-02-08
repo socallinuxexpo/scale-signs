@@ -188,6 +188,7 @@ asort($order, SORT_NUMERIC);
 			  </div>
 			</div>
 			
+            <div class="span6">
 			<ul class="thumbnails topicList">
 			    <?php foreach ($topics as $topic) {
 			    	print "<li class=\"span2 $topic\">";
@@ -198,6 +199,7 @@ asort($order, SORT_NUMERIC);
 			    }
 			    ?>
 			</ul>
+            </div>
 
 <script src="js/jquery-1.8.2.js"></script>
 <script src="bootstrap/js/bootstrap.js"></script>
