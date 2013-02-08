@@ -303,13 +303,23 @@ font {
 .topicList {
     font-size: 24px;
     text-align: center;
+    padding-bottom: 10px;
+    background-color: none;
 }
 
-.topicThumb {
+/*
+.topicList .badge {
+  font-size: 30px;
+  line-height: 39px;
+  background: none;  
+}
+*/
+
+.topic {
   text-align: center;
   left-margin: auto;
   right-margin: auto;
-  font-size: 18px;
+  font-size: 30px;
 }
 
 .tweet {
@@ -365,7 +375,7 @@ font {
 
 .tweetcomment {
   position: relative;
-  font-size: 16px;
+  font-size: 1.5em;
   height: 100%;
   padding-left: 10px;
   padding-top: 10px;
@@ -396,69 +406,100 @@ font {
 
 /* Colors for Schedule */
 
+.topicList [class^="badge"], [class*=" badge"] {
+  font-size: 1.3em !important;
+  line-height: 1.3em !important;
+  margin-right: 5px;
+}
+
 .BeginnersTutorials {
-  background-color: #3353AF;
-  color: #FFF;
+  background-color: #3353AF !important;
+  color: #FFF !important;
 }
 
 .CloudandVirtualization {
-  background: #638DCE;
-  color: #fff;
+  background: #638DCE !important;
+  color: #fff !important;
 }
 
 .Developer {
-  background: #D65C09;
-  color: #000;
+  background: #D65C09 !important;
+  color: #000 !important;
 }
 
 .DevOps {
-  background: #565448;
-  color: #fff;
+  background: #565448 !important;
+  color: #fff !important;
+}
+
+.badge-DevOps {
+  background: #565448 !important;
+  color: #fff !important;
 }
 
 .General {
-  background: #97A67A;
-  color: #fff;
+  background: #97A67A !important;
+  color: #fff !important;
 }
 
 .Kernel {
-  background: #AD9134;
-  color: #fff;
+  background: #AD9134 !important;
+  color: #fff !important;
+}
+
+.badge-Kernel {
+  background: #AD9134 !important;
+  color: #fff !important;
 }
 
 .Keynote {
-  background: #D31111;
-  color: #fff;
+  background: #D31111 !important;
+  color: #fff !important;
+}
+
+.badge-Keynote {
+  background: #D31111 !important;
+  color: #fff !important;
 }
 
 .Mentoring {
-  background: #998876;
-  color: #fff;
+  background: #998876 !important;
+  color: #fff !important;
 }
 
 .MySQL {
-  background: #8B47BB;
-  color: #fff;
+  background: #8B47BB !important;
+  color: #fff !important;
+}
+
+.badge-MySQL {
+  background: #8B47BB !important;
+  color: #fff !important;
 }
 
 .OpenNMS {
-  background: #4D9E00;
-  color: #fff; 
+  background: #4D9E00 !important;
+  color: #fff !important; 
+}
+
+.badge-OpenNMS {
+  background-color: #4D9E00 !important;
+  color: #fff !important;
 }
 
 .OpenSourceSoftwareInEducation {
-  background: #72B20F;
-  color: #fff;
+  background: #72B20F !important;
+  color: #fff !important;
 }
 
 .PostgreSQL {
-  background: #0AACA0;
-  color: #fff;
+  background: #0AACA0 !important;
+  color: #fff !important;
 }
 
 .ScaleU {
-  background: #405E5E;
-  color: #fff;
+  background: #405E5E !important;
+  color: #fff !important;
 }
 
 .Sponsored {
@@ -467,21 +508,21 @@ font {
 }
 
 .SysAdmin {
-  background: #C4C249;
-  color: #000;
+  background: #C4C249 !important;
+  color: #000 !important;
 }
 
 .Ubucon {
-  background: #774022;
-  color: #fff;
+  background: #774022 !important;
+  color: #fff !important;
 }
 
 .UpSCALE {
-  background: #956140;
-  color: #fff;
+  background: #956140 !important;
+  color: #fff !important;
 }
 
 .Youth {
-  background: #098C09;
-  color: #fff;
+  background: #098C09 !important;
+  color: #fff !important;
 }
