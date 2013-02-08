@@ -188,10 +188,10 @@ asort($order, SORT_NUMERIC);
 			  </div>
 			</div>
 			
-            <div class="span12" style="text-align:center;">
+            <div class="span12 topicList" style="text-align:center;">
 			<!-- <ul class="thumbnails topicList"> -->
 			    <?php foreach ($topics as $topic) {
-                  print "<span class=\"badge $topic\">$topic</span>";
+                  print "<span class=\"$topic badge\">$topic</span>";
 			      #print "<li class=\"span2 $topic\">";
 			      #print '<div class="thumbnail">';
 			      #print "<span class='topicThumb'>$topic</span>";
