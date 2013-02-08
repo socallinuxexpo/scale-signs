@@ -188,7 +188,7 @@ asort($order, SORT_NUMERIC);
 			  </div>
 			</div>
 			
-            <div class="span12">
+            <div class="span12" style="vertical-align:center;">
 			<!-- <ul class="thumbnails topicList"> -->
 			    <?php foreach ($topics as $topic) {
                   print "<span class=\"badge $topic\">$topic</span>";
