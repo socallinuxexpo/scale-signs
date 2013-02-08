@@ -33,7 +33,7 @@ body {
 }
 
 @media (min-width: 1200px) {
-        html { font-size: 300% !important;}
+        html { font-size: 300%;}
 }
 
 font { 
@@ -376,7 +376,8 @@ font {
   padding-top: 0px;
   margin-top: 0px;
   margin-bottom: 5px;
-  font-size: 30px;
+  padding-top: 10px;
+  font-size: 50px;
 }
 
 /* Colors for Schedule */
