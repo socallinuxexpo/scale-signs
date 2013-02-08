@@ -42,7 +42,7 @@ function search_twitter()
       continue;
     }
     
-    if ($count % 4 == 0 && $count > 0) {
+    if ($count % 3 == 0 && $count > 0) {
       print '</div>';
       print '<div class="item">';
     }
