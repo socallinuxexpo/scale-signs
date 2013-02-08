@@ -296,6 +296,10 @@ font {
 
 }
 
+.topicList {
+    list-style: none;
+}
+
 .topicThumb {
   text-align: center;
   left-margin: auto;
