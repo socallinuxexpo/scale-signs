@@ -188,7 +188,7 @@ asort($order, SORT_NUMERIC);
 			  </div>
 			</div>
 			
-			<!-- <ul class="thumbnails topicList"> -->
+			<ul class="thumbnails topicList">
 			    <?php foreach ($topics as $topic) {
 			    	print "<li class=\"span2 $topic\">";
 			      print '<div class="thumbnail">';
