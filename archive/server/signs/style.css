@@ -21,15 +21,15 @@ body {
 }
 
 @media (max-width: 300px) {
-        html { font-size: 70% !important;}
+        html { font-size: 70%;}
 }
 
 @media (min-width: 500px) {
-        html { font-size: 80% !important;}
+        html { font-size: 80%;}
 }
 
 @media (min-width: 700px) {
-        html { font-size: 120% !important;}
+        html { font-size: 120%;}
 }
 
 @media (min-width: 1200px) {
@@ -72,16 +72,20 @@ font {
 #scheduleCarousel {
   background: #fff;
   box-shadow: 0 0 30px #4A4A4A;
-  font-size: 160% !important;  
+  font-size: 180% !important;  
   /* font-size: 1.5em; */
 }
 
+#scheduleCarousel .table {
+  margin-bottom: 0px;
+}
+
 #scheduleCarousel .table th {
-  line-height: 35px;
+  line-height: 40px;
 }
 
 #scheduleCarousel .table td {
-  line-height: 35px;
+  line-height: 40px;
 }
 
 #scheduleCarousel [class^="icon-"], [class*=" icon-"] {
@@ -112,7 +116,7 @@ font {
 }
 
 .brand {
-  font-size: 48px;
+  letter-spacing: 2px;
 }
 
 .carousel.carousel-fade .item {
@@ -146,11 +150,11 @@ font {
 
 .clock li {
 	float: left;
-	width: 38px;
-	height: 66px;
+	width: 48px;
+	height: 50px;
 	position: relative;
 	line-height: 48px;
-	padding-right: 2px;
+	/* padding-right: 2px; */
 	
 	/* This setting affects how much the cards stand out from the page.
 	 * Lower numbers make the effect wider/larger, higher make it more shallow. */
@@ -170,12 +174,13 @@ font {
 .clock div.card {
 	background: #444;
 	padding-top: 5px;
-	padding-right: 5px;
+	padding-right: 0px;
 	color: #fff;
 	width: 1em;
 	text-align: center;
 	border-radius: 5px;
 	position: relative;
+	margin-right: 5px;
 
   /* Box shadow */
   box-shadow: 0 0 30px #4A4A4A;
@@ -377,7 +382,7 @@ font {
   margin-top: 0px;
   margin-bottom: 5px;
   padding-top: 10px;
-  font-size: 50px;
+  font-size: 55px;
 }
 
 /* Colors for Schedule */
@@ -428,7 +433,7 @@ font {
 }
 
 .OpenNMS {
-  background: #009900;
+  background: #4D9E00;
   color: #fff; 
 }
 
