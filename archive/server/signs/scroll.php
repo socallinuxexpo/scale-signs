@@ -188,17 +188,18 @@ asort($order, SORT_NUMERIC);
 			  </div>
 			</div>
 			
-            <div class="span6">
-			<ul class="thumbnails topicList">
+            <div class="span12">
+			<!-- <ul class="thumbnails topicList"> -->
 			    <?php foreach ($topics as $topic) {
-			    	print "<li class=\"span2 $topic\">";
-			      print '<div class="thumbnail">';
-			      print "<span class='topicThumb'>$topic</span>";
-			      print '</div>';
-			      print "</li>";
+                  print "<span class=\"badge $topic\">$topic</span>";
+			      #print "<li class=\"span2 $topic\">";
+			      #print '<div class="thumbnail">';
+			      #print "<span class='topicThumb'>$topic</span>";
+			      #print '</div>';
+			      #print "</li>";
 			    }
 			    ?>
-			</ul>
+			<!-- </ul> -->
             </div>
 
 <script src="js/jquery-1.8.2.js"></script>
