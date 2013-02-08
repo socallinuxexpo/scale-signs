@@ -38,8 +38,8 @@ function updateClock ( )
   document.getElementById("m1").firstChild.nodeValue = String(currentMinutes).substr(0, 1);
   document.getElementById("m2").firstChild.nodeValue = String(currentMinutes).substr(1, 2);
   
-  document.getElementById("s1").firstChild.nodeValue = String(currentSeconds).substr(0, 1);
-  document.getElementById("s2").firstChild.nodeValue = String(currentSeconds).substr(1, 2);
+  //document.getElementById("s1").firstChild.nodeValue = String(currentSeconds).substr(0, 1);
+  //document.getElementById("s2").firstChild.nodeValue = String(currentSeconds).substr(1, 2);
   
   document.getElementById("meridiem1").firstChild.nodeValue = String(timeOfDay).substr(0, 1);
   document.getElementById("meridiem2").firstChild.nodeValue = String(timeOfDay).substr(1, 2);
