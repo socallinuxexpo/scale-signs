@@ -132,7 +132,7 @@ asort($order, SORT_NUMERIC);
     ?>
 				    <tr class="<?php echo $data[$key][5]; ?>" <?php echo "$color"; ?> >
 				      <!-- Day -->
-				      <td> <i class="icon-calendar"></i> <?php echo $data[$key][0]; ?> </td>
+				      <td> <i class="icon-calendar"></i> <span> <?php echo $data[$key][0]; ?> </span> </td>
 				      
 				      <!-- Time -->
 				      <?php
@@ -141,8 +141,10 @@ asort($order, SORT_NUMERIC);
 			        ?>
 					    <td width="12%">
 					      <i class="icon-time"></i>
+					      <span>
 					      <?php if ($times[$key][0] < $minsafter) { echo "In-Progres"; }
 						    else { echo $talk_time; } ?>
+						    </span>
 					    </td>
 					    
 				      <!-- Presenter -->
@@ -154,7 +156,7 @@ asort($order, SORT_NUMERIC);
 					      }
   					    
 					    ?>
-					    <td class="schedulePresenter"> <i class="icon-user"></i> <?php echo $speakerName; ?> </td>
+					    <td class="schedulePresenter"> <i class="icon-user"></i> <span> <?php echo $speakerName; ?> </span></td>
 					    
 					    <!-- Topic -->
 					    <?php 
@@ -165,7 +167,7 @@ asort($order, SORT_NUMERIC);
 					      }
 
 				      ?>
-					    <td> <i class="icon-bullhorn"></i> <?php echo $talk_title; ?> </td>
+					    <td> <i class="icon-bullhorn"></i> <span> <?php echo $talk_title; ?> </span></td>
 					    
 					    <!-- Room -->
 					    <td width="15%"> <i class="icon-info-sign"></i> <?php echo $data[$key][4]; ?> </td>
