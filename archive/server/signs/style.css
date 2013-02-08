@@ -3,7 +3,10 @@
  *
  */
 
-@import url(/bootstrap/css/bootstrap.css);
+/*
+@import url(../font-awesome/css/font-awesome.css);
+@import url(../bootstrap/css/bootstrap.css);
+*/
 
 html {
   font-size: 62.5%;
@@ -18,19 +21,19 @@ body {
 }
 
 @media (max-width: 300px) {
-        html { font-size: 70%; }
+        html { font-size: 70% !important;}
 }
 
 @media (min-width: 500px) {
-        html { font-size: 80%; }
+        html { font-size: 80% !important;}
 }
 
 @media (min-width: 700px) {
-        html { font-size: 120%; }
+        html { font-size: 120% !important;}
 }
 
 @media (min-width: 1200px) {
-        html { font-size: 200%; }
+        html { font-size: 300% !important;}
 }
 
 font { 
@@ -69,8 +72,23 @@ font {
 
 #scheduleCarousel {
   background: #fff;
-  box-shadow: 0 0 30px #4A4A4A;  
+  box-shadow: 0 0 30px #4A4A4A;
+  font-size: 160% !important;  
   /* font-size: 1.5em; */
+}
+
+#scheduleCarousel .table th {
+  line-height: 40px;
+}
+
+#scheduleCarousel .table td span {
+  line-height: 40px;
+}
+
+#scheduleCarousel [class^="icon-"], [class*=" icon-"] {
+  background: none !important;
+  padding-top: 2px;
+  padding-right: 5px;
 }
 
 #sponsors {
