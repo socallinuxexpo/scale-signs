@@ -9,8 +9,7 @@ $xml = simplexml_load_file('http://www.socallinuxexpo.org/scale11x/sign.xml');
 $starttime = mktime(0, 0, 0, 2, 22, 2013) / 60;
 
 #$rightnow = round(time() / 60);
-#$rightnow = mktime(8, 30, 0, 2, 21, 2013) / 60;
-$rightnow = mktime(9, 0, 0, 2, 22, 2013) / 60;
+$rightnow = mktime(14, 0, 0, 2, 22, 2013) / 60;
 $minsafter = $rightnow - $starttime;
 
 $data = array();
@@ -132,7 +131,7 @@ asort($order, SORT_NUMERIC);
     ?>
 				    <tr class="<?php echo $data[$key][5]; ?>" <?php echo "$color"; ?> >
 				      <!-- Day -->
-				      <td> <i class="icon-calendar"></i> <span> <?php echo $data[$key][0]; ?> </span> </td>
+				      <td> <i class="icon-calendar"></i> <span> <?php echo strtoupper(substr($data[$key][0], 0, 3)) ?> </span> </td>
 				      
 				      <!-- Time -->
 				      <?php
@@ -142,7 +141,7 @@ asort($order, SORT_NUMERIC);
 					    <td width="12%">
 					      <i class="icon-time"></i>
 					      <span>
-					      <?php if ($times[$key][0] < $minsafter) { echo "In-Progres"; }
+					      <?php if ($times[$key][0] < $minsafter) { echo "In-Progress"; }
 						    else { echo $talk_time; } ?>
 						    </span>
 					    </td>
@@ -160,8 +159,8 @@ asort($order, SORT_NUMERIC);
 					    
 					    <!-- Topic -->
 					    <?php 
-					      if ( strlen($data[$key][3]) >= 55 ) {
-					        $talk_title = substr($data[$key][3], 0, 55) . "...";					        
+					      if ( strlen($data[$key][3]) >= 50 ) {
+					        $talk_title = substr($data[$key][3], 0, 50) . "...";
 					      } else {
 					        $talk_title = $data[$key][3];					      
 					      }
@@ -191,7 +190,7 @@ asort($order, SORT_NUMERIC);
             <div class="span12 topicList" style="text-align:center;">
 			<!-- <ul class="thumbnails topicList"> -->
 			    <?php foreach ($topics as $topic) {
-                  print "<span class=\"$topic badge\">$topic</span>";
+                  print "<span class=\"badge $topic\">$topic</span>";
 			      #print "<li class=\"span2 $topic\">";
 			      #print '<div class="thumbnail">';
 			      #print "<span class='topicThumb'>$topic</span>";
