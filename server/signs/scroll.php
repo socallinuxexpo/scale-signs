@@ -9,7 +9,7 @@ $xml = simplexml_load_file('http://www.socallinuxexpo.org/scale11x/sign.xml');
 $starttime = mktime(0, 0, 0, 2, 22, 2013) / 60;
 
 #$rightnow = round(time() / 60);
-$rightnow = mktime(14, 0, 0, 2, 22, 2013) / 60;
+$rightnow = mktime(13, 30, 0, 2, 23, 2013) / 60;
 $minsafter = $rightnow - $starttime;
 
 $data = array();
@@ -103,8 +103,9 @@ asort($order, SORT_NUMERIC);
       $items_per_page = 8;
       $odd = 0; $count = 0; $schedule_page = 1;
       foreach ($order AS $key => $value) {
-      
-	      if (($times[$key][0] - 60) <= $minsafter && ($times[$key][1] + 10) >= $minsafter) {
+
+	      if (($times[$key][0] - 60) <= $minsafter && ($times[$key][1]) >= $minsafter) {
+	      //if (($times[$key][0] - 60) <= $minsafter && ($times[$key][1] + 10) >= $minsafter) {
 	      // if ($times[$key][0] > 0) {
 	      
           //
@@ -141,7 +142,7 @@ asort($order, SORT_NUMERIC);
 					    <td width="12%">
 					      <i class="icon-time"></i>
 					      <span>
-					      <?php if ($times[$key][0] < $minsafter) { echo "In-Progress"; }
+					      <?php if ($times[$key][0] <= $minsafter) { echo "In-Progress"; }
 						    else { echo $talk_time; } ?>
 						    </span>
 					    </td>
