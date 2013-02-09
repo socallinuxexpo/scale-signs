@@ -412,7 +412,7 @@ font {
   margin-right: 5px;
 }
 
-.BeginnersTutorials {
+.BeginnerTutorials {
   background-color: #3353AF !important;
   color: #FFF !important;
 }
@@ -447,17 +447,7 @@ font {
   color: #fff !important;
 }
 
-.badge-Kernel {
-  background: #AD9134 !important;
-  color: #fff !important;
-}
-
 .Keynote {
-  background: #D31111 !important;
-  color: #fff !important;
-}
-
-.badge-Keynote {
   background: #D31111 !important;
   color: #fff !important;
 }
@@ -472,19 +462,9 @@ font {
   color: #fff !important;
 }
 
-.badge-MySQL {
-  background: #8B47BB !important;
-  color: #fff !important;
-}
-
 .OpenNMS {
   background: #4D9E00 !important;
   color: #fff !important; 
-}
-
-.badge-OpenNMS {
-  background-color: #4D9E00 !important;
-  color: #fff !important;
 }
 
 .OpenSourceSoftwareInEducation {
