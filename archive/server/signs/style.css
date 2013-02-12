@@ -20,6 +20,7 @@ body {
   background-color: #AAA !important;
 }
 
+/*
 @media (max-width: 300px) {
         html { font-size: 70%;}
 }
@@ -35,6 +36,7 @@ body {
 @media (min-width: 1200px) {
         html { font-size: 300%;}
 }
+*/
 
 font { 
   font-family: 'Arial Black', Gadget, sans-serif; 
