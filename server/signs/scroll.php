@@ -9,12 +9,20 @@ $xml = simplexml_load_file('http://www.socallinuxexpo.org/scale11x/sign.xml');
 $starttime = mktime(0, 0, 0, 2, 22, 2013) / 60;
 
 #$rightnow = round(time() / 60);
-$rightnow = mktime(15, 30, 0, 2, 23, 2013) / 60;
+$rightnow = mktime(10, 45, 0, 2, 23, 2013) / 60;
 $minsafter = $rightnow - $starttime;
 
 $data = array();
 $order = array();
 $times = array();
+
+$shorten_topics = array(
+                        "BeginnerTutorials" => "Beginner Tutorials",
+                        "CloudandVirtualization" => "Cloud and Virtualization",
+                        "FileSystem" => "File System",
+                        "OpenSourceSoftwareInEducation" => "OSSIE",                        
+                        "SysAdmin" => "Sys Admin",
+                        );
 
 foreach ($xml->node AS $node) {
 
@@ -132,7 +140,12 @@ asort($order, SORT_NUMERIC);
     ?>
 				    <tr class="<?php echo $data[$key][5]; ?>" <?php echo "$color"; ?> >
 				      <!-- Day -->
-				      <td> <i class="icon-calendar"></i> <span> <?php echo strtoupper(substr($data[$key][0], 0, 3)) ?> </span> </td>
+				      <td> <i class="icon-calendar"></i> 
+				        <span> 
+				          <!-- <?php echo strtoupper(substr($data[$key][0], 0, 3)) ?>  -->
+				          <?php echo $data[$key][0]; ?> 
+			          </span> 
+		          </td>
 				      
 				      <!-- Time -->
 				      <?php
@@ -191,12 +204,11 @@ asort($order, SORT_NUMERIC);
             <div class="span12 topicList" style="text-align:center;">
 			<!-- <ul class="thumbnails topicList"> -->
 			    <?php foreach ($topics as $topic) {
-                  print "<span class=\"badge $topic\">$topic</span>";
-			      #print "<li class=\"span2 $topic\">";
-			      #print '<div class="thumbnail">';
-			      #print "<span class='topicThumb'>$topic</span>";
-			      #print '</div>';
-			      #print "</li>";
+			            if ( array_key_exists($topic, $shorten_topics) ) {
+                    print "<span class=\"badge $topic\">{$shorten_topics[$topic]}</span>";			            
+			            } else {
+                    print "<span class=\"badge $topic\">$topic</span>";
+			            }
 			    }
 			    ?>
 			<!-- </ul> -->
