@@ -15,7 +15,6 @@
           print '<div class="carousel-inner">';
     }
 ?>
-    <!-- <div class="item sponsor-logo <?php if ( $i % $logos_per_page == 0 ) { echo 'active'; } ?>" style="background-image: url('images/sponsors/<?php if ( $logo < 10 ) { echo "0" . $logo; } else { echo "$logo"; } ?>.png')"> -->
     <div class="item sponsor-logo <?php if ( $i % $logos_per_page == 0 ) { echo 'active'; } ?>" >
       <img class="" src="images/sponsors/<?php if ( $logo < 10 ) { echo "0" . $logo; } else { echo "$logo"; } ?>.png">
     </div>

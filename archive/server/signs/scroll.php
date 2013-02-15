@@ -9,7 +9,7 @@ $xml = simplexml_load_file('http://www.socallinuxexpo.org/scale11x/sign.xml');
 $starttime = mktime(0, 0, 0, 2, 22, 2013) / 60;
 
 #$rightnow = round(time() / 60);
-$rightnow = mktime(19, 0, 0, 2, 22, 2013) / 60;
+$rightnow = mktime(20, 0, 0, 2, 23, 2013) / 60;
 $minsafter = $rightnow - $starttime;
 
 $data = array();
@@ -185,11 +185,11 @@ asort($order, SORT_NUMERIC);
 					    <!-- Room -->
 					    <td width="15%"> <i class="icon-info-sign"></i> 
 					    <?php 
-					      if ( $data[$key][3] == "Game Night" ) {
-					        echo "Plaza Ballroom";
-					      } else {
-					        echo $data[$key][4];
-				        }
+					      //if ( $data[$key][3] == "Game Night" ) {
+					      //  echo "Plaza Ballroom";
+					      //} else {
+					      echo $data[$key][4];
+				       //}
 				      ?>
 				      </td>
 				    </tr>
