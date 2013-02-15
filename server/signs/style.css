@@ -479,14 +479,19 @@ font {
   color: #fff !important;
 }
 
+.Puppet {
+  background: #D2A3E8 !important;
+  color: #000 !important;
+}
+
 .ScaleU {
   background: #405E5E !important;
   color: #fff !important;
 }
 
 .Sponsored {
-  background: #123;
-  color: #fff;
+  background: #007F06 !important;
+  color: #fff !important;
 }
 
 .SysAdmin {
