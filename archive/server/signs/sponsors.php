@@ -3,7 +3,7 @@
     <div id="carousel1" class="sponsorCarousel carousel carousel-fade">
       <div class="carousel-inner">
 <?php 
-  $logos = range(1, 38);
+  $logos = range(1, 39);
   $logos_per_page = 10;
 
   shuffle($logos);  
