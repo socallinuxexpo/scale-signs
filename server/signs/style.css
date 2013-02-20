@@ -414,9 +414,18 @@ font {
   margin-right: 5px;
 }
 
+.DefaultTopic {
+  background-color: rgb(204, 34, 153) !important;
+  color: #fff !important
+}
 .BeginnerTutorials {
   background-color: #3353AF !important;
   color: #FFF !important;
+}
+
+.BoFs {
+  background-color: #FFBC00 !important;
+  color: #000 !important;
 }
 
 .CloudandVirtualization {
@@ -434,6 +443,10 @@ font {
   color: #fff !important;
 }
 
+.EveningEntertainment {
+  background: #B20B77 !important;
+  color: #fff !important;
+}
 .FileSystem {
   background: #FFE81F !important;
   color: #000 !important;
@@ -479,14 +492,19 @@ font {
   color: #fff !important;
 }
 
+.Puppet {
+  background: #D2A3E8 !important;
+  color: #000 !important;
+}
+
 .ScaleU {
   background: #405E5E !important;
   color: #fff !important;
 }
 
 .Sponsored {
-  background: #123;
-  color: #fff;
+  background: #007F06 !important;
+  color: #fff !important;
 }
 
 .SysAdmin {
