@@ -9,7 +9,7 @@ $xml = simplexml_load_file('http://www.socallinuxexpo.org/scale11x/sign.xml');
 $starttime = mktime(0, 0, 0, 2, 22, 2013) / 60;
 
 #$rightnow = round(time() / 60);
-$rightnow = mktime(20, 0, 0, 2, 23, 2013) / 60;
+$rightnow = mktime(12, 45, 0, 2, 22, 2013) / 60;
 $minsafter = $rightnow - $starttime;
 
 $data = array();
@@ -19,6 +19,7 @@ $times = array();
 $shorten_topics = array(
                         "BeginnerTutorials" => "Beginner Tutorials",
                         "CloudandVirtualization" => "Cloud and Virtualization",
+                        "EveningEntertainment" => "Evening Entertainment",
                         "FileSystem" => "File System",
                         "OpenSourceSoftwareInEducation" => "OSSIE",                        
                         "SysAdmin" => "Sys Admin",
