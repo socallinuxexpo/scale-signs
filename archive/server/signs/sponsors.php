@@ -3,11 +3,11 @@
     <div id="carousel1" class="sponsorCarousel carousel carousel-fade">
       <div class="carousel-inner">
 <?php 
-  $logos = range(1, 38);
-  $logos_per_page = 10;
+  $logos = range(1, 41);
+  $logos_per_page = 11;
 
   shuffle($logos);  
-  for ($i = 0; $i < 32 ; $i++) {
+  for ($i = 0; $i < 41 ; $i++) {
     $logo = array_pop($logos);
     if ( $i % $logos_per_page == 0 && $i > 0 ) {
       print "<li>";
@@ -15,7 +15,6 @@
           print '<div class="carousel-inner">';
     }
 ?>
-    <!-- <div class="item sponsor-logo <?php if ( $i % $logos_per_page == 0 ) { echo 'active'; } ?>" style="background-image: url('images/sponsors/<?php if ( $logo < 10 ) { echo "0" . $logo; } else { echo "$logo"; } ?>.png')"> -->
     <div class="item sponsor-logo <?php if ( $i % $logos_per_page == 0 ) { echo 'active'; } ?>" >
       <img class="" src="images/sponsors/<?php if ( $logo < 10 ) { echo "0" . $logo; } else { echo "$logo"; } ?>.png">
     </div>

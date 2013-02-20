@@ -8,8 +8,8 @@ $xml = simplexml_load_file('http://www.socallinuxexpo.org/scale11x/sign.xml');
 
 $starttime = mktime(0, 0, 0, 2, 22, 2013) / 60;
 
-#$rightnow = round(time() / 60);
-$rightnow = mktime(10, 45, 0, 2, 23, 2013) / 60;
+$rightnow = round(time() / 60);
+#$rightnow = mktime(20, 30, 0, 2, 22, 2013) / 60;
 $minsafter = $rightnow - $starttime;
 
 $data = array();
@@ -19,6 +19,7 @@ $times = array();
 $shorten_topics = array(
                         "BeginnerTutorials" => "Beginner Tutorials",
                         "CloudandVirtualization" => "Cloud and Virtualization",
+                        "EveningEntertainment" => "Evening Entertainment",
                         "FileSystem" => "File System",
                         "OpenSourceSoftwareInEducation" => "OSSIE",                        
                         "SysAdmin" => "Sys Admin",
@@ -49,24 +50,7 @@ foreach ($xml->node AS $node) {
 		$name = (string) $node->Speaker;
 	}
 	$data[] = array((string) $node->Day, $thistime, $name, (string) $node->Title, (string) $node->Room, (string) $node->Topic);
-	
-	/*
-	$realtime = explode(" ", $thistime);
-	$realstime = explode(" ", $thisend);
-	$handm = explode(":", $realtime[0]);
-	if ($realtime[1] == "PM" && $handm[0] != "12") {
-		$mfromm = (($handm[0] + 12) * 60) + $handm[1];
-	} else {
-		$mfromm = ($handm[0] * 60) + $handm[1];
-	}
-	$handme = explode(":", $realstime[0]);
-	if ($realstime[1] == "PM" && $handme[0] != "12") {
-		$mfromme = (($handme[0] + 12) * 60) + 60 + $handme[1];
-	} else {
-		$mfromme = ($handme[0] * 60) + 60 + $handme[1];
-	}
-	*/
-	
+		
 	$realtime = $thistime;
 	$realstime = $thisend;
 	$handm = explode(":", $realtime);
@@ -183,7 +167,15 @@ asort($order, SORT_NUMERIC);
 					    <td> <i class="icon-bullhorn"></i> <span> <?php echo $talk_title; ?> </span></td>
 					    
 					    <!-- Room -->
-					    <td width="15%"> <i class="icon-info-sign"></i> <?php echo $data[$key][4]; ?> </td>
+					    <td width="15%"> <i class="icon-info-sign"></i> 
+					    <?php 
+					      //if ( $data[$key][3] == "Game Night" ) {
+					      //  echo "Plaza Ballroom";
+					      //} else {
+					      echo $data[$key][4];
+				       //}
+				      ?>
+				      </td>
 				    </tr>
     <?php
     
