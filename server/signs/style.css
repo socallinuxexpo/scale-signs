@@ -10,14 +10,14 @@
 
 html {
   font-size: 62.5%;
-  background-color: #AAA;
+  background-color: #FFF;
 }
 
 body {
   font-size: 1em;
   padding-top: 0px;
   padding-bottom: 0px;
-  background-color: #AAA !important;
+  background-color: #FFF !important;
 }
 
 /*
@@ -38,6 +38,10 @@ body {
 }
 */
 
+.main-container {
+  width: 99%;
+}
+
 font { 
   font-family: 'Arial Black', Gadget, sans-serif; 
   color:black; 
@@ -45,7 +49,7 @@ font {
 }
 
 #contents {
-  background: #AAA;
+  background: #FFF;
   -webkit-border-radius: 0px 0px 6px 6px;
   -moz-border-radius: 0px 0px 6px 6px;
   border-radius: 0px 0px 6px 6px;
@@ -54,7 +58,7 @@ font {
 }
 
 #header {
-  background: #AAA;
+  background: #FFF;
   -webkit-border-radius: 6px 6px 0px 0px;
   -moz-border-radius: 6px 6px 0px 0px;
   border-radius: 6px 6px 0px 0px;
@@ -67,7 +71,7 @@ font {
 }
 
 #mainContainer {
-  background-color: #AAA;
+  background-color: #FFF;
   width: 99%;
 }
 
@@ -100,8 +104,12 @@ font {
   padding-right: 5px;
 }
 
+.schedule {
+  background-color: #FFF;
+}
+
 #sponsors {
-  background: #AAA;
+  background: #FFF;
 }
 
 #timerCell {
@@ -140,9 +148,15 @@ font {
   -webkit-border-radius: 6px 6px 6px 6px;
   -moz-border-radius: 6px 6px 6px 6px;
   border-radius: 6px 6px 6px 6px;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   vertical-align: middle;
+}
+
+.carousel-inner .sponsor-logo img {
+  max-width: 100%;
+  width: 300px;
+  height: 300px;
 }
 
 .clock {
@@ -223,15 +237,17 @@ font {
 	list-style: none;
 }
 
+.sponsorList li {
+  padding-bottom: 5px;
+  display: inline;
+}
+
 /*
 .carousel .item {-webkit-transition: opacity 3s; -moz-transition: opacity 3s; -ms-transition: opacity 3s; -o-transition: opacity 3s; transition: opacity 3s;}
 .carousel .active.left {left:0;opacity:0;z-index:2;}
 .carousel .next {left:0;opacity:1;z-index:1;}
 */
 
-.sponsor-logo img {
-
-}
 
 .table td {
   text-align: center;
@@ -303,8 +319,9 @@ font {
 }
 
 .topicList {
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
+    padding-top: 10px;
     padding-bottom: 10px;
     background-color: none;
 }
@@ -326,6 +343,9 @@ font {
 
 .tweet {
   position: relative;
+  border-color: #000;
+  border-width: 1px;
+  border-style: solid;
   -webkit-border-radius: 6px 6px 6px 6px;
   -moz-border-radius: 6px 6px 6px 6px;
   border-radius: 6px 6px 6px 6px;
@@ -333,6 +353,7 @@ font {
   margin: 0px;
   margin-bottom: 10px;
   padding: 0px;
+  box-shadow: 0 0 10px #4A4A4A;  
 }
 
 .tweetpromote {

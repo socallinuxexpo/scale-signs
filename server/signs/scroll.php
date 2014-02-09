@@ -1,15 +1,13 @@
-<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-
 <?php
 
 #$xml = simplexml_load_file('http://scale10x.unbuilt.org/sign.xml');
-$xml = simplexml_load_file('http://www.socallinuxexpo.org/scale11x/sign.xml');
+$xml = simplexml_load_file('http://www.socallinuxexpo.org/scale12x/sign.xml');
 #$xml = simplexml_load_file('sign.xml');
 
-$starttime = mktime(0, 0, 0, 2, 22, 2013) / 60;
+$starttime = mktime(0, 0, 0, 2, 21, 2014) / 60;
 
-$rightnow = round(time() / 60);
-#$rightnow = mktime(20, 30, 0, 2, 22, 2013) / 60;
+#$rightnow = round(time() / 60);
+$rightnow = mktime(15, 30, 0, 2, 22, 2014) / 60;
 $minsafter = $rightnow - $starttime;
 
 $data = array();
@@ -43,6 +41,12 @@ foreach ($xml->node AS $node) {
 		$thistime = substr((string) $node->{'Time'}, 0, $pos);
 		$thisend = substr((string) $node->{'Time'}, $lpos + 2);
 	}
+
+    //list($thistime, $foo) = split(" to ", $thistime, 2);
+    //list($thisend, $foo) = split(" to ", $thisend, 2);
+
+    //print "thistime: $thistime<br>";
+    //print "thisend: $thisend<br>";
 	
 	if ((string) $node->Speaker == "- -") {
 		$name = '';
@@ -88,8 +92,8 @@ asort($order, SORT_NUMERIC);
 		    <div class="carousel-inner">	  
 		      <div id="schedule-1-content" class="active item">
 			    <table cellpadding=2 cellspacing=1 class="table table-bordered">
-          <tr bgcolor="#fff"><th>Day</th><th>Start Time</th><th>Presenter</th><th>Topic</th><th>Room</th></tr>
-		      <tbody>
+                <tr bgcolor="#fff"><th>Time</th><th>Presenter</th><th>Topic</th><th>Room</th></tr>
+                <tbody>
     <?php 
       $topics = array();
       $items_per_page = 8;
@@ -116,41 +120,48 @@ asort($order, SORT_NUMERIC);
 		        print "</table>";
 		        print "</div>";
 		        print "<div id=\"schedule-$schedule_page-content\" class=\"item\">";
-			      print "<table cellpadding=2 cellspacing=1 class=\"table table-bordered\">";
-			      print "<tr bgcolor='#fff'><th>Day</th><th>Start Time</th><th>Presenter</th><th>Topic</th><th>Room</th></tr>";
+			    print "<table cellpadding=2 cellspacing=1 class=\"table table-bordered\">";
+			    print "<tr bgcolor='#fff'><th>Time</th><th>Presenter</th><th>Topic</th><th>Room</th></tr>";
 		      }
 		      $count++; 
 
     ?>
 				    <tr class="<?php echo $data[$key][5]; ?>" <?php echo "$color"; ?> >
 				      <!-- Day -->
+                      <!--
 				      <td> <i class="icon-calendar"></i> 
 				        <span> 
-				          <!-- <?php echo strtoupper(substr($data[$key][0], 0, 3)) ?>  -->
 				          <?php echo $data[$key][0]; ?> 
 			          </span> 
-		          </td>
+		              </td>
+                      -->
 				      
 				      <!-- Time -->
 				      <?php
 				        // Convert to human friendly format
-                $talk_time = date("h:i A", strtotime($data[$key][1]));
-			        ?>
-					    <td width="12%">
+                        //$talk_time = date("h:i A", strtotime($data[$key][1]));
+                        $talk_time = $data[$key][1];
+                        list($start_time, $end_time) = split(" to ", $talk_time, 2);
+                        $start_time = date("h:i a", strtotime($start_time));
+                        $end_time = date("h:i a", strtotime($end_time));
+
+
+                        ?>
+					    <td width="15%">
 					      <i class="icon-time"></i>
 					      <span>
-					      <?php if ($times[$key][0] <= $minsafter) { echo "In-Progress"; }
-						    else { echo $talk_time; } ?>
+					      <?php if ($times[$key][0] <= $minsafter) { echo "In-Progress until $end_time"; }
+						    else { echo "$start_time to $end_time"; } ?>
 						    </span>
 					    </td>
 					    
 				      <!-- Presenter -->
 				      <?php
 				        if ( strlen($data[$key][2]) >= 20 ) { 
-                  $speakerName = substr($data[$key][2], 0, 20) . "...";
+                            $speakerName = substr($data[$key][2], 0, 20) . "...";
   					    } else {
-  					      $speakerName = $data[$key][2];
-					      }
+                            $speakerName = $data[$key][2];
+                        }
   					    
 					    ?>
 					    <td class="schedulePresenter"> <i class="icon-user"></i> <span> <?php echo $speakerName; ?> </span></td>
@@ -184,7 +195,9 @@ asort($order, SORT_NUMERIC);
     if ( $count < ($schedule_page * $items_per_page) ) {
       $filler = ($schedule_page * $items_per_page) - $count;
       for ($i = 0; $i < $filler; $i++) {
-        print "<tr bgcolor='#fff'><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>";
+        //print "<tr bgcolor='#fff'><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>";
+        print "<tr bgcolor='#fff'><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>";
+
       }
     }    
     ?>
@@ -193,8 +206,7 @@ asort($order, SORT_NUMERIC);
 			  </div>
 			</div>
 			
-            <div class="span12 topicList" style="text-align:center;">
-			<!-- <ul class="thumbnails topicList"> -->
+          <div class="topicList" style="text-align:center;">
 			    <?php foreach ($topics as $topic) {
 			            if ( array_key_exists($topic, $shorten_topics) ) {
                     print "<span class=\"badge $topic\">{$shorten_topics[$topic]}</span>";			            
@@ -203,10 +215,9 @@ asort($order, SORT_NUMERIC);
 			            }
 			    }
 			    ?>
-			<!-- </ul> -->
-            </div>
+          </div>
 
-<script src="js/jquery-1.8.2.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>    
 <script src="bootstrap/js/bootstrap.js"></script>
 <script type="text/javascript">
 

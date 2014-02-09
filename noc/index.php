@@ -124,8 +124,8 @@
   <body>
     <div class="container main-container">
 
-      <div class="row">        
-          <img src="noc-penguin-header.png">
+      <div class="header row">        
+          <img src="noc-penguin-header4.png">
       </div>
 
       <div class="row"><hr></div>

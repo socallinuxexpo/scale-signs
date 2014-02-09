@@ -31,26 +31,26 @@
   <!-- Begin Main Container -->
   <div id="mainContainer" class="container" style="background: #AAA;">
     <!-- Begin Fluid Row -->
-    <div class="row-fluid">  
+    <div class="row">  
       <!-- Begin Header Div -->
-      <div id="header" class="span12 container-fluid">
+      <div id="header" class="col-md-12">
         <!-- Begin Row Div -->
-        <div class="row-fluid">
+        <div class="row">
           <!-- <div class="span2"></div> -->
           <!-- Begin span6 -->
-          <div class="span12">
+          <div class="">
             <!-- Begin Knob Div -->
-            <div class="span3 knobspan">
+            <div class="col-md-3 knobspan">
               <img src="images/11x_knob100.png" height="126" width="100" />
               <img src="images/scale11x-logo60.png" height="60" width="263" />              
             </div>
             <!-- End Knob -->           
             <!-- Begin & End of Logo Span -->
             <!-- Begin Tag Span and Clock -->
-            <div class="span6 tagspan">
-              <h2 class="brand">Southern California Linux Expo</h2>
+            <div class="col-md-6 tagspan">
+              <h3 class="brand">Southern California Linux Expo</h3>
             </div>
-            <div class="span3 tagspan">            
+            <div class="col-md-3 tagspan">            
               <ul class="clock">
                 <li><div id="h1" class="card">&nbsp;</div></li>
                 <li><div id="h2" class="card">&nbsp;</div></li>          
@@ -81,25 +81,25 @@
     <hr />
     
     <!-- Begin Fluid Row -->
-    <div class="row-fluid">
+    <div class="row">
       <!-- Begin Sponsor Span -->
-      <div id="sponsorSpan" class="span2">
-        <div id="sponsors" class="row-fluid">
+      <div id="sponsorSpan" class="col-md-2">
+        <div id="sponsors" class="row">
         </div>
       </div>
       <!-- End Sponsor Span -->
       <!-- Begin Main Div -->
-      <div id="MainSpan10" class="span10">
+      <div id="MainSpan10" class="col-md-10">
 
         <!-- Begin Schedule & Twitter Div -->
-        <div id="contents" class="span12 container">
+        <div id="contents" class="container">
             <!-- Schedule -->
-            <div id="schedule" class="row-fluid">
+            <div id="schedule" class="row">
             </div>
             
             <!-- Twitter -->
-            <div id="twitter" class="row-fluid">
-              <h2>#scale11x</h2>
+            <div id="twitter" class="row">
+              <h2>#scale12x</h2>
               <div id="twitter-stream-content"></div>
             </div>
 
@@ -111,7 +111,7 @@
     <!-- End Fluid Row -->
     
     <!-- Begin Footer Fluid Row -->
-      <div id="footer" class="row-fluid">
+      <div id="footer" class="row">
         <footer class="copyright"><p>&copy; Southern California Linux Expo 2013</p></footer>
       </div>
     <!-- End Fluid Row -->    

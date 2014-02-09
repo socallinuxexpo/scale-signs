@@ -56,3 +56,12 @@ hr {
 .header img {
     max-width: 100%; 
 }
+
+.sponsorList {
+  list-style: none;
+}
+
+.sponsor-logo {
+  max-width: 100%;
+  text-align: center;
+}
