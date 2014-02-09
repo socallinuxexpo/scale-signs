@@ -3,8 +3,18 @@
 function search_twitter()
 {
 
-	require "TwitterSearch.phps";
+	//require "TwitterSearch.phps";
 	
+    require_once('TwitterAPIExchange.php');
+
+	/** Set access tokens here - see: https://dev.twitter.com/apps/ **/
+	$settings = array(
+	    'oauth_access_token' => "14053355-Qs1Ak2XOeFJFUuogLC7Yc6gDRhTLxDmp88AhX8PYg",
+	    'oauth_access_token_secret' => "3pR09a4ibPBDy8fy4dtkcmmQJKMJDn9UqWS4B7wQvyOl7",
+	    'consumer_key' => "AykYbVCFhRml9KhO5jbQ",
+	    'consumer_secret' => "g8fH1U56jFYJwCrLOYI0npye9rmhV02IuyCt8Yu6iQ"
+	);
+
   // Any Twitter Accounts to Highlight
   $promote = array(
     "socallinuxexpo",
@@ -14,26 +24,27 @@ function search_twitter()
   $blacklist = array(
   );
 	
-	//$search = new TwitterSearch('#scale11x');
-	$search = new TwitterSearch();
-	$search->rpp(100);
-	$search->with("#scale11x");
-	$results = $search->results();
+	$url = 'https://api.twitter.com/1.1/search/tweets.json';
+	$getfield = '?q=#scale12x';
+	$requestMethod = 'GET';
 	
+	$twitter = new TwitterAPIExchange($settings);
+	$response = $twitter->setGetfield($getfield)
+	                    ->buildOauth($url, $requestMethod)
+	                   ->performRequest();
+
+	$results = json_decode($response, TRUE);
+
 	$count = 0;
 	
-	//print_r($results);
-	
   print '<div class="item active">';
-	foreach ($results as $i => $value) {
-	
-	  $total_results = count($results);
-		$logo = $value->profile_image_url;
-		$user = $value->from_user;
-		$user_name = $value->from_user_name;
-		$comment = $value->text;
+  foreach ($results['statuses'] as $status) {
+		$logo = $status['user']['profile_image_url'];
+		$name = $status['user']['name'];
+		$screen_name = $status['user']['screen_name'];
+		$comment = $status['text'];
 		
-		$created = date("F d, Y h:i a", strtotime($value->created_at));
+		$created = date("F d, Y h:i a", strtotime($status->created_at));
 		$rightnow = round(time() / 60);
 		
 		$time_diff = $rightnow - $created;
@@ -48,36 +59,23 @@ function search_twitter()
     }
 
     if (in_array($user, $promote)) {    
-      print '<div class="tweet tweetpromote row-fluid">';
+      print '<div class="tweet tweetpromote media">';
     } else {
-      print '<div class="tweet row-fluid">';
+      print '<div class="tweet media">';
     }
-    //
-    // Promote certain users
-    //
-      print "<!-- Begin TweetUserIcon -->";
-      print '<div class="span4 tweetusericon">';
-      
-        print "<!-- Begin TweetIcon -->";
-        print "<div class='span2 tweeticon'>";		  
-	        print "<img class=\"img-rounded\" src=\"$logo\">";
-	      print "</div>";
-        print "<!-- End TweetIcon -->";
-	              
-	      print "<!-- Begin Tweet User -->";
-		    print "<div class='span8 tweetuser'>";
-		      print " <span class='tweetuser_name'>$user_name</span><br />@$user ";
-	      print "</div>";
-	      print "<!-- End Tweet User -->";
 	    
-	    print "</div>";
-	    print "<!-- End Tweet User Icon -->";
-	    
-	    print "<div class=\"span8 tweetcomment\">$comment</div>";
-  		print "<div class=\"tweet-time\">$created</div>";
-		print '</div>';
+	  //  print "<div class=\"span8 tweetcomment\">$comment</div>";
+  	//	print "<div class=\"tweet-time\">$created</div>";
 
-    
+    print '<a class="pull-left" href="#">';
+      print "<img class='media-object' src=\"$logo\">";
+    print '</a>';
+
+    print '<div class="media-body'>
+      print "<h3 class='media-heading'>$name</span> -- @$screen_name</h4>";
+      print "<h4>$comment</h4>";
+    print "</div>";
+
 		$count += 1;
 
 	}
