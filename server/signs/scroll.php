@@ -1,8 +1,6 @@
 <?php
-
-#$xml = simplexml_load_file('http://scale10x.unbuilt.org/sign.xml');
+ 
 $xml = simplexml_load_file('http://www.socallinuxexpo.org/scale12x/sign.xml');
-#$xml = simplexml_load_file('sign.xml');
 
 $starttime = mktime(0, 0, 0, 2, 21, 2014) / 60;
 
@@ -42,12 +40,6 @@ foreach ($xml->node AS $node) {
 		$thisend = substr((string) $node->{'Time'}, $lpos + 2);
 	}
 
-    //list($thistime, $foo) = split(" to ", $thistime, 2);
-    //list($thisend, $foo) = split(" to ", $thisend, 2);
-
-    //print "thistime: $thistime<br>";
-    //print "thisend: $thisend<br>";
-	
 	if ((string) $node->Speaker == "- -") {
 		$name = '';
 	} else {
@@ -150,9 +142,14 @@ asort($order, SORT_NUMERIC);
 					    <td width="15%">
 					      <i class="icon-time"></i>
 					      <span>
-					      <?php if ($times[$key][0] <= $minsafter) { echo "In-Progress until $end_time"; }
-						    else { echo "$start_time to $end_time"; } ?>
-						    </span>
+					      <?php
+                            if ($times[$key][0] <= $minsafter) {
+                                echo "In-Progress until $end_time";
+                            } else {
+                                echo "$start_time to $end_time";
+                            }
+                          ?>
+						  </span>
 					    </td>
 					    
 				      <!-- Presenter -->
