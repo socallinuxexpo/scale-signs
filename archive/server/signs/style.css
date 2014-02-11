@@ -66,6 +66,19 @@ font {
   width: 100%;
 }
 
+.roomHeader {
+  font-weight: bold;
+  text-align: center; 
+  background-color: #ffc000;  
+  -webkit-border-radius: 6px 6px 0px 0px;
+  -moz-border-radius: 6px 6px 0px 0px;
+  border-radius: 6px 6px 0px 0px;
+  border-style: solid;
+  border-color: #eee;
+  padding: 0px 20px 0px 25px;
+  width: 100%;
+}
+
 #footer {
 
 }
