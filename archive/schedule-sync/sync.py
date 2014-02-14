@@ -64,19 +64,17 @@ def add_talk(talk_id, talk_data):
     #address
     #scale_speaker
 
-    request = "{0}{1}{2}?api_key={3}&format=json&strip_html=Y&custom_data=Y&session_start={4}&session_end={5}" .\
+    request = "{0}{1}{2}?api_key={3}&session_start={4}&session_end={5}" .\
               format(sched_org_url,
                      sched_org_session,
                      sched_org_add,
                      sched_org_api_key,
                      talk_data['start_time'],
                      talk_data['end_time'],
-                     session_endt,
               )
 
     payload = {'session_key': talk_id,
                'name': talk_data['title'],
-               'session_start': talk_data['start_time'],
                'session_type': talk_data['topic'],
                'description': talk_data['short_abstract'],
                'venue': talk_data['room'],
@@ -86,8 +84,34 @@ def add_talk(talk_id, talk_data):
     r = requests.get(request, params=payload)
     print r.url
 
-def modify_talk(talk_id, talk_data):
-    print talk_id, talk_data
+def mod_talk(talk_id, mod_items):
+
+    request = "{0}{1}{2}?api_key={3}" .\
+              format(sched_org_url,
+                     sched_org_session,
+                     sched_org_mod,
+                     sched_org_api_key,
+              )
+
+    payload = {'session_key': talk_id}
+
+    if 'title' in mod_items:
+        payload['name'] = mod_items['title']
+
+    if 'topic' in mod_items:
+        payload['session_type'] = mod_items['topic']
+
+    if 'short_abstract' in mod_items:
+        payload['description'] = mod_items['short_abstract']
+
+    if 'room' in mod_items:
+        payload['venue'] = mod_items['room']
+
+    if 'scale_speaker' in mod_items:
+        payload['scale_speaker'] = mod_items['scale_speaker']
+
+    r = requests.get(request, params=payload)
+    print r.url
 
 def download_schedule(xml):
     #dom = minidom.parse(urllib.urlopen(xml))
@@ -123,10 +147,10 @@ def main():
 
         parser.feed(talk_time)
         start_time = datetime.strptime(parser.results['date-display-start'], \
-                    "%Y-%m-%dT%H:%M:%S-08:00").strftime("%Y-%m-%d+%H:%M%p").lower()
+                    "%Y-%m-%dT%H:%M:%S-08:00").strftime("%Y-%m-%d+%I:%M%p").lower()
 
         end_time = datetime.strptime(parser.results['date-display-end'], \
-                   "%Y-%m-%dT%H:%M:%S-08:00").strftime("%Y-%m-%d+%H:%M%p").lower()
+                   "%Y-%m-%dT%H:%M:%S-08:00").strftime("%Y-%m-%d+%I:%M%p").lower()
 
         m = hashlib.md5()
         m.update("{0} {1}" . format(room, start_time))
@@ -138,7 +162,8 @@ def main():
         talks_from_xml[talk_id]['scale_speaker'] = speaker
         talks_from_xml[talk_id]['start_time'] = start_time
         talks_from_xml[talk_id]['end_time'] = end_time
-        talks_from_xml[talk_id]['short_abstract'] = strip_tags(short_abstract)
+        #talks_from_xml[talk_id]['short_abstract'] = strip_tags(short_abstract)[1:].replace('  ',' ')
+        talks_from_xml[talk_id]['short_abstract'] = short_abstract
 
     request = "{0}{1}{2}?api_key={3}&format=json&strip_html=Y&custom_data=Y" .\
               format(sched_org_url,
@@ -156,15 +181,26 @@ def main():
         talks_from_sched_org[talk_id] = {}
 
         talks_from_sched_org[talk_id]['title'] = item['name']
-        talks_from_sched_org[talk_id]['room'] = item['venue']
+
+        if 'venue' in item:
+            talks_from_sched_org[talk_id]['room'] = item['venue']
+        else:
+            talks_from_sched_org[talk_id]['room'] = ""
 
         if 'scale_speaker' in item:
             talks_from_sched_org[talk_id]['scale_speaker'] = item['scale_speaker']
         else:
             talks_from_sched_org[talk_id]['scale_speaker'] = ""
 
-        talks_from_sched_org[talk_id]['start_time'] = item['event_start']
-        talks_from_sched_org[talk_id]['end_time'] = item['event_end']
+        talks_from_sched_org[talk_id]['topic'] = item['event_type']
+
+        talks_from_sched_org[talk_id]['start_time'] = \
+            datetime.strptime(item['event_start'], \
+            "%Y-%m-%d %H:%M").strftime("%Y-%m-%d+%I:%M%p").lower()
+
+        talks_from_sched_org[talk_id]['end_time'] = \
+            datetime.strptime(item['event_end'], \
+            "%Y-%m-%d %H:%M").strftime("%Y-%m-%d+%I:%M%p").lower()
 
         if 'description' in item:
             talks_from_sched_org[talk_id]['short_abstract'] = item['description']
@@ -172,12 +208,22 @@ def main():
             talks_from_sched_org[talk_id]['short_abstract'] = ""
 
     for talk in talks_from_xml:
-        print talk
         if talk in talks_from_sched_org:
-            print "talk in sched.org, compare values"
+            match = True
+            mod_items = {}
+            for item in talks_from_xml[talk].keys():
+                if not talks_from_xml[talk][item] == talks_from_sched_org[talk][item]:
+                    mod_items[item] = talks_from_xml[talk][item]
+                    match = False
+            if not match:
+                print "need to mod"
+                mod_talk(talk, mod_items)        
+            else:
+                print "no need to mod"
+                pass
         else:
             print "talk not in sched.org, add"
-            #add_talk(talk, talks_from_xml[talk])        
+            add_talk(talk, talks_from_xml[talk])        
 
 if __name__ == "__main__":
     main()
