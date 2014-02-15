@@ -111,7 +111,6 @@ def mod_talk(talk_id, mod_items):
         payload['scale_speaker'] = mod_items['scale_speaker']
 
     r = requests.get(request, params=payload)
-    print r.url
 
 def download_schedule(xml):
     #dom = minidom.parse(urllib.urlopen(xml))
@@ -220,7 +219,6 @@ def main():
                 mod_talk(talk, mod_items)        
             else:
                 print "no need to mod"
-                pass
         else:
             print "talk not in sched.org, add"
             add_talk(talk, talks_from_xml[talk])        

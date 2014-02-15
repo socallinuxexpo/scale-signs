@@ -5,6 +5,70 @@ if (!empty($_GET["room"])) {
    $room = "";
 }
  
+$sponsors_to_rooms = array(
+                "LaJolla" => array(
+                                    "Friday" => array("Verizon-Edgecast", "MediaTemple", "Ansible", "Cars.com", "DTK.io"),
+                                    "Saturday" => array("Joyent"),
+                                    "Sunday" => array("Joyent"),
+                            ),
+                "Carmel" => array(
+                                    "Friday" => array("open-at-citrix"),
+                                    "Saturday" => array("Q"),
+                                    "Sunday" => array("Joyent"),
+                            ),
+                "CenturyAB" => array(
+                                    "Friday" => array("RedHat"),
+                                    "Saturday" => array(""),
+                                    "Sunday" => array(""),
+                            ),
+                "CenturyCD" => array(
+                                    "Friday" => array("PuppetLabs"),
+                                    "Saturday" => array(""),
+                                    "Sunday" => array(""),
+                            ),
+                "LosAngelesA" => array(
+                                    "Friday" => array("Mysql-Oracle"),
+                                    "Saturday" => array(""),
+                                    "Sunday" => array(""),
+                            ),
+                "LosAngelesB" => array(
+                                    "Friday" => array(""),
+                                    "Saturday" => array(""),
+                                    "Sunday" => array(""),
+                            ),
+                "LosAngelesC" => array(
+                                    "Friday" => array(""),
+                                    "Saturday" => array(""),
+                                    "Sunday" => array(""),
+                            ),
+                "BelAir" => array(
+                                    "Friday" => array("LPI"),
+                                    "Saturday" => array("Google"),
+                                    "Sunday" => array("OneCourseSource"),
+                            ),
+                "Marina" => array(
+                                    "Friday" => array(""),
+                                    "Saturday" => array("Google"),
+                                    "Sunday" => array("Google"),
+
+                            ),
+                "SanLorenzoD" => array(
+                                    "Friday" => array("LOPSA"),
+                                    "Saturday" => array("HP"),
+                                    "Sunday" => array("HP"),
+                            ),
+                "SanLorenzoE" => array(
+                                    "Friday" => array("Rackspace"),
+                                    "Saturday" => array("Rackspace"),
+                                    "Sunday" => array("Rackspace"),
+                            ),
+                "SanLorenzoF" => array(
+                                    "Friday" => array("Chef"),
+                                    "Saturday" => array("Chef"),
+                                    "Sunday" => array("SaltStack"),
+                            ),
+                );
+
 $xml = simplexml_load_file('http://www.socallinuxexpo.org/scale12x/sign.xml');
 
 $starttime = mktime(0, 0, 0, 2, 21, 2014) / 60;
@@ -134,6 +198,11 @@ asort($order, SORT_NUMERIC);
                             } else {
                                 echo "<h2 style='text-align: center;'>$start_time to $end_time</h2>";
                             }
+
+                            $day = $data[$key][0];
+                            $sponsors_for_room = $sponsors_to_rooms[$room][$day];
+
+                            print_r($sponsors_for_room);
                         ?>
                     </div>
                 </div>
@@ -144,9 +213,14 @@ asort($order, SORT_NUMERIC);
     }
     ?>
     	    <div class="<?php if ($count == 0) { echo "active"; } ?> item">
-                <div class="media" style=">
-                    <div class="row"
-                        <div class="col-md-2 col-md-offset-5"><img src="images/wifi-pass.png"></div>
+                <div class="media">
+                    <div class="row">
+                        <div class="col-md-12" style="text-align: center; vertical-align: middle;">
+                            <div class="well" style="height: 480px; vertical-align: middle;">
+                            <div class="row">&nbsp;</div>
+                            <img src="images/WiFi-Sign.png">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -160,7 +234,7 @@ asort($order, SORT_NUMERIC);
 
   $(document).ready(function() {
     $('#scheduleCarousel').carousel({
-      interval: 10000,
+      interval: 5000,
     });
   });
 
