@@ -4,7 +4,30 @@ if (!empty($_GET["room"])) {
 } else {
    $room = "";
 }
- 
+
+$sponsors = array(
+                "Verizon-Edgecast"  => "32.png",
+                "MediaTemple"       => "19.png",
+                "Ansible"           => "02.png",
+                "Cars.com"          => "04.png",
+                "DTK.io"            => "10.png",
+                "Citrix"            => "07.png",
+                "Joyent"            => "16.png",
+                "RedHat"            => "26.png",
+                "PuppetLabs"        => "23.png",
+                "Mysql"             => "20.png",
+                "Google"            => "12.png",
+                "LPI"               => "33.png",
+                "OneCourseSource"   => "34.png",
+                "Rackspace"         => "24.png",
+                "HP"                => "13.png",
+                "Chef"              => "06.png",
+                "SaltStack"         => "27.png",
+                "LOPSA"             => "36.png",
+                "Fedora"            => "11.png"
+
+    );
+
 $sponsors_to_rooms = array(
                 "LaJolla" => array(
                                     "Friday" => array("Verizon-Edgecast", "MediaTemple", "Ansible", "Cars.com", "DTK.io"),
@@ -12,34 +35,34 @@ $sponsors_to_rooms = array(
                                     "Sunday" => array("Joyent"),
                             ),
                 "Carmel" => array(
-                                    "Friday" => array("open-at-citrix"),
+                                    "Friday" => array("Citrix"),
                                     "Saturday" => array("Q"),
-                                    "Sunday" => array("Joyent"),
+                                    "Sunday" => array("Q"),
                             ),
                 "CenturyAB" => array(
                                     "Friday" => array("RedHat"),
-                                    "Saturday" => array(""),
-                                    "Sunday" => array(""),
+                                    "Saturday" => array(),
+                                    "Sunday" => array(),
                             ),
                 "CenturyCD" => array(
                                     "Friday" => array("PuppetLabs"),
-                                    "Saturday" => array(""),
-                                    "Sunday" => array(""),
+                                    "Saturday" => array(),
+                                    "Sunday" => array(),
                             ),
                 "LosAngelesA" => array(
-                                    "Friday" => array("Mysql-Oracle"),
-                                    "Saturday" => array(""),
-                                    "Sunday" => array(""),
+                                    "Friday" => array("Mysql"),
+                                    "Saturday" => array(),
+                                    "Sunday" => array(),
                             ),
                 "LosAngelesB" => array(
-                                    "Friday" => array(""),
-                                    "Saturday" => array(""),
-                                    "Sunday" => array(""),
+                                    "Friday" => array(),
+                                    "Saturday" => array(),
+                                    "Sunday" => array(),
                             ),
                 "LosAngelesC" => array(
-                                    "Friday" => array(""),
-                                    "Saturday" => array(""),
-                                    "Sunday" => array(""),
+                                    "Friday" => array(),
+                                    "Saturday" => array(),
+                                    "Sunday" => array(),
                             ),
                 "BelAir" => array(
                                     "Friday" => array("LPI"),
@@ -47,7 +70,7 @@ $sponsors_to_rooms = array(
                                     "Sunday" => array("OneCourseSource"),
                             ),
                 "Marina" => array(
-                                    "Friday" => array(""),
+                                    "Friday" => array(),
                                     "Saturday" => array("Google"),
                                     "Sunday" => array("Google"),
 
@@ -74,7 +97,7 @@ $xml = simplexml_load_file('http://www.socallinuxexpo.org/scale12x/sign.xml');
 $starttime = mktime(0, 0, 0, 2, 21, 2014) / 60;
 
 #$rightnow = round(time() / 60);
-$rightnow = mktime(11, 30, 0, 2, 21, 2014) / 60;
+$rightnow = mktime(11, 30, 0, 2, 22, 2014) / 60;
 $minsafter = $rightnow - $starttime;
 
 $data = array();
@@ -200,10 +223,12 @@ asort($order, SORT_NUMERIC);
                             }
 
                             $day = $data[$key][0];
-                            $sponsors_for_room = $sponsors_to_rooms[$room][$day];
-
-                            print_r($sponsors_for_room);
-                        ?>
+                            if (count($sponsors_to_rooms[$room][$day]) > 0) {
+                                $sponsors_for_room = $sponsors_to_rooms[$room][$day];
+                            } else {
+                                $sponsors_for_room = array();
+                            }
+                            ?>
                     </div>
                 </div>
             </div>
@@ -224,6 +249,24 @@ asort($order, SORT_NUMERIC);
                     </div>
                 </div>
             </div>
+
+            <?php if (count($sponsors_for_room) > 0) { ?>
+            <div class="item">
+                <div class="media">
+                    <div class="row" style="text-align: center;">
+                        <h2 style='text-align: center;'>Thank You To Our Track <?php if (count($sponsors_for_room) > 1) { echo "Sponsors"; } else { echo "Sponsor"; } ?></h2> 
+                    </div>                  
+                    <div class="row" style="text-align: center;">
+                        <?php
+                        $column = round(12 / count($sponsors_for_room));
+                        foreach ($sponsors_for_room as $sponsor) {
+                            echo "<img src='images/sponsors/" . $sponsors[$sponsor] . "' style='width: 200px; height: 200px;'>";
+                        }
+                        ?>
+                    </div>
+                </div>
+            </div>
+            <?php } ?>
 
 	</div>
     </div>
