@@ -26,33 +26,6 @@
     5 => array("name" => 'Show Floor 6', "graph" => "show-floor-6-ap-daily.png" ),    
     );
 
-  $carousel_four = array(
-    0 => array("name" => 'Show Floor 1', "graph" => "show-floor-1-ap-daily.png" ),
-    1 => array("name" => 'Show Floor 2', "graph" => "show-floor-2-ap-daily.png" ),
-    2 => array("name" => 'Show Floor 3', "graph" => "show-floor-3-ap-daily.png" ),
-    3 => array("name" => 'Show Floor 4', "graph" => "show-floor-4-ap-daily.png" ),
-    4 => array("name" => 'Show Floor 5', "graph" => "show-floor-5-ap-daily.png" ),
-    5 => array("name" => 'Show Floor 6', "graph" => "show-floor-6-ap-daily.png" ),    
-    );      
-
-  $carousel_five = array(
-    0 => array("name" => 'Show Floor 1', "graph" => "show-floor-1-ap-daily.png" ),
-    1 => array("name" => 'Show Floor 2', "graph" => "show-floor-2-ap-daily.png" ),
-    2 => array("name" => 'Show Floor 3', "graph" => "show-floor-3-ap-daily.png" ),
-    3 => array("name" => 'Show Floor 4', "graph" => "show-floor-4-ap-daily.png" ),
-    4 => array("name" => 'Show Floor 5', "graph" => "show-floor-5-ap-daily.png" ),
-    5 => array("name" => 'Show Floor 6', "graph" => "show-floor-6-ap-daily.png" ),    
-    );
-
-  $carousel_six = array(
-    0 => array("name" => 'Show Floor 1', "graph" => "show-floor-1-ap-daily.png" ),
-    1 => array("name" => 'Show Floor 2', "graph" => "show-floor-2-ap-daily.png" ),
-    2 => array("name" => 'Show Floor 3', "graph" => "show-floor-3-ap-daily.png" ),
-    3 => array("name" => 'Show Floor 4', "graph" => "show-floor-4-ap-daily.png" ),
-    4 => array("name" => 'Show Floor 5', "graph" => "show-floor-5-ap-daily.png" ),
-    5 => array("name" => 'Show Floor 6', "graph" => "show-floor-6-ap-daily.png" ),    
-    );  
-
 ?>
 
 <?php
@@ -132,7 +105,7 @@
 
       <!-- Begin Row -->
       <div class="row graph-row">
-        <div class="graph col-md-4">
+        <div class="graph col-md-12">
           <!-- Carousel One -->        
           <div class="carousel carousel-fade" data-ride="carousel" data-interval="5000">
             <div id="carousel_one" class="carousel-inner">
@@ -141,59 +114,37 @@
           </div>
           <!-- End Carousel One -->
         </div>
-        <div class="graph col-md-4">
-          <!-- Carousel Two -->        
+      </div>
+      <!-- End Row -->
+
+      <!-- Begin Row -->
+      <div class="row graph-row">
+        <div class="graph col-md-12">
+          <!-- Carousel Four -->        
           <div class="carousel carousel-fade" data-ride="carousel" data-interval="5000">
             <div id="carousel_two" class="carousel-inner">
             </div>
             <!-- End Carousel Inner -->
           </div>
-          <!-- End Carousel Two -->
-        </div>
-        <div class="graph col-md-4">
-          <!-- Carousel Three -->        
-          <div class="carousel carousel-fade" data-ride="carousel" data-interval="5000">
-            <div id="carousel_three" class="carousel-inner">
-            </div>
-            <!-- End Carousel Inner -->
-          </div>
-          <!-- End Carousel Three -->
+          <!-- End Carousel Four -->
         </div>
       </div>
       <!-- End Row -->
 
       <!-- Begin Row -->
       <div class="row graph-row">
-        <div class="graph col-md-4">
+        <div class="graph col-md-12">
           <!-- Carousel Four -->        
           <div class="carousel carousel-fade" data-ride="carousel" data-interval="5000">
-            <div id="carousel_four" class="carousel-inner">
+            <div id="carousel_three" class="carousel-inner">
             </div>
             <!-- End Carousel Inner -->
           </div>
           <!-- End Carousel Four -->
         </div>
-        <div class="graph col-md-4">
-          <!-- Carousel Five -->        
-          <div class="carousel carousel-fade" data-ride="carousel" data-interval="5000">
-            <div id="carousel_five" class="carousel-inner">
-            </div>
-            <!-- End Carousel Inner -->
-          </div>
-          <!-- End Carousel Five -->
-        </div>
-        <div class="graph col-md-4">
-          <!-- Carousel Six -->        
-          <div class="carousel carousel-fade" data-ride="carousel" data-interval="5000">
-            <div id="carousel_six" class="carousel-inner">
-            </div>
-            <!-- End Carousel Inner -->
-          </div>
-          <!-- End Carousel Six -->
-        </div>
       </div>
       <!-- End Row -->
-      
+     
 
     </div> <!-- /container -->
 
