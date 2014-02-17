@@ -258,9 +258,27 @@ asort($order, SORT_NUMERIC);
                     </div>                  
                     <div class="row" style="text-align: center;">
                         <?php
-                        $column = round(12 / count($sponsors_for_room));
+                        $column = count($sponsors_for_room);
+                        switch ($column) {
+                            case 1:
+                                $img_size = 500;
+                                break;
+                            case 2:
+                                $img_size = 400;
+                                break;
+                            case 3:
+                                $img_size = 300;
+                                break;
+                            case 4:
+                                $img_size = 250;
+                                break;
+                            case 5:
+                                $img_size = 200;
+                                break;
+                        }
+
                         foreach ($sponsors_for_room as $sponsor) {
-                            echo "<img src='images/sponsors/" . $sponsors[$sponsor] . "' style='width: 200px; height: 200px;'>";
+                            echo "<img src='images/sponsors/" . $sponsors[$sponsor] . "' style='width: " . $img_size . "px; height: " . $img_size . "px;'>";
                         }
                         ?>
                     </div>
