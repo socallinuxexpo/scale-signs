@@ -1,8 +1,8 @@
 <?php
 
   $carousel_one = array(
-    0 => array("name" => 'Current Wi-Fi Associations', "graph" => "aggregate-6hourly.png" ),
-    1 => array("name" => 'Total Wi-Fi Associations', "graph" => "unique-6hourly.png" ),
+    0 => array("name" => 'Current Wi-Fi Associations', "graph" => "aggregate-6hourly-live.png" ),
+    1 => array("name" => 'Total Wi-Fi Associations', "graph" => "unique-6hourly-live.png" ),
     );
 
   $carousel_two = array(
@@ -11,7 +11,7 @@
     );
 
   $carousel_three = array(
-    0 => array("name" => 'Wi-Fi Spectrum Usage', "graph" => "sums-6hourly.png" ),
+    0 => array("name" => 'Wi-Fi Spectrum Usage', "graph" => "sums-6hourly-live.png" ),
     1 => array("name" => 'Total Internet Bandwidth Usage', "graph" => "gateway-2.expo.socallinuxexpo.org-2-day.png" ),
     );
 
@@ -63,6 +63,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta http-equiv="refresh" content="300">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
     <title>SCALE 12x</title>
@@ -175,44 +176,21 @@
     $("#carousel_three").load(CarouselThreeUrl);
     $("#carousel_three").show();
 
-    $("#carousel_four").load(CarouselFourUrl);
-    $("#carousel_four").show();
-
-    $("#carousel_five").load(CarouselFiveUrl);
-    $("#carousel_five").show();
-
-    $("#carousel_six").load(CarouselSixUrl);
-    $("#carousel_six").show();
-
     /* Reload and Refresh Carousel One once a minute */
     var CarouselOneRefreshId = setInterval(function() {
       $("#carousel_one").load(CarouselOneUrl);
-    }, 15000);
+    }, 30000);
 
     /* Reload and Refresh Carousel Two once a minute */
     var CarouselTwoRefreshId = setInterval(function() {
       $("#carousel_two").load(CarouselTwoUrl);
-    }, 15000);
+    }, 35000);
 
     /* Reload and Refresh Carousel Three once a minute */
     var CarouselThreeRefreshId = setInterval(function() {
       $("#carousel_three").load(CarouselThreeUrl);
-    }, 15000);        
+    }, 32000);        
 
-    /* Reload and Refresh Carousel Four once a minute */
-    var CarouselFourRefreshId = setInterval(function() {
-      $("#carousel_four").load(CarouselFourUrl);
-    }, 15000);        
-
-    /* Reload and Refresh Carousel Five once a minute */
-    var CarouselFiveRefreshId = setInterval(function() {
-      $("#carousel_five").load(CarouselFiveUrl);
-    }, 15000);        
-
-    /* Reload and Refresh Carousel Six once a minute */
-    var CarouselSixRefreshId = setInterval(function() {
-      $("#carousel_six").load(CarouselSixUrl);
-    }, 15000);        
   });
 
   </script>
