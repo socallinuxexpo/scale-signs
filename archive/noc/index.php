@@ -1,15 +1,21 @@
 <?php
 
+Wi-Fi spectrum usage
+wifi_pie.png
+
   $carousel_one = array(
-    0 => array("name" => '', "graph" => "aggregate-6hourly.png" ),
+    0 => array("name" => 'Current Wi-Fi associations', "graph" => "aggregate-6hourly.png" ),
+    1 => array("name" => 'Total Wi-Fi associations', "graph" => "unique-6hourly.png" ),
     );
 
   $carousel_two = array(
-    0 => array("name" => '', "graph" => "combined-day.png" ),
+    0 => array("name" => 'Show floor bandwidth usage', "graph" => "combined-day.png" ),
+    1 => array("name" => 'Top Wi-Fi device manufacturers', "graph" => "sums-6hourly.png" ),
     );
 
   $carousel_three = array(
-    0 => array("name" => '', "graph" => "gateway-2.expo.socallinuxexpo.org-2-day.png" ),
+    0 => array("name" => 'Wi-Fi Spectrum Usage', "graph" => "wifi_pie.png" ),
+    1 => array("name" => 'Total Internet bandwidth usage', "graph" => "gateway-2.expo.socallinuxexpo.org-2-day.png" ),
     );
 
 ?>
