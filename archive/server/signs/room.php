@@ -11,6 +11,29 @@ if (!empty($_GET["show_time"])) {
    $show_time = "";
 }
  
+$sponsors = array(
+                "Verizon-Edgecast"  => "32.png",
+                "MediaTemple"       => "19.png",
+                "Ansible"           => "02.png",
+                "Cars.com"          => "04.png",
+                "DTK.io"            => "10.png",
+                "Citrix"            => "07.png",
+                "Joyent"            => "16.png",
+                "RedHat"            => "26.png",
+                "PuppetLabs"        => "23.png",
+                "Mysql"             => "20.png",
+                "Google"            => "12.png",
+                "LPI"               => "33.png",
+                "OneCourseSource"   => "34.png",
+                "Rackspace"         => "24.png",
+                "HP"                => "13.png",
+                "Chef"              => "06.png",
+                "SaltStack"         => "27.png",
+                "LOPSA"             => "36.png",
+                "Fedora"            => "11.png"
+
+    );
+
 $sponsors_to_rooms = array(
                 "LaJolla" => array(
                                     "Friday" => array("Verizon-Edgecast", "MediaTemple", "Ansible", "Cars.com", "DTK.io"),
@@ -206,9 +229,11 @@ asort($order, SORT_NUMERIC);
                             }
 
                             $day = $data[$key][0];
-                            $sponsors_for_room = $sponsors_to_rooms[$room][$day];
-
-                            print_r($sponsors_for_room);
+                            if (count($sponsors_to_rooms[$room][$day]) > 0) {
+                                $sponsors_for_room = $sponsors_to_rooms[$room][$day];
+                            } else {
+                                $sponsors_for_room = array();
+                            }
                         ?>
                     </div>
                 </div>
@@ -230,6 +255,42 @@ asort($order, SORT_NUMERIC);
                     </div>
                 </div>
             </div>
+
+            <?php if (count($sponsors_for_room) > 0) { ?>
+            <div class="item">
+                <div class="media">
+                    <div class="row" style="text-align: center;">
+                        <h2 style='text-align: center;'>Thank You To Our Track <?php if (count($sponsors_for_room) > 1) { echo "Sponsors"; } else { echo "Sponsor"; } ?></h2> 
+                    </div>                  
+                    <div class="row" style="text-align: center;">
+                        <?php
+                        $column = count($sponsors_for_room);
+                        switch ($column) {
+                            case 1:
+                                $img_size = 500;
+                                break;
+                            case 2:
+                                $img_size = 400;
+                                break;
+                            case 3:
+                                $img_size = 300;
+                                break;
+                            case 4:
+                                $img_size = 250;
+                                break;
+                            case 5:
+                                $img_size = 200;
+                                break;
+                        }
+
+                        foreach ($sponsors_for_room as $sponsor) {
+                            echo "<img src='images/sponsors/" . $sponsors[$sponsor] . "' style='width: " . $img_size . "px; height: " . $img_size . "px;'>";
+                        }
+                        ?>
+                    </div>
+                </div>
+            </div>
+            <?php } ?>
 
 	</div>
     </div>
