@@ -135,6 +135,11 @@
       </div>
       <!-- End Row -->
      
+      <div class="row"><hr></div>
+
+      <div class="header row">        
+          <img src="noc-penguin-header4.png">
+      </div>
 
     </div> <!-- /container -->
 
@@ -163,9 +168,6 @@
     var CarouselOneUrl = "index.php?carousel=one";
     var CarouselTwoUrl = "index.php?carousel=two";
     var CarouselThreeUrl = "index.php?carousel=three";
-    var CarouselFourUrl = "index.php?carousel=four";
-    var CarouselFiveUrl = "index.php?carousel=five";
-    var CarouselSixUrl = "index.php?carousel=six";
 
     $("#carousel_one").load(CarouselOneUrl);
     $("#carousel_one").show();
@@ -177,19 +179,31 @@
     $("#carousel_three").show();
 
     /* Reload and Refresh Carousel One once a minute */
-    var CarouselOneRefreshId = setInterval(function() {
-      $("#carousel_one").load(CarouselOneUrl);
-    }, 30000);
+    //var CarouselOneRefreshId = setInterval(function() {
+    //  $("#carousel_one").load(CarouselOneUrl);
+    //}, 60000);
 
     /* Reload and Refresh Carousel Two once a minute */
-    var CarouselTwoRefreshId = setInterval(function() {
-      $("#carousel_two").load(CarouselTwoUrl);
-    }, 35000);
+    //var CarouselTwoRefreshId = setInterval(function() {
+    //  $("#carousel_two").load(CarouselTwoUrl);
+    //}, 65000);
 
     /* Reload and Refresh Carousel Three once a minute */
-    var CarouselThreeRefreshId = setInterval(function() {
-      $("#carousel_three").load(CarouselThreeUrl);
-    }, 32000);        
+    //var CarouselThreeRefreshId = setInterval(function() {
+    //  $("#carousel_three").load(CarouselThreeUrl);
+    //}, 62000);        
+
+    $('#carousel_one').carousel({
+      interval: 30000,
+    });
+
+    $('#carousel_two').carousel({
+      interval: 30000,
+    });
+
+    $('#carousel_three').carousel({
+      interval: 30000,
+    });
 
   });
 
