@@ -97,7 +97,7 @@
       <div class="row graph-row">
         <div class="graph col-md-12">
           <!-- Carousel One -->        
-          <div class="carousel carousel-fade" data-ride="carousel" data-interval="5000">
+          <div class="carousel carousel-fade" data-ride="carousel" data-interval="30000">
             <div id="carousel_one" class="carousel-inner">
             </div>
             <!-- End Carousel Inner -->
@@ -111,7 +111,7 @@
       <div class="row graph-row">
         <div class="graph col-md-12">
           <!-- Carousel Four -->        
-          <div class="carousel carousel-fade" data-ride="carousel" data-interval="5000">
+          <div class="carousel carousel-fade" data-ride="carousel" data-interval="30000">
             <div id="carousel_two" class="carousel-inner">
             </div>
             <!-- End Carousel Inner -->
@@ -125,7 +125,7 @@
       <div class="row graph-row">
         <div class="graph col-md-12">
           <!-- Carousel Four -->        
-          <div class="carousel carousel-fade" data-ride="carousel" data-interval="5000">
+          <div class="carousel carousel-fade" data-ride="carousel" data-interval="30000">
             <div id="carousel_three" class="carousel-inner">
             </div>
             <!-- End Carousel Inner -->
@@ -179,31 +179,19 @@
     $("#carousel_three").show();
 
     /* Reload and Refresh Carousel One once a minute */
-    //var CarouselOneRefreshId = setInterval(function() {
-    //  $("#carousel_one").load(CarouselOneUrl);
-    //}, 60000);
+    var CarouselOneRefreshId = setInterval(function() {
+      $("#carousel_one").load(CarouselOneUrl);
+    }, 60000);
 
     /* Reload and Refresh Carousel Two once a minute */
-    //var CarouselTwoRefreshId = setInterval(function() {
-    //  $("#carousel_two").load(CarouselTwoUrl);
-    //}, 65000);
+    var CarouselTwoRefreshId = setInterval(function() {
+      $("#carousel_two").load(CarouselTwoUrl);
+    }, 60000);
 
     /* Reload and Refresh Carousel Three once a minute */
-    //var CarouselThreeRefreshId = setInterval(function() {
-    //  $("#carousel_three").load(CarouselThreeUrl);
-    //}, 62000);        
-
-    $('#carousel_one').carousel({
-      interval: 30000,
-    });
-
-    $('#carousel_two').carousel({
-      interval: 30000,
-    });
-
-    $('#carousel_three').carousel({
-      interval: 30000,
-    });
+    var CarouselThreeRefreshId = setInterval(function() {
+      $("#carousel_three").load(CarouselThreeUrl);
+    }, 60000);        
 
   });
 
