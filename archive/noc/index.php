@@ -1,18 +1,18 @@
 <?php
 
   $carousel_one = array(
-    0 => array("name" => 'Current Wi-Fi associations', "graph" => "aggregate-6hourly.png" ),
-    1 => array("name" => 'Total Wi-Fi associations', "graph" => "unique-6hourly.png" ),
+    0 => array("name" => 'Current Wi-Fi Associations', "graph" => "aggregate-6hourly.png" ),
+    1 => array("name" => 'Total Wi-Fi Associations', "graph" => "unique-6hourly.png" ),
     );
 
   $carousel_two = array(
-    0 => array("name" => 'Show floor bandwidth usage', "graph" => "combined-day.png" ),
-    1 => array("name" => 'Top Wi-Fi device manufacturers', "graph" => "sums-6hourly.png" ),
+    0 => array("name" => 'Show Floor Bandwidth Usage', "graph" => "combined-day.png" ),
+    1 => array("name" => 'Top Wi-Fi Device Manufacturers', "graph" => "wifi_pie.png" ),
     );
 
   $carousel_three = array(
-    0 => array("name" => 'Wi-Fi Spectrum Usage', "graph" => "wifi_pie.png" ),
-    1 => array("name" => 'Total Internet bandwidth usage', "graph" => "gateway-2.expo.socallinuxexpo.org-2-day.png" ),
+    0 => array("name" => 'Wi-Fi Spectrum Usage', "graph" => "sums-6hourly.png" ),
+    1 => array("name" => 'Total Internet Bandwidth Usage', "graph" => "gateway-2.expo.socallinuxexpo.org-2-day.png" ),
     );
 
 ?>
@@ -187,32 +187,32 @@
     /* Reload and Refresh Carousel One once a minute */
     var CarouselOneRefreshId = setInterval(function() {
       $("#carousel_one").load(CarouselOneUrl);
-    }, CarouselUpdateTime);
+    }, 15000);
 
     /* Reload and Refresh Carousel Two once a minute */
     var CarouselTwoRefreshId = setInterval(function() {
       $("#carousel_two").load(CarouselTwoUrl);
-    }, CarouselUpdateTime);
+    }, 15000);
 
     /* Reload and Refresh Carousel Three once a minute */
     var CarouselThreeRefreshId = setInterval(function() {
       $("#carousel_three").load(CarouselThreeUrl);
-    }, CarouselUpdateTime);        
+    }, 15000);        
 
     /* Reload and Refresh Carousel Four once a minute */
     var CarouselFourRefreshId = setInterval(function() {
       $("#carousel_four").load(CarouselFourUrl);
-    }, CarouselUpdateTime);        
+    }, 15000);        
 
     /* Reload and Refresh Carousel Five once a minute */
     var CarouselFiveRefreshId = setInterval(function() {
       $("#carousel_five").load(CarouselFiveUrl);
-    }, CarouselUpdateTime);        
+    }, 15000);        
 
     /* Reload and Refresh Carousel Six once a minute */
     var CarouselSixRefreshId = setInterval(function() {
       $("#carousel_six").load(CarouselSixUrl);
-    }, CarouselUpdateTime);        
+    }, 15000);        
   });
 
   </script>
