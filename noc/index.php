@@ -1,29 +1,17 @@
 <?php
+sums-6hourly.png
+unique-6hourly.png
+
   $carousel_one = array(
-    0 => array("name" => 'Show Floor 3', "graph" => "show-floor-3-ap-daily.png" ),
-    1 => array("name" => 'Show Floor 2', "graph" => "show-floor-2-ap-daily.png" ),
-    2 => array("name" => 'Show Floor 6', "graph" => "show-floor-6-ap-daily.png" ),
-    3 => array("name" => 'Show Floor 4', "graph" => "show-floor-4-ap-daily.png" ),
-    4 => array("name" => 'Show Floor 5', "graph" => "show-floor-5-ap-daily.png" ),
-    5 => array("name" => 'Show Floor 1', "graph" => "show-floor-1-ap-daily.png" ),    
+    0 => array("name" => '', "graph" => "aggregate-6hourly.png" ),
     );
 
   $carousel_two = array(
-    0 => array("name" => 'Show Floor 1', "graph" => "show-floor-1-ap-daily.png" ),
-    1 => array("name" => 'Show Floor 4', "graph" => "show-floor-4-ap-daily.png" ),
-    2 => array("name" => 'Show Floor 3', "graph" => "show-floor-3-ap-daily.png" ),
-    3 => array("name" => 'Show Floor 5', "graph" => "show-floor-5-ap-daily.png" ),
-    4 => array("name" => 'Show Floor 2', "graph" => "show-floor-2-ap-daily.png" ),
-    5 => array("name" => 'Show Floor 6', "graph" => "show-floor-6-ap-daily.png" ),    
+    0 => array("name" => '', "graph" => "combined-day.png" ),
     );
 
   $carousel_three = array(
-    0 => array("name" => 'Show Floor 1', "graph" => "show-floor-1-ap-daily.png" ),
-    1 => array("name" => 'Show Floor 2', "graph" => "show-floor-2-ap-daily.png" ),
-    2 => array("name" => 'Show Floor 3', "graph" => "show-floor-3-ap-daily.png" ),
-    3 => array("name" => 'Show Floor 4', "graph" => "show-floor-4-ap-daily.png" ),
-    4 => array("name" => 'Show Floor 5', "graph" => "show-floor-5-ap-daily.png" ),
-    5 => array("name" => 'Show Floor 6', "graph" => "show-floor-6-ap-daily.png" ),    
+    0 => array("name" => '', "graph" => "gateway-2.expo.socallinuxexpo.org-2-day.png" ),
     );
 
 ?>
