@@ -4,8 +4,8 @@ $xml = simplexml_load_file('http://www.socallinuxexpo.org/scale12x/sign.xml');
 
 $starttime = mktime(0, 0, 0, 2, 21, 2014) / 60;
 
-#$rightnow = round(time() / 60);
-$rightnow = mktime(15, 30, 0, 2, 22, 2014) / 60;
+$rightnow = round(time() / 60);
+#$rightnow = mktime(15, 30, 0, 2, 22, 2014) / 60;
 $minsafter = $rightnow - $starttime;
 
 $data = array();
