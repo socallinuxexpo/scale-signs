@@ -1,8 +1,5 @@
 <?php
 
-Wi-Fi spectrum usage
-wifi_pie.png
-
   $carousel_one = array(
     0 => array("name" => 'Current Wi-Fi associations', "graph" => "aggregate-6hourly.png" ),
     1 => array("name" => 'Total Wi-Fi associations', "graph" => "unique-6hourly.png" ),
