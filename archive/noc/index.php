@@ -1,6 +1,4 @@
 <?php
-sums-6hourly.png
-unique-6hourly.png
 
   $carousel_one = array(
     0 => array("name" => '', "graph" => "aggregate-6hourly.png" ),
