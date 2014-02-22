@@ -62,13 +62,13 @@ $sponsors_to_rooms = array(
                             ),
                 "LosAngelesB" => array(
                                     "Friday" => array(""),
-                                    "Saturday" => array(),
-                                    "Sunday" => array(),
+                                    "Saturday" => array("Fedora"),
+                                    "Sunday" => array("Fedora"),
                             ),
                 "LosAngelesC" => array(
                                     "Friday" => array(""),
-                                    "Saturday" => array(),
-                                    "Sunday" => array(),
+                                    "Saturday" => array("ActiveState"),
+                                    "Sunday" => array("ActiveState"),
                             ),
                 "BelAir" => array(
                                     "Friday" => array("LPI"),
