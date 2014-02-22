@@ -47,28 +47,28 @@ $sponsors_to_rooms = array(
                             ),
                 "CenturyAB" => array(
                                     "Friday" => array("RedHat"),
-                                    "Saturday" => array(""),
-                                    "Sunday" => array(""),
+                                    "Saturday" => array(),
+                                    "Sunday" => array(),
                             ),
                 "CenturyCD" => array(
                                     "Friday" => array("PuppetLabs"),
-                                    "Saturday" => array(""),
-                                    "Sunday" => array(""),
+                                    "Saturday" => array(),
+                                    "Sunday" => array(),
                             ),
                 "LosAngelesA" => array(
                                     "Friday" => array("Mysql-Oracle"),
-                                    "Saturday" => array(""),
-                                    "Sunday" => array(""),
+                                    "Saturday" => array(),
+                                    "Sunday" => array(),
                             ),
                 "LosAngelesB" => array(
                                     "Friday" => array(""),
-                                    "Saturday" => array(""),
-                                    "Sunday" => array(""),
+                                    "Saturday" => array(),
+                                    "Sunday" => array(),
                             ),
                 "LosAngelesC" => array(
                                     "Friday" => array(""),
-                                    "Saturday" => array(""),
-                                    "Sunday" => array(""),
+                                    "Saturday" => array(),
+                                    "Sunday" => array(),
                             ),
                 "BelAir" => array(
                                     "Friday" => array("LPI"),
