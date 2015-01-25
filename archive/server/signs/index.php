@@ -50,7 +50,7 @@ function main() {
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>SCALE 12x</title>
+    <title>SCALE 13x</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -70,9 +70,9 @@ function main() {
   </head>
 
   <body>
-    <div class="container main-container">
+    <div id='top-container' class="container main-container">
 
-      <div class="header row">
+      <div id='header-row' class="header row">
         <div class="col-md-8">
           <img src="header.png">
         </div>
@@ -84,11 +84,6 @@ function main() {
             <li class="separator">:</li>
             <li><div id="m1" class="card">&nbsp;</div></li>
             <li><div id="m2" class="card">&nbsp;</div></li>
-            <!--
-            <li class="separator">:</li>
-            <li><div id="s1" class="card">&nbsp;</div></li>
-            <li><div id="s2" class="card">&nbsp;</div></li>
-            -->
             <li class="separator">&nbsp;</li>          
             <li><div id="meridiem1" class="card">&nbsp;</div></li>
             <li><div id="meridiem2" class="card">&nbsp;</div></li>
@@ -97,26 +92,29 @@ function main() {
 
       </div>
 
-      <div class="row"><hr></div>
+      <div id='schedule-row-hr' class="row"><hr></div>
 
       <!-- Begin Row -->
       
-      <div class="row graph-row">
+      <div id="schedule-row" class="row graph-row">
         <div class="graph col-md-12">
           <div id="schedule" class="row schedule"></div>
         </div>
       </div>
       <!-- End Row -->
 
-      <div class="row"><hr></div>
+      <div class="row"><hr id='bottom-row-hr'></div>
 
-      <div class="row graph-row">
+    </div> <!-- /container -->
+    <div id='bottom-container' class="container main-container">
+
+      <div id="bottom-row" class="row graph-row">
         <div class="col-md-3">
           <div id="sponsors1">
           </div>
         </div>
 
-        <div class="graph col-md-6">
+        <div id="twitter-column" class="graph col-md-6">
           <div id="twitter-stream-content" class="row"></div>
         </div>
 
@@ -140,7 +138,39 @@ function main() {
   <script src="js/timer.js"></script>
 
   <script type="text/javascript">
-    
+
+    function hexToRgb(hex) {
+        var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+        return result ? {
+            r: parseInt(result[1], 16),
+            g: parseInt(result[2], 16),
+            b: parseInt(result[3], 16)
+        } : null;
+    }
+
+    function refreshData()
+    {
+        x = 1;  // x = seconds
+        var d = new Date()
+        var h = d.getHours();
+        var m = d.getMinutes();
+        var s = d.getSeconds();
+        
+        if (h<=9) {h = '0'+h};
+        if (m<=9) {m = '0'+m};
+        if (s<=9) {s = '0'+s};
+        
+        //var color = '#'+h+m+s;
+        var color = hexToRgb('#'+h+m+s);
+        var color_rgba = "rgba(" + [color.r, color.g, color.b, '0.9'].join(', ') + ")";
+        
+        $("#schedule-row-hr").css("background-color", color_rgba );
+
+        setTimeout(refreshData, x*1000);
+    }
+
+    //refreshData();
+
     $(document).ready(function() {
 
       // Ensure we're not caching data
@@ -340,7 +370,7 @@ function room($room) {
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>SCALE 12x: <?php echo "$room"; ?></title>
+    <title>SCALE 13x: <?php echo "$room"; ?></title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -388,7 +418,8 @@ function room($room) {
   <script src="js/timer.js"></script>
 
   <script type="text/javascript">
-    
+
+
     $(document).ready(function() {
 
       // Ensure we're not caching data
@@ -410,7 +441,8 @@ function room($room) {
       }, 60000);
       
     });
-        
+      
+
     </script>
   </body>
 </html>
