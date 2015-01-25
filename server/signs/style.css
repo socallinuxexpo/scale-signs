@@ -10,14 +10,16 @@
 
 html {
   font-size: 62.5%;
-  background-color: #FFF;
+  /* background-color: #FFF; */
+  background-color: #1f3033 !important;
 }
 
 body {
   font-size: 1em;
   padding-top: 0px;
   padding-bottom: 0px;
-  background-color: #FFF !important;
+  /* background-color: #FFF !important; */
+  background-color: #1f3033 !important;
 }
 
 /*
@@ -44,8 +46,8 @@ body {
 
 font { 
   font-family: 'Arial Black', Gadget, sans-serif; 
-  color:black; 
-  text-align:center; 
+  color: black; 
+  text-align: center; 
 }
 
 #contents {
@@ -83,7 +85,7 @@ font {
 
 }
 
-#mainContainer {
+#top-container {
   background-color: #FFF;
   width: 99%;
 }
@@ -173,20 +175,21 @@ font {
 }
 
 .clock {
-	font-weight: bold;
-	list-style: none;
-	margin: 0;
-  font-size: 48px;
-  padding-top: 10px;
+  font-weight: bold;
+  list-style: none;
+  margin: 0;
+  font-size: 60px;
+  padding-top: 20px;
   color:rgba(250,250,250,.3);
 }
 
 .clock li {
 	float: left;
-	width: 48px;
-	height: 50px;
+	width: 52px;
+	height: 54px;
 	position: relative;
-	line-height: 48px;
+	line-height: 65px;
+    margin-right: 12px;
 	/* padding-right: 2px; */
 	
 	/* This setting affects how much the cards stand out from the page.
@@ -207,13 +210,14 @@ font {
 .clock div.card {
 	background: #444;
 	padding-top: 5px;
-	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-right: 2px;
 	color: #fff;
 	width: 1em;
 	text-align: center;
 	border-radius: 5px;
 	position: relative;
-	margin-right: 5px;
+	margin-right: 9px;
 
   /* Box shadow */
   box-shadow: 0 0 30px #4A4A4A;
@@ -339,14 +343,6 @@ font {
     background-color: none;
 }
 
-/*
-.topicList .badge {
-  font-size: 30px;
-  line-height: 39px;
-  background: none;  
-}
-*/
-
 .topic {
   text-align: center;
   left-margin: auto;
@@ -354,68 +350,72 @@ font {
   font-size: 30px;
 }
 
+#header-row {
+  background-color: #fff !important;
+}
+
+#schedule-row {
+  background-color: #fff !important;
+}
+
+#schedule-row-hr {
+    height: 20px;
+    margin-bottom: 0px;
+    border: 0px;
+}
+
+#bottom-row-hr {
+    background: url('images/hr-image1.png') repeat-x top left;
+    height: 8px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 0px;
+}
+
+#bottom-row {
+  background-color: #1f3033;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+}
+
 .tweet {
+  font-size: 2em;
   position: relative;
-  border-color: #000;
-  border-width: 1px;
-  border-style: solid;
-  -webkit-border-radius: 6px 6px 6px 6px;
-  -moz-border-radius: 6px 6px 6px 6px;
-  border-radius: 6px 6px 6px 6px;
-  background-color: #D0E4FE;
+  color: #a7d0ff;
   margin: 0px;
   margin-bottom: 10px;
   padding: 0px;
-  box-shadow: 0 0 10px #4A4A4A;  
 }
+
+.vcard { margin-top: 0px; float: left; }
+.hentry { margin-left: 58px; }
 
 .tweetpromote {
-  background-color: #FFD700;
-  color: #000;
-}
-
-.tweeticon {
-  margin: 0px;
-  padding-left: 5px;
-  margin-left: 5px;
+  border-radius: 1%;
+  border: 1px solid rgba(255, 215, 0, 0.5);
+  background-color: rgba(255, 215, 0, 0.1);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; 
 }
 
 .tweet-time {
-  color: #AAA;
-  font-weight: bold;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  padding-right: 5px;
-  padding-bottom: 2px;
+    float: left;
+    color: #999999;
+    display: block;
+    font-size: 0.9em;
 }
 
-.tweetusericon {
-  padding: 0px;
-  margin: 0px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+.tweet-comment {
+  display: block;
+  color: #fff;
+  font-size: 0.9em;
 }
 
-.span2.tweetuser {
-  padding: 0px;
-  font-size: 12px;
-  font-weight: bold;
-  text-align: left;
-  margin-left: 5px;
-}
-
-.tweetuser_name {
-  font-size: 24px;
-}
-
-.tweetcomment {
-  position: relative;
-  font-size: 1.5em;
-  height: 100%;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.tweet-pic {
+  border: 2px solid rgba(56, 77, 96, 0.5);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; 
 }
 
 .span2.knobspan {
@@ -457,14 +457,23 @@ font {
   color: #FFF !important;
 }
 
+.BigData {
+  background-color: #a6ceff !important;
+  color: #000 !important;
+}
+
 .BoFs {
   background-color: #FFBC00 !important;
   color: #000 !important;
 }
 
-.CloudandVirtualization {
-  background: #638DCE !important;
+.Cloud {
+  background: #638dce !important;
   color: #fff !important;
+}
+.ContainerandVirtualization {
+  background: #ffa200 !important;
+  color: #000 !important;
 }
 
 .Developer {
@@ -477,10 +486,16 @@ font {
   color: #fff !important;
 }
 
+.Embedded {
+  background: #004a4a !important;
+  color: #fff !important;
+}
+
 .EveningEntertainment {
   background: #B20B77 !important;
   color: #fff !important;
 }
+
 .FileSystem {
   background: #FFE81F !important;
   color: #000 !important;
@@ -489,6 +504,11 @@ font {
 .General {
   background: #97A67A !important;
   color: #fff !important;
+}
+
+.HotApplications {
+  background: #ff0 !important;
+  color: #000 !important;
 }
 
 .Kernel {

@@ -98,7 +98,7 @@ $sponsors_to_rooms = array(
                             ),
                 );
 
-$xml = simplexml_load_file('http://www.socallinuxexpo.org/scale12x/sign.xml');
+$xml = simplexml_load_file('http://www.socallinuxexpo.org/scale13x/sign.xml');
 
 $starttime = mktime(0, 0, 0, 2, 21, 2014) / 60;
 

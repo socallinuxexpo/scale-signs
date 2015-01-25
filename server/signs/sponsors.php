@@ -5,7 +5,7 @@
         $logos = range(1, 21);
         break;
       case 'two':
-        $logos = range(22, 32);
+        $logos = range(22, 37);
         break;
     }
   }

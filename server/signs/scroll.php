@@ -1,11 +1,11 @@
 <?php
  
-$xml = simplexml_load_file('http://www.socallinuxexpo.org/scale12x/sign.xml');
+$xml = simplexml_load_file('http://www.socallinuxexpo.org/scale/13x/sign.xml');
 
-$starttime = mktime(0, 0, 0, 2, 21, 2014) / 60;
+$starttime = mktime(0, 0, 0, 2, 19, 2015) / 60;
 
-$rightnow = round(time() / 60);
-#$rightnow = mktime(15, 30, 0, 2, 22, 2014) / 60;
+#$rightnow = round(time() / 60);
+$rightnow = round(mktime(11, 30, 0, 2, 21, 2015) / 60);
 $minsafter = $rightnow - $starttime;
 
 $data = array();
@@ -14,11 +14,13 @@ $times = array();
 
 $shorten_topics = array(
                         "BeginnerTutorials" => "Beginner Tutorials",
-                        "CloudandVirtualization" => "Cloud and Virtualization",
+                        "ContainerandVirtualization" => "Container and Virtualization",
                         "EveningEntertainment" => "Evening Entertainment",
                         "FileSystem" => "File System",
                         "OpenSourceSoftwareInEducation" => "OSSIE",                        
                         "SysAdmin" => "Sys Admin",
+                        "HotApplications" => "Hot Applications",
+                        "BigData" => "Big Data",
                         );
 
 foreach ($xml->node AS $node) {
@@ -55,17 +57,21 @@ foreach ($xml->node AS $node) {
 	$mfromme = ($handme[0] * 60) + 60 + $handme[1];
 	
 	switch ((string) $node->Day) {
-		case "Friday";
+		case "Thursday";
 			$order[] = $mfromm;
 			$times[] = array($mfromm, $mfromme);
 			break;
-		case "Saturday";
+		case "Friday";
 			$order[] = $mfromm + 1440;
 			$times[] = array($mfromm + 1440, $mfromme + 1440);
 			break;
-		case "Sunday";
+		case "Saturday";
 			$order[] = $mfromm + 2880;
 			$times[] = array($mfromm + 2880, $mfromme + 2880);
+			break;
+		case "Sunday";
+			$order[] = $mfromm + 4320;
+			$times[] = array($mfromm + 4320, $mfromme + 4320);
 			break;
 		case "";
 			$order[] = 0;
@@ -93,7 +99,7 @@ asort($order, SORT_NUMERIC);
       foreach ($order AS $key => $value) {
 
 	      if (($times[$key][0] - 60) <= $minsafter && ($times[$key][1]) >= $minsafter) {
-	      //if (($times[$key][0] - 60) <= $minsafter && ($times[$key][1] + 10) >= $minsafter) {
+	      // if (($times[$key][0] - 60) <= $minsafter && ($times[$key][1] + 10) >= $minsafter) {
 	      // if ($times[$key][0] > 0) {
 	      
           //
@@ -184,6 +190,17 @@ asort($order, SORT_NUMERIC);
 				       //}
 				      ?>
 				      </td>
+					    <!-- Overflow Room -->
+					    <td width="15%"> <i class="icon-info-sign"></i> 
+					    <?php 
+					      //if ( $data[$key][3] == "Game Night" ) {
+					      //  echo "Plaza Ballroom";
+					      //} else {
+					      echo $data[$key][4];
+				       //}
+				      ?>
+				      </td>
+
 				    </tr>
     <?php
     
@@ -193,7 +210,7 @@ asort($order, SORT_NUMERIC);
       $filler = ($schedule_page * $items_per_page) - $count;
       for ($i = 0; $i < $filler; $i++) {
         //print "<tr bgcolor='#fff'><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>";
-        print "<tr bgcolor='#fff'><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>";
+        print "<tr bgcolor='#fff'><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>";
 
       }
     }    
