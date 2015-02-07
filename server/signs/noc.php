@@ -239,6 +239,15 @@
       $("#carousel_three").load(CarouselThreeUrl);
     }, 60000);        
 
+  /* Check the page type */
+  var checkPageTypeId = setInterval(function() {
+      var pageType = $.ajax({type: "GET", url: "type.php", async: false}).responseText;
+      if (pageType != 'noc' && pageType != '') {
+          console.log('Type changed, reloading')
+          location.reload()
+      }
+  }, 60000);
+
   });
 
   </script>
