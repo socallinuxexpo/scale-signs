@@ -114,7 +114,7 @@ asort($order, SORT_NUMERIC);
 		    <div class="carousel-inner">	  
 		      <div id="schedule-1-content" class="active item">
 			    <table cellpadding=2 cellspacing=1 class="table table-bordered">
-                <tr bgcolor="#fff"><th>Time <?php echo $rightnow;?></th><th>Presenter</th><th>Topic</th><th>Room</th><th>Overflow</th></tr>
+                <tr bgcolor="#fff"><th>Time</th><th>Presenter</th><th>Topic</th><th>Room</th><th>Overflow</th></tr>
                 <tbody>
     <?php 
       $topics = array();
