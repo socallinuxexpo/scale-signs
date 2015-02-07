@@ -91,7 +91,23 @@
                 noc_sign('vertical');
                 break;
             default:
-                main();
+                $year = $month = $day = $hour = $minute = '';
+                if (!empty($_GET["year"])) {
+                    $year = $_GET['year'];
+                }
+                if (!empty($_GET["month"])) {
+                    $month = $_GET['month'];
+                }
+                if (!empty($_GET["day"])) {
+                    $day = $_GET['day'];
+                }
+                if (!empty($_GET["hour"])) {
+                    $hour = $_GET['hour'];
+                }
+                if (!empty($_GET["minute"])) {
+                    $minute = $_GET['minute'];
+                }
+                main($year, $month, $day, $hour, $minute);
                 break;
         }
       } else {
