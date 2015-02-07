@@ -3,11 +3,11 @@
 
   #$client = $_SERVER['HTTP_CLIENT_IP'];
   $client = $_SERVER["REMOTE_ADDR"];
+  ChromePhp::log("client is $client");
 
   include('room_map.php');
 
   if (in_array($client, array_keys($room_map))) {
-    ChromePhp::log("$client in room_map");
     switch($room_map[$client]['type']) {
         case 'noc':
             noc_sign($room_map[$client]['orientation']);
