@@ -322,6 +322,15 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
         $("#schedule").load(loadScheduleUrl);        
       }, 60000);
       
+      /* Check the page type */
+      var checkPageTypeId = setInterval(function() {
+          var pageType = $.ajax({type: "GET", url: "type.php", async: false}).responseText;
+          if (pageType != 'schedule' && pageType != '') {
+              console.log('Type changed, reloading')
+              location.reload()
+          }
+      }, 60000);
+
     });
         
     </script>
