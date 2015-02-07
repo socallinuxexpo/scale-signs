@@ -1,44 +1,108 @@
 <?php
-  if (!empty($_GET["room"])) {
-    switch ($_GET["room"]) {
-        case 'LaJolla':
-        case 'Carmel':
-        case 'LosAngelesA':
-        case 'LosAngelesB':
-        case 'LosAngelesC':
-        case 'CenturyAB':
-        case 'CenturyCD':
-        case 'Marina':
-        case 'BelAir':
-        case 'PlazaA':
-        case 'CatalinaA':
-        case 'CatalinaC':
-        case 'CatalinaD':
-        case 'SantaMonicaB':
-        case 'SanLorenzoA':
-        case 'SanLorenzoB':
-        case 'SanLorenzoC':
-        case 'SanLorenzoD':
-        case 'SanLorenzoE':
-        case 'SanLorenzoF':
-            room($_GET["room"]);
+  include 'ChromePhp.php';
+
+  #$client = $_SERVER['HTTP_CLIENT_IP'];
+  $client = $_SERVER["REMOTE_ADDR"];
+
+  include('room_map.php');
+
+  if (in_array($client, array_keys($room_map))) {
+    ChromePhp::log("$client in room_map");
+    switch($room_map[$client]['type']) {
+        case 'noc':
+            noc_sign($room_map[$client]['orientation']);
             break;
-        case 'CatalinaB':
-        case 'AV':
-            avnoc();
+        case 'room':
+            $year = $month = $day = $hour = $minute = '';
+            if (!empty($_GET["year"])) {
+                $year = $_GET['year'];
+            }
+            if (!empty($_GET["month"])) {
+                $month = $_GET['month'];
+            }
+            if (!empty($_GET["day"])) {
+                $day = $_GET['day'];
+            }
+            if (!empty($_GET["hour"])) {
+                $hour = $_GET['hour'];
+            }
+            if (!empty($_GET["minute"])) {
+                $minute = $_GET['minute'];
+            }
+            if (!empty($_GET["room"])) {
+                room($_GET["room"], $year, $month, $day, $hour, $minute);
+            } else {
+                room($room_map[$client]["room"], $year, $month, $day, $hour, $minute);
+            }
+            break;
+        case 'schedule':
+            $year = $month = $day = $hour = $minute = '';
+            if (!empty($_GET["year"])) {
+                $year = $_GET['year'];
+            }
+            if (!empty($_GET["month"])) {
+                $month = $_GET['month'];
+            }
+            if (!empty($_GET["day"])) {
+                $day = $_GET['day'];
+            }
+            if (!empty($_GET["hour"])) {
+                $hour = $_GET['hour'];
+            }
+            if (!empty($_GET["minute"])) {
+                $minute = $_GET['minute'];
+            }
+            main($year, $month, $day, $hour, $minute);
             break;
         default:
             main();
             break;
     }
   } else {
-    main();
+      if (!empty($_GET["room"])) {
+        switch ($_GET["room"]) {
+            case 'LaJolla':
+            case 'Carmel':
+            case 'LosAngelesA':
+            case 'LosAngelesB':
+            case 'LosAngelesC':
+            case 'CenturyAB':
+            case 'CenturyCD':
+            case 'Marina':
+            case 'BelAir':
+            case 'PlazaA':
+            case 'CatalinaA':
+            case 'CatalinaC':
+            case 'CatalinaD':
+            case 'SantaMonicaB':
+            case 'SanLorenzoA':
+            case 'SanLorenzoB':
+            case 'SanLorenzoC':
+            case 'SanLorenzoD':
+            case 'SanLorenzoE':
+            case 'SanLorenzoF':
+                room($_GET["room"]);
+                break;
+            case 'CatalinaB':
+            case 'AV':
+                avnoc();
+                break;
+            case 'NOC':
+                noc_sign('vertical');
+                break;
+            default:
+                main();
+                break;
+        }
+      } else {
+        main();
+      }
   }
 ?>
 
 <!--- Main -->
 <?php
-function main() {
+function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -186,7 +250,7 @@ function main() {
       $('#sponsors').hide();      
       $('#twitter-stream-content').hide();
       
-      var loadScheduleUrl = "scroll.php";
+      var loadScheduleUrl = "scroll.php?year=<?php echo $year;?>&month=<?php echo $month;?>&day=<?php echo $day;?>&hour=<?php echo $hour;?>&minute=<?php echo $minute;?>";
       $("#schedule").load(loadScheduleUrl);
       $("#schedule").show();
 
@@ -249,7 +313,7 @@ function avnoc() {
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>SCALE 12x</title>
+    <title>SCALE 13x</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -358,7 +422,7 @@ function avnoc() {
 
 <!--- Individual Room Display -->
 <?php
-function room($room) {
+function room($room, $year = '', $month = '', $day = '', $hour = '', $minute = '') {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -392,12 +456,12 @@ function room($room) {
   <body>
     <div class="container main-container">
       <div class="header row" style="text-align: center;">
-        <div class="col-md-12">
+        <div class="" style='text-align: center;'>
           <img src="header.png">
         </div>
       </div>
       <!-- <div class="row roomHeader"><h3>Coming Up</h3></div> -->
-      <div class="row roomHeader"><h3><?php echo $room; ?></h3></div>
+      <div class="row graph-row roomHeader"><h3><?php echo $room; ?></h3></div>
 
       <!-- Begin Row -->
       <div class="row graph-row">
@@ -430,7 +494,7 @@ function room($room) {
       // Hide the schedule until we've loaded the data
       $('#schedule').hide();
       
-      var loadScheduleUrl = "room.php?room=<?php echo $room; ?>";
+      var loadScheduleUrl = "room.php?room=<?php echo $room; ?>&year=<?php echo $year;?>&month=<?php echo $month;?>&day=<?php echo $day;?>&hour=<?php echo $hour;?>&minute=<?php echo $minute;?>";
       $("#schedule").load(loadScheduleUrl);
       $("#schedule").show();
 
@@ -448,5 +512,12 @@ function room($room) {
 </html>
 
 <?php
+}
+?>
+
+<!--- NOC Room Display -->
+<?php
+function noc_sign($orientation) {
+    include('noc.php');
 }
 ?>

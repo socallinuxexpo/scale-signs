@@ -5,12 +5,32 @@ if (!empty($_GET["room"])) {
    $room = "";
 }
  
-if (!empty($_GET["show_time"])) {
-   $show_time = str_replace(' ', '', $_GET["show_room"]);
-} else {
-   $show_time = "";
+$year = $month = $day = $hour = $minute = '';
+if (!empty($_GET["year"])) {
+    $year = $_GET['year'];
 }
- 
+
+if (!empty($_GET["month"])) {
+    $month = $_GET['month'];
+}
+
+if (!empty($_GET["day"])) {
+    $day = $_GET['day'];
+}
+
+if (!empty($_GET["hour"])) {
+    $hour = $_GET['hour'];
+}
+
+if (!empty($_GET["minute"])) {
+    $minute = $_GET['minute'];
+}
+if (!empty($year) && !empty($month) && !empty($day) && !empty($hour) && !empty($minute)) {
+    $rightnow = round(mktime($hour, $minute, 0, $month, $day, $year) / 60);
+} else {
+    $rightnow = round(time() / 60);
+}
+
 $sponsors = array(
                 "Verizon-Edgecast"  => "32.png",
                 "MediaTemple"       => "19.png",
@@ -98,12 +118,12 @@ $sponsors_to_rooms = array(
                             ),
                 );
 
-$xml = simplexml_load_file('http://www.socallinuxexpo.org/scale13x/sign.xml');
+$xml = simplexml_load_file('http://www.socallinuxexpo.org/scale/13x/sign.xml');
 
-$starttime = mktime(0, 0, 0, 2, 21, 2014) / 60;
+$starttime = mktime(0, 0, 0, 2, 19, 2015) / 60;
 
-$rightnow = round(time() / 60);
-#$rightnow = mktime(11, 30, 0, 2, 21, 2014) / 60;
+#$rightnow = round(time() / 60);
+#$rightnow = mktime(10, 30, 0, 2, 22, 2015) / 60;
 $minsafter = $rightnow - $starttime;
 
 $data = array();
@@ -153,17 +173,21 @@ foreach ($xml->node AS $node) {
 	$mfromme = ($handme[0] * 60) + 60 + $handme[1];
 	
 	switch ((string) $node->Day) {
-		case "Friday";
+		case "Thursday";
 			$order[] = $mfromm;
 			$times[] = array($mfromm, $mfromme);
 			break;
-		case "Saturday";
+		case "Friday";
 			$order[] = $mfromm + 1440;
 			$times[] = array($mfromm + 1440, $mfromme + 1440);
 			break;
-		case "Sunday";
+		case "Saturday";
 			$order[] = $mfromm + 2880;
 			$times[] = array($mfromm + 2880, $mfromme + 2880);
+			break;
+		case "Sunday";
+			$order[] = $mfromm + 4320;
+			$times[] = array($mfromm + 4320, $mfromme + 4320);
 			break;
 		case "";
 			$order[] = 0;
