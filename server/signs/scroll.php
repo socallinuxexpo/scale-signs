@@ -4,8 +4,31 @@ $xml = simplexml_load_file('http://www.socallinuxexpo.org/scale/13x/sign.xml');
 
 $starttime = mktime(0, 0, 0, 2, 19, 2015) / 60;
 
-#$rightnow = round(time() / 60);
-$rightnow = round(mktime(11, 30, 0, 2, 21, 2015) / 60);
+$year = $month = $day = $hour = $minute = '';
+if (!empty($_GET["year"])) {
+    $year = $_GET['year'];
+}
+
+if (!empty($_GET["month"])) {
+    $month = $_GET['month'];
+}
+
+if (!empty($_GET["day"])) {
+    $day = $_GET['day'];
+}
+
+if (!empty($_GET["hour"])) {
+    $hour = $_GET['hour'];
+}
+
+if (!empty($_GET["minute"])) {
+    $minute = $_GET['minute'];
+}
+if (!empty($year) && !empty($month) && !empty($day) && !empty($hour) && !empty($minute)) {
+    $rightnow = round(mktime($hour, $minute, 0, $month, $day, $year) / 60);
+} else {
+    $rightnow = round(time() / 60);
+}
 $minsafter = $rightnow - $starttime;
 
 $data = array();
@@ -13,6 +36,7 @@ $order = array();
 $times = array();
 
 $shorten_topics = array(
+                        "AdaInitiativeAllyWorkshop" => "Ada InitiativeAlly Workshop",
                         "BeginnerTutorials" => "Beginner Tutorials",
                         "ContainerandVirtualization" => "Container and Virtualization",
                         "EveningEntertainment" => "Evening Entertainment",
@@ -47,7 +71,7 @@ foreach ($xml->node AS $node) {
 	} else {
 		$name = (string) $node->Speaker;
 	}
-	$data[] = array((string) $node->Day, $thistime, $name, (string) $node->Title, (string) $node->Room, (string) $node->Topic);
+	$data[] = array((string) $node->Day, $thistime, $name, (string) $node->Title, (string) $node->Room, (string) $node->Topic, (string) $node->Overflow);
 		
 	$realtime = $thistime;
 	$realstime = $thisend;
@@ -90,7 +114,7 @@ asort($order, SORT_NUMERIC);
 		    <div class="carousel-inner">	  
 		      <div id="schedule-1-content" class="active item">
 			    <table cellpadding=2 cellspacing=1 class="table table-bordered">
-                <tr bgcolor="#fff"><th>Time</th><th>Presenter</th><th>Topic</th><th>Room</th><th>Overflow</th></tr>
+                <tr bgcolor="#fff"><th>Time <?php echo $rightnow;?></th><th>Presenter</th><th>Topic</th><th>Room</th><th>Overflow</th></tr>
                 <tbody>
     <?php 
       $topics = array();
@@ -193,11 +217,7 @@ asort($order, SORT_NUMERIC);
 					    <!-- Overflow Room -->
 					    <td width="15%"> <i class="icon-info-sign"></i> 
 					    <?php 
-					      //if ( $data[$key][3] == "Game Night" ) {
-					      //  echo "Plaza Ballroom";
-					      //} else {
-					      echo $data[$key][4];
-				       //}
+					      echo $data[$key][6];
 				      ?>
 				      </td>
 
