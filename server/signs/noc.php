@@ -12,7 +12,7 @@
 
   $carousel_three = array(
     0 => array("name" => 'Wi-Fi Spectrum Usage', "graph" => "noc/sums-6hourly-live.png" ),
-    1 => array("name" => 'Total Internet Bandwidth Usage', "graph" => "noc/ateway-2.expo.socallinuxexpo.org-2-day.png" ),
+    1 => array("name" => 'Total Internet Bandwidth Usage', "graph" => "noc/gateway-2.expo.socallinuxexpo.org-2-day.png" ),
     );
 
 ?>
