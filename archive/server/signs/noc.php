@@ -88,7 +88,7 @@
     <div class="container main-container">
 
       <div class="header row">        
-          <img src="images/noc-penguin-header4.png">
+          <img src="images/noc-penguin-header5.png">
       </div>
 
       <div class="row"><hr></div>
@@ -140,7 +140,7 @@
       <div class="row"><hr></div>
 
       <div class="header row">        
-          <img src="images/noc-penguin-header4.png">
+          <img src="images/noc-penguin-header5.png">
       </div>
 
       <?php } else { ?>
