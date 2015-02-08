@@ -143,7 +143,7 @@ asort($order, SORT_NUMERIC);
 		        print "</div>";
 		        print "<div id=\"schedule-$schedule_page-content\" class=\"item\">";
 			    print "<table cellpadding=2 cellspacing=1 class=\"table table-bordered\">";
-			    print "<tr bgcolor='#fff'><th>Time</th><th>Presenter</th><th>Topic</th><th>Room</th></tr>";
+			    print "<tr bgcolor='#fff'><th>Time</th><th>Presenter</th><th>Topic</th><th>Room</th><th>Overflow</th></tr>";
 		      }
 		      $count++; 
 
