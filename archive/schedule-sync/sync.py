@@ -16,7 +16,7 @@ from settings import *
 
 os.getenv('PYTHONIOENCODING', 'utf-8')
 
-sched_org_url = "http://scale12x2014.sched.org/api"
+sched_org_url = "http://scale13x2015.sched.org/api"
 sched_org_session = "/session"
 sched_org_export = "/export"
 sched_org_add = "/add"
@@ -113,14 +113,14 @@ def mod_talk(talk_id, mod_items):
     r = requests.get(request, params=payload)
 
 def download_schedule(xml):
-    #dom = minidom.parse(urllib.urlopen(xml))
-    dom = minidom.parse("sign.xml")
+    dom = minidom.parse(urllib.urlopen(xml))
+    #dom = minidom.parse("sign.xml")
     return dom
 
 def main():
 
-    schedule_xml = "https://www.socallinuxexpo.org/scale12x/sign.xml"
-    dom = download_schedule("http://www.socallinuxexpo.org/scale12x/sign.xml")
+    schedule_xml = "https://www.socallinuxexpo.org/scale/13x/sign.xml"
+    dom = download_schedule(schedule_xml)
 
     parser = TimeSpanParser()
 
@@ -136,8 +136,15 @@ def main():
         else:
             speaker = ""
 
-        topic = node.getElementsByTagName('Topic')[0].childNodes[0].nodeValue
-        short_abstract = node.getElementsByTagName('Short-abstract')[0].childNodes[0].nodeValue
+        if len(node.getElementsByTagName('Topic')[0].childNodes) > 0:
+            topic = node.getElementsByTagName('Topic')[0].childNodes[0].nodeValue
+        else:
+            topic = ""
+
+        if len(node.getElementsByTagName('Short-abstract')[0].childNodes) > 0:
+            short_abstract = node.getElementsByTagName('Short-abstract')[0].childNodes[0].nodeValue
+        else:
+            short_abstract = ""
 
         if len(node.getElementsByTagName('Photo')[0].childNodes) > 0:
             photo = node.getElementsByTagName('Photo')[0].childNodes[0].nodeValue
@@ -174,6 +181,7 @@ def main():
     r.encoding = 'utf-8'
     json_results = r.json()
 
+
     talks_from_sched_org = {}
     for item in json_results:
         talk_id = item['event_key']
@@ -191,7 +199,10 @@ def main():
         else:
             talks_from_sched_org[talk_id]['scale_speaker'] = ""
 
-        talks_from_sched_org[talk_id]['topic'] = item['event_type']
+        if 'topic' in item:
+            talks_from_sched_org[talk_id]['topic'] = item['event_type']
+        else:
+            talks_from_sched_org[talk_id]['topic'] = ""
 
         talks_from_sched_org[talk_id]['start_time'] = \
             datetime.strptime(item['event_start'], \
