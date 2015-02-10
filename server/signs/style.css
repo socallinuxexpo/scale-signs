@@ -468,6 +468,11 @@ font {
     color: #fff !important;
 }
 
+.ApacheBigtop {
+  background-color: #0A7EF2 !important;
+  color: #FFF !important;
+}
+
 .BeginnerTutorials {
   background-color: #3353AF !important;
   color: #FFF !important;
@@ -509,6 +514,11 @@ font {
 
 .EveningEntertainment {
   background: #B20B77 !important;
+  color: #fff !important;
+}
+
+.Fedora {
+  background: #A30C0C !important;
   color: #fff !important;
 }
 
@@ -555,6 +565,11 @@ font {
 .OpenSourceSoftwareInEducation {
   background: #72B20F !important;
   color: #fff !important;
+}
+
+.openSUSE {
+  background: #669900 !important;
+  color: #000 !important;
 }
 
 .PostgreSQL {
