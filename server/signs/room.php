@@ -72,9 +72,9 @@ $sponsors = array(
                 "MaxCDN"            => "38.png",
                 "Symantec"          => "39.png",
                 "OpenSource.com"    => "40.png",
-                "rubicon"           => "41.png",
+                "Rubicon"           => "41.png",
                 "Verizon"           => "42.png",
-
+                "Google"            => "43.png",
     );
 
 $sponsors_to_rooms = array(
@@ -212,12 +212,15 @@ foreach ($xml->node AS $node) {
 	}
 	$data[] = array((string) $node->Day, $thistime, $name, (string) $node->Title, (string) $node->Room, (string) $node->Topic, (string) $node->Photo, (string) $node->{'Short-abstract'});
 		
-	$realtime = $thistime;
-	$realstime = $thisend;
+	#$realtime = $thistime;
+	#$realstime = $thisend;
+	$realtime = explode(' to ', $thistime)[0];
+	$realstime = explode(' to ', $thisend)[1];
 	$handm = explode(":", $realtime);
 	$handme = explode(":", $realstime);
 	$mfromm = ($handm[0] * 60) + $handm[1];
-	$mfromme = ($handme[0] * 60) + 60 + $handme[1];
+	#$mfromme = ($handme[0] * 60) + 60 + $handme[1];
+	$mfromme = ($handme[0] * 60) + $handme[1];
 	
 	switch ((string) $node->Day) {
 		case "Thursday";
