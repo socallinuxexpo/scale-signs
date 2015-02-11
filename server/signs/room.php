@@ -75,6 +75,7 @@ $sponsors = array(
                 "Rubicon"           => "41.png",
                 "Verizon"           => "42.png",
                 "Google"            => "43.png",
+                "Microsoft"         => "44.png",
     );
 
 $sponsors_to_rooms = array(
