@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import BeautifulSoup
 import hashlib
 import requests
 import os
@@ -78,11 +79,13 @@ def add_talk(talk_id, talk_data):
                'session_type': talk_data['topic'],
                'description': talk_data['short_abstract'],
                'venue': talk_data['room'],
-               'scale_speaker': talk_data['scale_speaker'],
                } 
 
+    if 'scale_speaker' in talk_data and len(talk_data['scale_speaker']) > 0:
+      payload['scale_speaker'] = talk_data['scale_speaker'],
+
     r = requests.get(request, params=payload)
-    print r.url
+    print "{0} {1}".format(r.url, payload)
 
 def mod_talk(talk_id, mod_items):
 
@@ -110,11 +113,16 @@ def mod_talk(talk_id, mod_items):
     if 'scale_speaker' in mod_items:
         payload['scale_speaker'] = mod_items['scale_speaker']
 
+    if 'start_time' in mod_items:
+        payload['session_start'] = mod_items['start_time']
+
+    if 'end_time' in mod_items:
+        payload['session_end'] = mod_items['end_time']
+
     r = requests.get(request, params=payload)
 
 def download_schedule(xml):
     dom = minidom.parse(urllib.urlopen(xml))
-    #dom = minidom.parse("sign.xml")
     return dom
 
 def main():
@@ -169,7 +177,7 @@ def main():
         talks_from_xml[talk_id]['start_time'] = start_time
         talks_from_xml[talk_id]['end_time'] = end_time
         #talks_from_xml[talk_id]['short_abstract'] = strip_tags(short_abstract)[1:].replace('  ',' ')
-        talks_from_xml[talk_id]['short_abstract'] = short_abstract
+        talks_from_xml[talk_id]['short_abstract'] = BeautifulSoup.BeautifulSoup(short_abstract).getText()
 
     request = "{0}{1}{2}?api_key={3}&format=json&strip_html=Y&custom_data=Y" .\
               format(sched_org_url,
@@ -180,7 +188,6 @@ def main():
     r = requests.get(request)
     r.encoding = 'utf-8'
     json_results = r.json()
-
 
     talks_from_sched_org = {}
     for item in json_results:
@@ -194,12 +201,12 @@ def main():
         else:
             talks_from_sched_org[talk_id]['room'] = ""
 
-        if 'scale_speaker' in item:
-            talks_from_sched_org[talk_id]['scale_speaker'] = item['scale_speaker']
+        if 'scale speaker' in item:
+            talks_from_sched_org[talk_id]['scale_speaker'] = item['scale speaker']
         else:
             talks_from_sched_org[talk_id]['scale_speaker'] = ""
 
-        if 'topic' in item:
+        if 'event_type' in item:
             talks_from_sched_org[talk_id]['topic'] = item['event_type']
         else:
             talks_from_sched_org[talk_id]['topic'] = ""
@@ -223,16 +230,20 @@ def main():
             mod_items = {}
             for item in talks_from_xml[talk].keys():
                 if not talks_from_xml[talk][item] == talks_from_sched_org[talk][item]:
+                    print talks_from_xml[talk]['title'].encode('utf-8')
                     mod_items[item] = talks_from_xml[talk][item]
+                    #print "{0}\nxml {1}\nsched {2}\n*** do not match ***".format(item, talks_from_xml[talk][item].encode('utf-8'), talks_from_sched_org[talk][item].encode('utf-8'))
+                    #print "{1}\nsched {2}\n".format(item, len(talks_from_xml[talk][item].encode('utf-8')), len(talks_from_sched_org[talk][item].encode('utf-8')))
                     match = False
             if not match:
-                print "need to mod"
+                print "need to mod {0}".format(mod_items)
                 mod_talk(talk, mod_items)        
             else:
                 print "no need to mod"
         else:
             print "talk not in sched.org, add"
-            add_talk(talk, talks_from_xml[talk])        
+            add_talk(talk, talks_from_xml[talk])
+        print "---------------------------------"
 
 if __name__ == "__main__":
     main()
