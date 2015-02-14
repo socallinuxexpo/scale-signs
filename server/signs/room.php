@@ -80,6 +80,7 @@ $sponsors = array(
                 "MySQL"             => "46.png",
                 "Cisco"             => "47.png",
                 "nginx"             => "48.png",
+                "openSUSE"          => "49.png",
     );
 
 $sponsors_to_rooms = array(
