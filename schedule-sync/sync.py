@@ -114,10 +114,15 @@ def mod_talk(talk_id, mod_items):
         payload['scale_speaker'] = mod_items['scale_speaker']
 
     if 'start_time' in mod_items:
-        payload['session_start'] = mod_items['start_time']
+        start_time = datetime.strptime(mod_items['start_time'], \
+            "%Y-%m-%dT%H:%M:%S-08:00").strftime("%Y-%m-%d+%I:%M%p").lower()
+
+    #    payload['session_start'] = mod_items['start_time']
 
     if 'end_time' in mod_items:
-        payload['session_end'] = mod_items['end_time']
+        end_time = datetime.strptime(mod_items['end_time'], \
+            "%Y-%m-%dT%H:%M:%S-08:00").strftime("%Y-%m-%d+%I:%M%p").lower()
+    #    payload['session_end'] = mod_items['end_time']
 
     r = requests.get(request, params=payload)
 
@@ -232,7 +237,7 @@ def main():
                 if not talks_from_xml[talk][item] == talks_from_sched_org[talk][item]:
                     print talks_from_xml[talk]['title'].encode('utf-8')
                     mod_items[item] = talks_from_xml[talk][item]
-                    #print "{0}\nxml {1}\nsched {2}\n*** do not match ***".format(item, talks_from_xml[talk][item].encode('utf-8'), talks_from_sched_org[talk][item].encode('utf-8'))
+                    print "{0}\nxml\n{1}\nsched\n{2}\n*** do not match ***".format(item, talks_from_xml[talk][item].encode('utf-8'), talks_from_sched_org[talk][item].encode('utf-8'))
                     #print "{1}\nsched {2}\n".format(item, len(talks_from_xml[talk][item].encode('utf-8')), len(talks_from_sched_org[talk][item].encode('utf-8')))
                     match = False
             if not match:
