@@ -287,7 +287,15 @@ asort($order, SORT_NUMERIC);
                         if (strlen($photo) > 0) {
                             echo "$photo";
                         } else {
-                            echo '<img src="images/headshot.png" width="480" height="480">';
+                            if ($data[$key][3] === "Bad Voltage: Live") {
+                                echo '<img src="images/badvoltage.jpg" width="480" height="480">';
+                            } elseif ($data[$key][3] === "Weakest Geek") {
+                                echo '<img src="images/weakest_geek_1.png" width="480" height="480">';
+                            } elseif ($data[$key][3] === "UpSCALE") {
+                                echo '<img src="images/upscale_logo_480.png" width="480" height="480">';
+                            } else {
+                                echo '<img src="images/headshot.png" width="480" height="480">';
+                            }
                         }
                         ?>
                     </a>
@@ -347,7 +355,7 @@ asort($order, SORT_NUMERIC);
                         $column = count($sponsors_for_room);
                         switch ($column) {
                             case 1:
-                                $img_size = 500;
+                                $img_size = 400;
                                 break;
                             case 2:
                                 $img_size = 400;
@@ -361,10 +369,19 @@ asort($order, SORT_NUMERIC);
                             case 5:
                                 $img_size = 200;
                                 break;
+                            case 6:
+                                $img_size = 200;
+                                break;
+                            case 7:
+                                $img_size = 200;
+                                break;
+                            case 8:
+                                $img_size = 200;
+                                break;
                         }
 
                         foreach ($sponsors_for_room as $sponsor) {
-                            echo "<img src='images/sponsors/" . $sponsors[$sponsor] . "' style='width: " . $img_size . "px; height: " . $img_size . "px;'>";
+                            echo "<img src='images/sponsors/" . $sponsors[$sponsor] . "' style='width: " . $img_size . "px; height: " . $img_size . "px; border: 1px solid #000; margin: 1px;'>";
                         }
                         ?>
                     </div>
