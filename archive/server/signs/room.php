@@ -81,12 +81,13 @@ $sponsors = array(
                 "Cisco"             => "47.png",
                 "nginx"             => "48.png",
                 "openSUSE"          => "49.png",
+                "ZipRecruiter"      => "50.png",
     );
 
 $sponsors_to_rooms = array(
                 "LaJolla" => array(
                                     "Thursday" => array(),
-                                    "Friday" => array("cars.com", "Datadog", "Dtk.io", "Microsoft", "StackStorm", "Verizon", "Cisco"),
+                                    "Friday" => array("cars.com", "Datadog", "Dtk.io", "Microsoft", "StackStorm", "Verizon", "Cisco", "ZipRecruiter"),
                                     "Saturday" => array("Rubicon"),
                                     "Sunday" => array("Rubicon"),
                             ),
