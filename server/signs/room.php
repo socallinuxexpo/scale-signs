@@ -113,7 +113,7 @@ $sponsors_to_rooms = array(
                                     "Thursday" => array("ElasticSearch"),
                                     "Friday" => array(),
                                     "Saturday" => array("Symantec"),
-                                    "Sunday" => array(),
+                                    "Sunday" => array("Symantec"),
                             ),
                 "LosAngelesB" => array(
                                     "Thursday" => array(),
@@ -129,8 +129,8 @@ $sponsors_to_rooms = array(
                             ),
                 "BelAir" => array(
                                     "Thursday" => array(),
-                                    "Friday" => array("OneCourseSource", "HP"),
-                                    "Saturday" => array(),
+                                    "Friday" => array(),
+                                    "Saturday" => array("OneCourseSource", "HP"),
                                     "Sunday" => array(),
                             ),
                 "Marina" => array(
