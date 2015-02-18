@@ -7,6 +7,22 @@
 
   include('room_map.php');
 
+  $room_lookup_table = array(
+                  "lajolla"       => "LaJolla",
+                  "carmel"        => "Carmel",
+                  "centuryab"     => "CenturyAB",
+                  "centurycd"     => "CenturyCD",
+                  "losangelesa"   => "LosAngelesA",
+                  "losangelesc"   => "LosAngelesC",
+                  "belair"        => "BelAir",
+                  "marina"        => "Marina",
+                  "sanlorenzod"   => "SanLorenzoD",
+                  "sanlorenzoe"   => "SanLorenzoE",
+                  "sanlorenzof"   => "SanLorenzoF",
+                  "plazabc"       => "PlazaBC",
+                  "plazad"        => "PlazaD",
+      );
+
   if (in_array($client, array_keys($room_map))) {
     switch($room_map[$client]['type']) {
         case 'noc':
@@ -514,7 +530,7 @@ function room($room, $year = '', $month = '', $day = '', $hour = '', $minute = '
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>SCALE 13x: <?php echo "$room"; ?></title>
+    <title>SCALE 13x: <?php echo $room_lookup_table[$room]; ?></title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
