@@ -7,21 +7,6 @@
 
   include('room_map.php');
 
-  $room_lookup_table = array(
-                  "lajolla"       => "LaJolla",
-                  "carmel"        => "Carmel",
-                  "centuryab"     => "CenturyAB",
-                  "centurycd"     => "CenturyCD",
-                  "losangelesa"   => "LosAngelesA",
-                  "losangelesc"   => "LosAngelesC",
-                  "belair"        => "BelAir",
-                  "marina"        => "Marina",
-                  "sanlorenzod"   => "SanLorenzoD",
-                  "sanlorenzoe"   => "SanLorenzoE",
-                  "sanlorenzof"   => "SanLorenzoF",
-                  "plazabc"       => "PlazaBC",
-                  "plazad"        => "PlazaD",
-      );
 
   if (in_array($client, array_keys($room_map))) {
     switch($room_map[$client]['type']) {
@@ -519,6 +504,23 @@ function avnoc() {
 <!--- Individual Room Display -->
 <?php
 function room($room, $year = '', $month = '', $day = '', $hour = '', $minute = '') {
+
+  $room_lookup_table = array(
+                  "lajolla"       => "LaJolla",
+                  "carmel"        => "Carmel",
+                  "centuryab"     => "CenturyAB",
+                  "centurycd"     => "CenturyCD",
+                  "losangelesa"   => "LosAngelesA",
+                  "losangelesc"   => "LosAngelesC",
+                  "belair"        => "BelAir",
+                  "marina"        => "Marina",
+                  "sanlorenzod"   => "SanLorenzoD",
+                  "sanlorenzoe"   => "SanLorenzoE",
+                  "sanlorenzof"   => "SanLorenzoF",
+                  "plazabc"       => "PlazaBC",
+                  "plazad"        => "PlazaD",
+      );
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
