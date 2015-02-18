@@ -114,15 +114,10 @@ def mod_talk(talk_id, mod_items):
         payload['scale_speaker'] = mod_items['scale_speaker']
 
     if 'start_time' in mod_items:
-        start_time = datetime.strptime(mod_items['start_time'], \
-            "%Y-%m-%dT%H:%M:%S-08:00").strftime("%Y-%m-%d+%I:%M%p").lower()
-
-    #    payload['session_start'] = mod_items['start_time']
+        payload['session_start'] = mod_items['start_time']
 
     if 'end_time' in mod_items:
-        end_time = datetime.strptime(mod_items['end_time'], \
-            "%Y-%m-%dT%H:%M:%S-08:00").strftime("%Y-%m-%d+%I:%M%p").lower()
-    #    payload['session_end'] = mod_items['end_time']
+        payload['session_end'] = mod_items['end_time']
 
     r = requests.get(request, params=payload)
 
