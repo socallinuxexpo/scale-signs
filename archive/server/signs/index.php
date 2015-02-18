@@ -55,7 +55,6 @@
             main($year, $month, $day, $hour, $minute);
             break;
         default:
-            ChromePhp::log("Here.");
             main();
             break;
     }
@@ -63,25 +62,45 @@
       if (!empty($_GET["room"])) {
         switch ($_GET["room"]) {
             case 'LaJolla':
+            case 'lajolla':
             case 'Carmel':
+            case 'carmel':
             case 'LosAngelesA':
+            case 'losangelesa':
             case 'LosAngelesB':
+            case 'losangelesb':
             case 'LosAngelesC':
+            case 'losangelesc':
             case 'CenturyAB':
+            case 'centuryab':
             case 'CenturyCD':
+            case 'centurycd':
             case 'Marina':
+            case 'marina':
             case 'BelAir':
+            case 'belair':
             case 'PlazaA':
+            case 'plazaa':
             case 'CatalinaA':
+            case 'catalinaa':
             case 'CatalinaC':
+            case 'catalinac':
             case 'CatalinaD':
+            case 'catalinad':
             case 'SantaMonicaB':
+            case 'santaMonicab':
             case 'SanLorenzoA':
+            case 'sanlorenzoa':
             case 'SanLorenzoB':
+            case 'sanLorenzob':
             case 'SanLorenzoC':
+            case 'sanLorenzoc':
             case 'SanLorenzoD':
+            case 'sanLorenzod':
             case 'SanLorenzoE':
+            case 'sanLorenzoe':
             case 'SanLorenzoF':
+            case 'sanLorenzof':
                 $year = $month = $day = $hour = $minute = '';
                 if (!empty($_GET["year"])) {
                     $year = $_GET['year'];
@@ -101,10 +120,13 @@
                 room($_GET["room"], $year, $month, $day, $hour, $minute);
                 break;
             case 'CatalinaB':
+            case 'catalinab':
             case 'AV':
+            case 'av':
                 avnoc();
                 break;
             case 'NOC':
+            case 'noc':
                 noc_sign('vertical');
                 break;
             default:
