@@ -557,7 +557,7 @@ function room($room, $year = '', $month = '', $day = '', $hour = '', $minute = '
         </div>
       </div>
       <!-- <div class="row roomHeader"><h3>Coming Up</h3></div> -->
-      <div class="row graph-row roomHeader"><h3><?php echo $room; ?></h3></div>
+      <div class="row graph-row roomHeader"><h3><?php echo $room_lookup_table[$room]; ?></h3></div>
 
       <!-- Begin Row -->
       <div class="row graph-row">
