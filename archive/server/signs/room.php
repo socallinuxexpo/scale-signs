@@ -31,6 +31,22 @@ if (!empty($year) && !empty($month) && !empty($day) && !empty($hour) && !empty($
     $rightnow = round(time() / 60);
 }
 
+$room_lookup_table = array(
+                "lajolla"       => "LaJolla",
+                "carmel"        => "Carmel",
+                "centuryab"     => "CenturyAB",
+                "centurycd"     => "CenturyCD",
+                "losangelesa"   => "LosAngelesA",
+                "losangelesc"   => "LosAngelesC",
+                "belair"        => "BelAir",
+                "marina"        => "Marina",
+                "sanlorenzod"   => "SanLorenzoD",
+                "sanlorenzoe"   => "SanLorenzoE",
+                "sanlorenzof"   => "SanLorenzoF",
+                "plazabc"       => "PlazaBC",
+                "plazad"        => "PlazaD",
+    );
+
 $sponsors = array(
                 "ActiveState"       => "01.png",
                 "Ansible"           => "02.png",
@@ -271,7 +287,7 @@ asort($order, SORT_NUMERIC);
         // Remove spaces from room to compare with passed argument
         //
         $xml_room = str_replace(' ', '', $data[$key][4]);
-        if (($times[$key][0] - 60) <= $minsafter && ($times[$key][1]) >= $minsafter && $xml_room == $room) {
+        if (($times[$key][0] - 60) <= $minsafter && ($times[$key][1]) >= $minsafter && $xml_room == $room_lookup_table[$room]) {
             //
             // Check if the topic of the current talk is in the array
             // ..if not. add it.
