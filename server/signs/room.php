@@ -85,86 +85,86 @@ $sponsors = array(
     );
 
 $sponsors_to_rooms = array(
-                "LaJolla" => array(
+                "lajolla" => array(
                                     "Thursday" => array(),
                                     "Friday" => array("cars.com", "Datadog", "Dtk.io", "Microsoft", "StackStorm", "Verizon", "Cisco", "ZipRecruiter"),
                                     "Saturday" => array("Rubicon"),
                                     "Sunday" => array("Rubicon"),
                             ),
-                "Carmel" => array(
+                "carmel" => array(
                                     "Thursday" => array("Chef"),
                                     "Friday" => array("ActiveState"),
                                     "Saturday" => array("ActiveState"),
                                     "Sunday" => array("ActiveState"),
                             ),
-                "CenturyAB" => array(
+                "centuryab" => array(
                                     "Thursday" => array("openSUSE"),
                                     "Friday" => array("RedHat"),
                                     "Saturday" => array(),
                                     "Sunday" => array(),
                             ),
-                "CenturyCD" => array(
+                "centurycd" => array(
                                     "Thursday" => array("Puppet"),
                                     "Friday" => array(),
                                     "Saturday" => array("Q"),
                                     "Sunday" => array("Q"),
                             ),
-                "LosAngelesA" => array(
+                "losangelesa" => array(
                                     "Thursday" => array("ElasticSearch"),
                                     "Friday" => array(),
                                     "Saturday" => array("Symantec"),
                                     "Sunday" => array("Symantec"),
                             ),
-                "LosAngelesB" => array(
+                "losangelesb" => array(
                                     "Thursday" => array(),
                                     "Friday" => array(),
                                     "Saturday" => array("MaxCDN"),
                                     "Sunday" => array("MaxCDN"),
                             ),
-                "LosAngelesC" => array(
+                "losangelesc" => array(
                                     "Thursday" => array(),
                                     "Friday" => array(),
                                     "Saturday" => array("openSUSE"),
                                     "Sunday" => array("openSUSE"),
                             ),
-                "BelAir" => array(
+                "belair" => array(
                                     "Thursday" => array(),
                                     "Friday" => array(),
                                     "Saturday" => array("OneCourseSource", "HP"),
                                     "Sunday" => array(),
                             ),
-                "Marina" => array(
+                "marina" => array(
                                     "Thursday" => array(),
                                     "Friday" => array(),
                                     "Saturday" => array("openSUSE"),
                                     "Sunday" => array("openSUSE"),
 
                             ),
-                "SanLorenzoD" => array(
+                "sanlorenzod" => array(
                                     "Thursday" => array(),
                                     "Friday" => array(),
                                     "Saturday" => array(),
                                     "Sunday" => array(),
                             ),
-                "SanLorenzoE" => array(
+                "sanlorenzoe" => array(
                                     "Thursday" => array(),
                                     "Friday" => array(),
                                     "Saturday" => array(),
                                     "Sunday" => array(),
                             ),
-                "SanLorenzoF" => array(
+                "sanlorenzof" => array(
                                     "Thursday" => array(),
                                     "Friday" => array(),
                                     "Saturday" => array(),
                                     "Sunday" => array(),
                             ),
-                "PlazaBC" => array(
+                "plazabc" => array(
                                     "Thursday" => array(),
                                     "Friday" => array("MySQL"),
                                     "Saturday" => array(),
                                     "Sunday" => array(),
                             ),
-                "PlazaD" => array(
+                "plazad" => array(
                                     "Thursday" => array(),
                                     "Friday" => array(),
                                     "Saturday" => array(),
