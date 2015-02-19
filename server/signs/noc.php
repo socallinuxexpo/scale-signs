@@ -246,7 +246,7 @@
           console.log('Type changed, reloading')
           location.reload()
       }
-  }, 60000);
+  }, 20000);
 
   });
 
