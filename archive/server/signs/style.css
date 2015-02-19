@@ -466,40 +466,48 @@ font {
 .AdaInitiativeAllyWorkshop {
     background-color: #ffa200 !important;
     color: #fff !important;
+    font-weight: bold;
 }
 
 .ApacheBigtop {
   background-color: #0A7EF2 !important;
   color: #FFF !important;
+  font-weight: bold;
 }
 
 .BeginnerTutorials {
   background-color: #3353AF !important;
   color: #FFF !important;
+  font-weight: bold;
 }
 
 .BigData {
   background-color: #a6ceff !important;
   color: #000 !important;
+  font-weight: bold;
 }
 
 .BoFs {
   background-color: #FFBC00 !important;
   color: #000 !important;
+  font-weight: bold;
 }
 
 .Cloud {
   background: #638dce !important;
   color: #fff !important;
+  font-weight: bold;
 }
 .ContainerandVirtualization {
   background: #ffa200 !important;
   color: #000 !important;
+  font-weight: bold;
 }
 
 .Developer {
   background: #D65C09 !important;
   color: #000 !important;
+  font-weight: bold;
 }
 
 .DevOps {
@@ -585,6 +593,7 @@ font {
 .Puppet {
   background: #D2A3E8 !important;
   color: #000 !important;
+  font-weight: bold;
 }
 
 .ScaleU {
