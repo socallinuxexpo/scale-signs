@@ -68,10 +68,13 @@
             case 'carmel':
             case 'LosAngelesA':
             case 'losangelesa':
+            case 'laa':
             case 'LosAngelesB':
             case 'losangelesb':
+            case 'lab':
             case 'LosAngelesC':
             case 'losangelesc':
+            case 'lac':
             case 'CenturyAB':
             case 'centuryab':
             case 'CenturyCD':
@@ -82,6 +85,8 @@
             case 'belair':
             case 'PlazaA':
             case 'plazaa':
+            case 'plazabc':
+            case 'plazad':
             case 'CatalinaA':
             case 'catalinaa':
             case 'CatalinaC':
@@ -511,7 +516,11 @@ function room($room, $year = '', $month = '', $day = '', $hour = '', $minute = '
                   "centuryab"     => "CenturyAB",
                   "centurycd"     => "CenturyCD",
                   "losangelesa"   => "LosAngelesA",
+                  "laa"           => "LosAngelesA",
+                  "losangelesb"   => "LosAngelesB",
+                  "lab"           => "LosAngelesB",
                   "losangelesc"   => "LosAngelesC",
+                  "lac"           => "LosAngelesC",
                   "belair"        => "BelAir",
                   "marina"        => "Marina",
                   "sanlorenzod"   => "SanLorenzoD",
