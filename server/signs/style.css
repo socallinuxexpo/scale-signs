@@ -82,7 +82,7 @@ font {
   border-radius: 6px 6px 0px 0px;
   */
   border-style: solid;
-  border-color: #eee;
+  border-color: #333;
   padding: 0px 20px 0px 25px;
   /*
   width: 100%;
@@ -107,7 +107,7 @@ font {
 #scheduleCarousel {
   background: #fff;
   box-shadow: 0 0 30px #4A4A4A;
-  font-size: 180% !important;  
+  font-size: 170% !important;  
   /* font-size: 1.5em; */
 }
 
@@ -357,7 +357,7 @@ font {
   text-align: center;
   left-margin: auto;
   right-margin: auto;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 #header-row {

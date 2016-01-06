@@ -32,23 +32,26 @@ if (!empty($year) && !empty($month) && !empty($day) && !empty($hour) && !empty($
 }
 
 $room_lookup_table = array(
-                "lajolla"       => "LaJolla",
-                "carmel"        => "Carmel",
-                "centuryab"     => "CenturyAB",
-                "centurycd"     => "CenturyCD",
-                "losangelesa"   => "LosAngelesA",
-                "laa"           => "LosAngelesA",
-                "losangelesb"   => "LosAngelesB",
-                "lab"           => "LosAngelesB",
-                "losangelesc"   => "LosAngelesC",
-                "lac"           => "LosAngelesC",
-                "belair"        => "BelAir",
-                "marina"        => "Marina",
-                "sanlorenzod"   => "SanLorenzoD",
-                "sanlorenzoe"   => "SanLorenzoE",
-                "sanlorenzof"   => "SanLorenzoF",
-                "plazabc"       => "PlazaBC",
-                "plazad"        => "PlazaD",
+    "ballroom-de"   => "BallroomDE",
+    "ballroom-a"    => "BallroomA",
+    "ballroom-b"    => "BallroomB",
+    "ballroom-c"    => "BallroomC",
+    "ballroom-f"    => "BallroomF",
+    "ballroom-g"    => "BallroomG",
+    "ballroom-h"    => "BallroomH",
+    "ballroom-gh"   => "BallroomGH",
+    "ballroom-i"    => "BallroomI",
+    "ballroom-j"    => "BallroomJ",
+    "room-101"  => "Room101",
+    "room-103"  => "Room103",
+    "room-104"  => "Room104",
+    "room-106"  => "Room106",
+    "room-107"  => "Room107",
+    "room-211"  => "Room211",
+    "room-212"  => "Room212",
+    "room-209"  => "Room209",
+    "room-205"  => "Room205",
+    "room-215"  => "Room215",
     );
 
 $sponsors = array(
@@ -105,114 +108,130 @@ $sponsors = array(
     );
 
 $sponsors_to_rooms = array(
-                "lajolla" => array(
+                "ballroom-de" => array(
                                     "Thursday" => array(),
                                     "Friday" => array("cars.com", "Datadog", "Dtk.io", "Microsoft", "StackStorm", "Verizon", "Cisco", "ZipRecruiter"),
                                     "Saturday" => array("Rubicon"),
                                     "Sunday" => array("Rubicon"),
                             ),
-                "carmel" => array(
-                                    "Thursday" => array("Chef"),
+                "ballroom-a" => array(
+                                    "Thursday" => array("Chef","Datadog"),
                                     "Friday" => array("ActiveState"),
                                     "Saturday" => array("ActiveState"),
                                     "Sunday" => array("ActiveState"),
                             ),
-                "centuryab" => array(
+                "ballroom-b" => array(
                                     "Thursday" => array("openSUSE"),
                                     "Friday" => array("RedHat"),
                                     "Saturday" => array(),
                                     "Sunday" => array(),
                             ),
-                "centurycd" => array(
+                "ballroom-c" => array(
+                                    "Thursday" => array("openSUSE"),
+                                    "Friday" => array("RedHat"),
+                                    "Saturday" => array(),
+                                    "Sunday" => array(),
+                            ),
+                "ballroom-f" => array(
                                     "Thursday" => array("Puppet"),
                                     "Friday" => array(),
                                     "Saturday" => array("Q"),
                                     "Sunday" => array("Q"),
                             ),
-                "losangelesa" => array(
+                "ballroom-g" => array(
                                     "Thursday" => array("ElasticSearch"),
                                     "Friday" => array(),
                                     "Saturday" => array("Symantec"),
                                     "Sunday" => array("Symantec"),
                             ),
-                "laa" => array(
+                "ballroom-h" => array(
                                     "Thursday" => array("ElasticSearch"),
                                     "Friday" => array(),
                                     "Saturday" => array("Symantec"),
                                     "Sunday" => array("Symantec"),
                             ),
-                "losangelesb" => array(
+                "ballroom-gh" => array(
                                     "Thursday" => array(),
                                     "Friday" => array(),
                                     "Saturday" => array("MaxCDN"),
                                     "Sunday" => array("MaxCDN"),
                             ),
-                "lab" => array(
+                "ballroom-i" => array(
                                     "Thursday" => array(),
                                     "Friday" => array(),
                                     "Saturday" => array("MaxCDN"),
                                     "Sunday" => array("MaxCDN"),
                             ),
-                "losangelesc" => array(
+                "ballroom-j" => array(
                                     "Thursday" => array(),
                                     "Friday" => array(),
                                     "Saturday" => array("openSUSE"),
                                     "Sunday" => array("openSUSE"),
                             ),
-                "lac" => array(
+                "room-101" => array(
                                     "Thursday" => array(),
                                     "Friday" => array(),
                                     "Saturday" => array("openSUSE"),
                                     "Sunday" => array("openSUSE"),
                             ),
-                "belair" => array(
+                "room-102" => array(
                                     "Thursday" => array(),
                                     "Friday" => array(),
                                     "Saturday" => array("OneCourseSource", "HP"),
                                     "Sunday" => array(),
                             ),
-                "marina" => array(
+                "room-103" => array(
                                     "Thursday" => array(),
                                     "Friday" => array(),
                                     "Saturday" => array("openSUSE"),
                                     "Sunday" => array("openSUSE"),
 
                             ),
-                "sanlorenzod" => array(
+                "room-104" => array(
                                     "Thursday" => array(),
                                     "Friday" => array(),
                                     "Saturday" => array(),
                                     "Sunday" => array(),
                             ),
-                "sanlorenzoe" => array(
+                "room-106" => array(
                                     "Thursday" => array(),
                                     "Friday" => array(),
                                     "Saturday" => array(),
                                     "Sunday" => array(),
                             ),
-                "sanlorenzof" => array(
+                "room-107" => array(
                                     "Thursday" => array(),
                                     "Friday" => array(),
                                     "Saturday" => array(),
                                     "Sunday" => array(),
                             ),
-                "plazabc" => array(
+                "room-211" => array(
                                     "Thursday" => array(),
                                     "Friday" => array("MySQL"),
                                     "Saturday" => array(),
                                     "Sunday" => array(),
                             ),
-                "plazad" => array(
+                "room-212" => array(
                                     "Thursday" => array(),
                                     "Friday" => array(),
                                     "Saturday" => array(),
                                     "Sunday" => array(),
                             ),
-                );
+                 "room-209" => array(
+                                    "Thursday" => array(),
+                                    "Friday" => array(),
+                                    "Saturday" => array(),
+                                    "Sunday" => array(),
+                            ),
+               );
+$url = 'http://www.socallinuxexpo.org/scale/14x/sign.xml';
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$xmlresponse = curl_exec($ch);
+$xml = simplexml_load_string($xmlresponse);
 
-$xml = simplexml_load_file('http://www.socallinuxexpo.org/scale/13x/sign.xml');
-
-$starttime = mktime(0, 0, 0, 2, 19, 2015) / 60;
+$starttime = mktime(0, 0, 0, 1, 21, 2016) / 60;
 
 #$rightnow = round(time() / 60);
 #$rightnow = mktime(10, 30, 0, 2, 22, 2015) / 60;
@@ -250,10 +269,10 @@ foreach ($xml->node AS $node) {
 		$thisend = substr((string) $node->{'Time'}, $lpos + 2);
 	}
 
-	if ((string) $node->Speaker == "- -") {
+	if ((string) $node->Speakers == "- -") {
 		$name = '';
 	} else {
-		$name = (string) $node->Speaker;
+		$name = (string) $node->Speakers;
 	}
 	$data[] = array((string) $node->Day, $thistime, $name, (string) $node->Title, (string) $node->Room, (string) $node->Topic, (string) $node->Photo, (string) $node->{'Short-abstract'});
 		
@@ -374,7 +393,7 @@ asort($order, SORT_NUMERIC);
                 <div class="media">
                     <div class="row">
                         <div class="col-md-12" style="text-align: center; vertical-align: middle;">
-                            <div class="well" style="height: 480px; vertical-align: middle;">
+                            <div class="well" style="height: 460px; vertical-align: middle;">
                             <div class="row">&nbsp;</div>
                             <img src="images/WiFi-Sign.png">
                             </div>
@@ -431,8 +450,8 @@ asort($order, SORT_NUMERIC);
 	</div>
     </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>    
-<script src="bootstrap/js/bootstrap.js"></script>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript">
 
   $(document).ready(function() {
