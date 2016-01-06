@@ -2,9 +2,14 @@
  
 include 'ChromePhp.php';
 
-$xml = simplexml_load_file('http://www.socallinuxexpo.org/scale/13x/sign.xml');
+$url = 'http://www.socallinuxexpo.org/scale/14x/sign.xml';
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$xmlresponse = curl_exec($ch);
+$xml = simplexml_load_string($xmlresponse);
 
-$starttime = mktime(0, 0, 0, 2, 19, 2015) / 60;
+$starttime = mktime(0, 0, 0, 1, 21, 2016) / 60;
 
 #if (!empty($_GET["year"]) && !empty($_GET["month"]) && !empty($_GET["day"]) && !empty($_GET["hour"]) && !empty($_GET["minute"])) {
 if (!empty($_GET["year"]) && !empty($_GET["month"]) && !empty($_GET["day"])) {
@@ -43,7 +48,7 @@ foreach ($xml->node AS $node) {
   
   // Remove Spaces so we can use it for a CSS class
   $node->{'Topic'} = preg_replace('/\s+/', '', $node->{'Topic'});
-  
+
 	$pos = strpos((string) $node->{'Time'}, ",");
 	$lpos = strrpos((string) $node->{'Time'}, ",");
 	if ($pos === false) {
@@ -54,22 +59,19 @@ foreach ($xml->node AS $node) {
 		$thisend = substr((string) $node->{'Time'}, $lpos + 2);
 	}
 
-	if ((string) $node->Speaker == "- -") {
+	if ((string) $node->Speakers == "- -") {
 		$name = '';
 	} else {
-		$name = (string) $node->Speaker;
+		$name = (string) $node->Speakers;
 	}
 	$title = (string) $node->Title;
 	$data[] = array((string) $node->Day, $thistime, $name, (string) $node->Title, (string) $node->Room, (string) $node->Topic, (string) $node->Overflow);
 		
-	#$realtime = $thistime;
-	#$realstime = $thisend;
 	$realtime = explode(' to ', $thistime)[0];
 	$realstime = explode(' to ', $thisend)[1];
 	$handm = explode(":", $realtime);
 	$handme = explode(":", $realstime);
 	$mfromm = ($handm[0] * 60) + $handm[1];
-	#$mfromme = ($handme[0] * 60) + 60 + $handme[1];
 	$mfromme = ($handme[0] * 60) + $handme[1];
 	
 	switch ((string) $node->Day) {
@@ -94,8 +96,10 @@ foreach ($xml->node AS $node) {
 			$times[] = array(0, 0);
 			break;
 	}
+  $order_current = end($order);
+  $times_current = end($times);
 }
-asort($order, SORT_NUMERIC);
+//asort($order, SORT_NUMERIC);
 
 ?>
 
@@ -110,7 +114,7 @@ asort($order, SORT_NUMERIC);
                 <tbody>
     <?php 
       $topics = array();
-      $items_per_page = 8;
+      $items_per_page = 6;
       $odd = 0; $count = 0; $schedule_page = 1;
       foreach ($order AS $key => $value) {
 
@@ -199,11 +203,7 @@ asort($order, SORT_NUMERIC);
 					    <!-- Room -->
 					    <td width="15%"> <i class="icon-info-sign"></i> 
 					    <?php 
-					      //if ( $data[$key][3] == "Game Night" ) {
-					      //  echo "Plaza Ballroom";
-					      //} else {
 					      echo $data[$key][4];
-				       //}
 				      ?>
 				      </td>
 					    <!-- Overflow Room -->
@@ -221,7 +221,6 @@ asort($order, SORT_NUMERIC);
     if ( $count < ($schedule_page * $items_per_page) ) {
       $filler = ($schedule_page * $items_per_page) - $count;
       for ($i = 0; $i < $filler; $i++) {
-        //print "<tr bgcolor='#fff'><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>";
         print "<tr bgcolor='#fff'><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>";
 
       }
@@ -243,8 +242,8 @@ asort($order, SORT_NUMERIC);
 			    ?>
           </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>    
-<script src="bootstrap/js/bootstrap.js"></script>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript">
 
   $(document).ready(function() {

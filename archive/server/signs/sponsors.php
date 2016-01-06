@@ -27,9 +27,9 @@
 </div>
 </div>
 
-<script src="js/jquery-1.8.2.js"></script>    
+<script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/jquery.marquee.js"></script>    
-<script src="bootstrap/js/bootstrap.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript">
 
   $(document).ready(function() {

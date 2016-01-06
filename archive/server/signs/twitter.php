@@ -23,10 +23,11 @@ function search_twitter()
   
   // Any to block from the signs
   $blacklist = array(
+    "irabinovitch",
   );
 	
 	$url = 'https://api.twitter.com/1.1/search/tweets.json';
-	$getfield = '?q=#scale13x';
+	$getfield = '?q=#scale14x';
 	$requestMethod = 'GET';
 	
 	$twitter = new TwitterAPIExchange($settings);
@@ -95,9 +96,9 @@ function search_twitter()
   </div>
 </div>
 
-<script src="js/jquery-1.8.2.js"></script>    
+<script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/jquery.marquee.js"></script>    
-<script src="bootstrap/js/bootstrap.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript">
 
   $(document).ready(function() {

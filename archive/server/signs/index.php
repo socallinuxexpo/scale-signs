@@ -7,7 +7,6 @@
 
   include('room_map.php');
 
-
   if (in_array($client, array_keys($room_map))) {
     switch($room_map[$client]['type']) {
         case 'noc':
@@ -62,51 +61,26 @@
   } else {
       if (!empty($_GET["room"])) {
         switch ($_GET["room"]) {
-            case 'LaJolla':
-            case 'lajolla':
-            case 'Carmel':
-            case 'carmel':
-            case 'LosAngelesA':
-            case 'losangelesa':
-            case 'laa':
-            case 'LosAngelesB':
-            case 'losangelesb':
-            case 'lab':
-            case 'LosAngelesC':
-            case 'losangelesc':
-            case 'lac':
-            case 'CenturyAB':
-            case 'centuryab':
-            case 'CenturyCD':
-            case 'centurycd':
-            case 'Marina':
-            case 'marina':
-            case 'BelAir':
-            case 'belair':
-            case 'PlazaA':
-            case 'plazaa':
-            case 'plazabc':
-            case 'plazad':
-            case 'CatalinaA':
-            case 'catalinaa':
-            case 'CatalinaC':
-            case 'catalinac':
-            case 'CatalinaD':
-            case 'catalinad':
-            case 'SantaMonicaB':
-            case 'santaMonicab':
-            case 'SanLorenzoA':
-            case 'sanlorenzoa':
-            case 'SanLorenzoB':
-            case 'sanLorenzob':
-            case 'SanLorenzoC':
-            case 'sanLorenzoc':
-            case 'SanLorenzoD':
-            case 'sanLorenzod':
-            case 'SanLorenzoE':
-            case 'sanLorenzoe':
-            case 'SanLorenzoF':
-            case 'sanLorenzof':
+            case 'ballroom-de':
+            case 'ballroom-a':
+            case 'ballroom-b':
+            case 'ballroom-c':
+            case 'ballroom-f':
+            case 'ballroom-g':
+            case 'ballroom-h':
+            case 'ballroom-gh':
+            case 'ballroom-i':
+            case 'ballroom-j':
+            case 'room-101':
+            case 'room-103':
+            case 'room-104':
+            case 'room-106':
+            case 'room-107':
+            case 'room-211':
+            case 'room-212':
+            case 'room-209':
+            case 'room-205':
+            case 'room-215':
                 $year = $month = $day = $hour = $minute = '';
                 if (!empty($_GET["year"])) {
                     $year = $_GET['year'];
@@ -125,8 +99,7 @@
                 }
                 room($_GET["room"], $year, $month, $day, $hour, $minute);
                 break;
-            case 'CatalinaB':
-            case 'catalinab':
+            case 'room-205':
             case 'AV':
             case 'av':
                 avnoc();
@@ -172,6 +145,7 @@
         if (!empty($_GET["minute"])) {
             $minute = $_GET['minute'];
         }
+        $year = 2016; $month = 1; $day = 22; $hour = 14; $minute = 00;
         main($year, $month, $day, $hour, $minute);
       }
   }
@@ -191,7 +165,7 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>SCALE 13x</title>
+    <title>SCALE 14x</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -214,8 +188,12 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
     <div id='top-container' class="container main-container">
 
       <div id='header-row' class="header row">
-        <div class="col-md-8">
+        <div class="col-md-4">
           <img src="header.png">
+        </div>
+
+        <div class="col-md-4">
+          <img src="images/WiFi-Sign2.png" class="pull-right">
         </div>
 
         <div class="col-md-4">            
@@ -230,7 +208,6 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
             <li><div id="meridiem2" class="card">&nbsp;</div></li>
           </ul>
         </div>
-
       </div>
 
       <div id='schedule-row-hr' class="row"><hr></div>
@@ -273,7 +250,7 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>    
+  <script src="js/jquery-1.10.2.min.js"></script>
   <script src="bootstrap/js/bootstrap.js"></script>
   <script src="js/clock.js"></script>
   <script src="js/timer.js"></script>
@@ -466,7 +443,7 @@ function avnoc() {
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>    
+  <script src="js/jquery-1.10.2.min.js"></script>
   <script src="bootstrap/js/bootstrap.js"></script>
   <script src="js/clock.js"></script>
   <script src="js/timer.js"></script>
@@ -541,7 +518,7 @@ function room($room, $year = '', $month = '', $day = '', $hour = '', $minute = '
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>SCALE 13x: <?php echo $room_lookup_table[$room]; ?></title>
+    <title>SCALE 14x: <?php echo $room_lookup_table[$room]; ?></title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -583,8 +560,8 @@ function room($room, $year = '', $month = '', $day = '', $hour = '', $minute = '
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>    
-  <script src="bootstrap/js/bootstrap.js"></script>
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
   <script src="js/clock.js"></script>
   <script src="js/timer.js"></script>
 
