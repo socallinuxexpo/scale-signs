@@ -145,7 +145,6 @@
         if (!empty($_GET["minute"])) {
             $minute = $_GET['minute'];
         }
-        $year = 2016; $month = 1; $day = 22; $hour = 14; $minute = 00;
         main($year, $month, $day, $hour, $minute);
       }
   }
