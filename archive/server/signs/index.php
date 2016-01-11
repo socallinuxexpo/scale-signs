@@ -328,12 +328,12 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
       /* Reload & Shuffle sponsors every 2 minutes */
       var sponsors1RefreshId = setInterval(function() {
         //$("#sponsors").fadeOut("slow").load(loadSponsorsUrl).fadeIn("slow");
-        $("#sponsors1").load(loadSponsorsUrl);        
+        $("#sponsors1").load(loadSponsorsUrlOne);        
       }, 120000);
 
        var sponsors2RefreshId = setInterval(function() {
         //$("#sponsors").fadeOut("slow").load(loadSponsorsUrl).fadeIn("slow");
-        $("#sponsors2").load(loadSponsorsUrl);        
+        $("#sponsors2").load(loadSponsorsUrlTwo);        
       }, 120000);
      
       /* Reload and Refresh Schedule once a minute */
