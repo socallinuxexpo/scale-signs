@@ -2,10 +2,10 @@
   if (!empty($_GET["group"])) {
     switch ($_GET["group"]) {
       case 'one':
-        $logos = range(1, 63);
+        $logos = range(1, 64);
         break;
       case 'two':
-        $logos = range(64, 127);
+        $logos = range(64, 128);
         break;
     }
   }
