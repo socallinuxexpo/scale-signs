@@ -31,9 +31,11 @@ $times = array();
 $shorten_topics = array(
                         "AdaInitiativeAllyWorkshop" => "Ada InitiativeAlly Workshop",
                         "BeginnerTutorials" => "Beginner Tutorials",
-                        "ContainerandVirtualization" => "Container and Virtualization",
+                        "ContainerandVirtualization" => "Container & Virtualization",
+                        "LegalandLicensing" => "Legal & Licensing",
                         "EveningEntertainment" => "Evening Entertainment",
                         "FileSystem" => "File System",
+                        "NewtoSCALE" => "New To SCALE",
                         "OpenSourceSoftwareInEducation" => "OSSIE",                        
                         "SysAdmin" => "Sys Admin",
                         "HotApplications" => "Hot Applications",
@@ -48,6 +50,7 @@ foreach ($xml->node AS $node) {
   
   // Remove Spaces so we can use it for a CSS class
   $node->{'Topic'} = preg_replace('/\s+/', '', $node->{'Topic'});
+  $node->{'Topic'} = preg_replace('/\&/', 'and', $node->{'Topic'});
 
 	$pos = strpos((string) $node->{'Time'}, ",");
 	$lpos = strrpos((string) $node->{'Time'}, ",");

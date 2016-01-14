@@ -529,7 +529,7 @@ font {
 }
 
 .Entertainment {
-  background: #B20B77 !important;
+  background: #004A4A !important;
   color: #fff !important;
   font-weight: bold;
 }
@@ -570,6 +570,12 @@ font {
   font-weight: bold;
 }
 
+.LegalandLicensing {
+  background: #FFF8DC !important;
+  color: #000 !important;
+  font-weight: bold;
+}
+
 .Mentoring {
   background: #998876 !important;
   color: #fff !important;
@@ -579,6 +585,12 @@ font {
 .MySQL {
   background: #8B47BB !important;
   color: #fff !important;
+  font-weight: bold;
+}
+
+.NewtoSCALE {
+  background: #7FFF00 !important;
+  color: #228B22 !important;
   font-weight: bold;
 }
 
@@ -615,6 +627,12 @@ font {
 .ScaleU {
   background: #405E5E !important;
   color: #fff !important;
+  font-weight: bold;
+}
+
+.Security {
+  background: #000 !important;
+  color: #00FF00 !important;
   font-weight: bold;
 }
 
