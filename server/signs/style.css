@@ -530,7 +530,7 @@ font {
 
 .Entertainment {
   background: #004A4A !important;
-  color: #fff !important;
+  color: #ff3 !important;
   font-weight: bold;
 }
 
@@ -551,6 +551,12 @@ font {
   color: #fff !important;
   font-weight: bold;
 }
+
+.GLADCamp {
+    background: #0678be !important;
+    color: FFF !important;
+    font-weight: bold;
+ }
 
 .HotApplications {
   background: #ff0 !important;
