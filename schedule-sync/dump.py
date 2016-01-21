@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 
+import BeautifulSoup
 import hashlib
 import requests
 import os
+import re
 import time
 import urllib
 
@@ -115,14 +117,13 @@ def mod_talk(talk_id, mod_items):
     r = requests.get(request, params=payload)
 
 def download_schedule(xml):
-    #dom = minidom.parse(urllib.urlopen(xml))
-    dom = minidom.parse("sign.xml")
+    dom = minidom.parse(urllib.urlopen(xml))
     return dom
 
 def main():
 
-    schedule_xml = "https://www.socallinuxexpo.org/scale/13x/sign.xml"
-    dom = download_schedule("http://www.socallinuxexpo.org/scale/13x/sign.xml")
+    schedule_xml = "https://www.socallinuxexpo.org/scale/14x/sign.xml"
+    dom = download_schedule("http://www.socallinuxexpo.org/scale/14x/sign.xml")
 
     parser = TimeSpanParser()
 
@@ -133,8 +134,8 @@ def main():
         day = node.getElementsByTagName('Day')[0].childNodes[0].nodeValue
         talk_time = node.getElementsByTagName('Time')[0].childNodes[0].nodeValue
 
-        if len(node.getElementsByTagName('Speaker')[0].childNodes) > 0:
-            speaker = node.getElementsByTagName('Speaker')[0].childNodes[0].nodeValue
+        if len(node.getElementsByTagName('Speakers')[0].childNodes) > 0:
+            speaker = node.getElementsByTagName('Speakers')[0].childNodes[0].nodeValue
         else:
             speaker = ""
 
@@ -170,15 +171,20 @@ def main():
         talks_from_xml[talk_id]['scale_speaker'] = speaker
         talks_from_xml[talk_id]['start_time'] = start_time
         talks_from_xml[talk_id]['end_time'] = end_time
-        #talks_from_xml[talk_id]['short_abstract'] = strip_tags(short_abstract)[1:].replace('  ',' ')
-        talks_from_xml[talk_id]['short_abstract'] = short_abstract
+        talks_from_xml[talk_id]['short_abstract'] = BeautifulSoup.BeautifulSoup(short_abstract).getText()
 
     for talk in talks_from_xml:
         title = unicodedata.normalize('NFKD', talks_from_xml[talk]['title']).encode('ascii','ignore')[:40]
         day = talks_from_xml[talk]['start_time'].split('+')[0]
         start_time = talks_from_xml[talk]['start_time'].split('+')[1]
         end_time = talks_from_xml[talk]['end_time'].split('+')[1]
-        print '{0}|{1}|{2}|{3}|{4}'.format(title, talks_from_xml[talk]['room'], start_time, end_time, day)
+        short_abstract = talks_from_xml[talk]['short_abstract']
+        short_abstract = re.sub('"', '&quot;', short_abstract)
+        topic = talks_from_xml[talk]['topic']
+        if topic == '':
+            topic = "None"
+
+        print '"{0}",{1},{2},{3},{4},"{5}","{6}"'.format(title, day, start_time, end_time, talks_from_xml[talk]['room'], topic, short_abstract.encode('utf-8'))
 
 if __name__ == "__main__":
     main()
