@@ -2,6 +2,7 @@
 $room_map = array(
         "signs-2" => array('type' => "schedule", 'orientation' => 'horizontal'),
         "signs-3" => array('type' => "noc", 'orientation' => 'horizontal'),
+        "172.16.13.23" => array('type' => "noc", 'orientation' => 'horizontal'),
         "signs-4" => array('type' => "schedule", 'orientation' => 'horizontal'),
         "signs-5" => array('type' => "schedule", 'orientation' => 'horizontal'),
         "signs-6" => array('type' => "schedule", 'orientation' => 'vertical'),
