@@ -1,14 +1,17 @@
 <?php
 $room_map = array(
-        "172.16.13.21" => array('type' => "schedule", 'orientation' => 'horizontal'), # basement
-        "172.16.13.22" => array('type' => "schedule", 'orientation' => 'horizontal'), # show-lobby
-        "172.16.13.23" => array('type' => "schedule", 'orientation' => 'horizontal'), # registration
-        "172.16.13.24" => array('type' => "schedule", 'orientation' => 'horizontal'), # san-lorenzo
-        "172.16.13.25" => array('type' => "noc", 'orientation' => 'vertical'), # noc
-        "172.16.13.26" => array('type' => "schedule", 'orientation' => 'horizontal'), #marina
-        "172.16.13.27" => array('type' => "noc", 'orientation' => 'horizontal'),
-        "172.16.13.28" => array('type' => "schedule", 'orientation' => 'horizontal'),
-        "172.16.13.29" => array('type' => "schedule", 'orientation' => 'horizontal'),
-        "172.16.13.30" => array('type' => "schedule", 'orientation' => 'horizontal'),
+        "172.16.13.102" => array('type' => "schedule", 'orientation' => 'horizontal'),
+        "172.16.13.103" => array('type' => "noc", 'orientation' => 'horizontal'),
+        "172.16.13.104" => array('type' => "schedule", 'orientation' => 'horizontal'),
+        "172.16.13.105" => array('type' => "schedule", 'orientation' => 'horizontal'),
+        "172.16.13.106" => array('type' => "schedule", 'orientation' => 'vertical'),
+        "172.16.13.107" => array('type' => "schedule", 'orientation' => 'horizontal'),
+        "172.16.13.108" => array('type' => "schedule", 'orientation' => 'horizontal'),
+        "172.16.13.109" => array('type' => "schedule", 'orientation' => 'horizontal'),
+        "172.16.13.110" => array('type' => "schedule", 'orientation' => 'horizontal'),
+        "172.16.13.111" => array('type' => "schedule", 'orientation' => 'horizontal'),
+        "172.16.13.112" => array('type' => "schedule", 'orientation' => 'horizontal'),
+        "172.16.13.113" => array('type' => "schedule", 'orientation' => 'horizontal'),
+        "172.16.13.114" => array('type' => "schedule", 'orientation' => 'horizontal'),
         );
 ?>
