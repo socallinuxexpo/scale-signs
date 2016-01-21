@@ -195,6 +195,7 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
           <img src="images/WiFi-Sign2.png" class="pull-right">
         </div>
 
+        <!--
         <div class="col-md-4">            
           <ul class="clock pull-right">
             <li><div id="h1" class="card">&nbsp;</div></li>
@@ -207,6 +208,7 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
             <li><div id="meridiem2" class="card">&nbsp;</div></li>
           </ul>
         </div>
+        -->
       </div>
 
       <div id='schedule-row-hr' class="row"><hr></div>
@@ -251,7 +253,7 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
     <!-- Placed at the end of the document so the pages load faster -->
   <script src="js/jquery-1.10.2.min.js"></script>
   <script src="bootstrap/js/bootstrap.js"></script>
-  <script src="js/clock.js"></script>
+  <!-- <script src="js/clock.js"></script> -->
   <script src="js/timer.js"></script>
 
   <script type="text/javascript">
@@ -295,8 +297,8 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
         cache: false  
       });
       
-      updateClock();
-      setInterval('updateClock()', 1000);
+      //updateClock();
+      //setInterval('updateClock()', 1000);
 
       // Hide the schedule until we've loaded the data
       $('#schedule').hide();
