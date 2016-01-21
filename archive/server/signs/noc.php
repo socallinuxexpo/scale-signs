@@ -66,7 +66,7 @@
     <meta http-equiv="refresh" content="300">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>SCALE 13x <?php echo $orientation; ?></title>
+    <title>SCALE 14x <?php echo $orientation; ?></title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -88,7 +88,7 @@
     <div class="container main-container">
 
       <div class="header row">        
-          <img src="images/noc-penguin-header5.png">
+          <!-- <img src="images/noc-penguin-header5.png"> -->
       </div>
 
       <div class="row"><hr></div>
@@ -140,10 +140,10 @@
       <div class="row"><hr></div>
 
       <div class="header row">        
-          <img src="images/noc-penguin-header5.png">
+          <!-- <img src="images/noc-penguin-header5.png"> -->
       </div>
 
-      <?php } else { ?>
+      ?php } else { ?>
 
       <!-- Begin Row -->
       <div class="row graph-row">
@@ -182,7 +182,7 @@
       <div class="row"><hr></div>
 
       <div class="header row">        
-          <img src="images/noc-penguin-header5.png">
+          <!-- <img src="images/noc-penguin-header5.png"> -->
       </div>
 
       <?php } ?>
