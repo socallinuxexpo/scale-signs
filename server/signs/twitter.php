@@ -23,7 +23,6 @@ function search_twitter()
   
   // Any to block from the signs
   $blacklist = array(
-    "irabinovitch",
   );
 	
 	$url = 'https://api.twitter.com/1.1/search/tweets.json';
