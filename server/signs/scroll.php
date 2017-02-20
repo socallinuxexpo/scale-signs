@@ -2,14 +2,14 @@
  
 include 'ChromePhp.php';
 
-$url = 'http://www.socallinuxexpo.org/scale/14x/sign.xml';
+$url = 'http://www.socallinuxexpo.org/scale/15x/sign.xml';
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $xmlresponse = curl_exec($ch);
 $xml = simplexml_load_string($xmlresponse);
 
-$starttime = mktime(0, 0, 0, 1, 21, 2016) / 60;
+$starttime = mktime(0, 0, 0, 3, 02, 2017) / 60;
 
 #if (!empty($_GET["year"]) && !empty($_GET["month"]) && !empty($_GET["day"]) && !empty($_GET["hour"]) && !empty($_GET["minute"])) {
 if (!empty($_GET["year"]) && !empty($_GET["month"]) && !empty($_GET["day"])) {
@@ -29,15 +29,29 @@ $order = array();
 $times = array();
 
 $shorten_topics = array(
-                        "AdaInitiativeAllyWorkshop" => "Ada InitiativeAlly Workshop",
+                        "Devops" => "DevOps",
+                        "Embedded" => "Embedded",
+                        "MySQL" => "MySQL",
+                        "SCALEU" => "SCALEU",
+                        "Ubucon" => "Ubucon",
+                        "Cloud" => "Cloud",
+                        "PostgreSQL" => "PostgreSQL",
                         "BeginnerTutorials" => "Beginner Tutorials",
                         "ContainerandVirtualization" => "Container & Virtualization",
                         "LegalandLicensing" => "Legal & Licensing",
                         "EveningEntertainment" => "Evening Entertainment",
-                        "FileSystem" => "File System",
+                        "Developer" => "Developer",
+                        "Security" => "Security",
                         "NewtoSCALE" => "New To SCALE",
                         "OpenSourceSoftwareInEducation" => "OSSIE",                        
                         "SysAdmin" => "Sys Admin",
+                        "Kernel" => "Kernel",
+                        "Youth" => "Youth",
+                        "Keynote" => "Keynote",
+                        "General" => "General",
+                        "OpenSourceinEnterprises" => "Open Source in Enterprises",
+                        "OpenSourceStorage" => "Open Source Storage",
+                        "Mentoring" => "Mentoring",
                         "HotApplications" => "Hot Applications",
                         "BigData" => "Big Data",
                         );
