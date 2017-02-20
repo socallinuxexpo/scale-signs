@@ -20,7 +20,7 @@ import unicodedata
 
 os.getenv('PYTHONIOENCODING', 'utf-8')
 
-sched_org_url = "http://scale12x2014.sched.org/api"
+sched_org_url = "http://scale15x2017.sched.org/api"
 sched_org_session = "/session"
 sched_org_export = "/export"
 sched_org_add = "/add"
@@ -122,8 +122,8 @@ def download_schedule(xml):
 
 def main():
 
-    schedule_xml = "https://www.socallinuxexpo.org/scale/14x/sign.xml"
-    dom = download_schedule("http://www.socallinuxexpo.org/scale/14x/sign.xml")
+    schedule_xml = "https://www.socallinuxexpo.org/scale/15x/sign.xml"
+    dom = download_schedule("http://www.socallinuxexpo.org/scale/15x/sign.xml")
 
     parser = TimeSpanParser()
 
