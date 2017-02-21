@@ -188,11 +188,11 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
 
       <div id='header-row' class="header row">
         <div class="col-md-4">
-          <img src="header.png">
+          <img src="images/15x/header.png">
         </div>
 
         <div class="col-md-4">
-          <img src="images/WiFi-Sign2.png" class="pull-right">
+          <img src="images/15x/WiFi-Sign2.png" class="pull-right">
         </div>
 
         <!--
@@ -401,7 +401,7 @@ function avnoc() {
 
       <div class="header row">
         <div class="col-md-8">
-          <img src="header.png">
+          <img src="images/15x/header.png">
         </div>
 
         <div class="col-md-4">            
@@ -517,7 +517,7 @@ function avnoc() {
     <div class="container main-container">
       <div class="header row" style="text-align: center;">
         <div class="" style='text-align: center;'>
-          <img src="header.png">
+          <img src="images/15x/header.png">
         </div>
       </div>
       <!-- <div class="row roomHeader"><h3>Coming Up</h3></div> -->
