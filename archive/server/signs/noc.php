@@ -66,7 +66,7 @@
     <meta http-equiv="refresh" content="300">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>SCALE 14x <?php echo $orientation; ?></title>
+    <title>SCALE 15x <?php echo $orientation; ?></title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">

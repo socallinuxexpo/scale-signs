@@ -19,7 +19,7 @@
     $logo = array_pop($logos);
 ?>
     <div class="item sponsor-logo <?php if ( $i == 0 ) { echo 'active'; } ?>" >
-        <img class="" src="images/sponsors/<?php if ( $logo < 10 ) { echo "0" . $logo; } else { echo "$logo"; } ?>.png">
+        <img class="" src="images/sponsors/15x/<?php if ( $logo < 10 ) { echo "0" . $logo; } else { echo "$logo"; } ?>.png">
     </div>
 <?php
    }
