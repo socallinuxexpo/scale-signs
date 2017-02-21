@@ -18,7 +18,7 @@ function search_twitter()
   // Any Twitter Accounts to Highlight
   $promote = array(
     "socallinuxexpo",
-    "garethgreenaway",
+    "hridaybala",
   );
   
   // Any to block from the signs
@@ -26,7 +26,7 @@ function search_twitter()
   );
 	
 	$url = 'https://api.twitter.com/1.1/search/tweets.json';
-	$getfield = '?q=#scale14x';
+	$getfield = '?q=#scale15x';
 	$requestMethod = 'GET';
 	
 	$twitter = new TwitterAPIExchange($settings);
