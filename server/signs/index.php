@@ -164,7 +164,7 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>SCALE 14x</title>
+    <title>SCALE 15x</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -377,7 +377,7 @@ function avnoc() {
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>SCALE 13x</title>
+    <title>SCALE 15x</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -484,31 +484,6 @@ function avnoc() {
 }
 ?>
 
-<!--- Individual Room Display -->
-<?php
-function room($room, $year = '', $month = '', $day = '', $hour = '', $minute = '') {
-
-  $room_lookup_table = array(
-                  "lajolla"       => "LaJolla",
-                  "carmel"        => "Carmel",
-                  "centuryab"     => "CenturyAB",
-                  "centurycd"     => "CenturyCD",
-                  "losangelesa"   => "LosAngelesA",
-                  "laa"           => "LosAngelesA",
-                  "losangelesb"   => "LosAngelesB",
-                  "lab"           => "LosAngelesB",
-                  "losangelesc"   => "LosAngelesC",
-                  "lac"           => "LosAngelesC",
-                  "belair"        => "BelAir",
-                  "marina"        => "Marina",
-                  "sanlorenzod"   => "SanLorenzoD",
-                  "sanlorenzoe"   => "SanLorenzoE",
-                  "sanlorenzof"   => "SanLorenzoF",
-                  "plazabc"       => "PlazaBC",
-                  "plazad"        => "PlazaD",
-      );
-
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
