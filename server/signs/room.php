@@ -55,7 +55,7 @@ $room_lookup_table = array(
     );
 
 $sponsors = array(
-    "2nd-quadrant"      =>      "2nd-quadrant.png",
+    "anchore"      =>      "anchore.png",
     "actusa"            =>      "actusa.png",
     "all-things-open"   =>      "all-things-open.png",
     "apache-bigtop"     =>      "apache-bigtop.png",
