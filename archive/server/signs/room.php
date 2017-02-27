@@ -57,6 +57,7 @@ $room_lookup_table = array(
 # Paying sponsors only
 $sponsors = array(
     "anchore"      	=>      "anchore.png",
+    "balabit"           =>      "balabit.png",
     "bitnami"           =>      "bitnami.png",
     "blackduck"   	=>      "blackduck.png",
     "chef"     		=>      "chef.png",
