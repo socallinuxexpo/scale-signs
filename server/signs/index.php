@@ -196,14 +196,14 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
         </div>
 
         <!--
-        <div class="col-md-4">            
+        <div class="col-md-4">
           <ul class="clock pull-right">
             <li><div id="h1" class="card">&nbsp;</div></li>
-            <li><div id="h2" class="card">&nbsp;</div></li>          
+            <li><div id="h2" class="card">&nbsp;</div></li>
             <li class="separator">:</li>
             <li><div id="m1" class="card">&nbsp;</div></li>
             <li><div id="m2" class="card">&nbsp;</div></li>
-            <li class="separator">&nbsp;</li>          
+            <li class="separator">&nbsp;</li>
             <li><div id="meridiem1" class="card">&nbsp;</div></li>
             <li><div id="meridiem2" class="card">&nbsp;</div></li>
           </ul>
@@ -214,7 +214,7 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
       <div id='schedule-row-hr' class="row"><hr></div>
 
       <!-- Begin Row -->
-      
+
       <div id="schedule-row" class="row graph-row">
         <div class="graph col-md-12">
           <div id="schedule" class="row schedule"></div>
@@ -274,15 +274,15 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
         var h = d.getHours();
         var m = d.getMinutes();
         var s = d.getSeconds();
-        
+
         if (h<=9) {h = '0'+h};
         if (m<=9) {m = '0'+m};
         if (s<=9) {s = '0'+s};
-        
+
         //var color = '#'+h+m+s;
         var color = hexToRgb('#'+h+m+s);
         var color_rgba = "rgba(" + [color.r, color.g, color.b, '0.9'].join(', ') + ")";
-        
+
         $("#schedule-row-hr").css("background-color", color_rgba );
 
         setTimeout(refreshData, x*1000);
@@ -294,17 +294,17 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
 
       // Ensure we're not caching data
       $.ajaxSetup ({
-        cache: false  
+        cache: false
       });
-      
+
       //updateClock();
       //setInterval('updateClock()', 1000);
 
       // Hide the schedule until we've loaded the data
       $('#schedule').hide();
-      $('#sponsors').hide();      
+      $('#sponsors').hide();
       $('#twitter-stream-content').hide();
-      
+
       var loadScheduleUrl = "scroll.php?year=<?php echo $year;?>&month=<?php echo $month;?>&day=<?php echo $day;?>&hour=<?php echo $hour;?>&minute=<?php echo $minute;?>";
       $("#schedule").load(loadScheduleUrl);
       $("#schedule").show();
@@ -313,37 +313,37 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
       $("#sponsors1").load(loadSponsorsUrlOne);
       $("#sponsors1").show();
 
-      var loadSponsorsUrlTwo = "sponsors.php?group=two";
+      var loadSponsorsUrlTwo = "sponsors.php?group=one";
       $("#sponsors2").load(loadSponsorsUrlTwo);
       $("#sponsors2").show();
-      
+
       var loadTwitterUrl = "twitter.php";
       $("#twitter-stream-content").load(loadTwitterUrl);
       $('#twitter-stream-content').show();
-      
+
       /* Reload and Refresh Twitter once a minute */
       var twitterRefreshId = setInterval(function() {
         //("#twitter-stream-content").fadeOut("slow").load(loadTwitterUrl).fadeIn("slow");
-        $("#twitter-stream-content").load(loadTwitterUrl);        
+        $("#twitter-stream-content").load(loadTwitterUrl);
       }, 60000);
 
       /* Reload & Shuffle sponsors every 2 minutes */
       var sponsors1RefreshId = setInterval(function() {
         //$("#sponsors").fadeOut("slow").load(loadSponsorsUrl).fadeIn("slow");
-        $("#sponsors1").load(loadSponsorsUrlOne);        
+        $("#sponsors1").load(loadSponsorsUrlOne);
       }, 120000);
 
        var sponsors2RefreshId = setInterval(function() {
         //$("#sponsors").fadeOut("slow").load(loadSponsorsUrl).fadeIn("slow");
-        $("#sponsors2").load(loadSponsorsUrlTwo);        
+        $("#sponsors2").load(loadSponsorsUrlTwo);
       }, 120000);
-     
+
       /* Reload and Refresh Schedule once a minute */
       var scheduleRefreshId = setInterval(function() {
         //$("#schedule").fadeOut("slow").load(loadScheduleUrl).fadeIn("slow");
-        $("#schedule").load(loadScheduleUrl);        
+        $("#schedule").load(loadScheduleUrl);
       }, 60000);
-      
+
       /* Check the page type */
       var checkPageTypeId = setInterval(function() {
           var pageType = $.ajax({type: "GET", url: "type.php", async: false}).responseText;
@@ -354,7 +354,7 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
       }, 300000);
 
     });
-        
+
     </script>
   </body>
 </html>
@@ -404,10 +404,10 @@ function avnoc() {
           <img src="images/15x/header.png">
         </div>
 
-        <div class="col-md-4">            
+        <div class="col-md-4">
           <ul class="clock pull-right">
             <li><div id="h1" class="card">&nbsp;</div></li>
-            <li><div id="h2" class="card">&nbsp;</div></li>          
+            <li><div id="h2" class="card">&nbsp;</div></li>
             <li class="separator">:</li>
             <li><div id="m1" class="card">&nbsp;</div></li>
             <li><div id="m2" class="card">&nbsp;</div></li>
@@ -416,7 +416,7 @@ function avnoc() {
             <li><div id="s1" class="card">&nbsp;</div></li>
             <li><div id="s2" class="card">&nbsp;</div></li>
             -->
-            <li class="separator">&nbsp;</li>          
+            <li class="separator">&nbsp;</li>
             <li><div id="meridiem1" class="card">&nbsp;</div></li>
             <li><div id="meridiem2" class="card">&nbsp;</div></li>
           </ul>
@@ -427,7 +427,7 @@ function avnoc() {
       <div class="row"><hr></div>
 
       <!-- Begin Row -->
-      
+
       <div class="row graph-row">
         <div class="graph col-md-12">
           <div id="schedule" class="row schedule"></div>
@@ -450,20 +450,20 @@ function avnoc() {
   <script src="js/timer.js"></script>
 
   <script type="text/javascript">
-    
+
     $(document).ready(function() {
 
       // Ensure we're not caching data
       $.ajaxSetup ({
-        cache: false  
+        cache: false
       });
-      
+
       updateClock();
       setInterval('updateClock()', 1000);
 
       // Hide the schedule until we've loaded the data
       $('#schedule').hide();
-      
+
       var loadScheduleUrl = "scroll.php";
       $("#schedule").load(loadScheduleUrl);
       $("#schedule").show();
@@ -471,11 +471,11 @@ function avnoc() {
       /* Reload and Refresh Schedule once a minute */
       var scheduleRefreshId = setInterval(function() {
         //$("#schedule").fadeOut("slow").load(loadScheduleUrl).fadeIn("slow");
-        $("#schedule").load(loadScheduleUrl);        
+        $("#schedule").load(loadScheduleUrl);
       }, 60000);
-      
+
     });
-        
+
     </script>
   </body>
 </html>
@@ -548,12 +548,12 @@ function avnoc() {
 
       // Ensure we're not caching data
       $.ajaxSetup ({
-        cache: false  
+        cache: false
       });
-      
+
       // Hide the schedule until we've loaded the data
       $('#schedule').hide();
-      
+
       var loadScheduleUrl = "room.php?room=<?php echo $room; ?>&year=<?php echo $year;?>&month=<?php echo $month;?>&day=<?php echo $day;?>&hour=<?php echo $hour;?>&minute=<?php echo $minute;?>";
       $("#schedule").load(loadScheduleUrl);
       $("#schedule").show();
@@ -561,18 +561,18 @@ function avnoc() {
       /* Reload and Refresh Schedule once a minute */
       var scheduleRefreshId = setInterval(function() {
         //$("#schedule").fadeOut("slow").load(loadScheduleUrl).fadeIn("slow");
-        $("#schedule").load(loadScheduleUrl);        
+        $("#schedule").load(loadScheduleUrl);
       }, 60000);
-      
+
     });
-      
+
 
     </script>
   </body>
 </html>
 
+
 <?php
-}
 ?>
 
 <!--- NOC Room Display -->

@@ -4,7 +4,7 @@ if (!empty($_GET["room"])) {
 } else {
    $room = "";
 }
- 
+
 $year = $month = $day = $hour = $minute = '';
 if (!empty($_GET["year"])) {
     $year = $_GET['year'];
@@ -122,44 +122,44 @@ $sponsors = array(
 
 $sponsors_to_rooms = array(
                 "ballroom-de" => array(
-                                    "Thursday" => array("ubuntu","yahoo",coreos"),
-                                    "Friday" => array("ubuntu","yahoo",coreos"),
+                                    "Thursday" => array("ubuntu","yahoo","coreos"),
+                                    "Friday" => array("ubuntu","yahoo","coreos"),
                                     "Saturday" => array("yahoo","coreos","opensource","redhat"),
                                     "Sunday" => array(),
                             ),
                 "ballroom-a" => array(
                                     "Thursday" => array("ubuntu"),
                                     "Friday" => array("ubuntu"),
-                                    "Saturday" => array(),
+                                    "Saturday" => array("q"),
                                     "Sunday" => array(),
                             ),
                 "ballroom-b" => array(
                                     "Thursday" => array("ubuntu"),
                                     "Friday" => array("ubuntu"),
-                                    "Saturday" => array("q"),
-                                    "Sunday" => array("q"),
+                                    "Saturday" => array("docker"),
+                                    "Sunday" => array(),
                             ),
                 "ballroom-c" => array(
                                     "Thursday" => array("yahoo","coreos","facebook","mediatemple","oreilly"),
-                                    "Friday" => array(),
+                                    "Friday" => array("coreos","yahoo","opsgenie","openshift","redhat","steelhouse","suse"),
                                     "Saturday" => array(),
                                     "Sunday" => array(),
                             ),
                 "ballroom-f" => array(
-                                    "Thursday" => array(),
+                                    "Thursday" => array("coreos","yahoo","opsgenie","redhat","openshift","steelhouse","suse"),
                                     "Friday" => array(),
                                     "Saturday" => array(),
                                     "Sunday" => array(),
                             ),
                 "ballroom-g" => array(
-                                    "Thursday" => array(),
-                                    "Friday" => array(),
+                                    "Thursday" => array("docker","redhat","bitnami","coreos"),
+                                    "Friday" => array("ticketmaster","opsgenie","datadog","cyberark","collabnet","threatstack","versionone","verizon"),
                                     "Saturday" => array(),
                                     "Sunday" => array(),
                             ),
                 "ballroom-h" => array(
-                                    "Thursday" => array(),
-                                    "Friday" => array(),
+                                    "Thursday" => array("docker","redhat","bitnami","coreos"),
+                                    "Friday" => array("ticketmaster","opsgenie","datadog","cyberark","collabnet","threatstack","versionone","verizon"),
                                     "Saturday" => array(),
                                     "Sunday" => array(),
                             ),
@@ -194,8 +194,8 @@ $sponsors_to_rooms = array(
                                     "Sunday" => array(),
                             ),
                 "room-103" => array(
-                                    "Thursday" => array("chef"),
-                                    "Friday" => array(),
+                                    "Thursday" => array("hpe","datadog"),
+                                    "Friday" => array("mysql"),
                                     "Saturday" => array(),
                                     "Sunday" => array(),
 
@@ -219,22 +219,22 @@ $sponsors_to_rooms = array(
                                     "Sunday" => array(),
                             ),
                 "room-211" => array(
-                                    "Thursday" => array("xen"),
-                                    "Friday" => array(),
+                                    "Thursday" => array("coreos","yahoo","ubuntu","couchbase","datadog","disney"),
+                                    "Friday" => array("coreos","yahoo","ubuntu","couchbase","datadog","disney"),
                                     "Saturday" => array(),
                                     "Sunday" => array(),
                             ),
                 "room-212" => array(
-                                    "Thursday" => array("yocto"),
-                                    "Friday" => array("palamida"),
-                                    "Saturday" => array(),
+                                    "Thursday" => array("chef"),
+                                    "Friday" => array("coreos","docker"),
+                                    "Saturday" => array("yocto","resinio"),
                                     "Sunday" => array(),
                             ),
                 "room-209" => array(
-                                    "Thursday" => array(),
+                                    "Thursday" => array("yocto","resinio"),
                                     "Friday" => array("flexera"),
-                                    "Saturday" => array(),
-                                    "Sunday" => array(),
+                                    "Saturday" => array("linuxfoundation","coreos","yahoo"),
+                                    "Sunday" => array("linuxfoundation","coreos","yahoo"),
                             ),
                );
 $url = 'http://www.socallinuxexpo.org/scale/15x/sign.xml';
@@ -259,7 +259,7 @@ $shorten_topics = array(
                         "CloudandVirtualization" => "Cloud and Virtualization",
                         "EveningEntertainment" => "Evening Entertainment",
                         "FileSystem" => "File System",
-                        "OpenSourceSoftwareInEducation" => "OSSIE",                        
+                        "OpenSourceSoftwareInEducation" => "OSSIE",
                         "SysAdmin" => "Sys Admin",
                         );
 
@@ -268,10 +268,10 @@ foreach ($xml->node AS $node) {
   // Remove HTML tags
   $node->{'Time'} = preg_replace('/<[^>]*>/', '', $node->{'Time'});
   $node->{'Day'} = preg_replace('/<[^>]*>/', '', $node->{'Day'});
-  
+
   // Remove Spaces so we can use it for a CSS class
   $node->{'Topic'} = preg_replace('/\s+/', '', $node->{'Topic'});
-  
+
 	$pos = strpos((string) $node->{'Time'}, ",");
 	$lpos = strrpos((string) $node->{'Time'}, ",");
 	if ($pos === false) {
@@ -288,7 +288,7 @@ foreach ($xml->node AS $node) {
 		$name = (string) $node->Speakers;
 	}
 	$data[] = array((string) $node->Day, $thistime, $name, (string) $node->Title, (string) $node->Room, (string) $node->Topic, (string) $node->Photo, (string) $node->{'Short-abstract'});
-		
+
 	#$realtime = $thistime;
 	#$realstime = $thisend;
 	$realtime = explode(' to ', $thistime)[0];
@@ -298,7 +298,7 @@ foreach ($xml->node AS $node) {
 	$mfromm = ($handm[0] * 60) + $handm[1];
 	#$mfromme = ($handme[0] * 60) + 60 + $handme[1];
 	$mfromme = ($handme[0] * 60) + $handme[1];
-	
+
 	switch ((string) $node->Day) {
 		case "Thursday";
 			$order[] = $mfromm;
@@ -330,9 +330,9 @@ asort($order, SORT_NUMERIC);
 		font { font-family: Tahoma, Geneva, sans-serif; color:black; text-align:left; font-size:14px; }
 	</style>
 	<div id="scheduleCarousel" class="carousel carousel-fade">
-	<div class="carousel-inner"> 
+	<div class="carousel-inner">
 
-    <?php 
+    <?php
     $topics = array();
     $items_per_page = 8;
     $odd = 0; $count = 0; $schedule_page = 1;
@@ -419,8 +419,8 @@ asort($order, SORT_NUMERIC);
             <div class="item">
                 <div class="media">
                     <div class="row" style="text-align: center;">
-                        <h2 style='text-align: center;'>Thank You To Our Track <?php if (count($sponsors_for_room) > 1) { echo "Sponsors"; } else { echo "Sponsor"; } ?></h2> 
-                    </div>                  
+                        <h2 style='text-align: center;'>Thank You To Our Track <?php if (count($sponsors_for_room) > 1) { echo "Sponsors"; } else { echo "Sponsor"; } ?></h2>
+                    </div>
                     <div class="row" style="text-align: center;">
                         <?php
                         $column = count($sponsors_for_room);
@@ -452,7 +452,7 @@ asort($order, SORT_NUMERIC);
                         }
 
                         foreach ($sponsors_for_room as $sponsor) {
-                            echo "<img src='images/sponsors/" . $sponsors[$sponsor] . "' style='width: " . $img_size . "px; height: " . $img_size . "px; border: 1px solid #000; margin: 1px;'>";
+                            echo "<img src='images/sponsors/15x/" . $sponsors[$sponsor] . "' style='width: " . $img_size . "px; height: " . $img_size . "px; border: 1px solid #000; margin: 1px;'>";
                         }
                         ?>
                     </div>
@@ -474,4 +474,3 @@ asort($order, SORT_NUMERIC);
   });
 
 </script>
-
