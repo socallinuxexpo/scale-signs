@@ -1,0 +1,140 @@
+# lxpanel <profile> config file. Manually editing is not recommended.
+# Use preference dialog in lxpanel to adjust config when you can.
+
+Global {
+  edge=top
+  allign=left
+  margin=0
+  widthtype=percent
+  width=100
+  height=36
+  transparent=0
+  tintcolor=#ffffff
+  alpha=0
+  autohide=0
+  heightwhenhidden=2
+  setdocktype=1
+  setpartialstrut=1
+  usefontcolor=0
+  fontsize=12
+  fontcolor=#b25d5d
+  usefontsize=1
+  background=0
+  backgroundfile=/usr/share/lxpanel/images/background.png
+  iconsize=36
+}
+Plugin {
+  type=space
+  Config {
+    Size=2
+  }
+}
+Plugin {
+  type=menu
+  Config {
+    name=Menu
+    image=/usr/share/raspberrypi-artwork/raspitr.png
+    system {
+    }
+    separator {
+    }
+    item {
+      name=Run...
+      image=gnome-run
+      command=run
+    }
+    separator {
+    }
+    item {
+      name=Shutdown...
+      image=gnome-logout
+      command=logout
+    }
+  }
+}
+Plugin {
+  type=space
+  Config {
+    Size=8
+  }
+}
+Plugin {
+  type=launchbar
+  Config {
+    Button {
+      id=/usr/share/applications/epiphany-browser.desktop
+    }
+    Button {
+      id=/usr/share/applications/pcmanfm.desktop
+    }
+    Button {
+      id=/usr/share/applications/lxterminal.desktop
+    }
+    Button {
+      id=/usr/share/applications/wolfram-mathematica.desktop
+    }
+    Button {
+      id=/usr/share/applications/wolfram-language.desktop
+    }
+  }
+}
+Plugin {
+  type=space
+  Config {
+    Size=8
+  }
+}
+Plugin {
+  type=taskbar
+  expand=1
+  Config {
+    tooltips=1
+    IconsOnly=0
+    ShowAllDesks=0
+    UseMouseWheel=1
+    UseUrgencyHint=1
+    FlatButton=0
+    MaxTaskWidth=200
+    spacing=1
+    GroupedTasks=0
+  }
+}
+Plugin {
+  type=space
+  Config {
+    Size=2
+  }
+}
+Plugin {
+  type=tray
+  Config {
+  }
+}
+Plugin {
+  type=space
+  Config {
+    Size=2
+  }
+}
+Plugin {
+  type=cpu
+  Config {
+    ShowPercent=1
+  }
+}
+Plugin {
+  type=dclock
+  Config {
+    ClockFmt=%R
+    TooltipFmt=%A %x
+    BoldFont=0
+    IconOnly=0
+    CenterText=0
+  }
+}
+Plugin {
+  type=space
+  Config {
+    Size=2
+  }
+}

@@ -1,0 +1,353 @@
+1.1
+applications.menu
+18
+D/home/pi/.local/share/desktop-directories
+D/usr/local/share/desktop-directories
+D/usr/share/raspi-ui-overrides/desktop-directories
+D/usr/share/desktop-directories
+D/usr/share/gdm/desktop-directories
+D/var/lib/menu-xdg/desktop-directories/menu-xdg
+D/var/lib/menu-xdg/desktop-directories
+D/home/pi/.local/share/applications
+D/usr/local/share/applications
+D/usr/share/raspi-ui-overrides/applications
+D/usr/share/applications
+D/usr/share/gdm/applications
+D/var/lib/menu-xdg/applications/menu-xdg
+D/var/lib/menu-xdg/applications
+D/etc/xdg/menus/applications-merged
+D/home/pi/.config/menus/applications-merged
+F/home/pi/.config/menus/lxde-pi-applications.menu
+F/etc/xdg/menus/lxde-pi-applications.menu
+
++Applications
+Applications
+Applications
+applications-other
+lxde-menu-applications.directory
+3
++Development
+Programming
+Tools for software development
+applications-development
+lxde-development.directory
+3
+-wolfram-mathematica.desktop
+Mathematica
+Technical Computing System
+wolfram-mathematica
+
+9
+Mathematica
+/opt/Wolfram/WolframEngine/10.0/Executables/Mathematica %F
+2
+0
+-idle.desktop
+Python 2
+Integrated development environment for Python 2
+/usr/share/pixmaps/idle.xpm
+
+9
+Python 2
+/usr/bin/idle
+2
+0
+-idle3.desktop
+Python 3
+Integrated development environment for Python 3
+/usr/share/pixmaps/idle3.xpm
+
+9
+Python 3
+/usr/bin/idle3
+2
+0
+-scratch.desktop
+Scratch
+Programming system and content development tool
+scratch
+
+9
+Scratch
+scratch %f
+0
+0
+-sonic-pi.desktop
+Sonic Pi
+Learn programming and computer science while creating music
+/usr/share/pixmaps/sonic-pi.png
+
+9
+Sonic Pi
+sonic-pi
+0
+0
+-wolfram-language.desktop
+Wolfram
+Technical Programming Environment
+wolfram-language
+
+9
+Wolfram
+x-terminal-emulator -t "Wolfram Language" -e wolfram
+2
+0
+
++Internet
+Internet
+Programs for Internet access such as web and email
+applications-internet
+lxde-network.directory
+3
+-iceweasel.desktop
+Iceweasel
+Browse the World Wide Web
+iceweasel
+
+10
+Iceweasel Web Browser
+iceweasel %u
+2
+0
+-pistore.desktop
+Pi Store
+Download software for your Raspberry Pi
+/usr/share/indiecity/pistore/clienticon.xpm
+
+9
+Pi Store
+pistore-desktop
+2
+0
+-raspi_resources.desktop
+Raspberry Pi Resources
+
+/usr/share/raspberrypi-artwork/raspitr.png
+
+9
+Raspberry Pi Resources
+sensible-browser http://www.raspberrypi.org/resources/
+2
+0
+-epiphany-browser.desktop
+Web Browser
+Browse the web
+web-browser
+
+9
+Epiphany Web Browser
+epiphany-browser %U
+2
+0
+
++Games
+Games
+Games and amusements
+applications-games
+lxde-game.directory
+3
+-minecraft-pi.desktop
+Minecraft Pi
+Fun with Blocks
+/usr/share/pixmaps/minecraft-pi.png
+
+9
+Minecraft Pi
+minecraft-pi
+2
+0
+-python-games.desktop
+Python Games
+Examples of games written in Python
+/usr/share/pixmaps/python.xpm
+
+9
+Python Games
+sh -c $HOME/python_games/launcher.sh
+2
+0
+
++Accessories
+Accessories
+Desktop accessories
+applications-accessories
+lxde-utility.directory
+3
+-xarchiver.desktop
+Archiver
+Create and access archive files
+xarchiver.png
+
+9
+Archiver
+xarchiver
+2
+0
+-galculator.desktop
+Calculator
+Perform simple and scientific calculations
+galculator
+
+9
+Calculator
+galculator
+2
+0
+-pcmanfm.desktop
+File Manager
+Browse the file system and manage the files
+system-file-manager
+
+9
+File Manager
+pcmanfm %U
+2
+0
+-gpicview.desktop
+Image Viewer
+View your images easily
+gpicview
+
+9
+Image Viewer
+gpicview %f
+2
+0
+-xpdf.desktop
+PDF Viewer
+Viewer for PDF files
+xpdf
+
+9
+PDF Viewer
+xpdf
+0
+0
+-lxtask.desktop
+Task Manager
+Manages running processes
+utilities-system-monitor
+
+9
+Task Manager
+lxtask
+2
+0
+-lxterminal.desktop
+Terminal
+Command-line terminal
+lxterminal
+
+9
+Terminal
+lxterminal
+2
+0
+-leafpad.desktop
+Text Editor
+Simple text editor
+leafpad
+
+9
+Text Editor
+leafpad %f
+0
+0
+
+-
++Help
+Help
+Reference material
+gnome-help
+lxde-help.directory
+2
+-debian-reference-common.desktop
+Debian Reference
+Debian Reference Guide
+debian-reference.png
+
+9
+Debian Reference
+debian-reference
+0
+0
+-help.desktop
+Raspberry Pi Help
+Link to help pages
+/usr/share/raspberrypi-artwork/raspitr.png
+
+9
+Raspberry Pi Help
+epiphany http://www.raspberrypi.org/help
+0
+0
+
+-
++DesktopSettings
+Preferences
+Personal preferences
+preferences-desktop
+lxde-settings.directory
+3
+-qjackctl.desktop
+Audio Jack Control
+Configure audio jack settings
+qjackctl
+
+9
+Audio Jack Control
+/usr/bin/qjackctl
+0
+0
+-lxinput.desktop
+Keyboard and Mouse Settings
+Configure keyboard, mouse, and other input devices
+input-keyboard
+
+9
+Keyboard and Mouse Settings
+lxinput
+2
+1
+-lxrandr.desktop
+Monitor Settings
+Change screen resolution and configure external monitors
+display
+
+10
+Monitor Settings
+lxrandr
+0
+0
+-lxappearance.desktop
+Theme and Appearance Settings
+Configure the appearance of the desktop and applications
+preferences-desktop-theme
+
+9
+Theme and Appearance Settings
+lxappearance
+2
+-11
+-wpa_gui.desktop
+WiFi Configuration
+WiFi configuration utility
+wpa_gui
+
+9
+WiFi Configuration
+/usr/sbin/wpa_gui
+0
+0
+-obconf.desktop
+Window Settings
+Configure the appearance of windows
+obconf
+
+9
+Window Settings
+obconf %f
+2
+0
+
+

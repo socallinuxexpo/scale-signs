@@ -1,0 +1,1869 @@
+Xsession: X session started for pi at Tue Dec  8 19:14:54 PST 2015
+localuser:pi being added to access control list
+xterm: fatal IO error 11 (Resource temporarily unavailable) or KillClient on X server ":0"
+Xsession: X session started for pi at Tue Dec  8 19:17:50 PST 2015
+localuser:pi being added to access control list
+xterm: fatal IO error 11 (Resource temporarily unavailable) or KillClient on X server ":0"
+Xsession: X session started for pi at Tue Dec  8 19:21:48 PST 2015
+localuser:pi being added to access control list
+Xsession: X session started for pi at Tue Dec  8 19:33:12 PST 2015
+localuser:pi being added to access control list
+Xsession: X session started for pi at Tue Dec  8 19:36:31 PST 2015
+localuser:pi being added to access control list
+xterm: fatal IO error 11 (Resource temporarily unavailable) or KillClient on X server ":0"
+Xsession: X session started for pi at Tue Dec  8 20:35:42 PST 2015
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+
+(openbox:1830): GLib-CRITICAL **: Source ID 14 was not found when attempting to remove it
+
+(openbox:1830): GLib-CRITICAL **: Source ID 24 was not found when attempting to remove it
+
+(openbox:1830): GLib-CRITICAL **: Source ID 41 was not found when attempting to remove it
+
+(openbox:1830): GLib-CRITICAL **: Source ID 51 was not found when attempting to remove it
+
+(openbox:1830): GLib-CRITICAL **: Source ID 58 was not found when attempting to remove it
+
+(openbox:1830): GLib-CRITICAL **: Source ID 90 was not found when attempting to remove it
+
+(openbox:1830): GLib-CRITICAL **: Source ID 123 was not found when attempting to remove it
+
+(openbox:1830): GLib-CRITICAL **: Source ID 141 was not found when attempting to remove it
+
+(openbox:1830): GLib-CRITICAL **: Source ID 157 was not found when attempting to remove it
+
+(openbox:1830): GLib-CRITICAL **: Source ID 171 was not found when attempting to remove it
+Xsession: X session started for pi at Tue Dec  8 20:52:41 PST 2015
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+
+(process:2849): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+console.error: 
+  [CustomizableUI]
+  Custom widget with id loop-button does not return a valid node
+console.error: 
+  [CustomizableUI]
+  Custom widget with id loop-button does not return a valid node
+
+(iceweasel:2849): Gtk-CRITICAL **: IA__gtk_clipboard_set_with_data: assertion 'targets != NULL' failed
+1449641922270	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+
+(process:2849): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+console.error: 
+  [CustomizableUI]
+  Custom widget with id loop-button does not return a valid node
+console.error: 
+  [CustomizableUI]
+  Custom widget with id loop-button does not return a valid node
+Xsession: X session started for pi at Tue Dec  8 22:32:09 PST 2015
+localuser:pi being added to access control list
+Xsession: X session started for pi at Tue Dec  8 22:36:09 PST 2015
+localuser:pi being added to access control list
+Xsession: X session started for pi at Tue Dec  8 22:37:59 PST 2015
+localuser:pi being added to access control list
+Xsession: X session started for pi at Tue Dec  8 22:38:48 PST 2015
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+
+(process:796): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+console.error: 
+  [CustomizableUI]
+  Custom widget with id loop-button does not return a valid node
+Xsession: X session started for pi at Tue Dec  8 22:51:04 PST 2015
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+
+(process:1034): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+console.error: 
+  [CustomizableUI]
+  Custom widget with id loop-button does not return a valid node
+
+(openbox:1008): GLib-CRITICAL **: Source ID 12 was not found when attempting to remove it
+
+(process:1070): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+
+(process:1076): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+console.error: 
+  [CustomizableUI]
+  Custom widget with id loop-button does not return a valid node
+Xsession: X session started for pi at Tue Dec  8 22:52:40 PST 2015
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+** Message: console message:  @0: Can't close the window since it was not opened by JavaScript
+
+
+** (web.py:1154): CRITICAL **: SoupMessage* webkit_network_response_get_message(WebKitNetworkResponse*): assertion 'WEBKIT_IS_NETWORK_RESPONSE(response)' failed
+/usr/bin/web.py:22: Warning: Source ID 334 was not found when attempting to remove it
+  gtk.main()
+Xsession: X session started for pi at Wed Dec  9 05:43:31 PST 2015
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+
+(openbox:480): GLib-CRITICAL **: Source ID 20 was not found when attempting to remove it
+
+(openbox:480): GLib-CRITICAL **: Source ID 69 was not found when attempting to remove it
+Xsession: X session started for pi at Wed Dec  9 05:52:04 PST 2015
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+/usr/bin/web.py:22: Warning: Source ID 287 was not found when attempting to remove it
+  gtk.main()
+Xsession: X session started for pi at Wed Dec  9 05:55:17 PST 2015
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+
+(process:690): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+console.error: 
+  [CustomizableUI]
+  Custom widget with id loop-button does not return a valid node
+Xsession: X session started for pi at Wed Dec  9 06:04:32 PST 2015
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+** Message: console message: https://www.socallinuxexpo.org/scale/14x/cfp @129: ReferenceError: Can't find variable: addFieldToCheck
+
+** Message: console message: https://www.socallinuxexpo.org/scale/14x/cfp @269: ReferenceError: Can't find variable: addFieldToCheck
+
+Xsession: X session started for pi at Wed Dec  9 06:05:58 PST 2015
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+** Message: console message:  @0: Can't close the window since it was not opened by JavaScript
+
+** Message: console message:  @0: Can't close the window since it was not opened by JavaScript
+
+** Message: console message:  @0: Can't close the window since it was not opened by JavaScript
+
+** Message: console message:  @0: Can't close the window since it was not opened by JavaScript
+
+
+(midori:3952): GLib-CRITICAL **: Source ID 4252 was not found when attempting to remove it
+
+(midori:3952): GLib-CRITICAL **: Source ID 4265 was not found when attempting to remove it
+
+(midori:3952): GLib-CRITICAL **: Source ID 4269 was not found when attempting to remove it
+
+(midori:3952): GLib-CRITICAL **: Source ID 4275 was not found when attempting to remove it
+
+(midori:3952): GLib-CRITICAL **: Source ID 4302 was not found when attempting to remove it
+
+(midori:3952): GLib-CRITICAL **: Source ID 626 was not found when attempting to remove it
+Xsession: X session started for pi at Wed Dec  9 06:08:59 PST 2015
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+
+(process:4021): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+console.error: 
+  [CustomizableUI]
+  Custom widget with id loop-button does not return a valid node
+Xsession: X session started for pi at Wed Dec  9 06:10:23 PST 2015
+localuser:pi being added to access control list
+
+(process:4132): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+console.error: 
+  [CustomizableUI]
+  Custom widget with id loop-button does not return a valid node
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 2378 requests (2378 known processed) with 0 events remaining.
+Xsession: X session started for pi at Wed Dec  9 06:11:32 PST 2015
+localuser:pi being added to access control list
+
+(process:518): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+console.error: 
+  [CustomizableUI]
+  Custom widget with id loop-button does not return a valid node
+1449728431723	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+1449814796750	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+** Message: console message:  @0: Can't close the window since it was not opened by JavaScript
+
+** Message: console message:  @0: Can't close the window since it was not opened by JavaScript
+
+** Message: console message:  @0: Can't close the window since it was not opened by JavaScript
+
+** Message: console message:  @0: Can't close the window since it was not opened by JavaScript
+
+** Message: console message:  @0: Can't close the window since it was not opened by JavaScript
+
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 4825 requests (4822 known processed) with 0 events remaining.
+Xsession: X session started for pi at Sun Dec 13 10:44:44 PST 2015
+localuser:pi being added to access control list
+
+(process:518): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+console.error: 
+  [CustomizableUI]
+  Custom widget with id loop-button does not return a valid node
+Xsession: X session started for pi at Wed Dec 16 20:35:14 PST 2015
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+** Message: console message:  @0: Can't close the window since it was not opened by JavaScript
+
+** Message: console message:  @0: Can't close the window since it was not opened by JavaScript
+
+** Message: console message:  @0: Can't close the window since it was not opened by JavaScript
+
+** Message: console message:  @0: Can't close the window since it was not opened by JavaScript
+
+Xsession: X session started for pi at Thu Dec 17 20:06:31 PST 2015
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+** Message: console message:  @0: Can't close the window since it was not opened by JavaScript
+
+** Message: console message:  @0: Can't close the window since it was not opened by JavaScript
+
+** Message: console message:  @0: Can't close the window since it was not opened by JavaScript
+
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 2099 requests (2099 known processed) with 0 events remaining.
+Xsession: X session started for pi at Thu Dec 17 20:18:10 PST 2015
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+
+(openbox:611): GLib-CRITICAL **: Source ID 57 was not found when attempting to remove it
+
+(openbox:611): GLib-CRITICAL **: Source ID 62 was not found when attempting to remove it
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @172: ReferenceError: Can't find variable: loadSponsorsUrl
+
+** Message: console message: http://signs.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=13&minute=30 @177: ReferenceError: Can't find variable: loadSponsorsUrl
+
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 14969 requests (14968 known processed) with 0 events remaining.
+Xsession: X session started for pi at Fri Dec 18 05:11:49 PST 2015
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 1285 requests (1285 known processed) with 0 events remaining.
+Xsession: X session started for pi at Fri Dec 18 05:13:45 PST 2015
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 900 requests (900 known processed) with 0 events remaining.
+Xsession: X session started for pi at Fri Dec 18 05:15:25 PST 2015
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+XIO:  fatal IO error 4 (Interrupted system call) on X server ":0"
+      after 1980 requests (1980 known processed) with 0 events remaining.
+Xsession: X session started for pi at Fri Dec 18 05:27:42 PST 2015
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+
+(openbox:649): GLib-CRITICAL **: Source ID 17 was not found when attempting to remove it
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+
+(openbox:14618): GLib-CRITICAL **: Source ID 14 was not found when attempting to remove it
+
+(openbox:14618): GLib-CRITICAL **: Source ID 35 was not found when attempting to remove it
+
+(openbox:14618): GLib-CRITICAL **: Source ID 52 was not found when attempting to remove it
+
+(openbox:14618): GLib-CRITICAL **: Source ID 93 was not found when attempting to remove it
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 10725 requests (10725 known processed) with 0 events remaining.
+Xsession: X session started for pi at Tue Jan  5 20:25:47 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 2093 requests (2093 known processed) with 0 events remaining.
+Xsession: X session started for pi at Tue Jan  5 20:27:36 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 6268 requests (6265 known processed) with 0 events remaining.
+Xsession: X session started for pi at Tue Jan  5 20:30:26 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: A window manager is already running on screen 0
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: A window manager is already running on screen 0
+
+(openbox:540): GLib-CRITICAL **: Source ID 12 was not found when attempting to remove it
+
+(openbox:540): GLib-CRITICAL **: Source ID 22 was not found when attempting to remove it
+
+(openbox:540): GLib-CRITICAL **: Source ID 35 was not found when attempting to remove it
+
+(openbox:540): GLib-CRITICAL **: Source ID 48 was not found when attempting to remove it
+
+(openbox:540): GLib-CRITICAL **: Source ID 58 was not found when attempting to remove it
+
+(openbox:540): GLib-CRITICAL **: Source ID 111 was not found when attempting to remove it
+
+(openbox:540): GLib-CRITICAL **: Source ID 130 was not found when attempting to remove it
+
+(openbox:540): GLib-CRITICAL **: Source ID 143 was not found when attempting to remove it
+
+(openbox:540): GLib-CRITICAL **: Source ID 150 was not found when attempting to remove it
+
+(openbox:540): GLib-CRITICAL **: Source ID 158 was not found when attempting to remove it
+
+(openbox:540): GLib-CRITICAL **: Source ID 167 was not found when attempting to remove it
+
+(openbox:540): GLib-CRITICAL **: Source ID 187 was not found when attempting to remove it
+
+(openbox:540): GLib-CRITICAL **: Source ID 194 was not found when attempting to remove it
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: A window manager is already running on screen 0
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 25041 requests (25041 known processed) with 0 events remaining.
+Xsession: X session started for pi at Tue Jan  5 20:39:31 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+/home/pi/.xsession: line 25:   541 Segmentation fault      /usr/bin/web.py
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: A window manager is already running on screen 0
+Xsession: X session started for pi at Wed Jan  6 17:17:17 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+XIO:  fatal IO error 4 (Interrupted system call) on X server ":0"
+      after 1769 requests (1769 known processed) with 0 events remaining.
+Xsession: X session started for pi at Wed Jan  6 19:11:33 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Xsession: X session started for pi at Wed Jan  6 19:17:18 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: A window manager is already running on screen 0
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: A window manager is already running on screen 0
+127.0.1.1
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: A window manager is already running on screen 0
+127.0.1.1
+XIO:  fatal IO error 4 (Interrupted system call) on X server ":0"
+      after 5897 requests (5897 known processed) with 0 events remaining.
+Xsession: X session started for pi at Wed Jan  6 21:20:50 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+128
+128
+128
+128
+SCALE:128
+SCALE:128
+SCALE:128
+SCALE:128
+Xsession: X session started for pi at Thu Jan  7 06:17:10 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Xsession: X session started for pi at Thu Jan  7 06:17:19 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+g_dbus_connection_real_closed: Remote peer vanished with error: Underlying GIOStream returned 0 bytes on an async read (g-io-error-quark, 0). Exiting.
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 1566 requests (1566 known processed) with 0 events remaining.
+Xsession: X session started for pi at Thu Jan  7 19:09:02 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 1769 requests (1769 known processed) with 0 events remaining.
+Xsession: X session started for pi at Thu Jan  7 19:13:44 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 1773 requests (1773 known processed) with 0 events remaining.
+Xsession: X session started for pi at Thu Jan  7 19:20:39 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+g_dbus_connection_real_closed: Remote peer vanished with error: Underlying GIOStream returned 0 bytes on an async read (g-io-error-quark, 0). Exiting.
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 1569 requests (1566 known processed) with 0 events remaining.
+Xsession: X session started for pi at Thu Jan  7 19:26:23 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 2658 requests (2655 known processed) with 0 events remaining.
+Xsession: X session started for pi at Thu Jan  7 19:27:34 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 1625 requests (1622 known processed) with 0 events remaining.
+Xsession: X session started for pi at Thu Jan  7 19:39:15 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Xsession: X session started for pi at Thu Jan  7 19:39:14 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    structXsession: X session started for pi at Thu Jan  7 19:39:14 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Xsession: X session started for pi at Thu Jan  7 19:39:14 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+XIO:  fatal IO error 4 (Interrupted system call) on X server ":0"
+      after 888 requests (888 known processed) with 0 events remaining.
+Xsession: X session started for pi at Thu Jan  7 22:03:26 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Xsession: X session started for pi at Thu Jan  7 19:39:14 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 888 requests (888 known processed) with 0 events remaining.
+Xsession: X session started for pi at Thu Jan  7 19:39:32 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Xsession: X session started for pi at Thu Jan  7 19:39:17 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 888 requests (888 known processed) with 0 events remaining.
+Xsession: X session started for pi at Thu Jan  7 22:06:23 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 888 requests (888 known processed) with 0 events remaining.
+Xsession: X session started for pi at Thu Jan  7 22:08:07 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 888 requests (888 known processed) with 0 events remaining.
+Xsession: X session started for pi at Thu Jan  7 22:09:22 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+
+(openbox:824): GLib-CRITICAL **: Source ID 19 was not found when attempting to remove it
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 4962 requests (4962 known processed) with 0 events remaining.
+Xsession: X session started for pi at Thu Jan  7 22:10:39 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: A window manager is already running on screen 0
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: A window manager is already running on screen 0
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: A window manager is already running on screen 0
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: A window manager is already running on screen 0
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: A window manager is already running on screen 0
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: A window manager is already running on screen 0
+Xsession: X session started for pi at Thu Jan  7 22:12:40 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: A window manager is already running on screen 0
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: A window manager is already running on screen 0
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: A window manager is already running on screen 0
+Xsession: X session started for pi at Thu Jan  7 22:12:41 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+XIO:  fatal IO error 4 (Interrupted system call) on X server ":0"
+      after 888 requests (888 known processed) with 0 events remaining.
+Xsession: X session started for pi at Thu Jan  7 22:21:08 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 10: @xset: command not found
+/home/pi/.xsession: line 11: @xset: command not found
+/home/pi/.xsession: line 12: @xset: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Xsession: X session started for pi at Thu Jan  7 22:37:35 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 15: [-e: command not found
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+X connection to :0 broken (explicit kill or server shutdown).
+Xsession: X session started for pi at Thu Jan  7 22:40:18 PST 2016
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+/home/pi/.xsession: line 15: [-e: command not found
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+                                                                                                                                                             Xsession: X session started for pi at Thu Jan  7 22:37:36 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 20: syntax error near unexpected token `else'
+/home/pi/.xsession: line 20: `else'
+Xsession: X session started for pi at Thu Jan  7 22:48:59 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 20: syntax error near unexpected token `else'
+/home/pi/.xsession: line 20: `else'
+Xsession: X session started for pi at Thu Jan  7 22:50:30 PST 2016
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+xterm: fatal IO error 11 (Resource temporarily unavailable) or KillClient on X server ":0"
+Xsession: X session started for pi at Thu Jan  7 22:53:14 PST 2016
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Xsession: X session started for pi at Thu Jan  7 22:37:35 PST 2016
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Traceback (most recent call last):
+  File "/usr/bin/web.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/web.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+XIO:  fatal IO error 4 (Interrupted system call) on X server ":0"
+      after 3538 requests (3538 known processed) with 0 events remaining.
+Xsession: X session started for pi at Thu Jan  7 23:04:03 PST 2016
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Xsession: X session started for pi at Thu Jan  7 23:11:37 PST 2016
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Xsession: X session started for pi at Thu Jan  7 23:04:03 PST 2016
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Xsession: X session started for pi at Thu Jan  7 23:04:04 PST 2016
+localuser:pi being added to access control list
+Xsession: X session started for pi at Thu Jan  7 23:04:03 PST 2016
+localuser:pi being added to access control list
+Xsession: X session started for pi at Thu Jan  7 23:04:04 PST 2016
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Traceback (most recent call last):
+  File "/usr/bin/reg.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/reg.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/reg.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/reg.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/reg.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/reg.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/reg.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/reg.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Xsession: X session started for pi at Thu Jan  7 23:04:03 PST 2016
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Traceback (most recent call last):
+  File "/usr/bin/reg.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/reg.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/reg.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/reg.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/reg.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/reg.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+/home/pi/.xsession: line 24:   715 Terminated              /usr/bin/reg.py
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 9721 requests (9721 known processed) with 0 events remaining.
+Xsession: X session started for pi at Thu Jan  7 23:38:28 PST 2016
+localuser:pi being added to access control list
+Traceback (most recent call last):
+  File "/usr/bin/reg.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/reg.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/reg.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/reg.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/reg.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/reg.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/reg.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/reg.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/reg.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/reg.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/reg.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/reg.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Xsession: X session started for pi at Thu Jan  7 23:39:28 PST 2016
+localuser:pi being added to access control list
+Xsession: X session started for pi at Thu Jan  7 23:39:28 PST 2016
+localuser:pi being added to access control list
+Xsession: X session started for pi at Thu Jan  7 23:39:29 PST 2016
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Traceback (most recent call last):
+  File "/usr/bin/reg.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/reg.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/reg.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/reg.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Xsession: X session started for pi at Thu Jan  7 23:39:28 PST 2016
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Traceback (most recent call last):
+  File "/usr/bin/reg.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/reg.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/reg.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/reg.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/reg.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/reg.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/reg.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/reg.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/reg.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/reg.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/reg.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/reg.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/reg.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/reg.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+Traceback (most recent call last):
+  File "/usr/bin/reg.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/reg.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 3887 requests (3884 known processed) with 0 events remaining.
+Xsession: X session started for pi at Sat Jan  9 06:26:22 PST 2016
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Traceback (most recent call last):
+  File "/usr/bin/reg.py", line 26, in <module>
+    ip = get_ip_address('eth0')  # '192.168.0.110'
+  File "/usr/bin/reg.py", line 23, in get_ip_address
+    struct.pack('256s', ifname[:15])
+IOError: [Errno 99] Cannot assign requested address
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 1782 requests (1782 known processed) with 0 events remaining.
+Xsession: X session started for pi at Sat Jan  9 06:34:22 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 19: syntax error near unexpected token `done'
+/home/pi/.xsession: line 19: `  done'
+Xsession: X session started for pi at Sat Jan  9 06:34:22 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 19: syntax error near unexpected token `done'
+/home/pi/.xsession: line 19: `  done'
+Xsession: X session started for pi at Sat Jan  9 07:03:50 PST 2016
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 1807 requests (1807 known processed) with 0 events remaining.
+Xsession: X session started for pi at Sat Jan  9 07:04:54 PST 2016
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 1833 requests (1833 known processed) with 0 events remaining.
+Xsession: X session started for pi at Sat Jan  9 07:10:38 PST 2016
+localuser:pi being added to access control list
+/home/pi/.xsession: line 20: syntax error near unexpected token `else'
+/home/pi/.xsession: line 20: `else'
+Xsession: X session started for pi at Sat Jan  9 07:11:01 PST 2016
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 1845 requests (1845 known processed) with 0 events remaining.
+Xsession: X session started for pi at Sat Jan  9 07:11:37 PST 2016
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+
+(openbox:996): GLib-CRITICAL **: Source ID 24 was not found when attempting to remove it
+
+(openbox:996): GLib-CRITICAL **: Source ID 66 was not found when attempting to remove it
+
+(openbox:996): GLib-CRITICAL **: Source ID 101 was not found when attempting to remove it
+Xsession: X session started for pi at Sat Jan  9 07:16:05 PST 2016
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+
+(openbox:1118): GLib-CRITICAL **: Source ID 68 was not found when attempting to remove it
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 7644 requests (7644 known processed) with 0 events remaining.
+Xsession: X session started for pi at Sat Jan  9 07:20:58 PST 2016
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 2985 requests (2985 known processed) with 0 events remaining.
+Xsession: X session started for pi at Sat Jan  9 07:33:32 PST 2016
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+
+(openbox:1316): GLib-CRITICAL **: Source ID 4 was not found when attempting to remove it
+
+(openbox:1316): GLib-CRITICAL **: Source ID 8 was not found when attempting to remove it
+
+(openbox:1316): GLib-CRITICAL **: Source ID 10 was not found when attempting to remove it
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 4294 requests (4294 known processed) with 0 events remaining.
+Xsession: X session started for pi at Sat Jan  9 07:34:05 PST 2016
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 4534 requests (4352 known processed) with 0 events remaining.
+Xsession: X session started for pi at Sat Jan  9 07:36:20 PST 2016
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 2496 requests (2496 known processed) with 0 events remaining.
+Xsession: X session started for pi at Sat Jan  9 07:37:45 PST 2016
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 2169 requests (2169 known processed) with 0 events remaining.
+Xsession: X session started for pi at Sat Jan  9 07:40:16 PST 2016
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 7384 requests (7202 known processed) with 0 events remaining.
+Xsession: X session started for pi at Sat Jan  9 07:50:33 PST 2016
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 2971 requests (2971 known processed) with 0 events remaining.
+Xsession: X session started for pi at Sat Jan  9 08:02:30 PST 2016
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 2975 requests (2975 known processed) with 0 events remaining.
+Xsession: X session started for pi at Sat Jan  9 08:10:17 PST 2016
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 2333 requests (2333 known processed) with 0 events remaining.
+Xsession: X session started for pi at Sat Jan  9 08:28:04 PST 2016
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+/home/pi/.config/openbox/menu.xml:1: parser error : Document is empty
+
+^
+/home/pi/.config/openbox/menu.xml:1: parser error : Start tag expected, '<' not found
+
+^
+Obt-Message: /home/pi/.config/openbox/menu.xml is an empty XML document
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 2305 requests (2123 known processed) with 0 events remaining.
+Xsession: X session started for pi at Sat Jan  9 08:30:34 PST 2016
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+XIO:  fatal IO error 4 (Interrupted system call) on X server ":0"
+      after 1793 requests (1793 known processed) with 0 events remaining.
+Xsession: X session started for pi at Sat Jan  9 08:37:55 PST 2016
+localuser:pi being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 1793 requests (1793 known processed) with 0 events remaining.
