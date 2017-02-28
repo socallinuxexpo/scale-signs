@@ -46,7 +46,7 @@ webview.get_settings().props.javascript_can_open_windows_automatically = True
 
 webview.connect('close-web-view', close_func)
 webview.connect('create-web-view', create_func)
-webview.open('https://reg.socallinuxexpo.org/reg6/kiosk/')
+webview.open('https://register.socallinuxexpo.org/reg6/kiosk/')
 #webview.open('http://signs.expo.socallinuxexpo.org/index.php?year=2016&month=1&day=21&hour=10&minute=30')
 
 
