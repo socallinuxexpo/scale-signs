@@ -192,7 +192,7 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
         </div>
 
         <div class="col-md-4">
-          <img src="images/15x/WiFi-Sign2.png" class="pull-right">
+          <img src="images/WiFi-Sign2.png" class="pull-right">
         </div>
 
         <!--
