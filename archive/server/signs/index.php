@@ -313,7 +313,7 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
       $("#sponsors1").load(loadSponsorsUrlOne);
       $("#sponsors1").show();
 
-      var loadSponsorsUrlTwo = "sponsors.php?group=one";
+      var loadSponsorsUrlTwo = "sponsors.php?group=two";
       $("#sponsors2").load(loadSponsorsUrlTwo);
       $("#sponsors2").show();
 
