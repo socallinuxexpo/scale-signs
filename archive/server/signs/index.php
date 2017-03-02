@@ -186,8 +186,6 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
   <body>
     <div id='top-container' class="container main-container">
 
-      <!--
-      commented out header row to see on screen
       <div id='header-row' class="header row">
         <div class="col-md-4">
           <img src="images/15x/header.png">
@@ -195,7 +193,6 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
 
         <div class="col-md-4">
         </div>
-      -->
         <!--
         <div class="col-md-4">
           <ul class="clock pull-right">
