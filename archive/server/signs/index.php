@@ -481,7 +481,31 @@ function avnoc() {
 <?php
 }
 ?>
-
+<!--- Individual Room Display -->
+<?php
+function room($room, $year = '', $month = '', $day = '', $hour = '', $minute = '') {
+$room_lookup_table = array(
+    "ballroom-de"   => "BallroomDE",
+    "ballroom-a"    => "BallroomA",
+    "ballroom-b"    => "BallroomB",
+    "ballroom-c"    => "BallroomC",
+    "ballroom-f"    => "BallroomF",
+    "ballroom-g"    => "BallroomG",
+    "ballroom-h"    => "BallroomH",
+    "ballroom-gh"   => "BallroomGH",
+    "ballroom-i"    => "BallroomI",
+    "ballroom-j"    => "BallroomJ",
+    "room-101"  => "Room101",
+    "room-103"  => "Room103",
+    "room-104"  => "Room104",
+    "room-107"  => "Room107",
+    "room-211"  => "Room211",
+    "room-212"  => "Room212",
+    "room-209"  => "Room209",
+    "room-205"  => "Room205",
+    "room-215"  => "Room215",
+    );
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -492,7 +516,7 @@ function avnoc() {
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>SCALE 14x: <?php echo $room_lookup_table[$room]; ?></title>
+    <title>SCALE 15x: <?php echo $room_lookup_table[$room]; ?></title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -570,6 +594,7 @@ function avnoc() {
 
 
 <?php
+}
 ?>
 
 <!--- NOC Room Display -->
