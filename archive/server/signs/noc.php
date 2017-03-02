@@ -31,7 +31,7 @@
         break;
       case 'four':
         $carousel_array = $carousel_four;
-        break;                        
+        break;
       case 'five':
         $carousel_array = $carousel_five;
         break;
@@ -43,15 +43,15 @@
     {
       if ($x == 0) {
         echo "<!-- item active -->";
-        echo "<div class='item active'>";  
+        echo "<div class='item active'>";
       } else {
-        echo "<!-- item -->";                
+        echo "<!-- item -->";
         echo "<div class='item'>";
       }
-      echo "<!-- item -->";              
+      echo "<!-- item -->";
       printf("<div><h3>%s</h3><img class='graph-image' src='images/%s'></div>", $carousel_array[$x]['name'], $carousel_array[$x]['graph']);
       echo "</div>";
-    }    
+    }
   } else {
 ?>
 
@@ -87,7 +87,7 @@
   <body>
     <div class="container main-container">
 
-      <div class="header row">        
+      <div class="header row">
           <!-- <img src="images/noc-penguin-header5.png"> -->
       </div>
 
@@ -98,7 +98,7 @@
       <!-- Begin Row -->
       <div class="row graph-row">
         <div class="graph col-md-12">
-          <!-- Carousel One -->        
+          <!-- Carousel One -->
           <div class="carousel carousel-fade" data-ride="carousel" data-interval="30000">
             <div id="carousel_one" class="carousel-inner">
             </div>
@@ -112,7 +112,7 @@
       <!-- Begin Row -->
       <div class="row graph-row">
         <div class="graph col-md-12">
-          <!-- Carousel Four -->        
+          <!-- Carousel Four -->
           <div class="carousel carousel-fade" data-ride="carousel" data-interval="30000">
             <div id="carousel_two" class="carousel-inner">
             </div>
@@ -126,7 +126,7 @@
       <!-- Begin Row -->
       <div class="row graph-row">
         <div class="graph col-md-12">
-          <!-- Carousel Four -->        
+          <!-- Carousel Four -->
           <div class="carousel carousel-fade" data-ride="carousel" data-interval="30000">
             <div id="carousel_three" class="carousel-inner">
             </div>
@@ -136,10 +136,10 @@
         </div>
       </div>
       <!-- End Row -->
-     
+
       <div class="row"><hr></div>
 
-      <div class="header row">        
+      <div class="header row">
           <!-- <img src="images/noc-penguin-header5.png"> -->
       </div>
 
@@ -148,7 +148,7 @@
       <!-- Begin Row -->
       <div class="row graph-row">
         <div class="graph col-md-4">
-          <!-- Carousel One -->        
+          <!-- Carousel One -->
           <div class="carousel carousel-fade" data-ride="carousel" data-interval="30000">
             <div id="carousel_one" class="carousel-inner">
             </div>
@@ -158,7 +158,7 @@
         </div>
 
         <div class="graph col-md-4">
-          <!-- Carousel Four -->        
+          <!-- Carousel Four -->
           <div class="carousel carousel-fade" data-ride="carousel" data-interval="30000">
             <div id="carousel_two" class="carousel-inner">
             </div>
@@ -168,7 +168,7 @@
         </div>
 
         <div class="graph col-md-4">
-          <!-- Carousel Four -->        
+          <!-- Carousel Four -->
           <div class="carousel carousel-fade" data-ride="carousel" data-interval="30000">
             <div id="carousel_three" class="carousel-inner">
             </div>
@@ -178,10 +178,10 @@
         </div>
       </div>
       <!-- End Row -->
-     
+
       <div class="row"><hr></div>
 
-      <div class="header row">        
+      <div class="header row">
           <!-- <img src="images/noc-penguin-header5.png"> -->
       </div>
 
@@ -196,20 +196,20 @@
   <script src="js/jquery-1.10.2.min.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
   <script type="text/javascript">
-  
+
   $(document).ready(function() {
 
     // Ensure we're not caching data
     $.ajaxSetup ({
-      cache: false  
+      cache: false
     });
-    
+
     // updateClock();
     // setInterval('updateClock()', 1000 );
-    
+
     // Hide the schedule until we've loaded the data
     $('#carousel_one').hide();
-    
+
     var CarouselUpdateTime = 600000;
     var CarouselOneUrl = "noc.php?carousel=one";
     var CarouselTwoUrl = "noc.php?carousel=two";
@@ -237,7 +237,7 @@
     /* Reload and Refresh Carousel Three once a minute */
     var CarouselThreeRefreshId = setInterval(function() {
       $("#carousel_three").load(CarouselThreeUrl);
-    }, 60000);        
+    }, 60000);
 
   /* Check the page type */
   var checkPageTypeId = setInterval(function() {
@@ -257,4 +257,3 @@
 <?php
   }
 ?>
-

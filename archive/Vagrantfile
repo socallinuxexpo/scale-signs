@@ -15,6 +15,8 @@ Vagrant.configure("2") do |config|
     yum install httpd php -y
     ifup enp0s8
     service httpd start
+    rm /etc/localtime -f
+    ln -s /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
     echo "visit http://192.168.168.168/signs"
   SHELL
 
