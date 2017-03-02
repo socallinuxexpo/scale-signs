@@ -3,7 +3,7 @@ body {
     color: #fff;
     background-image: url(Black_Texture.jpg);
     background-size: cover;
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
 }
 
 .container {
@@ -54,7 +54,7 @@ hr {
 }
 
 .header img {
-    max-width: 100%; 
+    max-width: 100%;
 }
 
 .sponsorList {

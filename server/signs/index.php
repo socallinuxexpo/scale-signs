@@ -186,15 +186,16 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
   <body>
     <div id='top-container' class="container main-container">
 
+      <!--
+      commented out header row to see on screen
       <div id='header-row' class="header row">
         <div class="col-md-4">
           <img src="images/15x/header.png">
         </div>
 
         <div class="col-md-4">
-          <img src="images/WiFi-Sign2.png" class="pull-right">
         </div>
-
+      -->
         <!--
         <div class="col-md-4">
           <ul class="clock pull-right">
@@ -517,7 +518,6 @@ function avnoc() {
     <div class="container main-container">
       <div class="header row" style="text-align: center;">
         <div class="" style='text-align: center;'>
-          <img src="images/15x/header.png">
         </div>
       </div>
       <!-- <div class="row roomHeader"><h3>Coming Up</h3></div> -->
