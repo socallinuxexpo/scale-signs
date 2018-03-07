@@ -1,7 +1,5 @@
 #!/bin/bash
 
-openbox &
-
 # Clean out existing profile information
 #rm -rf /home/pi/.cache;
 #  rm -rf /home/pi/.config;
@@ -27,4 +25,5 @@ fi
 
 #  fbset -depth $( cat /sys/module/*fb*/parameters/fbdepth );
 
+openbox &
 

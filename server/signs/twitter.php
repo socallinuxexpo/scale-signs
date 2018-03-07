@@ -26,7 +26,7 @@ function search_twitter()
   );
 	
 	$url = 'https://api.twitter.com/1.1/search/tweets.json';
-	$getfield = '?q=#scale15x';
+	$getfield = '?q=#scale16x';
 	$requestMethod = 'GET';
 	
 	$twitter = new TwitterAPIExchange($settings);
@@ -67,9 +67,9 @@ function search_twitter()
 	    
     print '<div class="vcard">';
     print '<a class="pull-left" href="#">';
-      print "<div class='tweet-pic'>";
-          print "<img class='media-object' style=\"height: 48px; width: 48px;\" src=\"$logo\">";
-      print "</div>";
+      //print "<div class='tweet-pic'>";
+          //print "<img class='media-object' style=\"height: 48px; width: 48px;\" src=\"$logo\">";
+      //print "</div>";
     print '</a>';
     print '</div>';
 
