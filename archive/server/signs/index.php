@@ -164,7 +164,7 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>SCALE 15x</title>
+    <title>SCALE 16x</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -188,7 +188,7 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
 
       <div id='header-row' class="header row">
         <div class="col-md-4">
-          <img src="images/15x/header.png">
+          <img src="images/16x/header.png">
         </div>
 
         <div class="col-md-4">
@@ -375,7 +375,7 @@ function avnoc() {
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>SCALE 15x</title>
+    <title>SCALE 16x</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -399,7 +399,7 @@ function avnoc() {
 
       <div class="header row">
         <div class="col-md-8">
-          <img src="images/15x/header.png">
+          <img src="images/16x/header.png">
         </div>
 
         <div class="col-md-4">
@@ -516,7 +516,7 @@ $room_lookup_table = array(
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>SCALE 15x: <?php echo $room_lookup_table[$room]; ?></title>
+    <title>SCALE 16x: <?php echo $room_lookup_table[$room]; ?></title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">

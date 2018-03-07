@@ -238,7 +238,7 @@ $sponsors_to_rooms = array(
                                     "Sunday" => array("linuxfoundation","coreos","yahoo"),
                             ),
                );
-$url = 'http://www.socallinuxexpo.org/scale/15x/sign.xml';
+$url = 'http://www.socallinuxexpo.org/scale/16x/sign.xml';
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -453,7 +453,7 @@ asort($order, SORT_NUMERIC);
                         }
 
                         foreach ($sponsors_for_room as $sponsor) {
-                            echo "<img src='images/sponsors/15x/" . $sponsors[$sponsor] . "' style='width: " . $img_size . "px; height: " . $img_size . "px; border: 1px solid #000; margin: 1px;'>";
+                            echo "<img src='images/sponsors/16x/" . $sponsors[$sponsor] . "' style='width: " . $img_size . "px; height: " . $img_size . "px; border: 1px solid #000; margin: 1px;'>";
                         }
                         ?>
                     </div>
