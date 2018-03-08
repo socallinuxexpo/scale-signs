@@ -167,21 +167,24 @@ font {
 }
 
 .carousel-inner .sponsor-logo {
-  padding: 2px;
-  margin-top: 0px;
+  object-fit: cover;
+  padding: 0px;
+  margin-top: 20px;
   background: #ffffff;
   -webkit-border-radius: 6px 6px 6px 6px;
   -moz-border-radius: 6px 6px 6px 6px;
   border-radius: 6px 6px 6px 6px;
   width: 300px;
-  height: 300px;
+  height: auto;
   vertical-align: middle;
 }
 
 .carousel-inner .sponsor-logo img {
   max-width: 100%;
+  max-height: 100%;
   width: 300px;
-  height: 300px;
+  height: auto;
+  vertical-align: middle;
 }
 
 .clock {
