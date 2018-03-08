@@ -1,6 +1,7 @@
 <?php
  
 include 'ChromePhp.php';
+//date_default_timezone_set('America/Los_Angeles');
 
 $url = 'http://www.socallinuxexpo.org/scale/16x/sign.xml';
 $ch = curl_init();
@@ -9,7 +10,7 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $xmlresponse = curl_exec($ch);
 $xml = simplexml_load_string($xmlresponse);
 
-$starttime = mktime(0, 0, 0, 3, 02, 2017) / 60;
+$starttime = mktime(8, 0, 0, 3, 8, 2018) / 60;
 
 #if (!empty($_GET["year"]) && !empty($_GET["month"]) && !empty($_GET["day"]) && !empty($_GET["hour"]) && !empty($_GET["minute"])) {
 if (!empty($_GET["year"]) && !empty($_GET["month"]) && !empty($_GET["day"])) {
@@ -83,6 +84,7 @@ foreach ($xml->node AS $node) {
 	}
 	$title = (string) $node->Title;
 	$data[] = array((string) $node->Day, $thistime, $name, (string) $node->Title, (string) $node->Room, (string) $node->Topic, (string) $node->Overflow);
+
 		
 	$realtime = explode(' to ', $thistime)[0];
 	$realstime = explode(' to ', $thisend)[1];
@@ -91,6 +93,8 @@ foreach ($xml->node AS $node) {
 	$mfromm = ($handm[0] * 60) + $handm[1];
 	$mfromme = ($handme[0] * 60) + $handme[1];
 	
+
+	echo $node;
 	switch ((string) $node->Day) {
 		case "Thursday";
 			$order[] = $mfromm;
@@ -127,7 +131,7 @@ foreach ($xml->node AS $node) {
 		    <div class="carousel-inner">	  
 		      <div id="schedule-1-content" class="active item">
 			    <table cellpadding=2 cellspacing=1 class="table table-bordered">
-                <tr bgcolor="#fff"><th>Time</th><th>Presenter</th><th>Topic</th><th>Room</th><th>Overflow Room</th></tr>
+                <tr bgcolor="#fff"><th>Time</th><th>Presenter</th><th>Topic</th><th>Room</th></tr>
                 <tbody>
     <?php 
       $topics = array();
@@ -156,7 +160,7 @@ foreach ($xml->node AS $node) {
 		        print "</div>";
 		        print "<div id=\"schedule-$schedule_page-content\" class=\"item\">";
 			    print "<table cellpadding=2 cellspacing=1 class=\"table table-bordered\">";
-			    print "<tr bgcolor='#fff'><th>Time</th><th>Presenter</th><th>Topic</th><th>Room</th><th>Overflow Room</th></tr>";
+			    print "<tr bgcolor='#fff'><th>Time</th><th>Presenter</th><th>Topic</th><th>Room</th></tr>";
 		      }
 		      $count++; 
 
@@ -182,7 +186,7 @@ foreach ($xml->node AS $node) {
 
 
                         ?>
-					    <td width="15%">
+					    <td width="20%">
 					      <i class="icon-time"></i>
 					      <span>
 					      <?php
@@ -218,15 +222,9 @@ foreach ($xml->node AS $node) {
 					    <td> <i class="icon-bullhorn"></i> <span> <?php echo $talk_title; ?> </span></td>
 					    
 					    <!-- Room -->
-					    <td width="15%"> <i class="icon-info-sign"></i> 
+					    <td width="20%"> <i class="icon-info-sign"></i> 
 					    <?php 
 					      echo $data[$key][4];
-				      ?>
-				      </td>
-					    <!-- Overflow Room -->
-					    <td width="15%"> <i class="icon-info-sign"></i> 
-					    <?php 
-					      echo $data[$key][6];
 				      ?>
 				      </td>
 

@@ -1,5 +1,6 @@
 <?php
   include 'ChromePhp.php';
+  date_default_timezone_set('America/Los_Angeles');
 
   #$client = $_SERVER['HTTP_CLIENT_IP'];
   $client = $_SERVER["REMOTE_ADDR"];
@@ -191,7 +192,8 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
           <img src="images/16x/header.png">
         </div>
 
-        <div class="col-md-4">
+        <div class="clock pull-right" align="right">
+	  <img src="images/WiFi-Sign2.png" height="154" padding-right="50px">
         </div>
         <!--
         <div class="col-md-4">

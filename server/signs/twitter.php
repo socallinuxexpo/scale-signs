@@ -1,5 +1,7 @@
 <?php
 
+date_default_timezone_set('America/Los_Angeles');
+
 function search_twitter()
 {
 
@@ -68,7 +70,7 @@ function search_twitter()
     print '<div class="vcard">';
     print '<a class="pull-left" href="#">';
       //print "<div class='tweet-pic'>";
-          //print "<img class='media-object' style=\"height: 48px; width: 48px;\" src=\"$logo\">";
+      //    print "<img class='media-object' style=\"height: 48px; width: 48px;\" src=\"$logo\">";
       //print "</div>";
     print '</a>';
     print '</div>';
