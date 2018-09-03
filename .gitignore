@@ -1,6 +1,2 @@
-*~
-*.swp
-*.swo
-server/signs/images/noc/*
-*.vagrant
 .DS_Store
+.vagrant
