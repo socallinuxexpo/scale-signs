@@ -357,7 +357,7 @@ asort($order, SORT_NUMERIC);
                     <a class="pull-left" href="#">
                         <?php
                         if (strlen($photo) > 0) {
-                            echo "$photo";
+                            #echo "$photo";
                         } else {
                             if ($data[$key][3] === "Bad Voltage: Live") {
                                 echo '<img src="images/badvoltage.jpg" width="480" height="480">';
@@ -371,10 +371,10 @@ asort($order, SORT_NUMERIC);
                         }
                         ?>
                     </a>
-                    <div class="media-body">
-                        <h2 class="media-heading"><?php echo $data[$key][2]; ?></h2>
-                        <h3 class="media-heading"><?php echo $data[$key][3]; ?></h3>
-                        <h4><?php echo $data[$key][7]; ?></h4>
+                    <div class="media-body" style="vertical-align: middle; height: 800px;">
+                        <h2 class="media-heading" style="margin: 10px;"><?php echo $data[$key][2]; ?></h2>
+                        <h3 class="media-heading" style="margin: 10px;"><?php echo $data[$key][3]; ?></h3>
+                        <h4 style="margin: 10px;"><?php echo $data[$key][7]; ?></h4>
                         <hr/>
 					    <?php
                             $talk_time = $data[$key][1];
@@ -407,7 +407,7 @@ asort($order, SORT_NUMERIC);
                 <div class="media">
                     <div class="row">
                         <div class="col-md-12" style="text-align: center; vertical-align: middle;">
-                            <div class="well" style="height: 460px; vertical-align: middle;">
+                            <div class="well" style="height: 800px; vertical-align: middle;">
                             <div class="row">&nbsp;</div>
                             <img src="images/WiFi-Sign.png">
                             </div>
@@ -419,10 +419,8 @@ asort($order, SORT_NUMERIC);
             <?php if (count($sponsors_for_room) > 0) { ?>
             <div class="item">
                 <div class="media">
-                    <div class="row" style="text-align: center;">
+                    <div class="row" style="text-align: center; vertical-align: middle; height: 800px;">
                         <h2 style='text-align: center;'>Thank You To Our Track <?php if (count($sponsors_for_room) > 1) { echo "Sponsors"; } else { echo "Sponsor"; } ?></h2>
-                    </div>
-                    <div class="row" style="text-align: center;">
                         <?php
                         $column = count($sponsors_for_room);
                         switch ($column) {
@@ -453,7 +451,7 @@ asort($order, SORT_NUMERIC);
                         }
 
                         foreach ($sponsors_for_room as $sponsor) {
-                            echo "<img src='images/sponsors/17x/" . $sponsors[$sponsor] . "' style='width: " . $img_size . "px; height: " . $img_size . "px; border: 1px solid #000; margin: 1px;'>";
+                            echo "<img src='images/sponsors/" . $sponsors[$sponsor] . "' style='margin: 10px';>"; //' style='width: " . $img_size . "px; height: " . $img_size . "px; border: 1px solid #000; margin: 1px;'>";
                         }
                         ?>
                     </div>
