@@ -7,14 +7,15 @@ function search_twitter()
 
 	//require "TwitterSearch.phps";
 	
-    require_once('TwitterAPIExchange.php');
+  require_once('TwitterAPIExchange.php');
 
-	/** Set access tokens here - see: https://dev.twitter.com/apps/ **/
+  /** Set access tokens here - see: https://dev.twitter.com/apps/ **/
+  /** Need to update these values and move to env vars so they're not in codebase **/
 	$settings = array(
-	    'oauth_access_token' => "14053355-Qs1Ak2XOeFJFUuogLC7Yc6gDRhTLxDmp88AhX8PYg",
+	    'oauth_access_token'        => "14053355-Qs1Ak2XOeFJFUuogLC7Yc6gDRhTLxDmp88AhX8PYg",
 	    'oauth_access_token_secret' => "3pR09a4ibPBDy8fy4dtkcmmQJKMJDn9UqWS4B7wQvyOl7",
-	    'consumer_key' => "MJ1ZxJaGLyC2VzqVnX43LNReZ",
-	    'consumer_secret' => "Gy2KtMvjqjPt6LgQp6h0RdN5py2cakZU5HrLEukkStJU8iLFYm"
+	    'consumer_key'              => "MJ1ZxJaGLyC2VzqVnX43LNReZ",
+	    'consumer_secret'           => "Gy2KtMvjqjPt6LgQp6h0RdN5py2cakZU5HrLEukkStJU8iLFYm"
 	);
 
   // Any Twitter Accounts to Highlight
@@ -36,7 +37,7 @@ function search_twitter()
 	                    ->buildOauth($url, $requestMethod)
 	                   ->performRequest();
 
-	$results = json_decode($response, TRUE);
+  $results = json_decode($response, TRUE);
 
 	$count = 0;
 	
