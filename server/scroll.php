@@ -1,7 +1,9 @@
 <?php
- 
+# set yearly
+$starttime = mktime(0, 0, 0, 3, 7, 2019) / 60;
+
 include 'ChromePhp.php';
-//date_default_timezone_set('America/Los_Angeles');
+date_default_timezone_set('America/Los_Angeles');
 
 $url = 'http://www.socallinuxexpo.org/scale/17x/sign.xml';
 $ch = curl_init();
@@ -10,7 +12,7 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $xmlresponse = curl_exec($ch);
 $xml = simplexml_load_string($xmlresponse);
 
-$starttime = mktime(8, 0, 0, 3, 8, 2018) / 60;
+
 
 #if (!empty($_GET["year"]) && !empty($_GET["month"]) && !empty($_GET["day"]) && !empty($_GET["hour"]) && !empty($_GET["minute"])) {
 if (!empty($_GET["year"]) && !empty($_GET["month"]) && !empty($_GET["day"])) {
@@ -55,7 +57,7 @@ $shorten_topics = array(
                         "Mentoring" => "Mentoring",
                         "HotApplications" => "Hot Applications",
                         "BigData" => "Big Data",
-                        );
+												);
 
 foreach ($xml->node AS $node) {
 
@@ -94,7 +96,7 @@ foreach ($xml->node AS $node) {
 	$mfromme = ($handme[0] * 60) + $handme[1];
 	
 
-	echo $node;
+	echo($node);
 	switch ((string) $node->Day) {
 		case "Thursday";
 			$order[] = $mfromm;
