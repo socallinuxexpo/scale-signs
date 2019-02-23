@@ -21,7 +21,7 @@ This codebase is currently in **maintenance mode** and has been since SCaLE 15x.
 
 * Full Schedule - The index.php page will display a carousel with a grid view of all currently running and upcoming sessions. The PI displays should use this view.
 * Room View - The index.php page can be called with a room argument to display a room specific view that will alternate the upcoming or current session with a picture of the speaker or the room sponsor(s). Example: http://$sign_server/?room=ballroom-a. The keys in the $room_lookup_table in room.php can be referenced for a full list of room names.
-* Debugging / Development - It is sometimes necessary to test alternate times. In order to do this the following variables must be modified in the uri: $year, $month, $day, $hour, $minute. Example: http://$sign_server/?year=2019&month=3&day=7&hour=1&minute=10. This can be used with either the Full Schedule or Room view. Please note that the hour is in UTC
+* Debugging / Development - It is sometimes necessary to test alternate times. In order to do this the following variables must be modified in the uri: $year, $month, $day, $hour, $minute. Example: http://$sign_server/?year=2019&month=3&day=7&hour=9&minute=10. This can be used with either the Full Schedule or Room view. 
 
 ### Yearly Tasks
 
@@ -39,10 +39,3 @@ There is a lot of manual effort necessary from year to year. These tasks include
 * update $sponsors in room.php matching the value to each sponsor image file name
 * update $sponsors_to_rooms in room.php matching proper sponsor(s) to room and day by key from $sponsors
 * verify OAUTH keys and secrets being passed to $settings in twitter.php are functional
-
-### Local Testing:
-
-  * vagrant 2.1
-  * virtualbox 5.2
-
-`vagrant up`
