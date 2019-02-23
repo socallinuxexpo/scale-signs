@@ -1,9 +1,11 @@
 <?php
+
+date_default_timezone_set('America/Los_Angeles');
+
 # set yearly
 $starttime = mktime(0, 0, 0, 3, 7, 2019) / 60;
 
 include 'ChromePhp.php';
-date_default_timezone_set('America/Los_Angeles');
 
 $url = 'http://www.socallinuxexpo.org/scale/17x/sign.xml';
 $ch = curl_init();

@@ -1,8 +1,10 @@
 <?php
+
+date_default_timezone_set('America/Los_Angeles');
+
 # set yearly
 $starttime = mktime(0, 0, 0, 3, 7, 2019) / 60;
 
-date_default_timezone_set('America/Los_Angeles');
 $sponsors_for_room = array();
 if (!empty($_GET["room"])) {
    $room = str_replace(' ', '', $_GET["room"]);
