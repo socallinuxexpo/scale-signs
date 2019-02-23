@@ -360,7 +360,7 @@ asort($order, SORT_NUMERIC);
                         <?php
                         if (strlen($photo) > 0) {
                             #echo "$photo";
-                        } else {
+                        /*} else {
                             if ($data[$key][3] === "Bad Voltage: Live") {
                                 echo '<img src="images/badvoltage.jpg" width="480" height="480">';
                             } elseif ($data[$key][3] === "Weakest Geek") {
@@ -370,6 +370,7 @@ asort($order, SORT_NUMERIC);
                             } else {
                                 echo '<img src="images/headshot.png" width="480" height="480">';
                             }
+                        */
                         }
                         ?>
                     </a>
