@@ -581,11 +581,11 @@ $room_lookup_table = array(
       $("#schedule").load(loadScheduleUrl);
       $("#schedule").show();
 
-      /* Reload and Refresh Schedule every 5 mins */
+      /* Reload and Refresh Schedule every 3 mins */
       var scheduleRefreshId = setInterval(function() {
         //$("#schedule").fadeOut("slow").load(loadScheduleUrl).fadeIn("slow");
         $("#schedule").load(loadScheduleUrl);
-      }, 300000);
+      }, 180000);
 
     });
 
