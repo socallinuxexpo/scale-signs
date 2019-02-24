@@ -1,6 +1,4 @@
 TODO:
-* request new twitter tokens/secrets from Ilan 
-* update twitter token/secrets (move to env vars)
 * update 17x sponsors images
 * update sponsor mappings / room mappings
 * update short topics and css for them
