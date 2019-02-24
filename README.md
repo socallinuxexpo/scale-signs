@@ -48,7 +48,7 @@ There is a bit of manual effort necessary from year to year. These tasks include
 
 #### DST Issues
 
-If DST changes during SCaLE, the next morning $starttime in scroll.php and room.php will need to be adjusted by an hour otherwise the schedule will be off by 1 hour. This should be as simple as following the instructions in the comments at the top of each file.
+If DST changes during SCaLE, the next morning `$starttime` in `scroll.php` and `room.php` will need to be adjusted by an hour otherwise the schedule will be off. This should be as simple as following the instructions in the comments at the top of each file.
 
 #### Build and start Service
 
