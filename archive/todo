@@ -1,5 +1,4 @@
 TODO:
-* update 17x sponsors images
-* update sponsor mappings / room mappings
 * update short topics and css for them
-* maybe cleanup room view when speaker image isn't present
+* add speaker image to room view
+* populate random room sponsors for non dedicated tracks
