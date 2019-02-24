@@ -1,7 +1,16 @@
 <?php
- 
+
+date_default_timezone_set('America/Los_Angeles');
+
+# set yearly (change if DST starts during SCaLE)
+
+# before "spring forward"
+$starttime = mktime(0, 0, 0, 3, 7, 2019) / 60;
+
+# after "spring forward"
+#$starttime = mktime(23, 0, 0, 3, 6, 2019) / 60;
+
 include 'ChromePhp.php';
-//date_default_timezone_set('America/Los_Angeles');
 
 $url = 'http://www.socallinuxexpo.org/scale/17x/sign.xml';
 $ch = curl_init();
@@ -10,7 +19,7 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $xmlresponse = curl_exec($ch);
 $xml = simplexml_load_string($xmlresponse);
 
-$starttime = mktime(8, 0, 0, 3, 8, 2018) / 60;
+
 
 #if (!empty($_GET["year"]) && !empty($_GET["month"]) && !empty($_GET["day"]) && !empty($_GET["hour"]) && !empty($_GET["minute"])) {
 if (!empty($_GET["year"]) && !empty($_GET["month"]) && !empty($_GET["day"])) {
@@ -30,32 +39,33 @@ $order = array();
 $times = array();
 
 $shorten_topics = array(
-                        "Devops" => "DevOps",
-                        "Embedded" => "Embedded",
-                        "MySQL" => "MySQL",
-                        "SCALEU" => "SCALEU",
-                        "Ubucon" => "Ubucon",
-                        "Cloud" => "Cloud",
-                        "PostgreSQL" => "PostgreSQL",
-                        "BeginnerTutorials" => "Beginner Tutorials",
-                        "ContainerandVirtualization" => "Container & Virtualization",
-                        "LegalandLicensing" => "Legal & Licensing",
-                        "EveningEntertainment" => "Evening Entertainment",
-                        "Developer" => "Developer",
-                        "Security" => "Security",
-                        "NewtoSCALE" => "New To SCALE",
-                        "OpenSourceSoftwareInEducation" => "OSSIE",                        
-                        "SysAdmin" => "Sys Admin",
-                        "Kernel" => "Kernel",
-                        "Youth" => "Youth",
-                        "Keynote" => "Keynote",
-                        "General" => "General",
-                        "OpenSourceinEnterprises" => "Open Source in Enterprises",
-                        "OpenSourceStorage" => "Open Source Storage",
-                        "Mentoring" => "Mentoring",
-                        "HotApplications" => "Hot Applications",
-                        "BigData" => "Big Data",
-                        );
+	"BeginnerTutorials"						=>	"Beginner Tutorials",
+	"BoFs"												=>	"BoFs",
+	"Cloud"												=>	"Cloud",
+	"ContainerandVirtualization"	=>	"Container and Virtualization",
+	"Developer"										=>	"Developer",
+	"DevOps"											=>	"DevOps",
+	"Embedded"										=>	"Embedded",
+	"General"											=>	"General",
+	"HAMRadio"										=>	"HAM Radio",
+	"Keynote"											=>	"Keynote",
+	"Kubeflow"										=>	"Kubeflow",
+	"LibreGraphics"								=>	"LibreGraphics",
+	"Mentoring"										=>	"Mentoring",
+	"MySQL"												=>	"MySQL",
+	"NextGeneration"							=>	"Next Generation",
+	"Observability"								=>	"Observability",
+	"OpenData"										=>	"Open Data",
+	"OpenGovernment"							=>	"Open Government",
+	"OpenSourceinEnterprises"			=>	"Open Source in Enterprises",
+	"openSUSE"										=>	"openSUSE",
+	"PosgreSQL"										=>	"PostgreSQL",
+	"Security"										=>	"Security",
+	"Sponsored"										=>	"Sponsored",
+	"SysAdmin"										=>	"SysAdmin",
+	"Ubucon"											=>	"Ubucon",
+	"UpSCALE"											=>	"UpSCALE",
+);
 
 foreach ($xml->node AS $node) {
 
@@ -94,7 +104,7 @@ foreach ($xml->node AS $node) {
 	$mfromme = ($handme[0] * 60) + $handme[1];
 	
 
-	echo $node;
+	echo($node);
 	switch ((string) $node->Day) {
 		case "Thursday";
 			$order[] = $mfromm;
@@ -201,8 +211,8 @@ foreach ($xml->node AS $node) {
 					    
 				      <!-- Presenter -->
 				      <?php
-				        if ( strlen($data[$key][2]) >= 20 ) { 
-                            $speakerName = substr($data[$key][2], 0, 20) . "...";
+				        if ( strlen($data[$key][2]) >= 45 ) { 
+                            $speakerName = substr($data[$key][2], 0, 45) . "...";
   					    } else {
                             $speakerName = $data[$key][2];
                         }
@@ -212,8 +222,8 @@ foreach ($xml->node AS $node) {
 					    
 					    <!-- Topic -->
 					    <?php 
-					      if ( strlen($data[$key][3]) >= 50 ) {
-					        $talk_title = substr($data[$key][3], 0, 50) . "...";
+					      if ( strlen($data[$key][3]) >= 90 ) {
+					        $talk_title = substr($data[$key][3], 0, 90) . "...";
 					      } else {
 					        $talk_title = $data[$key][3];					      
 					      }
@@ -236,7 +246,7 @@ foreach ($xml->node AS $node) {
     if ( $count < ($schedule_page * $items_per_page) ) {
       $filler = ($schedule_page * $items_per_page) - $count;
       for ($i = 0; $i < $filler; $i++) {
-        print "<tr bgcolor='#fff'><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>";
+        print "<tr bgcolor='#fff'><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>";
 
       }
     }    
@@ -263,7 +273,7 @@ foreach ($xml->node AS $node) {
 
   $(document).ready(function() {
     $('#scheduleCarousel').carousel({
-      interval: 10000,
+      interval: 15000,
     });
   });
 

@@ -1,4 +1,16 @@
 <?php
+
+date_default_timezone_set('America/Los_Angeles');
+
+# set yearly (change if DST starts during SCaLE)
+
+# before "spring forward"
+$starttime = mktime(0, 0, 0, 3, 7, 2019) / 60;
+
+# after "spring forward"
+#$starttime = mktime(23, 0, 0, 3, 6, 2019) / 60;
+
+$sponsors_for_room = array();
 if (!empty($_GET["room"])) {
    $room = str_replace(' ', '', $_GET["room"]);
 } else {
@@ -25,6 +37,7 @@ if (!empty($_GET["hour"])) {
 if (!empty($_GET["minute"])) {
     $minute = $_GET['minute'];
 }
+
 if (!empty($year) && !empty($month) && !empty($day) && !empty($hour) && !empty($minute)) {
     $rightnow = round(mktime($hour, $minute, 0, $month, $day, $year) / 60);
 } else {
@@ -32,220 +45,241 @@ if (!empty($year) && !empty($month) && !empty($day) && !empty($hour) && !empty($
 }
 
 $room_lookup_table = array(
-    "ballroom-de"   => "BallroomDE",
     "ballroom-a"    => "BallroomA",
     "ballroom-b"    => "BallroomB",
     "ballroom-c"    => "BallroomC",
+    "ballroom-de"   => "BallroomDE",
     "ballroom-f"    => "BallroomF",
     "ballroom-g"    => "BallroomG",
     "ballroom-h"    => "BallroomH",
-    "ballroom-gh"   => "BallroomGH",
-    "ballroom-i"    => "BallroomI",
-    "ballroom-j"    => "BallroomJ",
-    "room-101"  => "Room101",
-    "room-103"  => "Room103",
-    "room-104"  => "Room104",
-    "room-106"  => "Room106",
-    "room-107"  => "Room107",
-    "room-211"  => "Room211",
-    "room-212"  => "Room212",
-    "room-209"  => "Room209",
-    "room-205"  => "Room205",
-    "room-215"  => "Room215",
+    "room-101"      => "Room101",
+    "room-103"      => "Room103",
+    "room-104"      => "Room104",
+    "room-105"      => "Room105",
+    "room-106"      => "Room106",
+    "room-107"      => "Room107",
+    "room-209"      => "Room209",
+    "room-211"      => "Room211",
+    "room-212"      => "Room212",
     );
 
 # Paying sponsors only
 $sponsors = array(
-    "anchore"      	=>      "anchore.png",
-    "balabit"           =>      "balabit.png",
-    "bitnami"           =>      "bitnami.png",
-    "blackduck"   	=>      "blackduck.png",
-    "chef"     		=>      "chef.png",
-    "collabnet"         =>      "collabnet.png",
-    "coreos"            =>      "coreos.png",
-    "couchbase"         =>      "couchbase.png",
-    "cyberark"          =>      "cyberark.png",
-    "datadog"           =>      "datadog.png",
-    "dellemc"           =>      "dellemc.png",
-    "disney"     	=>      "disney.png",
-    "everbridge"        =>      "everbridge.png",
-    "facebook"     	=>      "facebook.png",
-    "flexera"          	=>      "flexera.png",
-    "hpe"     	        =>      "hpe.png",
-    "jfrog"      	=>      "jfrog.png",
-    "linode"            =>      "linode.png",
-    "linuxacademy"      =>      "linuxacademy.png",
-    "linuxfoundation"   =>      "linuxfoundation.png",
-    "linuxpro" 	        =>      "linuxpro.png",
-    "mediatemple"       =>      "mediatemple.png",
-    "minio"             =>      "minio.png",
-    "mysql"        	=>      "mysql.png",
-    "nats"              =>      "nats.png",
-    "netapp" 	        =>      "netapp.png",
-    "nginx"             =>      "nginx.png",
-    "openshift"         =>      "openshift.png",
-    "opensource"        =>      "opensource.png",
-    "openx"  	        =>      "openx.png",
-    "opsgenie"          =>      "opsgenie.png",
-    "orabuntu"          =>      "orabuntu.png",
-    "oreilly"           =>      "oreilly.png",
-    "percona"           =>      "percona.png",
-    "platform9"         =>      "platform9.png",
-    "postgresql"        =>      "postgresql.png",
-    "procore"           =>      "procore.png",
-    "pssclabs"          =>      "pssclabs.png",
-    "q"         	=>      "q.png",
-    "r1soft"     	=>      "r1soft.png",
-    "rancher"	        =>      "rancher.png",
-    "redhat" 	        =>      "redhat.png",
-    "resinio"  	        =>      "resinio.png",
-    "saucelabs"         =>      "saucelabs.png",
-    "signalsciences"    =>      "signalsciences.png",
-    "sparkpost"         =>      "sparkpost.png",
-    "stackiq"      	=>      "stackiq.png",
-    "steelhouse"        =>      "steelhouse.png",
-    "suse"              =>      "suse.png",
-    "symantec"       	=>      "symantec.png",
-    "ticketmaster"      =>      "ticketmaster.png",
-    "threatstack"       =>      "threatstack.png",
-    "ubuntu"	        =>      "ubuntu.png",
-    "usenix"   	        =>      "usenix.png",
-    "verizon" 	        =>      "verizon.png",
-    "versionone"        =>      "versionone.png",
-    "victorops"         =>      "victorops.png",
-    "vikidial"          =>      "vikidial.png",
-    "wavefront"         =>      "wavefront.png",
-    "yahoo"      	=>      "yahoo.png",
-    "yocto"             =>      "yocto.png",
-    "zabbix"   	        =>      "zabbix.png",
-
+    "all_things_open"                   =>    "all_things_open.png",
+    "arden"                             =>    "arden.jpg",
+    "arrikto"                           =>    "arrikto.png",
+    "attivo"                            =>    "attivo.png",
+    "aws"                               =>    "aws.png",
+    "bareos"                            =>    "bareos.jpg",
+    "big_data_day_la"                   =>    "big_data_day_la.png",
+    "chef"                              =>    "chef.png",
+    "cirro"                             =>    "cirro.png",
+    "cloudbees"                         =>    "cloudbees.png",
+    "cloud_native_computing_foundation" =>    "cloud_native_computing_foundation.png",
+    "code_fresh"                        =>    "code_fresh.png",
+    "cribl"                             =>    "cribl.png",
+    "crunchy_data"                      =>    "crunchy_data.png",
+    "cyberark_conjur"                   =>    "cyberark_conjur.png",
+    "datadog"                           =>    "datadog.png",
+    "dc_darknet"                        =>    "dc_darknet.jpeg",
+    "debian"                            =>    "debian.png",
+    "diamanti"                          =>    "diamanti.png",
+    "disney"                            =>    "disney.png",
+    "dynatrace"                         =>    "dynatrace.png",
+    "eff"                               =>    "eff.png",
+    "elastic"                           =>    "elastic.png",
+    "eliassen_group"                    =>    "eliassen_group.png",
+    "facebook"                          =>    "facebook.png",
+    "fast_reports"                      =>    "fast_reports.png",
+    "faunadb"                           =>    "faunadb.png",
+    "fedora"                            =>    "fedora.png",
+    "floqast"                           =>    "floqast.png",
+    "fossa"                             =>    "fossa.png",
+    "free_software_foundation"          =>    "free_software_foundation.png",
+    "freebsd"                           =>    "freebsd.png",
+    "freebsd_foundation"                =>    "freebsd_foundation.png",
+    "gentoo"                            =>    "gentoo.png",
+    "gitlab"                            =>    "gitlab.png",
+    "gnome"                             =>    "gnome.png",
+    "gnu_health"                        =>    "gnu_health.png",
+    "google_cloud"                      =>    "google_cloud.png",
+    "gravitational"                     =>    "gravitational.png",
+    "hackaday"                          =>    "hackaday.png",
+    "hashicorp"                         =>    "hashicorp.png",
+    "hubblestack"                       =>    "hubblestack.png",
+    "humio"                             =>    "humio.png",
+    "ibm"                               =>    "ibm.jpg",
+    "invoca"                            =>    "invoca.png",
+    "itdrc"                             =>    "itdrc.jpeg",
+    "ix_systems"                        =>    "ix_systems.png",
+    "jenkins"                           =>    "jenkins.jpg",
+    "kde"                               =>    "kde.png",
+    "layerone"                          =>    "layerone.png",
+    "linbit"                            =>    "linbit.png",
+    "linode"                            =>    "linode.png",
+    "linux_chix"                        =>    "linux_chix.jpg",
+    "linux_foundation"                  =>    "linux_foundation.png",
+    "linux_journal"                     =>    "linux_journal.jpg",
+    "logdna"                            =>    "logdna.png",
+    "logz"                              =>    "logz.png",
+    "lopsa"                             =>    "lopsa.png",
+    "lpi"                               =>    "lpi.png",
+    "lutris"                            =>    "lutris.png",
+    "mariadb"                           =>    "mariadb.png",
+    "maven_code"                        =>    "maven_code.png",
+    "microsoft"                         =>    "microsoft.png",
+    "mysql"                             =>    "mysql.png",
+    "newrelic"                          =>    "newrelic.png",
+    "nylas"                             =>    "nylas.png",
+    "openembedded"                      =>    "openembedded.png",
+    "opensource"                        =>    "opensource.png",
+    "opensuse"                          =>    "opensuse.png",
+    "opsi"                              =>    "opsi.png",
+    "pogo_linux"                        =>    "pogo_linux.png",
+    "postgresql"                        =>    "postgresql.png",
+    "pssc_labs"                         =>    "pssc_labs.png",
+    "purism"                            =>    "purism.png",
+    "pyladies"                          =>    "pyladies.png",
+    "qnap"                              =>    "qnap.png",
+    "rancher"                           =>    "rancher.png",
+    "redgate"                           =>    "redgate.png",
+    "redhat"                            =>    "redhat.png",
+    "reverse_shell_corporation"         =>    "reverse_shell_corporation.png",
+    "scalyr"                            =>    "scalyr.png",
+    "shellcon"                          =>    "shellcon.png",
+    "signalfx"                          =>    "signalfx.png",
+    "skysilk"                           =>    "skysilk.png",
+    "smci"                              =>    "smci.jpg",
+    "softiron"                          =>    "softiron.png",
+    "sonatype"                          =>    "sonatype.png",
+    "stackrox"                          =>    "stackrox.png",
+    "sumologic"                         =>    "sumologic.png",
+    "svghack"                           =>    "svghack.png",
+    "swift"                             =>    "swift.png",
+    "synopsys"                          =>    "synopsys.jpg",
+    "system76"                          =>    "system76.png",
+    "think_penguin"                     =>    "think_penguin.jpg",
+    "transformix"                       =>    "transformix.png",
+    "twilio"                            =>    "twilio.png",
+    "ubuntu"                            =>    "ubuntu.jpg",
+    "uncoded"                           =>    "uncoded.png",
+    "usenix"                            =>    "usenix.png",
+    "verizon"                           =>    "verizon.png",
+    "vertical_sysadmin"                 =>    "vertical_sysadmin.png",
+    "victorops"                         =>    "victorops.png",
+    "videolan"                          =>    "videolan.png",
+    "vmware"                            =>    "vmware.png",
+    "wavefront"                         =>    "wavefront.jpg",
+    "whitesource"                       =>    "whitesource.png",
+    "yubico"                            =>    "yubico.png",
 );
 
 $sponsors_to_rooms = array(
-                "ballroom-de" => array(
-                                    "Thursday" => array("ubuntu","yahoo","coreos"),
-                                    "Friday" => array("ubuntu","yahoo","coreos"),
-                                    "Saturday" => array("yahoo","coreos","opensource","redhat"),
-                                    "Sunday" => array(),
-                            ),
-                "ballroom-a" => array(
-                                    "Thursday" => array("ubuntu"),
-                                    "Friday" => array("ubuntu"),
-                                    "Saturday" => array("q"),
-                                    "Sunday" => array(),
-                            ),
-                "ballroom-b" => array(
-                                    "Thursday" => array("ubuntu"),
-                                    "Friday" => array("ubuntu"),
-                                    "Saturday" => array("docker"),
-                                    "Sunday" => array(),
-                            ),
-                "ballroom-c" => array(
-                                    "Thursday" => array("yahoo","coreos","facebook","mediatemple","oreilly"),
-                                    "Friday" => array("coreos","yahoo","opsgenie","openshift","redhat","steelhouse","suse"),
-                                    "Saturday" => array(),
-                                    "Sunday" => array(),
-                            ),
-                "ballroom-f" => array(
-                                    "Thursday" => array("coreos","yahoo","opsgenie","redhat","openshift","steelhouse","suse"),
-                                    "Friday" => array(),
-                                    "Saturday" => array(),
-                                    "Sunday" => array(),
-                            ),
-                "ballroom-g" => array(
-                                    "Thursday" => array("docker","redhat","bitnami","coreos"),
-                                    "Friday" => array("ticketmaster","opsgenie","datadog","cyberark","collabnet","threatstack","versionone","verizon"),
-                                    "Saturday" => array(),
-                                    "Sunday" => array(),
-                            ),
-                "ballroom-h" => array(
-                                    "Thursday" => array("docker","redhat","bitnami","coreos"),
-                                    "Friday" => array("ticketmaster","opsgenie","datadog","cyberark","collabnet","threatstack","versionone","verizon"),
-                                    "Saturday" => array(),
-                                    "Sunday" => array(),
-                            ),
-                "ballroom-gh" => array(
-                                    "Thursday" => array(),
-                                    "Friday" => array("cars-com","cisco","puppetlabs","verizon","sumologic","ticketmaster"),
-                                    "Saturday" => array(),
-                                    "Sunday" => array(),
-                            ),
-                "ballroom-i" => array(
-                                    "Thursday" => array(),
-                                    "Friday" => array(),
-                                    "Saturday" => array(),
-                                    "Sunday" => array(),
-                            ),
-                "ballroom-j" => array(
-                                    "Thursday" => array(),
-                                    "Friday" => array(),
-                                    "Saturday" => array(),
-                                    "Sunday" => array(),
-                            ),
-                "room-101" => array(
-                                    "Thursday" => array(),
-                                    "Friday" => array(),
-                                    "Saturday" => array(),
-                                    "Sunday" => array(),
-                            ),
-                "room-102" => array(
-                                    "Thursday" => array(),
-                                    "Friday" => array(),
-                                    "Saturday" => array(),
-                                    "Sunday" => array(),
-                            ),
-                "room-103" => array(
-                                    "Thursday" => array("hpe","datadog"),
-                                    "Friday" => array("mysql"),
-                                    "Saturday" => array(),
-                                    "Sunday" => array(),
+    "ballroom-a"    => array(
+            "Thursday"  => array("ubuntu"),
+            "Friday"    => array("ubuntu"),
+            "Saturday"  => array("ibm","microsoft","chef","crunchy_data","pssc_labs"),
+            "Sunday"    => array("ibm","microsoft","redhat","bareos","linode","synopsys"),
+    ),
+    "ballroom-b"    => array(
+            "Thursday"  => array("arrikto","ubuntu","google_cloud","maven_code",),
+            "Friday"    => array("ibm","microsoft","victorops","all_things_open","scalyr","yubico"),
+            "Saturday"  => array("ibm","microsoft","logz","cloud_native_computing_foundation"),
+            "Sunday"    => array("ibm","microsoft","gitlab","faunadb","purism","verizon"),
+    ),
+    "ballroom-c"    => array(
+            "Thursday"  => array("ibm","microsoft","transformix","invoca","scalyr"),
+            "Friday"    => array("ibm","microsoft","skysilk","hashicorp","softiron"),
+            "Saturday"  => array("ibm","microsoft","vmware","faunadb","qnap","system76"),
+            "Sunday"    => array("ibm","microsoft","elastic","fossa","pogo_linux"),
+    ),
+    "ballroom-de"   => array(
+            "Thursday"  => array("ibm","microsoft","facebook","linbit","softiron","synopsys"),
+            "Friday"    => array("cirro","cloudbees","code_fresh","cyberark_conjur","datadog",
+                "diamanti","dynatrace","eliassen_group","gitlab","logdna","microsoft","newrelic","redgate","sonatype","sumologic"),
+            "Saturday"  => array("ibm","hashicorp","opensource","datadog","qnap","twilio","yubico"),
+            "Sunday"    => array("ibm","microsoft","stackrox","invoca","nylas","wavefront"),
+    ),
+    "ballroom-f"    => array(
+            "Thursday"  => array("ibm","microsoft","cloud_native_computing_foundation","gravitational"),
+            "Friday"    => array("opensuse"),
+            "Saturday"  => array("ibm","microsoft","disney","fossa","nylas","pssc_labs"),
+            "Sunday"    => array("ibm","microsoft","mysql","humio","pogo_linux","system76"),
+    ),
+    "ballroom-g"    => array(
+            "Thursday"  => array("ibm","microsoft","chef","datadog","hashicorp"),
+            "Friday"    => array("ibm","microsoft","redhat","invoca","rancher"),
+            "Saturday"  => array("ibm","microsoft","victorops","linbit","softiron"),
+            "Sunday"    => array("ibm","microsoft","logz","gravitational","wavefront"),
+    ),
+    "ballroom-h"    => array(
+            "Thursday"  => array("ibm","microsoft","gitlab","logdna","rancher"),
+            "Friday"    => array("ibm","microsoft","transformix","pogo_linux"),
+            "Saturday"  => array("ibm","microsoft","skysilk","opsi","pssc_labs","fast_reports"),
+            "Sunday"    => array("ibm","microsoft","vmware","mariadb","whitesource"),
+    ),
+    "room-101"      => array(
+            "Thursday"  => array("ibm","microsoft","elastic","mariadb","verizon"),
+            "Friday"    => array("ibm","microsoft","facebook","opsi","smci"),
+            "Saturday"  => array("ibm","microsoft","stackrox","logdna","wavefront"),
+            "Sunday"    => array("ibm","microsoft","disney","linbit","twilio","fast_reports"),
+    ),
+    "room-103"      => array(
+            "Thursday"  => array("ibm","microsoft","mysql","floqast","purism","signalfx"),
+            "Friday"    => array("lpi"),
+            "Saturday"  => array("ibm","microsoft","redhat","cloud_native_computing_foundation"),
+            "Sunday"    => array("ibm","microsoft","chef","linux_foundation","opsi","fast_reports"),
+    ),
+    "room-104"      => array(
+            "Thursday"  => array("ibm","microsoft","victorops","logdna","whitesource"),
+            "Friday"    => array("ibm","microsoft","logz","linode","mariadb"),
+            "Saturday"  => array("ibm","microsoft","gitlab","linux_foundation","purism"),
+            "Sunday"    => array("ibm","microsoft","transformix","hashicorp"),
+    ),
+    "room-105"      => array(
+            "Thursday"  => array("ibm","microsoft","skysilk","linux_foundation","whitesource"),
+            "Friday"    => array("ibm","microsoft","vmware","gravitational","system76"),
+            "Saturday"  => array("ibm","microsoft","elastic","faunadb","signalfx"),
+            "Sunday"    => array("ibm","microsoft","facebook","floqast","rancher"),
+    ),
+    "room-106"      => array(
+            "Thursday"  => array("postgresql"),
+            "Friday"    => array("postgresql"),
+            "Saturday"  => array("ibm","microsoft","stackrox","humio","scalyr","twilio"),
+            "Sunday"    => array("ibm","microsoft","disney","cloud_native_computing_foundation"),
+    ),
+    "room-107"      => array(
+            "Thursday"  => array("postgresql"),
+            "Friday"    => array("postgresql"),
+            "Saturday"  => array("ibm","microsoft","mysql","humio","linode","qnap"),
+            "Sunday"    => array("openembedded"),
+    ),
+    "room-209"      => array(
+            "Thursday"  => array("ibm","microsoft","redhat","chef","floqast"),
+            "Friday"    => array("freebsd_foundation","freebsd"),
+            "Saturday"  => array("ibm","microsoft","victorops","logz","smci","yubico"),
+            "Sunday"    => array("ibm","microsoft","gitlab","transformix","signalfx"),
+    ),
+    "room-211"      => array(
+            "Thursday"  => array("ibm","microsoft","skysilk","vmware","nylas"),
+            "Friday"    => array("ibm","microsoft","elastic","facebook","smci","verizon"),
+            "Saturday"  => array("ibm","microsoft","stackrox","disney","datadog"),
+            "Sunday"    => array("ibm","microsoft","mysql","chef","redhat","victorops","crunchy_data"),
+    ),
+    "room-212"      => array(
+            "Thursday"  => array("ibm","microsoft","logz","gitlab","transformix","cribl"),
+            "Friday"    => array("ibm","microsoft","skysilk","vmware","elastic","bareos"),
+            "Saturday"  => array("debian","fedora","ubuntu","opensuse","fossa","synopsys"),
+            "Sunday"    => array("ibm","microsoft","mysql","facebook","stackrox","disney","all_things_open"),
+    ),
+);
 
-                            ),
-                "room-104" => array(
-                                    "Thursday" => array(),
-                                    "Friday" => array("yahoo","coreos","facebook","mediatemple","oreilly"),
-                                    "Saturday" => array("minnowboard"),
-                                    "Sunday" => array("minnowboard"),
-                            ),
-                "room-106" => array(
-                                    "Thursday" => array("postgresql"),
-                                    "Friday" => array("postgresql"),
-                                    "Saturday" => array(),
-                                    "Sunday" => array(),
-                            ),
-                "room-107" => array(
-                                    "Thursday" => array("postgresql"),
-                                    "Friday" => array("postgresql"),
-                                    "Saturday" => array(),
-                                    "Sunday" => array(),
-                            ),
-                "room-211" => array(
-                                    "Thursday" => array("coreos","yahoo","ubuntu","couchbase","datadog","disney"),
-                                    "Friday" => array("coreos","yahoo","ubuntu","couchbase","datadog","disney"),
-                                    "Saturday" => array(),
-                                    "Sunday" => array(),
-                            ),
-                "room-212" => array(
-                                    "Thursday" => array("chef"),
-                                    "Friday" => array("coreos","docker"),
-                                    "Saturday" => array("yocto","resinio"),
-                                    "Sunday" => array(),
-                            ),
-                "room-209" => array(
-                                    "Thursday" => array("yocto","resinio"),
-                                    "Friday" => array("flexera"),
-                                    "Saturday" => array("linuxfoundation","coreos","yahoo"),
-                                    "Sunday" => array("linuxfoundation","coreos","yahoo"),
-                            ),
-               );
 $url = 'http://www.socallinuxexpo.org/scale/17x/sign.xml';
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $xmlresponse = curl_exec($ch);
 $xml = simplexml_load_string($xmlresponse);
-
-$starttime = mktime(0, 0, 0, 1, 21, 2016) / 60;
 
 #$rightnow = round(time() / 60);
 #$rightnow = mktime(10, 30, 0, 2, 22, 2015) / 60;
@@ -256,22 +290,42 @@ $order = array();
 $times = array();
 
 $shorten_topics = array(
-                        "BeginnerTutorials" => "Beginner Tutorials",
-                        "CloudandVirtualization" => "Cloud and Virtualization",
-                        "EveningEntertainment" => "Evening Entertainment",
-                        "FileSystem" => "File System",
-                        "OpenSourceSoftwareInEducation" => "OSSIE",
-                        "SysAdmin" => "Sys Admin",
-                        );
+	"BeginnerTutorials"             =>	"Beginner Tutorials",
+	"BoFs"                          =>	"BoFs",
+	"Cloud"                         =>	"Cloud",
+	"ContainerandVirtualization"    =>  "Container and Virtualization",
+	"Developer"                     =>	"Developer",
+	"DevOps"                        =>	"DevOps",
+	"Embedded"                      =>	"Embedded",
+	"General"                       =>	"General",
+	"HAMRadio"                      =>	"HAM Radio",
+	"Keynote"                       =>	"Keynote",
+	"Kubeflow"                      =>	"Kubeflow",
+	"LibreGraphics"                 =>	"LibreGraphics",
+	"Mentoring"                     =>	"Mentoring",
+	"MySQL"                         =>	"MySQL",
+	"NextGeneration"                =>	"Next Generation",
+	"Observability"                 =>	"Observability",
+	"OpenData"                      =>	"Open Data",
+	"OpenGovernment"                =>	"Open Government",
+	"OpenSourceinEnterprises"       =>	"Open Source in Enterprises",
+	"openSUSE"                      =>	"openSUSE",
+	"PosgreSQL"                     =>	"PostgreSQL",
+	"Security"                      =>	"Security",
+	"Sponsored"                     =>	"Sponsored",
+	"SysAdmin"                      =>	"SysAdmin",
+	"Ubucon"                        =>	"Ubucon",
+	"UpSCALE"                       =>	"UpSCALE",
+);
 
 foreach ($xml->node AS $node) {
 
-  // Remove HTML tags
-  $node->{'Time'} = preg_replace('/<[^>]*>/', '', $node->{'Time'});
-  $node->{'Day'} = preg_replace('/<[^>]*>/', '', $node->{'Day'});
+    // Remove HTML tags
+    $node->{'Time'} = preg_replace('/<[^>]*>/', '', $node->{'Time'});
+    $node->{'Day'} = preg_replace('/<[^>]*>/', '', $node->{'Day'});
 
-  // Remove Spaces so we can use it for a CSS class
-  $node->{'Topic'} = preg_replace('/\s+/', '', $node->{'Topic'});
+    // Remove Spaces so we can use it for a CSS class
+    $node->{'Topic'} = preg_replace('/\s+/', '', $node->{'Topic'});
 
 	$pos = strpos((string) $node->{'Time'}, ",");
 	$lpos = strrpos((string) $node->{'Time'}, ",");
@@ -357,8 +411,8 @@ asort($order, SORT_NUMERIC);
                     <a class="pull-left" href="#">
                         <?php
                         if (strlen($photo) > 0) {
-                            echo "$photo";
-                        } else {
+                            #echo "$photo";
+                        /*} else {
                             if ($data[$key][3] === "Bad Voltage: Live") {
                                 echo '<img src="images/badvoltage.jpg" width="480" height="480">';
                             } elseif ($data[$key][3] === "Weakest Geek") {
@@ -368,13 +422,14 @@ asort($order, SORT_NUMERIC);
                             } else {
                                 echo '<img src="images/headshot.png" width="480" height="480">';
                             }
+                        */
                         }
                         ?>
                     </a>
-                    <div class="media-body">
-                        <h2 class="media-heading"><?php echo $data[$key][2]; ?></h2>
-                        <h3 class="media-heading"><?php echo $data[$key][3]; ?></h3>
-                        <h4><?php echo $data[$key][7]; ?></h4>
+                    <div class="media-body" style="vertical-align: middle; height: 850px; margin: 30px">
+                        <h1 class="media-heading" style="margin: 20px;"><?php echo $data[$key][2]; ?></h1>
+                        <h2 class="media-heading" style="margin: 20px;"><?php echo $data[$key][3]; ?></h2>
+                        <h3 style="margin: 20px;"><?php echo $data[$key][7]; ?></h3>
                         <hr/>
 					    <?php
                             $talk_time = $data[$key][1];
@@ -407,9 +462,9 @@ asort($order, SORT_NUMERIC);
                 <div class="media">
                     <div class="row">
                         <div class="col-md-12" style="text-align: center; vertical-align: middle;">
-                            <div class="well" style="height: 460px; vertical-align: middle;">
-                            <div class="row">&nbsp;</div>
-                            <img src="images/WiFi-Sign.png">
+                            <div class="well" style="height: 850px; vertical-align: middle;">
+                            <div class="row" style="margin: 30px">&nbsp;</div>
+                                <img src="images/WiFi-Sign.png">
                             </div>
                         </div>
                     </div>
@@ -419,10 +474,8 @@ asort($order, SORT_NUMERIC);
             <?php if (count($sponsors_for_room) > 0) { ?>
             <div class="item">
                 <div class="media">
-                    <div class="row" style="text-align: center;">
-                        <h2 style='text-align: center;'>Thank You To Our Track <?php if (count($sponsors_for_room) > 1) { echo "Sponsors"; } else { echo "Sponsor"; } ?></h2>
-                    </div>
-                    <div class="row" style="text-align: center;">
+                    <div class="row" style="text-align: center; vertical-align: middle; height: 850px;">
+                        <h2 style='text-align: center;'>Thank You To Our <?php if (count($sponsors_for_room) > 1) { echo "Sponsors"; } else { echo "Sponsor"; } ?></h2>
                         <?php
                         $column = count($sponsors_for_room);
                         switch ($column) {
@@ -453,7 +506,7 @@ asort($order, SORT_NUMERIC);
                         }
 
                         foreach ($sponsors_for_room as $sponsor) {
-                            echo "<img src='images/sponsors/16x/" . $sponsors[$sponsor] . "' style='width: " . $img_size . "px; height: " . $img_size . "px; border: 1px solid #000; margin: 1px;'>";
+                            echo "<img src='images/sponsors/" . $sponsors[$sponsor] . "' style='margin: 35px';>"; //' style='width: " . $img_size . "px; height: " . $img_size . "px; border: 1px solid #000; margin: 1px;'>";
                         }
                         ?>
                     </div>
@@ -470,7 +523,7 @@ asort($order, SORT_NUMERIC);
 
   $(document).ready(function() {
     $('#scheduleCarousel').carousel({
-      interval: 5000,
+      interval: 15000,
     });
   });
 

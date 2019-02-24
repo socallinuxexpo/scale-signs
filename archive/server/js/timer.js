@@ -2,7 +2,7 @@ function updateTimer ( )
 {
 
   var now = new Date ( );
-  var startTime = new Date ( "February 22, 2013 9:00:00" );
+  var startTime = new Date ( "March 07, 2019 8:00:00" );
 
   days = (startTime - now) / 1000 / 60 / 60 / 24;
   daysRound = Math.floor(days);
