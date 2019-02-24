@@ -8,7 +8,7 @@ This codebase is currently in **maintenance mode** and has been since SCaLE 15x.
 
 ### Server
 
-* php5 on apache
+* php5.4 with Apache httpd
 * pulls an XML version of the conference speaking schedule down for the public socallinuxexpo.org web server
 * pulls a twitter feed of SCaLE related hashtags
 * sends fully formatted HTML to clients with the scale logo, wifi password, a scrolling schedule, sponsor logos, and relevant tweets
@@ -25,7 +25,7 @@ This codebase is currently in **maintenance mode** and has been since SCaLE 15x.
 
 ### Yearly Tasks
 
-There is a lot of manual effort necessary from year to year. These tasks include, but might not be limitted to:
+There is a bit of manual effort necessary from year to year. These tasks include, but might not be limitted to:
 * update the logo for the curent year in /server/images/header.png
 * Do a search and replace for the previous scale version (example: replace all occurances of 16x with 17x)
 * verify proper XML is being supplied by drupal from the url reflected in the $url variable in room.php and scroll.php
@@ -39,3 +39,48 @@ There is a lot of manual effort necessary from year to year. These tasks include
 * update $sponsors in room.php matching the value to each sponsor image file name
 * update $sponsors_to_rooms in room.php matching proper sponsor(s) to room and day by key from $sponsors
 * verify OAUTH keys and secrets being passed to $settings in twitter.php are functional
+
+### Conference Operations
+
+* git
+* docker
+* docker-compose
+
+#### Build and start Service
+
+1. `git pull $this_repo`
+3. `docker-compose up -d`
+
+#### Update from repo
+
+1. `git pull $this_repo`
+2. `docker-compose down`
+3. `docker-compose build`
+4. `docker-compose up -d`
+
+#### Troubleshooting Basics
+
+* `docker-compose ps`
+* `docker-compose logs [-f]`
+* `docker-compose top`
+
+### Local Testing:
+
+Local testing can be accomplished using either vagrant/virtualbox or Docker. The advantage of vagrant in this setup is that code changes are reflected in real time due to volume mapping of the /server directly into the VM web server root. While it's possible to configure Docker in a similar manner, that option was omitted in favor of keeping Docker Images consistent with the state of the codebase at build time. Using docker locally will require rebuilding the container and re-running it after code changes.
+
+#### Vagrant
+
+* vagrant 2.1
+* virtualbox 5.2
+
+1. `vagrant up`
+2. browse to `http://192.168.168.168`
+
+#### Docker
+
+* docker
+* docker-compose
+
+1. `docker-compose build`
+2. `docker-compose up -d`
+3. browse to `http://localhost`

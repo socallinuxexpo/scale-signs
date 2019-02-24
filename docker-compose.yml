@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  signs:
+    image: signs
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
