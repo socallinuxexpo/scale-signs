@@ -46,10 +46,14 @@ There is a bit of manual effort necessary from year to year. These tasks include
 * docker
 * docker-compose
 
+#### DST Issues
+
+If DST changes during SCaLE, the next morning $starttime in scroll.php and room.php will need to be adjusted by an hour otherwise the schedule will be off by 1 hour. This should be as simple as following the instructions in the comments at the top of each file.
+
 #### Build and start Service
 
 1. `git pull $this_repo`
-3. `docker-compose up -d`
+2. `docker-compose up -d`
 
 #### Update from repo
 
