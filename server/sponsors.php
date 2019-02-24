@@ -1,5 +1,5 @@
 <?php
-	if (!empty($_GET["group"])) {
+  if (!empty($_GET["group"])) {
     switch ($_GET["group"]) {
       case 'one':
         $logos = array(

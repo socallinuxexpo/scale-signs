@@ -38,6 +38,7 @@ There is a bit of manual effort necessary from year to year. These tasks include
 * update the sponsor images in `/server/images/sponsors/` to reflect the current year's sponsors, making them 220x220
 * update `$sponsors` in `room.php` matching the value to each sponsor image file name
 * update `$sponsors_to_rooms` in `room.php` matching proper sponsor(s) to room and day by key from `$sponsors`
+* update the `$sponsors` arrays in `sponsors.php` attempting to distribute the list evenly across both case statements
 * verify OAUTH keys and secrets being passed to `$settings` in `twitter.php` via `secrets.env` are functional
 
 ### Conference Operations
