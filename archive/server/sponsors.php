@@ -128,7 +128,7 @@
 
   $(document).ready(function() {
       $('.sponsorCarousel').carousel({
-        interval: 10000
+        interval: 20000
       });
   });
 
