@@ -71,22 +71,10 @@ If DST changes during SCaLE, the next morning $starttime in scroll.php and room.
 
 ### Local Testing:
 
-Local testing can be accomplished using either vagrant/virtualbox or Docker. The advantage of vagrant in this setup is that code changes are reflected in real time due to volume mapping of the /server directly into the VM web server root. While it's possible to configure Docker in a similar manner, that option was omitted in favor of keeping Docker Images consistent with the state of the codebase at build time. Using docker locally will require rebuilding the container and re-running it after code changes.
-
-#### Vagrant
-
-* vagrant 2.1
-* virtualbox 5.2
-
-1. `vagrant up`
-2. browse to `http://192.168.168.168`
-
-#### Docker
-
 * docker
 * docker-compose
 
-1. `touch secrets.env` to omit secrets or copy `sample-secrets.env` to `secrets.env` to test with them
+1. `touch secrets.env` to omit secrets or copy `sample-secrets.env` to `secrets.env` and populate to test with them
 2. `docker-compose build`
 3. `docker-compose up -d`
 4. browse to `http://localhost`
