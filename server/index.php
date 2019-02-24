@@ -321,28 +321,28 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
       $("#twitter-stream-content").load(loadTwitterUrl);
       $('#twitter-stream-content').show();
 
-      /* Reload and Refresh Twitter once a minute */
+      /* Reload and Refresh Twitter once every 5 mins */
       var twitterRefreshId = setInterval(function() {
         //("#twitter-stream-content").fadeOut("slow").load(loadTwitterUrl).fadeIn("slow");
         $("#twitter-stream-content").load(loadTwitterUrl);
-      }, 60000);
+      }, 300000);
 
-      /* Reload & Shuffle sponsors every 2 minutes */
+      /* Reload & Shuffle sponsors every 10 minutes */
       var sponsors1RefreshId = setInterval(function() {
         //$("#sponsors").fadeOut("slow").load(loadSponsorsUrl).fadeIn("slow");
         $("#sponsors1").load(loadSponsorsUrlOne);
-      }, 120000);
+      }, 600000);
 
        var sponsors2RefreshId = setInterval(function() {
         //$("#sponsors").fadeOut("slow").load(loadSponsorsUrl).fadeIn("slow");
         $("#sponsors2").load(loadSponsorsUrlTwo);
-      }, 120000);
+      }, 600000);
 
-      /* Reload and Refresh Schedule once a minute */
+      /* Reload and Refresh Schedule once every 3 mins */
       var scheduleRefreshId = setInterval(function() {
         //$("#schedule").fadeOut("slow").load(loadScheduleUrl).fadeIn("slow");
         $("#schedule").load(loadScheduleUrl);
-      }, 60000);
+      }, 180000);
 
       /* Check the page type */
       var checkPageTypeId = setInterval(function() {
@@ -351,7 +351,7 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
               console.log('Type changed, reloading')
               location.reload()
           }
-      }, 300000);
+      }, 900000);
 
     });
 
@@ -468,11 +468,11 @@ function avnoc() {
       $("#schedule").load(loadScheduleUrl);
       $("#schedule").show();
 
-      /* Reload and Refresh Schedule once a minute */
+      /* Reload and Refresh Schedule once per 3 min */
       var scheduleRefreshId = setInterval(function() {
         //$("#schedule").fadeOut("slow").load(loadScheduleUrl).fadeIn("slow");
         $("#schedule").load(loadScheduleUrl);
-      }, 60000);
+      }, 180000);
 
     });
 
@@ -581,11 +581,11 @@ $room_lookup_table = array(
       $("#schedule").load(loadScheduleUrl);
       $("#schedule").show();
 
-      /* Reload and Refresh Schedule once a minute */
+      /* Reload and Refresh Schedule every 3 mins */
       var scheduleRefreshId = setInterval(function() {
         //$("#schedule").fadeOut("slow").load(loadScheduleUrl).fadeIn("slow");
         $("#schedule").load(loadScheduleUrl);
-      }, 60000);
+      }, 180000);
 
     });
 
