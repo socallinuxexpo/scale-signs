@@ -471,7 +471,7 @@ asort($order, SORT_NUMERIC);
 
   $(document).ready(function() {
     $('#scheduleCarousel').carousel({
-      interval: 5000,
+      interval: 20000,
     });
   });
 

@@ -240,7 +240,7 @@ foreach ($xml->node AS $node) {
     if ( $count < ($schedule_page * $items_per_page) ) {
       $filler = ($schedule_page * $items_per_page) - $count;
       for ($i = 0; $i < $filler; $i++) {
-        print "<tr bgcolor='#fff'><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>";
+        print "<tr bgcolor='#fff'><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>";
 
       }
     }    
@@ -267,7 +267,7 @@ foreach ($xml->node AS $node) {
 
   $(document).ready(function() {
     $('#scheduleCarousel').carousel({
-      interval: 10000,
+      interval: 15000,
     });
   });
 

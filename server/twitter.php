@@ -105,7 +105,7 @@ function search_twitter()
 
   $(document).ready(function() {
       $('#twitterCarousel').carousel({
-        interval: 10000
+        interval: 15000
       });
   });
   
