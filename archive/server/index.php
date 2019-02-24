@@ -486,27 +486,26 @@ function avnoc() {
 <!--- Individual Room Display -->
 <?php
 function room($room, $year = '', $month = '', $day = '', $hour = '', $minute = '') {
+
 $room_lookup_table = array(
-    "ballroom-de"   => "BallroomDE",
     "ballroom-a"    => "BallroomA",
     "ballroom-b"    => "BallroomB",
     "ballroom-c"    => "BallroomC",
+    "ballroom-de"   => "BallroomDE",
     "ballroom-f"    => "BallroomF",
     "ballroom-g"    => "BallroomG",
     "ballroom-h"    => "BallroomH",
-    "ballroom-gh"   => "BallroomGH",
-    "ballroom-i"    => "BallroomI",
-    "ballroom-j"    => "BallroomJ",
-    "room-101"  => "Room101",
-    "room-103"  => "Room103",
-    "room-104"  => "Room104",
-    "room-107"  => "Room107",
-    "room-211"  => "Room211",
-    "room-212"  => "Room212",
-    "room-209"  => "Room209",
-    "room-205"  => "Room205",
-    "room-215"  => "Room215",
-    );
+    "room-101"      => "Room101",
+    "room-103"      => "Room103",
+    "room-104"      => "Room104",
+    "room-105"      => "Room105",
+    "room-106"      => "Room106",
+    "room-107"      => "Room107",
+    "room-209"      => "Room209",
+    "room-211"      => "Room211",
+    "room-212"      => "Room212",
+);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
