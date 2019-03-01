@@ -293,6 +293,7 @@ $shorten_topics = array(
 	"BeginnerTutorials"             =>	"Beginner Tutorials",
 	"BoFs"                          =>	"BoFs",
 	"Cloud"                         =>	"Cloud",
+	"Containers"                    =>  "Containers",
 	"ContainerandVirtualization"    =>  "Containers",
 	"Developer"                     =>	"Developer",
 	"DevOps"                        =>	"DevOps",
