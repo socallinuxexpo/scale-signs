@@ -11,6 +11,8 @@ $starttime = mktime(0, 0, 0, 3, 7, 2019) / 60;
 #$starttime = mktime(23, 0, 0, 3, 6, 2019) / 60;
 
 $sponsors_for_room = array();
+$sponsor_class = "Room";
+
 if (!empty($_GET["room"])) {
    $room = str_replace(' ', '', $_GET["room"]);
 } else {
@@ -63,7 +65,6 @@ $room_lookup_table = array(
     "room-212"      => "Room212",
     );
 
-# Paying sponsors only
 $sponsors = array(
     "all_things_open"                   =>    "all_things_open.png",
     "arden"                             =>    "arden.jpg",
@@ -174,103 +175,122 @@ $sponsors = array(
     "yubico"                            =>    "yubico.png",
 );
 
+$diamond_platinum_sponsors = array("ibm","microsoft");
+
+$gold_sponsors = array(
+    "chef",
+    "redhat",
+    "victorops",
+    "logz",
+    "gitlab",
+    "transformix",
+    "skysilk",
+    "vmware",
+    "elastic",
+    "facebook",
+    "stackrox",
+    "cloud_native_computing_foundation",
+    "disney",
+    "mysql",
+);
+
 $sponsors_to_rooms = array(
     "ballroom-a"    => array(
             "Thursday"  => array("ubuntu"),
             "Friday"    => array("ubuntu"),
-            "Saturday"  => array("ibm","microsoft","chef","crunchy_data","pssc_labs"),
-            "Sunday"    => array("ibm","microsoft","redhat","bareos","linode","synopsys"),
+            "Saturday"  => array(),
+            "Sunday"    => array(),
     ),
     "ballroom-b"    => array(
             "Thursday"  => array("arrikto","ubuntu","google_cloud","maven_code",),
-            "Friday"    => array("ibm","microsoft","victorops","all_things_open","scalyr","yubico"),
-            "Saturday"  => array("ibm","microsoft","logz","cloud_native_computing_foundation"),
-            "Sunday"    => array("ibm","microsoft","gitlab","faunadb","purism","verizon"),
+            "Friday"    => array(),
+            "Saturday"  => array(),
+            "Sunday"    => array(),
     ),
     "ballroom-c"    => array(
-            "Thursday"  => array("ibm","microsoft","transformix","invoca","scalyr"),
-            "Friday"    => array("ibm","microsoft","skysilk","hashicorp","softiron"),
-            "Saturday"  => array("ibm","microsoft","vmware","faunadb","qnap","system76"),
-            "Sunday"    => array("ibm","microsoft","elastic","fossa","pogo_linux"),
+            "Thursday"  => array(),
+            "Friday"    => array(),
+            "Saturday"  => array(),
+            "Sunday"    => array(),
     ),
     "ballroom-de"   => array(
-            "Thursday"  => array("ibm","microsoft","facebook","linbit","softiron","synopsys"),
+            "Thursday"  => array(),
             "Friday"    => array("cirro","cloudbees","code_fresh","cyberark_conjur","datadog",
                 "diamanti","dynatrace","eliassen_group","gitlab","logdna","microsoft","newrelic","redgate","sonatype","sumologic"),
-            "Saturday"  => array("ibm","hashicorp","opensource","datadog","qnap","twilio","yubico"),
-            "Sunday"    => array("ibm","microsoft","stackrox","invoca","nylas","wavefront"),
+            "Saturday"  => array(),
+            "Sunday"    => array(),
     ),
     "ballroom-f"    => array(
-            "Thursday"  => array("ibm","microsoft","cloud_native_computing_foundation","gravitational"),
+            "Thursday"  => array(),
             "Friday"    => array("opensuse"),
-            "Saturday"  => array("ibm","microsoft","disney","fossa","nylas","pssc_labs"),
-            "Sunday"    => array("ibm","microsoft","mysql","humio","pogo_linux","system76"),
+            "Saturday"  => array(),
+            "Sunday"    => array(),
     ),
     "ballroom-g"    => array(
-            "Thursday"  => array("ibm","microsoft","chef","datadog","hashicorp"),
-            "Friday"    => array("ibm","microsoft","redhat","invoca","rancher"),
-            "Saturday"  => array("ibm","microsoft","victorops","linbit","softiron"),
-            "Sunday"    => array("ibm","microsoft","logz","gravitational","wavefront"),
+            "Thursday"  => array(),
+            "Friday"    => array(),
+            "Saturday"  => array(),
+            "Sunday"    => array(),
     ),
     "ballroom-h"    => array(
-            "Thursday"  => array("ibm","microsoft","gitlab","logdna","rancher"),
-            "Friday"    => array("ibm","microsoft","transformix","pogo_linux"),
-            "Saturday"  => array("ibm","microsoft","skysilk","opsi","pssc_labs","fast_reports"),
-            "Sunday"    => array("ibm","microsoft","vmware","mariadb","whitesource"),
+            "Thursday"  => array(),
+            "Friday"    => array(),
+            "Saturday"  => array(),
+            "Sunday"    => array(),
     ),
     "room-101"      => array(
-            "Thursday"  => array("ibm","microsoft","elastic","mariadb","verizon"),
-            "Friday"    => array("ibm","microsoft","facebook","opsi","smci"),
-            "Saturday"  => array("ibm","microsoft","stackrox","logdna","wavefront"),
-            "Sunday"    => array("ibm","microsoft","disney","linbit","twilio","fast_reports"),
+            "Thursday"  => array(),
+            "Friday"    => array(),
+            "Saturday"  => array(),
+            "Sunday"    => array(),
     ),
     "room-103"      => array(
-            "Thursday"  => array("ibm","microsoft","mysql","floqast","purism","signalfx"),
+            "Thursday"  => array(),
             "Friday"    => array("lpi"),
-            "Saturday"  => array("ibm","microsoft","redhat","cloud_native_computing_foundation"),
-            "Sunday"    => array("ibm","microsoft","chef","linux_foundation","opsi","fast_reports"),
+            "Saturday"  => array(),
+            "Sunday"    => array(),
     ),
     "room-104"      => array(
-            "Thursday"  => array("ibm","microsoft","victorops","logdna","whitesource"),
-            "Friday"    => array("ibm","microsoft","logz","linode","mariadb"),
-            "Saturday"  => array("ibm","microsoft","gitlab","linux_foundation","purism"),
-            "Sunday"    => array("ibm","microsoft","transformix","hashicorp"),
+            "Thursday"  => array(),
+            "Friday"    => array(),
+            "Saturday"  => array(),
+            "Sunday"    => array(),
     ),
     "room-105"      => array(
-            "Thursday"  => array("ibm","microsoft","skysilk","linux_foundation","whitesource"),
-            "Friday"    => array("ibm","microsoft","vmware","gravitational","system76"),
-            "Saturday"  => array("ibm","microsoft","elastic","faunadb","signalfx"),
-            "Sunday"    => array("ibm","microsoft","facebook","floqast","rancher"),
+            "Thursday"  => array(),
+            "Friday"    => array(),
+            "Saturday"  => array(),
+            "Sunday"    => array(),
     ),
     "room-106"      => array(
             "Thursday"  => array("postgresql"),
             "Friday"    => array("postgresql"),
-            "Saturday"  => array("ibm","microsoft","stackrox","humio","scalyr","twilio"),
-            "Sunday"    => array("ibm","microsoft","disney","cloud_native_computing_foundation"),
+            "Saturday"  => array(),
+            "Sunday"    => array(),
     ),
     "room-107"      => array(
             "Thursday"  => array("postgresql"),
             "Friday"    => array("postgresql"),
-            "Saturday"  => array("ibm","microsoft","mysql","humio","linode","qnap"),
+            "Saturday"  => array(),
             "Sunday"    => array("openembedded"),
     ),
     "room-209"      => array(
-            "Thursday"  => array("ibm","microsoft","redhat","chef","floqast"),
+            "Thursday"  => array(),
             "Friday"    => array("freebsd_foundation","freebsd"),
-            "Saturday"  => array("ibm","microsoft","victorops","logz","smci","yubico"),
-            "Sunday"    => array("ibm","microsoft","gitlab","transformix","signalfx"),
+            "Saturday"  => array(),
+            "Sunday"    => array(),
     ),
     "room-211"      => array(
-            "Thursday"  => array("ibm","microsoft","skysilk","vmware","nylas"),
-            "Friday"    => array("ibm","microsoft","elastic","facebook","smci","verizon"),
-            "Saturday"  => array("ibm","microsoft","stackrox","disney","datadog"),
-            "Sunday"    => array("ibm","microsoft","mysql","chef","redhat","victorops","crunchy_data"),
+            "Thursday"  => array(),
+            "Friday"    => array(),
+            "Saturday"  => array(),
+            "Sunday"    => array(),
     ),
     "room-212"      => array(
-            "Thursday"  => array("ibm","microsoft","logz","gitlab","transformix","cribl"),
-            "Friday"    => array("ibm","microsoft","skysilk","vmware","elastic","bareos"),
-            "Saturday"  => array("debian","fedora","ubuntu","opensuse","fossa","synopsys"),
-            "Sunday"    => array("ibm","microsoft","mysql","facebook","stackrox","disney","all_things_open"),
+            "Thursday"  => array(),
+            "Friday"    => array(),
+            "Saturday"  => array(),
+            "Sunday"    => array(),
     ),
 );
 
@@ -428,8 +448,8 @@ asort($order, SORT_NUMERIC);
                         ?>
                     </a>
                     <div class="media-body" style="vertical-align: middle; height: 850px; margin: 30px">
-                        <h1 class="media-heading" style="margin: 20px;"><?php echo $data[$key][2]; ?></h1>
-                        <h2 class="media-heading" style="margin: 20px;"><?php echo $data[$key][3]; ?></h2>
+                        <h1 class="media-heading" style="margin: 20px;"><?php echo $data[$key][3]; ?></h2>
+                        <h2 class="media-heading" style="margin: 20px;"><?php echo $data[$key][2]; ?></h1>
                         <h3 style="margin: 20px;"><?php echo $data[$key][7]; ?></h3>
                         <hr/>
 					    <?php
@@ -447,9 +467,12 @@ asort($order, SORT_NUMERIC);
                             $day = $data[$key][0];
                             if (count($sponsors_to_rooms[$room][$day]) > 0) {
                                 $sponsors_for_room = $sponsors_to_rooms[$room][$day];
+                                $sponsor_class = "Room";
                             } else {
-                                $sponsors_for_room = array();
+                                $sponsors_for_room = $gold_sponsors;
+                                $sponsor_class = "Gold";
                             }
+                            shuffle($sponsors_for_room);
                         ?>
                     </div>
                 </div>
@@ -463,9 +486,17 @@ asort($order, SORT_NUMERIC);
                 <div class="media">
                     <div class="row">
                         <div class="col-md-12" style="text-align: center; vertical-align: middle;">
-                            <div class="well" style="height: 850px; vertical-align: middle;">
+                            <div class="well" style="height: 550px; vertical-align: middle;">
                             <div class="row" style="margin: 30px">&nbsp;</div>
                                 <img src="images/WiFi-Sign.png">
+                            </div>
+                            <div class="row" style="margin: 30px">
+                                <h1 style='text-align: center;'>Thank You to our Diamond and Platinum Sponsors</h1>
+                                <?php
+                                foreach ($diamond_platinum_sponsors as $sponsor) {
+                                    echo "<img src='images/sponsors/" . $sponsors[$sponsor] . "' style='margin: 35px';>";
+                                }
+                                ?>
                             </div>
                         </div>
                     </div>
@@ -476,38 +507,10 @@ asort($order, SORT_NUMERIC);
             <div class="item">
                 <div class="media">
                     <div class="row" style="text-align: center; vertical-align: middle; height: 850px;">
-                        <h2 style='text-align: center;'>Thank You To Our <?php if (count($sponsors_for_room) > 1) { echo "Sponsors"; } else { echo "Sponsor"; } ?></h2>
+                        <h1 style='text-align: center;'>Thank You To our <?php echo "$sponsor_class "; if (count($sponsors_for_room) > 1) { echo "Sponsors"; } else { echo "Sponsor"; } ?></h1>
                         <?php
-                        $column = count($sponsors_for_room);
-                        switch ($column) {
-                            case 1:
-                                $img_size = 400;
-                                break;
-                            case 2:
-                                $img_size = 400;
-                                break;
-                            case 3:
-                                $img_size = 300;
-                                break;
-                            case 4:
-                                $img_size = 250;
-                                break;
-                            case 5:
-                                $img_size = 200;
-                                break;
-                            case 6:
-                                $img_size = 200;
-                                break;
-                            case 7:
-                                $img_size = 200;
-                                break;
-                            case 8:
-                                $img_size = 200;
-                                break;
-                        }
-
                         foreach ($sponsors_for_room as $sponsor) {
-                            echo "<img src='images/sponsors/" . $sponsors[$sponsor] . "' style='margin: 35px';>"; //' style='width: " . $img_size . "px; height: " . $img_size . "px; border: 1px solid #000; margin: 1px;'>";
+                            echo "<img src='images/sponsors/" . $sponsors[$sponsor] . "' style='margin: 35px';>";
                         }
                         ?>
                     </div>
