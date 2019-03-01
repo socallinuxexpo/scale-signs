@@ -491,7 +491,7 @@ asort($order, SORT_NUMERIC);
                                 <img src="images/WiFi-Sign.png">
                             </div>
                             <div class="row" style="margin: 30px">
-                                <h1 style='text-align: center;'>Thank You to Our Diamond and Platinum Sponsors</h1>
+                                <h1 style='text-align: center;'>Thank You to our Diamond and Platinum Sponsors</h1>
                                 <?php
                                 foreach ($diamond_platinum_sponsors as $sponsor) {
                                     echo "<img src='images/sponsors/" . $sponsors[$sponsor] . "' style='margin: 35px';>";
@@ -507,7 +507,7 @@ asort($order, SORT_NUMERIC);
             <div class="item">
                 <div class="media">
                     <div class="row" style="text-align: center; vertical-align: middle; height: 850px;">
-                        <h1 style='text-align: center;'>Thank You To Our <?php echo "$sponsor_class "; if (count($sponsors_for_room) > 1) { echo "Sponsors"; } else { echo "Sponsor"; } ?></h1>
+                        <h1 style='text-align: center;'>Thank You To our <?php echo "$sponsor_class "; if (count($sponsors_for_room) > 1) { echo "Sponsors"; } else { echo "Sponsor"; } ?></h1>
                         <?php
                         foreach ($sponsors_for_room as $sponsor) {
                             echo "<img src='images/sponsors/" . $sponsors[$sponsor] . "' style='margin: 35px';>";
