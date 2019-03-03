@@ -447,9 +447,9 @@ asort($order, SORT_NUMERIC);
                         }
                         ?>
                     </a>
-                    <div class="media-body" style="vertical-align: middle; height: 850px; margin: 30px">
-                        <h1 class="media-heading" style="margin: 20px;"><?php echo $data[$key][3]; ?></h2>
-                        <h2 class="media-heading" style="margin: 20px;"><?php echo $data[$key][2]; ?></h1>
+                    <div class="media-body" style="vertical-align: middle; height: 525px; margin: 15px">
+                        <h1 class="media-heading" style="margin: 20px;"><?php echo $data[$key][3]; ?></h1>
+                        <h2 class="media-heading" style="margin: 20px;"><?php echo $data[$key][2]; ?></h2>
                         <h3 style="margin: 20px;"><?php echo $data[$key][7]; ?></h3>
                         <hr/>
 					    <?php
@@ -486,15 +486,15 @@ asort($order, SORT_NUMERIC);
                 <div class="media">
                     <div class="row">
                         <div class="col-md-12" style="text-align: center; vertical-align: middle;">
-                            <div class="well" style="height: 525px; vertical-align: middle;">
-                            <div class="row" style="margin: 30px">&nbsp;</div>
-                                <img src="images/WiFi-Sign.png">
+                            <div class="well" style="height: 300px; vertical-align: middle;">
+                            <div class="row" style="margin: 5px">&nbsp;</div>
+                                <img src="images/WiFi-Sign.png" width="487" height="186">
                             </div>
-                            <div class="row" style="margin: 30px">
-                                <h1 style='text-align: center;'>Thank You to our Diamond and Platinum Sponsors</h1>
+                            <div class="row" style="margin: 15px">
+                                <h2 style='text-align: center;'>Thank You to our Diamond and Platinum Sponsors</h2>
                                 <?php
                                 foreach ($diamond_platinum_sponsors as $sponsor) {
-                                    echo "<img src='images/sponsors/" . $sponsors[$sponsor] . "' style='margin: 25px';>";
+                                    echo "<img src='images/sponsors/" . $sponsors[$sponsor] . "' width='165' height='165' style='margin: 15px';>";
                                 }
                                 ?>
                             </div>
@@ -506,11 +506,11 @@ asort($order, SORT_NUMERIC);
             <?php if (count($sponsors_for_room) > 0) { ?>
             <div class="item">
                 <div class="media">
-                    <div class="row" style="text-align: center; vertical-align: middle; height: 850px;">
-                        <h1 style='text-align: center;'>Thank You To our <?php echo "$sponsor_class "; if (count($sponsors_for_room) > 1) { echo "Sponsors"; } else { echo "Sponsor"; } ?></h1>
+                    <div class="row" style="text-align: center; vertical-align: middle; height: 550px;">
+                        <h2 style='text-align: center;'>Thank You to our <?php echo "$sponsor_class "; if (count($sponsors_for_room) > 1) { echo "Sponsors"; } else { echo "Sponsor"; } ?></h2>
                         <?php
                         foreach ($sponsors_for_room as $sponsor) {
-                            echo "<img src='images/sponsors/" . $sponsors[$sponsor] . "' style='margin: 25px';>";
+                            echo "<img src='images/sponsors/" . $sponsors[$sponsor] . "' height='137' width='137' style='margin: 15px';>";
                         }
                         ?>
                     </div>

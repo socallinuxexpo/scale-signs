@@ -31,15 +31,7 @@ example: `http://signs.scale.lan/`
 
 The index page call be called with a room argument to display a room specific view that will display information relevant to that room.
 
-examples: 
-* `http://signs.scale.lan/?room=ballroom-de`
-* `http://signs.scale.lan/?room=room-101`
-
-![Room View Session](./.README/room_view_session.png)
-
-![Room View Wifi](./.README/room_view_wifi.png)
-
-![Room View Sponsors](./.README/room_view_sponsors.png)
+Optimized for viewing at `1024x768` using one of the following room values:
 
 * ballroom-a
 * ballroom-b
@@ -57,6 +49,16 @@ examples:
 * room-209
 * room-211
 * room-212
+
+examples:
+* `http://signs.scale.lan/?room=ballroom-de`
+* `http://signs.scale.lan/?room=room-101`
+
+![Room View Session](./.README/room_view_session.png)
+
+![Room View Wifi](./.README/room_view_wifi.png)
+
+![Room View Sponsors](./.README/room_view_sponsors.png)
 
 #### Development
 
