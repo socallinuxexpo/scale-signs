@@ -12,6 +12,7 @@ $starttime = mktime(0, 0, 0, 3, 7, 2019) / 60;
 
 $sponsors_for_room = array();
 $sponsor_class = "Room";
+$sponsor_image_size = 165;
 
 if (!empty($_GET["room"])) {
    $room = str_replace(' ', '', $_GET["room"]);
@@ -202,7 +203,7 @@ $sponsors_to_rooms = array(
             "Sunday"    => array(),
     ),
     "ballroom-b"    => array(
-            "Thursday"  => array("arrikto","ubuntu","google_cloud","maven_code",),
+            "Thursday"  => array("arrikto","ubuntu","google_cloud","maven_code","microsoft"),
             "Friday"    => array(),
             "Saturday"  => array(),
             "Sunday"    => array(),
@@ -251,14 +252,14 @@ $sponsors_to_rooms = array(
             "Sunday"    => array(),
     ),
     "room-104"      => array(
-            "Thursday"  => array(),
-            "Friday"    => array(),
+            "Thursday"  => array("linux_foundation"),
+            "Friday"    => array("linux_foundation"),
             "Saturday"  => array(),
             "Sunday"    => array(),
     ),
     "room-105"      => array(
-            "Thursday"  => array(),
-            "Friday"    => array(),
+            "Thursday"  => array("linux_foundation"),
+            "Friday"    => array("linux_foundation"),
             "Saturday"  => array(),
             "Sunday"    => array(),
     ),
@@ -473,6 +474,12 @@ asort($order, SORT_NUMERIC);
                                 $sponsor_class = "Gold";
                             }
                             shuffle($sponsors_for_room);
+                            if (count($sponsors_for_room) > 12) {
+                                $sponsor_image_size = 137;
+                            }
+                            if (count($sponsors_for_room) < 5) {
+                                $sponsor_image_size = 220;
+                            }
                         ?>
                     </div>
                 </div>
@@ -510,7 +517,7 @@ asort($order, SORT_NUMERIC);
                         <h2 style='text-align: center;'>Thank You to our <?php echo "$sponsor_class "; if (count($sponsors_for_room) > 1) { echo "Sponsors"; } else { echo "Sponsor"; } ?></h2>
                         <?php
                         foreach ($sponsors_for_room as $sponsor) {
-                            echo "<img src='images/sponsors/" . $sponsors[$sponsor] . "' height='137' width='137' style='margin: 15px';>";
+                            echo "<img src='images/sponsors/" . $sponsors[$sponsor] . "' height='" . $sponsor_image_size ."' width='" . $sponsor_image_size . "' style='margin: 15px';>";
                         }
                         ?>
                     </div>
