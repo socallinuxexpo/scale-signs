@@ -2,10 +2,6 @@
 
 digital signs for the Southern California Linux Expo
 
-## Background
-
-This project is currently in **maintenance mode** and has been since SCaLE 15x. There is another project underway to redo both the client and server components. Maintenance of this project will continue through at least SCaLE 17x in parallel to the new project. This code has served SCaLE well for the last decade with attendees coming to expect quality electronic signs are part of the core conference experience. The new project will look to build on much of the functionality and style that has been established.
-
 ### Server
 
 * php5.4 with Apache httpd
