@@ -12,7 +12,7 @@ $starttime = mktime(23, 0, 0, 3, 6, 2019) / 60;
 
 include 'ChromePhp.php';
 
-$url = 'http://www.socallinuxexpo.org/scale/17x/sign.xml';
+$url = 'http://www.socallinuxexpo.org/scale/18x/sign.xml';
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
