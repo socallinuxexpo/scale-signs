@@ -5,10 +5,10 @@ date_default_timezone_set('America/Los_Angeles');
 # set yearly (change if DST starts during SCaLE)
 
 # before "spring forward"
-#$starttime = mktime(0, 0, 0, 3, 7, 2019) / 60;
+$starttime = mktime(0, 0, 0, 3, 5, 2020) / 60;
 
 # after "spring forward"
-$starttime = mktime(23, 0, 0, 3, 6, 2019) / 60;
+#$starttime = mktime(23, 0, 0, 3, 5, 2020) / 60;
 
 include 'ChromePhp.php';
 
