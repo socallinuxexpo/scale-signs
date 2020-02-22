@@ -93,6 +93,16 @@ There is a bit of manual effort necessary from year to year. These tasks include
 * update the `$gold_sponsors` array in `room.php` with the current year gold sponsors
 * verify OAUTH keys and secrets being passed to `$settings` in `twitter.php` via `secrets.env` are functional
 
+### Tips
+
+Get rooms in use this year with:
+
+`export THIS_SCALE=18x; curl http://www.socallinuxexpo.org/scale/${THIS_SCALE}/sign.xml | grep "<Room>" | cut -d ">" -f 2 | cut -d "<" -f 1 | sort | uniq`
+
+Get shortened topic list this year with:
+
+`export THIS_SCALE=18x; curl -q http://www.socallinuxexpo.org/scale/${THIS_SCALE}/sign.xml | grep "<Topic>" | cut -d ">" -f 2 | cut -d "<" -f 1 | sort | uniq | sed 's/ //g'`
+
 ### Conference Operations
 
 * git
