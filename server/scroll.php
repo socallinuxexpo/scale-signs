@@ -10,6 +10,9 @@ $starttime = mktime(0, 0, 0, 3, 5, 2020) / 60;
 # after "spring forward"
 #$starttime = mktime(23, 0, 0, 3, 4, 2020) / 60;
 
+// Turn off all error reporting
+error_reporting(0);
+
 include 'ChromePhp.php';
 
 $url = 'http://www.socallinuxexpo.org/scale/18x/sign.xml';
