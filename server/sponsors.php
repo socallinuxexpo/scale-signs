@@ -51,7 +51,7 @@
 					"mysql.png",
 					"opsi.png",
 					"pennymac.png",
-					"panetscale.png",
+					"planetscale.png",
 					"shiftleft.png",
 					"system76.png",
 					"tigera.png",
