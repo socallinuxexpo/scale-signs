@@ -4,17 +4,17 @@ version: 2
 jobs:
 
   check_images:
-  docker:
-  - image: perl:5
-  resource_class: small
-  working_directory: ~/scale-signs
-  steps:
-  - checkout:
-      path: ~/scale-signs
+    docker:
+    - image: perl:5
+    resource_class: small
+    working_directory: ~/scale-signs
+    steps:
+    - checkout:
+        path: ~/scale-signs
 
-  - run:
-      name: check images
-      command: ./scripts/check_images.sh
+    - run:
+        name: check images
+        command: ./scripts/check_images.sh
 
 workflows:
   version: 2
