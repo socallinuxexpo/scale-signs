@@ -48,23 +48,22 @@ if (!empty($year) && !empty($month) && !empty($day) && !empty($hour) && !empty($
 }
 
 $room_lookup_table = array(
-    "ballroom-a"    => "BallroomA",
-    "ballroom-b"    => "BallroomB",
-    "ballroom-c"    => "BallroomC",
-    "ballroom-de"   => "BallroomDE",
-    "ballroom-f"    => "BallroomF",
-    "ballroom-g"    => "BallroomG",
-    "ballroom-h"    => "BallroomH",
-    "room-101"      => "Room101",
-    "room-103"      => "Room103",
-    "room-104"      => "Room104",
-    "room-105"      => "Room105",
-    "room-106"      => "Room106",
-    "room-107"      => "Room107",
-    "room-209"      => "Room209",
-    "room-211"      => "Room211",
-    "room-212"      => "Room212",
-    );
+    "bel-air"        => "BelAir",
+    "carmel"         => "Carmel",
+    "century-ab"     => "CenturyAB",
+    "century-b"      => "CenturyB",
+    "century-c"      => "CenturyC",
+    "century-cd"     => "CenturyCD",
+    "la-jolla"       => "LaJolla",
+    "los-angeles-a"  => "LosAngelesA",
+    "los-angeles-ab" => "LosAngelesAB",
+    "los-angeles-b"  => "LosAngelesB",
+    "los-angeles-c"  => "LosAngelesC",
+    "marina"         => "Marina",
+    "newport-b"      => "NewportB",
+    "plaza-ballroom" => "PlazaBallroom",
+    "san-lorenzo-e"  => "SanLorenzoE",
+);
 
 $sponsors = array(
     "all_things_open"                   =>    "all_things_open.png",
