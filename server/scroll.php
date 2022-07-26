@@ -8,7 +8,10 @@ date_default_timezone_set('America/Los_Angeles');
 #$starttime = mktime(0, 0, 0, 3, 5, 2020) / 60;
 
 # after "spring forward"
-$starttime = mktime(23, 0, 0, 3, 4, 2020) / 60;
+# 18x
+#$starttime = mktime(23, 0, 0, 3, 4, 2020) / 60;
+# 19x starts 7/27/2022 23:00
+$starttime = mktime(23, 0, 0, 7, 27, 2022) / 60;
 
 // Turn off all error reporting
 error_reporting(0);
