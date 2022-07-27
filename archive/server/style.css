@@ -491,9 +491,9 @@ font {
   color: #000 !important;
 }
 
-.Cloud {
-  background: #638dce !important;
-  color: #fff !important;
+.CloudNative {
+  background: #ffa200 !important;
+  color: #000 !important;
 }
 
 .Containers {
@@ -511,7 +511,7 @@ font {
   color: #FFF !important;
 }
 
-.DevOps {
+.DevOpsDayLA {
   background: #565448 !important;
   color: #fff !important;
 }
@@ -626,6 +626,11 @@ font {
   color: #d00 !important;
 }
 
+.OpenMedical {
+  background: #00ffd8 !important;
+  color: #000 !important;
+}
+
 .OpenSourceinEnterprises {
   background: #ffd672 !important;
   color: #000 !important;
@@ -664,6 +669,11 @@ font {
 .Sponsored {
   background: #007F06 !important;
   color: #fff !important;
+}
+
+.SystemsandInfrastructure {
+  background: #D2A3E8 !important;
+  color: #000 !important;
 }
 
 .Testing {

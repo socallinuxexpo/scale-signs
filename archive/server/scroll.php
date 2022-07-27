@@ -8,14 +8,17 @@ date_default_timezone_set('America/Los_Angeles');
 #$starttime = mktime(0, 0, 0, 3, 5, 2020) / 60;
 
 # after "spring forward"
-$starttime = mktime(23, 0, 0, 3, 4, 2020) / 60;
+# 18x
+#$starttime = mktime(23, 0, 0, 3, 4, 2020) / 60;
+# 19x starts 7/27/2022 23:00
+$starttime = mktime(23, 0, 0, 7, 27, 2022) / 60;
 
 // Turn off all error reporting
 error_reporting(0);
 
 include 'ChromePhp.php';
 
-$url = 'http://www.socallinuxexpo.org/scale/18x/sign.xml';
+$url = 'http://www.socallinuxexpo.org/scale/19x/sign.xml';
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -42,33 +45,20 @@ $order = array();
 $times = array();
 
 $shorten_topics = array(
-	"BeginnerTutorials"						=>	"Beginner Tutorials",
-	"BoFs"												=>	"BoFs",
-	"Cloud"												=>	"Cloud",
-	"Containers"									=>	"Containers",
-	"ContainerandVirtualization"	=>	"Containers",
-	"Developer"										=>	"Developer",
-	"DevOps"											=>	"DevOps",
-	"Embedded"										=>	"Embedded",
-	"General"											=>	"General",
-	"HAMRadio"										=>	"HAM Radio",
-	"Keynote"											=>	"Keynote",
-	"Kubeflow"										=>	"Kubeflow",
-	"LibreGraphics"								=>	"LibreGraphics",
-	"Mentoring"										=>	"Mentoring",
-	"MySQL"												=>	"MySQL",
-	"NextGeneration"							=>	"Next Generation",
-	"Observability"								=>	"Observability",
-	"OpenData"										=>	"Open Data",
-	"OpenGovernment"							=>	"Open Government",
-	"OpenSourceinEnterprises"			=>	"Open Source in Enterprises",
-	"openSUSE"										=>	"openSUSE",
-	"PosgreSQL"										=>	"PostgreSQL",
-	"Security"										=>	"Security",
-	"Sponsored"										=>	"Sponsored",
-	"SysAdmin"										=>	"SysAdmin",
-	"Ubucon"											=>	"Ubucon",
-	"UpSCALE"											=>	"UpSCALE",
+	"BoFs"           =>	"BoFs",
+	"CloudNative"    =>	"CloudNative",
+	"Developer"      =>	"Developer",
+	"DevOpsDayLA"    =>	"DevOps",
+	"General"        =>	"General",
+	"MySQL"          =>	"MySQL",
+	"Observability"  =>	"Observability",
+	"OpenData"	 =>	"Open Data",
+	"OpenGovernment" =>	"Open Government",
+	"OpenMedical"	 =>	"Open Medical",
+	"PosgreSQL"      =>	"PostgreSQL",
+	"Security"       =>	"Security",
+	"Sponsored"      =>	"Sponsored",
+	"SystemsandInfrastructure" =>	"Systems and Infrastructure",
 );
 
 foreach ($xml->node AS $node) {
