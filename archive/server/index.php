@@ -165,7 +165,7 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>SCALE 19x</title>
+    <title>SCALE 20x</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -377,7 +377,7 @@ function avnoc() {
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>SCALE 19x</title>
+    <title>SCALE 20x</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -488,21 +488,22 @@ function avnoc() {
 function room($room, $year = '', $month = '', $day = '', $hour = '', $minute = '') {
 
 $room_lookup_table = array(
-    "bel-air"        => "BelAir",
-    "carmel"         => "Carmel",
-    "century-ab"     => "CenturyAB",
-    "century-b"      => "CenturyB",
-    "century-c"      => "CenturyC",
-    "century-cd"     => "CenturyCD",
-    "la-jolla"       => "LaJolla",
-    "los-angeles-a"  => "LosAngelesA",
-    "los-angeles-ab" => "LosAngelesAB",
-    "los-angeles-b"  => "LosAngelesB",
-    "los-angeles-c"  => "LosAngelesC",
-    "marina"         => "Marina",
-    "newport-b"      => "NewportB",
-    "plaza-ballroom" => "PlazaBallroom",
-    "san-lorenzo-e"  => "SanLorenzoE",
+    "ballroom-a"        => "BallroomA",
+    "ballroom-b"        => "BallroomB",
+    "ballroom-c"        => "BallroomC",
+    "ballroom-de"        => "BallroomDE",
+    "ballroom-f"        => "BallroomF",
+    "ballroom-g"        => "BallroomG",
+    "ballroom-h"        => "BallroomH",
+    "room-101"         => "Room101",
+    "room-103"         => "Room103",
+    "room-104"         => "Room104",
+    "room-105"         => "Room105",
+    "room-106"         => "Room106",
+    "room-107"         => "Room107",
+    "room-209"         => "Room209",
+    "room-211"         => "Room211",
+    "room-212"         => "Room212",
 );
 
 ?>
@@ -516,7 +517,7 @@ $room_lookup_table = array(
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>SCALE 19x: <?php echo $room_lookup_table[$room]; ?></title>
+    <title>SCALE 20x: <?php echo $room_lookup_table[$room]; ?></title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
