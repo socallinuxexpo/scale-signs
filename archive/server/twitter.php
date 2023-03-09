@@ -30,7 +30,7 @@ function search_twitter()
   );
 	
 	$url = 'https://api.twitter.com/1.1/search/tweets.json';
-	$getfield = '?q=#scale19x';
+	$getfield = '?q=#scale20x';
 	$requestMethod = 'GET';
 	
 	$twitter = new TwitterAPIExchange($settings);
