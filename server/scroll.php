@@ -6,7 +6,7 @@ date_default_timezone_set('America/Los_Angeles');
 
 # before "spring forward"
 #$starttime = mktime(0, 0, 0, 3, 5, 2020) / 60;
-$starttime = mktime(0, 0, 0, 7, 28, 2022) / 60;
+$starttime = mktime(0, 0, 0, 3, 9, 2023) / 60;
 
 # after "spring forward"
 # 18x
@@ -19,7 +19,7 @@ error_reporting(0);
 
 include 'ChromePhp.php';
 
-$url = 'http://www.socallinuxexpo.org/scale/19x/sign.xml';
+$url = 'http://www.socallinuxexpo.org/scale/20x/sign.xml';
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -46,16 +46,22 @@ $order = array();
 $times = array();
 
 $shorten_topics = array(
+	"Aerospace"      =>	"Aerospace",
 	"BoFs"           =>	"BoFs",
+	"CareerDay"      =>	"Career Day",
 	"CloudNative"    =>	"CloudNative",
 	"Developer"      =>	"Developer",
 	"DevOpsDayLA"    =>	"DevOps",
+	"Embedded"    =>	"Embedded",
+	"FOSS@HOME"    =>	"FOSS@HOME",
 	"General"        =>	"General",
+	"Keynote"        =>	"Keynote",
+	"KubernetesCommunityDay"        =>	"Kubernetes Community Day",
 	"MySQL"          =>	"MySQL",
+	"NextGeneration"  =>	"Next Generation",
 	"Observability"  =>	"Observability",
 	"OpenData"	 =>	"Open Data",
 	"OpenGovernment" =>	"Open Government",
-	"OpenMedical"	 =>	"Open Medical",
 	"PosgreSQL"      =>	"PostgreSQL",
 	"Security"       =>	"Security",
 	"Sponsored"      =>	"Sponsored",
