@@ -6,7 +6,7 @@ date_default_timezone_set('America/Los_Angeles');
 
 # before "spring forward"
 #$starttime = mktime(0, 0, 0, 3, 5, 2020) / 60;
-$starttime = mktime(0, 0, 0, 3, 9, 2023) / 60;
+$starttime = mktime(0, 0, 0, 7, 28, 2022) / 60;
 
 # after "spring forward"
 #$starttime = mktime(23, 0, 0, 7, 27, 2022) / 60;
@@ -49,114 +49,248 @@ if (!empty($year) && !empty($month) && !empty($day) && !empty($hour) && !empty($
 }
 
 $room_lookup_table = array(
-    "ballroom-a"        => "BallroomA",
-    "ballroom-b"        => "BallroomB",
-    "ballroom-c"        => "BallroomC",
-    "ballroom-de"        => "BallroomDE",
-    "ballroom-f"        => "BallroomF",
-    "ballroom-g"        => "BallroomG",
-    "ballroom-h"        => "BallroomH",
-    "room-101"         => "Room101",
-    "room-103"         => "Room103",
-    "room-104"         => "Room104",
-    "room-105"         => "Room105",
-    "room-106"         => "Room106",
-    "room-107"         => "Room107",
-    "room-209"         => "Room209",
-    "room-211"         => "Room211",
-    "room-212"         => "Room212",
+    "ballroom-a"     => "BallroomA",
+    "ballroom-b"     => "BallroomB",
+    "ballroom-c"     => "BallroomC",
+    "ballroom-de"    => "BallroomDE",
+    "ballroom-f"     => "BallroomF",
+    "ballroom-g"     => "BallroomG",
+    "ballroom-h"     => "BallroomH",
+    "room-101"       => "Room101",
+    "room-103"       => "Room103",
+    "room-104"       => "Room104",
+    "room-105"       => "Room105",
+    "room-106"       => "Room106",
+    "room-107"       => "Room107",
+    "room-209"       => "Room209",
+    "room-211"       => "Room211",
+    "room-212"       => "Room212",
 );
 
 $sponsors = array(
-    "9to5linux"                         =>    "9to5linux.png",
-    "adminmagazine"                     =>    "adminmagazine.png",
-    "allegrograph"                      =>    "allegrograph.png", #franz
-    "arm"                               =>    "arm.png",
-    "aws"                               =>    "aws.png",
+    "cloud_native_computing_foundation" =>    "cloud_native_computing_foundation.png",
+    #"google"                            =>
+    "ceph"                              =>    "ceph.png",
+    #"cisco"                             =>
+    "databricks"                        =>    "databricks.png",
+    #"datastax"                          =>
+    "elastic"                           =>    "elastic.png",
+    #"isovalent"                         =>
+    #"linbit"                            =>
+    #"mattermost"                        =>
+    "meta"                              =>    "meta.png", #facebook
+    #"nginx"                             =>
+    #"pgedge"                            =>
+    "redhat"                            =>    "redhat.png",
+    "site247"                           =>    "site247.png",
+    #"sonatype"                          =>
+    #"suse"                              =>
+    #"acorn"                             =>
+    "akamai_linode"                     =>    "linode.png",
+    #"akuity"                            =>
+    #"asserts"                           =>
+    #"azul"                              =>
+    #"bayesian"                          =>
     "buildkite"                         =>    "buildkite.png",
     "calyptia"                          =>    "calyptia.png",
     "camunda"                           =>    "camunda.png",
-    "ceph"                              =>    "ceph.png",
-    "chronosphere"                      =>    "chronosphere.png",
     "ciq"                               =>    "ciq.png",
     "circleci"                          =>    "circleci.png",
-    "cloudbees"                         =>    "cloudbees.png",
-    "cloud_native_computing_foundation" =>    "cloud_native_computing_foundation.png",
-    "coastlinecollege"                  =>    "coastlinecollege.png",
-    "courier"                           =>    "courier.png",
-    "databricks"                        =>    "databricks.png",
+    #"cyberark"                          =>
+    #"d2iq"                              =>
     "datadog"                           =>    "datadog.png",
-    "deepsource"                        =>    "deepsource.png",
-    "digitalocean"                      =>    "digitalocean.png",
-    "dynatrace"                         =>    "dynatrace.png",
-    "faun"                              =>    "faun.png",
-    "freebsd_foundation"                =>    "freebsd_foundation.png",
-    "edb"                               =>    "edb.png",
-    "elastic"                           =>    "elastic.png",
-    "era"                               =>    "era.png",
+    #"dbeaver"                           =>
+    #"fleet"                             =>
+    #"github"                            =>
     "gitlab"                            =>    "gitlab.png",
-    "gradle"                            =>    "gradle.png",
-    "gremlin"                           =>    "gremlin.png",
-    "harness"                           =>    "harness.png",
-    "hulanetworks"                      =>    "hulanetworks.png",
-    "humio"                             =>    "humio.png", #crowdstike
+    #"grafana"                           =>
+    #"ieee_sa_open"                      =>
     "instaclustr"                       =>    "instaclustr.png",
-    "intellibus"                        =>    "intellibus.png",
-    "itopia"                            =>    "itopia.png",
-    "kubeevents"                        =>    "kubeevents.png",
-    "linode"                            =>    "linode.png",
-    "lpi"                               =>    "lpi.png",
-    "mattermost"                        =>    "mattermost.png",
-    "meta"                              =>    "meta.png", #facebook
-    "mondoo"                            =>    "mondoo.png",
+    #"ix_systems"                        =>
+    #"kloudfuse"                         =>
+    #"kubecost"                          =>
+    #"loft"                              =>
+    #"maira"                             =>
     "mysql"                             =>    "mysql.png", #oracle
-    "newrelic"                          =>    "newrelic.png",
-    "nirmata"                           =>    "nirmata.png",
-    "observe"                           =>    "observe.jpg",
-    "octopusdeploy"                     =>    "octopusdeploy.png",
-    "opennms"                           =>    "opennms.png",
-    "opensuse"                          =>    "opensuse.png",
+    #"nanovms"                           =>
+    #"okteto"                            =>
+    #"opencost"                          =>
+    #"pagerduty"                         =>
     "percona"                           =>    "percona.png",
-    "pogo_linux"                        =>    "pogo_linux.png",
+    #"port"                             =>
     "postgresql"                        =>    "postgresql.png",
-    "portworx"                          =>    "portworx.png",
-    "redhat"                            =>    "redhat.png",
-    "replicated"                        =>    "replicated.png",
-    "scoutapm"                          =>    "scoutapm.png",
-    "site247"                           =>    "site247.png",
-    "spacelift"                         =>    "spacelift.png",
-    "sourceforge"                       =>    "sourceforge.png",
-    "splunk"                            =>    "splunk.png",
+    #"prosperops"                        =>
+    #"quest"                             =>
+    #"retool"                            =>
     "spyderbat"                         =>    "spyderbat.png",
-    "stacklet"                          =>    "stacklet.png",
-    "streamnative"                      =>    "streamnative.png",
-    "system76"                          =>    "system76.png",
+    #"synopsys"                          =>
+    #"temporal"                          =>
+    #"tetrate"                           =>
+    #"tuxcare"                           =>
     "ubuntu"                            =>    "ubuntu.jpg",
-    "uffizzi"                           =>    "uffizzi.png",
-    "veryant"                           =>    "veryant.png",
-    "vmware"                            =>    "vmware.png",
-    "wrccdc"                            =>    "westernregionalcyberdefense.png",
+    "arm"                               =>    "arm.png",
+    #"cloud7"                            =>
+    #"fosslife"                          =>
+    #"freebsd"                           =>
+    #"its_foss"                          =>
+    "kubeevents"                        =>    "kubeevents.png",
+    #"learnk8s"                          =>
+    #"linuxjournal"                      =>
+    #"linuxmagazine"                     =>
+    #"linux_org"                         =>
+    #"opensource_jobhub"                 =>
+    #"opensource_watch"                  =>
+    "sourceforge"                       =>    "sourceforge.png",
+    #"stackhawk"                         =>
+    #"stickermule"                       =>
+    #"the_new_stack"                     =>
+    #"trendoceans"                       =>
+    #"tuxdigital"                        =>
+    #"intel"                             =>
+    #"tailscale"                         =>
+    #"the_linux_foundation_training"     =>
+    ### "9to5linux"                         =>    "9to5linux.png",
+    ### "adminmagazine"                     =>    "adminmagazine.png",
+    ### "allegrograph"                      =>    "allegrograph.png", #franz
+    ### "aws"                               =>    "aws.png",
+    ### "chronosphere"                      =>    "chronosphere.png",
+    ### "cloudbees"                         =>    "cloudbees.png",
+    ### "coastlinecollege"                  =>    "coastlinecollege.png",
+    ### "courier"                           =>    "courier.png",
+    ### "deepsource"                        =>    "deepsource.png",
+    ### "digitalocean"                      =>    "digitalocean.png",
+    ### "dynatrace"                         =>    "dynatrace.png",
+    ### "faun"                              =>    "faun.png",
+    ### "freebsd_foundation"                =>    "freebsd_foundation.png",
+    ### "edb"                               =>    "edb.png",
+    ### "era"                               =>    "era.png",
+    ### "gradle"                            =>    "gradle.png",
+    ### "gremlin"                           =>    "gremlin.png",
+    ### "harness"                           =>    "harness.png",
+    ### "hulanetworks"                      =>    "hulanetworks.png",
+    ### "humio"                             =>    "humio.png", #crowdstike
+    ### "intellibus"                        =>    "intellibus.png",
+    ### "itopia"                            =>    "itopia.png",
+    ### "lpi"                               =>    "lpi.png",
+    ### "mattermost"                        =>    "mattermost.png",
+    ### "mondoo"                            =>    "mondoo.png",
+    ### "newrelic"                          =>    "newrelic.png",
+    ### "nirmata"                           =>    "nirmata.png",
+    ### "observe"                           =>    "observe.jpg",
+    ### "octopusdeploy"                     =>    "octopusdeploy.png",
+    ### "opennms"                           =>    "opennms.png",
+    ### "opensuse"                          =>    "opensuse.png",
+    ### "pogo_linux"                        =>    "pogo_linux.png",
+    ### "portworx"                          =>    "portworx.png",
+    ### "replicated"                        =>    "replicated.png",
+    ### "scoutapm"                          =>    "scoutapm.png",
+    ### "spacelift"                         =>    "spacelift.png",
+    ### "splunk"                            =>    "splunk.png",
+    ### "stacklet"                          =>    "stacklet.png",
+    ### "streamnative"                      =>    "streamnative.png",
+    ### "system76"                          =>    "system76.png",
+    ### "uffizzi"                           =>    "uffizzi.png",
+    ### "veryant"                           =>    "veryant.png",
+    ### "vmware"                            =>    "vmware.png",
+    ### "wrccdc"                            =>    "westernregionalcyberdefense.png",
 );
 
 $diamond_platinum_sponsors = array(
-    "aws",
-    "mattermost",
-    "portworx",
+    "cloud_native_computing_foundation",
+    "google",
 );
 
 $gold_sponsors = array(
-    "cloud_native_computing_foundation",
-    "crowdstrike",
-    "digitalocean",
-    "gitlab",
-    "gradle",
-    "ieeesa",
-    "newrelic",
-    "observe",
-    "opennms",
+    "ceph",
+    "cisco",
+    "databricks",
+    "datastax",
+    "elastic",
+    "isovalent",
+    "linbit",
+    "mattermost",
+    "meta",
+    "nginx",
+    "pgedge",
     "redhat",
-    "splunk",
-    "site247",
+    "site24x7",
+    "sonatype",
+    "suse",
+);
+
+$silver_sponsors = array(
+    "acorn",
+    "akamai_linode",
+    "akuity",
+    "asserts",
+    "azul",
+    "bayesian",
+    "buildkite",
+    "calyptia",
+    "camunda",
+    "ciq",
+    "circleci",
+    "cyberark",
+    "d2iq",
+    "datadog",
+    "dbeaver",
+    "fleet",
+    "github",
+    "gitlab",
+    "grafana",
+    "ieee-sa-open",
+    "instaclustr",
+    "ix-systems",
+    "kloudfuse",
+    "kubecost",
+    "loft",
+    "maira",
+    "mysql",
+    "nanovms",
+    "okteto",
+    "opencost",
+    "pagerduty",
+    "percona",
+    "port",
+    "postgresql",
+    "prosperops",
+    "quest",
+    "retool",
+    "spyderbat",
+    "synopsys",
+    "temporal",
+    "tetrate",
+    "tuxcare",
+    "ubuntu",
+);
+
+$media_sponsors = array(
+    "arm",
+    "cloud7",
+    "fosslife",
+    "freebsd",
+    "its_foss",
+    "kubeevents",
+    "learnk8s",
+    "linuxjournal",
+    "linuxmagazine",
+    "linux_org",
+    "opensource_jobhub",
+    "opensource_watch",
+    "sourceforge",
+    "stackhawk",
+    "stickermule",
+    "the_new_stack",
+    "trendoceans",
+    "tuxdigital",
+);
+
+$fancy_sponsors = array(
+    "intel",       #registration
+    "tailscale",   #reception
+    "ceph",        #special-event
+    "gitlab",      #speaker-track
+    "the_linux_foundation_training", #speaker-track
 );
 
 $sponsors_to_rooms = array(
@@ -264,7 +398,7 @@ $sponsors_to_rooms = array(
     ),
 );
 
-$url = 'http://www.socallinuxexpo.org/scale/20x/sign.xml';
+$url = 'http://www.socallinuxexpo.org/scale/19x/sign.xml';
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -280,22 +414,16 @@ $order = array();
 $times = array();
 
 $shorten_topics = array(
-	"Aerospace"      =>	"Aerospace",
 	"BoFs"           =>	"BoFs",
-	"CareerDay"      =>	"Career Day",
 	"CloudNative"    =>	"CloudNative",
 	"Developer"      =>	"Developer",
-	"DevOpsDayLA"    =>	"DevOps",
-	"Embedded"    =>	"Embedded",
-	"FOSS@HOME"    =>	"FOSS@HOME",
+	"DevOpsDayLA"    =>	"DevOps Day LA",
 	"General"        =>	"General",
-	"Keynote"        =>	"Keynote",
-	"KubernetesCommunityDay"        =>	"Kubernetes Community Day",
 	"MySQL"          =>	"MySQL",
-	"NextGeneration"  =>	"Next Generation",
 	"Observability"  =>	"Observability",
 	"OpenData"	 =>	"Open Data",
 	"OpenGovernment" =>	"Open Government",
+	"OpenMedical"	 =>	"Open Medical",
 	"PosgreSQL"      =>	"PostgreSQL",
 	"Security"       =>	"Security",
 	"Sponsored"      =>	"Sponsored",
