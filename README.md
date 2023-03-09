@@ -125,6 +125,7 @@ If DST changes during SCaLE, the next morning `$starttime` in `scroll.php` and `
 2. `docker-compose build`
 3. `docker-compose down`
 4. `docker-compose up -d`
+> You might need to force rebuilding without cache: `docker-compose build --no-cache`
 
 #### Troubleshooting Basics
 
