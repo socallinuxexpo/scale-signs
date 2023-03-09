@@ -69,22 +69,22 @@ $room_lookup_table = array(
 
 $sponsors = array(
     "cloud_native_computing_foundation" =>    "cloud_native_computing_foundation.png",
-    #"google"                            =>
+    "google"                            => "google.png",
     "ceph"                              =>    "ceph.png",
-    #"cisco"                             =>
+    "cisco"                             => "cisco_eti.png",
     "databricks"                        =>    "databricks.png",
-    #"datastax"                          =>
+    "datastax"                          => "datastax.png",
     "elastic"                           =>    "elastic.png",
-    #"isovalent"                         =>
-    #"linbit"                            =>
-    #"mattermost"                        =>
+    "isovalent"                         => "isovalent.png",
+    "linbit"                            => "linbit.png",
+    "mattermost"                        => "mattermost.png",
     "meta"                              =>    "meta.png", #facebook
-    #"nginx"                             =>
-    #"pgedge"                            =>
+    "nginx"                             => "nginx.png",
+    "pgedge"                            => "pgedge.png",
     "redhat"                            =>    "redhat.png",
     "site247"                           =>    "site247.png",
-    #"sonatype"                          =>
-    #"suse"                              =>
+    "sonatype"                          => "sonatype.png",
+    "suse"                              => "suse.png",
     #"acorn"                             =>
     "akamai_linode"                     =>    "linode.png",
     #"akuity"                            =>
@@ -197,25 +197,25 @@ $sponsors = array(
 
 $diamond_platinum_sponsors = array(
     "cloud_native_computing_foundation",
-    #"google",
+    "google",
 );
 
 $gold_sponsors = array(
     "ceph",
-    #"cisco",
+    "cisco",
     "databricks",
     "datastax",
     "elastic",
-    #"isovalent",
-    #"linbit",
-    #"mattermost",
+    "isovalent",
+    "linbit",
+    "mattermost",
     "meta",
-    #"nginx",
-    #"pgedge",
+    "nginx",
+    "pgedge",
     "redhat",
     "site24x7",
-    #"sonatype",
-    #"suse",
+    "sonatype",
+    "suse",
 );
 
 $silver_sponsors = array(
