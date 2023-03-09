@@ -165,7 +165,7 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>SCALE 19x</title>
+    <title>SCALE 20x</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -377,7 +377,7 @@ function avnoc() {
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>SCALE 19x</title>
+    <title>SCALE 20x</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -517,7 +517,7 @@ $room_lookup_table = array(
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>SCALE 19x: <?php echo $room_lookup_table[$room]; ?></title>
+    <title>SCALE 20x: <?php echo $room_lookup_table[$room]; ?></title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
