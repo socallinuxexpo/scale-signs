@@ -112,6 +112,7 @@
           "linuxjournal.png",
           "linuxmagazine.png",
           "linux_org.png",
+          "learnk8s.png",
           "opensource_jobhub.png",
           "opensource_watch.png",
           "stackhawk.png",
