@@ -85,48 +85,48 @@ $sponsors = array(
     "site247"                           =>    "site247.png",
     "sonatype"                          => "sonatype.png",
     "suse"                              => "suse.png",
-    #"acorn"                             =>
+    "acorn"                             =>  "acorn.png",
     "akamai_linode"                     =>    "linode.png",
-    #"akuity"                            =>
-    #"asserts"                           =>
-    #"azul"                              =>
-    #"bayesian"                          =>
+    "akuity"                            =>  "akuity.png",
+    "asserts"                           =>  "asserts.png",
+    "azul"                              =>  "azul.png",
+    "bayesian"                          =>  "bayesian.png",
     "buildkite"                         =>    "buildkite.png",
     "calyptia"                          =>    "calyptia.png",
     "camunda"                           =>    "camunda.png",
     "ciq"                               =>    "ciq.png",
     "circleci"                          =>    "circleci.png",
-    #"cyberark"                          =>
-    #"d2iq"                              =>
+    "cyberark"                          =>  "cyberark.png",
+    "d2iq"                              =>  "d2iq.png",
     "datadog"                           =>    "datadog.png",
-    #"dbeaver"                           =>
-    #"fleet"                             =>
-    #"github"                            =>
+    "dbeaver"                           =>  "dbeaver.png",
+    "fleet"                             =>  "fleet.png",
+    "github"                            =>  "github.png",
     "gitlab"                            =>    "gitlab.png",
-    #"grafana"                           =>
-    #"ieee_sa_open"                      =>
+    "grafana"                           =>  "grafana.png",
+    "ieee_sa_open"                      =>  "ieee_sa_open.png",
     "instaclustr"                       =>    "instaclustr.png",
-    #"ix_systems"                        =>
-    #"kloudfuse"                         =>
-    #"kubecost"                          =>
-    #"loft"                              =>
-    #"maira"                             =>
+    "ix_systems"                        =>  "ix_systems.png",
+    "kloudfuse"                         =>  "kloudfuse.png",
+    "kubecost"                          =>  "kubecost.png",
+    "loft"                              =>  "loft.png",
+    "maira"                             =>  "maira.png",
     "mysql"                             =>    "mysql.png", #oracle
-    #"nanovms"                           =>
-    #"okteto"                            =>
-    #"opencost"                          =>
-    #"pagerduty"                         =>
+    "nanovms"                           =>  "nanovms.png",
+    "okteto"                            =>  "okteto.png",
+    "opencost"                          =>  "opencost.png",
+    "pagerduty"                         =>  "pagerduty.png",
     "percona"                           =>    "percona.png",
-    #"port"                             =>
+    "port"                              =>  "port.png",
     "postgresql"                        =>    "postgresql.png",
-    #"prosperops"                        =>
-    #"quest"                             =>
-    #"retool"                            =>
+    "prosperops"                        =>  "prosperops.png",
+    "quest"                             =>  "quest.png",
+    "retool"                            =>  "retool.png",
     "spyderbat"                         =>    "spyderbat.png",
-    #"synopsys"                          =>
-    #"temporal"                          =>
-    #"tetrate"                           =>
-    #"tuxcare"                           =>
+    "synopsys"                          =>  "synopsys.png",
+    "temporal"                          =>  "temporal.png",
+    "tetrate"                           =>  "tetrate.png",
+    "tuxcare"                           =>  "tuxcare.png",
     "ubuntu"                            =>    "ubuntu.jpg",
     "arm"                               =>    "arm.png",
     #"cloud7"                            =>
@@ -219,48 +219,48 @@ $gold_sponsors = array(
 );
 
 $silver_sponsors = array(
-   # "acorn",
+    "acorn",
     "akamai_linode",
-   # "akuity",
-   # "asserts",
-   # "azul",
-   # "bayesian",
+    "akuity",
+    "asserts",
+    "azul",
+    "bayesian",
     "buildkite",
    # "calyptia",
    # "camunda",
    # "ciq",
    # "circleci",
-   # "cyberark",
-   # "d2iq",
+    "cyberark",
+    "d2iq",
     "datadog",
-   # "dbeaver",
-   # "fleet",
-   # "github",
+    "dbeaver",
+    "fleet",
+    "github",
     "gitlab",
-   # "grafana",
-   # "ieee-sa-open",
+    "grafana",
+    "ieee_sa_open",
     "instaclustr",
-   # "ix-systems",
-   # "kloudfuse",
-   # "kubecost",
-   # "loft",
-   # "maira",
+    "ix_systems",
+    "kloudfuse",
+    "kubecost",
+    "loft",
+    "maira",
     "mysql",
-   # "nanovms",
-   # "okteto",
-   # "opencost",
-   # "pagerduty",
+    "nanovms",
+    "okteto",
+    "opencost",
+    "pagerduty",
     "percona",
-   # "port",
-   # "postgresql",
-   # "prosperops",
-   # "quest",
-   # "retool",
+    "port",
+    "postgresql",
+    "prosperops",
+    "quest",
+    "retool",
     "spyderbat",
-   # "synopsys",
-   # "temporal",
-   # "tetrate",
-   # "tuxcare",
+    "synopsys",
+    "temporal",
+    "tetrate",
+    "tuxcare",
     "ubuntu",
 );
 
