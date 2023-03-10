@@ -1,0 +1,19 @@
+---
+name: ansible-test
+
+on:
+  push:   # runs on every push
+  workflow_dispatch:
+
+jobs:
+  check_images:
+    name: check images
+    runs-on: ubuntu-latest
+    container:
+      image: perl:5
+    steps:
+      - name: checkout
+        id: checkout
+        uses: actions/checkout@v2
+      - name: check images
+        run: ./scripts/check_images
