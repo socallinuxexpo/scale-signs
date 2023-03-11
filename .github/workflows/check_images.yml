@@ -1,7 +1,8 @@
 ---
-name: ansible-test
+name: check images
 
 on:
+  pull_request:
   push:   # runs on every push
   workflow_dispatch:
 
