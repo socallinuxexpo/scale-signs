@@ -10,7 +10,7 @@ jobs:
     name: check images
     runs-on: ubuntu-latest
     container:
-      image: perl:5
+      image: perl@sha256:1ec7df9b6c70e31b05d937f929ddfe06a6a1966d98c09ae78ecfbb391a364739
     steps:
       - name: checkout
         id: checkout
