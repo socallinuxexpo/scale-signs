@@ -75,8 +75,8 @@ examples:
 ### Yearly Tasks
 
 There is a bit of manual effort necessary from year to year. These tasks include, but might not be limitted to:
-* update the logo for the curent year at `/server/images/header.png`
-* Do a search and replace for the previous scale version (example: replace all occurances of 16x with 17x)
+* ~~update the logo for the curent year at `/server/images/header.png`~~
+* ~~Do a search and replace for the previous scale version (example: replace all occurances of 16x with 17x)~~
 * verify proper XML is being supplied by drupal from the url reflected in the `$url` variable in `room.php` and `scroll.php`
 * set `$starttime` in `scroll.php` which should reflect midnight of the first night of current year show
 * set `$starttime` in `room.php` to match scroll.php
@@ -85,7 +85,7 @@ There is a bit of manual effort necessary from year to year. These tasks include
 * update `$shorten_topics` in `scroll.php` to reflect the updated track list, matching exactly the keys to what is being supplied by the xml from drupal minus spaces
 * update `$shorten_topics` in `room.php` to match `scroll.php`
 * create a style for each of the keys in `$shorten_topics` in `style.css` matching it to the public site
-* update the sponsor images in `/server/images/sponsors/` to reflect the current year's sponsors, making them 220x220
+* ~~update the sponsor images in `/server/images/sponsors/` to reflect the current year's sponsors, making them 220x220~~
 * update `$sponsors` in `room.php` matching the value to each sponsor image file name
 * update `$sponsors_to_rooms` in `room.php` matching proper sponsor(s) to room and day by key from `$sponsors`
 * update the `$sponsors` arrays in `sponsors.php` attempting to distribute the list evenly across both case statements
