@@ -86,9 +86,9 @@ There is a bit of manual effort necessary from year to year. These tasks include
 * update `$shorten_topics` in `room.php` to match `scroll.php`
 * create a style for each of the keys in `$shorten_topics` in `style.css` matching it to the public site
 * ~~update the sponsor images in `/server/images/sponsors/` to reflect the current year's sponsors, making them 220x220~~
-* update `$sponsors` in `room.php` matching the value to each sponsor image file name
+* ~~update `$sponsors` in `room.php` matching the value to each sponsor image file name~~
 * update `$sponsors_to_rooms` in `room.php` matching proper sponsor(s) to room and day by key from `$sponsors`
-* update the `$sponsors` arrays in `sponsors.php` attempting to distribute the list evenly across both case statements
+* ~~update the `$sponsors` arrays in `sponsors.php` attempting to distribute the list evenly across both case statements~~
 * update the `$diamond_platinum_sponsors` array in `room.php` with the current year diamond and platinum sponsors
 * update the `$gold_sponsors` array in `room.php` with the current year gold sponsors
 * verify OAUTH keys and secrets being passed to `$settings` in `twitter.php` via `secrets.env` are functional
