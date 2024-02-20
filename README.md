@@ -77,7 +77,7 @@ examples:
 There is a bit of manual effort necessary from year to year. These tasks include, but might not be limitted to:
 * ~~update the logo for the curent year at `/server/images/header.png`~~
 * ~~Do a search and replace for the previous scale version (example: replace all occurances of 16x with 17x)~~
-* verify proper XML is being supplied by drupal from the url reflected in the `$url` variable in `room.php` and `scroll.php`
+* ~~verify proper XML is being supplied by drupal from the url reflected in the `$url` variable in `room.php` and `scroll.php`~~
 * set `$starttime` in `scroll.php` which should reflect midnight of the first night of current year show
 * set `$starttime` in `room.php` to match scroll.php
 * set `$room_lookup_table` in `room.php` to match all rooms being used for the current year
