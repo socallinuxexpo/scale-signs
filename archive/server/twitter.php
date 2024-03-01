@@ -43,55 +43,60 @@ function search_twitter()
 	$count = 0;
 	
   print '<div class="item active">';
-  foreach ($results['statuses'] as $status) {
-		$logo = $status['user']['profile_image_url'];
-		$name = $status['user']['name'];
-		$screen_name = $status['user']['screen_name'];
-		$comment = $status['text'];
-		
-		$created = date("F d, Y h:i a", strtotime($status['created_at']));
-		$rightnow = round(time() / 60);
-		
-		$time_diff = $rightnow - $created;
+ 
+  # ensure twitter response actually contains statuses
+  # TODO: fix broken query due to upstream changes
+  if (array_key_exists('statuses', $results)) {
+    foreach ($results['statuses'] as $status) {
+                  $logo = $status['user']['profile_image_url'];
+                  $name = $status['user']['name'];
+                  $screen_name = $status['user']['screen_name'];
+                  $comment = $status['text'];
+                  
+                  $created = date("F d, Y h:i a", strtotime($status['created_at']));
+                  $rightnow = round(time() / 60);
+                  
+                  $time_diff = $rightnow - $created;
 
-    if (in_array($screen_name, $blacklist)) {
-      continue;
-    }
+      if (in_array($screen_name, $blacklist)) {
+        continue;
+      }
 
-    if (strpos($comment, 'RT') !== FALSE && in_array($screen_name, $promote) !== TRUE) {
-      continue;
-    }
-    
-    if ($count % 3 == 0 && $count > 0) {
+      if (strpos($comment, 'RT') !== FALSE && in_array($screen_name, $promote) !== TRUE) {
+        continue;
+      }
+      
+      if ($count % 3 == 0 && $count > 0) {
+        print '</div>';
+        print '<div class="item">';
+      }
+
+      if (in_array($screen_name, $promote)) {    
+        print '<div class="tweet tweetpromote media">';
+      } else {
+        print '<div class="tweet media">';
+      }
+              
+      print '<div class="vcard">';
+      print '<a class="pull-left" href="#">';
+        //print "<div class='tweet-pic'>";
+        //    print "<img class='media-object' style=\"height: 48px; width: 48px;\" src=\"$logo\">";
+        //print "</div>";
+      print '</a>';
       print '</div>';
-      print '<div class="item">';
+
+      print '<div class="hentry">';
+          print '<div class="media-body'>
+            print "<span class='media-heading'>$screen_name </span>";
+            print "<span class=\"tweet-comment\">$comment</span>";
+            print "<span class=\"tweet-time\">$created</span>";
+          print "</div>";
+      print "</div>";
+
+          $count += 1;
+
     }
-
-    if (in_array($screen_name, $promote)) {    
-      print '<div class="tweet tweetpromote media">';
-    } else {
-      print '<div class="tweet media">';
-    }
-	    
-    print '<div class="vcard">';
-    print '<a class="pull-left" href="#">';
-      //print "<div class='tweet-pic'>";
-      //    print "<img class='media-object' style=\"height: 48px; width: 48px;\" src=\"$logo\">";
-      //print "</div>";
-    print '</a>';
-    print '</div>';
-
-    print '<div class="hentry">';
-        print '<div class="media-body'>
-          print "<span class='media-heading'>$screen_name </span>";
-          print "<span class=\"tweet-comment\">$comment</span>";
-          print "<span class=\"tweet-time\">$created</span>";
-        print "</div>";
-    print "</div>";
-
-	$count += 1;
-
-	}
+  }
   print '</div>';
 }
 
