@@ -86,6 +86,7 @@ There is a bit of manual effort necessary from year to year. These tasks include
 * update `$shorten_topics` in `scroll.php` to reflect the updated track list, matching exactly the keys to what is being supplied by the xml from drupal minus spaces
 * update `$shorten_topics` in `room.php` to match `scroll.php`
 * create a style for each of the keys in `$shorten_topics` in `style.css` matching it to the public site
+* add colors for topics/tracks in `/server/style.css`
 * update the sponsor images in `/server/images/sponsors/` to reflect the current year's sponsors, making them 220x220
 * update `$sponsors` in `room.php` matching the value to each sponsor image file name
 * update `$sponsors_to_rooms` in `room.php` matching proper sponsor(s) to room and day by key from `$sponsors`
