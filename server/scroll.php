@@ -69,9 +69,10 @@ foreach ($xml->node AS $node) {
   $node->{'Time'} = preg_replace('/<[^>]*>/', '', $node->{'Time'});
   $node->{'Day'} = preg_replace('/<[^>]*>/', '', $node->{'Day'});
   
-  // Remove Spaces so we can use it for a CSS class
+  // Remove special chars in Topic from XML request so we can use it for a CSS class
   $node->{'Topic'} = preg_replace('/\s+/', '', $node->{'Topic'});
   $node->{'Topic'} = preg_replace('/\&/', 'and', $node->{'Topic'});
+  $node->{'Topic'} = preg_replace('/\@/', '', $node->{'Topic'});
 
 	$pos = strpos((string) $node->{'Time'}, ",");
 	$lpos = strrpos((string) $node->{'Time'}, ",");
