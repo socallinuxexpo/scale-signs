@@ -466,237 +466,102 @@ font {
   color: #fff !important
 }
 
-.AdaInitiativeAllyWorkshop {
-  background-color: #ffa200 !important;
-  color: #fff !important;
-}
-
-.ApacheBigtop {
-  background-color: #0A7EF2 !important;
-  color: #000 !important;
-}
-
-.BeginnerTutorials {
-  background-color: #3353AF !important;
-  color: #FFF !important;
-}
-
-.BigData {
-  background-color: #a6ceff !important;
-  color: #000 !important;
-}
-
-.BoFs {
-  background-color: #FFBC00 !important;
-  color: #000 !important;
-}
-
 .CloudNative {
-  background: #ffa200 !important;
-  color: #000 !important;
+  background-color: #6B79B4;
+  color: #FFF;
 }
-
-.Containers {
-  background: #ffa200 !important;
-  color: #000 !important;
-}
-
-.ContainerandVirtualization {
-  background: #ffa200 !important;
-  color: #000 !important;
-}
-
 .Developer {
-  background: #D65C09 !important;
-  color: #FFF !important;
+  background-color: #5795AB;
+  color: #FFF;
 }
-
 .DevOpsDayLA {
-  background: #565448 !important;
-  color: #fff !important;
+  background-color: #8881CB;
+  color: #FFF;
 }
-
-.DrupalCamp {
-  background: #0678be !important;
-  color: #fff !important;
-}
-
 .Embedded {
-  background: #004a4a !important;
-  color: #fff !important;
+  background-color: #85768A;
+  color: #FFF;
 }
-
 .Entertainment {
-  background: #004A4A !important;
-  color: #ff3 !important;
+  background-color: #AF5C4B;
+  color: #FFF;
 }
-
-.Fedora {
-  background: #A30C0C !important;
-  color: #fff !important;
-}
-
-.FileSystem {
-  background: #FFE81F !important;
-  color: #000 !important;
-}
-
 .General {
-  background: #97A67A !important;
-  color: #fff !important;
+  background-color: #B17C84;
+  color: #FFF;
 }
-
-.GLADCamp {
-    background: #0678be !important;
-    color: FFF !important;
- }
-
- .HAMRadio {
-    background: #96beef !important;
-    color:  #fff !important;
- }
-
-.HotApplications {
-  background: #ff0 !important;
-  color: #000 !important;
+.KernelandLowLevelSystems{
+  background-color: #AD9134;
+  color: #FFF;
 }
-
-.Kernel {
-  background: #AD9134 !important;
-  color: #fff !important;
-}
-
 .Keynote {
-  background: #D31111 !important;
-  color: #fff !important;
+  background-color: #8CADCB;
+  color: #FFF;
 }
-
-.Kubeflow {
-  background: #303030 !important;
-  color: #a6ceff !important;
-}
-
-.LegalandLicensing {
-  background: #FFF8DC !important;
-  color: #000 !important;
-}
-
-.LibreGraphics {
-  background: #ddd !important;
-  color: #11a311 !important;
-}
-
-.Mentoring {
-  background: #998876 !important;
-  color: #fff !important;
-}
-
-.MySQL {
-  background: #8B47BB !important;
-  color: #fff !important;
-}
-
-.NewtoSCALE {
-  background: #7FFF00 !important;
-  color: #228B22 !important;
-}
-
-.NextGeneration {
-  background: #96f74b !important;
-  color: #000 !important;
-}
-
-.OpenNMS {
-  background: #4D9E00 !important;
-  color: #fff !important; 
-}
-
 .Observability {
-  background: #000 !important;
-  color: #ff0 !important;
+  background-color: #F7511D;
+  color: #FFF;
 }
-
-.OpenData {
-  background: #6c6c6c !important;
-  color: #fff !important;
+.NextGeneration {
+  background-color: #66AEBC;
+  color: #FFF;
 }
-
+.NixCon {
+  background-color: #A7E5B4;
+  color: #000;
+}
+.OpenSourceAIandAppliedScience {
+  background-color: #BA9F78;
+  color: #FFF;
+}
 .OpenGovernment {
-  background: #a6ceff !important;
-  color: #d00 !important;
+  background-color: #6493B9;
+  color: #FFF;
 }
-
-.OpenMedical {
-  background: #00ffd8 !important;
-  color: #000 !important;
-}
-
-.OpenSourceinEnterprises {
-  background: #ffd672 !important;
-  color: #000 !important;
-}
-
-.OpenSourceSoftwareInEducation {
-  background: #72B20F !important;
-  color: #fff !important;
-}
-
-.openSUSE {
-  background: #669900 !important;
-  color: #000 !important;
-}
-
 .PostgreSQL {
-  background: #0AACA0 !important;
-  color: #fff !important;
+  background-color: #F1CC0C;
+  color: #FFF;
 }
-
-.Puppet {
-  background: #D2A3E8 !important;
-  color: #000 !important;
-}
-
-.ScaleU {
-  background: #405E5E !important;
-  color: #fff !important;
-}
-
-.Security {
-  background: #000 !important;
-  color: #00FF00 !important;
-}
-
-.Sponsored {
-  background: #007F06 !important;
-  color: #fff !important;
-}
-
 .SystemsandInfrastructure {
-  background: #D2A3E8 !important;
-  color: #000 !important;
+  background-color: #4B5D6B;
+  color: #FFF;
 }
-
-.Testing {
-  background: #EA18E5 !important;
-  color: #fff !important;
+.CareerDay{
+  background-color: #8A8C82;
+  color: #FFF;
 }
-
-.SysAdmin {
-  background: #C4C249 !important;
-  color: #000 !important;
+.ReproducibleandImmutableSoftware {
+  background-color: #955E77;
+  color: #FFF;
 }
-
+.KubernetesCommunityDay {
+  background-color: #6CAF4D;
+  color: #FFF;
+}
+.Workshops {
+  background-color: #3A3A3A;
+  color: #FFF;
+}
+.Security {
+  background-color: #CD5465;
+  color: #FFF;
+}
+.Sponsored {
+  background-color: #FC8B1C;
+  color: #FFF;
+}
 .Ubucon {
-  background: #774022 !important;
-  color: #fff !important;
+  background-color: #774022;
+  color: #FFF;
 }
-
 .UpSCALE {
-  background: #956140 !important;
-  color: #fff !important;
+  background-color: #956140;
+  color: #FFF;
 }
-
-.Youth {
-  background: #098C09 !important;
-  color: #fff !important;
+.FOSSHOME {
+  background-color: #8ADA20;
+  color: #FFF;
 }
+.DataonKubernetes {
+  background-color: #fff;
+  color: #000;

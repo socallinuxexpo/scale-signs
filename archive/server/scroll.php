@@ -41,26 +41,32 @@ $order = array();
 $times = array();
 
 $shorten_topics = array(
-	"Aerospace"      =>	"Aerospace",
-	"BoFs"           =>	"BoFs",
-	"CareerDay"      =>	"Career Day",
-	"CloudNative"    =>	"CloudNative",
-	"Developer"      =>	"Developer",
-	"DevOpsDayLA"    =>	"DevOps",
-	"Embedded"    =>	"Embedded",
-	"FOSS@HOME"    =>	"FOSS@HOME",
-	"General"        =>	"General",
-	"Keynote"        =>	"Keynote",
-	"KubernetesCommunityDay"        =>	"Kubernetes Community Day",
-	"MySQL"          =>	"MySQL",
-	"NextGeneration"  =>	"Next Generation",
-	"Observability"  =>	"Observability",
-	"OpenData"	 =>	"Open Data",
-	"OpenGovernment" =>	"Open Government",
-	"PosgreSQL"      =>	"PostgreSQL",
-	"Security"       =>	"Security",
-	"Sponsored"      =>	"Sponsored",
-	"SystemsandInfrastructure" =>	"Systems and Infrastructure",
+ "CareerDay"	=>	 "Career Day",
+ "CloudNative"	=>	 "Cloud Native",
+ "DataonKubernetes"	=>	 "Data on Kubernetes",
+ "Developer"	=>	 "Developer",
+ "DevOpsDayLA"	=>	 "DevOpsDay LA",
+ "Embedded"	=>	 "Embedded",
+ "FOSSHOME"	=>	 "FOSS@HOME",
+ "General"	=>	 "General",
+ "KernelandLowLevelSystems"	=>	 "Kernel and Low Level Systems",
+ "Keynote"	=>	 "Keynote",
+ "KubernetesCommunityDay"	=>	 "Kubernetes Community Day",
+ "MySQL"	=>	 "MySQL",
+ "NextGeneration"	=>	 "Next Generation",
+ "NixCon"	=>	 "NixCon",
+ "Observability"	=>	 "Observability",
+ "OpenGovernment"	=>	 "Open Government",
+ "OpenSourceAIandAppliedScience"	=>	 "Open Source AI and Applied Science",
+ "PostgreSQL"	=>	 "PostgreSQL",
+ "ReproducibleandImmutableSoftware"	=>	 "Reproducible and Immutable Software",
+ "Security"	=>	 "Security",
+ "Sponsored"	=>	 "Sponsored",
+ "SystemsandInfrastructure"	=>	 "Systems and Infrastructure",
+ "Ubucon"	=>	 "Ubucon",
+ "UpSCALE"	=>	 "UpSCALE",
+ "Workshops"	=>	 "Workshops"
+
 );
 
 foreach ($xml->node AS $node) {
@@ -69,9 +75,10 @@ foreach ($xml->node AS $node) {
   $node->{'Time'} = preg_replace('/<[^>]*>/', '', $node->{'Time'});
   $node->{'Day'} = preg_replace('/<[^>]*>/', '', $node->{'Day'});
   
-  // Remove Spaces so we can use it for a CSS class
+  // Remove special chars in Topic from XML request so we can use it for a CSS class
   $node->{'Topic'} = preg_replace('/\s+/', '', $node->{'Topic'});
   $node->{'Topic'} = preg_replace('/\&/', 'and', $node->{'Topic'});
+  $node->{'Topic'} = preg_replace('/\@/', '', $node->{'Topic'});
 
 	$pos = strpos((string) $node->{'Time'}, ",");
 	$lpos = strrpos((string) $node->{'Time'}, ",");
