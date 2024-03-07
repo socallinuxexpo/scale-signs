@@ -1,13 +1,6 @@
 <?php
 
-date_default_timezone_set('America/Los_Angeles');
-
-# set yearly (change if DST starts during SCaLE)
-# before "spring forward"
-
-# after "spring forward"
-# 21x
-$starttime = mktime(0, 0, 0, 3, 14, 2024) / 60;
+include 'constants.php';
 
 // Turn off all error reporting
 error_reporting(0);
@@ -20,8 +13,6 @@ curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $xmlresponse = curl_exec($ch);
 $xml = simplexml_load_string($xmlresponse);
-
-
 
 #if (!empty($_GET["year"]) && !empty($_GET["month"]) && !empty($_GET["day"]) && !empty($_GET["hour"]) && !empty($_GET["minute"])) {
 if (!empty($_GET["year"]) && !empty($_GET["month"]) && !empty($_GET["day"])) {
