@@ -8,9 +8,12 @@ date_default_timezone_set('America/Los_Angeles');
 #$starttime = mktime(0, 0, 0, 3, 5, 2020) / 60;
 #$starttime = mktime(0, 0, 0, 3, 9, 2023) / 60;
 
+
 # after "spring forward"
 #$starttime = mktime(23, 0, 0, 7, 27, 2022) / 60;
-$starttime = mktime(23, 0, 0, 3, 8, 2023) / 60;
+#$starttime = mktime(23, 0, 0, 3, 8, 2023) / 60;
+$starttime = mktime(0, 0, 0, 3, 14, 2024) / 60;
+
 
 $sponsors_for_room = array();
 $sponsor_class = "Room";
@@ -186,7 +189,7 @@ $gold_sponsors = array(
     "netknights",
     "perforce",
     "redhat",
-    "site24x7",
+    "site247",
     "suse",
 );
 
