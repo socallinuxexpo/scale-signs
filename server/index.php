@@ -62,26 +62,21 @@
   } else {
       if (!empty($_GET["room"])) {
         switch ($_GET["room"]) {
-            case 'ballroom-de':
             case 'ballroom-a':
             case 'ballroom-b':
             case 'ballroom-c':
+            case 'ballroom-de':
             case 'ballroom-f':
             case 'ballroom-g':
             case 'ballroom-h':
-            case 'ballroom-gh':
-            case 'ballroom-i':
-            case 'ballroom-j':
             case 'room-101':
             case 'room-103':
-            case 'room-104':
+            case 'room-105':
             case 'room-106':
             case 'room-107':
+            case 'room-209':
             case 'room-211':
             case 'room-212':
-            case 'room-209':
-            case 'room-205':
-            case 'room-215':
                 $year = $month = $day = $hour = $minute = '';
                 if (!empty($_GET["year"])) {
                     $year = $_GET['year'];
@@ -488,22 +483,22 @@ function avnoc() {
 function room($room, $year = '', $month = '', $day = '', $hour = '', $minute = '') {
 
 $room_lookup_table = array(
-    "ballroom-a"        => "BallroomA",
-    "ballroom-b"        => "BallroomB",
-    "ballroom-c"        => "BallroomC",
-    "ballroom-de"        => "BallroomDE",
-    "ballroom-f"        => "BallroomF",
-    "ballroom-g"        => "BallroomG",
-    "ballroom-h"        => "BallroomH",
-    "room-101"         => "Room101",
-    "room-103"         => "Room103",
-    "room-104"         => "Room104",
-    "room-105"         => "Room105",
-    "room-106"         => "Room106",
-    "room-107"         => "Room107",
-    "room-209"         => "Room209",
-    "room-211"         => "Room211",
-    "room-212"         => "Room212",
+    "ballroom-a"     => "BallroomA",
+    "ballroom-b"     => "BallroomB",
+    "ballroom-c"     => "BallroomC",
+    "ballroom-de"    => "BallroomDE",
+    "ballroom-f"     => "BallroomF",
+    "ballroom-g"     => "BallroomG",
+    "ballroom-h"     => "BallroomH",
+    "room-101"       => "Room101",
+    "room-103"       => "Room103",
+    "room-104"       => "Room104",
+    "room-105"       => "Room105",
+    "room-106"       => "Room106",
+    "room-107"       => "Room107",
+    "room-209"       => "Room209",
+    "room-211"       => "Room211",
+    "room-212"       => "Room212",
 );
 
 ?>
