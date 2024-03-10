@@ -62,26 +62,21 @@
   } else {
       if (!empty($_GET["room"])) {
         switch ($_GET["room"]) {
-            case 'ballroom-de':
             case 'ballroom-a':
             case 'ballroom-b':
             case 'ballroom-c':
+            case 'ballroom-de':
             case 'ballroom-f':
             case 'ballroom-g':
             case 'ballroom-h':
-            case 'ballroom-gh':
-            case 'ballroom-i':
-            case 'ballroom-j':
             case 'room-101':
             case 'room-103':
-            case 'room-104':
+            case 'room-105':
             case 'room-106':
             case 'room-107':
+            case 'room-209':
             case 'room-211':
             case 'room-212':
-            case 'room-209':
-            case 'room-205':
-            case 'room-215':
                 $year = $month = $day = $hour = $minute = '';
                 if (!empty($_GET["year"])) {
                     $year = $_GET['year'];
