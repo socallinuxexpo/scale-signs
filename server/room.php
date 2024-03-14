@@ -297,7 +297,7 @@ $sponsors_to_rooms = array(
             "Sunday"    => array(),
     ),
     "room-106"      => array(
-            "Thursday"  => array("nixos","antithesis","pdtpartners","flox","worldquant","anduril","replit","tweag","obsidian","determinate_systems"),
+            "Thursday"  => array("nixos","antithesis","pdtpartners","flox","worldquant","anduril","replit","tweag","determinate_systems"),
             "Friday"    => array("pingcap"),
             "Saturday"  => array(),
             "Sunday"    => array(),
