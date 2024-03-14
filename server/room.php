@@ -72,110 +72,90 @@ $room_lookup_table = array(
 );
 
 $sponsors = array(
-    "cloud_native_computing_foundation" => "cloud_native_computing_foundation.png",
-    "github"                            => "github.png",
-    "google"                            => "google.png",
-    "aws"                               => "aws.png",
-    "canonical"                         => "canonical.png",
-    "checkmk"                           => "checkmk.png",
-    "elastic"                           => "elastic.png",
-    "meta"                              => "meta.png", #facebook
-    "microsoft"                         => "microsoft.png",
-    "netknights"                        => "netknights.png",
-    "perforce"                          => "perforce.png",
-    "redhat"                            => "redhat.png",
-    "site247"                           =>    "site247.png",
-    "suse"                              => "suse.png",
-    "appscode"                          => "appscode.png",
-    "arm"                               =>    "arm.png",
-    "camunda"                           =>    "camunda.png",
-    "chainguard"                        => "chainguard.png",
-    "coder"                             => "coder.png",
-    "commitgo"                          => "commitgo.png",
-    "datadog"                           =>    "datadog.png",
-    "dbeaver"                           =>  "dbeaver.png",
-    "edb"                               =>    "edb.png",
-    "fleet"                             =>  "fleet.png",
-    "flox"                              => "flox.png",
-    "fossa"                             => "fossa.png",
-    "framework"                         => "framework.png",
-    "fujitsu"                           => "fujitsu.png",
-    "grafanalabs"                       =>  "grafanalabs.png",
-    "hasura"                            => "hasura.png",
-    "honeycomb"                         => "honeycomb.png",
-    "instaclustr"                       =>    "instaclustr.png",
-    "lakefs"                            => "lakefs.png",
-    "linbit"                            => "linbit.png",
-    "mysql"                             =>    "mysql.png", #oracle
-    "newrelic"                          =>    "newrelic.png",
-    "percona"                           =>    "percona.png",
-    "postgresql"                        =>    "postgresql.png",
-    "siglens"                           => "siglens.png",
-    "tailscale"                         =>  "tailscale.png",
-    "thunderbird"                       => "thunderbird.png",
-    "warp"                              => "warp.png",
-    "saucelabs"                         => "saucelabs.png",
-    "percona"                           =>    "percona.png",
-    "stormforge"                        =>    "stormforge.png",
-    "ulia"                              =>    "ulia.png",
-    "pingcap"                           =>    "pingcap.png",
-    "cloud_native_computing_foundation" => "cloud_native_computing_foundation.png",
-    "google"                            => "google.png",
-    "redhat"                            => "redhat.png",
-    "fosslife"                          => "fosslife.png",
-    "freebsd"                           => "freebsd.png",
-    "kubecareers"                       => "kubecareers.png",
-    "kubeevents"                        => "kubeevents.png",
-    "linuxmagazine"                     => "linuxmagazine.png",
-    "opensource_jobhub"                 => "opensource_jobhub.png",
-    "stickermule"                       =>  "stickermule.png",
-
-    ### "9to5linux"                         =>    "9to5linux.png",
-    ### "adminmagazine"                     =>    "adminmagazine.png",
-    ### "allegrograph"                      =>    "allegrograph.png", #franz
-    ### "aws"                               =>    "aws.png",
-    ### "chronosphere"                      =>    "chronosphere.png",
-    ### "cloudbees"                         =>    "cloudbees.png",
-    ### "coastlinecollege"                  =>    "coastlinecollege.png",
-    ### "courier"                           =>    "courier.png",
-    ### "deepsource"                        =>    "deepsource.png",
-    ### "digitalocean"                      =>    "digitalocean.png",
-    ### "dynatrace"                         =>    "dynatrace.png",
-    ### "faun"                              =>    "faun.png",
-    ### "freebsd_foundation"                =>    "freebsd_foundation.png",
-    ### "era"                               =>    "era.png",
-    ### "gradle"                            =>    "gradle.png",
-    ### "gremlin"                           =>    "gremlin.png",
-    ### "harness"                           =>    "harness.png",
-    ### "hulanetworks"                      =>    "hulanetworks.png",
-    ### "humio"                             =>    "humio.png", #crowdstike
-    ### "intellibus"                        =>    "intellibus.png",
-    ### "itopia"                            =>    "itopia.png",
-    ### "lpi"                               =>    "lpi.png",
-    ### "mattermost"                        =>    "mattermost.png",
-    ### "mondoo"                            =>    "mondoo.png",
-    ### "nirmata"                           =>    "nirmata.png",
-    ### "observe"                           =>    "observe.jpg",
-    ### "octopusdeploy"                     =>    "octopusdeploy.png",
-    ### "opennms"                           =>    "opennms.png",
-    ### "opensuse"                          =>    "opensuse.png",
-    ### "pogo_linux"                        =>    "pogo_linux.png",
-    ### "portworx"                          =>    "portworx.png",
-    ### "replicated"                        =>    "replicated.png",
-    ### "scoutapm"                          =>    "scoutapm.png",
-    ### "spacelift"                         =>    "spacelift.png",
-    ### "splunk"                            =>    "splunk.png",
-    ### "stacklet"                          =>    "stacklet.png",
-    ### "streamnative"                      =>    "streamnative.png",
-    ### "system76"                          =>    "system76.png",
-    ### "uffizzi"                           =>    "uffizzi.png",
-    ### "veryant"                           =>    "veryant.png",
-    ### "vmware"                            =>    "vmware.png",
-    ### "wrccdc"                            =>    "westernregionalcyberdefense.png",
+    "anduril"	            =>  "anduril.png",
+    "antithesis"	        =>  "antithesis.jpeg",
+    "appscode"              =>  "appscode.png",
+    "arm"                   =>  "arm.png",
+    "attendee_survey"	    =>  "attendee_survey.png",
+    "aws"                   =>  "aws.png",
+    "camunda"               =>  "camunda.png",
+    "canonical"             =>  "canonical.png",
+    "chainguard"            =>  "chainguard.png",
+    "checkmk"               =>  "checkmk.png",
+    "chronosphere"	        =>  "chronosphere.svg",
+    "cncf"                  =>  "cloud_native_computing_foundation.png",
+    "coder"                 =>  "coder.png",
+    "commitgo"              =>  "commitgo.png",
+    "couchbase"	            =>  "couchbase.png",
+    "datadog"               =>  "datadog.png",
+    "dbeaver"               =>  "dbeaver.png",
+    "determinate_systems"   =>  "determinate_systems.png",
+    "dnsimple"	            =>  "dnsimple.png",
+    "doppler"	            =>  "doppler.svg",
+    "edb"                   =>  "edb.png",
+    "elastic"               =>  "elastic.png",
+    "everbridge"	        =>  "everbridge.png",
+    "fleet"                 =>  "fleet.png",
+    "flox"                  =>  "flox.png",
+    "fossa"                 =>  "fossa.png",
+    "fosslife"              =>  "fosslife.png",
+    "framework"             =>  "framework.png",
+    "freebsd"               =>  "freebsd.png",
+    "fujitsu"               =>  "fujitsu.png",
+    "github"                =>  "github.png",
+    "google"                =>  "google.png",
+    "grafanalabs"           =>  "grafanalabs.png",
+    "hasura"                =>  "hasura.png",
+    "honeycomb"             =>  "honeycomb.png",
+    "instaclustr"           =>  "instaclustr.png",
+    "kubecareers"           =>  "kubecareers.png",
+    "kubeevents"            =>  "kubeevents.png",
+    "kwaai"	                =>  "kwaai.png",
+    "lakefs"                =>  "lakefs.png",
+    "linbit"                =>  "linbit.png",
+    "linuxmagazine"         =>  "linuxmagazine.png",
+    "lvwn"                  =>  "lvwn.png",
+    "meta"                  =>  "meta.png", #facebook
+    "microsoft"             =>  "microsoft.png",
+    "mysql"                 =>  "mysql.png", #oracle
+    "netknights"            =>  "netknights.png",
+    "newrelic"              =>  "newrelic.png",
+    "nixos"	                =>  "nixos.png",
+    "obsidian"	            =>  "obsidian.svg",
+    "opensource_jobhub"     =>  "opensource_jobhub.png",
+    "pdtpartners"	        =>  "pdtpartners.jpeg",
+    "percona"               =>  "percona.png",
+    "perforce"              =>  "perforce.png",
+    "pingcap"               =>  "pingcap.png",
+    "postgresql"            =>  "postgresql.png",
+    "redhat"                =>  "redhat.png",
+    "replit"	            =>  "replit.png",
+    "retia"                 =>  "retia.png",
+    "saucelabs"             =>  "saucelabs.png",
+    "securityfwd"           =>  "securityfwd.png",
+    "semaphore"	            =>  "semaphore.png",
+    "siglens"               =>  "siglens.png",
+    "sigscalr"	            =>  "sigscalr.jpeg",
+    "site247"               =>  "site247.png",
+    "solarwinds"	        =>  "solarwinds.jpg",
+    "stickermule"           =>  "stickermule.png",
+    "stormforge"	        =>  "stormforge.png",
+    "suse"                  =>  "suse.png",
+    "tailscale"             =>  "tailscale.png",
+    "tigera"                =>  "tigera.png",
+    "thunderbird"	        =>  "thunderbird.png",
+    "trackit"	            =>  "trackit.png",
+    "tweag"	                =>  "tweag.png",
+    "uila"	                =>  "ulia.png",
+    "victoriametrics"	    =>  "victoriametrics.png",
+    "warp"                  =>  "warp.png",
+    "wiz"                   =>  "wiz.png",
+    "worldquant"	        =>  "worldquant.jpeg",
 );
 
 $diamond_platinum_sponsors = array(
-    "cloud_native_computing_foundation",
+    "cncf",
+    "github",
     "google",
 );
 
@@ -202,7 +182,7 @@ $silver_sponsors = array(
     "commitgo",
     "datadog",
     "dbeaver",
-    "edb",
+    "dbhawk",
     "fleet",
     "flox",
     "fossa",
@@ -210,7 +190,7 @@ $silver_sponsors = array(
     "fujitsu",
     "grafanalabs",
     "hasura",
-    "honecomb",
+    "honeycomb",
     "instaclustr",
     "lakefs",
     "linbit",
@@ -222,7 +202,7 @@ $silver_sponsors = array(
     "tailscale",
     "thunderbird",
     "warp",
-    "percona",
+    "wiz",
 );
 
 $media_sponsors = array(
@@ -231,70 +211,76 @@ $media_sponsors = array(
     "kubecareers",
     "kubeevents",
     "linuxmagazine",
+    "lvwn",
     "opensource_jobhub",
+    "retia",
+    "securityfwd",
     "stickermule",
+    "tuxdigital",
 );
 
 $fancy_sponsors = array(
     "intel",       #registration
-    "tailscale",   #reception
-    "ceph",        #special-event
-    "gitlab",      #speaker-track
-    "the_linux_foundation_training", #speaker-track
+    "saucelabs",   #reception
+    "percona",     #special-event
+    "stormforge",  #special-event
+    "ulia",        #special-event
+    "cncf",        #speaker-track
+    "pingcap",     #speaker-track
 );
 
 $sponsors_to_rooms = array(
     "ballroom-a"    => array(
-            "Thursday"  => array(),
-            "Friday"    => array(),
+            "Thursday"  => array("attendee_survey","tigera","uila","stormforge","percona","chronosphere","redhat"),
+            "Friday"    => array("attendee_survey","tigera","uila","stormforge","percona","chronosphere","redhat"),
             "Saturday"  => array(),
             "Sunday"    => array(),
     ),
     "ballroom-b"    => array(
-            "Thursday"  => array(),
-            "Friday"    => array(),
+            "Thursday"  => array("tigera","uila","stormforge","percona","chronosphere","redhat","attendee_survey"),
+            "Friday"    => array("tigera","uila","stormforge","percona","chronosphere","redhat","attendee_survey"),
             "Saturday"  => array(),
             "Sunday"    => array(),
     ),
     "ballroom-c"    => array(
-            "Thursday"  => array(),
-            "Friday"    => array(),
+            "Thursday"  => array("canonical"),
+            "Friday"    => array("canonical"),
             "Saturday"  => array(),
             "Sunday"    => array(),
     ),
     "ballroom-de"   => array(
             "Thursday"  => array(),
-            "Friday"    => array(),
+            "Friday"    => array("victoriametrics","semaphore","doppler","solarwinds","honeycomb","sigscalr","dnsimple","trackit","everbridge","saucelabs","couchbase"),
             "Saturday"  => array(),
             "Sunday"    => array(),
     ),
     "ballroom-f"    => array(
-            "Thursday"  => array(),
+            "Thursday"  => array("redhat","suse"),
             "Friday"    => array(),
             "Saturday"  => array(),
             "Sunday"    => array(),
     ),
     "ballroom-g"    => array(
-            "Thursday"  => array(),
-            "Friday"    => array(),
+            "Thursday"  => array("postgresql","percona"),
+            "Friday"    => array("postgresql","percona"),
             "Saturday"  => array(),
             "Sunday"    => array(),
     ),
     "ballroom-h"    => array(
-            "Thursday"  => array(),
-            "Friday"    => array(),
+            "Thursday"  => array("postgresql","percona"),
+            "Friday"    => array("postgresql","percona"),
             "Saturday"  => array(),
             "Sunday"    => array(),
     ),
     "room-101"      => array(
             "Thursday"  => array(),
-            "Friday"    => array(),
+            "Friday"    => array("nixos","antithesis","pdtpartners","flox","worldquant","anduril","replit","tweag","obsidian","determinate_systems"),
             "Saturday"  => array(),
             "Sunday"    => array(),
     ),
     "room-103"      => array(
             "Thursday"  => array(),
-            "Friday"    => array(),
+            "Friday"    => array("nixos","antithesis","pdtpartners","flox","worldquant","anduril","replit","tweag","obsidian","determinate_systems"),
             "Saturday"  => array(),
             "Sunday"    => array(),
     ),
@@ -311,8 +297,8 @@ $sponsors_to_rooms = array(
             "Sunday"    => array(),
     ),
     "room-106"      => array(
-            "Thursday"  => array(),
-            "Friday"    => array(),
+            "Thursday"  => array("nixos","antithesis","pdtpartners","flox","worldquant","anduril","replit","tweag","determinate_systems"),
+            "Friday"    => array("pingcap"),
             "Saturday"  => array(),
             "Sunday"    => array(),
     ),
@@ -330,7 +316,7 @@ $sponsors_to_rooms = array(
     ),
     "room-209"      => array(
             "Thursday"  => array(),
-            "Friday"    => array(),
+            "Friday"    => array("camunda","freebsd_foundation"),
             "Saturday"  => array(),
             "Sunday"    => array(),
     ),
@@ -341,7 +327,7 @@ $sponsors_to_rooms = array(
             "Sunday"    => array(),
     ),
     "room-212"      => array(
-            "Thursday"  => array(),
+            "Thursday"  => array("kwaai"),
             "Friday"    => array(),
             "Saturday"  => array(),
             "Sunday"    => array(),
@@ -554,7 +540,7 @@ asort($order, SORT_NUMERIC);
                                 <h2 style='text-align: center;'>Thank You to our Diamond and Platinum Sponsors</h2>
                                 <?php
                                 foreach ($diamond_platinum_sponsors as $sponsor) {
-                                    echo "<img src='images/sponsors/" . $sponsors[$sponsor] . "' width='165' height='165' style='margin: 15px';>";
+                                    echo "<img src='images/sponsors/" . $sponsors[$sponsor] . "' style='margin: 15px';>";
                                 }
                                 ?>
                             </div>
@@ -570,7 +556,7 @@ asort($order, SORT_NUMERIC);
                         <h2 style='text-align: center;'>Thank You to our <?php echo "$sponsor_class "; if (count($sponsors_for_room) > 1) { echo "Sponsors"; } else { echo "Sponsor"; } ?></h2>
                         <?php
                         foreach ($sponsors_for_room as $sponsor) {
-                            echo "<img src='images/sponsors/" . $sponsors[$sponsor] . "' height='" . $sponsor_image_size ."' width='" . $sponsor_image_size . "' style='margin: 15px';>";
+                            echo "<img src='images/sponsors/" . $sponsors[$sponsor] . "' style='margin: 15px';>";
                         }
                         ?>
                     </div>
