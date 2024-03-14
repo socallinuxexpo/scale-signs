@@ -130,7 +130,7 @@ $sponsors = array(
     "postgresql"            =>  "postgresql.png",
     "redhat"                =>  "redhat.png",
     "replit"	            =>  "replit.webp",
-    "retia"                 =>  "retian.png",
+    "retia"                 =>  "retia.png",
     "saucelabs"             =>  "saucelabs.png",
     "securityfwd"           =>  "securityfwd.png",
     "semaphore"	            =>  "semaphore.png",
@@ -142,10 +142,11 @@ $sponsors = array(
     "stormforge"	        =>  "stormforge.png",
     "suse"                  =>  "suse.png",
     "tailscale"             =>  "tailscale.png",
+    "tigera"                =>  "tigera.png",
     "thunderbird"	        =>  "thunderbird.png",
     "trackit"	            =>  "trackit.png",
     "tweag"	                =>  "tweag.svg",
-    "ulia"	                =>  "ulia.png",
+    "uila"	                =>  "ulia.png",
     "victoriametrics"	    =>  "victoriametrics.png",
     "warp"                  =>  "warp.png",
     "wiz"                   =>  "wiz.png",
@@ -230,8 +231,8 @@ $fancy_sponsors = array(
 
 $sponsors_to_rooms = array(
     "ballroom-a"    => array(
-            "Thursday"  => array("tigera","uila","stormforge","percona","chronosphere","redhat","attendee_survey"),
-            "Friday"    => array("tigera","uila","stormforge","percona","chronosphere","redhat","attendee_survey"),
+            "Thursday"  => array("attendee_survey","tigera","uila","stormforge","percona","chronosphere","redhat"),
+            "Friday"    => array("attendee_survey","tigera","uila","stormforge","percona","chronosphere","redhat"),
             "Saturday"  => array(),
             "Sunday"    => array(),
     ),
@@ -539,7 +540,7 @@ asort($order, SORT_NUMERIC);
                                 <h2 style='text-align: center;'>Thank You to our Diamond and Platinum Sponsors</h2>
                                 <?php
                                 foreach ($diamond_platinum_sponsors as $sponsor) {
-                                    echo "<img src='images/sponsors/" . $sponsors[$sponsor] . "' width='165' height='165' style='margin: 15px';>";
+                                    echo "<img src='images/sponsors/" . $sponsors[$sponsor] . "' style='margin: 15px';>";
                                 }
                                 ?>
                             </div>
@@ -555,7 +556,7 @@ asort($order, SORT_NUMERIC);
                         <h2 style='text-align: center;'>Thank You to our <?php echo "$sponsor_class "; if (count($sponsors_for_room) > 1) { echo "Sponsors"; } else { echo "Sponsor"; } ?></h2>
                         <?php
                         foreach ($sponsors_for_room as $sponsor) {
-                            echo "<img src='images/sponsors/" . $sponsors[$sponsor] . "' height='" . $sponsor_image_size ."' width='" . $sponsor_image_size . "' style='margin: 15px';>";
+                            echo "<img src='images/sponsors/" . $sponsors[$sponsor] . "' style='margin: 15px';>";
                         }
                         ?>
                     </div>
