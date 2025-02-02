@@ -4,17 +4,18 @@ date_default_timezone_set('America/Los_Angeles');
 
 # set yearly (change if DST starts during SCaLE)
 # before "spring forward"
+# 22x (DST starts 3/9)
+$starttime = mktime(0, 0, 0, 3, 6, 2025) / 60;
 
 # after "spring forward"
-# 21x
-$starttime = mktime(0, 0, 0, 3, 14, 2024) / 60;
+
 
 // Turn off all error reporting
 error_reporting(0);
 
 include 'ChromePhp.php';
 
-$url = 'http://www.socallinuxexpo.org/scale/21x/sign.xml';
+$url = 'http://www.socallinuxexpo.org/scale/22x/sign.xml';
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
