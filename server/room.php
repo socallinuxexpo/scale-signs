@@ -7,12 +7,13 @@ date_default_timezone_set('America/Los_Angeles');
 # before "spring forward"
 #$starttime = mktime(0, 0, 0, 3, 5, 2020) / 60;
 #$starttime = mktime(0, 0, 0, 3, 9, 2023) / 60;
-
+# 22x (DST starts 3/9)
+$starttime = mktime(0, 0, 0, 3, 6, 2025) / 60;
 
 # after "spring forward"
 #$starttime = mktime(23, 0, 0, 7, 27, 2022) / 60;
 #$starttime = mktime(23, 0, 0, 3, 8, 2023) / 60;
-$starttime = mktime(0, 0, 0, 3, 14, 2024) / 60;
+
 
 
 $sponsors_for_room = array();
@@ -334,7 +335,7 @@ $sponsors_to_rooms = array(
     ),
 );
 
-$url = 'http://www.socallinuxexpo.org/scale/21x/sign.xml';
+$url = 'http://www.socallinuxexpo.org/scale/22x/sign.xml';
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
