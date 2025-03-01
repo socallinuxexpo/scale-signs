@@ -4,16 +4,12 @@ date_default_timezone_set('America/Los_Angeles');
 
 # set yearly (change if DST starts during SCaLE)
 
+# set yearly (change if DST starts during SCaLE)
 # before "spring forward"
-#$starttime = mktime(0, 0, 0, 3, 5, 2020) / 60;
-#$starttime = mktime(0, 0, 0, 3, 9, 2023) / 60;
-
+$starttime = mktime(0, 0, 0, 3, 6, 2025) / 60;
 
 # after "spring forward"
-#$starttime = mktime(23, 0, 0, 7, 27, 2022) / 60;
-#$starttime = mktime(23, 0, 0, 3, 8, 2023) / 60;
-$starttime = mktime(0, 0, 0, 3, 14, 2024) / 60;
-
+#$starttime = mktime(23, 0, 0, 3, 5, 2025) / 60;
 
 $sponsors_for_room = array();
 $sponsor_class = "Room";
