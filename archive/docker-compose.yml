@@ -2,8 +2,6 @@ version: '2'
 
 services:
   signs:
-    env_file:
-      - secrets.env
     image: signs
     build:
       context: .

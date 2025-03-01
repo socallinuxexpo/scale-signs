@@ -298,7 +298,6 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
       // Hide the schedule until we've loaded the data
       $('#schedule').hide();
       $('#sponsors').hide();
-      $('#twitter-stream-content').hide();
 
       var loadScheduleUrl = "scroll.php?year=<?php echo $year;?>&month=<?php echo $month;?>&day=<?php echo $day;?>&hour=<?php echo $hour;?>&minute=<?php echo $minute;?>";
       $("#schedule").load(loadScheduleUrl);
@@ -311,16 +310,6 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
       var loadSponsorsUrlTwo = "sponsors.php?group=two";
       $("#sponsors2").load(loadSponsorsUrlTwo);
       $("#sponsors2").show();
-
-      var loadTwitterUrl = "twitter.php";
-      $("#twitter-stream-content").load(loadTwitterUrl);
-      $('#twitter-stream-content').show();
-
-      /* Reload and Refresh Twitter once every 5 mins */
-      var twitterRefreshId = setInterval(function() {
-        //("#twitter-stream-content").fadeOut("slow").load(loadTwitterUrl).fadeIn("slow");
-        $("#twitter-stream-content").load(loadTwitterUrl);
-      }, 300000);
 
       /* Reload & Shuffle sponsors every 10 minutes */
       var sponsors1RefreshId = setInterval(function() {
