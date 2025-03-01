@@ -6,7 +6,6 @@ digital signs for the Southern California Linux Expo
 
 * php5.4 with Apache httpd
 * pulls an XML version of the conference speaking schedule down for the public socallinuxexpo.org web server
-* pulls a twitter feed of SCaLE related hashtags
 * sends formatted HTML to clients with the scale logo, wifi password, a scrolling schedule, sponsor logos, and relevant tweets
 
 ### Client
@@ -93,7 +92,6 @@ There is a bit of manual effort necessary from year to year. These tasks include
 * update the `$sponsors` arrays in `sponsors.php` attempting to distribute the list evenly across both case statements
 * update the `$diamond_platinum_sponsors` array in `room.php` with the current year diamond and platinum sponsors
 * update the `$gold_sponsors` array in `room.php` with the current year gold sponsors
-* verify OAUTH keys and secrets being passed to `$settings` in `twitter.php` via `secrets.env` are functional
 
 ### Tips
 
