@@ -41,6 +41,7 @@ Optimized for viewing at `1024x768` using one of the following room values:
 * room-105
 * room-106
 * room-107
+* room-208
 * room-209
 * room-211
 * room-212
@@ -68,8 +69,8 @@ It is sometimes necessary to test what the displays will look like at times othe
 This is available in both Schedule and Room views
 
 examples:
-* `http://signs.scale.lan/?year=2019&month=3&day=7&hour=9&minute=10`
-* `http://signs.scale.lan/?room=ballroom-de&year=2019&month=3&day=8&hour=14&minute=33`
+* `http://signs.scale.lan/?year=2025&month=3&day=8&hour=9&minute=10`
+* `http://signs.scale.lan/?room=ballroom-de&year=2025&month=3&day=8&hour=14&minute=33`
 > **NOTE:** This will not work unless `$starttime` is correctly set for the current year of the show
 
 ### Yearly Tasks
@@ -97,11 +98,15 @@ There is a bit of manual effort necessary from year to year. These tasks include
 
 Get rooms in use this year with:
 
-`export THIS_SCALE=19x; curl http://www.socallinuxexpo.org/scale/${THIS_SCALE}/sign.xml | grep "<Room>" | cut -d ">" -f 2 | cut -d "<" -f 1 | sort | uniq`
+```bash
+export THIS_SCALE=22x; curl http://www.socallinuxexpo.org/scale/${THIS_SCALE}/sign.xml | grep "<Room>" | cut -d ">" -f 2 | cut -d "<" -f 1 | sort | uniq`
+```
 
 Get shortened topic list this year with:
 
-`export THIS_SCALE=19x; curl -q http://www.socallinuxexpo.org/scale/${THIS_SCALE}/sign.xml | grep "<Topic>" | cut -d ">" -f 2 | cut -d "<" -f 1 | sort | uniq | sed 's/ //g'`
+```bash
+export THIS_SCALE=22x; curl -q http://www.socallinuxexpo.org/scale/${THIS_SCALE}/sign.xml | grep "<Topic>" | cut -d ">" -f 2 | cut -d "<" -f 1 | sort | uniq | sed 's/ //g'`
+```
 
 ### Conference Operations
 

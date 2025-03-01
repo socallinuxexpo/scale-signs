@@ -71,9 +71,11 @@
             case 'ballroom-h':
             case 'room-101':
             case 'room-103':
+            case 'room-104':
             case 'room-105':
             case 'room-106':
             case 'room-107':
+            case 'room-208':
             case 'room-209':
             case 'room-211':
             case 'room-212':
@@ -485,6 +487,7 @@ $room_lookup_table = array(
     "room-105"       => "Room105",
     "room-106"       => "Room106",
     "room-107"       => "Room107",
+    "room-208"       => "Room208",
     "room-209"       => "Room209",
     "room-211"       => "Room211",
     "room-212"       => "Room212",

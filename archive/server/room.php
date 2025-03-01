@@ -66,6 +66,7 @@ $room_lookup_table = array(
     "room-105"       => "Room105",
     "room-106"       => "Room106",
     "room-107"       => "Room107",
+    "room-208"       => "Room208",
     "room-209"       => "Room209",
     "room-211"       => "Room211",
     "room-212"       => "Room212",
@@ -308,7 +309,7 @@ $sponsors_to_rooms = array(
             "Saturday"  => array(),
             "Sunday"    => array(),
     ),
-    "room-205"      => array(
+    "room-208"      => array(
             "Thursday"  => array(),
             "Friday"    => array(),
             "Saturday"  => array(),
