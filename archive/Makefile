@@ -1,5 +1,6 @@
 # Docker parameters
-DOCKERCMD = docker
+DOCKERCMD ?= docker
+COMPOSECMD ?= $(DOCKERCMD)-compose
 # TODO: dockerhub for scale eventually
 DOCKERREPO = sarcasticadmin
 IMAGENAME ?= scale-signs
@@ -15,10 +16,10 @@ docker-push: docker-build
 	$(DOCKERCMD) push "$(DOCKERREPO)/$(IMAGENAME):$(DOCKERVERSION)"
 
 build: test
-	docker-compose build
+	$(COMPOSECMD) build
 
-run: build
-	docker-compose up -d
+run: test
+	$(COMPOSECMD) up -d
 
 test:
 	bash scripts/check_images.sh
