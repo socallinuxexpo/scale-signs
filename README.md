@@ -63,11 +63,11 @@ It is sometimes necessary to test what the displays will look like at times othe
 * month
 * day
 * hour
-* minute 
+* minute
 
 This is available in both Schedule and Room views
 
-examples: 
+examples:
 * `http://signs.scale.lan/?year=2019&month=3&day=7&hour=9&minute=10`
 * `http://signs.scale.lan/?room=ballroom-de&year=2019&month=3&day=8&hour=14&minute=33`
 > **NOTE:** This will not work unless `$starttime` is correctly set for the current year of the show
@@ -141,4 +141,8 @@ If DST changes during SCaLE, the next morning `$starttime` in `scroll.php` and `
 1. `touch secrets.env` to omit secrets or copy `sample-secrets.env` to `secrets.env` and populate to test with them
 2. `docker-compose build` (repeat this every time code is changed to view results)
 3. `docker-compose up -d`
-4. browse to `http://localhost`
+4. browse to `http://localhost:8088`
+
+### Podman
+
+If you prefer to use Podman, all `docker` and `docker-compose` invocations can be replaced with `podman` and `podman-compose`
