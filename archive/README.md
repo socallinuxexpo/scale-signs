@@ -152,10 +152,9 @@ If DST changes during SCaLE, the next morning `$starttime` in `scroll.php` and `
 * docker
 * docker-compose
 
-1. `touch secrets.env` to omit secrets or copy `sample-secrets.env` to `secrets.env` and populate to test with them
-2. `docker-compose build` (repeat this every time code is changed to view results)
-3. `docker-compose up -d`
-4. browse to `http://localhost:8088`
+1. `docker-compose build` (repeat this every time code is changed to view results)
+2. `docker-compose up -d`
+3. browse to `http://localhost:8088`
 
 ### Podman
 
