@@ -44,10 +44,10 @@ body {
   width: 99%;
 }
 
-font { 
-  font-family: 'Arial Black', Gadget, sans-serif; 
-  color: black; 
-  text-align: center; 
+font {
+  font-family: 'Arial Black', Gadget, sans-serif;
+  color: black;
+  text-align: center;
 }
 
 #contents {
@@ -55,7 +55,7 @@ font {
   -webkit-border-radius: 0px 0px 6px 6px;
   -moz-border-radius: 0px 0px 6px 6px;
   border-radius: 0px 0px 6px 6px;
-  padding: 0px 5px 0px 25px;  
+  padding: 0px 5px 0px 25px;
   margin-left: 5px;
 }
 
@@ -74,8 +74,8 @@ font {
 
 .roomHeader {
   font-weight: bold;
-  text-align: center; 
-  background-color: #ffc000;  
+  text-align: center;
+  background-color: #ffc000;
   /*
   -webkit-border-radius: 6px 6px 0px 0px;
   -moz-border-radius: 6px 6px 0px 0px;
@@ -107,7 +107,7 @@ font {
 #scheduleCarousel {
   background: #fff;
   box-shadow: 0 0 30px #4A4A4A;
-  font-size: 170% !important;  
+  font-size: 170% !important;
   /* font-size: 1.5em; */
 }
 
@@ -151,7 +151,7 @@ font {
   -webkit-border-radius: 6px 6px 6px 6px;
   -moz-border-radius: 6px 6px 6px 6px;
   border-radius: 6px 6px 6px 6px;
-  box-shadow: 0 0 30px #4A4A4A;    
+  box-shadow: 0 0 30px #4A4A4A;
 }
 
 .brand {
@@ -204,7 +204,7 @@ font {
 	line-height: 65px;
     margin-right: 12px;
 	/* padding-right: 2px; */
-	
+
 	/* This setting affects how much the cards stand out from the page.
 	 * Lower numbers make the effect wider/larger, higher make it more shallow. */
 	-webkit-perspective: 70;
@@ -302,7 +302,7 @@ font {
 	width: 52px;
 	/* height: 66px; */
 	position: relative;
-	
+
 	/* This setting affects how much the cards stand out from the page.
 	 * Lower numbers make the effect wider/larger, higher make it more shallow. */
 	-webkit-perspective: 70;
@@ -409,7 +409,7 @@ font {
   border: 1px solid rgba(255, 215, 0, 0.5);
   background-color: rgba(255, 215, 0, 0.1);
   -webkit-background-clip: padding-box; /* for Safari */
-  background-clip: padding-box; 
+  background-clip: padding-box;
 }
 
 .tweet-time {
@@ -428,7 +428,7 @@ font {
 .tweet-pic {
   border: 2px solid rgba(56, 77, 96, 0.5);
   -webkit-background-clip: padding-box; /* for Safari */
-  background-clip: padding-box; 
+  background-clip: padding-box;
 }
 
 .span2.knobspan {
@@ -465,10 +465,25 @@ font {
   background-color: rgb(204, 34, 153) !important;
   color: #fff !important
 }
-
+.AppliedScience {
+  background-color: #F1EE0E;
+  color: #FFF;
+}
+.BoFs {
+  background-color: #c99e14;
+  color: #FFF;
+}
+.CareerDay{
+  background-color: #8A8C82;
+  color: #FFF;
+}
 .CloudNative {
   background-color: #6B79B4;
   color: #FFF;
+}
+.DataonKubernetes {
+  background-color: #fff;
+  color: #000;
 }
 .Developer {
   background-color: #5795AB;
@@ -486,8 +501,16 @@ font {
   background-color: #AF5C4B;
   color: #FFF;
 }
+.FOSSHOME {
+  background-color: #8ADA20;
+  color: #FFF;
+}
 .General {
   background-color: #B17C84;
+  color: #FFF;
+}
+.KwaaiSummit{
+  background-color: #1bb80c;
   color: #FFF;
 }
 .KernelandLowLevelSystems{
@@ -498,9 +521,17 @@ font {
   background-color: #8CADCB;
   color: #FFF;
 }
-.Observability {
-  background-color: #F7511D;
+.KubernetesCommunityDay {
+  background-color: #6CAF4D;
   color: #FFF;
+}
+.LibreGraphics{
+  background-color: #565856;
+  color: #FFF;
+}
+.MySQL {
+  background-color: #2aa889;
+  color: #000;
 }
 .NextGeneration {
   background-color: #66AEBC;
@@ -510,6 +541,14 @@ font {
   background-color: #A7E5B4;
   color: #000;
 }
+.Observability {
+  background-color: #F7511D;
+  color: #FFF;
+}
+.OpenSourceAI {
+  background-color: #54bce6;
+  color: #FFF;
+}
 .OpenSourceAIandAppliedScience {
   background-color: #BA9F78;
   color: #FFF;
@@ -518,28 +557,20 @@ font {
   background-color: #6493B9;
   color: #FFF;
 }
+.OpenInfraDays {
+  background-color: #a0d87a;
+  color: #FFF;
+}
+.PlanetNix {
+  background-color: #f05ee8;
+  color: #FFF;
+}
 .PostgreSQL {
   background-color: #F1CC0C;
   color: #FFF;
 }
-.SystemsandInfrastructure {
-  background-color: #4B5D6B;
-  color: #FFF;
-}
-.CareerDay{
-  background-color: #8A8C82;
-  color: #FFF;
-}
 .ReproducibleandImmutableSoftware {
   background-color: #955E77;
-  color: #FFF;
-}
-.KubernetesCommunityDay {
-  background-color: #6CAF4D;
-  color: #FFF;
-}
-.Workshops {
-  background-color: #3A3A3A;
   color: #FFF;
 }
 .Security {
@@ -550,6 +581,14 @@ font {
   background-color: #FC8B1C;
   color: #FFF;
 }
+.SunSecCon {
+  background-color: #f5777e;
+  color: #FFF;
+}
+.SystemsandInfrastructure {
+  background-color: #4B5D6B;
+  color: #FFF;
+}
 .Ubucon {
   background-color: #774022;
   color: #FFF;
@@ -558,10 +597,7 @@ font {
   background-color: #956140;
   color: #FFF;
 }
-.FOSSHOME {
-  background-color: #8ADA20;
+.Workshops {
+  background-color: #3A3A3A;
   color: #FFF;
 }
-.DataonKubernetes {
-  background-color: #fff;
-  color: #000;

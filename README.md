@@ -6,7 +6,6 @@ digital signs for the Southern California Linux Expo
 
 * php5.4 with Apache httpd
 * pulls an XML version of the conference speaking schedule down for the public socallinuxexpo.org web server
-* pulls a twitter feed of SCaLE related hashtags
 * sends formatted HTML to clients with the scale logo, wifi password, a scrolling schedule, sponsor logos, and relevant tweets
 
 ### Client
@@ -42,6 +41,7 @@ Optimized for viewing at `1024x768` using one of the following room values:
 * room-105
 * room-106
 * room-107
+* room-208
 * room-209
 * room-211
 * room-212
@@ -64,20 +64,19 @@ It is sometimes necessary to test what the displays will look like at times othe
 * month
 * day
 * hour
-* minute 
+* minute
 
 This is available in both Schedule and Room views
 
-examples: 
-* `http://signs.scale.lan/?year=2019&month=3&day=7&hour=9&minute=10`
-* `http://signs.scale.lan/?room=ballroom-de&year=2019&month=3&day=8&hour=14&minute=33`
+examples:
+* `http://signs.scale.lan/?year=2025&month=3&day=8&hour=9&minute=10`
+* `http://signs.scale.lan/?room=ballroom-de&year=2025&month=3&day=8&hour=14&minute=33`
 > **NOTE:** This will not work unless `$starttime` is correctly set for the current year of the show
 
 ### Yearly Tasks
 
-There is a bit of manual effort necessary from year to year. These tasks include, but might not be limitted to:
-* update the logo for the curent year at `/server/images/header.png` should be `360x170px`
-* Do a search and replace for the previous scale version (example: replace all occurances of 16x with 17x)
+There is a bit of manual effort necessary from year to year. These tasks include, but might not be limited to:
+* Do a search and replace for the previous scale version (example: replace all occurrences of 16x with 17x)
 * verify proper XML is being supplied by drupal from the url reflected in the `$url` variable in `room.php` and `scroll.php`
 * set `$starttime` in `scroll.php` which should reflect midnight of the first night of current year show. Example: if the show starts on 3/14/24, then the entry for startime should be: `$starttime = mktime(0, 0, 0, 3, 14, 2024) / 60;`.
 * set `$starttime` in `room.php` to match scroll.php
@@ -93,17 +92,20 @@ There is a bit of manual effort necessary from year to year. These tasks include
 * update the `$sponsors` arrays in `sponsors.php` attempting to distribute the list evenly across both case statements
 * update the `$diamond_platinum_sponsors` array in `room.php` with the current year diamond and platinum sponsors
 * update the `$gold_sponsors` array in `room.php` with the current year gold sponsors
-* verify OAUTH keys and secrets being passed to `$settings` in `twitter.php` via `secrets.env` are functional
 
 ### Tips
 
 Get rooms in use this year with:
 
-`export THIS_SCALE=19x; curl http://www.socallinuxexpo.org/scale/${THIS_SCALE}/sign.xml | grep "<Room>" | cut -d ">" -f 2 | cut -d "<" -f 1 | sort | uniq`
+```bash
+export THIS_SCALE=22x; curl http://www.socallinuxexpo.org/scale/${THIS_SCALE}/sign.xml | grep "<Room>" | cut -d ">" -f 2 | cut -d "<" -f 1 | sort | uniq`
+```
 
 Get shortened topic list this year with:
 
-`export THIS_SCALE=19x; curl -q http://www.socallinuxexpo.org/scale/${THIS_SCALE}/sign.xml | grep "<Topic>" | cut -d ">" -f 2 | cut -d "<" -f 1 | sort | uniq | sed 's/ //g'`
+```bash
+export THIS_SCALE=22x; curl -q http://www.socallinuxexpo.org/scale/${THIS_SCALE}/sign.xml | grep "<Topic>" | cut -d ">" -f 2 | cut -d "<" -f 1 | sort | uniq | sed 's/ //g'`
+```
 
 ### Conference Operations
 
@@ -143,4 +145,8 @@ If DST changes during SCaLE, the next morning `$starttime` in `scroll.php` and `
 1. `touch secrets.env` to omit secrets or copy `sample-secrets.env` to `secrets.env` and populate to test with them
 2. `docker-compose build` (repeat this every time code is changed to view results)
 3. `docker-compose up -d`
-4. browse to `http://localhost`
+4. browse to `http://localhost:8088`
+
+### Podman
+
+If you prefer to use Podman, all `docker` and `docker-compose` invocations can be replaced with `podman` and `podman-compose`
