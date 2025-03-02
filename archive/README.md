@@ -107,6 +107,16 @@ Get shortened topic list this year with:
 export THIS_SCALE=22x; curl -q http://www.socallinuxexpo.org/scale/${THIS_SCALE}/sign.xml | grep "<Topic>" | cut -d ">" -f 2 | cut -d "<" -f 1 | sort | uniq | sed 's/ //g'`
 ```
 
+Use ImageMagick to resize sponsor images
+```bash
+mogrify \
+   -resize 200x200 \
+   -background white \
+   -gravity center \
+   -extent 220x220 \
+   *.png
+```
+
 ### Conference Operations
 
 * git
