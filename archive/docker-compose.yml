@@ -2,11 +2,9 @@ version: '2'
 
 services:
   signs:
-    env_file:
-      - secrets.env
     image: signs
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "80:80"
+      - "8088:80"

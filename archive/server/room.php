@@ -4,16 +4,12 @@ date_default_timezone_set('America/Los_Angeles');
 
 # set yearly (change if DST starts during SCaLE)
 
+# set yearly (change if DST starts during SCaLE)
 # before "spring forward"
-#$starttime = mktime(0, 0, 0, 3, 5, 2020) / 60;
-#$starttime = mktime(0, 0, 0, 3, 9, 2023) / 60;
-
+$starttime = mktime(0, 0, 0, 3, 6, 2025) / 60;
 
 # after "spring forward"
-#$starttime = mktime(23, 0, 0, 7, 27, 2022) / 60;
-#$starttime = mktime(23, 0, 0, 3, 8, 2023) / 60;
-$starttime = mktime(0, 0, 0, 3, 14, 2024) / 60;
-
+#$starttime = mktime(23, 0, 0, 3, 5, 2025) / 60;
 
 $sponsors_for_room = array();
 $sponsor_class = "Room";
@@ -66,6 +62,7 @@ $room_lookup_table = array(
     "room-105"       => "Room105",
     "room-106"       => "Room106",
     "room-107"       => "Room107",
+    "room-208"       => "Room208",
     "room-209"       => "Room209",
     "room-211"       => "Room211",
     "room-212"       => "Room212",
@@ -308,7 +305,7 @@ $sponsors_to_rooms = array(
             "Saturday"  => array(),
             "Sunday"    => array(),
     ),
-    "room-205"      => array(
+    "room-208"      => array(
             "Thursday"  => array(),
             "Friday"    => array(),
             "Saturday"  => array(),
@@ -334,7 +331,7 @@ $sponsors_to_rooms = array(
     ),
 );
 
-$url = 'http://www.socallinuxexpo.org/scale/21x/sign.xml';
+$url = 'http://www.socallinuxexpo.org/scale/22x/sign.xml';
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -350,31 +347,40 @@ $order = array();
 $times = array();
 
 $shorten_topics = array(
- "CareerDay"    =>       "Career Day",
- "CloudNative"  =>       "Cloud Native",
- "DataonKubernetes"     =>       "Data on Kubernetes",
- "Developer"    =>       "Developer",
- "DevOpsDayLA"  =>       "DevOpsDay LA",
- "Embedded"     =>       "Embedded",
- "FOSSHOME"     =>       "FOSS@HOME",
- "General"      =>       "General",
- "KernelandLowLevelSystems"     =>       "Kernel and Low Level Systems",
- "Keynote"      =>       "Keynote",
- "KubernetesCommunityDay"       =>       "Kubernetes Community Day",
- "MySQL"        =>       "MySQL",
- "NextGeneration"       =>       "Next Generation",
- "NixCon"       =>       "NixCon",
- "Observability"        =>       "Observability",
- "OpenGovernment"       =>       "Open Government",
- "OpenSourceAIandAppliedScience"        =>       "Open Source AI and Applied Science",
- "PostgreSQL"   =>       "PostgreSQL",
- "ReproducibleandImmutableSoftware"     =>       "Reproducible and Immutable Software",
- "Security"     =>       "Security",
- "Sponsored"    =>       "Sponsored",
- "SystemsandInfrastructure"     =>       "Systems and Infrastructure",
- "Ubucon"       =>       "Ubucon",
- "UpSCALE"      =>       "UpSCALE",
- "Workshops"    =>       "Workshops"
+	"AppliedScience" 					=>	"Applied Science",
+	"BoFs" 								=> 	"BoFs",
+	"CareerDay"							=>	"Career Day",
+	"CloudNative"						=>	"Cloud Native",
+	"DataonKubernetes"					=>	"Data on Kubernetes",
+	"Developer"							=>	"Developer",
+	"DevOpsDayLA"						=>	"DevOpsDay LA",
+	"Embedded"							=>	"Embedded",
+	"FOSSHOME"							=>	"FOSS @ HOME",
+	"FOSS@HOME"							=>	"FOSS @ HOME",
+	"General"							=>	"General",
+	"KernelandLowLevelSystems"			=>	"Kernel & Low Level Systems",
+	"Keynote"							=>	"Keynote",
+	"KwaaiSummit" 						=>	"Kawaai Summit",
+	"KubernetesCommunityDay"			=>	"Kubernetes Community Day",
+	"LibreGraphics" 					=> 	"Libre Graphics",
+	"MySQL"								=>	"MySQL",
+	"NextGeneration"					=>	"Next Generation",
+	"NixCon"							=>	"NixCon",
+	"Observability"						=>	"Observability",
+	"OpenGovernment"					=>	"Open Government",
+	"OpenInfraDays" 					=>  "OpenInfra Days",
+	"OpenSourceAI"              		=>	"Open Source AI",
+	"OpenSourceAIandAppliedScience"		=>	"Open Source AI and Applied Science",
+	"PlanetNix" 						=>	"PlanetNix",
+	"PostgreSQL"						=>	"PostgreSQL",
+	"ReproducibleandImmutableSoftware"	=>	"Reproducible and Immutable Software",
+	"Security"							=>	"Security",
+	"Sponsored"							=>	"Sponsored",
+	"SunSecCon" 						=> 	"SunSecCon",
+	"SystemsandInfrastructure"			=>	"Systems and Infrastructure",
+	"Ubucon"							=>	"Ubucon",
+	"UpSCALE"							=>	"UpSCALE",
+	"Workshops"							=>	"Workshops"
 );
 
 foreach ($xml->node AS $node) {

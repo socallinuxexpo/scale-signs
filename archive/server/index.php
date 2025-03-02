@@ -71,9 +71,11 @@
             case 'ballroom-h':
             case 'room-101':
             case 'room-103':
+            case 'room-104':
             case 'room-105':
             case 'room-106':
             case 'room-107':
+            case 'room-208':
             case 'room-209':
             case 'room-211':
             case 'room-212':
@@ -160,7 +162,7 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>SCALE 21x</title>
+    <title>SCALE 22x</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -298,7 +300,6 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
       // Hide the schedule until we've loaded the data
       $('#schedule').hide();
       $('#sponsors').hide();
-      $('#twitter-stream-content').hide();
 
       var loadScheduleUrl = "scroll.php?year=<?php echo $year;?>&month=<?php echo $month;?>&day=<?php echo $day;?>&hour=<?php echo $hour;?>&minute=<?php echo $minute;?>";
       $("#schedule").load(loadScheduleUrl);
@@ -311,16 +312,6 @@ function main($year = '', $month = '', $day = '', $hour = '', $minute = '') {
       var loadSponsorsUrlTwo = "sponsors.php?group=two";
       $("#sponsors2").load(loadSponsorsUrlTwo);
       $("#sponsors2").show();
-
-      var loadTwitterUrl = "twitter.php";
-      $("#twitter-stream-content").load(loadTwitterUrl);
-      $('#twitter-stream-content').show();
-
-      /* Reload and Refresh Twitter once every 5 mins */
-      var twitterRefreshId = setInterval(function() {
-        //("#twitter-stream-content").fadeOut("slow").load(loadTwitterUrl).fadeIn("slow");
-        $("#twitter-stream-content").load(loadTwitterUrl);
-      }, 300000);
 
       /* Reload & Shuffle sponsors every 10 minutes */
       var sponsors1RefreshId = setInterval(function() {
@@ -372,7 +363,7 @@ function avnoc() {
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>SCALE 21x</title>
+    <title>SCALE 22x</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -496,6 +487,7 @@ $room_lookup_table = array(
     "room-105"       => "Room105",
     "room-106"       => "Room106",
     "room-107"       => "Room107",
+    "room-208"       => "Room208",
     "room-209"       => "Room209",
     "room-211"       => "Room211",
     "room-212"       => "Room212",
@@ -512,7 +504,7 @@ $room_lookup_table = array(
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>SCALE 21x: <?php echo $room_lookup_table[$room]; ?></title>
+    <title>SCALE 22x: <?php echo $room_lookup_table[$room]; ?></title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">

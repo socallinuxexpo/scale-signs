@@ -4,17 +4,17 @@ date_default_timezone_set('America/Los_Angeles');
 
 # set yearly (change if DST starts during SCaLE)
 # before "spring forward"
+$starttime = mktime(0, 0, 0, 3, 6, 2025) / 60;
 
 # after "spring forward"
-# 21x
-$starttime = mktime(0, 0, 0, 3, 14, 2024) / 60;
+#$starttime = mktime(23, 0, 0, 3, 5, 2025) / 60;
 
 // Turn off all error reporting
 error_reporting(0);
 
 include 'ChromePhp.php';
 
-$url = 'http://www.socallinuxexpo.org/scale/21x/sign.xml';
+$url = 'http://www.socallinuxexpo.org/scale/22x/sign.xml';
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -41,32 +41,40 @@ $order = array();
 $times = array();
 
 $shorten_topics = array(
- "CareerDay"	=>	 "Career Day",
- "CloudNative"	=>	 "Cloud Native",
- "DataonKubernetes"	=>	 "Data on Kubernetes",
- "Developer"	=>	 "Developer",
- "DevOpsDayLA"	=>	 "DevOpsDay LA",
- "Embedded"	=>	 "Embedded",
- "FOSSHOME"	=>	 "FOSS@HOME",
- "General"	=>	 "General",
- "KernelandLowLevelSystems"	=>	 "Kernel and Low Level Systems",
- "Keynote"	=>	 "Keynote",
- "KubernetesCommunityDay"	=>	 "Kubernetes Community Day",
- "MySQL"	=>	 "MySQL",
- "NextGeneration"	=>	 "Next Generation",
- "NixCon"	=>	 "NixCon",
- "Observability"	=>	 "Observability",
- "OpenGovernment"	=>	 "Open Government",
- "OpenSourceAIandAppliedScience"	=>	 "Open Source AI and Applied Science",
- "PostgreSQL"	=>	 "PostgreSQL",
- "ReproducibleandImmutableSoftware"	=>	 "Reproducible and Immutable Software",
- "Security"	=>	 "Security",
- "Sponsored"	=>	 "Sponsored",
- "SystemsandInfrastructure"	=>	 "Systems and Infrastructure",
- "Ubucon"	=>	 "Ubucon",
- "UpSCALE"	=>	 "UpSCALE",
- "Workshops"	=>	 "Workshops"
-
+	"AppliedScience" 					=>	"Applied Science",
+	"BoFs" 								=> 	"BoFs",
+	"CareerDay"							=>	"Career Day",
+	"CloudNative"						=>	"Cloud Native",
+	"DataonKubernetes"					=>	"Data on Kubernetes",
+	"Developer"							=>	"Developer",
+	"DevOpsDayLA"						=>	"DevOpsDay LA",
+	"Embedded"							=>	"Embedded",
+	"FOSSHOME"							=>	"FOSS @ HOME",
+	"FOSS@HOME"							=>	"FOSS @ HOME",
+	"General"							=>	"General",
+	"KernelandLowLevelSystems"			=>	"Kernel & Low Level Systems",
+	"Keynote"							=>	"Keynote",
+	"KwaaiSummit" 						=>	"Kawaai Summit",
+	"KubernetesCommunityDay"			=>	"Kubernetes Community Day",
+	"LibreGraphics" 					=> 	"Libre Graphics",
+	"MySQL"								=>	"MySQL",
+	"NextGeneration"					=>	"Next Generation",
+	"NixCon"							=>	"NixCon",
+	"Observability"						=>	"Observability",
+	"OpenGovernment"					=>	"Open Government",
+	"OpenInfraDays" 					=>  "OpenInfra Days",
+	"OpenSourceAI"              		=>	"Open Source AI",
+	"OpenSourceAIandAppliedScience"		=>	"Open Source AI and Applied Science",
+	"PlanetNix" 						=>	"PlanetNix",
+	"PostgreSQL"						=>	"PostgreSQL",
+	"ReproducibleandImmutableSoftware"	=>	"Reproducible and Immutable Software",
+	"Security"							=>	"Security",
+	"Sponsored"							=>	"Sponsored",
+	"SunSecCon" 						=> 	"SunSecCon",
+	"SystemsandInfrastructure"			=>	"Systems and Infrastructure",
+	"Ubucon"							=>	"Ubucon",
+	"UpSCALE"							=>	"UpSCALE",
+	"Workshops"							=>	"Workshops"
 );
 
 foreach ($xml->node AS $node) {
@@ -74,7 +82,7 @@ foreach ($xml->node AS $node) {
   // Remove HTML tags
   $node->{'Time'} = preg_replace('/<[^>]*>/', '', $node->{'Time'});
   $node->{'Day'} = preg_replace('/<[^>]*>/', '', $node->{'Day'});
-  
+
   // Remove special chars in Topic from XML request so we can use it for a CSS class
   $node->{'Topic'} = preg_replace('/\s+/', '', $node->{'Topic'});
   $node->{'Topic'} = preg_replace('/\&/', 'and', $node->{'Topic'});
@@ -98,14 +106,14 @@ foreach ($xml->node AS $node) {
 	$title = (string) $node->Title;
 	$data[] = array((string) $node->Day, $thistime, $name, (string) $node->Title, (string) $node->Room, (string) $node->Topic, (string) $node->Overflow);
 
-		
+
 	$realtime = explode(' to ', $thistime)[0];
 	$realstime = explode(' to ', $thisend)[1];
 	$handm = explode(":", $realtime);
 	$handme = explode(":", $realstime);
 	$mfromm = ($handm[0] * 60) + $handm[1];
 	$mfromme = ($handme[0] * 60) + $handme[1];
-	
+
 
 	echo($node);
 	switch ((string) $node->Day) {
@@ -141,12 +149,12 @@ foreach ($xml->node AS $node) {
 		font { font-family: Tahoma, Geneva, sans-serif; color:black; text-align:left; font-size:14px; }
 	</style>
 		  <div id="scheduleCarousel" class="carousel carousel-fade">
-		    <div class="carousel-inner">	  
+		    <div class="carousel-inner">
 		      <div id="schedule-1-content" class="active item">
 			    <table cellpadding=2 cellspacing=1 class="table table-bordered">
                 <tr bgcolor="#fff"><th>Time</th><th>Presenter</th><th>Topic</th><th>Room</th></tr>
                 <tbody>
-    <?php 
+    <?php
       $topics = array();
       $items_per_page = 6;
       $odd = 0; $count = 0; $schedule_page = 1;
@@ -155,7 +163,7 @@ foreach ($xml->node AS $node) {
 	      if (($times[$key][0] - 60) <= $minsafter && ($times[$key][1]) >= $minsafter) {
 	      // if (($times[$key][0] - 60) <= $minsafter && ($times[$key][1] + 10) >= $minsafter) {
 	      // if ($times[$key][0] > 0) {
-	      
+
           //
           // Check if the topic of the current talk is in the array
           // ..if not. add it.
@@ -163,10 +171,10 @@ foreach ($xml->node AS $node) {
           if (! in_array($data[$key][5], $topics)) {
             $topics[] = $data[$key][5];
           }
-	      
-		      $odd++; 
+
+		      $odd++;
 		      if ( $odd % 2 == 0 ) { $color = "bgcolor=\"#d0e4fe\""; } else { $color="bgcolor=\"#fff\""; }
-		      		      
+
 		      if ( $count % $items_per_page == 0 && $count > 0) {
 		        $schedule_page = $schedule_page + 1;
 		        print "</table>";
@@ -175,19 +183,19 @@ foreach ($xml->node AS $node) {
 			    print "<table cellpadding=2 cellspacing=1 class=\"table table-bordered\">";
 			    print "<tr bgcolor='#fff'><th>Time</th><th>Presenter</th><th>Topic</th><th>Room</th></tr>";
 		      }
-		      $count++; 
+		      $count++;
 
     ?>
 				    <tr class="<?php echo $data[$key][5]; ?>" <?php echo "$color"; ?> >
 				      <!-- Day -->
                       <!--
-				      <td> <i class="icon-calendar"></i> 
-				        <span> 
-				          <?php echo $data[$key][0]; ?> 
-			          </span> 
+				      <td> <i class="icon-calendar"></i>
+				        <span>
+				          <?php echo $data[$key][0]; ?>
+			          </span>
 		              </td>
                       -->
-				      
+
 				      <!-- Time -->
 				      <?php
 				        // Convert to human friendly format
@@ -211,39 +219,39 @@ foreach ($xml->node AS $node) {
                           ?>
 						  </span>
 					    </td>
-					    
+
 				      <!-- Presenter -->
 				      <?php
-				        if ( strlen($data[$key][2]) >= 45 ) { 
+				        if ( strlen($data[$key][2]) >= 45 ) {
                             $speakerName = substr($data[$key][2], 0, 45) . "...";
   					    } else {
                             $speakerName = $data[$key][2];
                         }
-  					    
+
 					    ?>
 					    <td class="schedulePresenter"> <i class="icon-user"></i> <span> <?php echo $speakerName; ?> </span></td>
-					    
+
 					    <!-- Topic -->
-					    <?php 
+					    <?php
 					      if ( strlen($data[$key][3]) >= 90 ) {
 					        $talk_title = substr($data[$key][3], 0, 90) . "...";
 					      } else {
-					        $talk_title = $data[$key][3];					      
+					        $talk_title = $data[$key][3];
 					      }
 
 				      ?>
 					    <td> <i class="icon-bullhorn"></i> <span> <?php echo $talk_title; ?> </span></td>
-					    
+
 					    <!-- Room -->
-					    <td width="20%"> <i class="icon-info-sign"></i> 
-					    <?php 
+					    <td width="20%"> <i class="icon-info-sign"></i>
+					    <?php
 					      echo $data[$key][4];
 				      ?>
 				      </td>
 
 				    </tr>
     <?php
-    
+
     }
     }
     if ( $count < ($schedule_page * $items_per_page) ) {
@@ -252,17 +260,17 @@ foreach ($xml->node AS $node) {
         print "<tr bgcolor='#fff'><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>";
 
       }
-    }    
+    }
     ?>
 			    </table>
 			    </div>
 			  </div>
 			</div>
-			
+
           <div class="topicList" style="text-align:center;">
 			    <?php foreach ($topics as $topic) {
 			            if ( array_key_exists($topic, $shorten_topics) ) {
-                    print "<span class=\"badge $topic\">{$shorten_topics[$topic]}</span>";			            
+                    print "<span class=\"badge $topic\">{$shorten_topics[$topic]}</span>";
 			            } else {
                     print "<span class=\"badge $topic\">$topic</span>";
 			            }
