@@ -33,7 +33,15 @@
           "warpdev.png",
           "yogertpc.png",
           "zesty.png",
-
+          "akamai.png",
+          "checkmarx.png",
+          "devzero.png",
+          "firefly.png",
+          "gruntwork.png",
+          "jobst.png",
+          "opsera.png",
+          "runme.png",
+          "semaphore.png",
         );
       	break;
       case 'two':
@@ -67,6 +75,15 @@
           "victoriametrics.png",
           "xata.png",
           "zabbix.png",
+          "bellsoft.png",
+          "couchbase.png",
+          "dnsimple.png",
+          "fluidattacks.png",
+          "honeycombio.png",
+          "kapstan.png",
+          "parasoft.png",
+          "sedai.png",
+          "thales.png",
         );
         break;
     }

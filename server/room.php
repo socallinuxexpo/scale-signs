@@ -128,6 +128,25 @@ $sponsors = array(
     "yogertpc"     => "yogertpc.png",
     "zabbix"     => "zabbix.png",
     "zesty"     => "zesty.png",
+    # devops days
+    "akamai" => "akamai.png",
+    "bellsoft" => "bellsoft.png",
+    "checkmarx" => "checkmarx.png",
+    "couchbase" => "couchbase.png",
+    "devzero" => "devzero.png",
+    "dnsimple" => "dnsimple.png",
+    "firefly" => "firefly.png",
+    "fluidattacks" => "fluidattacks.png",
+    "gruntwork" => "gruntwork.png",
+    "honeycombio" => "honeycombio.png",
+    "jobst" => "jobst.png",
+    "kapstan" => "kapstan.png",
+    "opsera" => "opsera.png",
+    "parasoft" => "parasoft.png",
+    "runme" => "runme.png",
+    "sedai" => "sedai.png",
+    "semaphore" => "semaphore.png",
+    "thales" => "thales.png",
 );
 
 $diamond_platinum_sponsors = array(
@@ -229,9 +248,9 @@ $sponsors_to_rooms = array(
     ),
     "ballroom-de"   => array(
             "Thursday"  => array(),
-            "Friday"    => array(),
-            "Saturday"  => array(),
-            "Sunday"    => array(),
+            "Friday"    => array("akamai","bellsoft","checkmarx","couchbase","devzero","dnsimple","firefly","fluidattacks","gruntwork","honeycombio","jobst","kapstan","opsera","parasoft","runme","sedai","semaphore","thales"),
+            "Saturday"  => array("github","microsoft","openintel","zabbix"),
+            "Sunday"    => array("github","microsoft","openintel","zabbix"),
     ),
     "ballroom-f"    => array(
             "Thursday"  => array(),
