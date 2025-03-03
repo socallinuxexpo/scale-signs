@@ -267,10 +267,10 @@ $sponsors_to_rooms = array(
             "Sunday"    => array(),
     ),
     "ballroom-g"    => array(
-            "Thursday"  => array(),
-            "Friday"    => array(),
-            "Saturday"  => array(),
-            "Sunday"    => array(),
+            "Thursday"  => array("postgresql","quest"),
+            "Friday"    => array("postgresql","quest"),
+            "Saturday"  => array("rockylinux"),
+            "Sunday"    => array("rockylinux"),
     ),
     "ballroom-h"    => array(
             "Thursday"  => array(),
@@ -281,12 +281,12 @@ $sponsors_to_rooms = array(
     "room-101"      => array(
             "Thursday"  => array(),
             "Friday"    => array(),
-            "Saturday"  => array(),
-            "Sunday"    => array(),
+            "Saturday"  => array("pomerium"),
+            "Sunday"    => array("pomerium"),
     ),
     "room-103"      => array(
             "Thursday"  => array(),
-            "Friday"    => array(),
+            "Friday"    => array("canonical","openintel"),
             "Saturday"  => array(),
             "Sunday"    => array(),
     ),
@@ -305,8 +305,8 @@ $sponsors_to_rooms = array(
     "room-106"      => array(
             "Thursday"  => array(),
             "Friday"    => array(),
-            "Saturday"  => array(),
-            "Sunday"    => array(),
+            "Saturday"  => array("quest"),
+            "Sunday"    => array("quest"),
     ),
     "room-107"      => array(
             "Thursday"  => array(),
