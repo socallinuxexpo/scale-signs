@@ -147,6 +147,14 @@ $sponsors = array(
     "sedai" => "sedai.png",
     "semaphore" => "semaphore.png",
     "thales" => "thales.png",
+    # kwaii summit
+    "collabera" => "collabera.png",
+    "companionintelligence" => "companionintelligence.png",
+    "cryptid" => "cryptid.png",
+    "glia" => "glia.jpeg",
+    "kasm" => "kasm.png",
+    "mimik" => "mimik.png",
+    "personalai" => "personalai.png",
 );
 
 $diamond_platinum_sponsors = array(
@@ -253,7 +261,7 @@ $sponsors_to_rooms = array(
             "Sunday"    => array("github","microsoft","openintel","zabbix"),
     ),
     "ballroom-f"    => array(
-            "Thursday"  => array(),
+            "Thursday"  => array("collabera","companionintelligence","cryptid","glia","kasm","mimik","personalai"),
             "Friday"    => array(),
             "Saturday"  => array(),
             "Sunday"    => array(),
@@ -325,7 +333,7 @@ $sponsors_to_rooms = array(
             "Sunday"    => array(),
     ),
     "room-212"      => array(
-            "Thursday"  => array(),
+            "Thursday"  => array("collabera","companionintelligence","cryptid","glia","kasm","mimik","personalai"),
             "Friday"    => array(),
             "Saturday"  => array(),
             "Sunday"    => array(),

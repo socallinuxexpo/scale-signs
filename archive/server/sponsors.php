@@ -42,6 +42,9 @@
           "opsera.png",
           "runme.png",
           "semaphore.png",
+          "companionintelligence.png",
+          "glia.jpeg",
+          "mimik.png",
         );
       	break;
       case 'two':
@@ -84,6 +87,10 @@
           "parasoft.png",
           "sedai.png",
           "thales.png",
+          "collabera.png",
+          "cryptid.png",
+          "kasm.png",
+          "personalai.png",
         );
         break;
     }
