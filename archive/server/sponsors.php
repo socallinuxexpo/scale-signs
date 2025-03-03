@@ -91,6 +91,7 @@
           "cryptid.png",
           "kasm.png",
           "personalai.png",
+          "planetnix.png"
         );
         break;
     }
