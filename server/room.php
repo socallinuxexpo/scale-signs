@@ -156,6 +156,14 @@ $sponsors = array(
     "kasm" => "kasm.png",
     "mimik" => "mimik.png",
     "personalai" => "personalai.png",
+    # open infradays sponsors
+    "jetstream" => "jetstream.png",
+    "lightbits" => "lightbits.png",
+    "openinfrafoundation" => "openinfrafoundation.png",
+    "openmetal" => "openmetal.png",
+    "purestorage" => "purestorage.png",
+    "rackspace" => "rackspace.png",
+    "zconverter" => "zconverter.png",
 );
 
 $diamond_platinum_sponsors = array(
@@ -304,13 +312,13 @@ $sponsors_to_rooms = array(
             "Sunday"    => array(),
     ),
     "room-106"      => array(
-            "Thursday"  => array(),
-            "Friday"    => array(),
+            "Thursday"  => array("jetstream","redhat","lightbits","openinfrafoundation","openmetal","purestorage","rackspace","zconverter"),
+            "Friday"    => array("jetstream","redhat","lightbits","openinfrafoundation","openmetal","purestorage","rackspace","zconverter"),
             "Saturday"  => array("quest"),
             "Sunday"    => array("quest"),
     ),
     "room-107"      => array(
-            "Thursday"  => array(),
+            "Thursday"  => array("jetstream","redhat","lightbits","openinfrafoundation","openmetal","purestorage","rackspace","zconverter"),
             "Friday"    => array(),
             "Saturday"  => array(),
             "Sunday"    => array(),
@@ -335,7 +343,7 @@ $sponsors_to_rooms = array(
     ),
     "room-212"      => array(
             "Thursday"  => array("collabera","companionintelligence","cryptid","glia","kasm","mimik","personalai"),
-            "Friday"    => array(),
+            "Friday"    => array("jetstream","redhat","lightbits","openinfrafoundation","openmetal","purestorage","rackspace","zconverter"),
             "Saturday"  => array(),
             "Sunday"    => array(),
     ),
