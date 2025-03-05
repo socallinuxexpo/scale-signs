@@ -45,6 +45,12 @@
           "companionintelligence.png",
           "glia.jpeg",
           "mimik.png",
+          "jetstream.png",
+          "openinfrafoundation.png",
+          "purestorage.png",
+          "zconverter.png",
+          "heeler.png",
+          "kodem.png",
         );
       	break;
       case 'two':
@@ -91,7 +97,11 @@
           "cryptid.png",
           "kasm.png",
           "personalai.png",
-          "planetnix.png"
+          "planetnix.png",
+          "lightbits.png",
+          "openmetal.png",
+          "rackspace.png",
+          "pacifichackers.png",
         );
         break;
     }
