@@ -49,6 +49,8 @@
           "openinfrafoundation.png",
           "purestorage.png",
           "zconverter.png",
+          "heeler.png",
+          "kodem.png",
         );
       	break;
       case 'two':
@@ -99,6 +101,7 @@
           "lightbits.png",
           "openmetal.png",
           "rackspace.png",
+          "pacifichackers.png",
         );
         break;
     }
