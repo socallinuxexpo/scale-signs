@@ -89,7 +89,7 @@ There is a bit of manual effort necessary from year to year. These tasks include
 * update the sponsor images in `/server/images/sponsors/` to reflect the current year's sponsors, making them 220x220
 * update `$sponsors` in `room.php` matching the value to each sponsor image file name
 * update `$sponsors_to_rooms` in `room.php` matching proper sponsor(s) to room and day by key from `$sponsors`
-* update the `$sponsors` arrays in `sponsors.php` attempting to distribute the list evenly across both case statements
+* update the `$logos` and `$logos2` arrays in `sponsors.php` attempting to distribute the list evenly across both case statements
 * update the `$diamond_platinum_sponsors` array in `room.php` with the current year diamond and platinum sponsors
 * update the `$gold_sponsors` array in `room.php` with the current year gold sponsors
 
@@ -105,6 +105,16 @@ Get shortened topic list this year with:
 
 ```bash
 export THIS_SCALE=22x; curl -q http://www.socallinuxexpo.org/scale/${THIS_SCALE}/sign.xml | grep "<Topic>" | cut -d ">" -f 2 | cut -d "<" -f 1 | sort | uniq | sed 's/ //g'`
+```
+
+Use ImageMagick to resize sponsor images
+```bash
+mogrify \
+   -resize 200x200 \
+   -background white \
+   -gravity center \
+   -extent 220x220 \
+   *.png
 ```
 
 ### Conference Operations
@@ -142,10 +152,9 @@ If DST changes during SCaLE, the next morning `$starttime` in `scroll.php` and `
 * docker
 * docker-compose
 
-1. `touch secrets.env` to omit secrets or copy `sample-secrets.env` to `secrets.env` and populate to test with them
-2. `docker-compose build` (repeat this every time code is changed to view results)
-3. `docker-compose up -d`
-4. browse to `http://localhost:8088`
+1. `docker-compose build` (repeat this every time code is changed to view results)
+2. `docker-compose up -d`
+3. browse to `http://localhost:8088`
 
 ### Podman
 
