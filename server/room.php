@@ -287,9 +287,9 @@ $sponsors_to_rooms = array(
     ),
     "ballroom-h"    => array(
             "Thursday"  => array(),
-            "Friday"    => array(),
-            "Saturday"  => array(),
-            "Sunday"    => array(),
+            "Friday"    => array("postgresql","quest"),
+            "Saturday"  => array("rockylinux"),
+            "Sunday"    => array("rockylinux"),
     ),
     "room-101"      => array(
             "Thursday"  => array("flox","planetnix"),
