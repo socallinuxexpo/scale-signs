@@ -164,6 +164,10 @@ $sponsors = array(
     "purestorage" => "purestorage.png",
     "rackspace" => "rackspace.png",
     "zconverter" => "zconverter.png",
+    # sunseccon sponsors
+    "heeler" => "heeler.png",
+    "kodem" => "kodem.png",
+    "pacifichackers" => "pacifichackers.png",
 );
 
 $diamond_platinum_sponsors = array(
@@ -306,8 +310,8 @@ $sponsors_to_rooms = array(
             "Sunday"    => array(),
     ),
     "room-105"      => array(
-            "Thursday"  => array(),
-            "Friday"    => array(),
+            "Thursday"  => array("heeler","kodem","pacifichackers"),
+            "Friday"    => array("heeler","kodem","pacifichackers"),
             "Saturday"  => array(),
             "Sunday"    => array(),
     ),
