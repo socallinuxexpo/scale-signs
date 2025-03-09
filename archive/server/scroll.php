@@ -4,10 +4,10 @@ date_default_timezone_set('America/Los_Angeles');
 
 # set yearly (change if DST starts during SCaLE)
 # before "spring forward"
-$starttime = mktime(0, 0, 0, 3, 6, 2025) / 60;
+#$starttime = mktime(0, 0, 0, 3, 6, 2025) / 60;
 
 # after "spring forward"
-#$starttime = mktime(23, 0, 0, 3, 5, 2025) / 60;
+$starttime = mktime(23, 0, 0, 3, 5, 2025) / 60;
 
 // Turn off all error reporting
 error_reporting(0);
