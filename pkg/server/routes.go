@@ -19,6 +19,7 @@ func setupRoutes(r *gin.Engine, s *schedule.Schedule) {
 	}
 
 	// Configure all routes
+	r.GET("/sponsors/diamond", gin.WrapF(sponsorManager.HandleDiamond))
 	r.GET("/sponsors/platinum", gin.WrapF(sponsorManager.HandlePlatinum))
 	r.GET("/sponsors/gold", gin.WrapF(sponsorManager.HandleGold))
 	r.GET("/sponsors/all", gin.WrapF(sponsorManager.HandleAllSponsors))

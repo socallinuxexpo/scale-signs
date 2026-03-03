@@ -8,12 +8,16 @@ import (
 func (m *Manager) HandleGold(w http.ResponseWriter, r *http.Request) {
 	goldSponsors := []string{
 		"canonical.png",
-		"flox.png",
+		"cleanstart.png",
+		"codercom.png",
 		"google.png",
+		"grafana.png",
 		"meta.png",
-		"netknights.png",
+		"percona.png",
+		"planetscale.png",
 		"redhat.png",
-		"system76.png",
+		"valkey.png",
+		"velodb.png",
 		"victoriametrics.png",
 	}
 

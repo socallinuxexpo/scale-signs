@@ -9,6 +9,7 @@ with pkgs; [
   go-tools
   gopls
   govulncheck
+  imagemagick
   nodejs
   nodePackages.prettier
   prefetch-npm-deps

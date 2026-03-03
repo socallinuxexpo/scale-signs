@@ -146,15 +146,14 @@ func TestServer(t *testing.T) {
 		// Test a few known sponsor images or use a predefined list
 		// Replace these with your actual image names
 		imagesToTest := []string{
-			"ampere.jpg",
 			"aws.png",
-			"cloudnativecomputingfoundation.png",
-			"datadog.png",
-			"glia.jpeg",
-			"personalai.png",
+			"canonical.png",
+			"coderabbit.png",
+			"google.png",
+			"microsoft.png",
+			"redhat.png",
 			"softwarefreedomconservancy.png",
-			"system76.png",
-			"zesty.png",
+			"victoriametrics.png",
 		}
 
 		foundImages := 0

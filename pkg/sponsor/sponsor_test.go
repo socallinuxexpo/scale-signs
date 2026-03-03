@@ -21,6 +21,7 @@ func TestSponsorEndpoints(t *testing.T) {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/sponsors/gold/", manager.HandleGold)
 	mux.HandleFunc("/sponsors/platinum/", manager.HandlePlatinum)
+	mux.HandleFunc("/sponsors/diamond/", manager.HandleDiamond)
 	mux.Handle("/sponsors/images/", http.StripPrefix("/sponsors/images/", manager.ImageHandler()))
 
 	// Create test server
@@ -42,6 +43,11 @@ func TestSponsorEndpoints(t *testing.T) {
 	// Test Platinum sponsors endpoint
 	t.Run("Platinum Sponsors", func(t *testing.T) {
 		testSponsorEndpoint(t, server.URL+"/sponsors/platinum/", server.URL+"/sponsors/images/", tempDir)
+	})
+
+	// Test Diamond sponsors endpoint
+	t.Run("Diamond Sponsors", func(t *testing.T) {
+		testSponsorEndpoint(t, server.URL+"/sponsors/diamond/", server.URL+"/sponsors/images/", tempDir)
 	})
 }
 

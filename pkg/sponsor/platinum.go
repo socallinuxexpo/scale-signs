@@ -6,14 +6,11 @@ import (
 )
 
 func (m *Manager) HandlePlatinum(w http.ResponseWriter, r *http.Request) {
-	goldSponsors := []string{
+	platinumSponsors := []string{
 		"aws.png",
-		"github.png",
-		"openintel.png",
-		"microsoft.png",
-		"zabbix.png",
+		"coderabbit.png",
 	}
 
 	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(goldSponsors)
+	json.NewEncoder(w).Encode(platinumSponsors)
 }
