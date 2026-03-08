@@ -1,0 +1,1901 @@
+[
+  {
+    "Name": "Puppet Camp Check in / Registration",
+    "Description": "Checkin for Puppet Camp in Century CD. Puppet Camps is a one day regional events held for people who are currently using or interested in using Puppet. You will have the opportunity to talk to a diverse group of Puppet users, benefit from presentations delivered by prominent community members, and share experiences with your peers. More info and registration online.",
+    "Location": "Century CD",
+    "StartTime": "2015-02-19T09:00:00-08:00",
+    "EndTime": "2015-02-19T10:00:00-08:00",
+    "Speakers": "",
+    "Topic": "Puppet"
+  },
+  {
+    "Name": "Introduction to Chef - Testing Your Automation Code",
+    "Description": "This is a hands-on tutorial that will cover the basics that everyone needs to know about how to test your automation code. We’ll start off with a quick introduction to Chef and work our way through writing a fully-tested cookbook or two, writing automated tests that will help ensure the cookbook performs the way we expect. Welcome to the world of test-driven infrastructure!",
+    "Location": "Carmel",
+    "StartTime": "2015-02-19T10:00:00-08:00",
+    "EndTime": "2015-02-19T17:00:00-08:00",
+    "Speakers": "",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Be Very Afraid: Backup Planning and Disaster Recovery",
+    "Description": "Part of any database administrator's job is planning for disasters... but what does that actually mean? We'll discuss disaster scenarios, how to make sure you minimize data loss and downtime, and how to handle the recovery gracefully in your PostgreSQL database.",
+    "Location": "Plaza BC",
+    "StartTime": "2015-02-19T10:00:00-08:00",
+    "EndTime": "2015-02-19T11:00:00-08:00",
+    "Speakers": "Christophe Pettus",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Fedora Activity Day",
+    "Description": "Fedora Activity Day",
+    "Location": "San Lorenzo B",
+    "StartTime": "2015-02-19T10:00:00-08:00",
+    "EndTime": "2015-02-19T18:00:00-08:00",
+    "Speakers": "",
+    "Topic": "Fedora"
+  },
+  {
+    "Name": "Overview of Apache Bigtop",
+    "Description": "Apache Bigtop is setting the standard for packaging, testing and deployment of leading open source Bigdata components. Started with a focus on the hadoop/hdfs stack Bigtop has grown to include a wide range of components including a new emphasis on deliverables for data-scientists so they can roll their own stacks and keep them up to date with the latest and greatest of the fast moving open source ecosystem.",
+    "Location": "Los Angeles C",
+    "StartTime": "2015-02-19T10:00:00-08:00",
+    "EndTime": "2015-02-19T11:00:00-08:00",
+    "Speakers": "Konstantin Boudnik",
+    "Topic": "Apache Bigtop"
+  },
+  {
+    "Name": "Puppet Keynote",
+    "Description": "Not yet available.",
+    "Location": "Century CD",
+    "StartTime": "2015-02-19T10:00:00-08:00",
+    "EndTime": "2015-02-19T11:00:00-08:00",
+    "Speakers": "Eric Sorenson",
+    "Topic": "Puppet"
+  },
+  {
+    "Name": "openSUSE",
+    "Description": "openSUSE TBD",
+    "Location": "Century AB",
+    "StartTime": "2015-02-19T10:00:00-08:00",
+    "EndTime": "2015-02-19T10:45:00-08:00",
+    "Speakers": "Peter Linnell",
+    "Topic": "openSUSE"
+  },
+  {
+    "Name": "Participating in Google Summer of Code with openSUSE Project",
+    "Description": "Google Summer of Code is a world wide program organized by Google to get university students involved in it. openSUSE has in the past participated in Google Summer of Code with students contributing code to openSUSE project. In this talk, I will be talking about how Google Summer of Code works and in general how students can work with openSUSE during the period and the best strategies to get them involved them in the project.",
+    "Location": "Century AB",
+    "StartTime": "2015-02-19T11:00:00-08:00",
+    "EndTime": "2015-02-19T12:00:00-08:00",
+    "Speakers": "Manu Gupta",
+    "Topic": "openSUSE"
+  },
+  {
+    "Name": "Introducing Apache Ignite, In-Memory Data Fabric",
+    "Description": "As more and more people have adopted open source Bigdata components such as hadoop, hbase, and spark, they are starting to ask bigger questions of their data the require longer more complex run times, and sometimes very iterative in the case of machine learning workloads. Wouldn't it be great if you could speed up your data-science workloads without buying more machines and fancier SSD's? Well now you can, come learn how Apache Ignite can help accelerate your Bigdata workloads.",
+    "Location": "Los Angeles C",
+    "StartTime": "2015-02-19T11:00:00-08:00",
+    "EndTime": "2015-02-19T12:00:00-08:00",
+    "Speakers": "Nikita Ivanov",
+    "Topic": "Apache Bigtop"
+  },
+  {
+    "Name": "Basic Puppet Module Design for Beiginners",
+    "Description": "Basic Puppet Module Design for Beiginners",
+    "Location": "Century CD",
+    "StartTime": "2015-02-19T11:00:00-08:00",
+    "EndTime": "2015-02-19T11:45:00-08:00",
+    "Speakers": "Jeremy Kitchen",
+    "Topic": "Puppet"
+  },
+  {
+    "Name": "Perks and Pitfalls of Postgres with Pgpool",
+    "Description": "Postgres is a great database, but you can only squeeze so much out of a single server. Pgpool (really, Pgpool-II) offers options for clustering Postgres for both high availability and load balanced reads. This talk will focus on using it with Postgres's streaming replication, but will compare that to other options as well. Of course, it will present the dangers of Pgpool with Postgres along with configuration tips.",
+    "Location": "Plaza BC",
+    "StartTime": "2015-02-19T11:15:00-08:00",
+    "EndTime": "2015-02-19T12:15:00-08:00",
+    "Speakers": "Alex Toth",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Overview of the Apache Bigtop Toolchain",
+    "Description": "Apache Bigtop acts as the foundation for all major hadoop distributions. Come learn about the various tooling available for testing,packaing and deployment to roll your own Bigdata infrastructure.",
+    "Location": "Los Angeles C",
+    "StartTime": "2015-02-19T12:00:00-08:00",
+    "EndTime": "2015-02-19T13:00:00-08:00",
+    "Speakers": "Konstantin Boudnik, Nate DAmico",
+    "Topic": "Apache Bigtop"
+  },
+  {
+    "Name": "Them + Me = We",
+    "Description": "With chosen examples, discover how to break the mythic border between Them and You.Long time Free Software enthusiastic, I've successfully evolve from simple userto contributor.",
+    "Location": "Century AB",
+    "StartTime": "2015-02-19T13:00:00-08:00",
+    "EndTime": "2015-02-19T13:45:00-08:00",
+    "Speakers": "Bruno Friedmann",
+    "Topic": "openSUSE"
+  },
+  {
+    "Name": "Server Management with Puppet on AWS for a fast-growing startup",
+    "Description": "Marco Almeida from Thumbtack will discuss Server Management with Puppet on AWS for a fast-growing startup.",
+    "Location": "Century CD",
+    "StartTime": "2015-02-19T13:00:00-08:00",
+    "EndTime": "2015-02-19T13:45:00-08:00",
+    "Speakers": "",
+    "Topic": "Puppet"
+  },
+  {
+    "Name": "All the Dirt on PostgreSQL's VACUUM",
+    "Description": "The use of Multi-Version Concurrency Control (MVCC) is perhaps one of the most powerful features PostgreSQL has to offer, but it can be a source of confusion for new and experienced users alike. In this talk we will provide an in-depth walkthrough of why Postgres needs to vacuum and what vacuum does.",
+    "Location": "Plaza BC",
+    "StartTime": "2015-02-19T13:15:00-08:00",
+    "EndTime": "2015-02-19T14:15:00-08:00",
+    "Speakers": "Jim Nasby",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Apache Bigtop Afternoon Exercises and Hack Session",
+    "Description": "The second half of the Apache Bigtop Workshop data will be open work time, come by to learn about Bigtop, hack away with team members and ask questions about anything open source Bigdata related",
+    "Location": "Los Angeles C",
+    "StartTime": "2015-02-19T14:00:00-08:00",
+    "EndTime": "2015-02-19T17:00:00-08:00",
+    "Speakers": "",
+    "Topic": "Apache Bigtop"
+  },
+  {
+    "Name": "Puppet Demo",
+    "Description": "Not yet available.",
+    "Location": "Century CD",
+    "StartTime": "2015-02-19T14:00:00-08:00",
+    "EndTime": "2015-02-19T15:00:00-08:00",
+    "Speakers": "Spencer Seebald",
+    "Topic": "Puppet"
+  },
+  {
+    "Name": "Duperemove: dedupe on btrfs",
+    "Description": "This talk will give a short introduction to the duperemove tool, which can do data deduplication on btrfs. An overview of how the tool functions will be given, including performance considerations, and planned features. We will also talk briefly about deduplication on btrfs in general, and its potential downsides.",
+    "Location": "Century AB",
+    "StartTime": "2015-02-19T14:00:00-08:00",
+    "EndTime": "2015-02-19T14:45:00-08:00",
+    "Speakers": "Mark Fasheh",
+    "Topic": "openSUSE"
+  },
+  {
+    "Name": "PostgreSQL Performance Presentation (9.5devel edition)",
+    "Description": "This presentation will review the performance changes of a some of the patches committed or pending for the PostgreSQL 9.5 development cycle.",
+    "Location": "Plaza BC",
+    "StartTime": "2015-02-19T14:30:00-08:00",
+    "EndTime": "2015-02-19T15:30:00-08:00",
+    "Speakers": "Mark Wong",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Package Managers and Puppet",
+    "Description": "Joseph Damato of Computology will discuss how puppet works with package managers.",
+    "Location": "Century CD",
+    "StartTime": "2015-02-19T15:00:00-08:00",
+    "EndTime": "2015-02-19T15:45:00-08:00",
+    "Speakers": "",
+    "Topic": "Puppet"
+  },
+  {
+    "Name": "openSUSE Town Hall",
+    "Description": "openSUSE Town Hall",
+    "Location": "Century AB",
+    "StartTime": "2015-02-19T15:00:00-08:00",
+    "EndTime": "2015-02-19T15:45:00-08:00",
+    "Speakers": "",
+    "Topic": "openSUSE"
+  },
+  {
+    "Name": "Suck it! Webscale is dead; long live PostgreSQL!",
+    "Description": "Those of us who know PostgreSQL know that we are king. Yes, yes, let's be humble. We are \"a\" king. A king of AWESOME. Yes, our technology base is over 40 years ago but what a 40 years it has been! In this talk we will briefly discuss history but more importantly we will pointedly discuss why the fads you read in CTO magazine are not the fads of reality. I will show where the \"alternative\" databases are failing even as PostgreSQL cherry picks what works from their reasonable ideas and makes those ideas king of AWESOME.",
+    "Location": "Plaza BC",
+    "StartTime": "2015-02-19T15:45:00-08:00",
+    "EndTime": "2015-02-19T16:45:00-08:00",
+    "Speakers": "Joshua Drake",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "The Power of Puppet Apply",
+    "Description": "Nels Broberg (Sonos) will discuss the power of puppet apply.",
+    "Location": "Century CD",
+    "StartTime": "2015-02-19T16:00:00-08:00",
+    "EndTime": "2015-02-19T16:45:00-08:00",
+    "Speakers": "",
+    "Topic": "Puppet"
+  },
+  {
+    "Name": "openSUSE",
+    "Description": "openSUSE",
+    "Location": "Century AB",
+    "StartTime": "2015-02-19T16:00:00-08:00",
+    "EndTime": "2015-02-19T16:45:00-08:00",
+    "Speakers": "Bryan Lunduke",
+    "Topic": "openSUSE"
+  },
+  {
+    "Name": "Scaling Out PostgreSQL with Postgres-XL",
+    "Description": "Open source Postgres-XL allows users to scale-out PostgreSQL for both OLTP and OLAP workloads, all while maintaining cluster-wide consistency across multiple nodes. There will also be a demo of how to install a small local cluster on a single system for testing.",
+    "Location": "Plaza BC",
+    "StartTime": "2015-02-19T17:00:00-08:00",
+    "EndTime": "2015-02-19T18:00:00-08:00",
+    "Speakers": "Mason Sharp",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Automated Distribution Quality Testing with Open QA",
+    "Description": "Over the last years, Open QA has grown an mature tool for the Open Suse community. Its combination of virtualization, automatic testing, scripting and image-to-video processing has proven to be a reliable and helpful piece of software that helps assure the quality of installation routines and desktop software as well. Oh, and recently at Fosdem, Suse announced that even SLES might benefit from that. In his presentation, Markus Feilner will show what Open QA is about, where it came from, how it works and which features it has to offer. Live Demos included.",
+    "Location": "Century AB",
+    "StartTime": "2015-02-19T17:00:00-08:00",
+    "EndTime": "2015-02-19T18:00:00-08:00",
+    "Speakers": "Markus Feilner",
+    "Topic": "openSUSE"
+  },
+  {
+    "Name": "Linux LA Meetup",
+    "Description": "LinuxLA meeting Details - http://www.meetup.com/LinuxLA/events/219287526/",
+    "Location": "Los Angeles A",
+    "StartTime": "2015-02-19T19:00:00-08:00",
+    "EndTime": "2015-02-19T22:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Cloud Foundry",
+    "Description": "This BOF will include discussion of how containers like Docker are deployed using Cloud Foundry, followed b a demo of deploying an app onto a Cloud Foundry Service Provider such as Pivotal Web Services, IBM Bluemix or HP Helion Dev Platform.",
+    "Location": "Los Angeles B",
+    "StartTime": "2015-02-19T19:00:00-08:00",
+    "EndTime": "2015-02-19T20:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Grow an organization by planting volunteers",
+    "Description": "Come learn the best practices that many open source software projects have discovered and evolved for growing volunteer communities.",
+    "Location": "Los Angeles C",
+    "StartTime": "2015-02-20T10:00:00-08:00",
+    "EndTime": "2015-02-20T11:00:00-08:00",
+    "Speakers": "Stormy Peters",
+    "Topic": "Mentoring"
+  },
+  {
+    "Name": "Ubuntu, The Third Platform, and You",
+    "Description": "Kicking off this year's Ubucon, this talk will outline achievements in the Ubuntu world over the last year, and opportunities for the year ahead. With the critical role applications play in adoption of Ubuntu, tools and resources for crafting custom software solutions will be the focus of this talk. Whether a professional programmer or an end-user eager to learn, open source scripting languages like Python, LiveCode, Lua and more offer everyone a chance to make applications for themselvesm their friends, and the organizations they work with.",
+    "Location": "Century CD",
+    "StartTime": "2015-02-20T10:00:00-08:00",
+    "EndTime": "2015-02-20T10:45:00-08:00",
+    "Speakers": "Richard Gaskin",
+    "Topic": "Ubucon"
+  },
+  {
+    "Name": "Explaining the Postgres Query Optimizer",
+    "Description": "The optimizer is the \"brain\" of the database, interpreting SQL queries and determining the fastest method of execution. This talk uses the explain command to show how the optimizer interprets queries and determines optimal execution. The talk will assist developers and administrators in understanding how Postgres optimally executes their queries and what steps they can take to understand and perhaps improve its behavior.",
+    "Location": "Plaza D",
+    "StartTime": "2015-02-20T10:00:00-08:00",
+    "EndTime": "2015-02-20T11:00:00-08:00",
+    "Speakers": "Bruce Momjian",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Ada Initiative - Ally Skills Workshop",
+    "Description": "https://www.socallinuxexpo.org/scale/13x/ada-initiative-ally-skills-work...",
+    "Location": "San Lorenzo E",
+    "StartTime": "2015-02-20T10:00:00-08:00",
+    "EndTime": "2015-02-20T12:00:00-08:00",
+    "Speakers": "",
+    "Topic": "Ada Initiative Ally Workshop"
+  },
+  {
+    "Name": "Introduction to Docker and Containers",
+    "Description": "You keep hearing about Docker, but never had the opportunity to dive in and see it in action? Now is the time! In this hands-on workshop, you will learn about Docker basic concepts, how to run containers, create your own images, and more.",
+    "Location": "Carmel",
+    "StartTime": "2015-02-20T10:00:00-08:00",
+    "EndTime": "2015-02-20T13:30:00-08:00",
+    "Speakers": "Jérôme Petazzoni",
+    "Topic": "ScaleU"
+  },
+  {
+    "Name": "DrupalCamp",
+    "Description": "Greater LA Drupal Camp.",
+    "Location": "Los Angeles B",
+    "StartTime": "2015-02-20T10:00:00-08:00",
+    "EndTime": "2015-02-20T17:00:00-08:00",
+    "Speakers": "",
+    "Topic": "GLADCamp"
+  },
+  {
+    "Name": "IPv6 - Hands On",
+    "Description": "This brief tutorial will provide an introduction to IPv6 concepts, plus, time permitting, some hands on experience configuring IPv6 on actual systems. Topics covered will include IPv6 addressing, types of IPv6 addresses, address assignment methods, DNS, routing, and basic IPv6 services.",
+    "Location": "San Lorenzo F",
+    "StartTime": "2015-02-20T10:00:00-08:00",
+    "EndTime": "2015-02-20T13:00:00-08:00",
+    "Speakers": "Owen DeLong",
+    "Topic": "ScaleU"
+  },
+  {
+    "Name": "RDO: Packaging OpenStack for CentOS",
+    "Description": "OpenStack is \"Open source software for creating private and public clouds.\" As with most Open Source projects, they release source code, and leave it to third parties to provide packages and distributions. Also, since OpenStack is a complicated stack of components, deployment can be tricky, and there's a number of third-party solutions for that, too.",
+    "Location": "Century AB",
+    "StartTime": "2015-02-20T10:00:00-08:00",
+    "EndTime": "2015-02-20T11:00:00-08:00",
+    "Speakers": "Rich Bowen",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Authoring documentation with developer tools and practices",
+    "Description": "The collection of Markdown, Git, Bitbucket or Github, and MDwiki make for a powerful documentation authoring toolset. Write documentation in Markdown files. Store the Markdown files in a Git repository. Host that Git repository on Bitbucket or Github. Use issue trackers in Bitbucket or Github to identify needed documentation. Host Markdown files on web server and present documentation with MDwiki in a browser. Writing process is iterative and collaborative. Documentation improves over time based on feedback provided in issue tracker.",
+    "Location": "La Jolla",
+    "StartTime": "2015-02-20T10:30:00-08:00",
+    "EndTime": "2015-02-20T11:00:00-08:00",
+    "Speakers": "Ryan Cresawn",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "Teaching Fish to Fly",
+    "Description": "The talk is mainly targeting taking an off the shelf embedded platform, Minnowboard Max, and it's use in UAVs, specifically quad-copters. With the ability to do real time computer vision, as well as various GPIO capabilities we'll explore the directions that significantly more autonomous UAVs can take with Linux and embedded platforms using, mostly, off the shelf components.",
+    "Location": "Los Angeles A",
+    "StartTime": "2015-02-20T11:00:00-08:00",
+    "EndTime": "2015-02-20T12:00:00-08:00",
+    "Speakers": "John Hawley",
+    "Topic": "Embedded Linux"
+  },
+  {
+    "Name": "Using Ansible for Deploying in Cloud Environments",
+    "Description": "Ansible is a great tool for automation. It can easily be used to glue together multiple tasks such as building a binary, setting up newly launched instances or removing old instances from a load balancer. But most of the time you'll end up with a large number of playbooks that do the same thing but for different groups of systems and applications. In this talk, we'll discuss why Ansible is great for deploying in cloud environments and how to create simple, abstract playbooks that are useful for multiple applications you need to deploy.",
+    "Location": "Century AB",
+    "StartTime": "2015-02-20T11:00:00-08:00",
+    "EndTime": "2015-02-20T12:00:00-08:00",
+    "Speakers": "Andrew Hamilton",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Ubuntu: The Past, Present, and Future",
+    "Description": "Jono Bacon spent eight years at Canonical as the Ubuntu Community Manager and was one of the most public representatives of Ubuntu. He left for XPRIZE in May 2014. In this new presentation, Bacon shares the history of Ubuntu, what the future, how the Canonical machine works, and shares some candid new insights from stepping outside of Canonical. He will also show the new bq Ubuntu phone, of which only a few are in the USA, and have a full Q&A.",
+    "Location": "Century CD",
+    "StartTime": "2015-02-20T11:00:00-08:00",
+    "EndTime": "2015-02-20T12:00:00-08:00",
+    "Speakers": "Jono Bacon",
+    "Topic": "Ubucon"
+  },
+  {
+    "Name": "Advanced Query Routing and Proxying with MaxScale",
+    "Description": "MaxScale is an interesting new proxy for MySQL and MariaDB that provides advanced features for handling multiple MySQL or MariaDB servers. MaxScale allows you to transparently handle clusters of MySQL servers behind the proxy. MaxScale is different from most other proxies as it is content aware and contains a query parser, has a modular plugin architecture, is aware of the state of the underlying servers and much more.",
+    "Location": "Plaza BC",
+    "StartTime": "2015-02-20T11:15:00-08:00",
+    "EndTime": "2015-02-20T12:15:00-08:00",
+    "Speakers": "Max Mether",
+    "Topic": "MySQL"
+  },
+  {
+    "Name": "The Key to Open Source Innovation",
+    "Description": "Open Source is a phenomenon made possible by defined freedoms, managed ecosystems, and the elevation of customers to the same status as developers and vendors, leading to a world where all participants collaborate on open source projects. In this talk, attendees will learn about the happy accident of open source innovation and how to apply the lessons in the era of cloud.",
+    "Location": "Los Angeles C",
+    "StartTime": "2015-02-20T11:15:00-08:00",
+    "EndTime": "2015-02-20T12:15:00-08:00",
+    "Speakers": "John Mark Walker",
+    "Topic": "Mentoring"
+  },
+  {
+    "Name": "PostgreSQL Procedural Languages: Tips, Tricks AND Gotchas",
+    "Description": "One of the most powerful features of PostgreSQL is its diversity of procedural languages. Did you ever wonder: What all of those options are on the CREATE FUNCTION statement? Does my choice of procedural language affect the performance of my statements? We will explore the world of PostgreSQL procedural languages.",
+    "Location": "Plaza D",
+    "StartTime": "2015-02-20T11:15:00-08:00",
+    "EndTime": "2015-02-20T12:15:00-08:00",
+    "Speakers": "Jim Mlodgenski",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Lightning Talks",
+    "Description": "- 11:15- John Hautzinger - Operationalizing QA - 11:25 - Dave Nielsen - From Containers to PaaS - 11:35 - Danny McAllaster - Automated Web Application Testing - 11:45 - Justin Mayer - Staying on Top of Linux System Security",
+    "Location": "La Jolla",
+    "StartTime": "2015-02-20T11:15:00-08:00",
+    "EndTime": "2015-02-20T12:00:00-08:00",
+    "Speakers": "",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "Cutting Through the Container Hype",
+    "Description": "Virtualization was the next Big Thing. Then cloud. Now, containers are at the peak of hype, led by the excitement surrounding Docker and containers. Project Atomic hopes to temper innovation with better management and control, and it's not alone: CoreOS, Docker's suite of enterprise products, and most recently, Ubuntu's Ubuntu Core all hope to capture this market. But what is the market? Is container technology the best plan for DevOps and an increasingly cloud-oriented IT?",
+    "Location": "Century AB",
+    "StartTime": "2015-02-20T12:00:00-08:00",
+    "EndTime": "2015-02-20T13:00:00-08:00",
+    "Speakers": "Brian Proffitt",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Intel and the Internet of Things",
+    "Description": "For a year now, Intel is trying to get a foothold in the growing market doubt the \"Internet of Things\", first with the Intel Galileo, an x86 based \"Arduino compatible\" board, now in a 2nd Generation version as well as recently with the Intel Edison, an SD card sized embedded board, all based on the Pentium x86 compatible Quark X1000 CPU.",
+    "Location": "Los Angeles A",
+    "StartTime": "2015-02-20T12:15:00-08:00",
+    "EndTime": "2015-02-20T13:15:00-08:00",
+    "Speakers": "Ralf Quint",
+    "Topic": "Embedded Linux"
+  },
+  {
+    "Name": "DevOps Day 2: People and Process",
+    "Description": "DevOps is often heralded as the solution to all the problems within IT. However, once the dust settles and the new tools are implemented, the challenging problems begin.This talk discusses many of the challenges as observed in small and large companies, and how to leverage various technologies like ChatOps to compliment and grow technical and non-technical teams alike.",
+    "Location": "La Jolla",
+    "StartTime": "2015-02-20T13:00:00-08:00",
+    "EndTime": "2015-02-20T13:30:00-08:00",
+    "Speakers": "James Fryman",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "Ada Initiative - Ally Skills Workshop",
+    "Description": "https://www.socallinuxexpo.org/scale/13x/ada-initiative-ally-skills-work...",
+    "Location": "San Lorenzo E",
+    "StartTime": "2015-02-20T13:00:00-08:00",
+    "EndTime": "2015-02-20T14:30:00-08:00",
+    "Speakers": "",
+    "Topic": "Ada Initiative Ally Workshop"
+  },
+  {
+    "Name": "Practical Applications for the Ubuntu user",
+    "Description": "Want to hear about all top applications available for Ubuntu and how to get them put onto your computer? This talk will go over some of the applications that come on the Ubuntu operating system, as well as some you might not have ever used before. I will show how to download these apps from the software center, as well as go into adding software not in the software center. This talk will aim to cover tips for the new Ubuntu user, as well as a hardcore Linux user who has never left their command line.",
+    "Location": "Century CD",
+    "StartTime": "2015-02-20T13:00:00-08:00",
+    "EndTime": "2015-02-20T13:45:00-08:00",
+    "Speakers": "Philip Ballew",
+    "Topic": "Ubucon"
+  },
+  {
+    "Name": "How to Thoroughly Insult and Offend People in Your Open Source Communities, or “Your #$%@ $%@&ing sucks and I $%@&ing hate it”",
+    "Description": "Conversational tone plays a large role in community success, but is a hard concept to model and understand. Using a humorous approach, I’ll demonstrate behaviors that create a hostile community (and by contrast, ones that create a welcoming community). We’ll look at the “Defcon Insult Scale for Conversations” (DIScon), from mildly insulting to abusive, and key signifiers of each level. Then, after talking about ways to “up the insult ante,” we’ll discuss why high DIScon level communities are unpleasant and how individuals can change the tone of conversation in communities.",
+    "Location": "Los Angeles C",
+    "StartTime": "2015-02-20T13:15:00-08:00",
+    "EndTime": "2015-02-20T14:15:00-08:00",
+    "Speakers": "Gina Likins",
+    "Topic": "Mentoring"
+  },
+  {
+    "Name": "Corpus collapsum: Partition tolerance testing of Galera with Docker and NetEm",
+    "Description": "All real world networks do tend to fail every now and then. Failures are common, however, resilience of distributed systems to partitions is not nearly ubiquitous enough. Even though partition tolerance is an integral part of Brewer's CAP theorem, distributed systems, even the ones slated to fulfill the 'P' in CAP, fail to meet it to desired levels or deterministic enough. This, unfortunately, is not an exception, but has become more commonplace as the recent research shows. This talk is about testing partition immunity of Galera. Docker and Netem/tc (traffic control) are used prominently.",
+    "Location": "Plaza BC",
+    "StartTime": "2015-02-20T13:15:00-08:00",
+    "EndTime": "2015-02-20T14:15:00-08:00",
+    "Speakers": "Raghavendra Prabhu",
+    "Topic": "MySQL"
+  },
+  {
+    "Name": "Docking Postgres",
+    "Description": "Running services in virtualized systems provides many benefits, but has often presented performance and flexibility drawbacks. This has become critical when managing large databases, where resource usage and performance are paramount. We will explore a case study in the use of Docker to roll out multiple database servers distributed across multiple physical servers.",
+    "Location": "Plaza D",
+    "StartTime": "2015-02-20T13:15:00-08:00",
+    "EndTime": "2015-02-20T14:15:00-08:00",
+    "Speakers": "Rick Morris, Oscar Herrera",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Tools shaping culture",
+    "Description": "Achieving culture change in the technology enterprise can be daunting. A top down approach can be risky as “culture shock” may cause attrition. How can technologists change culture organically from the bottom? Tools can do this incrementally as adoption increases and dramatically changes the way engineers engage work. We will talk about using tools to achieve cultural change, and introducing products in the enterprise that incentivize standardization through inspiration not fiat.",
+    "Location": "La Jolla",
+    "StartTime": "2015-02-20T13:30:00-08:00",
+    "EndTime": "2015-02-20T14:00:00-08:00",
+    "Speakers": "Mark Maun",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "From Skunkworks to Core Apps",
+    "Description": "Over the past two years Canonical has been changing the way it works together with members of the community to deliver products around business needs, deadlines and partnerships. Starting with the Skunkworks project announced by Mark Shuttleworth in 2012, we have been evolving how we bring people in from the community, how their work is treated, what they can expect from us and what we expect from them. The most recent iteration of this is the Core Apps project, where the community has developed a number of essential applications for our first phone launch.",
+    "Location": "Century CD",
+    "StartTime": "2015-02-20T14:00:00-08:00",
+    "EndTime": "2015-02-20T14:45:00-08:00",
+    "Speakers": "Michael Hall",
+    "Topic": "Ubucon"
+  },
+  {
+    "Name": "Lightning Talks",
+    "Description": "2:00 - John Wetherill - Docker is not Enough: Container Orchestration with PaaS 2:10 - Sean O'Meara - Reusability Patterns for Configuration Management 2:20 - Matt Chung - DevOps for the Enterprise 2:30 - Corey Quinn - Weasel Your Way to the To",
+    "Location": "La Jolla",
+    "StartTime": "2015-02-20T14:00:00-08:00",
+    "EndTime": "2015-02-20T14:45:00-08:00",
+    "Speakers": "Sean Omeara, Matt Chung, John Wetherill, Corey Quinn",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "Deploying a Containerized Gitlab Instance with Kubernetes",
+    "Description": "Back in November, I wrote about how to try out Kubernetes, the open source system for managing containerized applications across multiple hosts, using Atomic Hosts. In that post, I walked through a deployment of the Kubernetes project’s multicontainer \"Hello World\" application. This time, I thought I’d explore running a more real-world application on Kubernetes, while looking into a few alternate methods of spinning up a Kubernetes cluster. In this talk, we'll show how we start with containers, and use Kubernetes to spin up a fully functional application.",
+    "Location": "Century AB",
+    "StartTime": "2015-02-20T14:00:00-08:00",
+    "EndTime": "2015-02-20T14:45:00-08:00",
+    "Speakers": "Jason Brooks",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Embedded Linux Development with Yocto/OpenEmbedded",
+    "Description": "This is a \"bootcamp\" course for embedded developers who have not used OpenEmbedded, as well as current Linux developers and users familiar with at least one common embedded Linux platform (eg, RaspberryPi, BeagleBone etc). The course will provide an in-depth overview of the Yocto Project, the core OpenEmbedded layers and what they are, supported hardware, available documentation and other resources, build requirements, and how to setup, customize, build, and deploy your own embedded Linux OS image, root filesystem, kernel and bootloader, etc.",
+    "Location": "Los Angeles A",
+    "StartTime": "2015-02-20T14:15:00-08:00",
+    "EndTime": "2015-02-20T15:15:00-08:00",
+    "Speakers": "Stephen Arnold, Donald Burr",
+    "Topic": "Embedded Linux"
+  },
+  {
+    "Name": "MySQL's NoSQL -- Best of Both Worlds on One Set of Disks",
+    "Description": "This presentation covers the use of the NoSQL access to InnoDB data engines via the memcached protocol. Bypassing the SQL parser and optimizer is 9x faster! This allows applications to 'drink from the fire hose' at over 1,000,000 access a second. This approach is easy to set up, can be secured easily, stores data as a key/value pair while allowing SIMULTANEOUS access through SQL, and provides for a crash safe persistent cache. If you are looking for a quick, painless entry into the world of big data or need very high speed access to your data, come to this!",
+    "Location": "Plaza BC",
+    "StartTime": "2015-02-20T14:30:00-08:00",
+    "EndTime": "2015-02-20T15:30:00-08:00",
+    "Speakers": "Dave Stokes",
+    "Topic": "MySQL"
+  },
+  {
+    "Name": "What's preventing your organization from using Free/Open Source Software today?",
+    "Description": "Your company or organization dutifully releases source code and contributes to the community, but you're still dependent upon proprietary software, even when perfectly good FOSS alternatives exist. If there's an open alternative, why aren't you using it? As a member of a project, what can you do to help other FOSS projects escape proprietary software and use your software instead?",
+    "Location": "Los Angeles C",
+    "StartTime": "2015-02-20T14:30:00-08:00",
+    "EndTime": "2015-02-20T15:30:00-08:00",
+    "Speakers": "Robinson Tryon",
+    "Topic": "Mentoring"
+  },
+  {
+    "Name": "A Journey down the Amazon: RDS Postgres",
+    "Description": "Amazon integrated Postgres into their general Relational Database Services (RDS) offerings July 1, 2014. RDS offers automatic failover, scalability, and easy configuration, plus Amazon handles all the patching and upgrades for you! Of course, since it's a managed service, you can't do everything you might expect or want to. Come find out what it's like to use RDS Postgres day-to-day.",
+    "Location": "Plaza D",
+    "StartTime": "2015-02-20T14:30:00-08:00",
+    "EndTime": "2015-02-20T15:30:00-08:00",
+    "Speakers": "Gabrielle Roth",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Cloud Herding: Delivering Services Across Multiple Environments",
+    "Description": "What is \"Cloud Management\"? In a datacenter, you might have 2 or more virtualization management platforms, with a private cloud running alongside, and some workloads running in a public cloud. ManageIQ gives admins and developers a way to seamlessly deliver services from multiple cloud and virtualization platforms.",
+    "Location": "Century AB",
+    "StartTime": "2015-02-20T14:45:00-08:00",
+    "EndTime": "2015-02-20T15:30:00-08:00",
+    "Speakers": "John Mark Walker",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Ubuntu App Development for a Converged Future",
+    "Description": "Mobile devices have taken the lead over desktops and laptops in the past few years, and every major provider of software is trying to make the transition to this new way of computing. Out goal, which we call \"Convergence\", aims to simplify the platform for app developers, giving them a consistent set of tools, interface, and experiences from mobile to desktop to televisions. In this talk I will present each of these challenges and how Ubuntu has overcome them, what that means for app developers, as well as what consumers can expect from Ubuntu when running it on multiple devices.",
+    "Location": "Century CD",
+    "StartTime": "2015-02-20T15:00:00-08:00",
+    "EndTime": "2015-02-20T15:45:00-08:00",
+    "Speakers": "Michael Hall",
+    "Topic": "Ubucon"
+  },
+  {
+    "Name": "Containerization in Production: The Good, The Bad, The Ugly",
+    "Description": "This panel will discuss the changing containerization landscape, the challenges and requirements of using containerization in production, and what's in store in 2015. Panel Moderator - John Willis Panel Members - Bryan Cantrill- Tom Hockin- Kelsey Hightower- Jerome Petazzoni- Adrian Otto",
+    "Location": "La Jolla",
+    "StartTime": "2015-02-20T15:00:00-08:00",
+    "EndTime": "2015-02-20T15:30:00-08:00",
+    "Speakers": "Bryan Cantrill, Adrian Otto, John Willis, Jérôme Petazzoni",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "Incident Command System for Technology Folks",
+    "Description": "How to apply the Incident Command System (ICS) to System Administrators. In this talk I will cover a brief history of ICS, its core concepts, terminology, organizational processes, and essential principles of ICS and show how they can be applied in the Technology arena. We will cover the following: * The difference between an Incident and an Event * The key concepts of ICS * ICS command structure * Responsibilities for each command area * Run through an example of applying it for a Technology incidents This can be a talk or a 4 hour tutorial",
+    "Location": "La Jolla",
+    "StartTime": "2015-02-20T15:30:00-08:00",
+    "EndTime": "2015-02-20T16:00:00-08:00",
+    "Speakers": "Ski Kacoroski",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "Creating Open Hardware Tools",
+    "Description": "This presentation starts with a historical look at open tools and how they have influenced open hardware development as part of the Maker/Hacker movement, followed by a survey of how to create simple open hardware tools to aid in debugging everything from simple microcontrollers to linux kernel drivers, and ends with a discussion of the future of user created open diagnostic and debug tools.",
+    "Location": "Los Angeles A",
+    "StartTime": "2015-02-20T15:30:00-08:00",
+    "EndTime": "2015-02-20T16:30:00-08:00",
+    "Speakers": "David Anders",
+    "Topic": "Embedded Linux"
+  },
+  {
+    "Name": "Building a Minimal Host for Docker Containers",
+    "Description": "This talk will look at Project Atomic and how we're building a slimmed down, tailored operating system to run (and orchestrate) Docker containers. We'll take a look at how the host is built using rpm-ostree, the trade-offs that come with an immutable host, how you can roll back to the previous state without hassles, and much more.",
+    "Location": "Century AB",
+    "StartTime": "2015-02-20T15:30:00-08:00",
+    "EndTime": "2015-02-20T16:15:00-08:00",
+    "Speakers": "Joe Brockmeier",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Confessions of a Reluctant Tweeter: Social Media for Open Source Projects",
+    "Description": "Do you cringe when you see #hashtags? Do you roll your eyes at \"social media gurus\"? Social media should save time (not suck it), but you don't have to be a community manager or have a communications background to leverage the power of 140 characters. With a few quick and easy tips, your open source project can use social media to communicate with contributors, grow its community, and share news and announcements.",
+    "Location": "Los Angeles C",
+    "StartTime": "2015-02-20T15:45:00-08:00",
+    "EndTime": "2015-02-20T16:45:00-08:00",
+    "Speakers": "Rikki Endsley",
+    "Topic": "Mentoring"
+  },
+  {
+    "Name": "Building A Time-Series Database on MySQL",
+    "Description": "Relational databases aren’t very well suited to time-series data in some ways, but MySQL is powerful and flexible. At VividCortex, we have found that it’s a good storage engine to support a large-scale, high-velocity time-series database in the AWS cloud. In this session, Baron Schwartz will dicuss VividCortex's unique time-series data requirements and implementation. You will leave the talk with a greater understanding of MySQL’s capabilities related to time-series data.",
+    "Location": "Plaza BC",
+    "StartTime": "2015-02-20T15:45:00-08:00",
+    "EndTime": "2015-02-20T16:45:00-08:00",
+    "Speakers": "Baron Schwartz",
+    "Topic": "MySQL"
+  },
+  {
+    "Name": "Toolbelt Psychology-- How to use Tools without Becoming One",
+    "Description": "In an ecosystem of ever-increasing tools -- both generalized and specialized -- we're reaching a point where the available Linux toolchain has far surpassed what anybody could have imagined many years ago. With so many choices, teams are faced with a tendency to paralyze themselves by endless arguing over which tool is \"best\". We'll talk about the history of tools, the history of Linux and how we got to such an embaressment of riches and what can be done to free ourselves from \"toolchain paralysis\".",
+    "Location": "La Jolla",
+    "StartTime": "2015-02-20T16:00:00-08:00",
+    "EndTime": "2015-02-20T16:30:00-08:00",
+    "Speakers": "Mike Place",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "Ubuntu Server Deep Dive: Security",
+    "Description": "Join the Ubuntu Server Product and Engineering Managers for a deep dive including a full overview of security features, and our choice of favorite new capabilities found in kernel and userland features.",
+    "Location": "Century CD",
+    "StartTime": "2015-02-20T16:00:00-08:00",
+    "EndTime": "2015-02-20T16:45:00-08:00",
+    "Speakers": "Federico Lucifredi",
+    "Topic": "Ubucon"
+  },
+  {
+    "Name": "Migrate to CentOS 7 by staying on CentOS 5: A containerized approach",
+    "Description": "We all have a legacy application that's keeping us on an older version of the host OS. By putting that application into a container, you can enjoy the performance increases and tooling improvements of a modern distribution, and while still running critical legacy software.",
+    "Location": "Century AB",
+    "StartTime": "2015-02-20T16:15:00-08:00",
+    "EndTime": "2015-02-20T17:15:00-08:00",
+    "Speakers": "Jim Perrin",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Best in Show",
+    "Description": "You might think that you need to learn computer programming languages sequentially but after you master one, your best bet may be to learn by comparing and contrasting the way they solve particular problems. In this talk, a simple problem opens up an array of choices for solving it. I examine each one, find a solution and at the same time, highlight strengths and weaknesses of each language / technology. This excercise will challenge your thinking about how a computer language ought to behave as well as motivate you to branch out and learn more languages.",
+    "Location": "La Jolla",
+    "StartTime": "2015-02-20T16:30:00-08:00",
+    "EndTime": "2015-02-20T17:00:00-08:00",
+    "Speakers": "Sharon Levy",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "USB on embedded systems: quirky but versatile",
+    "Description": "Boot a beaglebone running XFCE with USB mouse and keyboard connected, and both input devices will likely behave as expected. Venture away from this limited use case (ubiquitous embedded board serving as mini-desktop-replacement), and things start to get more interesting. Embedded USB controllers present embedded Linux developers with special challenges and features not encountered in desktop or server Linux systems.",
+    "Location": "Los Angeles A",
+    "StartTime": "2015-02-20T16:45:00-08:00",
+    "EndTime": "2015-02-20T17:45:00-08:00",
+    "Speakers": "Stephanie Lockwood-Childs",
+    "Topic": "Embedded Linux"
+  },
+  {
+    "Name": "Community building the open source way",
+    "Description": "Over the past five years, Jason Hibbets has been the community manager behind Opensource.com, an online publication focused on highlighting the use of open source methodologies in areas outside of technology. He’ll provide a case study of the content strategy and community building effort for the Opensource.com publication, a project sponsored by Red Hat. You’ll go behind the scenes and see the nuts-and-bolts, the tools, the metrics, and the strategy that’s helped this project grow to over 500,000 page views a month.",
+    "Location": "Los Angeles C",
+    "StartTime": "2015-02-20T17:00:00-08:00",
+    "EndTime": "2015-02-20T18:00:00-08:00",
+    "Speakers": "Jason Hibbets",
+    "Topic": "Mentoring"
+  },
+  {
+    "Name": "Ubuntu Cloud and Server Update!",
+    "Description": "Docker, LXC/LXD, MAAS, Kubernetes, Juju, CloudFoundry, Snappy, OpenStack, just to name a few. And you might want to do these things on x86, ARM, or POWER. The list goes on and on! There's been a ton of innovation in the cloud lately, find out how Ubuntu Cloud and Server is bringing these to you",
+    "Location": "Century CD",
+    "StartTime": "2015-02-20T17:00:00-08:00",
+    "EndTime": "2015-02-20T18:00:00-08:00",
+    "Speakers": "Jorge Castro",
+    "Topic": "Ubucon"
+  },
+  {
+    "Name": "Fun with Functions, by Example",
+    "Description": "One of the key strengths of PostgreSQL is its extensability, and at the core of that are functions. In PostgreSQL functions can be used as an end in-and-of themselves, or they can be used to allow the creation of other custom SQL objects such as operators and aggregates. This presentation will enlighten the audience on the vast array of capabilities embodied in PostgreSQL functions, and illustrate many of the key features through simple and real world examples.",
+    "Location": "Plaza D",
+    "StartTime": "2015-02-20T17:00:00-08:00",
+    "EndTime": "2015-02-20T18:00:00-08:00",
+    "Speakers": "Joe Conway",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Trust. Empathy. Growth.",
+    "Description": "We will explore in detail the elements of this years theme: Trust, Empathy, and Growth. These are essential and active ingredients in the emergence and sustaining of a DevOps/LEAN culture.",
+    "Location": "La Jolla",
+    "StartTime": "2015-02-20T17:00:00-08:00",
+    "EndTime": "2015-02-20T18:00:00-08:00",
+    "Speakers": "Ben Rockwood",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "Kernel Debug Tools and Techniques",
+    "Description": "This session is intended to bring together anybody that debugs the Linux kernel to share best practices and brainstorm new ideas. Topics may range from .config testing, module/built-in drivers, hardware/software tools and test methods for testing specific driver subsystems, VM/scheduler/interrupt stress testing, and beyond. The discussion is targeted at Linux kernel developers, QA/test engineers, and Linux product engineers with the goal of testing Linux kernel integrity.",
+    "Location": "Los Angeles A",
+    "StartTime": "2015-02-20T18:00:00-08:00",
+    "EndTime": "2015-02-20T19:00:00-08:00",
+    "Speakers": "Matt Porter, David Anders",
+    "Topic": "Embedded Linux"
+  },
+  {
+    "Name": "Elasticsearch / ELK Stack BoF",
+    "Description": "Are you a fan of Elasticsearch, Logstash, or Kibana? Just curious about what the ELK stack is? Come to the ELK stack BoF to discuss what's going on in these three project communities, share stories, and hear about what's coming in the near future! We'll have beer, soda, snacks, and awesome people on hand.",
+    "Location": "Carmel",
+    "StartTime": "2015-02-20T19:00:00-08:00",
+    "EndTime": "2015-02-20T20:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "accessibility for persons with disabilitity and universal design",
+    "Description": "Gathering people who have an interest in using OS to make computers and software useful to people who have physical or neurological disabilities, and blending technology to also be advantageous to people who do not have disabilities. The contact person, Bill Zuke, feels there are important social rewards for OS technicians and hackers to network for projects which involve solving problems in design relating to making tech accessible to any one. Disability related solutions do not need to be ugly or awkward, they can and ought to be attractive and universally convenient. This meeting should sta",
+    "Location": "Century AB",
+    "StartTime": "2015-02-20T19:00:00-08:00",
+    "EndTime": "2015-02-20T20:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Perl",
+    "Description": "The Perl Mongers of Southern California (San Diego, Thousand Oaks, Orange County, and Los Angeles) will be holding a Birds of a Feather session this year to discuss all things Perl.",
+    "Location": "Century CD",
+    "StartTime": "2015-02-20T19:00:00-08:00",
+    "EndTime": "2015-02-20T20:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Domain names and other DNS nerdery",
+    "Description": "Let's talk about domain names, DNS, and related nerdery! - Integrating domain registration into your service - Automating domain and DNS operations with APIs and CLIs - Discussing our addiction to registering domains - Swapping the domains we registered when we were drunk - And other important topics",
+    "Location": "Los Angeles A",
+    "StartTime": "2015-02-20T19:00:00-08:00",
+    "EndTime": "2015-02-20T20:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Introduction to NoSql Databases",
+    "Description": "Couchbase Server, is an open source, distributed, NoSQL document-oriented database that is optimized for interactive applications.",
+    "Location": "Los Angeles B",
+    "StartTime": "2015-02-20T19:00:00-08:00",
+    "EndTime": "2015-02-20T20:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Ansible",
+    "Description": "Ansible is an awesome tool for automating just about anything. Are you an Ansible user? Do you want to be an Ansible user? Do you want to get to know an Ansible user? Then come hang out!",
+    "Location": "Los Angeles C",
+    "StartTime": "2015-02-20T19:00:00-08:00",
+    "EndTime": "2015-02-20T20:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Ceph",
+    "Description": "Curious what distributed storage and want to learn more about Ceph? Want to know what the current development plans are, the state of current integrations with OpenStack and other platforms, or just want to catch an opportunity to get several core Ceph developers in the room? This is your chance!",
+    "Location": "Marina",
+    "StartTime": "2015-02-20T19:00:00-08:00",
+    "EndTime": "2015-02-20T20:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Linux Documentary Web Series",
+    "Description": "It has been a long time since Revolution OS first documented the Linux community. There have been no documentaries in English since. I have been shooting video for my project, which has gone by the working title \"Linux Inside\" since 2012. I am looking for fresh people to help me make this happen, including those who might want to go on camera and talk about the interesting ways you are using Linux. I am also looking for people who might want to help in the production/post production process.",
+    "Location": "San Lorenzo B",
+    "StartTime": "2015-02-20T19:00:00-08:00",
+    "EndTime": "2015-02-20T20:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "UpSCALE",
+    "Description": "The UpSCALE talks are held in the style of the Ignite presentations made popular by various O'Reilly sponsored events. Participants are given five minutes to speak on a subject accompanied by 20 automatically-advanced slides, making this a fast paced, fun event for participants and audience. The UpSCALE talks will take place on Friday the 20th at 8pm in the La Jolla room. Please join us as members of the Free and Open Source community do their best to beat the clock and get their ideas out!",
+    "Location": "La Jolla",
+    "StartTime": "2015-02-20T20:00:00-08:00",
+    "EndTime": "2015-02-20T21:00:00-08:00",
+    "Speakers": "",
+    "Topic": "UpSCALE"
+  },
+  {
+    "Name": "Apache Hadoop & Open Source Big Data Applications",
+    "Description": "Apache Hadoop is the leading open-source platform for data storage and processing at unlimited scale. This BoF is a forum for any users of Hadoop (and other open-source Big Data software such as Apache Solr, Cassandra, Spark and Mesos) to participate in professional networking and to discuss deployment experiences, applications and usage-patterns, development process, and any other related topics.",
+    "Location": "Los Angeles A",
+    "StartTime": "2015-02-20T20:00:00-08:00",
+    "EndTime": "2015-02-20T21:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Moving on up! Career and jobsearch BoF",
+    "Description": "As a recruiter, I'm currently on the corporate side although I've also been agency and an unemployed jobseeker myself. Happy to share what I've learned and let's talk jobsearch best tips and practices!",
+    "Location": "Los Angeles C",
+    "StartTime": "2015-02-20T20:00:00-08:00",
+    "EndTime": "2015-02-20T21:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Korora Linux",
+    "Description": "With a special blend of aesthetics and functionality, Korora aims to make Linux easier for new users, while still being useful for experts. Based on Fedora, Korora provide a complete, easy to use computing system that \"just works\" out of the box.",
+    "Location": "Marina",
+    "StartTime": "2015-02-20T20:00:00-08:00",
+    "EndTime": "2015-02-20T21:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Bad Voltage: Live",
+    "Description": "Join us as we wrap up Friday with a must-see show, exclusive to SCALE13x. The team from the popular Bad Voltage podcast (Jono Bacon, Bryan Lunduke, Stuart Langridge, & Jeremy Garcia) will be taping a full live show, and the first show ever in front of a live audience. Come and be a part of it! The show will be packed with discussion, giveaways, challenges, and more, all wrapped up in the fun and irreverent style of Bad Voltage. Be sure to get along, there will be plenty of surprises in store so you won't want to miss it.",
+    "Location": "La Jolla",
+    "StartTime": "2015-02-20T21:00:00-08:00",
+    "EndTime": "2015-02-20T22:00:00-08:00",
+    "Speakers": "",
+    "Topic": "Entertainment"
+  },
+  {
+    "Name": "CrunchBang Fork",
+    "Description": "This is a Birds of a Feather gathering to discuss the possibility of forking CrunchBang Linux into another distro based on an identical parameters that original lead developer Philip Newborough set when he left the lead developer's post: the latest Debian under the Openbox window manager.",
+    "Location": "Marina",
+    "StartTime": "2015-02-20T21:00:00-08:00",
+    "EndTime": "2015-02-20T22:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Training Linux Installfest",
+    "Description": "Linux is a robust and secure operating system with a rich array of applications. The Southern California Linux Expo is once again providing those who want to start using Linux an opportunity to learn how. SCALE will provide a one-day Installfest + basic system administration class on Saturday, February 21st, 2015.",
+    "Location": "Bel Air",
+    "StartTime": "2015-02-21T09:00:00-08:00",
+    "EndTime": "2015-02-21T12:30:00-08:00",
+    "Speakers": "",
+    "Topic": "Beginner Tutorials"
+  },
+  {
+    "Name": "Lemmings, Think Different and Why Free Software is Still Important",
+    "Description": "There is a popular misconception that lemmings will jump off of a cliff in a fit of group-think gone amok, but it turns out that the lemmings-off-a-cliff was actually a media fabrication and a massive act of animal cruelty. Although actual physical lemmings don't themselves come up in life very often, easy platitudes and media fabricated one-liners certainly do. What's worse, such soundbites end up driving technology decisions. Join Monty Taylor in a discussion of some of the more popular false one-liners, how they're affecting the tech industry and what you can do about it.",
+    "Location": "La Jolla",
+    "StartTime": "2015-02-21T10:00:00-08:00",
+    "EndTime": "2015-02-21T11:00:00-08:00",
+    "Speakers": "Monty Taylor",
+    "Topic": "Keynote"
+  },
+  {
+    "Name": "LPI Exams",
+    "Description": "Linux Professional Institute (LPI) exams at SCALE 13x.",
+    "Location": "San Lorenzo C",
+    "StartTime": "2015-02-21T11:00:00-08:00",
+    "EndTime": "2015-02-21T12:00:00-08:00",
+    "Speakers": "",
+    "Topic": "Testing"
+  },
+  {
+    "Name": "Introduction to OpenStack",
+    "Description": "If you want the high-level picture of what OpenStack is, and how the pieces fit together, this is the place to come. We'll also talk a little about how the project functions, and the role of the OpenStack Foundation.",
+    "Location": "Carmel",
+    "StartTime": "2015-02-21T11:30:00-08:00",
+    "EndTime": "2015-02-21T12:30:00-08:00",
+    "Speakers": "Rich Bowen",
+    "Topic": "Cloud"
+  },
+  {
+    "Name": "Building a Better Brain",
+    "Description": "Mindset is an idea discovered by world-renowned Stanford University psychologist Carol Dweck after decades of research on achievement and success. In this talk, you'll learn what a Growth Mindset is and how open source is uniquely suited to encourage it. I'll discuss how Growth Mindset and open source technology can benefit the brain development of students, technologists, non-geeks, and even corporations. This talk is designed to appeal to anyone with an interest in building a better brain!",
+    "Location": "Century AB",
+    "StartTime": "2015-02-21T11:30:00-08:00",
+    "EndTime": "2015-02-21T12:30:00-08:00",
+    "Speakers": "Jenn Greenaway",
+    "Topic": "General"
+  },
+  {
+    "Name": "Open Source Is Dead - And This May Be a Good Thing(tm)",
+    "Description": "Open source software has become a dominant player in technology today. From cloud computing to web applications to mobile devices, open source is the de facto standard. But it is not the realization of the free software dream of \"free software for everyone\". There is little open source on the desktop. Most applications are still developed under a commercial process license, and the biggest players in open source have names like Microsoft, Google, and Paypal. However, this may turn out to be a good thing in the long run as the next generation of coders becomes comfortable with the model.",
+    "Location": "Los Angeles C",
+    "StartTime": "2015-02-21T11:30:00-08:00",
+    "EndTime": "2015-02-21T12:30:00-08:00",
+    "Speakers": "Tarus Balog",
+    "Topic": "General"
+  },
+  {
+    "Name": "systemd for developers",
+    "Description": "The controversial systemd has absorbed udev, purported to replace syslog with the journal daemon, and is the preferred mechanism to manipulate the kernel's cgroups resource allocation system. Adoption by Debian and Ubuntu in addition to SUSE and Fedora assure its near ubiquity. Systemd is winning wide acceptance because it is simpler, easier to use, and better documented than its competition. I'll describe how to get started with systemd and perform some simple demos.",
+    "Location": "Los Angeles A",
+    "StartTime": "2015-02-21T11:30:00-08:00",
+    "EndTime": "2015-02-21T12:30:00-08:00",
+    "Speakers": "Alison Chaiken",
+    "Topic": "Developer"
+  },
+  {
+    "Name": "Rapid Video Transcoding on an Ubuntu Orange Box",
+    "Description": "It can take many minutes to process a small, 30-second clip, or even hours to process a full movie. There are numerous, excellent, open source video transcoding and processing tools freely available in Ubuntu, including libav-tools, ffmpeg, mencoder, and handbrake. Surprisingly, however, none of those support parallel computing easily or out of the box. And disappointingly, I couldn't find any MPI support readily available either. I decided to tackle the problem myself, and develop a scalable, parallel video transcoding solution, and I'm delighted to share the result with you today!",
+    "Location": "Los Angeles B",
+    "StartTime": "2015-02-21T11:30:00-08:00",
+    "EndTime": "2015-02-21T12:30:00-08:00",
+    "Speakers": "Dustin Kirkland",
+    "Topic": "General"
+  },
+  {
+    "Name": "From XBMP to XBMC to Kodi: A Brief History of the Trials of a User-facing Media Center",
+    "Description": "It's relatively rare and difficult to keep a large scale open source project going year after year without the firm financial backing of a larger organization. Since its inception in 2002, the software currently called Kodi has gone through numerous changes, both at the software level and at the organizational level, and has encountered numerous difficulties along the way, from simple communications problems both internally and with the userbase to larger organizational snafus. In this talk, we'll review how the organization has managed to overcome these problems and continue on.",
+    "Location": "Plaza BC",
+    "StartTime": "2015-02-21T11:30:00-08:00",
+    "EndTime": "2015-02-21T12:30:00-08:00",
+    "Speakers": "Nathan Betzen",
+    "Topic": "Hot Applications"
+  },
+  {
+    "Name": "How To Build a Better SRE",
+    "Description": "In our brave new world, the reliability of the web services and cloud infrastructure that do the grunt work of making your gadgets seem \"smart\" and \"mobile\" is paramount. Consequently, \"Service Reliability Engineer\" is a job role that is growing in demand at tech companies everywhere. However, there is still much confusion about this role, and how it differs from a traditional \"SysAdmin\". I'll try to outline the distinguishing characteristics and what expertise might be valued when interviewing for SRE, or building an SRE team.",
+    "Location": "Plaza D",
+    "StartTime": "2015-02-21T11:30:00-08:00",
+    "EndTime": "2015-02-21T12:30:00-08:00",
+    "Speakers": "Rae Yip",
+    "Topic": "SysAdmin"
+  },
+  {
+    "Name": "Linux Profiling at Netflix",
+    "Description": "Profiling can show what your Linux kernel and appliacations are doing in detail, across all software stack layers. This talk shows how we are using Linux perf_events (aka \"perf\") and flame graphs at Netflix to understand CPU usage in detail, to optimize our cloud usage, solve performance issues, and identify regressions. This will be more than just an intro: profiling difficult targets, including Java and Node.js, will be covered, which includes ways to resolve JITed symbols and broken stacks. Included are the easy examples, the hard, and the cutting edge.",
+    "Location": "Century CD",
+    "StartTime": "2015-02-21T11:30:00-08:00",
+    "EndTime": "2015-02-21T12:30:00-08:00",
+    "Speakers": "Brendan Gregg",
+    "Topic": "SysAdmin"
+  },
+  {
+    "Name": "Linux Kernel Hacking 101",
+    "Description": "This presentation will describe the working life of a Linux kernel (or, more generally, open source) developer. It will show a newcomer what to expect of the development process and the community, and will help her get started with the existing rich set of resources for skill building and practice.",
+    "Location": "San Lorenzo F",
+    "StartTime": "2015-02-21T11:30:00-08:00",
+    "EndTime": "2015-02-21T12:30:00-08:00",
+    "Speakers": "Kelley Nielsen",
+    "Topic": "Kernel"
+  },
+  {
+    "Name": "Using Docker, CoreOS, and git hooks to deploy applications",
+    "Description": "PandaCluster Awesome Command-Line Tool and Library to Manage CoreOS Clusters https://github.com/pandastrike/PandaCluster PandaHook The Ultimate Tool to Manage and Deploy Githook Scripts. https://github.com/pandastrike/PandaHook CoreOS-Reflector A Hello World introduction to CoreOS and Docker. https://github.com/pandastrike/coreos-reflector",
+    "Location": "La Jolla",
+    "StartTime": "2015-02-21T11:30:00-08:00",
+    "EndTime": "2015-02-21T12:30:00-08:00",
+    "Speakers": "Lance Lakey, Dan Yoder",
+    "Topic": "Container and Orchestrators"
+  },
+  {
+    "Name": "What a 65 Year Old Computer can Teach Us Now",
+    "Description": "Learn how simple computer emulators can get beginners interested in computer programming, and help teach kids learning to program. In this presentation I will demonstrate how simple retro computers, like the WITCH, can be used to teach and interest kids in programming. The National Museum of Computing is looking to get emulators and modern replicas of the retro computers to aid education. Bring your laptop (optional). I have been lucky to be a part of making the WITCH-E Emulator, the educational emulator of the oldest currently working programmable digital computer in the world!",
+    "Location": "Marina",
+    "StartTime": "2015-02-21T11:30:00-08:00",
+    "EndTime": "2015-02-21T12:30:00-08:00",
+    "Speakers": "Nova King",
+    "Topic": "Youth"
+  },
+  {
+    "Name": "Open Build Server - The Package Factory",
+    "Description": "The Open Build Server is a cross-distro, multi architecture platform for building packages from source code into native package formats for a wide number of Linux Distributions. From a single source tarball or source repository like git, you can create rpm and deb packages for all major Linux distributions on all supported hardware architectures.",
+    "Location": "Los Angeles A",
+    "StartTime": "2015-02-21T13:30:00-08:00",
+    "EndTime": "2015-02-21T14:30:00-08:00",
+    "Speakers": "Peter Linnell",
+    "Topic": "Developer"
+  },
+  {
+    "Name": "Weasel Your Way to the Top",
+    "Description": "Convincingly given by a man in a suit, this presentation covers what technical interviewers are trying to learn about you, how to use their questions to figure out if you're likely to be a good fit for the job, and what happens when interviews go hilariously awry.",
+    "Location": "San Lorenzo F",
+    "StartTime": "2015-02-21T13:30:00-08:00",
+    "EndTime": "2015-02-21T14:30:00-08:00",
+    "Speakers": "Corey Quinn",
+    "Topic": "General"
+  },
+  {
+    "Name": "What's New in FreeNAS 9.3",
+    "Description": "This presentation will provide an overview of some of the many new features in FreeNAS 9.3, including the new update manager, boot manager, certificate manager, VMware integration, webdav shares, and much more!",
+    "Location": "Plaza D",
+    "StartTime": "2015-02-21T13:30:00-08:00",
+    "EndTime": "2015-02-21T14:30:00-08:00",
+    "Speakers": "Dru Lavigne",
+    "Topic": "Hot Applications"
+  },
+  {
+    "Name": "Easy Big Data workloads in the Cloud with Juju",
+    "Description": "Everyone is talking about big data, now it's your turn to dive in. Over at Ubuntu we've taken on the task of helping people solve these problems so they can concentrate on what matters, the results! You'll learn to use Juju to: Run mapreduce jobs then on top of Tez, run simple SQL-like analytics with Hive, analyze unstructed data analytics with Pig, and run real-time analytics with Storm",
+    "Location": "La Jolla",
+    "StartTime": "2015-02-21T13:30:00-08:00",
+    "EndTime": "2015-02-21T14:30:00-08:00",
+    "Speakers": "Jorge Castro, Marco Ceppi, José Antonio Rey",
+    "Topic": "Cloud"
+  },
+  {
+    "Name": "Solving the Package Problem (Or Making it Infinitely Worse?)",
+    "Description": "We've come a long, long way since the days of installing software by compiling source and shoving it onto a system with `make install`. Last year, Docker containers were heralded as a way out of the complexities of managing software - but today we're faced with a slew of container offerings and things look more complex than ever. What's the solution?",
+    "Location": "Century CD",
+    "StartTime": "2015-02-21T13:30:00-08:00",
+    "EndTime": "2015-02-21T14:30:00-08:00",
+    "Speakers": "Joe Brockmeier",
+    "Topic": "Container and Orchestrators"
+  },
+  {
+    "Name": "Growing Your Technology User Group",
+    "Description": "User groups are an essential and flourishing part of the tech community, but it's common for them to encounter obstacles to meeting regularly. This talk will be filled with practical tips to keep your user group growing and active. I'll suggest various ways for user groups to attract a steady supply of speakers, find a venue, obtain food and drink for meetings, source topics, become more visible, and attract new members. These tips are based on finding creative workarounds to obstacles encountered by over 50 user groups while remotely running Puppet Labs' User Group program.",
+    "Location": "Century AB",
+    "StartTime": "2015-02-21T13:30:00-08:00",
+    "EndTime": "2015-02-21T14:30:00-08:00",
+    "Speakers": "Kara Sowles",
+    "Topic": "General"
+  },
+  {
+    "Name": "Sharding your data with Spider",
+    "Description": "When your data sizes starts reaching Big Data limits sharding becomes a necessity. However sharding can also be needed for other reasons like dealing with huge amounts of traffic etc. There are multiple ways to shard and where you shard has a big impact to what you can do and on the performance. Spider is a sharding engine that allows sharding behind the storage engine layer, thus being able to use the optimizer to also optimez other queries than primary key lookups. This talk will go into the details on how spider works and what you can acheive by using spider as a sharding solution.",
+    "Location": "Los Angeles C",
+    "StartTime": "2015-02-21T13:30:00-08:00",
+    "EndTime": "2015-02-21T14:30:00-08:00",
+    "Speakers": "Max Mether",
+    "Topic": "General"
+  },
+  {
+    "Name": "Cashing in on Varnish",
+    "Description": "Varnish is a state of the art web accelerator, which traditionally sits in front of a web server and caches content. However, that's just the tip of the iceberg. For web applications, especially high traffic, demanding web applications, Varnish can be leveraged to load balance, direct, manipulate and enhance the traffic of a highly scalable web environment at multiple tiers. More importantly, Varnish is very configurable, automation friendly, and can also provide a wealth of useful data to DevOps engineers looking to garner operational analytics and application performance data.",
+    "Location": "Plaza BC",
+    "StartTime": "2015-02-21T13:30:00-08:00",
+    "EndTime": "2015-02-21T14:30:00-08:00",
+    "Speakers": "Rafael Barrero",
+    "Topic": "SysAdmin"
+  },
+  {
+    "Name": "Rise of the Static Site Generator",
+    "Description": "While web publishing originally consisted of static HTML and CSS assets, the database-backed content management system soon took over as the dominant web publishing model. This talk investigates the rise of static site generators and discusses how these new light-weight static tools can often offer significant benefits over the traditional CMS. Attendees of this talk will walk away fully equipped to install a static site generator, write content in Markdown format, and publish their new sites with a minimum of effort.",
+    "Location": "Los Angeles B",
+    "StartTime": "2015-02-21T13:30:00-08:00",
+    "EndTime": "2015-02-21T14:30:00-08:00",
+    "Speakers": "Justin Mayer",
+    "Topic": "General"
+  },
+  {
+    "Name": "Hacking The Finch",
+    "Description": "The Finch is an advanced robot for computer science education that operates on a drag and drop interface called Snap! Students will execute commands in Snap! to navigate the Finch through an obstacle course while demonstrating the features and functions of speed, steering, LED lights, and more! Be sure to tune in to this session to learn about the Finch and how its role in computer science education can be applied to everyday life.",
+    "Location": "Marina",
+    "StartTime": "2015-02-21T13:30:00-08:00",
+    "EndTime": "2015-02-21T14:30:00-08:00",
+    "Speakers": "Daniel Valadez, Rich Unite, Yolanda Kol, Koda Kol",
+    "Topic": "Youth"
+  },
+  {
+    "Name": "Contemporary Device Tree",
+    "Description": "Device Tree is a hardware data abstraction currently in widespread use in the Linux kernel. In this session, Matt Porter will guide an exploration of Device Tree from the origins of DT all the way to an analysis of applications of DT in the Linux kernel. Focus will be placed upon understanding the fundamentals of DT and demonstrating use via relevant examples of common community board DT source files in the kernel. Matt will also introduce the new dynamic DT overlay feature, explaining the driving use cases for this feature, concepts, syntax, and how overlays may be used in a system.",
+    "Location": "Carmel",
+    "StartTime": "2015-02-21T13:30:00-08:00",
+    "EndTime": "2015-02-21T14:30:00-08:00",
+    "Speakers": "Matt Porter",
+    "Topic": "Kernel"
+  },
+  {
+    "Name": "LPI Exams",
+    "Description": "Linux Professional Institute (LPI) will be offering certification exams at SCALE 13x.",
+    "Location": "San Lorenzo C",
+    "StartTime": "2015-02-21T13:30:00-08:00",
+    "EndTime": "2015-02-21T14:30:00-08:00",
+    "Speakers": "",
+    "Topic": "Testing"
+  },
+  {
+    "Name": "Linux System Admin Training",
+    "Description": "Linux is a robust and secure operating system with a rich array of applications. The Southern California Linux Expo is once again providing those who want to start using Linux an opportunity to learn how. SCALE will provide a one-day Installfest + basic system administration class on Saturday, February 21st, 2015.",
+    "Location": "Bel Air",
+    "StartTime": "2015-02-21T13:30:00-08:00",
+    "EndTime": "2015-02-21T17:00:00-08:00",
+    "Speakers": "",
+    "Topic": "Beginner Tutorials"
+  },
+  {
+    "Name": "Tails",
+    "Description": "With everything we know now about spying and hacking from the hacker next to you in the coffee shop all the way to government surveillance, now’s as good a time as any to learn how to protect your privacy and anonymity. The Tails project provides a live bootable disk that sets up a secure anonymous session on any computer with all traffic routed over Tor. In this talk Kyle will discuss how to download and verify the latest Tails release, and demonstrate some of the more advanced features of Tails including its persistent encrypted storage.",
+    "Location": "Century CD",
+    "StartTime": "2015-02-21T15:00:00-08:00",
+    "EndTime": "2015-02-21T16:00:00-08:00",
+    "Speakers": "Kyle Rankin",
+    "Topic": "Hot Applications"
+  },
+  {
+    "Name": "Database Hardware Selection Guidelines",
+    "Description": "Database servers have hardware requirements different from other infrastructure software, specifically unique demands on I/O and memory. This presentation covers these differences and various I/O options and their benefits. Topics include solid-state drives (SSD), battery-backed RAID, controllers, and caching.",
+    "Location": "Plaza BC",
+    "StartTime": "2015-02-21T15:00:00-08:00",
+    "EndTime": "2015-02-21T16:00:00-08:00",
+    "Speakers": "Bruce Momjian",
+    "Topic": "SysAdmin"
+  },
+  {
+    "Name": "Why Scale Up is Like Star Trek and Scale Out is Like Star Wars",
+    "Description": "The difference between the scale up model used in virtual datacenter management tools like oVirt and vSphere and the cloud's scale out model used in OpenStack and CloudStack has historially used the pets versus cattle model. But what if there was another way to describe how virtual machines are handled in the datacenter or the cloud? In this pop-culture talk, Brian Proffitt will expain these concepts and present the idea that it's the starships of Starfleet and the fighters of the Empire and the Alliance that can better demonstrate the complexities of virtual machine management.",
+    "Location": "Los Angeles C",
+    "StartTime": "2015-02-21T15:00:00-08:00",
+    "EndTime": "2015-02-21T16:00:00-08:00",
+    "Speakers": "Brian Proffitt",
+    "Topic": "General"
+  },
+  {
+    "Name": "Builder, a new IDE for GNOME",
+    "Description": "Builder is a new effort to bring a modern development environment to GNOME. It aims to bring together the core developer tools that we expect from an IDE today. Auto completion, error reporting, documentation, debugging, VIM keybindings, split view, build management, hardware integration, simulator, code navigation, robust search, and more. To make GNU/Linux programming more accessible, Builder will include tutorials for beginners and intermediate developers right in the IDE. The project is under heavy development and funded by both Christian Hergert and the community at large.",
+    "Location": "Los Angeles A",
+    "StartTime": "2015-02-21T15:00:00-08:00",
+    "EndTime": "2015-02-21T16:00:00-08:00",
+    "Speakers": "Christian Hergert",
+    "Topic": "Developer"
+  },
+  {
+    "Name": "Sysdig To the Root Of the Problem",
+    "Description": "Troubleshooting requires understanding the problem at sufficient depth to apply corrective measures. How do we gain that understanding? As the scientific method teaches us, we match theory to observation. This presentation gives an overview of process execution at the system call and kernel level (theory). We then review sysdig, a relatively new tool for system inspection (observation). Finally, we review several use cases where things are awry, matching our theory to our observation to find a basis for applying corrective action.",
+    "Location": "Plaza D",
+    "StartTime": "2015-02-21T15:00:00-08:00",
+    "EndTime": "2015-02-21T16:00:00-08:00",
+    "Speakers": "Jess Males",
+    "Topic": "SysAdmin"
+  },
+  {
+    "Name": "It's So Easy A Kid Could Do It: Businesses with Open Source",
+    "Description": "Open source software is around and available to everyone. We have so much we can do to help us mold our futures with our hands. How can we as a community use it to help us launch huge careers and businesses? Keila Banks talks about how anyone, even a kid, can use open source software to kick start their dreams, businesses and careers.",
+    "Location": "Marina",
+    "StartTime": "2015-02-21T15:00:00-08:00",
+    "EndTime": "2015-02-21T16:00:00-08:00",
+    "Speakers": "Keila Banks",
+    "Topic": "Youth"
+  },
+  {
+    "Name": "Accessibility in Software",
+    "Description": "Presentation about accessibility and the lack of it in current software. It can be extremely difficult for the disabled to use linux. Text to speech is advancing, but still lags behind Apple and Microsoft. Accessibility is not limited to those visually disabled. It affects all the senses, as well as the use of hands for some. Hardware must be capable of interfacing with the software to insure the disabled are able to use the software. Too often, accessibility is pushed off until the software is released, at which time it is too late to build it.",
+    "Location": "Century AB",
+    "StartTime": "2015-02-21T15:00:00-08:00",
+    "EndTime": "2015-02-21T16:00:00-08:00",
+    "Speakers": "Charles Kravetz",
+    "Topic": "General"
+  },
+  {
+    "Name": "An Introduction to Blender3D",
+    "Description": "Have you every wanted to learn the basics of Computer Animation, Modeling, Compositing, and Editing? This talk will introduce you to the best Open Source Cross Platform 3D Suite: Blender 3D. Blender can help you make a Movie, design a 3D scene, or Create a Videogame. This talk specifically will cover how to create a 3D scene, add environment textures and lighting, and how to polish the whole thing off with post-processing effects.",
+    "Location": "Los Angeles B",
+    "StartTime": "2015-02-21T15:00:00-08:00",
+    "EndTime": "2015-02-21T16:00:00-08:00",
+    "Speakers": "Elijah C. M. Voigt",
+    "Topic": "General"
+  },
+  {
+    "Name": "NATS - A new nervous system for distributed cloud platforms",
+    "Description": "As distributed systems architectures continue to grow in complexity and requirements for high-performance interactions between components, technologies like enterprise messaging systems may come up short. NATS was designed to be an always on, high-performance, lightweight and resilient messaging system to architect these sophisticated control planes needed for next-generation cloud-based systems.",
+    "Location": "La Jolla",
+    "StartTime": "2015-02-21T15:00:00-08:00",
+    "EndTime": "2015-02-21T16:00:00-08:00",
+    "Speakers": "Derek Collison",
+    "Topic": "Cloud"
+  },
+  {
+    "Name": "Booting FreeBSD on BERI",
+    "Description": "This talk covers our motivations for a new open-source research CPU implementation, an overview of our FPGA based research platform, and an overview of the interesting points in the boot process from an OS porter's perspective.",
+    "Location": "San Lorenzo F",
+    "StartTime": "2015-02-21T15:00:00-08:00",
+    "EndTime": "2015-02-21T16:00:00-08:00",
+    "Speakers": "Brooks Davis",
+    "Topic": "Kernel"
+  },
+  {
+    "Name": "Rocket and the App Container Spec",
+    "Description": "Rocket is a simple tool to run containerized apps on systems free of host dependencies. Containers running under rocket execute like regular processes and can be managed using existing process management tools like upstart, systemd, runit, and etc. Rocket is also an implementation of the \"App Container Spec\" which defines how to define and build containerized applications based on tooling like tar and pgp, and then host these files easily using standard protocols like HTTP. The goal of the spec is to enable independent and creative implementations of container runtimes and build tools.",
+    "Location": "Carmel",
+    "StartTime": "2015-02-21T15:00:00-08:00",
+    "EndTime": "2015-02-21T16:00:00-08:00",
+    "Speakers": "Jonathan Boulle",
+    "Topic": "Container and Orchestrators"
+  },
+  {
+    "Name": "A Tale of Two Build Systems: Buildroot and OpenEmbedded",
+    "Description": "The embedded Linux ecosystem offers a heathy diversity of build systems tailored to different niches, unlike proprietary OSes that tend to present a build system controlled by the owner as the One True build system. This presentation will focus on two of the embedded Linux build systems that have exhibited the most staying power: Buildroot and OpenEmbedded.",
+    "Location": "Century CD",
+    "StartTime": "2015-02-21T16:30:00-08:00",
+    "EndTime": "2015-02-21T17:30:00-08:00",
+    "Speakers": "Stephanie Lockwood-Childs",
+    "Topic": "Developer"
+  },
+  {
+    "Name": "ARM Linux Kernels and Graphics Drivers on Popular 'Open' Hardware: Bleeding Edge vs. Vendor Blobs and Kernel Forks - How much is in Mainline, and How Open is Open?",
+    "Description": "This talk/workshop will cover the current state of open source support on several popular ARM boards and their variants. Primary components include accelerated support for graphics hardware, mainline kernel support (largely device tree files and their \"completeness\"), and upstream (DENX) u-boot support. The current state of mainline kernel/u-boot support and associated patches, along with the current build/deploy process, will be covered in detail for several popular open source boards/variants, including RPi, Wandboard, Udoo, BeagleboneBlack, and more.",
+    "Location": "San Lorenzo F",
+    "StartTime": "2015-02-21T16:30:00-08:00",
+    "EndTime": "2015-02-21T17:30:00-08:00",
+    "Speakers": "Stephen Arnold",
+    "Topic": "Kernel"
+  },
+  {
+    "Name": "FreeIPA: Identity Management done right!",
+    "Description": "The talk will introduce FreeIPA project as the first fully functional open source centralized authentication and identity management solution. Comparable to Active Directory, but using open source standards like 389ds, openssl, kerberos and more.",
+    "Location": "Los Angeles A",
+    "StartTime": "2015-02-21T16:30:00-08:00",
+    "EndTime": "2015-02-21T17:30:00-08:00",
+    "Speakers": "Clint Savage",
+    "Topic": "Hot Applications"
+  },
+  {
+    "Name": "Pipecut - Interactive Pipeline Editor",
+    "Description": "Pipecut is a new interactive interface for creating, editing, and debugging Unix command pipelines. Instead of writing your pipeline one command at a time, and alternating between command line editing and inspecting the results of your data transformation, pipecut lets you do both at the same time. With a full-screen vi-like interface, you can create a long pipeline with as few as five keystrokes, and inspect what is happening to the data between each stage of your pipeline. Also features in-line highlighting of regular expressions.",
+    "Location": "Plaza BC",
+    "StartTime": "2015-02-21T16:30:00-08:00",
+    "EndTime": "2015-02-21T17:30:00-08:00",
+    "Speakers": "David Maxwell",
+    "Topic": "SysAdmin"
+  },
+  {
+    "Name": "Managing Networks in a Software-Defined Future",
+    "Description": "Since the late 1980s, network management has kept up well enough with virtual notions in networks while continuing to rely heavily on the Simple Network Management Protocol (SNMP). The rise of SDN poses similar challenges to the ones brought to the systems management space by server virtualization and cloud computing, leaving practitioners to wonder how much retooling will be needed to cope in this new world. OpenNMS has proved fairly adaptable so far. This talk will cover where we've been, what's today, and what we expect will be the toughest challenges in the future.",
+    "Location": "Los Angeles C",
+    "StartTime": "2015-02-21T16:30:00-08:00",
+    "EndTime": "2015-02-21T17:30:00-08:00",
+    "Speakers": "Jeff Gehlbach",
+    "Topic": "General"
+  },
+  {
+    "Name": "21st Century Classroom",
+    "Description": "How open source is used in classrooms today",
+    "Location": "Marina",
+    "StartTime": "2015-02-21T16:30:00-08:00",
+    "EndTime": "2015-02-21T17:30:00-08:00",
+    "Speakers": "Yolanda Kol",
+    "Topic": "Youth"
+  },
+  {
+    "Name": "MySQL in the Hosted Cloud",
+    "Description": "Today you can use hosted MySQL/MariaDB/Percona Server in several \"cloud providers\" in what is considered using it as a service, a database as a service (DBaaS). Learn the differences, the access methods, and the level of control you have for the various public cloud offerings: - Amazon RDS - Google Cloud SQL - HPCloud DBaaS - Rackspace OpenStack DBaaS",
+    "Location": "Plaza D",
+    "StartTime": "2015-02-21T16:30:00-08:00",
+    "EndTime": "2015-02-21T17:30:00-08:00",
+    "Speakers": "Colin Charles",
+    "Topic": "SysAdmin"
+  },
+  {
+    "Name": "NGINX 101 - now with more Docker",
+    "Description": "NGINX is used by more than 140 million websites as a lightweight way to serve web content. Use it to decrease costs, improve performance and open up bottlenecks in web and application server environments without a major architectural overhaul. In this talk, we'll cover the three most basic use cases of static content delivery, application load balancing, and web proxying with caching; all within Docker containers.",
+    "Location": "La Jolla",
+    "StartTime": "2015-02-21T16:30:00-08:00",
+    "EndTime": "2015-02-21T17:30:00-08:00",
+    "Speakers": "Sarah Novotny",
+    "Topic": "General"
+  },
+  {
+    "Name": "DevOps + Open Source == BFF Practices!",
+    "Description": "Open Source tools are incredibly popular in the DevOps community. Easily obtained, shared, and modified, and can help to identify and rapidly fix issues that affect your work. While many organizations are increasingly participating in open source, they often don't see the parallels between the practices of open source communities and successful DevOps-practicing organizations. This session provides an overview of DevOps, and provides tips for how you or your organization can start applying these shared habits today.",
+    "Location": "Los Angeles B",
+    "StartTime": "2015-02-21T16:30:00-08:00",
+    "EndTime": "2015-02-21T17:30:00-08:00",
+    "Speakers": "Robyn Bergeron",
+    "Topic": "General"
+  },
+  {
+    "Name": "IPv6 in OpenStack Neutron",
+    "Description": "IPv6 usage is on the increase, so clouds must be IPv6 ready. OpenStack Networking's Neutron has added many new IPv6 features during the most recent cycles. In this session, we'll examine the current state of tenant IPv6 within Neutron and discuss the new features available in the Juno release. The session will examine a few real world deployments and close with a look ahead to the IPv6 related work for the OpenStack Kilo release.",
+    "Location": "Century AB",
+    "StartTime": "2015-02-21T16:30:00-08:00",
+    "EndTime": "2015-02-21T17:30:00-08:00",
+    "Speakers": "Mark McClain",
+    "Topic": "Cloud"
+  },
+  {
+    "Name": "FreeBSD Virtualization Options",
+    "Description": "FreeBSD invented the modern Unix container with jail(8) in the year 2000 and today operates as an EC2 and Hyper-V guest, Xen Dom0 and DomU and now includes bhyve, the native FreeBSD Hypervisor. Michael wrote his first jail(8) management system in 2005 and has since operated NetBSD/Xen in production and was the first community user of bhyve, the FreeBSD hypervisor introduced with FreeBSD 10.0. bhyve is a modern, emulation-free hypervisor that relies on the Extended Page Table feature found in modern Intel and AMD CPUs. bhyve provides bare-metal performance for Unix virtual machines.",
+    "Location": "Carmel",
+    "StartTime": "2015-02-21T16:30:00-08:00",
+    "EndTime": "2015-02-21T17:30:00-08:00",
+    "Speakers": "Michael Dexter",
+    "Topic": "Container and Orchestrators"
+  },
+  {
+    "Name": "Linux Desktop: When is our year?",
+    "Description": "\"The next year will be the year of the Linux Desktop\" - We have heard this so many times, yet the year didn't come. Why is that so? Are we doing something wrong? Even with the recent amazing news, that many gaming engines are turning to Linux and a few Linux-based gaming consoles are being released, there are still some problems which are frustrating for the end-user. In this talk, we will discuss what problems are there and how, as a community, we could solve them.",
+    "Location": "Marina",
+    "StartTime": "2015-02-21T18:00:00-08:00",
+    "EndTime": "2015-02-21T19:00:00-08:00",
+    "Speakers": "Levente Kurusa",
+    "Topic": "Youth"
+  },
+  {
+    "Name": "Understanding FOSS licenses (without a lawyer)",
+    "Description": "Free and Open Source licenses are a key part of how FOSS works, but most of us do not fully understand how (or why) they work. After reviewing over 350 FOSS licenses for Fedora, I've seen almost everything and can share my wisdom with you. In this talk, I'll cover the commonly used FOSS licenses, describe how they work, and even point out some of the unique licenses on the fringe of our universe. Bonus: I've been reading Legalese for years (as a non-lawyer who regularly works with lawyers at Red Hat), so I can translate licenses back to English.",
+    "Location": "Century CD",
+    "StartTime": "2015-02-21T18:00:00-08:00",
+    "EndTime": "2015-02-21T19:00:00-08:00",
+    "Speakers": "Tom Callaway",
+    "Topic": "General"
+  },
+  {
+    "Name": "A developer's-eye view of API client libraries",
+    "Description": "A developer's experience of an API and its client libraries can make the difference between them building on a project and giving up in frustration. If you develop an API client library, you'll learn what you can do to get it out of the way so developers can spend mental energy on putting together exciting projects, not fighting with tools. If you work with web APIs, you'll learn about factors to consider when you're choosing a framework to use. Either way, you'll learn about all the factors beyond code that make the difference between fun and easy development and a frustrating slog.",
+    "Location": "Los Angeles A",
+    "StartTime": "2015-02-21T18:00:00-08:00",
+    "EndTime": "2015-02-21T19:00:00-08:00",
+    "Speakers": "Frances Hocutt",
+    "Topic": "Developer"
+  },
+  {
+    "Name": "Full Stack Robotics",
+    "Description": "The Internet of Things has begun to form, and the Age of Robots is upon us. What are the tools and techniques that will help us craft the technologies that will make it real? In this talk, we will share our vision of \"Full Stack Robotics\" based on open source software such as Cylon.js (http://cylonjs.com) & Gobot (http://gobot.io), with live demonstrations of actual robotic devices.",
+    "Location": "Los Angeles C",
+    "StartTime": "2015-02-21T18:00:00-08:00",
+    "EndTime": "2015-02-21T19:00:00-08:00",
+    "Speakers": "Ron Evans, Adrian Zankich",
+    "Topic": "General"
+  },
+  {
+    "Name": "Solving (NP-Hard) Scheduling Problems with oVirt and OptaPlanner",
+    "Description": "Scheduling tasks such as selecting the host to launch a new VM or receive a migrating VM are central to every cloud and virtualization management system. These systems use rules to make scheduling decisions, but rules alone leave certain efficiency gains unrealized. In this talk, learn about what makes the machine reassignment problem so tricky, and about how oVirt 3.5 implements a probabalistic VM scheduling optimizer based on the OptaPlanner project to help administrators better assign host resources.",
+    "Location": "Los Angeles B",
+    "StartTime": "2015-02-21T18:00:00-08:00",
+    "EndTime": "2015-02-21T19:00:00-08:00",
+    "Speakers": "Jason Brooks",
+    "Topic": "Cloud"
+  },
+  {
+    "Name": "Service discovery and configuration with Consul",
+    "Description": "Traditionally the configuration of downstream service membership is handled by configuration management, templates, DNS, manually, or some combination thereof. The service health of indvidual nodes might be determined by a load balancer and often with crude methodology. In this talk I will cover an alternative design in which hosts publish their own service membership, health, and metadata and the methods by which upstream clients can use this data. Consul will be primarily discussed but alternative software such as etcd will also be briefly covered.",
+    "Location": "Plaza BC",
+    "StartTime": "2015-02-21T18:00:00-08:00",
+    "EndTime": "2015-02-21T19:00:00-08:00",
+    "Speakers": "Carl Johnson",
+    "Topic": "SysAdmin"
+  },
+  {
+    "Name": "Action-Movie Crypto",
+    "Description": "The details of how cryptographic primitives are designed, implemented, verified, and assembled into cryptosystems require expert knowledge. Fortunately, the big picture of how the resulting cryptosystems are used does not. We will sketch out the forest at action-movie speed without getting lost in the trees at the absolute beginner level so you can begin to understand and use cryptographic tools and so you are better able to read further on your own. Beginners of all ages are invited to attend. A laptop is useful but not necessary.",
+    "Location": "Century AB",
+    "StartTime": "2015-02-21T18:00:00-08:00",
+    "EndTime": "2015-02-21T19:00:00-08:00",
+    "Speakers": "Dustin Laurence",
+    "Topic": "General"
+  },
+  {
+    "Name": "Docker and Microservices: enabling the next generation of distributed applications",
+    "Description": "Microservices architectures break complex applications down into a number of smaller independent processes, communicating using APIs. This allows each of those processes (\"microservices\") to be written using a different framework, in a different language, by a different team. As a result, each microservice can be designed, tested, deployed, and even refactored independently. This reduces communication and synchronization overheads considerably, and leads to a more efficient development process. These architectures, however, bring new issues; Docker can address some of them.",
+    "Location": "Carmel",
+    "StartTime": "2015-02-21T18:00:00-08:00",
+    "EndTime": "2015-02-21T19:00:00-08:00",
+    "Speakers": "Jérôme Petazzoni",
+    "Topic": "Container and Orchestrators"
+  },
+  {
+    "Name": "Why Open Hardware?",
+    "Description": "Learn how the Open Compute Project Foundation applies open source software practices to hardware design to rapidly increase the pace of innnovation, increase efficency and drive adoption of not only open hardware, but open source principles and philosphies and in the data center ecosystem.",
+    "Location": "La Jolla",
+    "StartTime": "2015-02-21T18:00:00-08:00",
+    "EndTime": "2015-02-21T19:00:00-08:00",
+    "Speakers": "Amber Graner",
+    "Topic": "Hot Applications"
+  },
+  {
+    "Name": "PHP",
+    "Description": "There are certain things that are true in life, you can never be too rich, too happy or talk to much about PHP! And, some would argue that talking about PHP leads to greater happiness and your technical knowledge will surely be enriched. This is going to be a no holds-barred format, meaning anything related to PHP and any version of PHP is fair game. Before we head on to PHP7 in June, we ought to straighten out some notions regarding the basics. I'll address one of those items and bring to your attention a revelation.",
+    "Location": "Carmel",
+    "StartTime": "2015-02-21T19:00:00-08:00",
+    "EndTime": "2015-02-21T20:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "How to make and grow a distributed volunteer organization",
+    "Description": "There are a few key elements in running and growing a successful distributed volunteer organization. This BoF focuses on the people that make it happen.",
+    "Location": "Century AB",
+    "StartTime": "2015-02-21T19:00:00-08:00",
+    "EndTime": "2015-02-21T20:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Art and Music - Inspiration from open software and hardware",
+    "Description": "Do you love art and music? Interested in Sonic Pi, Processing, Extempore? Cyberphysical programming, live coding of music, interactive art? An informal hour for sharing ideas about art, music, and creating using open source software and hardware. Please join us and share your creations and ideas. [Note: We would like this to be friendly to audiences of all ages.]",
+    "Location": "Century CD",
+    "StartTime": "2015-02-21T19:00:00-08:00",
+    "EndTime": "2015-02-21T20:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Cloud Security",
+    "Description": "An honest talk about security in the cloud and how you can stay secure in the cloud.",
+    "Location": "Los Angeles A",
+    "StartTime": "2015-02-21T19:00:00-08:00",
+    "EndTime": "2015-02-21T20:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Sponsor Event Managers",
+    "Description": "Open discussion about best practices associated with sponsoring and representing your project/company at events, an opportunity to meet the other sponsors representing SCALE on the exhibition floor or newcomers interested in finding out how to get the most out of an event like SCALE.",
+    "Location": "Los Angeles B",
+    "StartTime": "2015-02-21T19:00:00-08:00",
+    "EndTime": "2015-02-21T20:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "DevOps with Red Hat",
+    "Description": "Rapid innovation, changing business landscapes, and new IT demands force businesses to make changes quickly. The DevOps approach is a way to increase business agility through collaboration, communication, and integration across different teams in the IT organization.",
+    "Location": "Los Angeles C",
+    "StartTime": "2015-02-21T19:00:00-08:00",
+    "EndTime": "2015-02-21T20:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Spam control, inbound and outbound",
+    "Description": "Methods for detecting and blocking inbound spam - makes your customers happier. Methods for detecting and blocking outbound spam - don't allow your customers to spam others.",
+    "Location": "Marina",
+    "StartTime": "2015-02-21T19:00:00-08:00",
+    "EndTime": "2015-02-21T20:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "All things Bitcoin, blockchain, and cryptocurrency",
+    "Description": "Want to learn more about Bitcoin and the blockchain ... or just hang out with an awesome group of Bitcoin enthusiasts and developers? This BoF session will be a casual meetup for discussion of all things related to Bitcoin, the blockchain, and cryptocurrencies. Finally, you can be around a group of people whose eyes light up, instead of glaze over, at the mention of Bitcoin! Food and drinks will be provided courtesy of Gem. (https://gem.co)",
+    "Location": "San Lorenzo B",
+    "StartTime": "2015-02-21T19:00:00-08:00",
+    "EndTime": "2015-02-21T20:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "AWS (Amazon Web Services)",
+    "Description": "Round table discussion of all things AWS including: EC2, EC2 Container Service, AWS Lambda, Auto Scaling, VPC, ELB, S3, Glacier, EBS, Import/Export, Storage Gateway, CloudFront, RDS, DynamoDB, Redshift, ElastiCache, Direct Connect, Route 53, Route 53 Registration, IAM, CloudTrail, AWS Config, CloudHSM, Key Management Service, CloudWatch, EMR, Kinesis, Data Pipeline, Simple Queue Service, Simple Workflow Service, AppStream, Elastic Transcoder, Simple Email Service, CloudSearch, Simple Notification Service, Flexible Payment Service, Elastic Beanstalk, OpsWorks, CloudFormation, CodeDeploy, Cognit",
+    "Location": "San Lorenzo C",
+    "StartTime": "2015-02-21T19:00:00-08:00",
+    "EndTime": "2015-02-21T20:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Game Night: Family Hour",
+    "Description": "SCALE Game Night",
+    "Location": "Plaza Ballroom",
+    "StartTime": "2015-02-21T20:00:00-08:00",
+    "EndTime": "2015-02-21T21:00:00-08:00",
+    "Speakers": "",
+    "Topic": "Entertainment"
+  },
+  {
+    "Name": "Weakest Geek",
+    "Description": "Come see members of the free & open source community face off against each other, determining who has the greatest knowledge of geek culture. Contestant line up for Weakest Geek: Bryan Lunduke Sara Novotny Gareth Greenaway Leslie Carr Josh Berkus Gina Likins Guest Host: Ruth Suehle",
+    "Location": "La Jolla",
+    "StartTime": "2015-02-21T20:00:00-08:00",
+    "EndTime": "2015-02-21T21:00:00-08:00",
+    "Speakers": "",
+    "Topic": "Entertainment"
+  },
+  {
+    "Name": "Open source routing - vyos, ubiquity, others?",
+    "Description": "A discussion of open source routing platforms including current and proposed features. Vyos features including vrrp, dmvpn, vxlan(rfc7348), etc.",
+    "Location": "Marina",
+    "StartTime": "2015-02-21T20:00:00-08:00",
+    "EndTime": "2015-02-21T21:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "SGVLUG 20th Anniversary",
+    "Description": "SGVLUG is one of the oldest and most active Linux User Groups in the Greater Los Angeles area. In addition to Linux, the group also shares interests in other free and open source software, all forms of technology, and the discussion of issues that arise with the these new tools, such as privacy rights. SGVLUG attracts members from throughout LA County including Pasadena, Glendale, Burbank, and eastward throughout the San Gabriel Valley. Our members include software developers, system administrators, hardware engineers, and software users of all levels of experience. Many work in the technology",
+    "Location": "Los Angeles B",
+    "StartTime": "2015-02-21T20:00:00-08:00",
+    "EndTime": "2015-02-21T21:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Game Night",
+    "Description": "Game Night",
+    "Location": "Plaza Ballroom",
+    "StartTime": "2015-02-21T21:00:00-08:00",
+    "EndTime": "2015-02-21T22:00:00-08:00",
+    "Speakers": "",
+    "Topic": "Entertainment"
+  },
+  {
+    "Name": "Stammtisch",
+    "Description": "German-speaking group.",
+    "Location": "Los Angeles C",
+    "StartTime": "2015-02-21T21:00:00-08:00",
+    "EndTime": "2015-02-21T22:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Makers: The Next Frontier for Open Source",
+    "Description": "At a glance, the maker movement seems open source by nature, full of contributors sharing their creations and building from one another. But the reality is quite different. Many (if not most) makers are unfamiliar with open source software even as users, much less with how to implement its principles within their projects. The apparently crossover is indeed a natural fit, thought, and there is much benefit in building communities around tangible projects on open source principles.",
+    "Location": "La Jolla",
+    "StartTime": "2015-02-22T10:00:00-08:00",
+    "EndTime": "2015-02-22T11:00:00-08:00",
+    "Speakers": "Ruth Suehle",
+    "Topic": "Keynote"
+  },
+  {
+    "Name": "LPI Exams",
+    "Description": "Linux Professional Institute (LPI) will be offering certification exams at SCALE 13x.",
+    "Location": "San Lorenzo C",
+    "StartTime": "2015-02-22T10:30:00-08:00",
+    "EndTime": "2015-02-22T12:00:00-08:00",
+    "Speakers": "",
+    "Topic": "Testing"
+  },
+  {
+    "Name": "Salt Stack Introduction and Overview",
+    "Description": "SaltStack is powerful, high-speed systems management software used for event-driven cloud infrastructure orchestration. It can be used to automate a lot of data center things, but is not very useful without a foundational understanding of how it can be used to automate some of the most common tasks. Attendees will come away from this training with an understanding of the SaltStack core architecture and core modules, when to write custom execution modules, grains, and runners; how best to use pillar, states, the Salt Reactor, Salt Orchestrate, and more.",
+    "Location": "San Lorenzo F",
+    "StartTime": "2015-02-22T11:00:00-08:00",
+    "EndTime": "2015-02-22T16:30:00-08:00",
+    "Speakers": "",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Showing off your software with a great demo system",
+    "Description": "Not every software install is meant for production. Some of your software’s most important deployments are short-lived demo and evaluation installs.What do they have in common? They’re your software’s first chance to make a great first impression. Unfortunately, demos are hard. They take a long time to set up, you have to reconfigure them for last-minute software changes, and somehow, demos seem to break anyway. Time to change that.",
+    "Location": "Los Angeles C",
+    "StartTime": "2015-02-22T11:30:00-08:00",
+    "EndTime": "2015-02-22T12:30:00-08:00",
+    "Speakers": "Don Marti",
+    "Topic": "General"
+  },
+  {
+    "Name": "Looking for Patterns - Finding them with Regular Expressions",
+    "Description": "Regular expressions are very useful, but often misunderstood. This presentation aims to clarify what Regular Expressions are, what they can do, and what you should not do with them. For people wanting to deploy them, it lists programming languages that have them available, and programs that make use of them. Since the main program that is used to demonstrate them is \"grep\", the presentation distinguishes between Basic and Extended Regular Expressions. and demonstrates the most common metacharacters. Finally, a couple of useful expressions are shown in Perl and Python.",
+    "Location": "Plaza D",
+    "StartTime": "2015-02-22T11:30:00-08:00",
+    "EndTime": "2015-02-22T12:30:00-08:00",
+    "Speakers": "Keith Wright",
+    "Topic": "SysAdmin"
+  },
+  {
+    "Name": "KVM, OpenStack, and the Open Cloud",
+    "Description": "KVM is the primary hypervisor used in OpenStack deployments, combining two major open source projects to deliver open cloud computing. Expanding beyond its x86 roots, This presentation will review the architecture of both KVM and OpenStack, highlight the potential synergies and benefits, and discuss production OpenStack cloud deployments which use KVM.",
+    "Location": "Century CD",
+    "StartTime": "2015-02-22T11:30:00-08:00",
+    "EndTime": "2015-02-22T12:30:00-08:00",
+    "Speakers": "Adam Jollans",
+    "Topic": "Cloud"
+  },
+  {
+    "Name": "Container Management at Google Scale",
+    "Description": "By decoupling application management from infrastructure management, containers facilitate more flexible, efficient, and transparent management of applications. Managing the deployment and maintenance of containers at scale requires a robust ecosystem of tools. Kubernetes is an open source project inspired by Google’s internal management systems, which establishes patterns and primitives for managing containers across a cluster. This talk will touch on many issues around containers and how Google aims to solve them with Kubernetes.",
+    "Location": "La Jolla",
+    "StartTime": "2015-02-22T11:30:00-08:00",
+    "EndTime": "2015-02-22T12:30:00-08:00",
+    "Speakers": "Tim Hockin",
+    "Topic": "Container and Orchestrators"
+  },
+  {
+    "Name": "Measuring Distributed Databases Across the Globe",
+    "Description": "There are important distinctions between 'using' a key/value store in practice and 'operating' a distributed database in the enterprise. While it's crucial for engineers to understand how the database itself operates, it's even more important for operators to be intimately familiar with the entire ecosystem in a global network.",
+    "Location": "Marina",
+    "StartTime": "2015-02-22T11:30:00-08:00",
+    "EndTime": "2015-02-22T12:30:00-08:00",
+    "Speakers": "Matt Davis",
+    "Topic": ""
+  },
+  {
+    "Name": "VideoLAN, VLC and its distribution infrastructure",
+    "Description": "VLC media player is a universal, open-source, cross-platform media playback and streaming application. The talk will start with an overview of the VideoLAN project and its community, the modular architecture of VLC and how one of most downloaded software in the world is distributed while keeping costs low and reliability high.",
+    "Location": "Carmel",
+    "StartTime": "2015-02-22T11:30:00-08:00",
+    "EndTime": "2015-02-22T12:30:00-08:00",
+    "Speakers": "Ludovic Fauvet",
+    "Topic": "General"
+  },
+  {
+    "Name": "MEAN Stack Development with Open Source Tools",
+    "Description": "This presentation examines the what, why, and how of MEAN stack development. It explores some of the latest innovations in the industry and demonstrates the use of Open Source tools such as Cloud9, ACE code editor, Git, foreman, SASS, Grunt, Yeoman, Express4 and others to create and collaborate on scalable, high quality web apps in record time from any computer anywhere in the world.",
+    "Location": "Los Angeles A",
+    "StartTime": "2015-02-22T11:30:00-08:00",
+    "EndTime": "2015-02-22T12:30:00-08:00",
+    "Speakers": "John O'Connor",
+    "Topic": "Developer"
+  },
+  {
+    "Name": "Building A Billion User Load Balancer",
+    "Description": "Want to learn how facebook scales their load balancing infrastructure tosupport more than 1.3 billion users? We will be revealing thetechnologies and methods we use to route and balance Facebook'straffic. The Traffic team at Facebook has built several systems formanaging and balancing our site traffic, including both a DNS loadbalancer and a software load balancer capable of handling severalprotocols. This talk will focus on these technologies and how they havehelped improve user performance, manage capacity, and increase reliability.",
+    "Location": "Plaza BC",
+    "StartTime": "2015-02-22T11:30:00-08:00",
+    "EndTime": "2015-02-22T12:30:00-08:00",
+    "Speakers": "Patrick Shuff",
+    "Topic": "SysAdmin"
+  },
+  {
+    "Name": "Hacking your car — the easy way",
+    "Description": "Learn how to get up and running with open source automotive software without breaking the bank. We will look at a variety of low-cost hardware modules to bring your car online, but that don't require big investments or permanent installation. We will also explore several levels of open-source automotive software: for Android, for Python developers, and for traditional desktop Linux distributions.",
+    "Location": "Los Angeles B",
+    "StartTime": "2015-02-22T11:30:00-08:00",
+    "EndTime": "2015-02-22T12:30:00-08:00",
+    "Speakers": "Nathan Willis",
+    "Topic": "Hot Applications"
+  },
+  {
+    "Name": "Windows is AWESOME",
+    "Description": "Listen up all you neck-bearded, hippy-dippy Linux nerds! You think Linux is all that and a bag of chips? Well, you're wrong. Windows is the true king of awesome operating systems. Give Bryan Lunduke a few moments of your time and he'll prove it to you. (Note: If you've seen the \"Linux Sucks\" videos, that'll give you a hint for what to expect. In other words... \"watch the whole thing before punching Bryan in the face\".)",
+    "Location": "Century AB",
+    "StartTime": "2015-02-22T11:30:00-08:00",
+    "EndTime": "2015-02-22T12:30:00-08:00",
+    "Speakers": "Bryan Lunduke",
+    "Topic": "General"
+  },
+  {
+    "Name": "Fedora Activity Day - Fedora Cloud",
+    "Description": "Fedora Activity Day - Fedora Cloud",
+    "Location": "San Lorenzo B",
+    "StartTime": "2015-02-22T11:30:00-08:00",
+    "EndTime": "2015-02-22T17:30:00-08:00",
+    "Speakers": "",
+    "Topic": "Fedora"
+  },
+  {
+    "Name": "LPI and BSDA Exams",
+    "Description": "Linux Professional Institute (LPI) and the BSD Certification Group will be offering certification exams at SCALE 13x.",
+    "Location": "San Lorenzo C",
+    "StartTime": "2015-02-22T12:00:00-08:00",
+    "EndTime": "2015-02-22T13:00:00-08:00",
+    "Speakers": "",
+    "Topic": "Testing"
+  },
+  {
+    "Name": "Solving Humanity's Grand Challenges",
+    "Description": "XPRIZE inspires and encourages people to solve the major challenges facing humanity, such as education, healthcare, space travel, life sciences, and more. Jono Bacon, Senior Director of Community at XPRIZE, will walk through the goals and focus of XPRIZE and share how he is working on a global community designed to help solve these grand challenges. The Open Source community, developers, and advocates are a key part of this work. Come and find out how you can change the world.",
+    "Location": "La Jolla",
+    "StartTime": "2015-02-22T13:30:00-08:00",
+    "EndTime": "2015-02-22T14:30:00-08:00",
+    "Speakers": "Jono Bacon",
+    "Topic": "General"
+  },
+  {
+    "Name": "The Switch as a Server",
+    "Description": "This talk will describe using network switch as a server. Cumulus Linux throws away the idea that your network gear has to be treated specially. It lets you manage and automate your network the same way you manage the rest of your data center. First, I will show how to deploy a switch from scratch, using Puppet module and zero touch provisioning. Second, I will demonstrate using the switch as an installation server and puppet master. Last, I will display another benefit of thinking of the switch as a server: writing your own software for your switches. All code will be available on Github.",
+    "Location": "Plaza BC",
+    "StartTime": "2015-02-22T13:30:00-08:00",
+    "EndTime": "2015-02-22T14:30:00-08:00",
+    "Speakers": "Leslie Carr",
+    "Topic": "SysAdmin"
+  },
+  {
+    "Name": "Kids on Computers: Enabling Education through Technology",
+    "Description": "Kids on Computers is a nonprofit providing free computers and FOSS to kids worldwide in order to increase educational opportunities. We have set up 16 computer labs in 5 countries. You'll hear from KOC volunteers about their experiences visiting countries and communities they've never been to, what it's like to set up a lab, and how they feel they made a difference. Come learn how you can join and make the world a better place by teaching kids and teachers about technology and FOSS!",
+    "Location": "Bel Air",
+    "StartTime": "2015-02-22T13:30:00-08:00",
+    "EndTime": "2015-02-22T14:30:00-08:00",
+    "Speakers": "Avni Khatri, Stormy Peters, Thomas Peters, Fernando Villalobos, Corey Latislaw, Hermes Ojeda",
+    "Topic": "Open Source Software In Education"
+  },
+  {
+    "Name": "Gluster Quickstart",
+    "Description": "GlusterFS is a unified, poly-protocol, scale-out filesystem serving many petabytes of data using commodity x86 hardware. Gluster can service Unix, Linux, and Windows clients using NFS, CIFS, or the native Gluster protocol. Red Hat's Thomas Cameron, Chief Architect for the central US, will demonstrate getting Gluster set up. He'll cover setting up the Gluster nodes and setting up distrubuted, replicated, and geo-replicated environments.",
+    "Location": "Los Angeles A",
+    "StartTime": "2015-02-22T13:30:00-08:00",
+    "EndTime": "2015-02-22T14:30:00-08:00",
+    "Speakers": "Thomas Cameron",
+    "Topic": "SysAdmin"
+  },
+  {
+    "Name": "Free software needs your vote!",
+    "Description": "What does the right to vote teach us about the importance, for anyone who uses a computer, of the Four Freedoms that define free software?",
+    "Location": "Century AB",
+    "StartTime": "2015-02-22T13:30:00-08:00",
+    "EndTime": "2015-02-22T14:30:00-08:00",
+    "Speakers": "John Sullivan",
+    "Topic": "General"
+  },
+  {
+    "Name": "Storage tiering and erasure coding in Ceph",
+    "Description": "This talk will cover the new cache tiering and erasure coding features in Ceph that allow you to take advantage of fast storage devices (SSDs) for hot data and achieve better storage efficiency for cold data than traditional replication.",
+    "Location": "Los Angeles C",
+    "StartTime": "2015-02-22T13:30:00-08:00",
+    "EndTime": "2015-02-22T14:30:00-08:00",
+    "Speakers": "Sage Weil",
+    "Topic": "General"
+  },
+  {
+    "Name": "Polymer with Pandas",
+    "Description": "The web has been through a lot of changes since Netscape released the first browser with JavaScript support nearly 20 years ago. Web applications are becoming more complex and and users expect richer experiences and native performance on a variety of devices - desktops, tablets, phones, and soon smartmatches will enter the mix. This talk will explore the soon-to-be-finalized Web Components technology and Google's new Polymer library that makes building powerful components for the web easy and and fun. It's time to stop cooking div soup and to start using a more powerful tool.",
+    "Location": "Plaza D",
+    "StartTime": "2015-02-22T13:30:00-08:00",
+    "EndTime": "2015-02-22T14:30:00-08:00",
+    "Speakers": "Christoph Wagner",
+    "Topic": "Developer"
+  },
+  {
+    "Name": "How to Perform Real-Time Processing on the Raspberry Pi",
+    "Description": "This presentation describes how to transform the Raspberry Pi into a low-cost real-time processor using the open-source RTEMS (Real-Time Executive for Multiprocessor Systems) and adding a real-time clock. This presentation provides a brief description of the RTEMS operating system and describes how to transform the Raspberry Pi into a low-cost real-time processor using the open-source RTEMS (Real-Time Executive for Multiprocessor Systems) and adding a real-time clock. These modifications allow the Raspberry Pi to support embedded applications with the most stringent real-time requirements.",
+    "Location": "Century CD",
+    "StartTime": "2015-02-22T13:30:00-08:00",
+    "EndTime": "2015-02-22T14:30:00-08:00",
+    "Speakers": "Steven Doran",
+    "Topic": "Hot Applications"
+  },
+  {
+    "Name": "Packer: VM Image Automation",
+    "Description": "If you’re managing your own infrastructure, you always want to have a reliable and simple way create and maintain server deployment images. Packer is tool for creating virtual machine images in an identical way easily. It can be used to create images for a variety of cloud and virtualization platforms. This session will cover the basics of how you can make an image using Packer. In addition it will cover some more advanced topics with Packer.",
+    "Location": "Los Angeles B",
+    "StartTime": "2015-02-22T13:30:00-08:00",
+    "EndTime": "2015-02-22T14:30:00-08:00",
+    "Speakers": "Lance Albertson",
+    "Topic": "Cloud"
+  },
+  {
+    "Name": "Composing with Containers",
+    "Description": "New container-centric tools are changing the way that projects are distributed and scaled in the cloud. Come learn how these open source building blocks can be used to compose complex, multi-container services that offer distinct advantages in scaling and reliability. This talk provides an overview of Docker, Kubernetes and Red Hat's new \"Atomic\" OS distributions, and preview of the next generation OpenShift platform.",
+    "Location": "Carmel",
+    "StartTime": "2015-02-22T13:30:00-08:00",
+    "EndTime": "2015-02-22T14:30:00-08:00",
+    "Speakers": "Ryan Jarvinen",
+    "Topic": "Container and Orchestrators"
+  },
+  {
+    "Name": "Little Big Data",
+    "Description": "What do you when your data starts from nothing, grows slowly, and never stops? How do you plan for the next level of hardware and software? Linux provides the kernel for every solution and what better place to learn to scale than SCaLE? A case study from the computation of -omics (connectome, genome, microbiome) will provide observations gained from 10 years of development.",
+    "Location": "Marina",
+    "StartTime": "2015-02-22T13:30:00-08:00",
+    "EndTime": "2015-02-22T14:30:00-08:00",
+    "Speakers": "Cody Ashe-McNalley",
+    "Topic": "Big Data"
+  },
+  {
+    "Name": "Where There Is No Tech Support",
+    "Description": "Israel shares the story of building a computer lab for a school in Africa, the process, lessons learned, and future challenges.",
+    "Location": "Bel Air",
+    "StartTime": "2015-02-22T15:00:00-08:00",
+    "EndTime": "2015-02-22T16:00:00-08:00",
+    "Speakers": "Israel Lopez",
+    "Topic": "Open Source Software In Education"
+  },
+  {
+    "Name": "The Proper Care and Feeding of a MySQL Server for Busy Linux Admins",
+    "Description": "Are you are the developer / system admin / network / analyst / everything-else person at your company and the boss jsut told you that you need to take care of the MySQL databases too!! Don't panic!! This session covers what you need to know to keep your MySQL database instances happy, healthy, and performing at the best of their ability. Learn how to cheaply monitor your systems health, discover proper backup methods that will save your rear, and lewarn tricks of the trade it noramlly takes full time DBAs years to learn.",
+    "Location": "Plaza BC",
+    "StartTime": "2015-02-22T15:00:00-08:00",
+    "EndTime": "2015-02-22T16:00:00-08:00",
+    "Speakers": "Dave Stokes",
+    "Topic": "SysAdmin"
+  },
+  {
+    "Name": "The why, what and how of owning your own data",
+    "Description": "The Cloud makes life easier and more fun. But the way we currently use it also exposes our data to almost everybody - from governments to companies and hackers. And even for those who think they have nothing to hide, this is an issue. The internet was designed to be a place where data was everywhere, not on just centralized on a few servers. We need to go back to that model and build federated solutions to get our privacy back, bring our data home! How? ownCloud is one way of doing that: run your own server with private cloud services.",
+    "Location": "Los Angeles B",
+    "StartTime": "2015-02-22T15:00:00-08:00",
+    "EndTime": "2015-02-22T16:00:00-08:00",
+    "Speakers": "Jos Poortvliet",
+    "Topic": "Cloud"
+  },
+  {
+    "Name": "Human Hacking",
+    "Description": "Are you trying to herd cats as a project leader, or simply wondering how to evaluate a project's culture from the outside before getting involved? This talk explains some basic models of human motivation and behavior and include examples of applying them in the world of open­source software. As engineers, we use simple heuristics and algorithms for solving computer problems every day, although we rarely use those models to understand human interaction.",
+    "Location": "La Jolla",
+    "StartTime": "2015-02-22T15:00:00-08:00",
+    "EndTime": "2015-02-22T16:00:00-08:00",
+    "Speakers": "E. Dunham",
+    "Topic": "General"
+  },
+  {
+    "Name": "syslog-ng: from log collecting to log processing and information extraction",
+    "Description": "Introduction to logging Free text logs vs. structured name value pairs Message parsing: creating value pairs from log messages Editing a pattern database by hand and by GUI Extending syslog-ng: writing plugins in Lua, Python, and Java Practical examples",
+    "Location": "Century AB",
+    "StartTime": "2015-02-22T15:00:00-08:00",
+    "EndTime": "2015-02-22T16:00:00-08:00",
+    "Speakers": "Peter Czanik, István Szabó",
+    "Topic": "General"
+  },
+  {
+    "Name": "Actors: Not just for Movies Anymore",
+    "Description": "Concurrency basics with a historical perspective. Moving from an architecture reliant on shared state to a message passing-based one. Topics include: concurrency & parallelism, actor model of computation and message passing vs. shared state.",
+    "Location": "Marina",
+    "StartTime": "2015-02-22T15:00:00-08:00",
+    "EndTime": "2015-02-22T16:00:00-08:00",
+    "Speakers": "Dan Hopkins",
+    "Topic": "Big Data"
+  },
+  {
+    "Name": "The Next Generation Cloud: Rise of the Unikernel",
+    "Description": "Much excitement has surrounded the rise of Docker. The promise of small, portable software deployment packages has excited the minds of many in our industry. However, few people have yet recognized the arrival of an even more promising technology: the birth of the unikernel. Like container-based solutions, unikernels fulfill the promise of easy deployment. But unikernels deliver much more, including an extremely tiny footprint and a major improvement in security. As a result, the next generation cloud can have thousands of small VMs per host, greatly reducing costs.",
+    "Location": "Carmel",
+    "StartTime": "2015-02-22T15:00:00-08:00",
+    "EndTime": "2015-02-22T16:00:00-08:00",
+    "Speakers": "Russell Pavlicek",
+    "Topic": "Container and Orchestrators"
+  },
+  {
+    "Name": "Linux Charcuterie - How the distribution sausage is made",
+    "Description": "Distribution build systems are interesting beasts, complex and with many moving parts. In the past year, containers, Project Atomic, and other changes have forced a rapid evolution in how we consume source and deliver a distribution. This talk will take a look at the entire chain of building a distribution from start to finish, including some recent changes for cloud environments and containers.",
+    "Location": "Los Angeles C",
+    "StartTime": "2015-02-22T15:00:00-08:00",
+    "EndTime": "2015-02-22T16:00:00-08:00",
+    "Speakers": "Ian McLeod",
+    "Topic": "General"
+  },
+  {
+    "Name": "Where's Wayland?",
+    "Description": "Forget Waldo (or even Wally), what you really what to know is what's up with this 'Wayland' thing and where is it now. Come and learn about the replacement for X and how it is arriving in mobile, embedded and on the desktop. Jon will focus on the current state of Wayland and how developers can benefit from its use. He will help those who are starting brand new with Wayland get up to speed quickly, and guide you to a better understanding of the project, its impact, and how to use it.",
+    "Location": "Los Angeles A",
+    "StartTime": "2015-02-22T15:00:00-08:00",
+    "EndTime": "2015-02-22T16:00:00-08:00",
+    "Speakers": "Jon Cruz",
+    "Topic": "Hot Applications"
+  },
+  {
+    "Name": "Linux under attack - Why Linux is the biggest problem in Windows malware",
+    "Description": "Larger numbers of infected Linux hosts are being found day by day, yet the community seems largely oblivious. While Linux as a desktop platform has attracted much attention from criminals, Linux servers are a gold mine for abuse. Looking at data from SophosLabs this presentation will look through the most common types of malware on Linux, where it is most frequently found and what we can do to put additional barriers in place to prevent its spread.",
+    "Location": "Plaza D",
+    "StartTime": "2015-02-22T15:00:00-08:00",
+    "EndTime": "2015-02-22T16:00:00-08:00",
+    "Speakers": "Chester Wisniewski",
+    "Topic": "SysAdmin"
+  },
+  {
+    "Name": "Docker for Multi-Cloud Apps",
+    "Description": "Writing a new application for the cloud allows you to use cloud abstraction libraries like Fog, Libcloud, or Jcloud for multi-cloud compatibility. But what if you have legacy applications that need to be moved to the cloud, but that are not practical to re-write? Containers to the rescue! Using Docker containers combined with Libswarm/Swarmd, you can run your application on a variety of target Platforms, including OpenStack clouds. The same containers you run in public clouds can also be used in your own OpenStack private cloud. Join us to learn about the exciting hybrid possibilities.",
+    "Location": "Carmel",
+    "StartTime": "2015-02-22T16:30:00-08:00",
+    "EndTime": "2015-02-22T17:30:00-08:00",
+    "Speakers": "Adrian Otto",
+    "Topic": "Container and Orchestrators"
+  },
+  {
+    "Name": "Streaming-OODT: An Open-Source Platform for Big-Data Processing",
+    "Description": "This talk will demonstrate Streaming-OODT, a data processing platform powered by open-source technologies including: Apache Spark, Apache Mesos, Hadoop, and Apache Kafka. Funded by NASA's Jet Propulsion Laboratory, Streaming-OODT combines state-of-the-art big-data technologies into a powerful and easy-to-use platform providing in-memory mapreduce processing for application to any big-data problems. It is based on OODT, an open-source data processing framework, and fills the niche for an end-to-end data processing system that encapsulates powerful technologies in a simple package.",
+    "Location": "Marina",
+    "StartTime": "2015-02-22T16:30:00-08:00",
+    "EndTime": "2015-02-22T17:30:00-08:00",
+    "Speakers": "Michael Starch",
+    "Topic": "Big Data"
+  },
+  {
+    "Name": "Introduction to the OpenStack Trove project, Database as a Service",
+    "Description": "What is Trove, the database as a service project on OpenStack. We will do a deep dive into Trove, providing updates on new developments and how Trove supports the Juno release. In addition, we'll provide a preview of what's planned for Kilo and the future direction of Trove.",
+    "Location": "Los Angeles B",
+    "StartTime": "2015-02-22T16:30:00-08:00",
+    "EndTime": "2015-02-22T17:30:00-08:00",
+    "Speakers": "Ken Rugg",
+    "Topic": "Hot Applications"
+  },
+  {
+    "Name": "The Open-Source Monitoring Landscape",
+    "Description": "2015 will be a huge year for open-source monitoring. Nagios and Icinga, two popular projects with a common origin, have both introduced new versions that represent a big split in how they work. In addition, new projects are offering novel approaches to network and application monitorinig. Michael Merideth from VictorOps surveys the landscape, covers the divergence between Nagios and Icinga, and explores several new and exciting open-source monitoring projects.",
+    "Location": "Plaza BC",
+    "StartTime": "2015-02-22T16:30:00-08:00",
+    "EndTime": "2015-02-22T17:30:00-08:00",
+    "Speakers": "Michael Merideth",
+    "Topic": "SysAdmin"
+  },
+  {
+    "Name": "Distributed Version Control & Mercurial",
+    "Description": "Users of distributed version control tools like Git and Mercurial only need a small set of commands to do their work. A Mercurial administrator needs a fundamental understanding of distributed version control systems (DVCS), Mercurial, and even Git. Join Lan as she explains the evolution of source control systems, the fundamental building blocks of distributed version control, and the many different ways one can mess up a Mercurial repository. There will be the requisite comparison between Git and Mercurial, which will focus more on their similarities than their differences.",
+    "Location": "La Jolla",
+    "StartTime": "2015-02-22T16:30:00-08:00",
+    "EndTime": "2015-02-22T17:30:00-08:00",
+    "Speakers": "Lan Dang",
+    "Topic": "Developer"
+  },
+  {
+    "Name": "Templating your Infrastructure",
+    "Description": "First you learn to automate your application's installation, then you learn to automate your system's provisioning and installation. Now lets discuss automating your infrastructure beyond a single system. When building out a new region/tenant, you are often faced with many dependencies before you can begin spinning up new instances. In this talk I will introduce some of the solutions for different cloud environments covering Cloud Formation, Heat, Terraform, and Chef Provisioning and how to reproduce entire environments.",
+    "Location": "Los Angeles A",
+    "StartTime": "2015-02-22T16:30:00-08:00",
+    "EndTime": "2015-02-22T17:30:00-08:00",
+    "Speakers": "Patrick O'Connor",
+    "Topic": "Cloud"
+  },
+  {
+    "Name": "Fedora.next: Bringing change to a classic distro (without too much kicking and screaming)",
+    "Description": "As the Fedora Project reached our tenth birthday, we starting looking at how the computing world has changed and what we need to do to stay with it — and how we can continue to advance our mission to lead the advancement of free and open source software and content as a collaborative community. Matthew Miller, the Fedora Project Leader, explains our new governance structure, what we've done so far (and why), what's working, and explores ideas for what we might try next.",
+    "Location": "Century CD",
+    "StartTime": "2015-02-22T16:30:00-08:00",
+    "EndTime": "2015-02-22T17:30:00-08:00",
+    "Speakers": "Matthew Miller",
+    "Topic": "General"
+  },
+  {
+    "Name": "Getting to know Linux-IO",
+    "Description": "Linux-IO provides a SCSI target which can be used with the distribution of your choice. This presentation will briefly cover the history, use cases, and technical details of Linux-IO, while the focus will be on building an iSCSI SAN using general purpose Linux distributions such as Ubuntu or Fedora. With Linux-IO you can turn any PC that can run Linux into a SAN, and performance can even be good by using a cheap SSD. It is perfect for sysadmins learning about storage or virtualization on a budget. Attendees should be comfortable with the Linux command line and with general SAN concepts.",
+    "Location": "Plaza D",
+    "StartTime": "2015-02-22T16:30:00-08:00",
+    "EndTime": "2015-02-22T17:30:00-08:00",
+    "Speakers": "Kirk Kosinski",
+    "Topic": "SysAdmin"
+  },
+  {
+    "Name": "Intro to Zenoss",
+    "Description": "Open Source IT monitoring software that offers visibility over the entire IT stack, from network devices to applications.",
+    "Location": "Century AB",
+    "StartTime": "2015-02-22T16:30:00-08:00",
+    "EndTime": "2015-02-22T17:30:00-08:00",
+    "Speakers": "Andrew Kirch",
+    "Topic": "General"
+  },
+  {
+    "Name": "Open Sourcing Education - STEM, Robotics and You",
+    "Description": "How can you make a difference with what you already have. Dr. Cameron will talk about his experience mentoring different groups of youngsters, how the experience changed everybody's lives, and how you can too.",
+    "Location": "Bel Air",
+    "StartTime": "2015-02-22T16:30:00-08:00",
+    "EndTime": "2015-02-22T17:30:00-08:00",
+    "Speakers": "Allan Cameron",
+    "Topic": "Open Source Software In Education"
+  }
+]

@@ -1,0 +1,13 @@
+# direnv
+.direnv/*
+
+# artifacts
+out/*
+data/*
+pkg/display/dist/**
+
+# air
+tmp/*
+
+# nix
+result

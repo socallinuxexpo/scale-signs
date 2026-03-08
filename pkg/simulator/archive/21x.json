@@ -1,0 +1,2180 @@
+[
+  {
+    "Name": "A Quick Introduction to Nix",
+    "Description": "This session will contain an introduction to Nix for the uninitiated. You will leave with an understanding of the basics and, perhaps, the beginning of a lifetime of love for Nix. We will cover installation, use of the CLI, and the basics of the Nix language.",
+    "Location": "Room 106",
+    "StartTime": "2024-03-14T09:30:00-07:00",
+    "EndTime": "2024-03-14T10:30:00-07:00",
+    "Speakers": "Tom Bereknyei",
+    "Topic": "NixCon"
+  },
+  {
+    "Name": "Workshop: Hands-on Kubernetes",
+    "Description": "Kubernetes is a transformative tool, but its Lego-brick approach and vast tooling landscape bring massive complexity. This hands-on workshop will guide you through the golden path of running applications on Kubernetes and then explore the complexities needed to productionalize those workloads. You’ll learn not only what Kubernetes is, but also when it’s appropriate, and when it can be a velocity-destroying distraction for your team.",
+    "Location": "Ballroom B",
+    "StartTime": "2024-03-14T10:00:00-07:00",
+    "EndTime": "2024-03-14T13:00:00-07:00",
+    "Speakers": "Tammer Saleh, Maziar Tamadon",
+    "Topic": "Kubernetes Community Day"
+  },
+  {
+    "Name": "Create a First AI Program with TypeScript and Serverless WebAssembly",
+    "Description": "This workshop starts with the open source Spin tool for building WebAssembly-based serverless apps. We'll build a simple Hello World app in TypeScript (advanced participants can opt for Rust or Python instead). Then we'll turn our simple Hello World into a first foray into AI inferencing using a large language model (LLM). This is an excellent opportunity to try out AI with only a dozen or so lines of code.",
+    "Location": "Ballroom A",
+    "StartTime": "2024-03-14T10:00:00-07:00",
+    "EndTime": "2024-03-14T13:00:00-07:00",
+    "Speakers": "Caleb Schoepp, Justin Pflueger",
+    "Topic": "Kubernetes Community Day"
+  },
+  {
+    "Name": "A beginners guide into the heart of systemd",
+    "Description": "systemd (with lowercase S and D) remains up until this day, both one of the most critical pieces of a system, and the least understood one. This workshop is designed to touch upon the beginner features of systemd and explain how you can use systemd to solve common problems, including some that you didn't even know you had. What problems do you ask? You’ll have to come and see.",
+    "Location": "Room 211",
+    "StartTime": "2024-03-14T10:00:00-07:00",
+    "EndTime": "2024-03-14T13:00:00-07:00",
+    "Speakers": "Alvaro Leiva, Anita Zhang",
+    "Topic": "Workshops"
+  },
+  {
+    "Name": "The State of Partitioning",
+    "Description": "Declarative partitioning is now available in all supported versions of PostgreSQL. As with all major features in PostgreSQL it started off with basic capabilities and has been slowly advancing on those to become a well supported part of the architecture. However, there are still some significant hurdles to overcome. This talk will review where partitioning as been, where it's at now, and where it still has to go.",
+    "Location": "Ballroom G",
+    "StartTime": "2024-03-14T10:00:00-07:00",
+    "EndTime": "2024-03-14T11:00:00-07:00",
+    "Speakers": "Keith Fiske",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "PostgreSQL for Oracle DBA's",
+    "Description": "Learn the architectural concepts, similarities and differences between the PostgreSQL engine and Oracle Database.",
+    "Location": "Ballroom H",
+    "StartTime": "2024-03-14T10:00:00-07:00",
+    "EndTime": "2024-03-14T11:00:00-07:00",
+    "Speakers": "Thuymy Tran, Wanda He",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Innovating Software Delivery Harnessing Generative AI in DevOps and DevSecOps",
+    "Description": "This workshop explores the integration and impact of generative AI tools in DevOps and DevSecOps. We aim to comprehensively understand how tools like Large Language Models (LLMs), LangChain, LangSmith, and vector databases (RAGS) can be effectively utilized in modern software delivery and security practices.",
+    "Location": "Room 209",
+    "StartTime": "2024-03-14T10:00:00-07:00",
+    "EndTime": "2024-03-14T13:00:00-07:00",
+    "Speakers": "John Willis, Dave Nielsen, Alice Chen",
+    "Topic": "Workshops"
+  },
+  {
+    "Name": "Insight out of CHAOSS: Community Data Analysis Tool Workshop",
+    "Description": "Are you a community manager looking for insights into your community using open source tools? Are you a data scientist looking to build custom visualizations in Python or with the Dash framework? This workshop is for you! Red Hat’s Open Source Program Office’s data science team will walk you through how they dive into contributor and community data using Augur and 8Knot. This workshop requires Python proficiency. https://docs.google.com/document/d/1YQWYECjx9-oUJ21LoDhZZyL0Qlb3Ogj8tlp8...",
+    "Location": "Ballroom F",
+    "StartTime": "2024-03-14T10:00:00-07:00",
+    "EndTime": "2024-03-14T13:00:00-07:00",
+    "Speakers": "Cali Dolfi, James Kunstle",
+    "Topic": "Workshops"
+  },
+  {
+    "Name": "Creating a community for the next generation",
+    "Description": "From the birth of the internet, to the rise of Chromebooks, the way in which we interact with technology has radically changed. How can we ensure the open source movement and the incredible community around it carries on into the future? Join me in a discussion on how we can come together to bridge the open source gap between boomers and zoomers!",
+    "Location": "Ballroom C",
+    "StartTime": "2024-03-14T10:15:00-07:00",
+    "EndTime": "2024-03-14T11:00:00-07:00",
+    "Speakers": "Aaron Prisk",
+    "Topic": "Ubucon"
+  },
+  {
+    "Name": "Managing your Userland with Home-Manager",
+    "Description": "Unleash the full potential of your user environment with the \"Portable Userlands with Home-Manager\" workshop. Discover how to use Home-Manager to create reproducible, portable configurations for your applications and tools. Ideal for Nix users who want to personalize and efficiently manage their desktop across multiple systems. For all Nix(OS) users who are not afraid of writing configuration files in Nix language.",
+    "Location": "Room 106",
+    "StartTime": "2024-03-14T11:00:00-07:00",
+    "EndTime": "2024-03-14T12:00:00-07:00",
+    "Speakers": "",
+    "Topic": "NixCon"
+  },
+  {
+    "Name": "Open Source is Not Just Code",
+    "Description": "In open source projects, you find a variety of contributors. Some have been around for decades, others have been around for months. Some are paid for their work, others do it out of the kindness of their heart. Some people are just starting out in the tech industry and need a place of belonging, others have been in the tech industry for decades. Given these facts, it is important that everyone works well together, when the opportunity to accomplish collaborative work presents itself.",
+    "Location": "Ballroom C",
+    "StartTime": "2024-03-14T11:00:00-07:00",
+    "EndTime": "2024-03-14T12:00:00-07:00",
+    "Speakers": "",
+    "Topic": "Ubucon"
+  },
+  {
+    "Name": "VACUUM: From your head down to your shoes",
+    "Description": "VACUUM is an essential part of PostgreSQL. In this talk, I will go through it, starting from basics to the internals. MVCC: The basics Data snapshots VACUUM VACUUM processing FREEZE VACUUM tuning VACUUM FULL",
+    "Location": "Ballroom H",
+    "StartTime": "2024-03-14T11:15:00-07:00",
+    "EndTime": "2024-03-14T12:15:00-07:00",
+    "Speakers": "Devrim Gunduz",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Graph Walking in PostgreSQL for fun and possible profit",
+    "Description": "A few jobs ago my colleagues and I were faced with the task of correlating and deduping incoming data from a myriad of sources. The most promising approach was a graph in which each node represents a piece of data and an edge represents a relationship between two pieces of data. We tried a test set of ~10M nodes in multiple available graph engines, all OOMed on our queries. So we built it ourselves in Postgres. This is the story of how we did it, and some of what we learned along the way.",
+    "Location": "Ballroom G",
+    "StartTime": "2024-03-14T11:15:00-07:00",
+    "EndTime": "2024-03-14T12:15:00-07:00",
+    "Speakers": "Mark Bracher",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Ubuntu Core Desktop - Immutable, secure, reliable",
+    "Description": "There's an obvious trend towards immutable systems, and for good reasons. Can we have the familiar Ubuntu experience and still enjoy the benefits of an immutable desktop? The answer is yes! In this talk we'll provide an introduction to Ubuntu Core Desktop, why it's important, who will benefit, and provide a glimpse into the future.",
+    "Location": "Ballroom C",
+    "StartTime": "2024-03-14T12:00:00-07:00",
+    "EndTime": "2024-03-14T13:00:00-07:00",
+    "Speakers": "Ken VanDine",
+    "Topic": "Ubucon"
+  },
+  {
+    "Name": "Welcome to the Kwaai Personal AI Summit",
+    "Description": "Welcome to the Kwaai Personal AI Summit",
+    "Location": "Room 212",
+    "StartTime": "2024-03-14T12:00:00-07:00",
+    "EndTime": "2024-03-14T12:15:00-07:00",
+    "Speakers": "Matt Small",
+    "Topic": "Kwaai Summit"
+  },
+  {
+    "Name": "Personal Empowerment and Agency at Scale",
+    "Description": "According to Sam Altman, that's what OpenAI promises. Problem is, it can't deliver, because OpenAI is for AI in 2024 what IBM was for personal computers in 1974: still a mainframe company. As individuals, we know more about what we need from personal AI than any of the AI giants of today can guess at. And that's what Doc will talk about.",
+    "Location": "Room 212",
+    "StartTime": "2024-03-14T12:15:00-07:00",
+    "EndTime": "2024-03-14T12:30:00-07:00",
+    "Speakers": "Doc Searls",
+    "Topic": "Kwaai Summit"
+  },
+  {
+    "Name": "How to Ride Elephants Safely",
+    "Description": "Every so often, one may be called upon to perform the tasks of a database administrator, especially in cases where application performance seems to be affected by the database. &nbsp;This talk will give non-DBAs an insight into how the world's most powerful open-source database works, and the kind of tools and features that are readily available for people who unexpectedly find themselves in the DBA pilot's seat. &nbsp;Topics covered will include query tuning, monitoring, indexing, and a basic run-down of some configurables to help you know what options are at your disposal",
+    "Location": "Ballroom H",
+    "StartTime": "2024-03-14T12:30:00-07:00",
+    "EndTime": "2024-03-14T13:30:00-07:00",
+    "Speakers": "Richard Yen",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Wait! What's going on inside my database?",
+    "Description": "PostgreSQL 9.6 introduced wait events and PostgreSQL 10 progressed them, but what are they? What do they mean? How do I find them and how do I make them go away? Wait events are one of the most significant advancements in observability for PostgreSQL databases; their usefulness is unparalleled in troubleshooting performance. This talk will go into all that and more as we perform a flyover of the field of database performance engineering in general, and then dive deep to explore the world of PostgreSQL wait events specifically.",
+    "Location": "Ballroom G",
+    "StartTime": "2024-03-14T12:30:00-07:00",
+    "EndTime": "2024-03-14T13:30:00-07:00",
+    "Speakers": "Jeremy Schneider",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "The AI Accelerated Personalized Computing Revolution",
+    "Description": "We have had a front row seat as computing has evolved over the last 3 decades – from the desktop PCs to laptop PCs, from tablets to smartphones, and from single-function devices to a plethora of smart devices and wearables. With AI going pervasive on a global scale, we are at the cusp of the next personalized computing revolution – where use cases will truly be optimized for 1:1 experiences.",
+    "Location": "Room 212",
+    "StartTime": "2024-03-14T12:30:00-07:00",
+    "EndTime": "2024-03-14T12:45:00-07:00",
+    "Speakers": "Pankaj Kedia",
+    "Topic": "Kwaai Summit"
+  },
+  {
+    "Name": "What is Kwaai?",
+    "Description": "Learn about the Kwaai project's mission and values.",
+    "Location": "Room 212",
+    "StartTime": "2024-03-14T12:45:00-07:00",
+    "EndTime": "2024-03-14T13:00:00-07:00",
+    "Speakers": "Reza Rassool",
+    "Topic": "Kwaai Summit"
+  },
+  {
+    "Name": "What is Personal AI?",
+    "Description": "Learn all about Personal AI.",
+    "Location": "Room 212",
+    "StartTime": "2024-03-14T13:00:00-07:00",
+    "EndTime": "2024-03-14T13:15:00-07:00",
+    "Speakers": "",
+    "Topic": "Kwaai Summit"
+  },
+  {
+    "Name": "Personal AI Demos and Use Cases",
+    "Description": "Personal AI Demos and Use Cases",
+    "Location": "Room 212",
+    "StartTime": "2024-03-14T13:15:00-07:00",
+    "EndTime": "2024-03-14T13:30:00-07:00",
+    "Speakers": "Matt Small",
+    "Topic": "Kwaai Summit"
+  },
+  {
+    "Name": "Basic NixOS Modules",
+    "Description": "We've all been there. We start playing with our NixOS config and see a cool blog post about modularizing your config. That would be so cool! ... wait how do modules work? The documentation is pretty sparse. And those \"beginner\" blog posts about modules are so beginner friendly. So we are going to play with and build our own modules. But we aren't going to build packages; our output is going to be plaintext. We are going to see and feel how each of our options influences the output.",
+    "Location": "Room 106",
+    "StartTime": "2024-03-14T13:30:00-07:00",
+    "EndTime": "2024-03-14T14:30:00-07:00",
+    "Speakers": "Daniel Baker",
+    "Topic": "NixCon"
+  },
+  {
+    "Name": "Panel Q&A",
+    "Description": "Panel Q&A",
+    "Location": "Room 212",
+    "StartTime": "2024-03-14T13:30:00-07:00",
+    "EndTime": "2024-03-14T14:00:00-07:00",
+    "Speakers": "",
+    "Topic": "Kwaai Summit"
+  },
+  {
+    "Name": "SCION Internet Architecture Workshop",
+    "Description": "SCION (Scalability, Control, and Isolation on Next-Generation Networks) is the first clean-slate Internet architecture designed to fundamentally solve many security issues of today's Internet through route control, failure isolation, and explicit trust information. This tutorial will give an overview of the SCION architecture, its open-source implementation, and provide hands-on exercises. Attendees will run a full-fledged AS within a virtual machine, connect it to the global research testbed to explore SCION's security features.",
+    "Location": "Room 209",
+    "StartTime": "2024-03-14T14:00:00-07:00",
+    "EndTime": "2024-03-14T17:00:00-07:00",
+    "Speakers": "John Studarus, Robert Hernandez",
+    "Topic": "Workshops"
+  },
+  {
+    "Name": "Ceph Storage: a Caffeinated Primer",
+    "Description": "Ceph is an Open Source distributed object store, network block device, and file system designed for reliability, performance, and scalability. It runs on commodity hardware, has no single point of failure, and is supported in the Linux kernel.This tutorial will describe the Ceph architecture, share its design principles, and discuss how it can be part of a cost-effective, reliable cloud stack.",
+    "Location": "Ballroom B",
+    "StartTime": "2024-03-14T14:00:00-07:00",
+    "EndTime": "2024-03-14T17:00:00-07:00",
+    "Speakers": "Federico Lucifredi, Gregory Farnum, JC Lopez",
+    "Topic": "Kubernetes Community Day"
+  },
+  {
+    "Name": "CentOS Classroom and Packaging Workshop",
+    "Description": "Learn how CentOS works and how you can make it work better for you. CentOS is the open source, community operating system that releases just ahead of RHEL. The CentOS project also provides a space for people to build technologies on top of the operating system for specific use cases, from clouds to cars. We will present an overview of the CentOS ecosystem, followed by a workshop teaching you how to make your own packages.",
+    "Location": "Room 211",
+    "StartTime": "2024-03-14T14:00:00-07:00",
+    "EndTime": "2024-03-14T17:00:00-07:00",
+    "Speakers": "Shaun McCance, Carl George",
+    "Topic": "Workshops"
+  },
+  {
+    "Name": "Stop using kubectl, and use Git instead! - Hands-on GitOps workshop using Argo CD and Helm",
+    "Description": "Kubernetes is a declarative-first platform where manifests written in YAML describe what resources should exist in a cluster. Many new users will use imperative processes, running `kubectl apply`, to define and change the state of their cluster. This approach is known as the “push” model, and while it works initially, it does not scale as more users adopt the platform. Actors outside of the cluster should not be able to make changes directly. GitOps practices provide a declarative approach to defining and managing the state of Kubernetes.",
+    "Location": "Ballroom A",
+    "StartTime": "2024-03-14T14:00:00-07:00",
+    "EndTime": "2024-03-14T17:00:00-07:00",
+    "Speakers": "Nicholas Morey, Justin Marquis, Christian Hernandez",
+    "Topic": "Kubernetes Community Day"
+  },
+  {
+    "Name": "Charming your home network with Juju and Ubuntu Core",
+    "Description": "Jellyfin? PiHole? Home Assistant? Wouldn't it be nice to manage them all in one place, migrate them to new hardware, and have peace of mind on security, updates, and stability? Well now you can, with Juju!",
+    "Location": "Ballroom C",
+    "StartTime": "2024-03-14T14:00:00-07:00",
+    "EndTime": "2024-03-14T15:00:00-07:00",
+    "Speakers": "Callahan Kovacs",
+    "Topic": "Ubucon"
+  },
+  {
+    "Name": "Workshop: Rancher Rodeo - Deploying and managing Kubernetes",
+    "Description": "Join us for an in-depth, live workshop designed to give DevOps and IT teams the hands-on skills they need to deploy and manage Kubernetes everywhere with SUSE Rancher. During this hands-on workshop, SUSE will provide an introduction to Rancher, Docker, and Kubernetes and then walk through the steps for deploying a Kubernetes cluster with Rancher. Attendees should have a basic working knowledge of Docker.",
+    "Location": "Ballroom F",
+    "StartTime": "2024-03-14T14:00:00-07:00",
+    "EndTime": "2024-03-14T17:45:00-07:00",
+    "Speakers": "Auston Ivison, Brian Six",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Anatomy of an LLM from one of the Godfathers of DevOps",
+    "Description": "John offers a deep dive into the intricacies of tuning and augmenting Large Language Models (LLMs and RAGs). Gain a comprehensive understanding of the current Generative AI landscape, encompassing vector databases, LLM orchestration, foundational LLMs, and testing and observability. Stay tuned for live code demonstrations; I hope the demo gods are on our side!",
+    "Location": "Room 212",
+    "StartTime": "2024-03-14T14:00:00-07:00",
+    "EndTime": "2024-03-14T14:15:00-07:00",
+    "Speakers": "John Willis",
+    "Topic": "Kwaai Summit"
+  },
+  {
+    "Name": "AI and Trust",
+    "Description": "Trusting a friend and trusting a service are fundamentally different, and current AI systems are poised to exploit that difference. We will think of them as friends when they are actually services, and confidents when they will be actually collecting data behind our backs. Government is how we create social trust in our society, which requires regulating this potentially intimate technology.",
+    "Location": "Room 212",
+    "StartTime": "2024-03-14T14:15:00-07:00",
+    "EndTime": "2024-03-14T14:30:00-07:00",
+    "Speakers": "Bruce Schneier",
+    "Topic": "Kwaai Summit"
+  },
+  {
+    "Name": "Everything you probably never wanted to know about NULLs",
+    "Description": "This presentation focuses on the finer points of NULLs in PostgreSQL as well as corner cases. We will start with an introduction to NULLs and three-valued logic and a quick overview of the common NULL traps that everyone tends to fall for. Then we will dive in to corner cases and what they tell us about NULL handling in general. We will also cover a few cases where proper understanding of NULL handling makes some problems much easier.",
+    "Location": "Ballroom H",
+    "StartTime": "2024-03-14T14:30:00-07:00",
+    "EndTime": "2024-03-14T15:30:00-07:00",
+    "Speakers": "Christopher Travers",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Patroni Deployment Patterns",
+    "Description": "This talk will present a brief overview of Patroni and then discuss various deployment patterns (and possible issues with them) that we encountered while working with customers to implement PostgreSQL HA. In particular, it will discuss the following: synchronous standbys and/or read replicas, standby clusters for multi-region/availability zone replication, client fail-over possibilities and issues/solutions with DCS problems interfering with Patroni.",
+    "Location": "Ballroom G",
+    "StartTime": "2024-03-14T14:30:00-07:00",
+    "EndTime": "2024-03-14T15:30:00-07:00",
+    "Speakers": "Michael Banck",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Consumer Protection in AI",
+    "Description": "Consumer Protection in Ai",
+    "Location": "Room 212",
+    "StartTime": "2024-03-14T14:30:00-07:00",
+    "EndTime": "2024-03-14T14:45:00-07:00",
+    "Speakers": "",
+    "Topic": "Kwaai Summit"
+  },
+  {
+    "Name": "Panel Q&A",
+    "Description": "Kwaai Tools Advisory Panel",
+    "Location": "Room 212",
+    "StartTime": "2024-03-14T14:45:00-07:00",
+    "EndTime": "2024-03-14T15:15:00-07:00",
+    "Speakers": "",
+    "Topic": "Kwaai Summit"
+  },
+  {
+    "Name": "Continuous Integration Hands-On",
+    "Description": "Add state of the art continuous integration (CI) to your project. With Nix, CI not only enhances code quality, it also provides automatic binary caching, speeding up development and deployment. We'll cover the basics, gotchas, and tips and tricks for CI in Nix-based projects, and then help you apply them to your own project. Mentors will be available to help work through any issues you encounter. Our goal is for everyone to leave the workshop with a fully set up CI process in production.",
+    "Location": "Room 106",
+    "StartTime": "2024-03-14T15:00:00-07:00",
+    "EndTime": "2024-03-14T16:00:00-07:00",
+    "Speakers": "Ryan Trinkle",
+    "Topic": "NixCon"
+  },
+  {
+    "Name": "Accelerate your time to science with Ubuntu and Open Ondemand",
+    "Description": "In this talk, you will learn about the Ubuntu HPC community team’s effort to bridge that skill gap and accelerate users’ time to science on Ubuntu. Like how Ubuntu revolutionised the Linux desktop world in 2004, the Ubuntu HPC community team is aiming to revolutionise HPC by developing an open source supercomputing infrastructure stack that anyone can freely use.",
+    "Location": "Ballroom C",
+    "StartTime": "2024-03-14T15:00:00-07:00",
+    "EndTime": "2024-03-14T16:00:00-07:00",
+    "Speakers": "Jason Nucciarone",
+    "Topic": "Ubucon"
+  },
+  {
+    "Name": "Advancements in Machine Reasoning",
+    "Description": "Advancements in Machine Reasoning",
+    "Location": "Room 212",
+    "StartTime": "2024-03-14T15:15:00-07:00",
+    "EndTime": "2024-03-14T15:45:00-07:00",
+    "Speakers": "Khai Pham",
+    "Topic": "Kwaai Summit"
+  },
+  {
+    "Name": "pg_hint_plan - get the right plan without surprises",
+    "Description": "I frequently use pg_hint_plan to gain insights into the query planner choices made by the optimizer, and sometimes to work around issues that arise in production. However, hinting is often a complex task, requiring multiple hints to fix an exact plan. We will explore practical examples of how to use pg_hint_plan in a predictable manner, while also gaining a better understanding of access paths, join methods, and execution plan interpretation.",
+    "Location": "Ballroom G",
+    "StartTime": "2024-03-14T15:45:00-07:00",
+    "EndTime": "2024-03-14T16:45:00-07:00",
+    "Speakers": "Franck Pachot",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "PostgreSQL - memory management internals",
+    "Description": "PostgreSQL uses memory for several purposes such as caching data (buffer cache), supporting user scenarios like query processing (work mem), as managed resource for internal use (memory context) and more. We will look at how each of these memory semantics are configured and used. Further we will dig into the internals of how PostgreSQL implements them accompanied with demos, tool usage and preview of work in progress.",
+    "Location": "Ballroom H",
+    "StartTime": "2024-03-14T15:45:00-07:00",
+    "EndTime": "2024-03-14T16:45:00-07:00",
+    "Speakers": "Krishnakumar Ravi",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Deep Dive: Fluidic Neural Networks",
+    "Description": "Deep Dive: Fluidic Neural Networks",
+    "Location": "Room 212",
+    "StartTime": "2024-03-14T15:45:00-07:00",
+    "EndTime": "2024-03-14T16:00:00-07:00",
+    "Speakers": "Reza Rassool",
+    "Topic": "Kwaai Summit"
+  },
+  {
+    "Name": "Ubuntu and OpenStack for High Performance Workloads",
+    "Description": "In this presentation we will walk you through on the fine-tuning of OpenStack settings to run instances (virtual machines) with workloads that demand for a more predictable and better performance. We will explore best practices and real world examples to empower users in achieving optimal results for their high-performance computing needs.",
+    "Location": "Ballroom C",
+    "StartTime": "2024-03-14T16:00:00-07:00",
+    "EndTime": "2024-03-14T17:00:00-07:00",
+    "Speakers": "Felipe Reyes",
+    "Topic": "Ubucon"
+  },
+  {
+    "Name": "Panel Q&A",
+    "Description": "Kwaai Fundamentals Advisory Panel",
+    "Location": "Room 212",
+    "StartTime": "2024-03-14T16:00:00-07:00",
+    "EndTime": "2024-03-14T16:30:00-07:00",
+    "Speakers": "",
+    "Topic": "Kwaai Summit"
+  },
+  {
+    "Name": "Lightning Talks",
+    "Description": "A series of short 5 minute talks about all things Nix.",
+    "Location": "Room 106",
+    "StartTime": "2024-03-14T16:30:00-07:00",
+    "EndTime": "2024-03-14T17:30:00-07:00",
+    "Speakers": "",
+    "Topic": "NixCon"
+  },
+  {
+    "Name": "Member Voices, Audience Participation",
+    "Description": "Member Voices, Audience Participation",
+    "Location": "Room 212",
+    "StartTime": "2024-03-14T16:30:00-07:00",
+    "EndTime": "2024-03-14T16:45:00-07:00",
+    "Speakers": "",
+    "Topic": "Kwaai Summit"
+  },
+  {
+    "Name": "Wrap Up and Networking",
+    "Description": "Wrap Up and Networking",
+    "Location": "Room 212",
+    "StartTime": "2024-03-14T16:45:00-07:00",
+    "EndTime": "2024-03-14T17:00:00-07:00",
+    "Speakers": "Reza Rassool",
+    "Topic": "Kwaai Summit"
+  },
+  {
+    "Name": "PostgreSQL Ask Me Anything",
+    "Description": "Ask anything about the PostgreSQL Community. Technical, social or otherwise! A number of folks involved in the PostgreSQL community regularly attend SCaLE and make themselves available for questions.",
+    "Location": "Ballroom G",
+    "StartTime": "2024-03-14T17:00:00-07:00",
+    "EndTime": "2024-03-14T18:00:00-07:00",
+    "Speakers": "Mark Wong, Devrim Gunduz, Magnus Hagander, Jonathan Katz, Joe Conway",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "LLMs from zero to hero",
+    "Description": "Join us for an informative session on automating LLM fine-tuning and developing chat-based and multimodal model assistants. Discover the potential of Large Language Models in your specific domain and learn how to optimize them. Learn about common pitfalls during the development cycle and how to overcome them.",
+    "Location": "Ballroom C",
+    "StartTime": "2024-03-14T17:00:00-07:00",
+    "EndTime": "2024-03-14T17:30:00-07:00",
+    "Speakers": "",
+    "Topic": "Ubucon"
+  },
+  {
+    "Name": "Rocky Linux Speed Migration Event",
+    "Description": "Migrate your way through speed table game stations. When the timer stops, migrate to a different table and continue playing someone else's hand. We'll also have Rocky insiders on hand to answer questions about migrating your shop to Rocky Linux. Bonus gift for the first 30 attendees.",
+    "Location": "Room 209",
+    "StartTime": "2024-03-14T17:30:00-07:00",
+    "EndTime": "2024-03-14T18:30:00-07:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Network Time Protocol, Network Time Foundation",
+    "Description": "Discussions about Network Time Foundation projects: the NTP Project, LinuxPTP, libptpmgmt, Khronos, SyncE, Khronos.",
+    "Location": "Room 211",
+    "StartTime": "2024-03-14T18:30:00-07:00",
+    "EndTime": "2024-03-14T19:30:00-07:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Machine Learning on Kubernetes!",
+    "Description": "In this BoF session, let’s discuss the war stories and solutions we’ve devised running ML on K8s, and learn from each other’s experience. This is an open discussion where folks can share thoughts, ask questions, and learn together.",
+    "Location": "Ballroom H",
+    "StartTime": "2024-03-14T18:30:00-07:00",
+    "EndTime": "2024-03-14T19:30:00-07:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Nix is a better Docker image builder than Docker's image builder",
+    "Description": "Docker is everywhere, but Nix is not. Nix lets you build Docker images that are easier to deploy than images made with the normal Docker build flow. Want to learn how to make images with a 100% build efficiency and turn your application deployments from pushing many layers at a time to only pushing what actually changed? You can do it with Nix.",
+    "Location": "Room 101",
+    "StartTime": "2024-03-15T09:30:00-07:00",
+    "EndTime": "2024-03-15T10:00:00-07:00",
+    "Speakers": "Xe iaso",
+    "Topic": "NixCon"
+  },
+  {
+    "Name": "Securing Your PostgreSQL Data: A Comprehensive Guide to Protecting Your Database Assets",
+    "Description": "PostgreSQL offers unparalleled flexibility in permissions management, but this power can lead to security risks. Discover how DRW combines standardization and automation to secure 200+ production PostgreSQL instances. Explore the challenges, security models, and practical solutions that ensure your data stays safe. Join us for a dive into PostgreSQL security, leaving with actionable insights to safeguard your organization's valuable assets",
+    "Location": "Ballroom G",
+    "StartTime": "2024-03-15T10:00:00-07:00",
+    "EndTime": "2024-03-15T11:00:00-07:00",
+    "Speakers": "Henrietta Dombrovskaya",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "We Fear Change",
+    "Description": "Changing how 10 people work is difficult, changing how 100 work is very difficult. When it comes to improving how large organizations build, release, and run software, scaling to thousands of people is the real challenge. If you're trying to move beyond your initial success at improving how your organization builds and runs software, you've experienced this scaling challenge. Thankfully, most of the problems in this challenge are common challenges. Though you may feel cursed and alone, in our experience talking with hundreds of organizations, most of the problems are the same.",
+    "Location": "Ballroom DE",
+    "StartTime": "2024-03-15T10:00:00-07:00",
+    "EndTime": "2024-03-15T10:45:00-07:00",
+    "Speakers": "Michael Coté",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "Best Practices for Running Databases on Kubernetes",
+    "Description": "Learn the best practices for running Open Source Databases on Kubernetes. Explore high availability, security, backups, and disaster recovery strategies. Discover how to implement these practices with Percona Operators for MySQL, MongoDB, PostgreSQL – leading solutions for Open Source Databases on Kubernetes.",
+    "Location": "Room 106",
+    "StartTime": "2024-03-15T10:00:00-07:00",
+    "EndTime": "2024-03-15T11:00:00-07:00",
+    "Speakers": "Peter Zaitsev",
+    "Topic": "Data on Kubernetes"
+  },
+  {
+    "Name": "Power Up With Podman",
+    "Description": "Curious about containers beyond Docker? There’s a new generation of containers on the scene, Podman! Supporting secure, rootless containers for Kubernetes microservices, it was designed and built with the cloud in mind. Benefitting from the lessons learned out in the open from Docker, this next generation of containers will quickly become a trusted daily driver in your dev workflow.",
+    "Location": "Ballroom B",
+    "StartTime": "2024-03-15T10:00:00-07:00",
+    "EndTime": "2024-03-15T11:00:00-07:00",
+    "Speakers": "Paige Cruz",
+    "Topic": "Kubernetes Community Day"
+  },
+  {
+    "Name": "AI and IOT on Linux - From hobbyist to industrial AIOT",
+    "Description": "The presentation covers using Linux on small board computers or Industrial IOT machines to run inference on models.The speaker will present some out of the box solutions such as the Up Squared, Raspberry Pi and more.The talk will cover how to install deep learning solutions and use pre-trained models and running inference.This talk does not cover training your own model.The audience will be presented with information about using AI on Linux on small board and industrial AIOT machines.",
+    "Location": "Room 105",
+    "StartTime": "2024-03-15T10:00:00-07:00",
+    "EndTime": "2024-03-15T11:00:00-07:00",
+    "Speakers": "Marcia Wilbur",
+    "Topic": "Embedded Linux"
+  },
+  {
+    "Name": "Shared AI Recipes as Public Innovation Infrastructure",
+    "Description": "Borrowing from the best traditions of Mozilla -> View Source, JsFiddle, GitHub and open source, we propose an opensource AI workflow discover and orchestration platform. It would showcase the best of private and open-source AI recipes and allow anyone to contribute connectors to new APIs or new AI recipes for others tweak. We've begun this vision with Gooey.AI & with the support of folks like kwaai.ai hope to make AI truly open & useful for all.",
+    "Location": "Room 107",
+    "StartTime": "2024-03-15T10:00:00-07:00",
+    "EndTime": "2024-03-15T11:00:00-07:00",
+    "Speakers": "Sean Blagsvedt",
+    "Topic": "Open Government"
+  },
+  {
+    "Name": "JSON and analytics in Postgres using index and columnar.",
+    "Description": "We want it to be fast, reliable and flexible. We want JSON and we want OLTP with ACID. Can all it work together or we need to choose 2 out of three of our wishes again? What technology can help to speed up the JSON queries? A couple of different approaches for JSON data analytics.",
+    "Location": "Ballroom H",
+    "StartTime": "2024-03-15T10:00:00-07:00",
+    "EndTime": "2024-03-15T11:00:00-07:00",
+    "Speakers": "Gleb Otochkin",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Citizen Science in Libraries: Bridging the Gap Between Communities and Science",
+    "Description": "Discover the evolution of public libraries into hubs for citizen science. We'll delve into how these programs are reshaping libraries' roles in the open science movement and examine the challenges linking citizen science to open access and data. Learn about the library's new chapter as a nexus for community engagement and scientific exploration.",
+    "Location": "Ballroom F",
+    "StartTime": "2024-03-15T10:00:00-07:00",
+    "EndTime": "2024-03-15T11:00:00-07:00",
+    "Speakers": "Vivienne Byrd",
+    "Topic": "Open Source AI and Applied Science"
+  },
+  {
+    "Name": "An advanced guide into the heart of systemd",
+    "Description": "systemd (with lowercase S and D) remains up until this day, both one of the most critical pieces of a system, and the least understood one. This workshop is designed to go in detail about systemd internals and discuss \"fringe\" features. If you have ever thought, \"Why does systemd do that?\" we may be able to help!",
+    "Location": "Room 211",
+    "StartTime": "2024-03-15T10:00:00-07:00",
+    "EndTime": "2024-03-15T13:00:00-07:00",
+    "Speakers": "Alvaro Leiva, Anita Zhang",
+    "Topic": "Workshops"
+  },
+  {
+    "Name": "Lessons learned developing systemd in stage 1",
+    "Description": "When NixOS boots up, the first userspace code that the Linux kernel runs is called \"stage 1\". Its main job is to configure the file systems used by the OS before starting it. This can get quite complicated, and systemd is here to help. I will describe the goals of rewriting stage 1 to use systemd. I will also talk about how these seemingly small choices, like how to handle the first few seconds of boot, or the choice of my online username, can have unexpectedly significant results.",
+    "Location": "Room 101",
+    "StartTime": "2024-03-15T10:00:00-07:00",
+    "EndTime": "2024-03-15T10:30:00-07:00",
+    "Speakers": "Will Fancher",
+    "Topic": "NixCon"
+  },
+  {
+    "Name": "Orchestrate your most complex business processes",
+    "Description": "Complex business processes can be difficult to manage and automate. How do you implement changes while maintaining uptime? How do you introduce a new service to an existing process? This workshop is for software developers who want to build foundational knowledge of automating and orchestrating even your most complex processes. We’ll start with designing a process from the requirements stage using BPMN (if you've never heard of BPMN, don't worry!), then look at incremental improvements to the process, then implement fully software-automated tasks with a variety of programming languages.",
+    "Location": "Room 209",
+    "StartTime": "2024-03-15T10:00:00-07:00",
+    "EndTime": "2024-03-15T13:00:00-07:00",
+    "Speakers": "Nathan Loding",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Embracing Ubuntu: Can Open Source Design Collaboration Be an Artistic Revolution?",
+    "Description": "Can embracing Ubuntu go beyond adopting an open-source operating system? Can it be a catalyst for an artistic revolution within the open-source landscape? As we navigate the digital landscape, Ubuntu stands as a living testament to the idea that great open-source design is not only visually pleasing but also a reflection of shared values and a potential revolution in collective artistic aspirations.",
+    "Location": "Ballroom C",
+    "StartTime": "2024-03-15T10:00:00-07:00",
+    "EndTime": "2024-03-15T10:30:00-07:00",
+    "Speakers": "",
+    "Topic": "Ubucon"
+  },
+  {
+    "Name": "The state of on-prem Kubernetes",
+    "Description": "Just because Kubernetes is cloud native doesn’t mean you can’t run it on-prem, but why is it so hard in 2024? There are lots of options but all of them have trade-offs. Justin has been building on-prem clusters for 8 years and will help you figure out if you need a project or a product, CAPI or PXE, and cloud-init or config management.",
+    "Location": "Ballroom A",
+    "StartTime": "2024-03-15T10:00:00-07:00",
+    "EndTime": "2024-03-15T11:00:00-07:00",
+    "Speakers": "Justin Garrison",
+    "Topic": "Kubernetes Community Day"
+  },
+  {
+    "Name": "Easier NixOS self-hosting with module contracts",
+    "Description": "How standardizing NixOS options for modules achieving the same goal (SSO, backup, etc.) can move Nix one step forward to be an industry leader in the Server Management tooling space.",
+    "Location": "Room 101",
+    "StartTime": "2024-03-15T10:30:00-07:00",
+    "EndTime": "2024-03-15T11:00:00-07:00",
+    "Speakers": "Pierre Penninckx",
+    "Topic": "NixCon"
+  },
+  {
+    "Name": "Setting up an Ubuntu lab for seniors and the disadvantaged",
+    "Description": "George Mulak has set up a working lab with hands-on training both for the Orange County Rescue Mission and the disadvantaged population. In this inspirational talk, he will cover the importance of these types of community spaces, how to properly set one up, and how to ensure they are sustainable.",
+    "Location": "Ballroom C",
+    "StartTime": "2024-03-15T10:30:00-07:00",
+    "EndTime": "2024-03-15T11:15:00-07:00",
+    "Speakers": "George Mulak",
+    "Topic": "Ubucon"
+  },
+  {
+    "Name": "Lessons Learned in Hypergrowth Deployments",
+    "Description": "Andrew will discuss his experience building continuous delivery systems through the hypergrowth phase of engineering organizations at YouTube and Dropbox.",
+    "Location": "Ballroom DE",
+    "StartTime": "2024-03-15T11:00:00-07:00",
+    "EndTime": "2024-03-15T11:45:00-07:00",
+    "Speakers": "andrew fong",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "Kubernetes and Distributed SQL Databases: Same Consistency With Better Availability and Scalability",
+    "Description": "Kubernetes once favored etcd for metadata, as earlier relational databases fell short in scalability and availability characteristics. Over time, as k8s workloads came across several etcd limitations, relational databases continued to advance.This session shows how Kine integrates into the Kubernetes architecture, enabling distributed relational databases for cluster metadata storage.",
+    "Location": "Room 106",
+    "StartTime": "2024-03-15T11:15:00-07:00",
+    "EndTime": "2024-03-15T12:15:00-07:00",
+    "Speakers": "Denis Magda",
+    "Topic": "Data on Kubernetes"
+  },
+  {
+    "Name": "Database schema management for lazybones: from chaos to heaven",
+    "Description": "Performing database schema changes on a live system is challenging because it often involves high level of locks leading to downtime. It becomes harder and harder when the number of databases to manage raise continuously. At OVHcloud, we used to manage such changes approximately. In this talk, you will discover our feedback on how we have reduced efforts, time and human errors by automating databases schema migrations using git, code reviews, CI/CD, migration tools and Ansible at the OVHcloud scale.",
+    "Location": "Ballroom H",
+    "StartTime": "2024-03-15T11:15:00-07:00",
+    "EndTime": "2024-03-15T12:15:00-07:00",
+    "Speakers": "Julien Riou",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Vectors are the new JSON",
+    "Description": "Vectors are a well-studied mathematical concept, yet pose challenges around efficient storage and retrieval in database systems. The increased ease-of-use of AI/ML has lead to a surge of storing vector data alongside application data, leading to some unique challenges. PostgreSQL has seen this story before with JSON, when JSON became the lingua franca of the web. In this session, we'll review what vectors are, how they are used, and what users are looking for in vector storage and search systems and best practices for searching vector data in PostgreSQL with pgvector.",
+    "Location": "Ballroom G",
+    "StartTime": "2024-03-15T11:15:00-07:00",
+    "EndTime": "2024-03-15T12:15:00-07:00",
+    "Speakers": "Jonathan Katz",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "How to build a Mars Rover for Earth: NASA-JPL Open-Source Rover",
+    "Description": "The NASA-JPL Open-Source Rover is one of the largest and longest running active open-source hardware projects around. It’s a scaled-down replica of the real rovers on Mars, but made exclusively with commonly available components that you can buy online and assemble anywhere, with any skill level. I will do a live demo of the rover, talk about how it was designed, how it’s different from the other projects out there, how you can build one, a little bit of its history, and how we built and maintain a thriving community of rover enthusiasts.",
+    "Location": "Room 105",
+    "StartTime": "2024-03-15T11:15:00-07:00",
+    "EndTime": "2024-03-15T12:15:00-07:00",
+    "Speakers": "Achille Verheye",
+    "Topic": "Embedded Linux"
+  },
+  {
+    "Name": "Gateway API: Basics, Nuance, and the Real World",
+    "Description": "A Kubernetes computer is supposed to house all of our apps! How do we expose them to the people who need them? We used to use the Ingress API for this, but we can do better. Gateway API is an improved approach that allows cluster operators and application owners to own the pieces and policies they need to route traffic to applications. In this session, you'll learn the basics of Gateway API. What are the resources and how are they used together? What considerations are needed for zero downtime deploys? We will cover this and more. Expect a live demo and some *performance art* :)",
+    "Location": "Ballroom A",
+    "StartTime": "2024-03-15T11:15:00-07:00",
+    "EndTime": "2024-03-15T12:15:00-07:00",
+    "Speakers": "Leigh Capili",
+    "Topic": "Kubernetes Community Day"
+  },
+  {
+    "Name": "The Open Source Way to Standards Development: A NASA-JPL Approach to Software Excellence",
+    "Description": "Infusing standards and best practices into open source is a challenge. At NASA’s Jet Propulsion Laboratory we created Software Lifecycle Improvement & Modernization (SLIM) to address this challenge. SLIM shares best practices with the broader government-affiliated open-source community and provides actionable templates and guidelines as open source code. This talk highlights SLIM's unique model as well as specific example standards for DevSecOps and \"shift left\" best practices. Join us to explore merging open-source methods with software standards development.",
+    "Location": "Room 107",
+    "StartTime": "2024-03-15T11:15:00-07:00",
+    "EndTime": "2024-03-15T12:15:00-07:00",
+    "Speakers": "Rishi Verma, John Engelke, Kyongsik Yun",
+    "Topic": "Open Government"
+  },
+  {
+    "Name": "From Machine Learning to Machine Reasoning and why it matters for Life Sciences",
+    "Description": "There are two main schools in AI: physicalist and symbolic. The 1st one focuses on reproducing the neurons to create intelligence. It is today known as machine learning and people often consider it as synonym to AI. It is based on satistical pattern recognition has produced amazing results. The 2nd one focuses on human cognition emergence through logics. Less known because the existing approaches are centralized and cannot handle mutiple reasoning types. Distributed Reasoning AI solves it and has been succesfully applied for drug R&D where understanding the causal level is crucial.",
+    "Location": "Ballroom F",
+    "StartTime": "2024-03-15T11:15:00-07:00",
+    "EndTime": "2024-03-15T12:15:00-07:00",
+    "Speakers": "Khai Pham",
+    "Topic": "Open Source AI and Applied Science"
+  },
+  {
+    "Name": "Lubuntu 24.04 LTS: The Next Generation",
+    "Description": "Lubuntu, an official flavour of Ubuntu, is known for its blazing speed and minimalist approach to the Linux Desktop. The team behind the project is actively preparing for its next big LTS release. Join project leader, Simon Quigley, on an exploration of all the exciting new features coming this April.",
+    "Location": "Ballroom C",
+    "StartTime": "2024-03-15T11:15:00-07:00",
+    "EndTime": "2024-03-15T12:00:00-07:00",
+    "Speakers": "",
+    "Topic": "Ubucon"
+  },
+  {
+    "Name": "Pipelines: Everything Everywhere All At Once",
+    "Description": "When we talk about CI/CD, we often think of it as an end to end, linear, process. With modern cloud native computing, this ceases to be the case. The reality is your pipelines are hyperdimensional with many branches that can also have it’s own hyperdimension as well. This becomes a problem when dealing with GitOps workflows. Leading open-source GitOps platforms offer little to accommodate modern deployment pipelines. This talk will zero in on an alternative: patterns that address these challenges while remaining true to established GitOps principles.",
+    "Location": "Ballroom B",
+    "StartTime": "2024-03-15T11:15:00-07:00",
+    "EndTime": "2024-03-15T12:15:00-07:00",
+    "Speakers": "Christian Hernandez",
+    "Topic": "Kubernetes Community Day"
+  },
+  {
+    "Name": "Substituters and remote builders",
+    "Description": "Low barrier of entry methods to use Nix caching and substituters",
+    "Location": "Room 101",
+    "StartTime": "2024-03-15T11:30:00-07:00",
+    "EndTime": "2024-03-15T12:00:00-07:00",
+    "Speakers": "Tom Bereknyei",
+    "Topic": "NixCon"
+  },
+  {
+    "Name": "Building Robots with Nix and Bazel",
+    "Description": "Learn about the benefits of using Nix and Bazel, and the role of overlays in build systems.",
+    "Location": "Room 101",
+    "StartTime": "2024-03-15T12:00:00-07:00",
+    "EndTime": "2024-03-15T12:30:00-07:00",
+    "Speakers": "Badi Abdul-Wahid",
+    "Topic": "NixCon"
+  },
+  {
+    "Name": "Develop your first app for Nextcloud on Ubuntu Server",
+    "Description": "Whether it's getting a handle on your photos, your budget or your recipe collection, Nextcloud is your one stop for degooglifying yourself. But there are as many needs for applications as there are people in the world. Nextcloud offers you the basics to build your app upon. In the workshop we will get you started on developing your first Nextcloud app.",
+    "Location": "Ballroom C",
+    "StartTime": "2024-03-15T12:00:00-07:00",
+    "EndTime": "2024-03-15T13:30:00-07:00",
+    "Speakers": "Daphne Muller",
+    "Topic": "Ubucon"
+  },
+  {
+    "Name": "Leveraging PrestoDB for data success",
+    "Description": "In this talk, I’ll introduce you to the PrestoDB project used by Meta, Uber, and IBM to retrieve data from multiple sources, like PostgreSQL, Redis, MariaDB, and many others in a unified platform.",
+    "Location": "Ballroom H",
+    "StartTime": "2024-03-15T12:30:00-07:00",
+    "EndTime": "2024-03-15T13:30:00-07:00",
+    "Speakers": "Yihong Wang, Kiersten Stokes",
+    "Topic": "Data on Kubernetes"
+  },
+  {
+    "Name": "Back to basics, getting traffic into your Kubernetes cluster",
+    "Description": "However you're using your Kubernetes cluster, you'll sooner or later need to direct traffic into it.You're spoiled with choice. Kubernetes provides no less than 3 different objects: NodePort, Ingress, and LoadBalancer. But LoadBalancer requires a dedicated implementation provided by Cloud Platforms. Moreover, Kubernetes is introducing a new Gateway API, adding one more way to direct traffic to the cluster.In this talk, I'd like to offer an overview of all options, with their pros and cons, and a more in-depth explanation of the new Gateway API.",
+    "Location": "Ballroom B",
+    "StartTime": "2024-03-15T12:30:00-07:00",
+    "EndTime": "2024-03-15T13:30:00-07:00",
+    "Speakers": "Nicolas Fränkel",
+    "Topic": "Kubernetes Community Day"
+  },
+  {
+    "Name": "MySQL connection handling and pooling",
+    "Description": "MySQL is famous for running the web. This implies that a lot of connections to will be made from, in most cases, many webservers to a limited number of database servers. We'll discuss how MySQL handles this and how connection pooling can help you optimise this process. We'll also talk about ProxySQL and how this can help to easily implement a connection pool for your MySQL.",
+    "Location": "Room 106",
+    "StartTime": "2024-03-15T12:30:00-07:00",
+    "EndTime": "2024-03-15T13:30:00-07:00",
+    "Speakers": "Matthias Crauwels",
+    "Topic": "MySQL"
+  },
+  {
+    "Name": "Navigating the Transit Data Landscape",
+    "Description": "The \"General Transit Feed Specification\" (GTFS) is one of the greatest open data standard success stories you can find in the US. In 2005, Google collaborated with Portland's TriMet to define an easily maintainable and consumable transit data format. The resulting spec is now ubiquitous - it is published by every major transit agency in the US and consumed by every major trip planning app (Google Maps, Transit App, Moovit, etc.). This session will cover what GTFS is, how you access it, how to use it, and how you can contribute to it as it continues to grow.",
+    "Location": "Room 107",
+    "StartTime": "2024-03-15T12:30:00-07:00",
+    "EndTime": "2024-03-15T13:30:00-07:00",
+    "Speakers": "Nina Kin",
+    "Topic": "Open Government"
+  },
+  {
+    "Name": "What the AI revolution means for Open Source, Open Tech and Open Societies",
+    "Description": "This talk will discuss the current challenges around AI. In the second half it covers the new innovative local and open source AI features that the Nextcloud community is building. At the end the talk looks into the new Ethical AI framework and what it means for existing SaaS AI solutions and the open source local alternatives.",
+    "Location": "Ballroom F",
+    "StartTime": "2024-03-15T12:30:00-07:00",
+    "EndTime": "2024-03-15T13:30:00-07:00",
+    "Speakers": "Jos Poortvliet",
+    "Topic": "Open Source AI and Applied Science"
+  },
+  {
+    "Name": "A look at the Elephant's trunk - PostgreSQL 17",
+    "Description": "PostgreSQL 17 is almost at feature freeze, and at this point we have at least some ideas of what features will be included. This talk will take a quick look at what's in there already, and what's in the queue for the next major release!",
+    "Location": "Ballroom G",
+    "StartTime": "2024-03-15T12:30:00-07:00",
+    "EndTime": "2024-03-15T13:30:00-07:00",
+    "Speakers": "Magnus Hagander",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Testing the Boundaries",
+    "Description": "Embedded devices are some of the most complex computer systems one might encounter. Each system is a balance of various inputs, outputs, and communication channels that are coordinated by embedded software. Testing these systems to guarantee they work is a complex task that's often overlooked. This session will explore techniques for integration testing of embedded systems, including identifying integration points where testing is needed, simulating and testing hardware I/O, and testing wireless communication and APIs, while highlighting open source tools to help get the job done.",
+    "Location": "Room 105",
+    "StartTime": "2024-03-15T12:30:00-07:00",
+    "EndTime": "2024-03-15T13:30:00-07:00",
+    "Speakers": "Rob Weber",
+    "Topic": "Embedded Linux"
+  },
+  {
+    "Name": "Three Heuristics for Fostering High-Trust, Generative Culture",
+    "Description": "This session presents three heuristics you can use to improve the flow of information in your interpersonal interactions. These tools are packaged in three simple acronyms to help you remember these techniques in the face of stress, anxiety, and surprises.",
+    "Location": "Ballroom DE",
+    "StartTime": "2024-03-15T13:30:00-07:00",
+    "EndTime": "2024-03-15T13:45:00-07:00",
+    "Speakers": "Paul Tevis",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "Nix State of the Union 2024",
+    "Description": "Cover the dynamic landscape of Nix's growth, innovation, and future possibilities. This session will provide a comprehensive overview of the major milestones Nix has achieved over 2023 from key leads in the community and the foundation board members, the challenges we've faced, and the exciting developments on the horizon.",
+    "Location": "Room 101",
+    "StartTime": "2024-03-15T13:30:00-07:00",
+    "EndTime": "2024-03-15T14:00:00-07:00",
+    "Speakers": "Ron Efroni",
+    "Topic": "NixCon"
+  },
+  {
+    "Name": "Shift Left Fast: A Deployable Python App in 10 Minutes",
+    "Description": "In this 10-minute lightning talk, you'll find out how to leverage an OSS GitHub application template from NASA JPL's SLIM project to create a DevSecOps Python 3 development project really fast. The project will exhibit fundamental concepts of Shift Left by implementing code tests, security scans and deployments very close to actual development. Fail fast is the mantra!",
+    "Location": "Ballroom DE",
+    "StartTime": "2024-03-15T13:45:00-07:00",
+    "EndTime": "2024-03-15T14:00:00-07:00",
+    "Speakers": "John Engelke",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "How I Met Your Deployment Plan",
+    "Description": "In the world of software development, deploying code to production is a critical and often challenging process. Just like the legendary tales of meeting your soulmate, finding the right deployment plan can be an adventurous journey filled with ups and downs. In this talk, we'll embark on a storytelling adventure through the trials, tribulations, and triumphs of various deployment strategies, drawing parallels to the memorable moments of the popular TV series \"How I Met Your Mother.\"",
+    "Location": "Ballroom DE",
+    "StartTime": "2024-03-15T14:00:00-07:00",
+    "EndTime": "2024-03-15T14:45:00-07:00",
+    "Speakers": "Gareth J. Greenaway",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "Turn code into real-life stuff with OpenSCAD (Workshop)",
+    "Description": "OpenSCAD is a free and open source programming language that creates 3D objects. Learning OpenSCAD empowers you to translate your coding skills into real world objects. This hands-on workshop will take you through the basics of the language, development environment, and workflows (including 3D printing) so you can create your own real-life stuff with code.",
+    "Location": "Room 211",
+    "StartTime": "2024-03-15T14:00:00-07:00",
+    "EndTime": "2024-03-15T17:00:00-07:00",
+    "Speakers": "Kyle Davis, Tom Callaway",
+    "Topic": "Workshops"
+  },
+  {
+    "Name": "Workshop: Getting Started with FreeBSD",
+    "Description": "FreeBSD is a free Unix-like operating system descended from Research Unix via the Berkeley Software Distribution (BSD), also known as “Berkeley Unix.” It’s known for its reliability, stability, and advanced networking and performance. Join us for a full-day workshop to teach you how to install FreeBSD and the ports and packages necessary to get you up and running.",
+    "Location": "Room 209",
+    "StartTime": "2024-03-15T14:00:00-07:00",
+    "EndTime": "2024-03-15T17:00:00-07:00",
+    "Speakers": "Drew Gurkowski",
+    "Topic": "Workshops"
+  },
+  {
+    "Name": "The case for Nix on the home server",
+    "Description": "Why is Nix a good choice for a home server? Learn how Nix enables maintenance free, secure, and reproducible home servers. The talk will cover why Nix is a powerful choice compared to other technologies like Docker or Ansible. It will also showcase how Nix makes it easy to get up and running with server applications such as Nginx, Wireguard, Jellyfin, Samba, and more.",
+    "Location": "Room 101",
+    "StartTime": "2024-03-15T14:00:00-07:00",
+    "EndTime": "2024-03-15T14:30:00-07:00",
+    "Speakers": "Samir Rashid, Anthony Tarbinian",
+    "Topic": "NixCon"
+  },
+  {
+    "Name": "Collation Challenges: Sorting it Out",
+    "Description": "If a PostgreSQL database resides on, for example, a RHEL 7 system with glibc version 2.17, and the operating system (OS) is upgraded to RHEL 8 with glibc version 2.28, the majority of indexes built on collatable columns will be broken. This talk will walk through examples of the types of breakage that can occur, the proposed solution at a high level, and a demonstration of the solution in action.",
+    "Location": "Ballroom G",
+    "StartTime": "2024-03-15T14:30:00-07:00",
+    "EndTime": "2024-03-15T15:30:00-07:00",
+    "Speakers": "Joe Conway",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "What’s New in OpenTelemetry",
+    "Description": "OpenTelemetry is the most active CNCF project after Kubernetes and is progressing at an immense pace. The core project is expanding beyond the “three pillars” into new signals, and beyond backend into client side telemetry and real user monitoring, eBPF, and much more. It can be difficult to keep track of all these updates. If you liked Horovits’s KubeCon talk last year on OpenTelemetry, you won’t want to miss this sequel. In this talk Horovits will go over some of the notable project updates you should keep an eye on, as well as useful guidance on how to get started in a pragmatic fashion.",
+    "Location": "Ballroom B",
+    "StartTime": "2024-03-15T14:30:00-07:00",
+    "EndTime": "2024-03-15T15:30:00-07:00",
+    "Speakers": "Dotan Horovits",
+    "Topic": "Kubernetes Community Day"
+  },
+  {
+    "Name": "PostgreSQL Performance for Application Developers - Because there is no Magic Button",
+    "Description": "As your application stack scales, the original design & configuration of your database may not be optimal anymore. This talk aims at identifying common performance problems encountered as you scale your PostgreSQL database and how to address them. Four broad areas will be covered: Query optimization PostgreSQL performance features Architecture-level improvements Tuning of database parameters",
+    "Location": "Ballroom H",
+    "StartTime": "2024-03-15T14:30:00-07:00",
+    "EndTime": "2024-03-15T15:30:00-07:00",
+    "Speakers": "Umair Shahid",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Design and Modeling for MySQL",
+    "Description": "This talk proposal explores the essential concepts and practical skills outlined in the book \"Database Design and Modeling with MySQL.\" Databases are the backbone of modern applications, and mastering their design and modeling is crucial for building efficient and scalable systems. This talk will provide an overview of the book's key insights and how they can empower developers, database administrators, and data professionals to create robust, high-performing databases.",
+    "Location": "Room 106",
+    "StartTime": "2024-03-15T14:30:00-07:00",
+    "EndTime": "2024-03-15T15:30:00-07:00",
+    "Speakers": "Alkin Tezuysal",
+    "Topic": "MySQL"
+  },
+  {
+    "Name": "Standardized Radiomic Image Feature Calculation",
+    "Description": "Radiomics, the high throughput calculation of texture features, is a growing field. Standardization needs to occur for these statistics to have significance. The International Biomarker Standardization Initiative (IBSI) codified a comprehensive set of image feature definitions, which have been translated into both MATLAB and Octave. Ultimately, the goal is widespread use, so the foundations for further quantitative studies can be laid.",
+    "Location": "Ballroom F",
+    "StartTime": "2024-03-15T14:30:00-07:00",
+    "EndTime": "2024-03-15T15:30:00-07:00",
+    "Speakers": "Kate Sweetland, Darryl Hwang",
+    "Topic": "Open Source AI and Applied Science"
+  },
+  {
+    "Name": "{Ba,E}dge Computing: adding compute to your attendee badge",
+    "Description": "In this talk, we dive into the process of enhancing (yes, CSI-style) your attendee badge with job orchestration capabilities. We combine open hardware, free software, and some soldering to create a badge that can do more than just show your name. Along the way, attendees will learn about job orchestrating at the edge, considerations for open hardware, power consumption and what to look for when combining unsupported CPU architectures with software.",
+    "Location": "Room 105",
+    "StartTime": "2024-03-15T14:30:00-07:00",
+    "EndTime": "2024-03-15T15:30:00-07:00",
+    "Speakers": "Kerim Satirli, Adrian Todorov",
+    "Topic": "Embedded Linux"
+  },
+  {
+    "Name": "Voting in Participatory Budgeting",
+    "Description": "Participatory Budgeting (PB) is a popular method to engage residents in budgeting decisions. The Stanford PB Platform has been used in more than 150 processes across North America to distribute over $100 Million. We will briefly discuss the overall PB process and cover the voting process in more detail: voting methods, ballot considerations and what we learned about voter behavior.",
+    "Location": "Room 107",
+    "StartTime": "2024-03-15T14:30:00-07:00",
+    "EndTime": "2024-03-15T15:30:00-07:00",
+    "Speakers": "Lodewijk Gelauff",
+    "Topic": "Open Government"
+  },
+  {
+    "Name": "[High|Low]Lights of Adopting Nix at Looker (Google Cloud)",
+    "Description": "A look at our adoption of Nix at Looker, now Google Cloud. I will go over the setup, adoption, broader community, and challenges.",
+    "Location": "Room 101",
+    "StartTime": "2024-03-15T14:30:00-07:00",
+    "EndTime": "2024-03-15T15:00:00-07:00",
+    "Speakers": "Farid Zakaria, Micah Catlin",
+    "Topic": "NixCon"
+  },
+  {
+    "Name": "Deploy your own converged supercomputing system within an hour (and 30 minutes!)",
+    "Description": "In this interactive workshop, we will peel back the buzzwords and fancy diagrams to get hands-on experience with deploying our own converged HPC system on your laptop. Using several free and open source tools, along with some code by the Ubuntu HPC community team we will deploy our own minified test cluster.",
+    "Location": "Ballroom C",
+    "StartTime": "2024-03-15T14:30:00-07:00",
+    "EndTime": "2024-03-15T16:00:00-07:00",
+    "Speakers": "Jason Nucciarone",
+    "Topic": "Ubucon"
+  },
+  {
+    "Name": "The Case to Not Outsource Your Metrics",
+    "Description": "Fear sells and lately I've noticed some observability vendors using this to their advantage. But, what's the cost of this fear? In this lightning talk I'll discuss why you should try to avoid procuring an observability vendor for your stack and how running your own metrics stack can be reliable, fun and wise.",
+    "Location": "Ballroom DE",
+    "StartTime": "2024-03-15T15:00:00-07:00",
+    "EndTime": "2024-03-15T15:15:00-07:00",
+    "Speakers": "David Southwell",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "NixCon UnConference",
+    "Description": "Pick a topic and grab some people to go talk about it. There's not much structure here. That's the point!",
+    "Location": "Room 101",
+    "StartTime": "2024-03-15T15:00:00-07:00",
+    "EndTime": "2024-03-15T16:30:00-07:00",
+    "Speakers": "",
+    "Topic": "NixCon"
+  },
+  {
+    "Name": "From DevSecOps to DevSecAI: A Technological Odyssey",
+    "Description": "In our session, we'll delve into DevSecAI: the powerful fusion of DevOps, security, and AI. Uncover how AI-driven innovations streamline software deployment, conserve developers' time, and offer enhanced security analysis. Experience a live demo of StreamDeploy's \"StreamDockerAI\" tool, showcasing the potential of AI in bolstering developer velocity and security in today's tech landscape.",
+    "Location": "Ballroom DE",
+    "StartTime": "2024-03-15T15:15:00-07:00",
+    "EndTime": "2024-03-15T15:30:00-07:00",
+    "Speakers": "Tony Loehr",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "How do you know if your DevEx efforts are working?",
+    "Description": "Investing in developer experience as part of a platform initiatives is wise. But, do you know if your investments are paying off? Traditional DevOps metrics are start, but they may not be enough to measure DevEx. To get a better view into the value of DevEx, let’s look at measurements and returns in aggregate. In this talk, Michael Stahnke, co-author of the State of DevOps Report from 2018-2021, will share engineering metrics that truly work to validate that your DevEx program is delivering a positive return. We'll delve into metrics that work for individuals, teams, and departments.",
+    "Location": "Ballroom DE",
+    "StartTime": "2024-03-15T15:30:00-07:00",
+    "EndTime": "2024-03-15T15:45:00-07:00",
+    "Speakers": "Michael Stahnke",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "Open-Source Hardware Mars Rovers working group",
+    "Description": "Work session to build and program OSHW Mars Rovers using FPrime",
+    "Location": "Room 205",
+    "StartTime": "2024-03-15T15:30:00-07:00",
+    "EndTime": "2024-03-15T16:30:00-07:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Vending Machine for Accelerating Data Science Experiments",
+    "Description": "Learn how platform engineers can leverage Kubernetes, JupyterHub, Ray, and Crossplane to provide a robust data science platform for machine learning experimentation that fosters innovation and drives business value.",
+    "Location": "Ballroom A",
+    "StartTime": "2024-03-15T15:45:00-07:00",
+    "EndTime": "2024-03-15T16:45:00-07:00",
+    "Speakers": "Christina Andonov, Apoorva Kulkarni",
+    "Topic": "Data on Kubernetes"
+  },
+  {
+    "Name": "Beyond MySQL: Advancing into the New Era of Distributed SQL with TiDB",
+    "Description": "Beyond MySQL: Advancing into the New Era of Distributed SQL with TiDB This talk is about the history, innovation and evolution of the MySQL ecosystem and MySQL’s attempts to address the challenge and issues around big data. It takes a lot of blood, sweat and tears to get MySQL to work at a large scale. With TIDB, you get scalability out of the box. TiDB is an open source MySQL wire compatible distributed SQL database. We will discuss TiDB architecture and its various components and how they come together to solve the challenge of scale out, HTAP, multi-tenancy and DDL.",
+    "Location": "Room 106",
+    "StartTime": "2024-03-15T15:45:00-07:00",
+    "EndTime": "2024-03-15T16:45:00-07:00",
+    "Speakers": "Sunny Bains",
+    "Topic": "MySQL"
+  },
+  {
+    "Name": "Transforming Data with the Power of PostgreSQL and SQL",
+    "Description": "PostgreSQL has a plethora of features to help developers slice and dice massive amounts of data. In most cases, knowing how to use CTEs, recursive CTEs, and CROSS JOINs can significantly improve your data transformation tasks. By the end of this session, you will understand how to approach data challenges differently, using the power of PostgreSQL and SQL to work more effectively.",
+    "Location": "Ballroom G",
+    "StartTime": "2024-03-15T15:45:00-07:00",
+    "EndTime": "2024-03-15T16:45:00-07:00",
+    "Speakers": "Ryan Booz",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "The Trials and Tribulations with GLIBC: An Exploration of Cross-Compiling for Embedded Linux",
+    "Description": "GLIBC has been a boon to Linux but comes with a toll when attempting to cross-compile code for embedded Linux systems. In this talk, we’ll explore the idea of cross-compiling and why it is important in embedded systems. We’ll then introduce problems caused by GLIBC when cross-compiling, and why these problems arise. Finally, we’ll cover several different techniques we can use when cross-compiling for embedded Linux to mitigate or avoid these issues. This talk is intended for users who have some experience with embedded Linux and embedded C/C++ development.",
+    "Location": "Room 105",
+    "StartTime": "2024-03-15T15:45:00-07:00",
+    "EndTime": "2024-03-15T16:45:00-07:00",
+    "Speakers": "Michael Starch",
+    "Topic": "Embedded Linux"
+  },
+  {
+    "Name": "Visualizing Kubernetes with Generated Diagrams",
+    "Description": "Understanding the relationships between various resource types in Kubernetes is crucial to understanding Kubernetes in general. It's unintuitive and takes many queries to gather owner/dependent hierarchies and find indirect references. Tools such as k8sviz can help visualize real Kubernetes resources, so we can quickly understand and communicate about the overall state of a Kubernetes-based service. This session is suitable for those with basic Kubernetes knowledge. We'll demo tools, look at some example diagrams, and discuss opportunities for improving diagram generators.",
+    "Location": "Ballroom B",
+    "StartTime": "2024-03-15T15:45:00-07:00",
+    "EndTime": "2024-03-15T16:45:00-07:00",
+    "Speakers": "Kevin Howell",
+    "Topic": "Kubernetes Community Day"
+  },
+  {
+    "Name": "How data and research can support better policy outcomes for open source collaboration",
+    "Description": "Open source software is the foundation of our digital infrastructure and economy, but it is too often overlooked and misunderstood by policymakers. More data and research on the role of open source collaboration in the global economy can support better policy outcomes for developers. GitHub's policy team will spotlight their developer-focused advocacy and introduce the Innovation Graph, a platform for metrics and data on global open source collaboration.",
+    "Location": "Room 107",
+    "StartTime": "2024-03-15T15:45:00-07:00",
+    "EndTime": "2024-03-15T16:45:00-07:00",
+    "Speakers": "Margaret Tucker",
+    "Topic": "Open Government"
+  },
+  {
+    "Name": "Navigating Open Science - when you don't know what you don't know",
+    "Description": "My talk will provide a personal account of how I was asked to step into the Open science world and learning on the job, opened my eyes to how segragated and fearful we can become to change. I will provide an overview on Open science at NASA and at the federal level. I will also talk about the benefits and impact of open science to the research and academic world. I will talk about the NASA TOPS mission and how my introduction into being certified as a Carpentries instructor provided a new road map to how I would approach my work as well as how I would work with others in the future.",
+    "Location": "Ballroom F",
+    "StartTime": "2024-03-15T15:45:00-07:00",
+    "EndTime": "2024-03-15T16:45:00-07:00",
+    "Speakers": "Karen Yuen",
+    "Topic": "Open Source AI and Applied Science"
+  },
+  {
+    "Name": "Testing your PostgreSQL backups: a practical guide",
+    "Description": "It is often said that \"an untested backup is not a backup\" but how can we turn that saying into something more actionable? And in an organization with limited engineering bandwidth, what are the most important action items to prioritize? In this presentation, I aim to provide a practical guide on what I believe will give the greatest \"bang for buck\" with backup testing, and how to fold it into your operations, modeled after how we test our PostgreSQL backups at Academia.edu.",
+    "Location": "Ballroom H",
+    "StartTime": "2024-03-15T15:45:00-07:00",
+    "EndTime": "2024-03-15T16:45:00-07:00",
+    "Speakers": "Nick Meyer",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Plan for Unplanned Work: Game Days with Chaos Engineering",
+    "Description": "How do you plan for unplanned incidents? You practice with Chaos Engineering. Strong incident response doesn't just happen, you have to build the skills and train your team. Practicing for major incidents gives your team insight into how your applications will behave when something goes wrong as well as how the team will interact to solve problems. Combining your Incident Response practices with Chaos Engineering roots your response practice in real-world scenarios, helping your team build confidence.",
+    "Location": "Ballroom DE",
+    "StartTime": "2024-03-15T16:00:00-07:00",
+    "EndTime": "2024-03-15T16:45:00-07:00",
+    "Speakers": "Mandi Walls",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "Ubuntu Q&A",
+    "Description": "In this open Q&A session, attendees are invited to bring any questions they have about Ubuntu. Whether you're looking for a particular type of application, want to know how to find Ubuntu events in your area, tips on hardware compatibility, or anything else, Nathan and Richard are on hand to help.",
+    "Location": "Ballroom C",
+    "StartTime": "2024-03-15T16:00:00-07:00",
+    "EndTime": "2024-03-15T17:15:00-07:00",
+    "Speakers": "Nathan Haines, Richard Gaskin, Aaron Prisk",
+    "Topic": "Ubucon"
+  },
+  {
+    "Name": "Recovering from Data Loss Despite Not Having a Backup: A Postgres True Story",
+    "Description": "Company database holding critical data goes down after a hard disk crash. There is no redundancy, and no usable backups. The only thing that remains is just a list of files with no structure, recovered from the destroyed filesystem. There is intense time pressure to get back online, and no clear path forward.",
+    "Location": "Ballroom H",
+    "StartTime": "2024-03-15T17:00:00-07:00",
+    "EndTime": "2024-03-15T18:00:00-07:00",
+    "Speakers": "Jimmy Angelakos",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "MySQL, JSON, & You: Perfect Together",
+    "Description": "Long before 'NoSQL' databases became all the rage, developers stored JSON in relational database tables. With the advent of the JSON data type, developers now have a powerful set of functions to update, retrieve, and filter data based on values stored in a JSON blob. In this session, we discuss storing JSON in our database and how the tools in MySQL can make that task a bit easier.",
+    "Location": "Room 106",
+    "StartTime": "2024-03-15T17:00:00-07:00",
+    "EndTime": "2024-03-15T18:00:00-07:00",
+    "Speakers": "Scott Stroz",
+    "Topic": "MySQL"
+  },
+  {
+    "Name": "The Impact of Blockchain and Distributed Ledger Technology on the DevOps Experience",
+    "Description": "The purpose of this talk is to provide an introductory overview of blockchain and distributed ledger technology geared to the needs and interests of the DevOps professional.",
+    "Location": "Ballroom DE",
+    "StartTime": "2024-03-15T17:00:00-07:00",
+    "EndTime": "2024-03-15T17:45:00-07:00",
+    "Speakers": "Robert Reselman",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "How to lower the entry barrier to your scientific software",
+    "Description": "Software is eating the scientitic world. Controlling instruments, making predictions, analyzing data, disseminating results--modern Science runs on software. As the open-source principles gain traction, new challenges emerge. In this talk, I will focus on one of such problems: inadequate documentation and high entry barriers. I will introduce a practical approach to enanche user and developer experience by providing a well-thought-out documentation that clearly addresses the needs of scientists and developers.",
+    "Location": "Ballroom F",
+    "StartTime": "2024-03-15T17:00:00-07:00",
+    "EndTime": "2024-03-15T18:00:00-07:00",
+    "Speakers": "Gabriele Bozzola",
+    "Topic": "Open Source AI and Applied Science"
+  },
+  {
+    "Name": "Voice-Activated AI Collaborators: A Hands-On Guide Using LLMs in IoT & Edge Devices",
+    "Description": "Discover the power of voice-assisted IoT and Edge interfaces in this practical session. Learn to create effective voice-activated devices, using LLMs like Falcon and OpenLLaMA. Gain insights into design decisions, essential components, and collaborative frameworks.",
+    "Location": "Room 105",
+    "StartTime": "2024-03-15T17:00:00-07:00",
+    "EndTime": "2024-03-15T18:00:00-07:00",
+    "Speakers": "David vonThenen",
+    "Topic": "Embedded Linux"
+  },
+  {
+    "Name": "Terrible Ideas in Kubernetes",
+    "Description": "In the spirit of the presenter's previous \"Terrible Ideas in Git\" talk at SCaLE14x, Corey once again takes to the stage to demonstrate an increasingly prevalent technology via counterexample. There's no better way to learn a technology than to implement it hilariously incorrectly–and thanks to this this talk, you don't even have to do it in your own production environment by mistake.",
+    "Location": "Ballroom B",
+    "StartTime": "2024-03-15T17:00:00-07:00",
+    "EndTime": "2024-03-15T18:00:00-07:00",
+    "Speakers": "Corey Quinn",
+    "Topic": "Kubernetes Community Day"
+  },
+  {
+    "Name": "Even children can work with Postgres",
+    "Description": "Can we write database queries in ChatGPT? The simple answer is Yes, but how good is these queries? During the talk we will go through the whole process of forming the right request for AI, discuss the main issues that AI has and some mistakes that users make, and of course, how to avoid all of these problem and get a good result.",
+    "Location": "Ballroom G",
+    "StartTime": "2024-03-15T17:00:00-07:00",
+    "EndTime": "2024-03-15T18:00:00-07:00",
+    "Speakers": "Tatiana Krupenya",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "The OSPO POV—3 experience levels, 1 panel",
+    "Description": "Open Source Program Offices (OSPOs) are popping up everywhere, not just in corporations but now in universities, research insititutions, NGOs, public government, and international organizations. In this panel hear from OSPO leaders who are beginning their journey, from ones who are some years into it, and others who have been through this once or thrice.",
+    "Location": "Room 107",
+    "StartTime": "2024-03-15T17:00:00-07:00",
+    "EndTime": "2024-03-15T18:00:00-07:00",
+    "Speakers": "Karsten Wade, Brittany Istenes, Stephanie Lieggi",
+    "Topic": "Open Government"
+  },
+  {
+    "Name": "NixCon Closing Ceremony",
+    "Description": "Join us as we wrap up the first ever NixCon North America.",
+    "Location": "Room 101",
+    "StartTime": "2024-03-15T17:00:00-07:00",
+    "EndTime": "2024-03-15T17:30:00-07:00",
+    "Speakers": "",
+    "Topic": "NixCon"
+  },
+  {
+    "Name": "Canonical Ubuntu Essentials: Proving Self-Taught Career Skills",
+    "Description": "Canonical Ubuntu Essentials: Proving Self-Taught Career Skills",
+    "Location": "Ballroom C",
+    "StartTime": "2024-03-15T17:15:00-07:00",
+    "EndTime": "2024-03-15T17:30:00-07:00",
+    "Speakers": "Adrianna Frick",
+    "Topic": "Ubucon"
+  },
+  {
+    "Name": "Songs to Enjoy While Your Servers Deploy",
+    "Description": "More information coming soon.",
+    "Location": "Ballroom DE",
+    "StartTime": "2024-03-15T18:15:00-07:00",
+    "EndTime": "2024-03-15T19:00:00-07:00",
+    "Speakers": "Forrest Brazeal",
+    "Topic": "UpSCALE"
+  },
+  {
+    "Name": "Cilium In Practice | eBHP",
+    "Description": "How to use eBHP to reduce latency in applications and enhance security. This is an interest, I’m not an expert.",
+    "Location": "Room 209",
+    "StartTime": "2024-03-15T18:30:00-07:00",
+    "EndTime": "2024-03-15T19:30:00-07:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "UpSCALE",
+    "Description": "34:40 Naja Faisal - How Important is #AI In Your Life 40:26 Krista Burdine - Fostering community in your open source project 45:39 Elias Voelker - Taking an Open Source Company Across the Pond 51:10 Sash Ghosh - Decoding the Matrix: A Marketer’s Journey Through Tech Space 56:27 Michael Gat - Lessons from the woodshed 1:02:02 Corey Quinn - ChatGPT 1:07:52 Special Guest Forrest Brazeal - Closing song: Containers vs Serverless Rap Battle",
+    "Location": "Ballroom DE",
+    "StartTime": "2024-03-15T19:00:00-07:00",
+    "EndTime": "2024-03-15T20:00:00-07:00",
+    "Speakers": "",
+    "Topic": "UpSCALE"
+  },
+  {
+    "Name": "Keynote",
+    "Description": "More information to come.",
+    "Location": "Ballroom DE",
+    "StartTime": "2024-03-16T10:00:00-07:00",
+    "EndTime": "2024-03-16T11:00:00-07:00",
+    "Speakers": "Viral Shah",
+    "Topic": "Keynote"
+  },
+  {
+    "Name": "How Is Linux Like a Player Piano?",
+    "Description": "At the end of Ken Thomson's keynote last year:https://www.socallinuxexpo.org/scale/20x/presentations/keynote-ken-thompsona person asked how Ken's talk relavant to Free Software. This talk answers that question.The talk will be illustrated with photographs and music recorded from my own collection of instruments, many over 100 years old (older than either Ken or myself!)",
+    "Location": "Ballroom B",
+    "StartTime": "2024-03-16T11:15:00-07:00",
+    "EndTime": "2024-03-16T12:15:00-07:00",
+    "Speakers": "maddog Hall",
+    "Topic": "General"
+  },
+  {
+    "Name": "Getting Around to It: Deferred Work Mechanisms in the Linux Kernel",
+    "Description": "Linux has multiple methods for scheduling delayed work, notably tasklets, workqueues, softirqs and waitqueues. Why are there so many kinds of deferred work and how do they differ? One distinction is between callbacks which are triggered by an event such as a interrupt, as opposed to active tasks which wait on constrained resources. A second distinction is between jobs of predictable duration that don't block versus tasks of long duration. Attendees will learn how to use bpf tools and new kworker monitors to observe and adjust workqueues, softirqs and tasklets.",
+    "Location": "Room 106",
+    "StartTime": "2024-03-16T11:15:00-07:00",
+    "EndTime": "2024-03-16T12:15:00-07:00",
+    "Speakers": "Alison Chaiken",
+    "Topic": "Kernel & Low Level Systems"
+  },
+  {
+    "Name": "From Configurations To Conclusions: Lessons from Fine-tuning Open Telemetry’s Collector For Tracing",
+    "Description": "OpenTelemetry is today's defacto standard for distributed tracing. It's collector is used by everyone in varied configurations to accept spans. However, tuning the collector takes time and a lot of energy to get right. In this talk we discuss what are the steps we took to tune the collector, what our final configuration was and how we pivoted the platform to a more optimal architecture based on what we learned. This talk provides a reference implementation for tracing at scale. Something we don't hear enough about.",
+    "Location": "Room 107",
+    "StartTime": "2024-03-16T11:15:00-07:00",
+    "EndTime": "2024-03-16T12:15:00-07:00",
+    "Speakers": "Vijay Samuel, Wei Tang",
+    "Topic": "Observability"
+  },
+  {
+    "Name": "Secure Consumption of Open Source Software: Evaluating, Utilizing, and Contributing Safely",
+    "Description": "This talk will dive into the key considerations for securely consuming open source software. Attendees will learn to evaluate projects based on active maintenance, patch cycles, and vulnerability management. We will explore the role of project documentation, code contribution expectations, and community involvement in project maturity and code quality. The talk will also cover challenges in consuming open source software, the benefits of utilizing tooling and static analysis, and important developments in the open source security community.",
+    "Location": "Room 101",
+    "StartTime": "2024-03-16T11:15:00-07:00",
+    "EndTime": "2024-03-16T12:15:00-07:00",
+    "Speakers": "Katherine Druckman",
+    "Topic": "Security"
+  },
+  {
+    "Name": "Digital Art Makes You Smart",
+    "Description": "Technology has improved many aspects of life, including art. Over time, artist have been able to create their pieces through entierly digital means using art programs and apps. Free, open-source applications such as Krita allow new artist to practice and learn to draw at no cost! However, these programs can be confusing for new comers, so learning about the ins and outs of the tools is a good starting point. With our experience of creating art with Krita, we will teach you how to create art of your own!",
+    "Location": "Room 103",
+    "StartTime": "2024-03-16T11:15:00-07:00",
+    "EndTime": "2024-03-16T12:00:00-07:00",
+    "Speakers": "Nicholas Maramba, Helen Ortiz",
+    "Topic": "Next Generation"
+  },
+  {
+    "Name": "What the Heck Is Kubernetes",
+    "Description": "Ever wonder what that fuss is all about! Is this just a new technology that will die along the thousands of JavaScript libraries that were supposed to change the way we code? Is Kubernetes really a game changer? Even if it was, do you or your project really need a container orchestration system with its clusters, controllers, pods and all those new moving pieces? All your questions will be answered in this talk! We will demystify this together. In the end, you’ll have a better understanding of the platform & its quirks, including the pros and cons, and how to get started.",
+    "Location": "Ballroom H",
+    "StartTime": "2024-03-16T11:15:00-07:00",
+    "EndTime": "2024-03-16T12:15:00-07:00",
+    "Speakers": "Frédéric Harper",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "How to talk to people about immutability",
+    "Description": "A single conversation with someone outside of tech changed how I both thought of immutability and how I talked to others about it. In this session, learn how immutability can often seem like a confusing, funny-sounding idea at first. Then how you can easily counter the confusion with sound, practical, and easy-to-understand concepts, exercises, and techniques to make the topic relatable. When you leave this session, you’ll have new tools that will help you share the powerful concepts of immutable software with others and maybe convince a few new folks along the way.",
+    "Location": "Room 212",
+    "StartTime": "2024-03-16T11:15:00-07:00",
+    "EndTime": "2024-03-16T12:15:00-07:00",
+    "Speakers": "Kyle Davis",
+    "Topic": "Reproducible and Immutable Software"
+  },
+  {
+    "Name": "Contribution is not only a code.",
+    "Description": "When we hear about open-source contribution we usually imagine code contribution. In DBeaver we have developed open-source applications for more than 10 years and we have contributors around the world. Are they all developers? Of course not. Can we say that code contribution is the most valuable among other types? Also not. Let's take a look how else you can help your favourite open source project.",
+    "Location": "Ballroom C",
+    "StartTime": "2024-03-16T11:15:00-07:00",
+    "EndTime": "2024-03-16T12:15:00-07:00",
+    "Speakers": "Tatiana Krupenya",
+    "Topic": "General"
+  },
+  {
+    "Name": "Layering Up: Composable environments with flox",
+    "Description": "Sebastian has just entered the cold, cut-throat world of early stage startups, and you know what you do when you're cold? You layer up. In this talk we'll follow Sebastian as he's thrown from project to project at FurFinder, an AI-powered social media app for cats. As Sebastian works on different projects we'll see how he's able to instantly use development environments provided by different teams and layer them on top of each other like cozy software sweaters.",
+    "Location": "Ballroom A",
+    "StartTime": "2024-03-16T11:15:00-07:00",
+    "EndTime": "2024-03-16T12:15:00-07:00",
+    "Speakers": "Zach Mitchell",
+    "Topic": "Developer"
+  },
+  {
+    "Name": "All Aboard! Kubernetes Routes now available for all destinations, North/South and East/West",
+    "Description": "The Kubernetes Gateway API was designed to solve multiple problems with Kubernetes Ingress and as it turns out the design also works well for solving related problems when internal Kubernetes services need to talk to each other! Come to this talk and learn how the GAMMA project is able to adapt the family of Route objects introduced in the Gateway API and use them to connect Kubernetes services in new and interesting ways.",
+    "Location": "Ballroom G",
+    "StartTime": "2024-03-16T11:15:00-07:00",
+    "EndTime": "2024-03-16T12:15:00-07:00",
+    "Speakers": "Jef Spaleta",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "What the Heck Is Godot and What Have I Been Missing Out On?",
+    "Description": "What the heck is Godot? Like games? Think of making them? Then this is the game engine and development platform for you. Although newer than Unity and Unreal, it is much more enjoyable to work with and improving rapidly. Most importantly it is *free* not just as in no money, but with all the freedoms of true Open Source. Avoid executives making painful decisions and costing you money (even for demos). Find out how easy it is to get started, how fun it can be to work with, and how powerful it can be. (Plus find out how Unity is like Dungeons and Dragons, in the bad way)",
+    "Location": "Room 105",
+    "StartTime": "2024-03-16T11:15:00-07:00",
+    "EndTime": "2024-03-16T12:15:00-07:00",
+    "Speakers": "Jon Cruz",
+    "Topic": "FOSS @ HOME"
+  },
+  {
+    "Name": "An intro to repeatable environments with flox",
+    "Description": "Using flox, you can create multiple environments that each contain their own set of packages, hooks, and vars. Everything is declarative, so your environment will be the same across platforms, projects, and time. If you’ve ever said \"but it worked on my machine, you must have the wrong version of libwhatever\", flox was built for you. In this talk, Ross Turk will walk you through the key subcommands and interactions of flox, then give you a bit of a peek under the covers at the power that lies beneath.",
+    "Location": "Room 211",
+    "StartTime": "2024-03-16T11:15:00-07:00",
+    "EndTime": "2024-03-16T12:15:00-07:00",
+    "Speakers": "Ross Turk",
+    "Topic": "Systems & Infrastructure"
+  },
+  {
+    "Name": "Empowering Women in Data: Shaping an Inclusive AI Future",
+    "Description": "Explore the vital role of women in shaping the future of data and its impact on AI. Delve into the reciprocal benefits of enhancing women's data skills and navigating unique challenges they face in technology. Uncover the transformative potential of accessible cloud computing for women in tech. Recognize the urgency of fostering diversity in data to combat bias and ensure an equitable AI future.",
+    "Location": "Ballroom F",
+    "StartTime": "2024-03-16T11:15:00-07:00",
+    "EndTime": "2024-03-16T12:15:00-07:00",
+    "Speakers": "Autumn Nash",
+    "Topic": "Open Source AI and Applied Science"
+  },
+  {
+    "Name": "Don’t Judge a Game by its Cover",
+    "Description": "Ever thought, “Hey, I can make this game way better?” to a game you perceive as terrible? Well, that’s just rude. Behind-the-scenes of creating video games takes time and effort to reach the outcome the developer is trying to achieve. With GDevelop, you can be in the developer’s shoes. Join us and create your very own game for your enjoyment!",
+    "Location": "Room 103",
+    "StartTime": "2024-03-16T12:00:00-07:00",
+    "EndTime": "2024-03-16T12:45:00-07:00",
+    "Speakers": "Isabella Rodriguez, Tea Kostka",
+    "Topic": "Next Generation"
+  },
+  {
+    "Name": "Proxyjacking for Profit: The Latest Cybercriminal Side Hustle",
+    "Description": "In the evolving landscape of cyber threats, proxyjacking for profit is emerging as a silent adversary. While the cyber realm is familiar with hijacking resources for cryptomining and conventional malicious uses of proxies, exploiting victims' bandwidth for direct and tangible profit is a newer challenge. This presentation delves into the intricacies of proxyjacking and its challenges for cybersecurity defenders. Attendees will gain insights into its prevalence, potential future trajectories, and, crucially, defensive measures to combat this under-discussed threat.",
+    "Location": "Room 101",
+    "StartTime": "2024-03-16T12:30:00-07:00",
+    "EndTime": "2024-03-16T13:30:00-07:00",
+    "Speakers": "Allen West",
+    "Topic": "Security"
+  },
+  {
+    "Name": "A SQL Approach to Exploring ELF Objects",
+    "Description": "In the intricate landscape of software development and system analysis, tools like readelf, nm, and objdump have been the go-to solutions for delving into Executable and Linkable Format (ELF) objects. These tools, while robust, follow the pattern of many Unix utilities and dump unstructured output to the console which can make it difficult to perform advanced analysis. We present 'sqlelf' which allows declarative access to ELF files. It brings a refreshing shift, offering a friendlier and more versatile way to explore ELF objects using SQL.",
+    "Location": "Room 106",
+    "StartTime": "2024-03-16T12:30:00-07:00",
+    "EndTime": "2024-03-16T13:30:00-07:00",
+    "Speakers": "Farid Zakaria",
+    "Topic": "Kernel & Low Level Systems"
+  },
+  {
+    "Name": "Payments Engineering",
+    "Description": "In this talk, we delve into the intricacies of payments engineering, covering challenges like avoiding double charges, reconciliation, and ensuring auditability. Drawing from these real-world scenarios, we explore how these lessons can be applied broadly to enhance software development practices and build reliable software.",
+    "Location": "Ballroom A",
+    "StartTime": "2024-03-16T12:30:00-07:00",
+    "EndTime": "2024-03-16T13:30:00-07:00",
+    "Speakers": "Vincent Sloan",
+    "Topic": "Developer"
+  },
+  {
+    "Name": "Measuring the Impact of Community Events",
+    "Description": "Without sales leads or conversions, how does a commercial organization measure the gains of participation in a community event? And for community projects, what's the return on investment in running a booth or giving talks at such events? This presentation outlines the challenges of figuring out the ROI of community event participation, and will offers multiple potential solutions Red Hat has been experimenting with to measure impact and gains.",
+    "Location": "Room 107",
+    "StartTime": "2024-03-16T12:30:00-07:00",
+    "EndTime": "2024-03-16T13:30:00-07:00",
+    "Speakers": "Brian Proffitt",
+    "Topic": "Observability"
+  },
+  {
+    "Name": "Linux and its microcomputer predecessors pre-1996",
+    "Description": "There's a rich history of forgotten 1980s and early 1990s Unixes and ways of thinking about the home computer as workstation. Find out the history of both commercial and non-commercial efforts and how the Linux project successfully syncretized most of these strains to become the most popular Unix-variation. It might perhaps, give you new appreciations and ways of thinking about the systems and tools you use every day.",
+    "Location": "Ballroom B",
+    "StartTime": "2024-03-16T12:30:00-07:00",
+    "EndTime": "2024-03-16T13:30:00-07:00",
+    "Speakers": "Chris McKenzie",
+    "Topic": "General"
+  },
+  {
+    "Name": "A Stitch in Time: My Linux-powered Knitting Clock",
+    "Description": "A stitch in time in my case, documents 2023. I was inspired by a Hackaday project that featured a clock that knitted a stitch every half hour, a row per day. A scarf extended from the bottom and dropped to the floor at the end of the year.I wanted one of my own but there were no instructions, so I spent the next few weeks designing and building one. Along the way I took a crash course in stepper motors and 3D design. The result is Tempus Nectit: a clock that documented 2023.Come along as I explain how I made a Linux-powered clock that knits a scarf throughout the year.",
+    "Location": "Room 105",
+    "StartTime": "2024-03-16T12:30:00-07:00",
+    "EndTime": "2024-03-16T13:30:00-07:00",
+    "Speakers": "Kyle Rankin",
+    "Topic": "FOSS @ HOME"
+  },
+  {
+    "Name": "Exploring the Synergy between Linux, Nix, and Computer Engineering Education",
+    "Description": "Within the university setting, Linux is treated more as a burdening task than a helpful tool. In this presentation, we will explore the synergy that is Linux, Nix, and Computer Engineering. With these tools, we can enable engineers to use tools that work within the same environment as the developer before going out into the big world.",
+    "Location": "Room 212",
+    "StartTime": "2024-03-16T12:30:00-07:00",
+    "EndTime": "2024-03-16T13:30:00-07:00",
+    "Speakers": "Samuel Raumin",
+    "Topic": "Reproducible and Immutable Software"
+  },
+  {
+    "Name": "Amplifying Your Open Source Advocacy: Empowering Voices Through Podcasting",
+    "Description": "Finding one's voice in the open source community can be a transformative journey, particularly for underrepresented groups. In this engaging talk, Katherine, an experienced open source evangelist, developer, and established podcaster, will share her 15+ year open source journey and how podcasting played a significant role in her advocacy and personal growth. Attendees will learn how to embrace their diverse backgrounds and experiences to empower and amplify their messages through podcasting for open source audiences.",
+    "Location": "Ballroom C",
+    "StartTime": "2024-03-16T12:30:00-07:00",
+    "EndTime": "2024-03-16T13:30:00-07:00",
+    "Speakers": "Katherine Druckman",
+    "Topic": "General"
+  },
+  {
+    "Name": "Dev/Stage/Prod is an Anti-Pattern for Data Pipelines",
+    "Description": "Not all typical engineering or system engineering practices are the right patterns for data engineering - and this distinction is important. This talk will focus on the predominant dev/stage/prod environments example and present a better practice when it comes to data engineering, operations and management.",
+    "Location": "Room 211",
+    "StartTime": "2024-03-16T12:30:00-07:00",
+    "EndTime": "2024-03-16T13:30:00-07:00",
+    "Speakers": "Oz Katz",
+    "Topic": "Systems & Infrastructure"
+  },
+  {
+    "Name": "How Open is Open? Transparency and Accountability in Open-Source LLMs.",
+    "Description": "Despite its widespread use, ChatGPT has some major drawbacks. For example, it is known to generate factually incorrect responses, often referred to as hallucinations. In addition, the models often exhibit a variety of biases – all based on the data used to build the model. The presentation will emphasize the need for genuine openness in open-source AI software and examine the implications of models that may not fully disclose their data sources and algorithms.",
+    "Location": "Ballroom F",
+    "StartTime": "2024-03-16T12:30:00-07:00",
+    "EndTime": "2024-03-16T13:30:00-07:00",
+    "Speakers": "Frank Coyle",
+    "Topic": "Open Source AI and Applied Science"
+  },
+  {
+    "Name": "Scaling Environments in Kubernetes with OpenTelemetry and Service Mesh",
+    "Description": "Modern applications comprise multiple microservices as well as components such as managed databases, message queues, third party APIs, and so on. This has made it all the more important to provide developers with rich testing feedback from environments that resemble production. Using request-level isolation, you can create lightweight high-fidelity environments. This approach is being used at scale in companies like Uber, Lyft and Doordash across hundreds of developers. In this talk, you will learn how you can design and implement such a system on Kubernetes using OSS components.",
+    "Location": "Ballroom G",
+    "StartTime": "2024-03-16T12:30:00-07:00",
+    "EndTime": "2024-03-16T13:30:00-07:00",
+    "Speakers": "Anirudh Ramanathan",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "Cloud native unified data and model access management for AI",
+    "Description": "Cloud-native tech is transforming AI infrastructure with unique challenges in data and model management. We highlight best practices for optimized data and model access. Drawing from leaders like Microsoft, Uber, and Shopee, attendees will gain actionable strategies for refining their cloud-based AI setups.",
+    "Location": "Ballroom H",
+    "StartTime": "2024-03-16T12:30:00-07:00",
+    "EndTime": "2024-03-16T13:30:00-07:00",
+    "Speakers": "Chunxu Tang, Shawn Sun",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "Robotic gaming robot",
+    "Description": "Join us in a deep dive into open-source robotics with our project: a Raspberry Pi-powered robot, adept at navigating a Dino Run-style game. Utilizing Python, OpenCV, and Linux on Raspberry Pi, alongside a DC motor for movement, we showcase how open-source technologies can be innovatively combined to create a responsive and interactive robotic system. This presentation is a testament to the capabilities and versatility of open-source tools in developing engaging and complex robotics applications.",
+    "Location": "Room 103",
+    "StartTime": "2024-03-16T13:45:00-07:00",
+    "EndTime": "2024-03-16T14:30:00-07:00",
+    "Speakers": "Michael Wang",
+    "Topic": "Next Generation"
+  },
+  {
+    "Name": "Security In An IaC Defined World",
+    "Description": "While it would be amazing to focus 100% on our code in our work, the reality of modern DevOps is we also need to worry about where it runs. In a simpler time, the operations team would grant us precious disk and machine resources after a requisition request. Security was tight, as those servers were locked down behind private networks and gateways. Living in the modern world of platforms as a service and infrastructure as code, IaC, means just taking security for granted is no longer an option.",
+    "Location": "Room 101",
+    "StartTime": "2024-03-16T14:30:00-07:00",
+    "EndTime": "2024-03-16T15:30:00-07:00",
+    "Speakers": "Dwayne McDaniel",
+    "Topic": "Security"
+  },
+  {
+    "Name": "Elevate Security and Observability with Cilium",
+    "Description": "We are excited to share with you the story of how Cilium, the powerful eBPF-based networking and security project, has played a pivotal role in enhancing observability, security, and good practices in our projects. In the ever-evolving landscape of modern technology, ensuring trusted ecosystems for our applications and infrastructure is of paramount importance.",
+    "Location": "Ballroom G",
+    "StartTime": "2024-03-16T14:30:00-07:00",
+    "EndTime": "2024-03-16T15:30:00-07:00",
+    "Speakers": "Gerardo Lopez, Fabrizio Sgura",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "Encrypted Btrfs Subvolumes: New Features",
+    "Description": "Recently btrfs, a next-generation Linux filesystem, has been working on the ability to seamlessly encrypt filenames and contents -- learn more about how to use it and its benefits and tradeoffs versus other encryption solutions like LUKS.",
+    "Location": "Room 106",
+    "StartTime": "2024-03-16T14:30:00-07:00",
+    "EndTime": "2024-03-16T15:30:00-07:00",
+    "Speakers": "Sweet Tea Dorminy",
+    "Topic": "Kernel & Low Level Systems"
+  },
+  {
+    "Name": "OpenTofu Internals: Developing Terraform in the Open",
+    "Description": "Opentofu is a community-led continuation of legacy Terraform. This presentation walks through the internals of the tool, digging into how it operates its plan/apply/destroy lifecycle. We will dig into state management, providers, and error handling. This in-depth examination will be useful for advanced users, wanting a deep understanding of the tool, or for developers looking to get involved.",
+    "Location": "Room 211",
+    "StartTime": "2024-03-16T14:30:00-07:00",
+    "EndTime": "2024-03-16T15:30:00-07:00",
+    "Speakers": "Jess Males",
+    "Topic": "Systems & Infrastructure"
+  },
+  {
+    "Name": "The Observability Path to Freedom",
+    "Description": "You instrumented your metrics and now you are vendor locked? So were we! Come to this talk to hear our observability story of freedom. We will share with you cautionary tales of the lessons we learned along the way and the anti-patterns we discovered.",
+    "Location": "Room 107",
+    "StartTime": "2024-03-16T14:30:00-07:00",
+    "EndTime": "2024-03-16T15:30:00-07:00",
+    "Speakers": "Alan LaCombe",
+    "Topic": "Observability"
+  },
+  {
+    "Name": "Exploring Immutable Linux Desktops with Fedora",
+    "Description": "Experience the Fedora desktop in an immutable fashion! This all levels demo explores the basics of Silverblue, Kinoite, Sericea, and Onyx. A survey of the history, installation basics, getting started, and basic tools will be covered. We'll start with ways to install applications, proceed to upgrading between different versions of Fedora, and cover key container development tools. From basic users to container developers, there's something for everyone here!",
+    "Location": "Room 212",
+    "StartTime": "2024-03-16T14:30:00-07:00",
+    "EndTime": "2024-03-16T15:30:00-07:00",
+    "Speakers": "Scott Williams, Perry Rivera, Brian Monroe",
+    "Topic": "Reproducible and Immutable Software"
+  },
+  {
+    "Name": "Bridging Open Source Developer Platforms: Backstage Meets Coder",
+    "Description": "Self-serve developer portals have become quite the hit, but did you know there are open-source variants? By leveraging Backstage's self-serve catalog alongside Coder's remote IDEs, developers can navigate between project inception, ongoing development, and documentation management. Attendees will delve into the core functionalities of Backstage and Coder, grasp the integration of these open-source endeavors to enhance the developer workflow, and explore real-world scenarios reflecting the productivity and operational advancements through this integration.",
+    "Location": "Ballroom H",
+    "StartTime": "2024-03-16T14:30:00-07:00",
+    "EndTime": "2024-03-16T15:30:00-07:00",
+    "Speakers": "Ben Potter",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "Nurturing the Next Generation of Open Source Contributors",
+    "Description": "Many open source projects are grappling with a crucial issue: finding future contributors and maintainers. This talk explores the hurdles and solutions in bridging academia and open source. We discuss what mental barriers students face when it comes to coding and contributing to open source, how to craft mentorship resources, and what resources projects need to build lasting relationships with students.",
+    "Location": "Ballroom B",
+    "StartTime": "2024-03-16T14:30:00-07:00",
+    "EndTime": "2024-03-16T15:30:00-07:00",
+    "Speakers": "Tyler Menezes",
+    "Topic": "General"
+  },
+  {
+    "Name": "Private Cloud on the Cheap",
+    "Description": "Build you own private cloud for less than $500. Yes it is possible and has been useful. The talk will provide an overview of installation, what to consider when building on the cheap, and some how it has been useful.",
+    "Location": "Room 105",
+    "StartTime": "2024-03-16T14:30:00-07:00",
+    "EndTime": "2024-03-16T15:30:00-07:00",
+    "Speakers": "Darren Cole",
+    "Topic": "FOSS @ HOME"
+  },
+  {
+    "Name": "From Data Tsunami to Actionable Insights",
+    "Description": "The data available about open source projects can feel like a tsunami with wave after wave of data that can feel overwhelming. But there are ways to make this more manageable by finding and focusing on the metrics that matter the most for you. This talk focuses on tips and techniques for making sense of those waves of data using collections of metrics to result in actionable insights about your open source software.",
+    "Location": "Ballroom F",
+    "StartTime": "2024-03-16T14:30:00-07:00",
+    "EndTime": "2024-03-16T15:30:00-07:00",
+    "Speakers": "Cali Dolfi, Dawn Foster",
+    "Topic": "Open Source AI and Applied Science"
+  },
+  {
+    "Name": "Automating Development Environments with Ansible & Chezmoi",
+    "Description": "Replicating a development environment is tedious, but using Ansible and chezmoi makes your environment easy to replicate. I've customized my environment to my preferences over the past decade. I often pick up new tools or configurations on-the-job or at-home. Duplicating configuration changes between multiple systems sucked, until I started managing it with Ansible and chezmoi. We'll discuss practical strategies for organizing environment automation, experiences managing multiple types of packages with Ansible playbooks, and how to keep home and work setups consistent but separate.",
+    "Location": "Ballroom A",
+    "StartTime": "2024-03-16T14:30:00-07:00",
+    "EndTime": "2024-03-16T15:30:00-07:00",
+    "Speakers": "Kevin Howell",
+    "Topic": "Developer"
+  },
+  {
+    "Name": "Where Does the Linux Desktop Go from Here?",
+    "Description": "We'll explore the past, present, and future direction of the Linux desktop ecosystem, covering technologies such as OSTree, Flatpak, and platform libraries (such as libadwaita.) The primary focus of this talk will be the changing model of how Linux native applications are developed, distributed, and consumed. We'll also touch on other improvements to the desktop experience, and share our view for the future.",
+    "Location": "Ballroom C",
+    "StartTime": "2024-03-16T14:30:00-07:00",
+    "EndTime": "2024-03-16T15:30:00-07:00",
+    "Speakers": "Lleyton Gray, Jaiden Riordan, Rosanna Yuen, Nova King, Pietro DiCaprio, Monica Ayhens-Madon, Matthew Miller, Drew Adams",
+    "Topic": "General"
+  },
+  {
+    "Name": "TrustworthyAI",
+    "Description": "This paper emphasizes the importance of Trustworthy AI in self-driving vehicles, particularly in computer vision for recognizing stop signs and cyber attacks. Multiple model versions were created, with Model Version 6 achieving a 95% confidence level in identifying stop signs. The study observes lower confidence levels as susceptible to cyber attacks. This demonstrates the ability to recognize anomalies, providing insights into performance variations across datasets. The success of Model Version 6 highlights the potential of advanced computer vision models for autonomous vehicle safety.",
+    "Location": "Room 103",
+    "StartTime": "2024-03-16T14:30:00-07:00",
+    "EndTime": "2024-03-16T15:15:00-07:00",
+    "Speakers": "Ethan Sun",
+    "Topic": "Next Generation"
+  },
+  {
+    "Name": "Mechatronics, Sensors & 3D Design and Printing",
+    "Description": "The Intelliplant stands as a testament to collaborative innovation, bringing together the expertise of the mechatronics, sensors, and design teams. This multidisciplinary effort, with each subgroup focusing on specific aspects, allowed an all-girls team to harness peer-conducted research and construct Intelliplants—self-watering plant pots powered by Arduino with real-time monitoring capabilities. This intricate project utilizes an array of components, including Arduino UNO, relay, neopixels, photoresistor, soil moisture sensor, LED matrix, water pump, and power adapter.",
+    "Location": "Room 103",
+    "StartTime": "2024-03-16T15:30:00-07:00",
+    "EndTime": "2024-03-16T16:15:00-07:00",
+    "Speakers": "Cynthia Prieto-Espinoza, Adanelly Chavez, Kimberly Vallejo, Alexa Hernandez",
+    "Topic": "Next Generation"
+  },
+  {
+    "Name": "Journey of a Home-based Personal Cloud Storage Project",
+    "Description": "Dive into the insights and lessons learned from my personal venture in building a distributed infrastructure with commodity hardware. Discover the alternatives to conventional cloud providers, the magic of ZFS, the importance of backups, automation and alerting for an enriched personal cloud storage experience. Explore this feedback on my project, utilizing exclusively FOSS (Free and Open Source Software) tools.",
+    "Location": "Room 105",
+    "StartTime": "2024-03-16T15:45:00-07:00",
+    "EndTime": "2024-03-16T16:45:00-07:00",
+    "Speakers": "Julien Riou",
+    "Topic": "FOSS @ HOME"
+  },
+  {
+    "Name": "Serverless Java in Action: Cloud Agnostic Design Patterns and Tips",
+    "Description": "You've probably seen how to create a Function-as-a-Service with one of the cloud providers, but if this is all you know about Serverless, prepare to have your mind blown! In this session we'll show you how to create a production-grade, cloud-agnostic, event-driven serverless solution with Quarkus, a Java stack optimized for fast startup and small footprint; and Knative, an open source community project for deploying, running and managing serverless applications on Kubernetes. Say goodbye to vendor lock-in and hello to Supersonic Subatomic Java-based Serverless bliss!",
+    "Location": "Ballroom H",
+    "StartTime": "2024-03-16T15:45:00-07:00",
+    "EndTime": "2024-03-16T16:45:00-07:00",
+    "Speakers": "Kevin Dubois",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "Sched Ext: The pluggable Linux scheduler",
+    "Description": "In this talk, we'll be discussing sched_ext: A new framework that allows developers to implement host-wide scheduling policies as BPF programs. With sched_ext, we've been able to significantly improve performance for some of the largest services at Meta. It's not just for hyperscalars though -- anyone can experiment with sched_ext, and it could have applications in gaming, VR, mobile devices, and more. Come learn about CPU scheduling, and see how sched_ext will fundamentally change the landscape of CPU scheduling and performance in Linux.",
+    "Location": "Room 106",
+    "StartTime": "2024-03-16T15:45:00-07:00",
+    "EndTime": "2024-03-16T16:45:00-07:00",
+    "Speakers": "Dan Schatzberg",
+    "Topic": "Kernel & Low Level Systems"
+  },
+  {
+    "Name": "A decade of open source multi factor authentication",
+    "Description": "privacyIDEA is a multi factor authentication system that helps administrators, organizsations and companies to manage thousands of 2nd factors of users. privacyIDEA supports all different token types and runs on premies. The project is around for 10 years. While it is completely open source, a company run by the developers provides support to companies who require this. This proves that open source can be the base for a successful business model. We will talk about how privacyIDEA developed, what are the future plans and how it can also help you solve your authentication challenges.",
+    "Location": "Room 101",
+    "StartTime": "2024-03-16T15:45:00-07:00",
+    "EndTime": "2024-03-16T16:45:00-07:00",
+    "Speakers": "Cornelius Kölbel",
+    "Topic": "Security"
+  },
+  {
+    "Name": "A Series of Fortunate Invents - An Open-Source Tour Of Solutions For Scaling Prometheus",
+    "Description": "What do you do once you’ve bumped up against one or more of Prometheus' limitations?- Outgrown what a single instance can handle- Many separate instances and need a global view- Need longer retention of your metric series- Require multi-tenancy- Need better HA/resiliencyThe classic “It Depends.” applies here.Old, incorrect or false information online can make this even harder.Come step through the popular OSS options for scaling Prometheus, and gain guidance on the next stage of your observability journey!",
+    "Location": "Ballroom G",
+    "StartTime": "2024-03-16T15:45:00-07:00",
+    "EndTime": "2024-03-16T16:45:00-07:00",
+    "Speakers": "Éamon Ryan",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "How to use open-source tools to serve an AI/ML model on private infrastructure",
+    "Description": "How to setup and configure your own AI power service in a private cloud",
+    "Location": "Ballroom F",
+    "StartTime": "2024-03-16T15:45:00-07:00",
+    "EndTime": "2024-03-16T16:45:00-07:00",
+    "Speakers": "Saian Ford, Aaron Vega",
+    "Topic": "Open Source AI and Applied Science"
+  },
+  {
+    "Name": "Inspektor Gadget – an eBPF systems inspection tool and framework",
+    "Description": "Inspektor Gadget is a CNCF Sandbox project that empowers developers to easily build custom system inspection pipelines to debug low level issues. This presentation will introduce the process of creating, packaging, and distributing 'Gadgets' (OCI Images combining eBPF programs, wasm modules, and metadata). We will show how Gadgets and Inspektor Gadget framework can be used to collect, enrich, and export data to tools like Prometheus or expose data via an API all based on a simple config file.",
+    "Location": "Room 107",
+    "StartTime": "2024-03-16T15:45:00-07:00",
+    "EndTime": "2024-03-16T16:45:00-07:00",
+    "Speakers": "Maya Singh",
+    "Topic": "Observability"
+  },
+  {
+    "Name": "Will your open source project run on a mainframe? And beyond!",
+    "Description": "You probably developed your open source project for a single, \"default\" architecture like x86, but today there is a growing interest in other architectures, from ARM to Power, and yes, even mainframes. The talk will present some of the reasons these architectures are growing in popularity. From there I'll discuss some of the tools that are available to open source software developers to port their projects to other architectures and give some practical guidance on precisely how to get started.",
+    "Location": "Ballroom A",
+    "StartTime": "2024-03-16T15:45:00-07:00",
+    "EndTime": "2024-03-16T16:45:00-07:00",
+    "Speakers": "Elizabeth K. Joseph",
+    "Topic": "Developer"
+  },
+  {
+    "Name": "Nix The Planet",
+    "Description": "Wish your old phone was a normal Linux computer, able to run the same software as your laptop, rather than a boring Android? Want to build and deploy Windows and macOS VMs with a single function call? Ever wanted to experiment with cutting-edge AI models without messing up your system? And by the way, defining an embedded system is just a few lines of Nix. This talk will showcase the limitless possibilities that await those brave enough to embrace the world of reproducible computing with NixOS.",
+    "Location": "Room 212",
+    "StartTime": "2024-03-16T15:45:00-07:00",
+    "EndTime": "2024-03-16T16:45:00-07:00",
+    "Speakers": "Matthew Croughan",
+    "Topic": "Reproducible and Immutable Software"
+  },
+  {
+    "Name": "Bringing Fedora Linux to Apple Silicon Macs with Asahi Linux",
+    "Description": "In 2020, Apple introduced the M1 ARM SoC, and the world changed! Well, not exactly... But it did change the world for Macs, as this began the era of ARM-based Mac computers using Apple's own CPU designs. These so-called \"Apple Silicon Macs\" can't run Linux... or can't they?With tight collaboration with the Asahi Linux project, the Fedora Asahi SIG have produced the Fedora Asahi Remix to allow people to run Fedora Linux on these new Macs. This presentation introduces the Fedora Asahi SIG and discusses the journey to supporting Fedora Linux for these new Macs.",
+    "Location": "Ballroom B",
+    "StartTime": "2024-03-16T15:45:00-07:00",
+    "EndTime": "2024-03-16T16:45:00-07:00",
+    "Speakers": "Neal Gompa, Davide Cavalca",
+    "Topic": "General"
+  },
+  {
+    "Name": "Thunderbird on Android: Late To The Party, But Ready To Fight",
+    "Description": "By 2025, the number of mobile email users will increase to 4.6 billion. That's a number representing 92% of ALL email users around the globe. Email is becoming more centralized and less interoperable, because a small handful of corporate giants have a stranglehold on the market. In this talk, you'll learn about Thunderbird's plans to help prevent centralization and keep open standards alive, as project leader Ryan Sipes gives you an inside look into the journey of bringing Thunderbird to Android, and explains how Thunderbird is gearing up to put the power back into your hands.",
+    "Location": "Ballroom C",
+    "StartTime": "2024-03-16T15:45:00-07:00",
+    "EndTime": "2024-03-16T16:45:00-07:00",
+    "Speakers": "Heather Ellsworth",
+    "Topic": "General"
+  },
+  {
+    "Name": "Organic isn't always good for you",
+    "Description": "Rapid organic growth of a startup can result in an unsupportable infrastructure that is nearly impossible to comprehend. At some point, you have to weigh the costs (human sanity and financial) associated with maintaining an indecipherable, tightly coupled environment over yeeting the whole thing and starting with a clean slate.",
+    "Location": "Room 211",
+    "StartTime": "2024-03-16T15:45:00-07:00",
+    "EndTime": "2024-03-16T16:45:00-07:00",
+    "Speakers": "Heather Osborn",
+    "Topic": "Systems & Infrastructure"
+  },
+  {
+    "Name": "Smart 3D Printing Surveillance: Detecting Failures with Computer Vision and Machine Learning",
+    "Description": "Although 3D printing has a promising future, it inevitably malfunctions from time to time, whether it is a design or hardware problem. Furthermore, with the rising number of hackers, there needs to be additional monitoring to alert users. This project's solution is to create an app using open source that can track 3D printing progress, as well as notify users when something has gone wrong.",
+    "Location": "Room 103",
+    "StartTime": "2024-03-16T16:15:00-07:00",
+    "EndTime": "2024-03-16T17:00:00-07:00",
+    "Speakers": "Christine Li",
+    "Topic": "Next Generation"
+  },
+  {
+    "Name": "scale-network -- Switch Configs and Stickers from the Same Source",
+    "Description": "A peek behind the curtains at what it takes to make the SCaLE network possible. We'll cover the techniques and show off the tools we use to manage our switch configurations and even produce portmaps that can be stuck to the tops of the switches directly from a centralized set of easy to edit plain-text configuration files.",
+    "Location": "Ballroom B",
+    "StartTime": "2024-03-16T17:00:00-07:00",
+    "EndTime": "2024-03-16T18:00:00-07:00",
+    "Speakers": "Owen DeLong",
+    "Topic": "General"
+  },
+  {
+    "Name": "Failing to Comply: The Urgent Need for Security Policies to Address Issues Facing Security Departments",
+    "Description": "Security policies are critical to mitigating the challenges and issues facing security departments and ensuring compliance with regulatory requirements. This talk highlights the importance of security policies in addressing security issues and compliance failures, and offers strategies for creating, implementing, and enforcing effective security policies that align with industry best practices and regulatory requirements.",
+    "Location": "Room 101",
+    "StartTime": "2024-03-16T17:00:00-07:00",
+    "EndTime": "2024-03-16T18:00:00-07:00",
+    "Speakers": "Lisa Umberger",
+    "Topic": "Security"
+  },
+  {
+    "Name": "Solving ‘secret zero’, why you should care about SPIFFE!",
+    "Description": "As organisations embrace the power of Kubernetes for their container orchestration needs, ensuring robust machine identity security measures becomes paramount. That's where the Secure Production Identity Framework for Everyone (SPIFFE) steps in as a game-changer. SPIFFE offers teams a standardised approach to establish and manage solid identities for workloads in Kubernetes, hybrid cloud infrastructures and data centres. This talk will describe real-world examples of how SPIFFE can be leveraged for modern machine identity. Using SPIFFE, teams can solve the secret zero problem.",
+    "Location": "Ballroom H",
+    "StartTime": "2024-03-16T17:00:00-07:00",
+    "EndTime": "2024-03-16T18:00:00-07:00",
+    "Speakers": "Mattias Gees",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "Linux IOCost Cgroup Controller and resctl-bench",
+    "Description": "The IOCost cgroup controller implements hierarchical weighted block IO distribution based on model-calculated cost of each IO. This can be used to isolate IOs among applications and containers running on the same system. This presentation takes a look at how the IOCost controller works, how comprehensive memory and IO isolation can be achieved with it, and how the model parameters can be benchmarked using resctl-bench and distributed for out-of-the-box configuration.",
+    "Location": "Room 106",
+    "StartTime": "2024-03-16T17:00:00-07:00",
+    "EndTime": "2024-03-16T18:00:00-07:00",
+    "Speakers": "Tejun Heo",
+    "Topic": "Kernel & Low Level Systems"
+  },
+  {
+    "Name": "Optimal Approaches for Real-Time Machine Learning with Apache Spark on Kubernetes: Best Practices and Strategies",
+    "Description": "This presentation explores the best practices and strategies for implementing real-time machine learning using Apache Spark on Kubernetes. It discusses the challenges and considerations involved in deploying and managing machine learning models in a real-time environment.",
+    "Location": "Ballroom F",
+    "StartTime": "2024-03-16T17:00:00-07:00",
+    "EndTime": "2024-03-16T18:00:00-07:00",
+    "Speakers": "Hichem Kenniche",
+    "Topic": "Open Source AI and Applied Science"
+  },
+  {
+    "Name": "Observability? It's a Data Analytics Problem, You Fool!",
+    "Description": "We all know logs, metrics and traces, the “three pillars of observability”. We’ve been told that by collecting them we’d gain observability into our systems, right? WRONG! You can diligently collect these signals and still find yourself without the required observability to detect and root-cause during a major outage or incident. We need a paradigm shift. This thought-provoking talk unveils the data analytics paradigm. Learn practical measures and explore new data types to truly unlock the power of your telemetry data and get the insights you need, when you need them.",
+    "Location": "Room 107",
+    "StartTime": "2024-03-16T17:00:00-07:00",
+    "EndTime": "2024-03-16T18:00:00-07:00",
+    "Speakers": "Dotan Horovits",
+    "Topic": "Observability"
+  },
+  {
+    "Name": "GraphQL Makes Your APIs Better: The Revolution in Efficiency and Real-time Performance",
+    "Description": "Building a responsive application isn’t just about speed and reliability; it's about creating a seamless developer experience that translates to an enhanced user experience. By layering GraphQL on top of your existing APIs, you make your APIs more capable and performant.With GraphQL, your APIs become more efficient: offering real-time data, the power of @defer-ing slow data, and optimized query execution that significantly outshines traditional handwritten BFFs. All of this while reducing network latency thanks to fewer bytes on the network.",
+    "Location": "Ballroom A",
+    "StartTime": "2024-03-16T17:00:00-07:00",
+    "EndTime": "2024-03-16T18:00:00-07:00",
+    "Speakers": "Michael Watson",
+    "Topic": "Developer"
+  },
+  {
+    "Name": "Enterprise Automation with AWX (upstream for Ansible Automation Platform)",
+    "Description": "In this session, Thomas Cameron will introduce you to AWX, the upstream project for Ansible Automation Platform from Red Hat. AWX is a management platform which enables sysadmins to automate jobs across an entire enterprise. You can patch, install new software, uninstall unneeded software, change workloads, set kernel tunables, manage configurations, and more via Ansible playbooks and roles. Now you can extend the power of Ansible in your enterprise using AWX, including organizations, inventories, credentials, projects,",
+    "Location": "Room 211",
+    "StartTime": "2024-03-16T17:00:00-07:00",
+    "EndTime": "2024-03-16T18:00:00-07:00",
+    "Speakers": "Thomas Cameron",
+    "Topic": "Systems & Infrastructure"
+  },
+  {
+    "Name": "Running an Open Source Hackerspace",
+    "Description": "Knox Makers in Knoxville, TN is the area's premier hackerspace. In existence for almost 12 years, it boasts over 325 members and its base operations are fully supported by membership dues. It also has a commitment to open hardware and software, running all of its tools, behind the scenes operations, and teaching classes exclusively with FOSS. In this talk, Tracy will talk about why Knox Makers has chosen open source, some of the technologies they use, and what the challenges are to this commitment.",
+    "Location": "Room 105",
+    "StartTime": "2024-03-16T17:00:00-07:00",
+    "EndTime": "2024-03-16T18:00:00-07:00",
+    "Speakers": "Tracy Homer",
+    "Topic": "FOSS @ HOME"
+  },
+  {
+    "Name": "Immutability & Atomicity in Linux",
+    "Description": "This talk explores the pivotal concepts of immutability and atomicity and their potential to shape a more resilient future for operating systems. We delve into how these principles, exemplified in distributions like Micro OS, Vanilla OS, and Silverblue, are driving a paradigm shift in the world of Linux. The adoption of immutability and atomicity is shown to enhance the robustness, security, and maintainability of Linux systems, with a focus on the crucial aspects of consistency and reproducibility for heightened security and reliability.",
+    "Location": "Room 212",
+    "StartTime": "2024-03-16T17:00:00-07:00",
+    "EndTime": "2024-03-16T18:00:00-07:00",
+    "Speakers": "Pietro DiCaprio",
+    "Topic": "Reproducible and Immutable Software"
+  },
+  {
+    "Name": "Self-healing Clusters: Game of Nodes and the Scaling Throne",
+    "Description": "In this session, we delve into how Descheduler, Node Problem Detector (NPD), and Autoscaler combine their strengths to deal with problematic nodes efficiently. We'll simulate a real-world scenario where a Kubernetes cluster faces turbulence caused by unhealthy nodes. Here, the Descheduler plays the role of an efficient manager, the NPD acts as the problem finder, and the Autoscaler balances the cluster's size. Together, they detect, remove, and maintain the right scale of the cluster.",
+    "Location": "Ballroom G",
+    "StartTime": "2024-03-16T17:00:00-07:00",
+    "EndTime": "2024-03-16T18:00:00-07:00",
+    "Speakers": "Tyler Gillson",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "Distributed Systems philosophy, fallacies and patterns for everyone",
+    "Description": "Let's discuss philosophy relevant to building distributed systems and fallacies that lead to common pitfalls. Then we’ll talk about common patterns and algorithms you should know. For the less experienced, this will give you concepts and patterns you can apply later from a non-technical perspective that is accessible for everyone. For the more experienced, you’ll be able to relate these concepts to your own real world examples. I was a Theatre major not a CS major so we’ll approach this from a language perspective not a math perspective.",
+    "Location": "Ballroom C",
+    "StartTime": "2024-03-16T17:00:00-07:00",
+    "EndTime": "2024-03-16T18:00:00-07:00",
+    "Speakers": "KC Braunschweig",
+    "Topic": "General"
+  },
+  {
+    "Name": "Anti-Patterns in Tech Cost Management",
+    "Description": "In 18 months, we've moved from \"growth at all costs\" to \"profitability first,\" and \"developer productivity\" as new buzzwords, as a reaction to the perception that we're spending too much money for too few business results. Yet for most of us, even in management, formal training in \"efficiency\" stopped at Big O notation. This presentation will offer lessons learned and anti-patterns to avoid. It will conclude with three things you can do right now to better position yourself and your team in this new world.",
+    "Location": "Ballroom C",
+    "StartTime": "2024-03-16T18:15:00-07:00",
+    "EndTime": "2024-03-16T19:15:00-07:00",
+    "Speakers": "Michael Gat",
+    "Topic": "General"
+  },
+  {
+    "Name": "I just want to push my code to GIT",
+    "Description": "A demonstration of using PIKU to push your code to a server, no docker, no kubernetes, just GIT PUSH and your code is running. PIKU is a free open-source \"Micro PAAS\" that claims \"The tinyest PAAS you've ever seen\".",
+    "Location": "Ballroom A",
+    "StartTime": "2024-03-16T18:15:00-07:00",
+    "EndTime": "2024-03-16T19:15:00-07:00",
+    "Speakers": "John Matthew",
+    "Topic": "Developer"
+  },
+  {
+    "Name": "Lessons Learned Migrating an Existing Product to a Multi Tenant Cloud Native Environment",
+    "Description": "What does it take to move an existing product to a Cloud Native environment? how to do lift and shift to Kubernetes? Join us to learn about our experience and also how to deal with multi tenancy, isolation and resource management.",
+    "Location": "Ballroom H",
+    "StartTime": "2024-03-16T18:15:00-07:00",
+    "EndTime": "2024-03-16T19:15:00-07:00",
+    "Speakers": "Carlos Sanchez",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "The Death Star and the ultimate vulnerability",
+    "Description": "Managing components and ensuring their security is crucial to prevent successful attacks. This session will take you to a galaxy far far away, to look at what went wrong in the Empire's supply chain to cause such a vulnerability to be introduced. By understanding the risks and using the right tools, we can avoid a catastrophe like the Death Star’s destruction and put a stop to any rebel scum.",
+    "Location": "Room 101",
+    "StartTime": "2024-03-16T18:15:00-07:00",
+    "EndTime": "2024-03-16T19:15:00-07:00",
+    "Speakers": "Jamie Coleman",
+    "Topic": "Security"
+  },
+  {
+    "Name": "Discovering Business Insights with Open Source Machine Learning: Tools, Techniques and Tips",
+    "Description": "In an era of Generative AI and Large Language Models, using old-school machine learning might sound archaic. The reality is, however, that hidden with your corporate data is a trove of information and hidden business patterns. Leveraging key techniques from open source machine learning can help businesses uncover hidden patterns that will have immediate impact on your customers and on your business strategies.",
+    "Location": "Ballroom F",
+    "StartTime": "2024-03-16T18:15:00-07:00",
+    "EndTime": "2024-03-16T19:15:00-07:00",
+    "Speakers": "Hema Veeradhi, Surya Pathak",
+    "Topic": "Open Source AI and Applied Science"
+  },
+  {
+    "Name": "Diagnosing Performance Bottlenecks in Production Systems",
+    "Description": "In this talk, we will review several approaches to performance analysis using real-world constraints, such as the need to keep systems up during diagnosis. A framework of high availability systems and storage will be used to explore cascading performance impacts across layers that may disguise the true bottleneck point. Attendees will gain a knowledge of effective strategies for diagnosing bottlenecks and optimizing performance to use within a broad base of infrastructure applications.",
+    "Location": "Room 211",
+    "StartTime": "2024-03-16T18:15:00-07:00",
+    "EndTime": "2024-03-16T19:15:00-07:00",
+    "Speakers": "Julia Iacoviello",
+    "Topic": "Systems & Infrastructure"
+  },
+  {
+    "Name": "bpfilter: a BPF-based packet filtering framework",
+    "Description": "bpfilter, once dormant, has been revived as a userspace daemon available on GitHub. It allows dynamic generation of packet-filtering BPF programs with a user-friendly interface. This presentation provides an overview of bpfilter, covering front-end clients, communication with the daemon, BPF program support, bytecode manipulation, and recent features, including benchmark results.",
+    "Location": "Room 106",
+    "StartTime": "2024-03-16T18:15:00-07:00",
+    "EndTime": "2024-03-16T19:15:00-07:00",
+    "Speakers": "Quentin Deslandes",
+    "Topic": "Kernel & Low Level Systems"
+  },
+  {
+    "Name": "So you want to build an Incident Response stack using OpenTelemetry?",
+    "Description": "The talk will start with defining Incident Response Management and its principles. Next, we'll discuss how users can build an efficient incident response stack in a myriad of open source tooling. We'll split this into 3 sections: 1) What are good signals to collect from an application that will help diagnose production issues? 2) What query patterns should be allowed by a telemetry database and how can we use them efficiently? How can I use these query patterns defined by telemetry databases to build an incident response stack? We'll answer these questions through a deep dive on OpenTelemetry.",
+    "Location": "Room 107",
+    "StartTime": "2024-03-16T18:15:00-07:00",
+    "EndTime": "2024-03-16T19:15:00-07:00",
+    "Speakers": "Annanay Agarwal",
+    "Topic": "Observability"
+  },
+  {
+    "Name": "Demystifying Kubernetes Resource Management: Everything You Always Wanted to Know … But Were Afraid to Ask",
+    "Description": "The presentation will allow the audience to improve their Kubernetes Resource Management skills and ultimately enhance their overall productivity, with a clear call to action to avoid performance degradation, avoid outages, provide better multi-tenancy, and ultimately reduce cloud costs.",
+    "Location": "Ballroom G",
+    "StartTime": "2024-03-16T18:15:00-07:00",
+    "EndTime": "2024-03-16T19:15:00-07:00",
+    "Speakers": "Reid Vandewiele",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "FBInstance to MetaInstance: Our Journey from Long-Running Mutable to Immutable Instances",
+    "Description": "We'll discuss the challenges we faced when running Chef in the cloud: juggling build time v/s runtime dependencies, attempting to test continuously moving updates, sharing cookbooks across different deployment environments, and being constrained to CentOS. Later, we’ll reveal how we turned these challenges around by adopting an immutable instance philosophy: managing instance lifecycle via CI/CD pipelines, relying on build time testing, reducing chef runtime footprint, and making critical host level infrastructure portable by moving it to docker containers.",
+    "Location": "Room 212",
+    "StartTime": "2024-03-16T18:15:00-07:00",
+    "EndTime": "2024-03-16T19:15:00-07:00",
+    "Speakers": "NISHchint Raina, Shaun Hopper",
+    "Topic": "Reproducible and Immutable Software"
+  },
+  {
+    "Name": "Creating Terrain Models with Python, Blender, and Second Life",
+    "Description": "As both a longtime Resident of Second Life and someone who is deeply fascinated by the concept of \"place\" more generally, I wanted to see this world (or parts of it) in a more comprehensive way than the platform's software is able to show. To that end, I've been creating large-scale terrain models of various areas, using a combination of LSL, Python, and Blender. In this presentation I will go into more detail about the process involved, touching on some of the challenges I've encountered while hopefully also giving attendees a better look at Blender's incredibly powerful Python API.",
+    "Location": "Room 105",
+    "StartTime": "2024-03-16T18:15:00-07:00",
+    "EndTime": "2024-03-16T19:15:00-07:00",
+    "Speakers": "Erik Mondrian",
+    "Topic": "FOSS @ HOME"
+  },
+  {
+    "Name": "Hacking Nextcloud to track your Period",
+    "Description": "\"Dysmenorrhea, or menstrual pain, occurs in 45 to 95 % of individuals who menstruate.\" How can you deal with it by tracking your cycle while making sure big tech and health insurances do not have access to your data?",
+    "Location": "Ballroom B",
+    "StartTime": "2024-03-16T18:15:00-07:00",
+    "EndTime": "2024-03-16T19:15:00-07:00",
+    "Speakers": "Camila Ayres",
+    "Topic": "General"
+  },
+  {
+    "Name": "So you wanna be a SCaLE volunteer?",
+    "Description": "AMA with some current SCaLE volunteers on how to get involved with the conference.",
+    "Location": "Room 103",
+    "StartTime": "2024-03-16T19:30:00-07:00",
+    "EndTime": "2024-03-16T20:30:00-07:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "How to Get Experience When You Have No Experience",
+    "Description": "There's a crushing Catch-22 in the tech world that keeps people from realizing their career dreams. Mentors hear this exasperated plea for help: \"How do I get experience doing something new when the companies I am talking to only want to hire people who already have experience?\" Two engineering senior leaders will explain how candidates can gain work experience by volunteering in various opportunities, from meetups to open source projects to service to the country. Learn to find volunteer opportunities and integrate your accomplishments into your resume and interviews.",
+    "Location": "Room 103",
+    "StartTime": "2024-03-17T10:00:00-07:00",
+    "EndTime": "2024-03-17T11:00:00-07:00",
+    "Speakers": "Lori Barfield, Jenson Crawford",
+    "Topic": "Career Day"
+  },
+  {
+    "Name": "Hacky solutions to real world problems: Applied Computing Past, Present, and Future",
+    "Description": "Hacky solutions to real world problems: Applied Computing Past, Present, and Future",
+    "Location": "Ballroom DE",
+    "StartTime": "2024-03-17T10:00:00-07:00",
+    "EndTime": "2024-03-17T11:00:00-07:00",
+    "Speakers": "Casey Handmer",
+    "Topic": "Keynote"
+  },
+  {
+    "Name": "From LA to Munich: Embracing Global Open Source Career Adventures",
+    "Description": "Are you ready to embark on a thrilling open source career journey that spans continents? Join us as we delve into the exciting world of international open source career opportunities. In this presentation, you'll discover the advantages, challenges, and invaluable experiences that come with taking the leap to work abroad in the open source industry.",
+    "Location": "Room 103",
+    "StartTime": "2024-03-17T11:00:00-07:00",
+    "EndTime": "2024-03-17T12:00:00-07:00",
+    "Speakers": "Omar Alva",
+    "Topic": "Career Day"
+  },
+  {
+    "Name": "WASM Derivations in Nix",
+    "Description": "I am implementing WASM derivations in Nix. This means Nix will run WASM code rather than native code, making use of OS-independent sandboxing, hence complete purity. Many benefits come from this, and many interesting things can be built on top of it.",
+    "Location": "Room 212",
+    "StartTime": "2024-03-17T11:45:00-07:00",
+    "EndTime": "2024-03-17T12:45:00-07:00",
+    "Speakers": "Las Safin",
+    "Topic": "Reproducible and Immutable Software"
+  },
+  {
+    "Name": "What you need to know about responsible innovation and AI-ethics for open source projects",
+    "Description": "New technology such as Artificial Intelligence promises to bring us remarkable advancements to society and solve pressing problems. However, as we have seen in recent years, the technologies also have a large potential for unintended consequences that can harm individuals and society as a whole. Daphne, TEDx speaker who wears two hats as the leader of the AI team at Nextcloud and academic researcher in this field, will share her experience on how to best navigate this new era of innovation while staying true to our core principles and values.",
+    "Location": "Ballroom F",
+    "StartTime": "2024-03-17T11:45:00-07:00",
+    "EndTime": "2024-03-17T12:45:00-07:00",
+    "Speakers": "Daphne Muller",
+    "Topic": "Open Source AI and Applied Science"
+  },
+  {
+    "Name": "Popping kernels for Linux distributions",
+    "Description": "Packagers in Linux distributions do a lot to ensure the software you use is up to date, integrated in the platform, and most importantly: works! But one package stands out among the others in importance: the Linux kernel. Over the past few years, I've become a Linux kernel package maintainer for a couple of Linux distributions (notably Fedora Asahi Remix and CentOS Stream Hyperscale). This talk will share my experiences in becoming and being a Linux kernel package maintainer: the good, the bad, and the sometimes ugly.",
+    "Location": "Room 106",
+    "StartTime": "2024-03-17T11:45:00-07:00",
+    "EndTime": "2024-03-17T12:45:00-07:00",
+    "Speakers": "Neal Gompa",
+    "Topic": "Kernel & Low Level Systems"
+  },
+  {
+    "Name": "Lessons from Covid-19: A Community-Based Approach to Securing Open Source Software",
+    "Description": "This talk applies lessons learnt from community health efforts during Covid-19 pandemic to open source software security. Just as you don’t need to be a medical professional to help protect yourself and loved ones from Covid, you don’t need to be a security engineer to help secure your open source community against rising attacks. We'll cover examples from security outreach efforts to address unique aspects of open source and will shareactionable ways and free tools to improve the supply-chain security of not only your own projects, but also the network of projects that depends on them.",
+    "Location": "Ballroom B",
+    "StartTime": "2024-03-17T11:45:00-07:00",
+    "EndTime": "2024-03-17T12:45:00-07:00",
+    "Speakers": "Nikita Jain, Pedro Nacht",
+    "Topic": "General"
+  },
+  {
+    "Name": "Unlocking the Past: Console Hardware and Open Source Gaming Hardware Emulators Through the Ages",
+    "Description": "Join us on a captivating journey through the annals of gaming history as we explore the evolution of console hardware and the rise of video game hardware emulators. This presentation delves into the hardware of iconic gaming consoles, their technological achievements and open source gaming hardware emulators that followed pursuit. From the Atari 2600 to the cutting-edge PlayStation console, we'll trace the development of console hardware and the rise of open source game hardware emulators that followed.",
+    "Location": "Room 105",
+    "StartTime": "2024-03-17T11:45:00-07:00",
+    "EndTime": "2024-03-17T12:45:00-07:00",
+    "Speakers": "Ray Salazar",
+    "Topic": "FOSS @ HOME"
+  },
+  {
+    "Name": "Surfing the Argo CD sync waves",
+    "Description": "If you want to be successful in your cloud native journey, a good Kubernetes-native continuous deployment (CD) tool is indispensable. There are some interesting choices out there, Argo CD being one of the best. In this talk, let’s surf the sync waves together, and learn the intrinsic parts of using Argo CD to deploy, and manage applications on your clusters. We’ll explore the insightful web UI, but also play with the CLI for terminal lovers. You’ll also end up with a broader comprehension of GitOps through the lenses of Argo CD while improving your application lifecycle management (ALM)",
+    "Location": "Ballroom H",
+    "StartTime": "2024-03-17T11:45:00-07:00",
+    "EndTime": "2024-03-17T12:45:00-07:00",
+    "Speakers": "Frédéric Harper",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "IP Address Parsing for Humans",
+    "Description": "If you’ve been on the Internet, you almost certainly know what an IP address is. Hint: No, it’s not “Internet Position”. But it’s not that simple is it? IPv4 is widely understood, and IPv6 is scary! Network addresses are also factored into how IP addresses are used and managed. We subnet, supernet, delegate prefixes, route networks, track aggregates, assign IP addresses, and so on! How should you properly parse network addresses and IPs? What’s the difference anyhow? Which tools are best and how do I know which to choose?",
+    "Location": "Ballroom A",
+    "StartTime": "2024-03-17T11:45:00-07:00",
+    "EndTime": "2024-03-17T12:45:00-07:00",
+    "Speakers": "Jathan McCollum",
+    "Topic": "Developer"
+  },
+  {
+    "Name": "The Open Source Fortress",
+    "Description": "Codebases, regardless of location, face security threats. The Okta 2022 breach underscores this risk. Developers are advised to adopt a shift-left approach, tackling code flaws before public release. \"The Open Source Fortress\" offers a framework for using open-source tools to identify vulnerabilities in codebases. The emphasis is on static techniques like symbolic execution, secret scanning, code querying, and dependency scanning, as well as dynamic techniques such as fuzzing.",
+    "Location": "Room 101",
+    "StartTime": "2024-03-17T11:45:00-07:00",
+    "EndTime": "2024-03-17T12:45:00-07:00",
+    "Speakers": "George-Andrei Iosif",
+    "Topic": "Security"
+  },
+  {
+    "Name": "Distributed System Performance Troubleshooting Like You’ve Been Doing it for Twenty Years",
+    "Description": "Troubleshooting performance issues across massive distributed systems can be intimidating if you don’t know where to start, and it’s even harder when the system is running on hundreds or thousands of nodes. In this session, we’ll explore how to go about diagnosing performance problems you might run into, and teach you the tools and process for getting to the bottom of any issue, even when it’s one of the biggest distributed deployments on the planet.",
+    "Location": "Room 107",
+    "StartTime": "2024-03-17T11:45:00-07:00",
+    "EndTime": "2024-03-17T12:45:00-07:00",
+    "Speakers": "Jonathan Haddad",
+    "Topic": "Observability"
+  },
+  {
+    "Name": "Planning Your IPv6 Network",
+    "Description": "IPv6, the latest evolution of Internet Protocol, stands as the successor to IPv4. With its vast address pool, IPv6 connects a multitude of devices to the Internet while enhancing addressing and network traffic routing. With the depletion of free IPv4 addresses, organizations face the need to transition from IPv4 to IPv6 and acquire IPv6 address space for new networks. Are you prepared for the IPv6 transition but uncertain where to start? ARIN can guide you in determining the appropriate IPv6 address space for your organization.",
+    "Location": "Room 211",
+    "StartTime": "2024-03-17T11:45:00-07:00",
+    "EndTime": "2024-03-17T12:45:00-07:00",
+    "Speakers": "John Sweeting, Jon Worley",
+    "Topic": "Systems & Infrastructure"
+  },
+  {
+    "Name": "Strengthening the Secure Supply Chain with Project Copacetic, Eraser, and FluxCD",
+    "Description": "In today's rapidly evolving technology landscape, container security is paramount. Join me in exploring the cutting-edge solutions that are revolutionizing container security and strengthening the secure supply chain. In this presentation, I will delve into Project Copacetic, the CNCF sandbox project Eraser, and the CNCF graduated project FluxCD, demonstrating how these technologies can automate container scanning, patching, and deployment, creating a robust and secure container supply chain workflow.",
+    "Location": "Ballroom G",
+    "StartTime": "2024-03-17T11:45:00-07:00",
+    "EndTime": "2024-03-17T12:45:00-07:00",
+    "Speakers": "Paul Yu",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "Should You Become an Engineering Manager?",
+    "Description": "You will spend one third of your waking hours in your life at work. Career choices matter. Fullfillment in your work matters. You've been in a hands-on role for a while now. You wonder what being a manager is like. Would you enjoy it? Would you be any good at it? What skills does it require? How does your day-to-day work life change? How do you need to change?In this talk, Larry will give you a taste of life as a tech manager, as well as a solid framework and set of introspective exercises to see if management within the tech industry might be for you.",
+    "Location": "Room 103",
+    "StartTime": "2024-03-17T12:00:00-07:00",
+    "EndTime": "2024-03-17T13:00:00-07:00",
+    "Speakers": "Larry Schrof",
+    "Topic": "Career Day"
+  },
+  {
+    "Name": "Beyond the Offer: A Beginners Guide to Career Progression in Tech",
+    "Description": "This talk aims to provide an in-depth explanation of what typical career progression looks like for software engineers, how promotions work, what they entail, who’s involved, and details actionable steps to get promoted to a senior software engineer.",
+    "Location": "Room 103",
+    "StartTime": "2024-03-17T13:00:00-07:00",
+    "EndTime": "2024-03-17T14:00:00-07:00",
+    "Speakers": "Fatima Taj",
+    "Topic": "Career Day"
+  },
+  {
+    "Name": "Code Security Reinvented: Navigating the era of AI",
+    "Description": "For the first time in software's history, AI assistants distill the collective knowledge of developers, making coding easier, but what about more secure? This is crucial as our research shows that there exists 1 AppSec professional for every 100 software developers.",
+    "Location": "Room 101",
+    "StartTime": "2024-03-17T13:45:00-07:00",
+    "EndTime": "2024-03-17T14:45:00-07:00",
+    "Speakers": "Xavier Rene-Corail",
+    "Topic": "Security"
+  },
+  {
+    "Name": "Adventures of Linux Userspace at Meta",
+    "Description": "The Linux Userspace team at Meta aims to make significant contributions to upstream userspace projects, while also ensuring that Meta is able to leverage those improvements. In this talk we'll give an overview of the team and brief history of how it was formalized. Then we'll dive deeper into some of the efforts we've worked on with the open source community and features we've adopted internally. Come if you enjoy hearing about our developments in systemd, BPF, distributions, and more!",
+    "Location": "Room 106",
+    "StartTime": "2024-03-17T13:45:00-07:00",
+    "EndTime": "2024-03-17T14:45:00-07:00",
+    "Speakers": "Anita Zhang",
+    "Topic": "Kernel & Low Level Systems"
+  },
+  {
+    "Name": "Training AI on Your Own Data",
+    "Description": "Generative AI models are built on data - but not on yourdata. So how can you use your own proprietary source of truth with these \"generic\" models which don't know about your own data? This session will explain how to ingest and leverage your own data in your own database to answer natural next questions. We'll talk about generative AI models and theory, as well as how to put it all together for your own needs. You will learn to exploit the power of AI without the expensive training and building of full-blown models. Devs, DBAs, Architects, Analysts - all are welcome!",
+    "Location": "Ballroom F",
+    "StartTime": "2024-03-17T13:45:00-07:00",
+    "EndTime": "2024-03-17T14:45:00-07:00",
+    "Speakers": "Nuri Halperin",
+    "Topic": "Open Source AI and Applied Science"
+  },
+  {
+    "Name": "Network Time Foundation: Project Status Updates",
+    "Description": "Learn about what's new with Network Time Foundation's Projects: NTP (and Network Time Security) LinuxPTP, libptpmgmt Khronos SyncE",
+    "Location": "Room 211",
+    "StartTime": "2024-03-17T13:45:00-07:00",
+    "EndTime": "2024-03-17T14:45:00-07:00",
+    "Speakers": "Harlan Stenn",
+    "Topic": "Systems & Infrastructure"
+  },
+  {
+    "Name": "Magic of Automation and Everyday Chores",
+    "Description": "In this session, we will talk about the current state of AI, how it is changing our lives and what tools that leverage this magic are available today that can make us more productive. Mastering the dark arts of automation and knowing what AI is capable of can allow us as developers to spend more time doing other things while making our applications more secure, performant, durable, and maintainable. While this magic is not going to replace us any time soon, it sure can make our lives much easier!",
+    "Location": "Room 105",
+    "StartTime": "2024-03-17T13:45:00-07:00",
+    "EndTime": "2024-03-17T14:45:00-07:00",
+    "Speakers": "Jamie Coleman",
+    "Topic": "FOSS @ HOME"
+  },
+  {
+    "Name": "10 Years Of Open Source Funding Trends: A Deep Dive",
+    "Description": "How do corporate dollars flow into the open source ecosystem? While corporate investment in open source might be well-tracked within corporate sponsorship programs or by sponsored organizations, there is no clear visibility into spending across corporations and sponsored organizations. In this talk, I will present an analysis of corporate spending on open source over the last ten years. Based on publicly available information, this analysis will highlight key observations and produce actionable recommendations for sponsors and sponsees alike.",
+    "Location": "Ballroom C",
+    "StartTime": "2024-03-17T13:45:00-07:00",
+    "EndTime": "2024-03-17T14:45:00-07:00",
+    "Speakers": "Duane O'Brien",
+    "Topic": "General"
+  },
+  {
+    "Name": "A K8S Operator for Enabling Hot Restarts of Stateful Applications",
+    "Description": "K8s’ frequent pod kills, and evictions make it challenging to operate non-fault-tolerant stateful applications that were never designed for frequent cold restarts. In this talk, we will describe the technology and use cases for a Kubernetes operator that addresses these operational challenges by enabling stateful applications to hot restart from where they were interrupted. The underlying technology will be demonstrated for CPU-only and GPU-accelerated stateful applications.",
+    "Location": "Ballroom G",
+    "StartTime": "2024-03-17T13:45:00-07:00",
+    "EndTime": "2024-03-17T14:45:00-07:00",
+    "Speakers": "Bernie Wu",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "The Git-tastic Power of Conventional Commits",
+    "Description": "Join the conversation about the future of collaborative and efficient software development. Discover how Git Conventional Commits revolutionize your workflow by structuring version history, crafting clear messages, streamlining Git, automating versioning and implementing best practices. Explore the tools and integrations that support this convention, making it easier to get started and maintain consistency across your repositories.",
+    "Location": "Ballroom A",
+    "StartTime": "2024-03-17T13:45:00-07:00",
+    "EndTime": "2024-03-17T14:45:00-07:00",
+    "Speakers": "Jen Diamond",
+    "Topic": "Developer"
+  },
+  {
+    "Name": "Container Automation With Docker: No More Shelling Out!",
+    "Description": "When you've run the same Docker command in your CLI for the fifteen thousandth time, you know you have some automation to do. In this talk we will learn how to avoid creating the dreaded `scripts/util.sh` and use Docker's Go libraries instead to build, run, and update our Docker environments.",
+    "Location": "Ballroom H",
+    "StartTime": "2024-03-17T13:45:00-07:00",
+    "EndTime": "2024-03-17T14:45:00-07:00",
+    "Speakers": "Guinevere Saenger",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "Growing Up with Open Source",
+    "Description": "A lot of people have been confused about how open source actually works; there's a lot of moving parts, after all. I'll be giving a timeline of my contributions to open source software and stopping along the way to explore various aspects. I want to create a roadmap for contributing to your favorite projects, starting your own, and building community. This talk is for newcomers who are intimidated by all the PRs, long time contributors that want to start a project of their own, and anyone in between.",
+    "Location": "Ballroom B",
+    "StartTime": "2024-03-17T13:45:00-07:00",
+    "EndTime": "2024-03-17T14:45:00-07:00",
+    "Speakers": "Nova King",
+    "Topic": "General"
+  },
+  {
+    "Name": "Does your load test have you covered?",
+    "Description": "We live in a continuous delivery and integration world requiring fast paced delivery of features. Load tests play a key line of defense in ensuring that you are not releasing defects or impacting services SLO. In this talk we will go over the process of leveraging telemetry to provide visibility into your load testing system and then using a data driven approach to ensure that the system is focusing on the most important resources. While we go through this process we’ll question some common assumptions that could result in improved accuracy, confidence, and potential cost savings.",
+    "Location": "Room 107",
+    "StartTime": "2024-03-17T13:45:00-07:00",
+    "EndTime": "2024-03-17T14:45:00-07:00",
+    "Speakers": "Chanchal Gupta, Simon Wong",
+    "Topic": "Observability"
+  },
+  {
+    "Name": "Making Fedora Linux (more) reproducible",
+    "Description": "Reproducible Builds (https://reproducible-builds.org) are a way to ensure a verifiable path from source code to binary package. This talk will discuss the ongoing efforts implementing reproducible builds in Fedora, the challenges encountered, the current status and what's coming next.",
+    "Location": "Room 212",
+    "StartTime": "2024-03-17T13:45:00-07:00",
+    "EndTime": "2024-03-17T14:45:00-07:00",
+    "Speakers": "Davide Cavalca",
+    "Topic": "Reproducible and Immutable Software"
+  },
+  {
+    "Name": "Project Caua: Students Creating their own businesses",
+    "Description": "In many countries around the world state and federal universities are tuition free for qualified students, but often many students can not take advantage of this because their families are too poor for the additional fees for room, board, computers, books, transportation, Internet and many of the other costs of schooling.Project Caua shows computer savvy students how to use their skills to sell and support FOSS projects on Open Hardware to small business owners while working only part time while attending high school or university.",
+    "Location": "Room 103",
+    "StartTime": "2024-03-17T14:00:00-07:00",
+    "EndTime": "2024-03-17T15:00:00-07:00",
+    "Speakers": "maddog Hall",
+    "Topic": "Career Day"
+  },
+  {
+    "Name": "I Love Living in the Future: Half a Century of Computers, Software, and Security",
+    "Description": "Closing Keynote",
+    "Location": "Ballroom DE",
+    "StartTime": "2024-03-17T15:00:00-07:00",
+    "EndTime": "2024-03-17T16:00:00-07:00",
+    "Speakers": "Bill Cheswick",
+    "Topic": "Keynote"
+  }
+]

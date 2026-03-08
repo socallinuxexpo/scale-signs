@@ -1,0 +1,1055 @@
+[
+  {
+    "Name": "Herding Elephants - What's New and Improved in PostgreSQL 14",
+    "Description": "This talk will be focused on summarizing all new and improved features introduced in PostgreSQL 14, the current major supported version of Postgres released in autumn 2021.",
+    "Location": "Los Angeles A",
+    "StartTime": "2022-07-28T10:00:00-07:00",
+    "EndTime": "2022-07-28T11:00:00-07:00",
+    "Speakers": "Sarah Conway",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Hands on with Continuous Delivery Pipelines",
+    "Description": "Continuous Delivery (CD) concepts are increasingly adopted by many technology organizations and teams. CD enables teams to establish processes that increase velocity, collaboration and quality of their codebase. Continuous Integration and Continuous Deployment (CI/CD) enables developer & operations teams to break down unnecessary silos and gain a deeper knowledge of their respective arenas.",
+    "Location": "Century CD",
+    "StartTime": "2022-07-28T10:00:00-07:00",
+    "EndTime": "2022-07-28T13:00:00-07:00",
+    "Speakers": "Angel Rivera",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Workshop: Plan, Teach, and Make with IEEE SA OPEN",
+    "Description": "IEEE SA OPEN has active communities creating open source and open hardware digital infrastructure technologies across a wide range of sectors such as healthcare, education, retail clothing, communications, design-automation, and more. During SCALE 19x, we will be hosting a day of collaborative planning, teaching, and making! To do this, our event will offer mini-tutorials along with (design and coding focused) sessions based on attendee generated topics.",
+    "Location": "Los Angeles C",
+    "StartTime": "2022-07-28T10:00:00-07:00",
+    "EndTime": "2022-07-28T17:00:00-07:00",
+    "Speakers": "",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Workshop: Open Source Data Science: wielding AI to make your life easier",
+    "Description": "Regardless of your technical roles or interests, adding the tools of data science can help you do more. Systems administrators, analysts, developers, technical support specialists, tech writers, and others have tasks that can be machine learning (ML) workloads, which can then be put in a cloud environment in an end-to-end ML workflow.",
+    "Location": "San Lorenzo E",
+    "StartTime": "2022-07-28T10:00:00-07:00",
+    "EndTime": "2022-07-28T17:00:00-07:00",
+    "Speakers": "Karsten Wade",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Kubernetes 101 Workshop",
+    "Description": "Bring a laptop to follow along with this interactive session as we learn Kubernetes basics using kubeadm, kubectl, and other command-line tools. Attendees will learn to model portable, scaleable, and highly-available solutions using open source tools for cloud-native computing.",
+    "Location": "Bel Air",
+    "StartTime": "2022-07-28T10:00:00-07:00",
+    "EndTime": "2022-07-28T13:00:00-07:00",
+    "Speakers": "Jeffrey Sica, Guinevere Saenger, Taylor Dolezal",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "Workshop: Zero to OTel Hero",
+    "Description": "We all know that OpenTelemetry has quickly become one of the preferred data collection and instrumentation for APM, infrastructure metrics and more. However, re-instrumenting your applications can be a challenge, and knowing where to start is not always straightforward. In this session, Splunk's observability solutions engineers will cover: 1) Basics of what OpenTelemetry is, 2) Hands-on examples of how to instrument your applications and validate using APM and 3) How to use your existing CICD processes to ensure a smooth transition from your current telemetry tooling to Otel.",
+    "Location": "Century AB",
+    "StartTime": "2022-07-28T10:00:00-07:00",
+    "EndTime": "2022-07-28T13:00:00-07:00",
+    "Speakers": "Chris Crocco",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Solving PostgreSQL wicked problems",
+    "Description": "PostgreSQL is a very popular and feature-rich DBMS. At the same time, PostgreSQL has a set of annoying wicked problems, which haven't been resolved in decades. Miraculously, with just a small patch to PostgreSQL core extending this API, it appears possible to solve wicked PostgreSQL problems in a new engine made within an extension.",
+    "Location": "Los Angeles A",
+    "StartTime": "2022-07-28T11:00:00-07:00",
+    "EndTime": "2022-07-28T12:00:00-07:00",
+    "Speakers": "Alexander Korotkov",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Migrating to PostgreSQL",
+    "Description": "There are many compelling reasons motivating people to move from other databases to PostgreSQL, including security, performance, tools, and cost savings. I will share lessons learned from migrations big and small, and some approaches and tools that make migrating data to PostgreSQL painless. We will also go over how these approaches and tools can also be used for cross-server data integrations.",
+    "Location": "Los Angeles B",
+    "StartTime": "2022-07-28T11:00:00-07:00",
+    "EndTime": "2022-07-28T12:00:00-07:00",
+    "Speakers": "Jennifer Scheuerell",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Nulls Make Things Easier?",
+    "Description": "Nulls are a very useful but also very error-prone relational database feature. This talk is designed to help applications developers better manage their use of nulls. It covers the use of nulls in relational databases, with a focus on Postgres behaviour. It covers three-value logic, comparing nulls, mapping nulls to strings, indexing nulls, and aggregates.",
+    "Location": "Los Angeles A",
+    "StartTime": "2022-07-28T13:30:00-07:00",
+    "EndTime": "2022-07-28T14:30:00-07:00",
+    "Speakers": "Bruce Momjian",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "OpenSource SQL Business Schemas",
+    "Description": "Stop using the Microsoft Northwind Database Schema. Rolling your own is always a compromise. Quick-start your project with a fully baked FOSS Business Database Schema. All the TABLEs, VIEWs and PROCEDUREs you initially need have already been created. Come see a brief walk-through of just some of the included features. * People and Entity management * Double Entry Accounting * Inventory Movement * Email Subscribe Lists * Time Periods * and so much more.",
+    "Location": "Los Angeles B",
+    "StartTime": "2022-07-28T13:30:00-07:00",
+    "EndTime": "2022-07-28T14:30:00-07:00",
+    "Speakers": "Stephen Jazdzewski",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Workshop: Intro to Kyverno Kubernetes Native Policy Management",
+    "Description": "Kyverno, a Cloud Native Computing Foundation (CNCF) project, is a policy engine designed for Kubernetes. With Kyverno, policies are managed as Kubernetes resources and no new language is required to write policies. This allows using familiar tools such as kubectl, git, and kustomize to manage policies. Kyverno can also be used to mutate existing Kubernetes or generate new resources. This is an interactive workshop for individuals interested in getting started with Kyverno.",
+    "Location": "Bel Air",
+    "StartTime": "2022-07-28T13:30:00-07:00",
+    "EndTime": "2022-07-28T17:00:00-07:00",
+    "Speakers": "Chip Zoller",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Workshop: Getting started with Cloud Custodian",
+    "Description": "Cloud Custodian is an OSS governance project that allows cloud and platform engineering teams to unify dozens of tools and scripts for managing their public cloud accounts into one tool. In this workshop, you’ll learn about the tool and get a hands-on guide through policy authorship and execution.",
+    "Location": "Century CD",
+    "StartTime": "2022-07-28T13:30:00-07:00",
+    "EndTime": "2022-07-28T17:00:00-07:00",
+    "Speakers": "Jorge Castro",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Workshop: Maximize Productivity with Developer Productivity Engineering",
+    "Description": "In this workshop offered to you by Gradle, we will be discussing Developer Productivity Engineering (DPE). If you are not already familiar with DPE, it is a new software development discipline that uses data analytics and acceleration technologies to speed up the critical software development processes‚ from builds to testing to CI‚ and make them more efficient. In this hands-on training with labs we will describe DPE processes and best practices in action using examples from Java projects that rely on Maven or Gradle build tools.",
+    "Location": "Century AB",
+    "StartTime": "2022-07-28T13:30:00-07:00",
+    "EndTime": "2022-07-28T17:00:00-07:00",
+    "Speakers": "Justin Reock",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Workshop: Introduction to the Linux kernel tracing libraries",
+    "Description": "This talk will describe the libtracefs library that is used to interact with the Linux ftrace tracing infrastructure. Controlling ftrace tracing is usually performed via the tracefs file system via echo and cat commands to the control files within it. This is awkward at best from doing the same from within an application. The libtracefs library and friends make it much easier to perform from your customized program. Useful examples of how to use the library will be given.",
+    "Location": "Marina",
+    "StartTime": "2022-07-28T14:00:00-07:00",
+    "EndTime": "2022-07-28T17:00:00-07:00",
+    "Speakers": "Steven Rostedt",
+    "Topic": "Observability"
+  },
+  {
+    "Name": "Explaining EXPLAIN",
+    "Description": "There are two types of people: people who want to use Postgres, and people who want to use Postgres well. The latter will not be content with a poorly-performing query when they know that better performance can be achieved with some tuning, an index, and/or a query rewrite. For developers and DBAs, this talk discusses what EXPLAIN does, how to interpret its output, what inferences can be extracted from its output, and what can be done to improve query performance.",
+    "Location": "Los Angeles B",
+    "StartTime": "2022-07-28T14:30:00-07:00",
+    "EndTime": "2022-07-28T15:30:00-07:00",
+    "Speakers": "Richard Yen",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "ADVANCED INT->BIGINT CONVERSIONS",
+    "Description": "It's 2021 and we're still dealing with integer overflow. Just a few months ago I came within 24 hours of watching one of the world's tech unicorns come to a stop because of a possible overflow problem. In this talk I'll talk about the nature of the problem, why we still see it today, and cover many of the various options to work your way through a pending int overflow. I also talk about some of the more advanced work we did to make sure our bases were covered, and walk through techniques you can use to keep from hitting the wall.",
+    "Location": "Los Angeles A",
+    "StartTime": "2022-07-28T14:30:00-07:00",
+    "EndTime": "2022-07-28T15:30:00-07:00",
+    "Speakers": "Robert Treat",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "PostgreSQL and Artificial intelligence",
+    "Description": "Artificial intelligence, machine learning, and deep learning are intertwined capabilities that attempt to solve problems that defy traditional computational solutions --- problems including fraud detection, voice recognition, and search result recommendations. While they elude simple computation, they are computationally expensive, involving the calculation of perhaps millions of probabilities and weights. These computations can be done outside the database, but there are specific advantages of doing machine learning inside it, close to where the data is stored.",
+    "Location": "Los Angeles B",
+    "StartTime": "2022-07-28T15:30:00-07:00",
+    "EndTime": "2022-07-28T16:30:00-07:00",
+    "Speakers": "Ibrar Ahmed",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "An Adventure in Data Modeling",
+    "Description": "This is a tale about one company's experience with a database schema design refactor to use the Entity-Attribute-Value (EAV) data model on its members. I will describe the original data model and why there was a need to move to a new data model. There was some stumbling along the way but company recovered and succeeded in implementing the EAV data model. But some lingering questions remain...",
+    "Location": "Los Angeles A",
+    "StartTime": "2022-07-28T15:30:00-07:00",
+    "EndTime": "2022-07-28T16:30:00-07:00",
+    "Speakers": "Mark Wong",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "PostgreSQL Ask Me Anything",
+    "Description": "A panel of PostgreSQL community members is here to answer any questions about any aspect of the project.",
+    "Location": "Los Angeles A",
+    "StartTime": "2022-07-28T16:30:00-07:00",
+    "EndTime": "2022-07-28T17:30:00-07:00",
+    "Speakers": "Mark Wong, Michael Brewer, Jonathan Katz, Bruce Momjian, Robert Treat, Stephen Frost, Jaime Casanova",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "MySQL Backup Solutions in 2022",
+    "Description": "Backups are important! Everyone makes mistakes, bugs are easily overlooked, hardware will fail eventually. If you don't want to lose data when disaster strikes, your backups will be your savior. In this talk I will guide you through some of the most common backup techniques for #MySQL that we use in 2022.",
+    "Location": "Carmel",
+    "StartTime": "2022-07-29T10:00:00-07:00",
+    "EndTime": "2022-07-29T11:00:00-07:00",
+    "Speakers": "Allan Mason",
+    "Topic": "MySQL"
+  },
+  {
+    "Name": "Get Your Insecure PostgreSQL Passwords to SCRAM!",
+    "Description": "Passwords: they just seem to work. You connect to your PostgreSQL database and you are prompted for your password. But what if I told you there was a better way to authenticate with passwords in PostgreSQL? Let's learn how SCRAM (Salted Challenge Response Authentication Mechanism) in PostgreSQL securely authenticates passwords. At the end of this talk, you will understand how SCRAM works, how to ensure your PostgreSQL drivers supports it, how to upgrade your passwords to using SCRAM-SHA-256, and why you want to tell other PostgreSQL password mechanisms to SCRAM!",
+    "Location": "Los Angeles A",
+    "StartTime": "2022-07-29T10:00:00-07:00",
+    "EndTime": "2022-07-29T11:00:00-07:00",
+    "Speakers": "Jonathan Katz",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Speedrunning Kubernetes Deployments",
+    "Description": "Join me for a developer-focused introduction to Kubernetes and learn how to stand up all of your infrastructure and deploy an application to it in just a few minutes, using a programming language you’re probably already familiar with!",
+    "Location": "La Jolla",
+    "StartTime": "2022-07-29T10:00:00-07:00",
+    "EndTime": "2022-07-29T11:00:00-07:00",
+    "Speakers": "Kat Cosgrove",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "Workshop: Automate Any Process, Anywhere with Camunda",
+    "Description": "Automate or be automated! This hands-on workshop is for software developers who want to build foundational knowledge of automating and orchestrating processes with Camunda Platform 8 using BPMN (Business Process Model and Notation) and DMN (Decision Model and Notation). We’ll focus on designing a process from the requirements stage and deploying it to Camunda Platform 8. Afterwards we’ll look at incremental improvements to the process including User Tasks to incorporate humans into the flow. Then we will implement fully software-automated tasks including User Tasks to incorporate humans.",
+    "Location": "Marina",
+    "StartTime": "2022-07-29T10:00:00-07:00",
+    "EndTime": "2022-07-29T13:00:00-07:00",
+    "Speakers": "Niall Deehan",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Workshop: Getting Started with FreeBSD",
+    "Description": "FreeBSD is a free Unix-like operating system descended from Research Unix via the Berkeley Software Distribution (BSD), also known as “Berkeley Unix.” It’s known for its reliability, stability, and advanced networking and performance. Join us for a full day workshop that will teach you how to install FreeBSD and the ports and packages necessary to get you up and running.",
+    "Location": "Century C",
+    "StartTime": "2022-07-29T10:00:00-07:00",
+    "EndTime": "2022-07-29T17:00:00-07:00",
+    "Speakers": "Roller Angel",
+    "Topic": ""
+  },
+  {
+    "Name": "Workshop: Managing Jenkins at Scale with CloudBees CI",
+    "Description": "Join us for a hands-on workshop with CloudBees CI, an enterprise grade platform for Jenkins on-prem or in the cloud. Expert instructors will guide you through exercises showcasing some of the unique capabilities the platform offers, including easily scaling up large CI systems in Kubernetes with centralized control and visibility, managing environments at scale with configuration as code, onboarding projects quickly with pre-configured templates and policies, and applying best practices to better control resources and CI pipelines.",
+    "Location": "Bel Air",
+    "StartTime": "2022-07-29T10:00:00-07:00",
+    "EndTime": "2022-07-29T13:00:00-07:00",
+    "Speakers": "Bill Garrett, Tony Wilmer",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "The Journey From DevOps to Cloud Engineering",
+    "Description": "We have been talking about devops for years. Along the way, we have added various syllables to the portmanteau “devops” to include all the practices and disciplines that are key to doing this effectively. What if DevOps, DevSecOps, and all the other variants have been about the same idea all along?",
+    "Location": "Plaza Ballroom",
+    "StartTime": "2022-07-29T10:00:00-07:00",
+    "EndTime": "2022-07-29T10:45:00-07:00",
+    "Speakers": "Matty Stratton",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "Must have controllers in Kubernetes",
+    "Description": "You have successfully installed Kubernetes. Heck! you even did it the hard way. Now what?",
+    "Location": "La Jolla",
+    "StartTime": "2022-07-29T11:00:00-07:00",
+    "EndTime": "2022-07-29T12:00:00-07:00",
+    "Speakers": "Jim Tario",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "State of MySQL Security in 2022",
+    "Description": "In this talk we will look into the state of MySQL Security in 2022. We will cover the new security focused features available in MySQL (and MySQL Compatible variants) as well as share best practices to consider for secure MySQL deployment.",
+    "Location": "Carmel",
+    "StartTime": "2022-07-29T11:00:00-07:00",
+    "EndTime": "2022-07-29T12:00:00-07:00",
+    "Speakers": "Alexander Rubin",
+    "Topic": "MySQL"
+  },
+  {
+    "Name": "Coming attractions in the next major PostgreSQL release",
+    "Description": "The next major release of PostgreSQL, version 15, is expected to be released early in the fall. We will highlight the expected new features, improvements and other newsworthy topics.",
+    "Location": "Los Angeles A",
+    "StartTime": "2022-07-29T11:00:00-07:00",
+    "EndTime": "2022-07-29T12:00:00-07:00",
+    "Speakers": "Mark Wong",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Linux Essentials Preparation Session",
+    "Description": "This preparation session will be led by Evan Leibovitch, Linux Professional Institute. Evan will field any technical questions and help prepare you before you take the exam. Participate to learn more about the importance of understanding the objectives prior to writing your exam, the exam structure, and why obtaining your certification will be professionally beneficial. Come prepared with questions! The Linux Essentials Professional Development Certificate (PDC) also serves as an ideal stepping-stone to the more advanced LPIC Professional Certification track for Linux Systems Administrators.",
+    "Location": "Century B",
+    "StartTime": "2022-07-29T11:00:00-07:00",
+    "EndTime": "2022-07-29T12:00:00-07:00",
+    "Speakers": "Evan Leibovitch",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "State of Open Source in Government",
+    "Description": "Open Source Software is being curated to form our national critical infrastructure across Governments and nations. We'll consider how open source software got to this position, challenges and risks faced, and the needs of curation and stewardship to build critical infrastructure in 2022 and beyond.",
+    "Location": "Los Angeles C",
+    "StartTime": "2022-07-29T11:00:00-07:00",
+    "EndTime": "2022-07-29T12:00:00-07:00",
+    "Speakers": "Amanda Brock",
+    "Topic": "Open Government"
+  },
+  {
+    "Name": "Establishing developer productivity foundations during a migration",
+    "Description": "Your company is planning to migrate from one programming language to another: now what? Do your engineers know the language? Are they familiar with its best practices? What will your first set of microservices look like when two different teams start rewriting their services independently whilst learning the new language of choice?",
+    "Location": "Plaza Ballroom",
+    "StartTime": "2022-07-29T11:00:00-07:00",
+    "EndTime": "2022-07-29T11:45:00-07:00",
+    "Speakers": "",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "Forward to the Past: Point in time recovery for MySQL",
+    "Description": "Disasters happen. Somebody runs a process that renders the data in your database unusable, inconsistent, or just deleted. Wouldn't it be great to be able to recover your database to the state just before the disaster happened? Learn the ancient Point-in-time Recovery Technique from Sensei Pep Pla. Well, Pep is not a sensei, and PIT is not an ancient technique, but mastering it can save your company or your job.",
+    "Location": "Carmel",
+    "StartTime": "2022-07-29T13:00:00-07:00",
+    "EndTime": "2022-07-29T14:00:00-07:00",
+    "Speakers": "Pep Pla",
+    "Topic": "MySQL"
+  },
+  {
+    "Name": "Data Security and Storage Hardening in Rook and Ceph",
+    "Description": "We explore the security model exposed by Rook with Ceph, the leading software-defined storage platform of the Open Source world. Digging increasingly deeper in the stack, we examine hardening options for Ceph storage appropriate for a variety of threat profiles.",
+    "Location": "La Jolla",
+    "StartTime": "2022-07-29T13:00:00-07:00",
+    "EndTime": "2022-07-29T14:00:00-07:00",
+    "Speakers": "Sage McTaggart, Michael Hackett, Federico Lucifredi",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "Linux Professional Institute LPIC-1 Preparation Session",
+    "Description": "The Linux Professional Institute LPIC-1 Preparation Session will be led by Kenny Armstrong, a certified trainer from Linux Professional Institute. We will field any technical questions and help prepare you before you take the exam. Participate to learn more about the importance of understanding the objectives prior to writing your exam, the exam structure, and why obtaining your certification will be professionally beneficial. Come prepared with questions! LPIC-1 is the first certification in LPI’s multi-level Linux professional certification program.",
+    "Location": "Century B",
+    "StartTime": "2022-07-29T13:00:00-07:00",
+    "EndTime": "2022-07-29T15:00:00-07:00",
+    "Speakers": "Kenny Armstrong",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Mentorship, or How we rebuild civilisation from scratch",
+    "Description": "How really important are mentorship and documentation to the survival of civilization? What would happen if we lost everything and had to start over, say, due to a global pandemic? We talk a lot about mentorship in the tech industry, but what do we really mean? Are we setting people up for success? In this talk, we’ll explore and seek to answer these questions, and come to some action steps to do our part.",
+    "Location": "Plaza Ballroom",
+    "StartTime": "2022-07-29T13:15:00-07:00",
+    "EndTime": "2022-07-29T13:45:00-07:00",
+    "Speakers": "Jeremy Meiss",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "Technopolice: tools for fighting back surveillance cities",
+    "Description": "In 2019, non-profit La Quadrature du Net launched Technopolice: a collaborative campaign to raise awareness, investigate and fight back against so-called \"smart cities\": really, the application to the physical world of the privacy-invading data-collection techniques first honed online. Facial recognition, \"suspicious\" sounds, gait recognition, these technologies are sold by for-profit companies to security-obsessed local governments eager to answer the sirens' call. Similarly to open source projects, the campaign provides tools to help anyone participate and reclaim their city.",
+    "Location": "Los Angeles C",
+    "StartTime": "2022-07-29T13:30:00-07:00",
+    "EndTime": "2022-07-29T14:30:00-07:00",
+    "Speakers": "axel simon",
+    "Topic": "Open Government"
+  },
+  {
+    "Name": "Upgrade of a many TB postgres database with little down time",
+    "Description": "Big (as in many TB) databases have complex management problems. One of such problems is upgrading, a process that normally can imply even hours of down time. But not all businesses can afford such down time, I'm going to share my experience while migrating a 25Tb database with heavy load and a requirement of not more than 5minutes of down time of the service. I'm going to talk about the tools we used, problems found in the road and opportunities taken.",
+    "Location": "Los Angeles A",
+    "StartTime": "2022-07-29T13:30:00-07:00",
+    "EndTime": "2022-07-29T14:30:00-07:00",
+    "Speakers": "Jaime Casanova",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Promoted From Dev to Team Lead: 8 Things They Didn't Tell Me",
+    "Description": "Three years into my software engineering career a freight train hit me. I was promoted to dev team lead. This is a common trend in the engineering world - where many times the sole paths to success for excellent engineers are through management paths. However, the skills that make great developers do not always translate to great management. In fact it’s usually quite the opposite, they often hold us back from succeeding in leadership roles, and I unfortunately learned this the hard way. This talk will expose some of the surprises and common mistakes that developers make.",
+    "Location": "Plaza Ballroom",
+    "StartTime": "2022-07-29T13:45:00-07:00",
+    "EndTime": "2022-07-29T14:00:00-07:00",
+    "Speakers": "Dan Lines",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "Hardening against Kubernetes Hacks",
+    "Description": "Misconfigurations in your Kubernetes deployments can create unforeseen security vulnerabilities that can give bad actors leverage to exploit containers, nodes or even the entire control plane of your cluster. In this talk I'll show how easy it can be to break into a cluster and why using tools to find issues and enforce governance around them can make your clusters a less attractive target.",
+    "Location": "La Jolla",
+    "StartTime": "2022-07-29T14:00:00-07:00",
+    "EndTime": "2022-07-29T15:00:00-07:00",
+    "Speakers": "Eric Smalling",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "Query Optimization 101 in MySQL",
+    "Description": "Queries are essential to retrieving data from your database. How do you know if your queries are performing well? What is an index, and how does it help access the data? We will answer these questions and many more as we take our first steps into the realm of query optimization.",
+    "Location": "Carmel",
+    "StartTime": "2022-07-29T14:00:00-07:00",
+    "EndTime": "2022-07-29T15:00:00-07:00",
+    "Speakers": "Matthew Boehm",
+    "Topic": "MySQL"
+  },
+  {
+    "Name": "Making the Case for DevOps Culture: How to formulate your case for change in your own organization",
+    "Description": "DevOps culture challenges traditional organizational silos, internal departmental goals, and traditional ways of working. When you're looking to introduce a change into your organization, people will have questions about what you're trying to change, why, how urgent it is, when, etc. Your case for change answers these questions BUT tailoring it to achieve specific outcomes turns your case into a powerful tool to align people and get the support you need.",
+    "Location": "Plaza Ballroom",
+    "StartTime": "2022-07-29T14:00:00-07:00",
+    "EndTime": "2022-07-29T14:15:00-07:00",
+    "Speakers": "Tony Fatouros",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "The 10 deadly PostgreSQL sins that ruin database performance and scalability",
+    "Description": "While every problem has the potential to be unique, there are several we see happening over and over again. Our mission is to prevent you from experiencing the pain so many others have experienced.",
+    "Location": "Los Angeles A",
+    "StartTime": "2022-07-29T14:30:00-07:00",
+    "EndTime": "2022-07-29T15:30:00-07:00",
+    "Speakers": "Matt Yonkovit",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Disney Global SRE—Creating Digital Magic with SRE",
+    "Description": "Disney is one of the world’s largest media companies and home to some of the most respected and beloved brands around the globe. Embracing the latest technology is an important strategic focus at Disney, allowing guests to better connect with Disney and allowing Disney to better connect with guests in innovative and delightful ways. We will tell you a story about a century-old organization that has scaled its SRE practice to ignite digital magic across the globe.",
+    "Location": "Plaza Ballroom",
+    "StartTime": "2022-07-29T14:30:00-07:00",
+    "EndTime": "2022-07-29T15:15:00-07:00",
+    "Speakers": "Brian Scott",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "I need some (MySQL) backup!",
+    "Description": "\"If you have a hammer, all you see is nails.\" also known as the Law of the Instrument describes the cognitive bias that involves over-reliance on a familiar tool. To protect MySQL data, a DBA must have a toolbox full of the proper utensils. To know only one approach is not enough. In this talk, we will discuss the different backup methods: cold, warm, and hot. And the multiple tools available to perform each of these types of backup.",
+    "Location": "Carmel",
+    "StartTime": "2022-07-29T15:00:00-07:00",
+    "EndTime": "2022-07-29T16:00:00-07:00",
+    "Speakers": "Pep Pla",
+    "Topic": "MySQL"
+  },
+  {
+    "Name": "Choose Your Candidate!",
+    "Description": "Big, established open source projects share something with California: they have lots of elections! Instead of mailboxes, though, they use online voting platforms. Learn about the open source online voting software that's available and how to use it for your project.",
+    "Location": "Los Angeles C",
+    "StartTime": "2022-07-29T15:00:00-07:00",
+    "EndTime": "2022-07-29T16:00:00-07:00",
+    "Speakers": "Josh Berkus",
+    "Topic": "Open Government"
+  },
+  {
+    "Name": "Exploring Linux Memory Usage and IO Performance in Cloud Native Applications",
+    "Description": "In this session, we'll explore how memory allocation at the container or operating system level influences the performance of buffered disk IO. We'll also examine Linux memory management details and the different ways to perform disk IO. From there, we'll walk through a number of examples that reveal the typical dynamics of cached and non-cached IOs, as well as the differences between the two.",
+    "Location": "La Jolla",
+    "StartTime": "2022-07-29T15:30:00-07:00",
+    "EndTime": "2022-07-29T16:30:00-07:00",
+    "Speakers": "Frits Hoogland",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "Identifying Slow Queries and Fixing Them!",
+    "Description": "We'll be looking at PostgreSQL configuration options (postgresql.conf) for logging and basic tuning parameters, how to monitor which queries are taking the most time using pg_stat_statements, going over EXPLAIN and EXPLAIN ANALYZE output for select queries (and the auto_explain module), what the EXPLAIN output means in terms of how the query is being executed, and then going over ways to improve the queries, including index creation, rewriting the query to allow PG to use a different plan, and how to tune parameters for specific queries.",
+    "Location": "Los Angeles A",
+    "StartTime": "2022-07-29T15:30:00-07:00",
+    "EndTime": "2022-07-29T16:15:00-07:00",
+    "Speakers": "Stephen Frost",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Flow Engineering - Boost velocity, quality and happiness",
+    "Description": "How can you make time for real innovation and improvement? How do you know what to automate? How do you escape process prison? How can you get everyone aligned to make a difference? How do you get from where you are to your next performance target? This is an introduction to 4 valuable mapping techniques and models that build clarity, alignment, and confidence in teams using a combination of collaboration, visibility and measurement.",
+    "Location": "Plaza Ballroom",
+    "StartTime": "2022-07-29T15:30:00-07:00",
+    "EndTime": "2022-07-29T16:15:00-07:00",
+    "Speakers": "Steve Pereira",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "Choosing the right MySQL Database Architectures For Your Business",
+    "Description": "Since the introduction of replication in MySQL, users have been trying to automate the promotion of a replica to a primary as well as automating the failover of TCP connections from one database server to another in the event of a database failure: planned or unplanned. For over a decade, users and organizations have designed various types of solutions to achieve this. Though, many of these solutions were done manually or were using third party software, mostly open source, to automate and integrate various architectures.",
+    "Location": "Carmel",
+    "StartTime": "2022-07-29T16:00:00-07:00",
+    "EndTime": "2022-07-29T17:00:00-07:00",
+    "Speakers": "Kenny Gryp",
+    "Topic": "MySQL"
+  },
+  {
+    "Name": "Voting Solutions for All People",
+    "Description": "Los Angeles County has developed a voting system to replace older Inkavote systems. This new system brings many new innovations to voting, including extended voting for ten days ahead of voting day, allowing voters to use any Vote Center in LA county to vote rather than being limited to a single polling place, an interactive ballot, electronic ballots, and a new tally system. This system was used in the 2020 primary and presidential elections, and plans are under way to open source the entire project. This presentation focuses on current progress and future plans.",
+    "Location": "Los Angeles C",
+    "StartTime": "2022-07-29T16:30:00-07:00",
+    "EndTime": "2022-07-29T17:30:00-07:00",
+    "Speakers": "Aman Bhullar",
+    "Topic": "Open Government"
+  },
+  {
+    "Name": "The multi-region journey with Kubernetes and k8ssandra",
+    "Description": "Kubernetes as a platform is spurring the growth of cloud native platforms to be built on top, often leveraging the scale and self-healing properties of Kubernetes that were initially intended for stateless applications. Cloud Native databases have had to work around some of the sharp edges of the platform however to be able to reap some of the same benefits.",
+    "Location": "La Jolla",
+    "StartTime": "2022-07-29T16:30:00-07:00",
+    "EndTime": "2022-07-29T17:30:00-07:00",
+    "Speakers": "Raghavan Srinivas",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "Emerging Best Practices in Software Supply Chain Security",
+    "Description": "Attackers are taking advantage of insecure software deployment pipelines; the White House, OWASP, Google, and others have released guidelines on best practices in response. We will break down the key takeaways and compile a list of best practices for mitigating software supply chain security risk.",
+    "Location": "Plaza Ballroom",
+    "StartTime": "2022-07-29T16:30:00-07:00",
+    "EndTime": "2022-07-29T17:30:00-07:00",
+    "Speakers": "Tony Loehr",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "MySQL Indexes",
+    "Description": "Nobody complains where the database is fast. But adding one index speeds things up. But the second index makes things worse? There is a lot of mythology about indexes in the MySQL area and this talk will show that getting performance out of an index is simple engineering and not magic. You will walk out of this session knowing how indexes are built, how to use them to provide better information to the query optimizer, and how to make sure that what you are doing is a positive change and not hurting your instance performance.",
+    "Location": "Carmel",
+    "StartTime": "2022-07-29T17:00:00-07:00",
+    "EndTime": "2022-07-29T18:00:00-07:00",
+    "Speakers": "Dave Stokes",
+    "Topic": "MySQL"
+  },
+  {
+    "Name": "4 Ways to Spin Up a Kubernetes Cluster",
+    "Description": "There are several ways to spin up a Kubernetes cluster and each technique has its own time and place depending on the complexity of your workloads. In this session, Daniel will show you 4 different strategies for creating a Kubernetes cluster and unpack the pros and cons of each. From a simple and fast approach to a more technical but repeatable infrastructure-as-code strategy, and finally with a more in depth infrastructure-as-code solution, you’ll walk away with the building blocks to provision Kubernetes clusters that meet your needs.",
+    "Location": "La Jolla",
+    "StartTime": "2022-07-29T17:30:00-07:00",
+    "EndTime": "2022-07-29T18:15:00-07:00",
+    "Speakers": "Daniel Hix",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "BOF: Extended Berkeley Packet Filter (eBPF) is a kernel technology (starting in Linux 4.x) that allows programs to run without having to change the kernel source code or adding additional modules.",
+    "Description": "Extended Berkeley Packet Filter (eBPF) is a kernel technology (starting in Linux 4.x) that allows programs to run without having to change the kernel source code or adding additional modules.",
+    "Location": "Los Angeles A",
+    "StartTime": "2022-07-29T19:00:00-07:00",
+    "EndTime": "2022-07-29T21:00:00-07:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Victims of our success: how open source vulnerabilities became a national security risk",
+    "Description": "Current national attention on software supply chain security is an indirect response to the success of open source -- but what exactly is open source? Is it a cultural movement or a business strategy or a type of software license or a radical expression of creativity and First Amendment rights? Hint: it's all of these. In this session, Aeva will reach thirty years into our history to discuss what open source maintainers can begin doing to prepare for federal SBOM (software bill of materials) requirements under discussion in Congress today.",
+    "Location": "La Jolla",
+    "StartTime": "2022-07-30T10:00:00-07:00",
+    "EndTime": "2022-07-30T11:00:00-07:00",
+    "Speakers": "Aeva Black",
+    "Topic": ""
+  },
+  {
+    "Name": "The Freespireco Project: A free-libre open-source respiratory medical device ecosystem",
+    "Description": "The COVID-19 pandemic has demonstrated a clear and present need for a complete, free-libre open-source, easily repairable, widely usable, safe and effective respiratory support medical device ecosystem. For the open source community to impactfully contribute, we need organization and cooperation. The Freespireco ecosystem of respiration support devices can intercommunicate and synergize with each other to build a democratized system of devices that, in the end, will best monolithic devices made by closed firms.",
+    "Location": "Los Angeles C",
+    "StartTime": "2022-07-30T11:30:00-07:00",
+    "EndTime": "2022-07-30T12:30:00-07:00",
+    "Speakers": "Robert Read",
+    "Topic": "Open Medical"
+  },
+  {
+    "Name": "Building Trust at the Edge: Lessons Learned",
+    "Description": "AI inference is emerging as a primary case for edge computing. Moving the inference engine close to the data conserves network bandwidth and improves response time. However, for many service providers, the complexity associated with securing thousands of edge nodes outweighs the performance benefit. This case study describes a threat model for delivering secure edge AI, and presents a set of security design patterns and constructs to enable trust at the edge.",
+    "Location": "Century CD",
+    "StartTime": "2022-07-30T11:30:00-07:00",
+    "EndTime": "2022-07-30T12:30:00-07:00",
+    "Speakers": "Binu Ramakrishnan",
+    "Topic": "Security"
+  },
+  {
+    "Name": "Not breaking userspace: the evolving Linux ABI",
+    "Description": "\"Don't break userspace\" is one of Linux's core tenets. The rule allows distros to upgrade the kernel independently of userspace. What does the phrase actually mean in 2022? What parts of the kernel's interface are stable and safe for userspace code to rely on? Kernel contributors interpret the commandment to mean that no changes to kernel should trigger non-backward-compatible changes to the /sys filesystem. What about the dmesg log, devicetree, BPF, /dev files, command-line, tracepoints and filesystem metadata?",
+    "Location": "Los Angeles AB",
+    "StartTime": "2022-07-30T11:30:00-07:00",
+    "EndTime": "2022-07-30T12:30:00-07:00",
+    "Speakers": "Alison Chaiken",
+    "Topic": "Developer"
+  },
+  {
+    "Name": "Data Warehouse, Data Lake, Data Mesh, Oh My",
+    "Description": "Are you looking to modernize your data infrastructure? Or are you confused at what all the terms mean? Let's look at the history of data storage from the humble beginnings of the relational database through the modern cloud-native data mesh paradigm. Data storage has evolved, and you can too. Slides: https://robrich.org/slides/data-warehouse-mesh-lake/",
+    "Location": "Newport B",
+    "StartTime": "2022-07-30T11:30:00-07:00",
+    "EndTime": "2022-07-30T12:30:00-07:00",
+    "Speakers": "Rob Richardson",
+    "Topic": ""
+  },
+  {
+    "Name": "Everything We've Learned From Three Years Of Funding Open Source",
+    "Description": "Indeed's open source program has given over half a million dollars to open source projects, maintainers, and contributors over the past three years. We did this because we want to play an active role in helping to sustain the open source we use. While our goals are simple, the reality is that giving money to open source projects is hard. This talk will focus on sharing what we've learned from running a FOSS Contributor Fund, paying maintainers through GitHub Sponsors, and directly funding interns through Outreachy. We will propose improvements that we can make together as a community.",
+    "Location": "Bel Air",
+    "StartTime": "2022-07-30T11:30:00-07:00",
+    "EndTime": "2022-07-30T12:30:00-07:00",
+    "Speakers": "Duane O'Brien",
+    "Topic": "General"
+  },
+  {
+    "Name": "Building SCaLE's OpenWrt Conference WiFi",
+    "Description": "SCaLE runs and operates on OpenWrt to provide WiFi to conference attendees. Starting with SCaLE 16x, the SCaLE Tech Team (responsible for the entirety of the conference network and wireless deployment) has continuously iterated, built, deployed, and tested the components of the conference wireless via its open source codebase. With the goal of providing a wireless experience that is exceptional for our attendees and also powered by open source software.",
+    "Location": "Carmel",
+    "StartTime": "2022-07-30T11:30:00-07:00",
+    "EndTime": "2022-07-30T12:30:00-07:00",
+    "Speakers": "Robert Hernandez",
+    "Topic": "General"
+  },
+  {
+    "Name": "The Curious Case of Memory Growth",
+    "Description": "Weeks to months after a routine upgrade from systemd 247 to systemd 248, engineers at Meta discovered a very gradual growth of memory usage in systemd-journald, from 20 MB to over 300 MB and growing. It's not a memory leak! What could it be? Come hear about how we detected it, how we tracked down the cause, what the root cause was, and how it was fixed.",
+    "Location": "Century AB",
+    "StartTime": "2022-07-30T11:30:00-07:00",
+    "EndTime": "2022-07-30T12:30:00-07:00",
+    "Speakers": "Anita Zhang",
+    "Topic": "Systems & Infrastructure"
+  },
+  {
+    "Name": "What We Learned from Reading 100+ Kubernetes Post-Mortems",
+    "Description": "A smart person learns from their own mistakes, but a truly wise person learns from the mistakes of others. When launching our product, we wanted to learn as much as possible about typical pains in our ecosystem, and did so by reviewing many post-mortems (100+!) to discover the recurring patterns, anti-patterns, and root causes of typical outages in Kubernetes-based systems. In this talk we have aggregated for you the insights we gathered, and in particular will review the most obvious DON'Ts and some less obvious ones, that may help you prevent your next production outage.",
+    "Location": "La Jolla",
+    "StartTime": "2022-07-30T11:30:00-07:00",
+    "EndTime": "2022-07-30T12:30:00-07:00",
+    "Speakers": "Shimon Tolts, Noaa Barki",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "Why the GPL is great for business",
+    "Description": "In the last few years we saw a lot of discussion in the open source and free software startup space around licenses. Several companies stepped forward and claimed that it’s not possible to build a working company on top of a free software product. This talk discusses how companies like Red Hat, SUSE and Nextcloud manages to have a 100% free software product including a big contributor community but is still able to pay developers and grow.",
+    "Location": "Carmel",
+    "StartTime": "2022-07-30T13:30:00-07:00",
+    "EndTime": "2022-07-30T14:30:00-07:00",
+    "Speakers": "Frank Karlitschek",
+    "Topic": "General"
+  },
+  {
+    "Name": "Snitching on Apps That Snitch On You",
+    "Description": "Apps have a bad habit of snitching on their owners. While this is a much bigger problem on Android and iOS, it's still valuable to detect when apps phone home on Linux. Unfortunately most Linux firewall software is designed for servers and focused on inbound connections. This talk will cover using and tuning OpenSnitch, Linux software that prompts you whenever an app makes outbound connections and allows you to make sophisticated per-app rules to have tight control over your apps' network connections. This adaptive software works both in desktop and mobile Linux.",
+    "Location": "Bel Air",
+    "StartTime": "2022-07-30T13:30:00-07:00",
+    "EndTime": "2022-07-30T14:30:00-07:00",
+    "Speakers": "Kyle Rankin",
+    "Topic": "General"
+  },
+  {
+    "Name": "Exemplars in practice: Finding the needle in your observability haystack",
+    "Description": "Open-source observability solutions have started to gravitate toward exemplars as a way to allow engineers to quickly jump between different data types. In this talk, Joel will give a brief introduction of exemplars, covering how exemplars give engineers a straightforward path to jump from a metric on a dashboard to a trace related to that metric. She will also explore some limitations around exemplars with a proposed alternative for linking metric and trace data.",
+    "Location": "Marina",
+    "StartTime": "2022-07-30T13:30:00-07:00",
+    "EndTime": "2022-07-30T14:30:00-07:00",
+    "Speakers": "Joel Groen",
+    "Topic": "Observability"
+  },
+  {
+    "Name": "Remote Workstations for the Discerning Artists",
+    "Description": "Netflix is poised to become the world’s most prolific producer of visual effects and original animated content. Artists like to work at places where they can create groundbreaking entertainment instead of worrying about getting access to the software or source files they need. Our solution is Netflix Workstations. This is the story of what we made, what we learned, and what we're going to do next.",
+    "Location": "Century AB",
+    "StartTime": "2022-07-30T13:30:00-07:00",
+    "EndTime": "2022-07-30T14:30:00-07:00",
+    "Speakers": "Michelle Brenner",
+    "Topic": "Systems & Infrastructure"
+  },
+  {
+    "Name": "DevOps for Data as a Service",
+    "Description": "DevOps revolutionized Software engineering with its adoption of agile, lean practices, and fostering collaboration. We will look at an approach where we apply DevOps for data engineering efficiently.",
+    "Location": "Newport B",
+    "StartTime": "2022-07-30T13:30:00-07:00",
+    "EndTime": "2022-07-30T14:30:00-07:00",
+    "Speakers": "Antoni Ivanov, Dimira Petrova",
+    "Topic": ""
+  },
+  {
+    "Name": "Migrating a monolith to Cloud-Native and the stumbling blocks that you don’t know about",
+    "Description": "Have you started your Cloud-Native journey? The first thing you need to do is containerize your applications. Now that you've gotten past that first hurdle I'm here to say there‚Äôs more to think about. I’ll talk about stumbling blocks that a masked enterprise called AsgharLabs had to deal with, and hopefully shed some light on things.",
+    "Location": "La Jolla",
+    "StartTime": "2022-07-30T13:30:00-07:00",
+    "EndTime": "2022-07-30T14:30:00-07:00",
+    "Speakers": "JJ Asghar",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "Docs-as-Code for Open-Source Medical Hardware & PPE's",
+    "Description": "The design, manufacturing, & certification of medical devices and PPE's is a tightly regulated space. Such regulations commonly require a complete set of bill of materials, change management, and quality assurance processes. Meeting such requirements, while also adhering to the principles of open-source hardware, poses its own set of technical challenges. This talk tells the story of how Tetra Bio Distributed (TBD), a volunteer-founded 501(c)(3) non-profit organization, developed medical devices and PPE as open-source hardware, using a docs-as-code approach.",
+    "Location": "Los Angeles C",
+    "StartTime": "2022-07-30T13:30:00-07:00",
+    "EndTime": "2022-07-30T14:30:00-07:00",
+    "Speakers": "Sean Marquez",
+    "Topic": ""
+  },
+  {
+    "Name": "The State of Art in Tackling Flaky Tests",
+    "Description": "Flakiness is a part of the reality for developers everywhere, causing frustrations, failing pull requests, adding more stress to a hotfix delivery, and so on. Join Kohsuke Kawaguchi, the creator of Jenkins, to learn how software teams around the world have tackled this problem, so that you can tackle this too.",
+    "Location": "Los Angeles AB",
+    "StartTime": "2022-07-30T13:30:00-07:00",
+    "EndTime": "2022-07-30T14:30:00-07:00",
+    "Speakers": "Kohsuke Kawaguchi",
+    "Topic": "Developer"
+  },
+  {
+    "Name": "Cat-Shaped Hacker Hardware",
+    "Description": "Education-focused hardware platforms often fall flat by trying to solve nonexistent problems, or by creating useless all-in-one designs that basically \"recreate the Arduino\". When Alex set out to design the \"Nugget\" - a beginner-friendly, cat-shaped development board catered towards cybersecurity beginners - he was faced with unique challenges in creating a platform that brought both ease-of-use and extensibility to users. He wanted a hands-on design that would make it easy for beginners to learn daunting topics like WiFi security and USB attacks through a guided, streamlined interface.",
+    "Location": "Century CD",
+    "StartTime": "2022-07-30T13:30:00-07:00",
+    "EndTime": "2022-07-30T14:30:00-07:00",
+    "Speakers": "",
+    "Topic": "Security"
+  },
+  {
+    "Name": "Reliability is no Accident: Chaos Engineering and GameDays",
+    "Description": "This talk will dive deep into the three keep practices identified by the authors of Accelerate to improve reliability: Chaos Engineering, GameDays, and Disaster Recovery. We will discuss the key measures of tempo and stability, and how practicing Chaos Engineering will increase both.",
+    "Location": "Century AB",
+    "StartTime": "2022-07-30T15:00:00-07:00",
+    "EndTime": "2022-07-30T16:00:00-07:00",
+    "Speakers": "Dave Nielsen",
+    "Topic": "Systems & Infrastructure"
+  },
+  {
+    "Name": "Your bug tracker and you",
+    "Description": "Bug trackers are the cornerstone of a vibrant open source community, so of course you have one. But are you tracking what’s important? Are you gardening the bugs to keep them up-to-date? What do your project’s bug reports tell you about the health of your community?This talk will cover the program management side of bug tracking: what to track, how to triage, and what you can—and can’t—learn from the bugs.",
+    "Location": "Carmel",
+    "StartTime": "2022-07-30T15:00:00-07:00",
+    "EndTime": "2022-07-30T16:00:00-07:00",
+    "Speakers": "Ben Cotton",
+    "Topic": "General"
+  },
+  {
+    "Name": "At The Helm of Kubernetes",
+    "Description": "As we get deeper into Kubernetes yaml files, we see a lot of duplication. Can we move to a higher level that eliminates this duplication? Let's look at Helm, a tool both for templating k8s yaml files and for installing complex infrastructure dependencies as one package. With Helm 3, we now have deeper integration and more security when working with Kubernetes. Join us on this path to a simpler, more repeatable, and more discoverable yaml experience.",
+    "Location": "La Jolla",
+    "StartTime": "2022-07-30T15:00:00-07:00",
+    "EndTime": "2022-07-30T16:00:00-07:00",
+    "Speakers": "Rob Richardson",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "Confidential Computing: why it HAS to be open source",
+    "Description": "Confidential Computing is about using hardware controls to protect your data and applications, but how can you be sure it's doing the job? This session will break down the various components and explain the importance of open source.",
+    "Location": "Century CD",
+    "StartTime": "2022-07-30T15:00:00-07:00",
+    "EndTime": "2022-07-30T16:00:00-07:00",
+    "Speakers": "Nathaniel McCallum",
+    "Topic": "Security"
+  },
+  {
+    "Name": "PAPRa: An Open-source Powered Respirator in Response to the COVID-19 Pandemic",
+    "Description": "To address the shortage of respiratory PPE, Tetra Bio Distributed (TBD) created a half-facepiece powered air purifying respirator (PAPR) named PAPRa. We designed and iterated upon 3D printed models and custom electronics to create a PAPR which meets N95 fit standards yet could be built using resources common in the US maker community. We are now focused on manufacturing a NIOSH regulatory compliant device while maintaining open source designs and licensing, a balance that, to our knowledge, has not been achieved in the powered respirator space.",
+    "Location": "Los Angeles C",
+    "StartTime": "2022-07-30T15:00:00-07:00",
+    "EndTime": "2022-07-30T16:00:00-07:00",
+    "Speakers": "Darryl Hwang, Mark Roden",
+    "Topic": ""
+  },
+  {
+    "Name": "Enrich Your Enterprise Knowledge Graph with Linked Open Data via JSON-LD",
+    "Description": "The linked data approach is designed for the exchange of information. Linked Open Data on the web is possibly the best example of the standards-based interoperability of semantically tagged data, enabling organizations to readily incorporate publicly available data without having to transform or flatten the data. Knowledge Graphs rely on many of the same standards to deliver these benefits to the enterprise. By aligning data with standard models and vocabularies, these graphs facilitate internal system interoperability via Linked Enterprise Data.",
+    "Location": "Newport B",
+    "StartTime": "2022-07-30T15:00:00-07:00",
+    "EndTime": "2022-07-30T16:00:00-07:00",
+    "Speakers": "Jans Aasman",
+    "Topic": "Open Data"
+  },
+  {
+    "Name": "If you can code, you can CAD!",
+    "Description": "With the growing popularity of 3D printing, there are a flood of new people wanting to learn how to not only print objects but also design their own. Learning 3D modelling can be daunting and much of the software around the hobby is proprietary and/or expensive. In this talk, you will learn about parametric modelling with OpenSCAD (GPL 2.0) and how you can use your pre-existing coding skills to jump start learning.",
+    "Location": "Bel Air",
+    "StartTime": "2022-07-30T15:00:00-07:00",
+    "EndTime": "2022-07-30T16:00:00-07:00",
+    "Speakers": "Kyle Davis",
+    "Topic": "General"
+  },
+  {
+    "Name": "Stateful Workflow Orchestration and WebRTC Streaming with Selkies",
+    "Description": "This talk will show how the OSS Selkies project uses Kubernetes to deliver high performance containerized streaming environments to the browser. These environments enable remote development workflows without compromising performance, increasing security and isolation, and leveraging compute power beyond the endpoint device.",
+    "Location": "Los Angeles AB",
+    "StartTime": "2022-07-30T15:00:00-07:00",
+    "EndTime": "2022-07-30T16:00:00-07:00",
+    "Speakers": "Dan Isla",
+    "Topic": "Developer"
+  },
+  {
+    "Name": "Fluent Bit: First Mile Observability",
+    "Description": "Fluent Bit and Fluentd projects have become the de facto solutions for First Mile Observability of logging and metrics data in any cloud environment. In this session you will learn about: 1) The history and future of the Fluent projects and First Mile Observability, 2) Core use cases for the technology, and 3) How Calyptia, the company founded by Fluent creators and maintainers, is taking the Fluent ecosystem to the next level, developing cloud services and providing free tools for the community.",
+    "Location": "Marina",
+    "StartTime": "2022-07-30T15:00:00-07:00",
+    "EndTime": "2022-07-30T16:00:00-07:00",
+    "Speakers": "Eduardo Silva",
+    "Topic": "Observability"
+  },
+  {
+    "Name": "Podman new features",
+    "Description": "This talk will do a brief introduction into Podman and its features, and then we will talk about all of the new features in Podman over the last year. It will include a couple of demos, and ample time for questions at the end.",
+    "Location": "La Jolla",
+    "StartTime": "2022-07-30T16:30:00-07:00",
+    "EndTime": "2022-07-30T17:30:00-07:00",
+    "Speakers": "Daniel Walsh",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "Corporate Engagement with Open Source Communities: Research Findings",
+    "Description": "In 2021, Red Hat's Open Source Program Office sponsored a study seeking to understand the interaction between an open source community and corporations and consider what characteristics foster a relationship. The findings from the study confirm well-known and established reasons for engaging with open source communities such as leveraged development and upstreaming contributions. However, the findings from the study also reveal new reasons for engaging with open source communities for reasons of strategic influence and community development.",
+    "Location": "Bel Air",
+    "StartTime": "2022-07-30T16:30:00-07:00",
+    "EndTime": "2022-07-30T17:30:00-07:00",
+    "Speakers": "Brian Proffitt",
+    "Topic": "General"
+  },
+  {
+    "Name": "Getting To Know Your Data",
+    "Description": "How do you go from IDK to FTW? Need to get started monitoring a custom data set? Want to make big money as a security use case detection engineer? Then you need to get to know your data. Let me show you how I, for the past 10 years, have been analyzing, normalizing, and working with security data for some of the biggest names in entertainment. I'll show you how to learn about your data so you can build with confidence, knowing that your dashboards, reports, and alerts will return expected results.",
+    "Location": "Newport B",
+    "StartTime": "2022-07-30T16:30:00-07:00",
+    "EndTime": "2022-07-30T17:30:00-07:00",
+    "Speakers": "Mary Cordova",
+    "Topic": "Open Data"
+  },
+  {
+    "Name": "Overcoming Imposter Syndrome to Become a Conference Speaker!",
+    "Description": "The goal of this talk is to provide some resources to help everyone feel included and welcome as a conference speaker. Open source conferences are always striving to increase the diversity of their speakers by recruiting new speakers and encouraging people from underrepresented groups to submit talks. But how do you decide what topic to cover? What can you do to help your topic stand out? How do you prevent imposter syndrome from getting in the way of your success as a speaker?",
+    "Location": "Carmel",
+    "StartTime": "2022-07-30T16:30:00-07:00",
+    "EndTime": "2022-07-30T17:30:00-07:00",
+    "Speakers": "Dawn Foster",
+    "Topic": "General"
+  },
+  {
+    "Name": "Fitra: Addressing the problem of inadequate N95 respirator fit",
+    "Description": "USC achieved a remarkable 0.27% infection rate from patient to clinical staff, an order of magnitude lower than other area hospitals.&nbsp;This lower infection rate is attributed to rigor in N95 quantitative fit testing and rejecting respirators with poor fit. In conjunction with Tetra Bio Distributed, USC developed the Fitra, a simple open source 3D printable respirator accessory that improved the quantitative fit of two N95 respirators on many of the 38 test volunteers. While not used by the hospital, we believe this device can help those looking for improved fit for their respirators.",
+    "Location": "Los Angeles C",
+    "StartTime": "2022-07-30T16:30:00-07:00",
+    "EndTime": "2022-07-30T17:30:00-07:00",
+    "Speakers": "Daniel Stemen",
+    "Topic": "Open Medical"
+  },
+  {
+    "Name": "End of Support But Not End of Use: Security Implications of Unsupported Operating Systems",
+    "Description": "The Ubuntu operating system has increased its commercial foothold in recent years as an open-source alternative to Windows and Red Hat Enterprise Linux. As versions of Ubuntu reach End of Support (EOS), companies are faced with the choices of migrating to a supported version of Ubuntu, continuing to use an unsupported version, or paying for Extended Security Maintenance (ESM) to continue to receive security updates. Understanding the level of risk associated with legacy operating systems will support the decision-making process when prioritizing budgets and schedules.",
+    "Location": "Century CD",
+    "StartTime": "2022-07-30T16:30:00-07:00",
+    "EndTime": "2022-07-30T17:30:00-07:00",
+    "Speakers": "John Sicklick",
+    "Topic": "Security"
+  },
+  {
+    "Name": "Useful Uses of chroot/proot",
+    "Description": "Boot from a Linux LiveUSB and rescue your local install, run Debian programs on your Android phone, and update the (ARM) OS on your Raspberry Pi's SD card from your (x86) Linux desktop. -- An introduction to chroot, proot, and the internals of containerization.",
+    "Location": "Century AB",
+    "StartTime": "2022-07-30T16:30:00-07:00",
+    "EndTime": "2022-07-30T17:30:00-07:00",
+    "Speakers": "Simon Elmir",
+    "Topic": "Systems & Infrastructure"
+  },
+  {
+    "Name": "Immediate Intelligence with Kafka and Druid",
+    "Description": "Learn about Apache Druid and how it integrates with streaming data from Apache Kafka at any scale. We will walk through the microservice architecture and how it scales to deal with any streaming throughput. You will also learn about the columnar data structure it uses and how its storage and compute efficient design delivers fast query response times and deals with high concurrency.",
+    "Location": "Marina",
+    "StartTime": "2022-07-30T16:30:00-07:00",
+    "EndTime": "2022-07-30T17:30:00-07:00",
+    "Speakers": "Zeke Dean",
+    "Topic": "Observability"
+  },
+  {
+    "Name": "Educating Underserved Populations Through The Magic of Open Source",
+    "Description": "A lack of access to educational material affects half the world's population. Even within the borders of the US there are large pockets of people with limited or no access to online materials. Let's discuss how Kiwix can help solve that problem, and then show how to use Helm to create an easily repeatable and maintainable Kubernetes-based deployment of Kiwix and Zim files.",
+    "Location": "Carmel",
+    "StartTime": "2022-07-30T18:00:00-07:00",
+    "EndTime": "2022-07-30T19:00:00-07:00",
+    "Speakers": "Patrick Swartz",
+    "Topic": "General"
+  },
+  {
+    "Name": "APT's Transition to Linux",
+    "Description": "Challenges in the adoption of Linux-based systems for companies have not gone unnoticed by cybercriminals. Attacks have been so widespread that the Department of homeland security has warned of increasing nation-states, criminal groups, and hacktivists against cloud-based enterprise resources.",
+    "Location": "Century CD",
+    "StartTime": "2022-07-30T18:00:00-07:00",
+    "EndTime": "2022-07-30T19:00:00-07:00",
+    "Speakers": "Ell Marquez",
+    "Topic": "Security"
+  },
+  {
+    "Name": "How California State University used DataOps Principles to Build Data Pipelines for Rapid Deployment and Scalability",
+    "Description": "Though we have in the past depended on traditional data warehouses to drive business intelligence from data, they were generally based on databases and structured data formats and proved insufficient for the challenges that the current data-driven world faces. Enter data lakes, which are optimized for unstructured and semistructured data, can scale to petabytes easily, and allow better integration of a wide range of tools to help businesses get the most out of their data.",
+    "Location": "Newport B",
+    "StartTime": "2022-07-30T18:00:00-07:00",
+    "EndTime": "2022-07-30T19:00:00-07:00",
+    "Speakers": "Subash DSouza",
+    "Topic": ""
+  },
+  {
+    "Name": "Should You Bring Kubernetes on Your Edge Roadtrip?",
+    "Description": "Edge Computing is about distributing computational power and storage wherever they are needed. From a developer's perspective, the goal is to deploy microservices outside the data center. Naturally, this includes Kubernetes. But is Kubernetes needed on the Edge? Many of the leading Edge platforms can orchestrate containers on their own. Others, on the other hand, integrate with Kubernetes. Which one is the right approach for you? In this session, you will learn how to answer this question through examples related to industrial automation, artificial intelligence, and connected vehicles.",
+    "Location": "La Jolla",
+    "StartTime": "2022-07-30T18:00:00-07:00",
+    "EndTime": "2022-07-30T19:00:00-07:00",
+    "Speakers": "Frédéric Desbiens",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "Live Patching: a Down in the Trenches View",
+    "Description": "Live patching is one tool among many to make security updates. Typically live patching is only done to operating systems and hypervisors. This presentation will briefly discuss different methods of live patching, explain in more detail one of those methods, as well as if and how a patch can be made. It will also cover practical considerations of applying a live patch. Live patching in the Xen hypervisor, which is simpler software than Linux, will be the primary example though Linux will be discussed at a high level. Some familiarity with C and what assembly is is suggested.",
+    "Location": "Los Angeles AB",
+    "StartTime": "2022-07-30T18:00:00-07:00",
+    "EndTime": "2022-07-30T19:00:00-07:00",
+    "Speakers": "Sarah Newman",
+    "Topic": "Developer"
+  },
+  {
+    "Name": "Journey into the heart of systemd",
+    "Description": "systemd (with lowercase S and D) remains up until this day, both one of the most critical pieces of a system, and the least understood one. This talk explains how you can harness the power of systemd to solve common problems, including some that you didn't even know you had. What problems do you ask?, you’ll have to come and see.",
+    "Location": "Century AB",
+    "StartTime": "2022-07-30T18:00:00-07:00",
+    "EndTime": "2022-07-30T19:00:00-07:00",
+    "Speakers": "Alvaro Leiva, Anita Zhang",
+    "Topic": "Systems & Infrastructure"
+  },
+  {
+    "Name": "Brand New You're Retro - The Regolith Desktop Environment",
+    "Description": "Desktop Linux has been around for decades, and has provided fertile ground for experimentation and evolution of the primary interfaces people use to interact with their PCs. One such form that is relatively lesser known is tiling window management. In this style users need not manage windows that stack upon and occlude one another. Rather, windows are each allotted a region of the screen and by default all windows are visible. Side-stepping the mouse-driven workflows of more prevalent desktops, tiling interfaces provide for simpler and faster keyboard-driven interaction.",
+    "Location": "Bel Air",
+    "StartTime": "2022-07-30T18:00:00-07:00",
+    "EndTime": "2022-07-30T19:00:00-07:00",
+    "Speakers": "Ken Gilmer",
+    "Topic": "General"
+  },
+  {
+    "Name": "AREDN Software Q&A",
+    "Description": "AREDN Software Q&A",
+    "Location": "Marina",
+    "StartTime": "2022-07-30T19:00:00-07:00",
+    "EndTime": "2022-07-30T20:00:00-07:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Digital Ocean",
+    "Description": "Let's discuss how you are using (or want to use) DigitalOcean. DigitalOcean is successfully used by startups and SMBs for a myriad of use cases such as e-commerce, gaming, blockchain, managed hosting, educational technology, streaming and advertising tech. We also offer programs to support open source projects and start ups, join us to learn more!",
+    "Location": "Los Angeles AB",
+    "StartTime": "2022-07-30T19:00:00-07:00",
+    "EndTime": "2022-07-30T21:00:00-07:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "A Quick and Dirty Guide to Object Detection using YOLOv5",
+    "Description": "This BoF will be presented by Cecil Watson. You may recognize Cecil from past SCaLE events where he had a booth for his Linux distros KnoppMyth and LinHES. Cecil has also presented in the past and sat on panels at SCaLE. During this session, Cecil will show you the step by step process of building an object detection using YOLOv5, without a PhD or pulling your hair out. The presentation will be in plain english without techno jargon or high level math. At the end, you will know how to build your own object detector and iterate to improve its performance.",
+    "Location": "Los Angeles C",
+    "StartTime": "2022-07-30T19:00:00-07:00",
+    "EndTime": "2022-07-30T21:00:00-07:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Let's open source diversity, equity, and inclusion!",
+    "Description": "Diversity and inclusion within open source is being approached the way software development was prior to the creation of open source. Most efforts, in spite of significant resources and financial investment, are very fragmented, not openly shared, only address part of the challenges, and are not collaborative with those outside of a single organization or very few partnerships. We have to approach this differently in order to yield different results. We must drive diversity and inclusion as an open source community, utilizing relevant data and building on existing research and initiatives.",
+    "Location": "La Jolla",
+    "StartTime": "2022-07-31T10:00:00-07:00",
+    "EndTime": "2022-07-31T11:00:00-07:00",
+    "Speakers": "Demetris Cheatham",
+    "Topic": ""
+  },
+  {
+    "Name": "The Lost Art of Database Design",
+    "Description": "In today's rapid pace development cycles, the database design is often overlooked or even dismissed entirely.",
+    "Location": "Bel Air",
+    "StartTime": "2022-07-31T11:30:00-07:00",
+    "EndTime": "2022-07-31T12:30:00-07:00",
+    "Speakers": "Matt Yonkovit",
+    "Topic": "General"
+  },
+  {
+    "Name": "Are we being inclusive with our community recognitions?",
+    "Description": "Inclusiveness is vital for strengthening the sense of belonging. Community recognition thus needs to be more inclusive so that all community members, regardless of their background, interests, and skillset feel appreciated. Traditional recognition in open source tends to emphasize contributions in project repositories (or code), and we often miss valuable contributions from non-developers. Ray will share his experience finding different contributions, community recognition examples (both good & bad), and feedback he received on community recognition programs over the years.",
+    "Location": "Carmel",
+    "StartTime": "2022-07-31T11:30:00-07:00",
+    "EndTime": "2022-07-31T12:30:00-07:00",
+    "Speakers": "Ray Paik",
+    "Topic": "General"
+  },
+  {
+    "Name": "Engaging Students with Customized Linux Images for Cybersecurity Training",
+    "Description": "Training Middle School and High Schools students in cyber security can be a challenging task especially with engaging students and keeping them on task. Come and learn how customizing Linux installations can help improve participation and engage students in solving cyber defense tasks. We will cover general topics of cyber defense, preparing a themed customized desktops, and using the Python programming to automate the customizations.",
+    "Location": "Century CD",
+    "StartTime": "2022-07-31T11:30:00-07:00",
+    "EndTime": "2022-07-31T12:30:00-07:00",
+    "Speakers": "Atom Ramirez, Marie Ramirez",
+    "Topic": "Security"
+  },
+  {
+    "Name": "Building the future with CentOS Stream",
+    "Description": "This talk will go over our experience working with CentOS and founding the CentOS Hyperscale SIG.",
+    "Location": "Century AB",
+    "StartTime": "2022-07-31T11:30:00-07:00",
+    "EndTime": "2022-07-31T12:30:00-07:00",
+    "Speakers": "Davide Cavalca",
+    "Topic": "Systems & Infrastructure"
+  },
+  {
+    "Name": "Network Visibility: The Heart of Modern Monitoring",
+    "Description": "Regardless of the operational parameters and deployment models of the apps and services that power your organization, all modern applications depend on the network to deliver. The NetFlow family of protocols and their cloud equivalents play an important role in understanding how your workloads interact with the network, and how those interactions impact user experience. In this session we will dive into what flows are, how to interpret them to gain visibility, and how some real organizations have benefited from these insights by leveraging an entirely open-source monitoring stack.",
+    "Location": "Marina",
+    "StartTime": "2022-07-31T11:30:00-07:00",
+    "EndTime": "2022-07-31T12:30:00-07:00",
+    "Speakers": "Jeff Gehlbach",
+    "Topic": "Observability"
+  },
+  {
+    "Name": "Cloud Native Home Lab",
+    "Description": "When a grizzled Site Reliability Engineer decides to create a home lab, we get a chance to see our tools in a new light. The world-class production infrastructure running some of the largest websites in the world can also scale down to a small number of servers, and work very well! Learn about a full-stack solution to create a reliable, codified, production-ready architecture with a few servers you already have at home! We'll talk about MaaS, k3s, prometheus, and how to run Task Warrior on our local Kubernetes cluster!",
+    "Location": "La Jolla",
+    "StartTime": "2022-07-31T11:30:00-07:00",
+    "EndTime": "2022-07-31T12:30:00-07:00",
+    "Speakers": "Joe Smith",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "5 ways to manage your Infrastructure as Code at Scale",
+    "Description": "The introduction of Infrastructure as Code or IaC has transformed how you can provision and deploy high-performance cloud-based IT infrastructures. IaC tools, such as Terraform, have been integrated into DevOps toolchains, saving DevOps teams from the excessive manual effort. While these tools undoubtedly help accelerate building IT infrastructures, their limitations can impact DevOps ability to optimize and improve control of their IaC processes, supporting future business needs. This talk will discuss strategies and tooling that alleviate some of those limitations.",
+    "Location": "Los Angeles AB",
+    "StartTime": "2022-07-31T11:30:00-07:00",
+    "EndTime": "2022-07-31T12:30:00-07:00",
+    "Speakers": "Derek Morgan",
+    "Topic": "Developer"
+  },
+  {
+    "Name": "Using Cryptographic Hardware to Secure Applications",
+    "Description": "Cryptographic hardware allows storage of keys which cannot be easily viewed or copied. This presentation explains how cryptographic hardware can be seamlessly accessed by applications including openssh, gpg, and Postgres.",
+    "Location": "Century CD",
+    "StartTime": "2022-07-31T13:30:00-07:00",
+    "EndTime": "2022-07-31T14:30:00-07:00",
+    "Speakers": "Bruce Momjian",
+    "Topic": "Security"
+  },
+  {
+    "Name": "Application Design Parables: What Real Life Teaches us about Proper Application Design",
+    "Description": "The world is filled with concrete and tactile examples of poor application design and its impact on the real world. Come and listen do some of them!",
+    "Location": "Los Angeles AB",
+    "StartTime": "2022-07-31T13:30:00-07:00",
+    "EndTime": "2022-07-31T14:30:00-07:00",
+    "Speakers": "Matt Yonkovit",
+    "Topic": "Developer"
+  },
+  {
+    "Name": "Expanding Open Source in Africa with Jenkins - Experience Report",
+    "Description": "The She Core Africa Contribution paid 16 women in Africa to contribute to sponsored open source projects for a month. This session will share our experiences and the lessons we learned from mentoring women in Africa as they spent a month contributing to an open source project. We'll discuss organizational challenges, mentor recruiting, technology complications, and more.",
+    "Location": "Bel Air",
+    "StartTime": "2022-07-31T13:30:00-07:00",
+    "EndTime": "2022-07-31T14:30:00-07:00",
+    "Speakers": "Mark Waite, Alyssa Tong",
+    "Topic": "General"
+  },
+  {
+    "Name": "Wyrcan: the Container Bootloader Saga",
+    "Description": "The last you saw our adventurers they had slain the virtualized terror of application deployment using the Sword of Containers. Yet, as the beast lay dying he bragged: \"Your sword is no match for the best of bare metal. You will never defeat him! AAAAAAAARRRRGGGGH...\" Could it be true that containers cannot be deployed at boot to create a stateless, declarative bare metal operating system? Must bare metal deployments always depend on expensive and complicated state management systems? Tune in to see what happens to the party in \"Wyrcan: the Container Bootloader Saga.\"",
+    "Location": "La Jolla",
+    "StartTime": "2022-07-31T13:30:00-07:00",
+    "EndTime": "2022-07-31T14:30:00-07:00",
+    "Speakers": "Nathaniel McCallum",
+    "Topic": "Cloud Native"
+  },
+  {
+    "Name": "The Mono Lake Story - How the Circular Economy Enables Open Hardware",
+    "Description": "We are living in exciting times - we are finally seeing hyperscale server platforms opening up and running on open source software (with caveats still). The journey though is a road full of potholes, braking and sharp turns. Opening up hardware is not easy! Follow along and see how we enabled the Mono Lake platform that was originally created by Facebook (now Meta).",
+    "Location": "Century AB",
+    "StartTime": "2022-07-31T13:30:00-07:00",
+    "EndTime": "2022-07-31T14:30:00-07:00",
+    "Speakers": "Sriram Ramkrishna",
+    "Topic": "Systems & Infrastructure"
+  },
+  {
+    "Name": "Move fast, be safe",
+    "Description": "How we empowered our modern development teams to find, fix and prevent vulnerabilities related to source code, open source libraries, secret management and cloud configuration by creating a continuous security integration server using a github web app, the Octokit library, and open source SAST repos. We are looking to give back to the community and make this project available through open source.",
+    "Location": "Carmel",
+    "StartTime": "2022-07-31T13:30:00-07:00",
+    "EndTime": "2022-07-31T14:30:00-07:00",
+    "Speakers": "Esty Scheiner",
+    "Topic": "General"
+  },
+  {
+    "Name": "Latency: What you can control on the front end",
+    "Description": "Observing where latency occurs in every layer of your stack is critical to understanding its performance, and that can be especially challenging when you’re building your own open source observability solution to maintain your front end. There’s less of a latency budget than you think. Measuring delays from network requests and browser operations are necessary but they do not tell the whole performance story. Knowing what delays your users are actually experiencing (and where) gives you actionable views into why your app is hung up, and how to foster your best experience possible.",
+    "Location": "Marina",
+    "StartTime": "2022-07-31T13:30:00-07:00",
+    "EndTime": "2022-07-31T14:30:00-07:00",
+    "Speakers": "Ben Michel",
+    "Topic": "Observability"
+  },
+  {
+    "Name": "Closing Keynote by Vint Cerf",
+    "Description": "Join Internet pioneer and co-creator of TCP/IP for SCALE's closing keynote. Dr. Cerf will discuss importance of open source to the Internet's success, lessons learned and what he would approach differently if doing it again.",
+    "Location": "La Jolla",
+    "StartTime": "2022-07-31T15:00:00-07:00",
+    "EndTime": "2022-07-31T16:00:00-07:00",
+    "Speakers": "Vint Cerf",
+    "Topic": ""
+  }
+]

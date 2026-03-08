@@ -1,0 +1,62 @@
+# AI Usage Policy
+
+The go-signs project has strict rules for AI usage. This policy is nearly identical to that of the
+[Ghostty](https://github.com/ghostty-org/ghostty/blob/6c0e02d1138d5376e4ac2f5e311b225494514a97/AI_POLICY.md)
+project. We have huge respect for [Mitchell Hashimoto](https://github.com/mitchellh)
+and appreciate him setting the tone about this topic.
+
+- **All AI usage in any form must be disclosed.** You must state
+  the tool you used (e.g. Claude Code, Cursor, Amp) along with
+  the extent that the work was AI-assisted.
+
+- **Pull requests created in any way by AI can only be for existing issues.**
+  Drive-by pull requests that do not reference an existing issue will be
+  closed. If AI isn't disclosed but a maintainer suspects its use, the
+  PR will be closed.
+
+- **Pull requests created by AI must have been fully verified with
+  human use.** AI must not create hypothetically correct code that
+  hasn't been tested. Importantly, you must not allow AI to write
+  code for platforms or environments you don't have access to manually
+  test on.
+
+- **Issues and discussions can use AI assistance but must have a full
+  human-in-the-loop.** This means that any content generated with AI
+  must have been reviewed _and edited_ by a human before submission.
+  AI is very good at being overly verbose and including noise that
+  distracts from the main point. Humans must do their research and
+  trim this down.
+
+- **No AI-generated media is allowed (art, images, videos, audio, etc.).**
+  Text and code are the only acceptable AI-generated content, per the
+  other rules in this policy.
+
+- **Bad AI drivers will be ignored.** You've
+  been warned. We love to help junior developers learn and grow, but
+  if you're interested in that then don't use AI, and we'll help you.
+  I'm sorry that bad AI drivers have ruined this for you.
+
+These rules apply only to outside contributions. Maintainers
+are exempt from these rules and may use AI tools at their discretion;
+they've proven themselves trustworthy to apply good judgment.
+
+## There are Humans Here
+
+Please remember that go-signs is maintained by humans.
+
+Every discussion, issue, and pull request is read and reviewed by
+humans (and sometimes machines, too). It is a boundary point at which
+people interact with each other and the work done. It is rude and
+disrespectful to approach this boundary with low-effort, unqualified
+work, since it puts the burden of validation on the maintainer.
+
+In a perfect world, AI would produce high-quality, accurate work
+every time. But today, that reality depends on the driver of the AI.
+And today, most drivers of AI are just not good enough.
+
+## AI is Welcome Here
+
+go-signs is written with plenty of AI assistance, and we embrace
+AI in development workflow. As a project, we welcome AI as a tool!
+
+**Our reason for the strict AI policy is not due to an anti-AI stance**, but instead due to the number of highly unqualified people using AI. It's the people, not the tools, that are the problem.

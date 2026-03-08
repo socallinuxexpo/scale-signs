@@ -1,0 +1,112 @@
+[
+  {
+    "Name": "Closing Keynote with Doug Comer",
+    "Location": "Ballroom DE",
+    "StartTime": "2026-03-08T15:00:00-07:00",
+    "EndTime": "2026-03-08T16:00:00-07:00",
+    "Speakers": "Doug Comer",
+    "Topic": "Keynote",
+    "Description": "Have you ever taken a course on Computer Networks or Operating Systems? If so, there's a very high likelihood that your coursework was based on books by Doug Comer. is a Distinguished Professor of Computer Science and professor of electrical and computer engineering at Purdue University in the US. Beginning in the late 1970s he started his continuing research into TCP/IP, which has earned him international fame in the field of Computer Science and computer networking. Doug is probably responsible for educating the vast majority of network and operating system engineers in the world today. And SCaLE is proud to announce that Doug will be keynoting at our 23rd Edition in Pasadena, in March 2026.\n",
+    "Photo": "",
+    "Link": "/scale/23x/presentations/closing-keynote-doug-comer"
+  },
+  {
+    "Name": "Cracking Passwords Like a  Boss",
+    "Location": "",
+    "StartTime": "",
+    "EndTime": "",
+    "Speakers": "jeff deifik",
+    "Topic": "Security",
+    "Description": "This talk will discuss different ways to crack passwords. There will be a brief history of how passwords are hashed, how hashing works, how long a password should be, how to pick a good password, password managers, and defense against passwords being cracked.\nThree ways to crack passwords will be described. Custom open source tools I wrote to help manage password cracking will be described.\nI will discuss statistics on 1 billion passwords I have found including password length, use of different character classes such as all lowercase, all uppercase and more. Password patterns will be discussed.\n",
+    "Photo": "",
+    "Link": "/scale/23x/presentations/cracking-passwords-boss"
+  },
+  {
+    "Name": "Beyond Static Analysis: Applying Symbolic Execution to Embedded Linux",
+    "Location": "",
+    "StartTime": "",
+    "EndTime": "",
+    "Speakers": "Jason Kramer",
+    "Topic": "Embedded Linux",
+    "Description": "Static analysis tools are fast, scalable, and widely used in modern software workflows, but they struggle to reason about runtime behaviors in complex embedded systems. This talk focuses on how symbolic execution can be used as a complementary technique to explore deeper execution paths and uncover subtle bugs that traditional static analysis often misses. We will explain the core concepts, key challenges like path explosion, practical mitigation strategies, and real-world case studies involving embedded Linux applications.\n",
+    "Photo": "",
+    "Link": "/scale/23x/presentations/beyond-static-analysis-applying-symbolic-execution-embedded-linux"
+  },
+  {
+    "Name": "What’s in the Model? Building Trust with AIBOMs",
+    "Location": "",
+    "StartTime": "",
+    "EndTime": "",
+    "Speakers": "Jason Kramer",
+    "Topic": "Open Source AI",
+    "Description": "The open-source AI ecosystem is growing fast, with thousands of pre-trained and fine-tuned models readily available for reuse. This accessibility also introduces inherited risks, including data poisoning, backdoors, and model tampering that can propagate silently through the AI supply chain. This talk explores how Artificial Intelligence Bills of Materials (AIBOMs) can provide visibility, accountability, and better security practices for open-source AI, helping developers and organizations trust what they build on.\n",
+    "Photo": "",
+    "Link": "/scale/23x/presentations/whats-model-building-trust-aiboms"
+  },
+  {
+    "Name": "Running Containers with Open Source Akash Network, a Blockchain-based Distributed Computing Platform",
+    "Location": "",
+    "StartTime": "",
+    "EndTime": "",
+    "Speakers": "Nathaniel Moore",
+    "Topic": "Cloud Native",
+    "Description": "Akash network is an open source project which lets users run their containers across a global set of compute providers. &nbsp;It's the middle layer inbetween people who need compute resources (buyers) and people willing to sell access to their compute resources (suppliers). &nbsp;Anyone can participate on either side, with a net result of less waste of idle compute resources on the supplier side, and lower costs on the buyer side.\nThe \"unit of compute\" is a buyer-provided container, and the length of time that container needs to be used to complete its task. &nbsp;Buyers include enthusiasts who just want to run a minecraft server all the way up to professional compute jobs such as training an LLM.\nThe supplier can be a professionally-supported server in a datacenter with dedicated GPUs, all the way down to a spare home computer running in a home environment.\nAkash network is the coordinator inbetween, and it utilizes a blockchain for compute commitments, checksums, and payments between suppliers and buyers of compute.\n",
+    "Photo": "",
+    "Link": "/scale/23x/presentations/running-containers-open-source-akash-network-blockchain-based-distributed"
+  },
+  {
+    "Name": "Five Stages Of Grieving-Databases in Infrastructure as Code",
+    "Location": "Room 106",
+    "StartTime": "2026-03-07T18:15:00-08:00",
+    "EndTime": "2026-03-07T19:15:00-08:00",
+    "Speakers": "Justin Frye",
+    "Topic": "Systems &amp; Infrastructure",
+    "Description": "You enter the call (or conference room) where you are greeted by some higher level executives and members of your Infrastructure team. They have been tasked with bootstrapping the company's IT Infrastructure and start building new resources with IaC. Luckily for you (or not), you have experience with this and are eager to prove your worth and show that DBAs can do more than yell at your poorly configured query or that you are using ORMs. While this situation happens to many of us, I rarely hear about the struggles folks have trying to implement a stateful resources (databases) in a stateless in environment consisting of stateless resources.&nbsp;For your pleasure and amusement, I plan to walk you through my experience implementing this exact task and align the different phases of the implementation with Dr. Kübler-Ross’s five stages of grieving. Sit back and enjoy a few laughs, memes, and positive outlook on how we continue to create more gray area in daily work.\n",
+    "Photo": "",
+    "Link": "/scale/23x/presentations/five-stages-grieving-databases-infrastructure-code"
+  },
+  {
+    "Name": "Why Engineers Work on the Wrong Things and How Transparency Fixes It",
+    "Location": "",
+    "StartTime": "",
+    "EndTime": "",
+    "Speakers": "Victor Lyuboslavsky",
+    "Topic": "General",
+    "Description": "Everyone wants to work on what matters most, yet many engineers struggle to see how their work aligns with company goals. In this talk, we show how radical transparency can correct organizational misalignment. By opening roadmaps, decision histories, customer feedback, and internal documents, teams and individuals gain clarity and autonomy.\n",
+    "Photo": "",
+    "Link": "/scale/23x/presentations/why-engineers-work-wrong-things-and-how-transparency-fixes-it"
+  },
+  {
+    "Name": "The intersectionality of Human Psychology, Security and The Era of AI and Misinformation. ",
+    "Location": "",
+    "StartTime": "",
+    "EndTime": "",
+    "Speakers": "Autumn Nash",
+    "Topic": "Security",
+    "Description": "“If it were measured as a country, then cybercrime — which is predicted to inflict damages totaling&nbsp;$6 trillion USD&nbsp;globally in 2021 — would be the world’s third-largest economy after the&nbsp;U.S. and China.” – Steve Morgan, Editor-in-Chief of Cybercrime magazine\n&nbsp;On average, companies experience about 21 to 24 days of downtime after a ransomware attack, highlighting the significant impact of such incidents on business operations. Everyday technology is advancing at a faster rate than we can educate the general population. If a HongKong bank can be convinced to wire transfer 35 million dollars by a deep fake how do we protect grandma? Most people under 35 get their news and information from TikTok and social media platforms. How do we educate and safe guard the future?\n",
+    "Photo": "",
+    "Link": "/scale/23x/presentations/intersectionality-human-psychology-security-and-era-ai-and-misinformation"
+  },
+  {
+    "Name": "Do You Need An AI Assistant With MySQL?",
+    "Location": "",
+    "StartTime": "",
+    "EndTime": "",
+    "Speakers": "Dave Stokes",
+    "Topic": "MySQL",
+    "Description": "Artificial Intelligence is an overhyped distraction, except for what it can do for you when using MySQL. AI is strong in he pattern matching area, which means it is great with SQL syntax and examining DDL metadata. This session will cover basic prompting, using AI to repair or augment existing queries, and developing new schemas. And you can write queries in English (or French, or German, or Italian) instead of SQL, saving you a lot of time determining which tables need to be joined where. SO, yes, you do need an AI Assistant to get the maximum out of your MySQL instances, and this session will show you how to do it.\n",
+    "Photo": "",
+    "Link": "/scale/23x/presentations/do-you-need-ai-assistant-mysql"
+  },
+  {
+    "Name": "Vitess for Newbies: Scaling MySQL the YouTube Way",
+    "Location": "",
+    "StartTime": "",
+    "EndTime": "",
+    "Speakers": "Igor Donchovski",
+    "Topic": "MySQL",
+    "Description": "When I first started learning Vitess, I quickly realized how much it could do beyond just scaling MySQL — from built-in high availability and transparent query routing to online schema changes and resharding. In this session, I’ll share what I’ve discovered as a newcomer exploring Vitess, how easy it is to get started, and why it’s becoming a go-to open-source solution for running MySQL at scale.\n",
+    "Photo": "",
+    "Link": "/scale/23x/presentations/vitess-newbies-scaling-mysql-youtube-way"
+  }
+]

@@ -1,0 +1,1496 @@
+[
+  {
+    "Name": "Workshop: Jenkins Pipeline Fundamentals",
+    "Description": "Learn to create and run Declarative Pipelines with Jenkins. You’ll learn the structure of Declarative Pipelines, how to control their flow of execution, how to save artifacts of the build, and get practice using some of the features that give fit and finish to your Pipeline. The course consists of lectures with follow-along labs plus lab exercises that allow you to practice what you have learned.",
+    "Location": "Room 211",
+    "StartTime": "2020-03-05T09:00:00-08:00",
+    "EndTime": "2020-03-05T13:00:00-08:00",
+    "Speakers": "Mark Waite",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Get Your Insecure PostgreSQL Passwords to SCRAM!",
+    "Description": "Passwords: they just work. You connect to your PostgreSQL database, type in the correct characters, and presto! you're in, safe and sound.But what if I told you that all was not as it seemed, and there was a better way to authenticate with passwords in PostgreSQL? In this talk, we will look at the history of password storage and authentication in PostgreSQL, How SCRAM works with a step-by-step deep dive into the algorithm, How to safely set and modify your passwords, and how to upgrade to SCRAM-SHA-256and more!",
+    "Location": "Room 105",
+    "StartTime": "2020-03-05T09:30:00-08:00",
+    "EndTime": "2020-03-05T10:15:00-08:00",
+    "Speakers": "Jonathan Katz",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Workshop: Hands-on PostgreSQL",
+    "Description": "This hands-on tutorial is designed to get you quickly up and running with PostgreSQL. We will start with a quick introduction of fundamental relational theory, the SQL programming language, and PostgreSQL. We will then lead participants through creating a new database, creating and modifying tables, getting data into and out of the database, writing queries, and more. Bring a laptop with a recent version of PostgreSQL installed.",
+    "Location": "Room 104",
+    "StartTime": "2020-03-05T09:30:00-08:00",
+    "EndTime": "2020-03-05T12:15:00-08:00",
+    "Speakers": "Jennifer Scheuerell, Darren Douglas",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "PostgreSQL Tips, Tricks, and Gotchas",
+    "Description": "Whether you’re a newbie to databases and PostgreSQL, or a seasoned database administrator getting your toes wet using PostgreSQL for the first time, understanding what the “gotchas” are and how to solve them will not only save you time, but a lot of headaches as well.",
+    "Location": "Room 105",
+    "StartTime": "2020-03-05T10:30:00-08:00",
+    "EndTime": "2020-03-05T11:15:00-08:00",
+    "Speakers": "Darren Douglas",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Welcome to Postgres 12",
+    "Description": "Postgres 12 was released in late 2019. In this talk well cover new features, enhancements, and upgrade strategies for this new version of Postgres.",
+    "Location": "Room 105",
+    "StartTime": "2020-03-05T11:30:00-08:00",
+    "EndTime": "2020-03-05T12:15:00-08:00",
+    "Speakers": "Robert Treat",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "A look at the Elephant's trunk - PostgreSQL 13",
+    "Description": "PostgreSQL 13 is slowly approaching feature freeze state, and at this point we have at least some ideas of what features will be included. This talk will take a quick look at what's in there already, and what's in the queue!",
+    "Location": "Room 105",
+    "StartTime": "2020-03-05T14:00:00-08:00",
+    "EndTime": "2020-03-05T14:45:00-08:00",
+    "Speakers": "Magnus Hagander",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Workshop: Kubernetes 101",
+    "Description": "Bring a laptop to follow along with this interactive session as we learn Kubernetes basics using curl, kubectl, oc and other command-line tools. Attendees will learn to model portable, scaleable, and highly-available solutions using open source tools for cloud-native computing. By the end of this lab, attendees will have hands-on experience deploying, scaling, and automating simple container-based distributed solutions on Kubernetes. Participants can follow along together in room 106, or join remotely via the live broadcast.",
+    "Location": "Room 106",
+    "StartTime": "2020-03-05T14:00:00-08:00",
+    "EndTime": "2020-03-05T17:00:00-08:00",
+    "Speakers": "Josh Berkus, Ell Marquez, Jeffrey Sica, Bob Killen",
+    "Topic": "Container and Orchestrators"
+  },
+  {
+    "Name": "Workshop: Continuous Delivery With Jenkins X - Live via YouTube!",
+    "Description": "Jenkins X, an open-source project introduced to the community by CloudBees, enables the rapid creation, delivery and orchestration of cloud-native applications based on continuous delivery best practices and the proven Kubernetes platform. It is the CI/CD solution for the development of modern cloud applications on Kubernetes. This workshop helps you get acquainted with the platform.",
+    "Location": "Room 211",
+    "StartTime": "2020-03-05T14:00:00-08:00",
+    "EndTime": "2020-03-05T18:00:00-08:00",
+    "Speakers": "Oscar Medina",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Workshop: Findings Stranger Things in Code",
+    "Description": "Coding without debugging is like riding a bike, blind, downhill, without breaks. The rigor we apply to runtime debugging of applications can also be applied before or after compile-time using static analysis tools. The only recourse a modern developer has is to sift through gazillion lines of code manually searching for a dangerous pattern or an exotic coding blunder that may have seeped in. In this workshop, we discover how code can be represented in a graphical format which can then be queried interactively to find common security or performance bugs in code. Sponsored by ShiftLeft.",
+    "Location": "Room 212",
+    "StartTime": "2020-03-05T14:00:00-08:00",
+    "EndTime": "2020-03-05T16:30:00-08:00",
+    "Speakers": "Suchakra Sharma",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Scaling the Wall of Text: Logging Best Practices in PostgreSQL",
+    "Description": "Something that many PostgreSQL users take for granted is the powerful logging features that it provides. With the right configuration, DBAs and sysadmins can quickly diagnose performance, security, and configuration issues, saving precious seconds of application uptime. This talk will cover the major logging parameters in `postgresql.conf`, as well as provide some tips and wisdom gleaned over years of parsing through gigabytes of logs.",
+    "Location": "Room 105",
+    "StartTime": "2020-03-05T15:00:00-08:00",
+    "EndTime": "2020-03-05T15:45:00-08:00",
+    "Speakers": "Richard Yen",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "To Cloud Manage or Self-Manage Postgres?",
+    "Description": "Cloud providers provide for a fully managed postgres database, the removal of the need to handle 90% of the administration of a postgresql database, and have you focus on the development end of it. I'll provide metrics between the 3 major cloud providers of their managed postgresql database and compare it to self-managed postgresql environment on the cloud providers with a VM/EC2 instance.",
+    "Location": "Room 104",
+    "StartTime": "2020-03-05T15:00:00-08:00",
+    "EndTime": "2020-03-05T15:45:00-08:00",
+    "Speakers": "ANSON ABRAHAM",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Linux IO internals for PostgreSQL administrators in 2020",
+    "Description": "Input-output performance problems are on every day agenda for DBAs since the databases exist. Volume of data grows rapidly and you need to get your data fast from the disk and moreover - fast to the disk. For most databases there is a more or less easy to find checklist of recommended Linux settings to maximize IO throughput.",
+    "Location": "Room 105",
+    "StartTime": "2020-03-05T16:00:00-08:00",
+    "EndTime": "2020-03-05T16:45:00-08:00",
+    "Speakers": "Ilya Kosmodemiansky",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Good Data Gone Bad, Bad Data Gone Worse",
+    "Description": "How bad data gets into the pipeline, how developers make data bad and worse in the pipeline. This talk will look at data sources, data types, and ways technology can be used to abuse data.",
+    "Location": "Room 104",
+    "StartTime": "2020-03-05T16:00:00-08:00",
+    "EndTime": "2020-03-05T16:45:00-08:00",
+    "Speakers": "Renee Phillips",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Adtech Anonymous",
+    "Description": "Online ads are awful - if you are or have been employed in that industry, this BoF is for mutual support and commiseration. Recruiters not welcome.",
+    "Location": "Room 104",
+    "StartTime": "2020-03-05T19:00:00-08:00",
+    "EndTime": "2020-03-05T20:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Ceph Storage",
+    "Description": "Please join us for our Birds of a Feather session on Ceph: an object, block, and file system storage in a single unified storage cluster. Users and developers of Ceph unite for a face to face meeting in war stories and victories! New members of the community are absolutely welcome. Come for the swag; stay for the community!",
+    "Location": "Room 211",
+    "StartTime": "2020-03-05T19:00:00-08:00",
+    "EndTime": "2020-03-05T20:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Nextcloud",
+    "Description": "Come talk about real world uses for Nextcloud, in business and personal settings; geek out with other Nextcloud fans;",
+    "Location": "Room 212",
+    "StartTime": "2020-03-05T19:00:00-08:00",
+    "EndTime": "2020-03-05T20:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Linux Professional Institute DevOps Tools Engineer Preparation Session",
+    "Description": "This preparation session will be led by Aleksey Tsalolikhin from Vertical Sysadmin. Aleksey will field any technical questions and help prepare you before you take the exam. Participate to learn more about the importance of understanding the objectives prior to writing your exam, the exam structure, and why obtaining your certification will be professionally beneficial. Come prepared with questions!",
+    "Location": "Room 211",
+    "StartTime": "2020-03-06T09:00:00-08:00",
+    "EndTime": "2020-03-06T11:00:00-08:00",
+    "Speakers": "Aleksey Tsalolikhin",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Hands on with The Open Source Way",
+    "Description": "Come join us to learn about and work directly on The Open Source Way guide 2.0 release. This is a collaboratively written guide of best practices for open source community management. Contributions of all types are welcome. In this workshop, we’ll be leading new contributors through the participation and contribution process. There are activities for short (30 to 60 minutes) and longer (1 to 4 hours) periods of time.",
+    "Location": "Room 107",
+    "StartTime": "2020-03-06T09:00:00-08:00",
+    "EndTime": "2020-03-06T17:00:00-08:00",
+    "Speakers": "Karsten Wade",
+    "Topic": "Mentoring"
+  },
+  {
+    "Name": "Avoid the Cluster ?#@$ with MySQL InnoDB Cluster",
+    "Description": "MySQL InnoDB cluster provides a complete high availability solution for MySQL. MySQL Shell includes AdminAPI which enables you to easily configure and administer a group of at least three MySQL server instances to function as an InnoDB cluster. In this session you will learn how to take advantage of these features to build your own highly availability solution for MySQL.",
+    "Location": "Room 101",
+    "StartTime": "2020-03-06T09:30:00-08:00",
+    "EndTime": "2020-03-06T10:15:00-08:00",
+    "Speakers": "Michael Marx",
+    "Topic": "MySQL"
+  },
+  {
+    "Name": "Workshop: Tour de Data Types",
+    "Description": "Ever wondered what might be the best data type for a certain use case? Is it better to use INT or BIGINT, and should you use TIMESTAMP or is it better to use TIMESTAMPTZ? When was the last time you migrated a legacy database and wondered what to use as replacement for VARCHAR2 or CHAR(255)? How to store IP addresses or geographical data, does that fit into VARCHAR or is there something more suitable? PostgreSQL 12 comes with ~40 different data types preinstalled. This talk looks beyond INT and VARCHAR and dives into some of the lesser known PG data types.",
+    "Location": "Room 104",
+    "StartTime": "2020-03-06T09:30:00-08:00",
+    "EndTime": "2020-03-06T12:30:00-08:00",
+    "Speakers": "Andreas Scherbaum",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "B-tree indexes - learn more about the heart of PostgreSQL",
+    "Description": "This talk will offer a deep dive into the B-tree indexes architecture. It covers the newest major features of PostgreSQL B-tree: INCLUDING clause, deduplication, K-NN, and other improvements. We will review use cases and show the limitations to help you plan your indexes the most efficiently.",
+    "Location": "Room 105",
+    "StartTime": "2020-03-06T09:30:00-08:00",
+    "EndTime": "2020-03-06T10:15:00-08:00",
+    "Speakers": "Anastasia Lubennikova",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Workshop: Using the Mitre Attack Framework",
+    "Description": "In this workshop sponsored by Elastic, you will see how Elastic SIEM and the Elastic Stack accelerate security wins by returning results from ad hoc queries in seconds. You’ll also learn how to operate at scale, since Elastic handles security data by the petabyte — meaning you can keep your data for as long as you want and tap into the full picture when you need it most.",
+    "Location": "Room 106",
+    "StartTime": "2020-03-06T09:30:00-08:00",
+    "EndTime": "2020-03-06T12:30:00-08:00",
+    "Speakers": "Jared Pane",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Move Fast without Breaking things",
+    "Description": "Have you ever wanted to move fast? Are you too afraid that you’ll break many things in doing so? At Instagram we manage the world's largest python site, while deploying every seven minutes! We’ll share our experience in increasing velocity without impacting safety and reliability. This talk shares the practical steps that we took to build our continuous deployment pipeline. We will highlight not only the technical challenges and tools, but also the cultural philosophy needed to succeed.",
+    "Location": "Ballroom DE",
+    "StartTime": "2020-03-06T10:00:00-08:00",
+    "EndTime": "2020-03-06T10:45:00-08:00",
+    "Speakers": "Alvaro Leiva",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "Kubernetes as a Concrete Abstraction Layer",
+    "Description": "Kubernetes is often touted as an infrastructure abstraction layer that makes applications portable between cloud providers or on-premises Kubernetes clusters. In reality, sometimes you can end up stubbing your toe on concrete differences in storage or networking (e.g., PersistentVolumes or Ingress traffic). We’ll discuss areas that the abstraction layer can fail to cover, such as notable differences between managed Kubernetes offerings and the default behavior across major cloud providers, and how to plan and package your Kubernetes-native applications to be truly (mostly) portable.",
+    "Location": "Ballroom B",
+    "StartTime": "2020-03-06T10:00:00-08:00",
+    "EndTime": "2020-03-06T10:45:00-08:00",
+    "Speakers": "Karen Bruner",
+    "Topic": "Container and Orchestrators"
+  },
+  {
+    "Name": "Getting Started with FreeBSD",
+    "Description": "FreeBSD is a free Unix-like operating system descended from Research Unix via the Berkeley Software Distribution (BSD), also known as “Berkeley Unix.” It’s known for its reliability, stability, and advanced networking and performance. Join us for a full day workshop that will teach you how to install FreeBSD and the ports and packages necessary to get you up and running. You’ll leave the workshop with the knowledge to install and administer a FreeBSD Operating System and know where to go to learn even more about using FreeBSD.",
+    "Location": "Room 103",
+    "StartTime": "2020-03-06T10:00:00-08:00",
+    "EndTime": "2020-03-06T17:00:00-08:00",
+    "Speakers": "Roller Angel, Deb Goodkin",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Workshop: POP Culture: An intro to Plugin Oriented Programming",
+    "Description": "Plugin Oriented Programing, also known as POP, is a new programming paradigm and open source project developed by SaltStack. This introduction will help you learn how POP works and how to get started with a new POP project",
+    "Location": "Room 212",
+    "StartTime": "2020-03-06T10:00:00-08:00",
+    "EndTime": "2020-03-06T13:00:00-08:00",
+    "Speakers": "Thomas Hatch",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Building a Database as a Service on Kubernetes",
+    "Description": "Stateful, scalable storage on Kubernetes is an unsolved problem. Creating it as a service is even more difficult. The cloud-native ecosystem offers many tools such as the operator-sdk, Prometheus, Grafana, etcd, Vitess, and much more, but integrating them isn't necessarily intuitive. Two of PlanetScale's employees that have engineered and managed the project describe the journey of leveraging all of these open source technologies to build out a database as a service on Kubernetes.",
+    "Location": "Room 101",
+    "StartTime": "2020-03-06T10:30:00-08:00",
+    "EndTime": "2020-03-06T11:15:00-08:00",
+    "Speakers": "Abhi Vaidyanatha, Lucy Burns",
+    "Topic": "MySQL"
+  },
+  {
+    "Name": "Foreign Data Wrappers: Accessing External Data from a PostgreSQL database",
+    "Description": "If you're managing multiple datastores and want to Just Use Postgres, foreign data wrappers are a good option. There are loads of them available, for nearly every datastore you can think of, and you can write your own if you can't find what you're looking for.This mostly-demo talk showcases file_fdw, which allows you to query local resources from your database, and postgres_fdw, which allows you to query other postgres databases. I'll cover use (and mis-use) cases, configuration of each, and interesting quirks.",
+    "Location": "Room 105",
+    "StartTime": "2020-03-06T10:30:00-08:00",
+    "EndTime": "2020-03-06T11:15:00-08:00",
+    "Speakers": "Gabrielle Roth",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "We put Kubernetes on a Mainframe!",
+    "Description": "When you think of Kubernetes, you probably don't think about mainframes, but modern mainframes can run Linux and the careful observer may have already discovered that the mainframe architecture (s390x) is one of the architectures that's built for every Kubernetes release.",
+    "Location": "Ballroom B",
+    "StartTime": "2020-03-06T11:00:00-08:00",
+    "EndTime": "2020-03-06T11:45:00-08:00",
+    "Speakers": "Elizabeth K. Joseph",
+    "Topic": "Container and Orchestrators"
+  },
+  {
+    "Name": "Linux Professional Institute Linux Essentials Preparation Session",
+    "Description": "This preparation session will be led by Mike Weilgart from Vertical Sysadmin. Mike will field any technical questions and help prepare you before you take the exam. Participate to learn more about the importance of understanding the objectives prior to writing your exam, the exam structure, and why obtaining your certification will be professionally beneficial. Come prepared with questions!",
+    "Location": "Room 211",
+    "StartTime": "2020-03-06T11:00:00-08:00",
+    "EndTime": "2020-03-06T12:00:00-08:00",
+    "Speakers": "Mike Weilgart",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Using your skills to save lives",
+    "Description": "While we’re fighting for our security and privacy, some are being left behind. Our current advice for securing our digital lives assume that the user is able to take control of their own own lives and are permitted to keep certain facts secret in order to authenticate to a service or device. For those whose threat models include former or current intimate partners their proximity to their attacker means that many security solutions are ineffective and, in some cases, harmful to implement. We will explore cases where traditional security measures fail an already-vulnerable populatiions.",
+    "Location": "Ballroom DE",
+    "StartTime": "2020-03-06T11:00:00-08:00",
+    "EndTime": "2020-03-06T11:45:00-08:00",
+    "Speakers": "Ell Marquez",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "No Excuses PostgreSQL Security",
+    "Description": "There are many relatively simple configuration changes that an admin can quickly deploy to increase the security and deployability of a new PostgreSQL cluster. This presentation and live demo will rapidly explain and demonstrate several such configuration changes including: logging user authentication and activity, enabling SSL, requiring secure client connections, and more. Attendees will agree there are \"no excuses\" to skip deploying these easy modifications.",
+    "Location": "Room 105",
+    "StartTime": "2020-03-06T11:30:00-08:00",
+    "EndTime": "2020-03-06T12:15:00-08:00",
+    "Speakers": "Darren Douglas",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Protecting Personal and Health Data in MySQL",
+    "Description": "Protecting PII data is one of the biggest challenges of security minded DBA. But when you add a requirement to allow customers to have a direct access to a database replica it will make a life of a DBA nightmare.In this talk I will share an experience of how to implement customer authentication, authorization and data isolation in MySQL.",
+    "Location": "Room 101",
+    "StartTime": "2020-03-06T11:30:00-08:00",
+    "EndTime": "2020-03-06T12:15:00-08:00",
+    "Speakers": "Alexander Rubin",
+    "Topic": "MySQL"
+  },
+  {
+    "Name": "Building an on-premise, multitenant serverless platform",
+    "Description": "The concept of serverless and faas has been gaining traction in recent years. The ecosystem has been rapidly evolving. How challenging it is to build a serverless platform on k8s. What are the tools required to make the users feel at home? In this session Murugappan Chetty will go over the details of the serverless platform that they are managing at Optum. How they addressed the various aspects of managed service offerings like multi-tenancy, authz/authn, observability, and more.",
+    "Location": "Ballroom B",
+    "StartTime": "2020-03-06T12:00:00-08:00",
+    "EndTime": "2020-03-06T12:45:00-08:00",
+    "Speakers": "Murugappan Chetty",
+    "Topic": "Container and Orchestrators"
+  },
+  {
+    "Name": "You Can’t Buy DevOps",
+    "Description": "Being a DevOps champion means going beyond the win and delving deeper into the team/organizational culture. In this talk, attendees will learn why it's the people that matter most and how to leverage DevOps best practices along with processes to make the most out of the DevOps journey.",
+    "Location": "Ballroom DE",
+    "StartTime": "2020-03-06T13:00:00-08:00",
+    "EndTime": "2020-03-06T13:30:00-08:00",
+    "Speakers": "Julie Gunderson",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "Linux Professional Institute LPIC-1 Preparation Session",
+    "Description": "The Linux Professional Institute LPIC-1 Preparation Session will be led by Kenny Armstrong, a certified trainer from Linux Professional Institute. We will field any technical questions and help prepare you before you take the exam. Participate to learn more about the importance of understanding the objectives prior to writing your exam, the exam structure, and why obtaining your certification will be professionally beneficial. Come prepared with questions!",
+    "Location": "Room 211",
+    "StartTime": "2020-03-06T13:00:00-08:00",
+    "EndTime": "2020-03-06T15:00:00-08:00",
+    "Speakers": "Kenny Armstrong",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Implementing MySQL Database-as-a-Service using OSS tools",
+    "Description": "This session will discuss how to setup your own fully automated MySQL-as-a-service solely out of open source tools. We will discuss how to use ProxySQL to create a separation of the MySQL topology from the application layer; and how to manage topologies with GitHub's Orchestrator.",
+    "Location": "Room 101",
+    "StartTime": "2020-03-06T13:15:00-08:00",
+    "EndTime": "2020-03-06T14:00:00-08:00",
+    "Speakers": "Matthias Crauwels",
+    "Topic": "MySQL"
+  },
+  {
+    "Name": "The DevOps Roast",
+    "Description": "In a world, where DevOps means almost nothing and everything, or sometimes just \"Ops, but nicer to devs and with cloud and GitHub\", one being among all of us is willing to stand up and laugh in the face of inertia. Bring your DevOps rage, love and tears, and we'll distill them into 120 proof beligerance.",
+    "Location": "Ballroom DE",
+    "StartTime": "2020-03-06T13:30:00-08:00",
+    "EndTime": "2020-03-06T14:00:00-08:00",
+    "Speakers": "Clint Byrum",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "GitLab Community Day",
+    "Description": "Join us on Friday afternoon to learn about the GitLab community and GitLab’s DevOps stages. GitLab's Community Relations team will provide an overview of our programs and resources available to the wider community. There will also be a hands-on workshop on how everyone can contribute to GitLab. Finally, GitLab's Solutions Architect will discuss GitLab's DevOps stages through their presentation/demo and answer your questions on GitLab's products.",
+    "Location": "Ballroom F",
+    "StartTime": "2020-03-06T13:30:00-08:00",
+    "EndTime": "2020-03-06T17:30:00-08:00",
+    "Speakers": "",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Extending containerd",
+    "Description": "containerd is a widely used container runtime that provides core functionality for Docker. containerd was designed to be small and simple, but also very modular and extensible. This talk covers the architecture of containerd and dives deep into containerd’s facility for extension. We’ll cover the individual services that make up containerd and show how they can be extended with proxy plugins, Go plugins, process interfaces, thick client implementations, and build-your-own containerd for compiled-in extension. Demo includes real-world use in the firecracker-containerd project.",
+    "Location": "Ballroom B",
+    "StartTime": "2020-03-06T14:00:00-08:00",
+    "EndTime": "2020-03-06T14:45:00-08:00",
+    "Speakers": "Samuel Karp",
+    "Topic": "Container and Orchestrators"
+  },
+  {
+    "Name": "The Future of DevOps and the Importance of Right-to-Left Thinking",
+    "Description": "Ten years into the DevOps revolution, organizations have adopted key principles such as culture shift, collaboration, containerization, infrastructure as code, and automation. But challenges lie ahead, as all companies become software companies, speed and security become more critical, and silos still exist. Successful organizations will be those who measure everything, see their applications as many-headed beasts, iterate, get serious about failure, and adopt right-to-left thinking by collecting data in production and routing it back to design and development in useful ways.",
+    "Location": "Ballroom DE",
+    "StartTime": "2020-03-06T14:00:00-08:00",
+    "EndTime": "2020-03-06T14:30:00-08:00",
+    "Speakers": "Francis Potter",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "Ask Me (the PostgreSQL community) Anything",
+    "Description": "We will have many PostgreSQL community members handy -- come ask us anything!",
+    "Location": "Room 105",
+    "StartTime": "2020-03-06T14:00:00-08:00",
+    "EndTime": "2020-03-06T14:45:00-08:00",
+    "Speakers": "Joe Conway",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Workshop: Real-time Operationalized ML, Streaming, and Dashboards",
+    "Description": "Are you struggling to tame the world of real-time data? Or curious where to begin? Join us for this hands-on workshop where each attendee will get to build and deploy a real-time data pipeline from soup to nuts. Using simulated NYC Taxi data, you'll get to build data ingest, leverage machine learning models to enrich data, and view the results in an interactive dashboard, all with cloud-native technology. This workshop is sponsored by MemSQL.",
+    "Location": "Room 212",
+    "StartTime": "2020-03-06T14:00:00-08:00",
+    "EndTime": "2020-03-06T17:30:00-08:00",
+    "Speakers": "Mark Lochbihler",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Introducing IEEE SA Open",
+    "Description": "This tutorial will show you how IEEE SA Open offers a flexible, scalable open source development environment backed by exclusive IEEE service and support. Learn how to launch an open source project (standards and non-standards related) and how IEEE SA and IEEE Foundation can be a 501(c)3 nonprofit fiscal home for future open source work. Come see how IEEE SA Open can empower you to raise the world’s standards in open source development. This session is sponsored by the IEEE.",
+    "Location": "Room 106",
+    "StartTime": "2020-03-06T14:00:00-08:00",
+    "EndTime": "2020-03-06T17:30:00-08:00",
+    "Speakers": "Joshua Gay, Silona Bonewald",
+    "Topic": "Sponsored"
+  },
+  {
+    "Name": "Isolation levels: Zero to hero!",
+    "Description": "The key for sql databases is concurrency, how databases handle concurrent transactions: Isolation levels are a great place to start your way to mastering concurrency and their impact is often ignored by DBAs. Is there anything better than becoming a master and embarrassing your DBA?",
+    "Location": "Room 101",
+    "StartTime": "2020-03-06T14:15:00-08:00",
+    "EndTime": "2020-03-06T15:00:00-08:00",
+    "Speakers": "Pep Pla",
+    "Topic": "MySQL"
+  },
+  {
+    "Name": "System Accidents: Understanding Common Failures",
+    "Description": "Failures are a normal occurrence and how the system responds to component failures determines if the system is resilient or if it results in an incident. This is true not just for Information Systems but also for industrial and mechanical systems. Users can learn from the experience of these systems on what common themes permeate and how to best build our software factories to minimize the effect of component failures and prevent incidents from becoming accidents. This talk walks through the issues and experiences of complex systems and identifies the common failure points.",
+    "Location": "Ballroom DE",
+    "StartTime": "2020-03-06T14:45:00-08:00",
+    "EndTime": "2020-03-06T15:30:00-08:00",
+    "Speakers": "Galen Emery",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "How Fast Was My Cluster?",
+    "Description": "Sure you CAN host a stateful application on Kubernetes, but SHOULD you? What kind of performance do you see on various storage configurations? Is it fast, is it slow, or is it something in between? Learn how to find out for yourself.",
+    "Location": "Ballroom B",
+    "StartTime": "2020-03-06T15:00:00-08:00",
+    "EndTime": "2020-03-06T15:45:00-08:00",
+    "Speakers": "Josh Berkus",
+    "Topic": "Container and Orchestrators"
+  },
+  {
+    "Name": "PostgreSQL worst practices",
+    "Description": "This talk is prepared as a bunch of slides, where each slide describes a really bad way people can screw up their PostgreSQL database and provides a weight - how frequently I saw that kind of problem. Right before the talk I will reshuffle the deck to draw ten random slides and explain you why such practices are bad and how to avoid running into them.",
+    "Location": "Room 104",
+    "StartTime": "2020-03-06T15:00:00-08:00",
+    "EndTime": "2020-03-06T15:45:00-08:00",
+    "Speakers": "Ilya Kosmodemiansky",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Using PostgreSQL for Data Privacy and Security",
+    "Description": "Data scientists want access to data sets quickly, but organizations often need to protect private data, whether due to internal policy or government regulations. In this talk we discuss how to leverage PostgreSQL for managing organization-wide data access while protecting privacy. Topics include: Row Level Security, Purpose-based data access, Federating data, Foreign data wrappers, Masking, Differential privacy, k-anonymity, and Auditing with pgAudit",
+    "Location": "Room 105",
+    "StartTime": "2020-03-06T15:00:00-08:00",
+    "EndTime": "2020-03-06T15:45:00-08:00",
+    "Speakers": "Mason Sharp",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "MySQL New Features for Developers",
+    "Description": "MySQL has been the most rapidly implemented version of the most popular database on the web. Our new CI/CD release schedule means we are introducing improvements on a quarterly basis and you may have missed one or two new features. You may have missed hash joins, random password generation, multi-value indexes, check constraints, the Clone plugin, how to validate JSON documents for required fields or range checks, and dual passwords. This presentation will cover the new features and how to implement them so you too can take advantage of the latest and greatest from MySQL.",
+    "Location": "Room 101",
+    "StartTime": "2020-03-06T15:15:00-08:00",
+    "EndTime": "2020-03-06T16:00:00-08:00",
+    "Speakers": "Dave Stokes",
+    "Topic": "MySQL"
+  },
+  {
+    "Name": "Secrets Management",
+    "Description": "This talk will review strategies and tools for managing secrets in different environments, with a particular focus on cloud infrastructure, application secrets, and secrets within the DevOps CI/CD pipeline. We will look at different approaches to secrets management, exploring processes and methodologies, best practices and anti-patterns. From here we will dive into specific tools and technologies, from open source to commercial tools.",
+    "Location": "Ballroom DE",
+    "StartTime": "2020-03-06T15:45:00-08:00",
+    "EndTime": "2020-03-06T16:30:00-08:00",
+    "Speakers": "Murriel Perez McCabe",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "Continuous Security with Kubernetes",
+    "Description": "Security best practices for containers and kubernetes",
+    "Location": "Ballroom B",
+    "StartTime": "2020-03-06T16:00:00-08:00",
+    "EndTime": "2020-03-06T16:45:00-08:00",
+    "Speakers": "Chris VanTuin",
+    "Topic": "Container and Orchestrators"
+  },
+  {
+    "Name": "Enterprise Authentication with PostgreSQL",
+    "Description": "PostgreSQL supports a number of different authentication mechanisms and while many of them are quite simple and easy to use, the enterprise-level authentication systems require setup beyond PostgreSQL and a deeper understanding of how authentication works.",
+    "Location": "Room 104",
+    "StartTime": "2020-03-06T16:00:00-08:00",
+    "EndTime": "2020-03-06T16:45:00-08:00",
+    "Speakers": "Stephen Frost",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Declarative Caching with Postgres and Redis",
+    "Description": "The concept of caching is not complicated: store the results of a query for a short period of time in a fast storage engine so you touch the slow and/or expensive database less. However, not all queries should be cached for a variety of application specific reasons. This leads to caching implementations inside applications that requires writing custom code control which queries are cached. In this session we will go over a technique to declaratively rather than imperatively control which results are cached and for how long.",
+    "Location": "Room 105",
+    "StartTime": "2020-03-06T16:00:00-08:00",
+    "EndTime": "2020-03-06T16:45:00-08:00",
+    "Speakers": "Kyle Davis",
+    "Topic": "PostgreSQL"
+  },
+  {
+    "Name": "Optimize and Troubleshoot MySQL using PMM 2",
+    "Description": "Optimizing MySQL performance and troubleshooting MySQL problems are two of the most critical and challenging tasks for MySQL DBA’s. The databases powering your applications need to be able to handle changing traffic workloads while remaining responsive and stable so that you can deliver an excellent user experience. Further, DBA’s are expected to find cost-efficient means of solving these issues. In this presentation, we will demonstrate how PMM 2 enables you to solve these challenges, which is built on free and open-source software. We will look at common MySQL problems and how to fix them.",
+    "Location": "Room 101",
+    "StartTime": "2020-03-06T16:15:00-08:00",
+    "EndTime": "2020-03-06T17:00:00-08:00",
+    "Speakers": "Peter Zaitsev",
+    "Topic": "MySQL"
+  },
+  {
+    "Name": "Managing Chaos in Production: Testing vs Monitoring",
+    "Description": "While no one is against finding and fixing issues before deploying to production, relying on traditional testing methods in the age of data-intensive, internet scale software has proven to be incomplete. This talk touches on common methods including real-world examples of odd edge cases with both testing and monitoring and explains why these will never provide a complete solution.",
+    "Location": "Ballroom DE",
+    "StartTime": "2020-03-06T16:45:00-08:00",
+    "EndTime": "2020-03-06T17:30:00-08:00",
+    "Speakers": "Robert Treat",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "A crash course on ProxySQL",
+    "Description": "ProxySQL is a high-performance SQL proxy that runs as a background daemon, accepting incoming traffic from MySQL clients and forwards it to backend MySQL servers. It is often used in environments where Read Traffic needs to be spread out in a slave pool and Write Traffic needs to be directed to a specific server. This presentation will explain and demonstrate a deployment of ProxySQL.",
+    "Location": "Room 101",
+    "StartTime": "2020-03-06T17:15:00-08:00",
+    "EndTime": "2020-03-06T18:00:00-08:00",
+    "Speakers": "Solomon Chang",
+    "Topic": "MySQL"
+  },
+  {
+    "Name": "Jobs and Career",
+    "Description": "Is your company hiring? Are you looking for a job? Drop by for some career networking Friday night.We will also again have the popular SCaLE jobs board posted all weekend by the entrance between Ballroom B and Ballroom C. The jobs board is a great place to place ads for openings at your company and to find openings for job-seekers. When posting online, please use #SCaLE18xJobs This year SCaLE also has a career day on Sunday starting at 11:00.",
+    "Location": "Ballroom F",
+    "StartTime": "2020-03-06T19:00:00-08:00",
+    "EndTime": "2020-03-06T20:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Why FreeBSD Is For Me",
+    "Description": "Sit down with members of the FreeBSD Project to learn more about FreeBSD and how becoming part of the Project can benefit you and the community.",
+    "Location": "Room 103",
+    "StartTime": "2020-03-06T20:00:00-08:00",
+    "EndTime": "2020-03-06T21:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Open Source Infra DCOps for Projects",
+    "Description": "This BoF is part of a continuous discussion on how we can provide 100% open source infrastructure to any open source project that wants it, provided in a data center model. Imagine the Oregon State University (OSU) Open Source Lab (OSL) run at a global scale with an open and diverse governance. Idea for BoF came from a recent Twitter thread https://twitter.com/quaid/status/1214985362776264704",
+    "Location": "Room 107",
+    "StartTime": "2020-03-06T20:00:00-08:00",
+    "EndTime": "2020-03-06T21:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Keynote: DNS Wars - Episode IV -- A New Bypass",
+    "Description": "Since commercialization and privatization of the Internet first began in the 1990's, there has been a steady push to move access side DNS (called \"recursive\") away from customer networks and towards first ISP's and later Cisco, Google, IBM, and Cloudflare. What are the real motives for this trend? What are the risks and costs, and who pays them? Dr. Vixie has worked in the DNS field since 1989 and has invented many of the monitoring and filtering capabilities now used by nearly all DNS services, and he will try to explain what's happening.",
+    "Location": "Ballroom DE",
+    "StartTime": "2020-03-07T10:00:00-08:00",
+    "EndTime": "2020-03-07T11:00:00-08:00",
+    "Speakers": "Paul Vixie",
+    "Topic": "Keynote"
+  },
+  {
+    "Name": "Ahead in the Clouds",
+    "Description": "Serverless apps are everywhere these days, but how do you get started? How do you decide which provider to go with? I have created the same Python app with 3 services, AWS, Google Cloud & Microsoft Azure. I will go over the highlights and lowlights, and how to judge what’s right for your project.",
+    "Location": "Ballroom A",
+    "StartTime": "2020-03-07T11:30:00-08:00",
+    "EndTime": "2020-03-07T12:30:00-08:00",
+    "Speakers": "Michelle Brenner",
+    "Topic": "Cloud"
+  },
+  {
+    "Name": "Not Your Average Mentoring Talk",
+    "Description": "Mentoring still stands as one of the most requested programs in open source and across industries. The traditional 1:1 approach doesn’t scale yet it’s the status quo – why? We can build systems that have the weight of the world but we have problems building our own people up. In this talk, Paris and Josh will talk about examples of mentoring programs that Kubernetes has built – both successfully and lessons learned in a large 26000 person contributor community.",
+    "Location": "Room 107",
+    "StartTime": "2020-03-07T11:30:00-08:00",
+    "EndTime": "2020-03-07T12:30:00-08:00",
+    "Speakers": "Paris Pittman, Josh Berkus",
+    "Topic": "Mentoring"
+  },
+  {
+    "Name": "Iconic Designs with Ionic - Developing User-Friendly Apps with Ionic Framework",
+    "Description": "Mobile phone applications have provided countless opportunities for people, but most of the success lies in the User Interface. Iconic Framework provides free and easy-to-use tools for anyone looking to develop an app. This toolkit builds hybrid apps which are apps that are accessed through low-level browser shells.",
+    "Location": "Room 212",
+    "StartTime": "2020-03-07T11:30:00-08:00",
+    "EndTime": "2020-03-07T12:30:00-08:00",
+    "Speakers": "Emmanuel Vargas, Mei Yasumaru",
+    "Topic": "Next Generation"
+  },
+  {
+    "Name": "Peel Back the Layers of Your Network with Security Onion",
+    "Description": "Security Onion is a free and open source Linux distro that contains best of breed open source components for enterprise visibility. It was created by defenders for defenders who may not otherwise have the resources for comprehensive visibility. If we can give defenders better visibility, then they can detect their adversaries more quickly and interrupt them before they achieve their objectives!",
+    "Location": "Room 106",
+    "StartTime": "2020-03-07T11:30:00-08:00",
+    "EndTime": "2020-03-07T12:30:00-08:00",
+    "Speakers": "Doug Burks",
+    "Topic": "Security"
+  },
+  {
+    "Name": "My First Pull Request",
+    "Description": "A beginner-friendly introduction into the world Open Source and Pull Requests. Learn how different communities use different styles of sharing code. Watch a quick demo of an actual pull request being submitted. Hear about some ways to get you started contributing!",
+    "Location": "Ballroom C",
+    "StartTime": "2020-03-07T11:30:00-08:00",
+    "EndTime": "2020-03-07T12:30:00-08:00",
+    "Speakers": "Kivanc Yazan",
+    "Topic": "Developer"
+  },
+  {
+    "Name": "Better Reliability with SLOs",
+    "Description": "When Uptime is the core metric that you evaluate on, it might drive behaviors that optimize for that metric, such as slowing down innovation. This talk will describe how to balance availability with innovation, and how to do so transparently.",
+    "Location": "Ballroom F",
+    "StartTime": "2020-03-07T11:30:00-08:00",
+    "EndTime": "2020-03-07T12:30:00-08:00",
+    "Speakers": "Waldo Grunenwald",
+    "Topic": "Observability"
+  },
+  {
+    "Name": "Designing a market to reduce software risk and compensate open source contributors",
+    "Description": "While open source software developers must cope with the risks of under-compensation and burnout, open source software users face the risks of software going unmaintained or unfixed. This talk covers a new market design intended to reduce risk for both developers and users. A simple trading system, similar to a futures market, provides incentivization for not just particular software tasks, but for difficult to manage \"meta\" work such as bug triage. I will show a live demo including several use cases.",
+    "Location": "Ballroom H",
+    "StartTime": "2020-03-07T11:30:00-08:00",
+    "EndTime": "2020-03-07T12:30:00-08:00",
+    "Speakers": "Don Marti",
+    "Topic": "Open Source in Enterprises"
+  },
+  {
+    "Name": "How Ticketmaster Fights Fraud",
+    "Description": "With the rise of chip-and-pin for in-person credit card transactions, online fraud has increased dramatically. This problem has become so significant for Ticketmaster that an entire team of data scientists and engineers were dedicated to solving the problem and keeping tickets in the hands of fans. The models in o production require extensive open-source infrastructure to evaluate every transaction in real time. This talk will describe that infrastructure in detail, including the extensive use of Kafka, Spark, Terraform, Java, Python, and Kubernetes.",
+    "Location": "Ballroom G",
+    "StartTime": "2020-03-07T11:30:00-08:00",
+    "EndTime": "2020-03-07T12:30:00-08:00",
+    "Speakers": "Mark Roden",
+    "Topic": "General"
+  },
+  {
+    "Name": "HySDS: Ok, but what the hell is it?",
+    "Description": "HySDS is a modular, open source, big data processing program being developed at Jet Propulsion Laboratory in Pasadena, CA. In the Fall of 2019, two interns were taken on to improve the documentation surrounding the project. Both for the purpose of onboarding new hires at JPL, as well as generating interest from the general public.Now the interns are here to present what they've learned, and how you can be sure that your documentation helps your open source project rather than hindering it.",
+    "Location": "Room 104",
+    "StartTime": "2020-03-07T11:30:00-08:00",
+    "EndTime": "2020-03-07T12:30:00-08:00",
+    "Speakers": "Spencer Sullivan",
+    "Topic": "Open Data"
+  },
+  {
+    "Name": "How a Kubernetes Operator Can Make Relational Databases Safer",
+    "Description": "Moving your data to Kubernetes is often considered dangerous. Kubernetes was designed as a platform that assumes all resources are ephemeral, and can be destroyed at a moment’s notice. However, we’ve found that with a well-designed Operator, running your database in Kubernetes is far more resilient than running your database outside of a container orchestrator. We demonstrate how this can be achieved, and hope to inspire others to build operators that not only make stateful workloads in Kubernetes possible, but improve the resilience of that state, even over traditional database options.",
+    "Location": "Ballroom B",
+    "StartTime": "2020-03-07T11:30:00-08:00",
+    "EndTime": "2020-03-07T12:30:00-08:00",
+    "Speakers": "Liz van Dijk, Peter Farr",
+    "Topic": "Container and Orchestrators"
+  },
+  {
+    "Name": "Crafting a Life-Changing Tech Internship Experience",
+    "Description": "Every great career begins with a dream. However, that alone is often not enough. A dreamer must be given the opportunity to try, to fail and to succeed. In 1999, I was fortunate enough to go to Tokyo for a summer internship. That’s where I met Joi Ito, got exposed to open source software for the first time and much more. It was a life-changing experience and even today I continue to cherish it. Fast forward to today, I started an internship program at a Fintech company and am having some success in building a stellar team of misfits while offering a similar life-changing experience.",
+    "Location": "Room 107",
+    "StartTime": "2020-03-07T13:30:00-08:00",
+    "EndTime": "2020-03-07T14:30:00-08:00",
+    "Speakers": "Cho-Nan Tsai",
+    "Topic": "Mentoring"
+  },
+  {
+    "Name": "Easy Service Discovery in Hybrid Environments with Consul",
+    "Description": "Learn how to use the world’s most popular open-source service discovery tool, Consul. Say goodbye to that cumbersome spreadsheet or CMDB software. The Consul service catalog provides an always up-to-date view of all the services in your network. Connect any application to any service on any infrastructure.",
+    "Location": "Ballroom A",
+    "StartTime": "2020-03-07T13:30:00-08:00",
+    "EndTime": "2020-03-07T14:30:00-08:00",
+    "Speakers": "Jake Lundberg",
+    "Topic": "Cloud"
+  },
+  {
+    "Name": "IPv6 Multicast and the Next Generation Internet",
+    "Description": "Written in 2001, RFC 3170 states: \"IP Multicast will play a prominent role on the Internet in the coming years. It is a requirement, not an option, if the Internet is going to scale. Multicast allows application developers to add more functionality without significantly impacting the network.\" Nearly two decades later, multicast is still largely ignored and misunderstood. This talk explains why multicast is the missing piece in the decentralization puzzle, how multicast can help the Internet continue to scale, better protect our privacy, solve IOT problems and make polar bears happier.",
+    "Location": "Room 101",
+    "StartTime": "2020-03-07T13:30:00-08:00",
+    "EndTime": "2020-03-07T14:30:00-08:00",
+    "Speakers": "Brett Sheffield",
+    "Topic": "SysAdmin"
+  },
+  {
+    "Name": "10 things I wish I knew before experiencing burnout",
+    "Description": "Working in technology and open source communities can put you into some high-stress situations. But you don’t want to go over the edge and put yourself in a situation where you are going through burnout. In this session, you’ll hear personal stories and experiences with burnout and learn ways to prevent and manage stress.",
+    "Location": "Room 105",
+    "StartTime": "2020-03-07T13:30:00-08:00",
+    "EndTime": "2020-03-07T14:30:00-08:00",
+    "Speakers": "Jason Hibbets",
+    "Topic": "Mentoring"
+  },
+  {
+    "Name": "Containers & Java: What I wish I had been told",
+    "Description": "Containers revolutionized the way we develop, architect and deploy our application and become the executables of the cloud! However running cloud native java applications may be challenging, especially for old java versions! This presentation will review tools and best practices to adopt, as well as pitfalls to avoid while deploying your java applications in containers!",
+    "Location": "Ballroom B",
+    "StartTime": "2020-03-07T13:30:00-08:00",
+    "EndTime": "2020-03-07T14:30:00-08:00",
+    "Speakers": "Mohammed Aboullaite",
+    "Topic": "Container and Orchestrators"
+  },
+  {
+    "Name": "Getting Started in Video Editing With Shotcut",
+    "Description": "With the rise of today's video-sharing platforms, several people have been drawn to the process of creating content. However, many of these amateur creators feel discouraged when they discover just how complicated the video editing process can be. Thankfully, there is Shotcut - an open-source application that can help make this process more fluid for any aspiring video editors with a variety of tools, features, and even tutorials. On top of that, Shotcut is cross-platform, letting it run on any operating system. Using Shotcut, anyone can get started in becoming a video editor.",
+    "Location": "Room 212",
+    "StartTime": "2020-03-07T13:30:00-08:00",
+    "EndTime": "2020-03-07T14:30:00-08:00",
+    "Speakers": "Diego Castillo, Isaiah Domenden",
+    "Topic": "Next Generation"
+  },
+  {
+    "Name": "Turris Sentinel: Catching the bad guys for fun",
+    "Description": "There are plenty of attackers on the Internet. They seek any vulnerable device available online. Who are they? What are they trying to do? And how to defend yourself? We are trying to answer some of those questions by making open source routers, that can serve as a security probes around the world. We are gathering data about bad guys and we are sharing them. And you can join us and make it harder for the bad guys even without the router. Want to know how to easily mess with those guys? Want to be better protected? I'll tell you how you can use what we do to achieve that!",
+    "Location": "Room 106",
+    "StartTime": "2020-03-07T13:30:00-08:00",
+    "EndTime": "2020-03-07T14:30:00-08:00",
+    "Speakers": "Michal Hrusecky",
+    "Topic": "Security"
+  },
+  {
+    "Name": "What'll We Do When FOSS Licenses Jump the Shark?",
+    "Description": "Recently, the process of FOSS license creation has been politicized from all directions, primarily by for-profit companies. We now see companies and their lawyers promulgating seemingly-FOSS but non-commercial-use only licenses. Even worse, some companies seek to redefine copyleft into a toxic system that is inoculated only by a separate proprietary license. Activists have meanwhile created well-meaning licenses that use denial of software freedom to advance important causes, but are ultimately non-FOSS. This talk discusses what we should do next about this complex confluence of events.",
+    "Location": "Ballroom G",
+    "StartTime": "2020-03-07T13:30:00-08:00",
+    "EndTime": "2020-03-07T14:30:00-08:00",
+    "Speakers": "Bradley Kuhn",
+    "Topic": "General"
+  },
+  {
+    "Name": "Make Python Great Again",
+    "Description": "Writing Python code is quite enjoyable. That is until you realize one project's dependencies are not compatible with another's. Or, the version of Python differs from your laptop to production. This is a frustrating experience, but it does not have to be like this. Today there are a few tools that, when combined, can prevent this pain. Pythonistas, developers, and systems engineers, of novice and intermediate expertise with Python, can benefit from this presentation.",
+    "Location": "Ballroom C",
+    "StartTime": "2020-03-07T13:30:00-08:00",
+    "EndTime": "2020-03-07T14:30:00-08:00",
+    "Speakers": "Carlos Meza",
+    "Topic": "Developer"
+  },
+  {
+    "Name": "Modernization as a Forcing Function",
+    "Description": "Advances in technology always have us striving for performance, shiny new features, and cool gadgets to play with. What happens to the Isle of Misfit Toys when the customers want the sexy new social media integrations and the developers don’t want to tinker with that LAMP stack when there are containers to orchestrate?",
+    "Location": "Ballroom H",
+    "StartTime": "2020-03-07T13:30:00-08:00",
+    "EndTime": "2020-03-07T14:30:00-08:00",
+    "Speakers": "Heather Osborn",
+    "Topic": "General"
+  },
+  {
+    "Name": "Making Apache Spark™ Better with Delta Lake",
+    "Description": "Apache Spark™ is the dominant processing framework for big data. Delta Lake adds reliability to Spark so your analytics and machine learning initiatives have ready access to quality, reliable data. This presentation covers the use of Delta Lake to enhance data reliability for Spark environments.",
+    "Location": "Room 104",
+    "StartTime": "2020-03-07T13:30:00-08:00",
+    "EndTime": "2020-03-07T14:30:00-08:00",
+    "Speakers": "Steven Yu",
+    "Topic": "Open Data"
+  },
+  {
+    "Name": "Confessions of a Sysadmin",
+    "Description": "As members of the tech community we have ALL experienced an awkward moment or two… or five. We’re here to get real and hit a few points that we’ve experienced in our careers, from mansplaining to being told that real admins only use arch we will confess the sins of the Linux world in hopes of inspiring the next generation. Using our experience to give you a real world practical approach to not only getting started with Linux but the open source community as a whole; and along the way we will tell a few stories that we think you *just* might be able to relate to.",
+    "Location": "Ballroom H",
+    "StartTime": "2020-03-07T15:00:00-08:00",
+    "EndTime": "2020-03-07T16:00:00-08:00",
+    "Speakers": "Ell Marquez",
+    "Topic": "General"
+  },
+  {
+    "Name": "Uyuni: Adding flavor to open source infrastructure management.",
+    "Description": "As Linux and open source continue to expand into all areas of IT, sysadmins need a concise way to manage patches, deployments, security, and configurations to name just a few. The new Uyuni project intends to answer those questions and more.This presentation will introduce Uyuni and give a demo of use-cases across several Linux platforms and architectures.",
+    "Location": "Room 105",
+    "StartTime": "2020-03-07T15:00:00-08:00",
+    "EndTime": "2020-03-07T16:00:00-08:00",
+    "Speakers": "Patrick Swartz",
+    "Topic": "Open Source in Enterprises"
+  },
+  {
+    "Name": "eBPFTrace - Finally Dtrace Replacement on Linux",
+    "Description": "In this presentation, we will look into eBPFTrace as a capable Dtrace replacement. We will also show how you can develop your own tools and utilities using eBPFTrace as well as how you can use the tools from eBPFTrace collection to get great insights into Linux Operations.",
+    "Location": "Ballroom F",
+    "StartTime": "2020-03-07T15:00:00-08:00",
+    "EndTime": "2020-03-07T16:00:00-08:00",
+    "Speakers": "Peter Zaitsev",
+    "Topic": "Observability"
+  },
+  {
+    "Name": "Web acceleration mechanics",
+    "Description": "Client and backend server connections management; HTTP message queues and backend server connections failovering in HTTP standards and proxy implementations; How HTTP/1.x, HTTP/2, and HTTP/3 (QUIC) decoders and parsers interact to each other; HPACK and QPACK compression from HTTP/2 and HTTP/3 (QUIC) and when it hurts performance; What and how HTTP allows to cache; Different caching architectures; Network I/O and TLS optimizations available in some web accelerators and modern Linux kernels;",
+    "Location": "Room 101",
+    "StartTime": "2020-03-07T15:00:00-08:00",
+    "EndTime": "2020-03-07T16:00:00-08:00",
+    "Speakers": "Alexander Krizhanovsky",
+    "Topic": "SysAdmin"
+  },
+  {
+    "Name": "Heads: Tamper-evident Firmware with User-controlled Keys",
+    "Description": "Having a trustworthy boot process is the foundation of the rest of your system's security. If your BIOS, kernel, or initrd have been tampered with, an attacker can hide their backdoor from the rest of the system. This talk will discuss the security threats against the boot process and briefly cover some other approaches to protect against boot-time attacks but the talk will primarily focus on Heads, an open source project that provides tamper-evident boot. I will discuss how Heads works, how it differs from other secure boot approaches, and demonstrate how it protects against tampering.",
+    "Location": "Room 106",
+    "StartTime": "2020-03-07T15:00:00-08:00",
+    "EndTime": "2020-03-07T16:00:00-08:00",
+    "Speakers": "Kyle Rankin",
+    "Topic": "Security"
+  },
+  {
+    "Name": "A peek behind the curtain: Managing the Kubernetes contributor community",
+    "Description": "The Kubernetes community is a vibrant beacon in open source. It takes a village to enable a city of contributors doing what they do best. There are a lot of fun stories and lessons to be shared from helping out the community. One lesson is taken straight from the Kubernetes project itself: declarative config management. Join us as we journey through the many bits of community automation and weigh the merits of automating every aspect of our community.",
+    "Location": "Ballroom B",
+    "StartTime": "2020-03-07T15:00:00-08:00",
+    "EndTime": "2020-03-07T16:00:00-08:00",
+    "Speakers": "Jeffrey Sica, Bob Killen",
+    "Topic": "Container and Orchestrators"
+  },
+  {
+    "Name": "Enabling computers to interpret web design layouts and generate aesthetic websites using machine learning",
+    "Description": "Developing engaging websites can be achieved more efficiently by utilizing machine learning and artificial intelligence. A deep analysis of web design layouts, graphics, text, and colors would allow machines to produce customized websites that would gain much attention. Unsupervised deep learning provides an enhanced way of comprehending inherent patterns in websites. After personally analyzing websites and gathering research, my proposed project of a computer being able to generate multiple websites based on a few words could revolutionize web designing.",
+    "Location": "Room 212",
+    "StartTime": "2020-03-07T15:00:00-08:00",
+    "EndTime": "2020-03-07T16:00:00-08:00",
+    "Speakers": "Ikenna Ogbogu",
+    "Topic": "Next Generation"
+  },
+  {
+    "Name": "The Path to GitOps",
+    "Description": "Pipelines are a traditional component of CI/CD processes in development environments and a key component of DevOps practices. As dependencies, microservices and cloud-provider requirements grow, pipelines are becoming monolithic. In this talk, we will discuss and demonstrate how to migrate monolithic pipelines to a declarative GitOps-enabled Workflows that treat your individual CD activities as shareable blocks using Jenkins, Argo Flux and Kubernetes.",
+    "Location": "Ballroom A",
+    "StartTime": "2020-03-07T15:00:00-08:00",
+    "EndTime": "2020-03-07T16:00:00-08:00",
+    "Speakers": "Rami AlGhanmi, Miguel Zuniga",
+    "Topic": "Cloud"
+  },
+  {
+    "Name": "Consensus Building: This is the way",
+    "Description": "Building consensus among technically minded individuals can be challenging, time consuming and at times -- incredibly frustrating. In this session we'll explore this topic together, looking at how some engineering cultures make it a necessity, some of the reasons for why it can be so difficult, as well as reasons why it's worth the effort and some strategies which might make consensus easier to achieve. To finish things off, we'll take a look at two actual case studies to see how it was done, and some lessons learnt.",
+    "Location": "Room 107",
+    "StartTime": "2020-03-07T15:00:00-08:00",
+    "EndTime": "2020-03-07T16:00:00-08:00",
+    "Speakers": "Richard Wareing",
+    "Topic": "Mentoring"
+  },
+  {
+    "Name": "Device Identity, and why it matters",
+    "Description": "More details to come.",
+    "Location": "Ballroom G",
+    "StartTime": "2020-03-07T15:00:00-08:00",
+    "EndTime": "2020-03-07T16:00:00-08:00",
+    "Speakers": "Matthew Garrett",
+    "Topic": "General"
+  },
+  {
+    "Name": "The Legend of WebAssembly, and the Missing Link",
+    "Description": "WebAssembly (Wasm) is a universal low level bytecode that runs on the web. WASI is a low-level, modular system interface for WebAssembly. This talk will cover the basics of building WebAssembly modules for both the browser and WASI using AssemblyScript. Then we will highlight some characteristics of WebAssembly that make it a great fit for containerization. Such as capability based permissions, sandboxing, and portability. After this, we will show off running QuickJS compiled to WASI running on the server.",
+    "Location": "Ballroom C",
+    "StartTime": "2020-03-07T16:30:00-08:00",
+    "EndTime": "2020-03-07T17:30:00-08:00",
+    "Speakers": "Aaron Turner",
+    "Topic": "Developer"
+  },
+  {
+    "Name": "Building a thriving community in (for-profit) open source projects",
+    "Description": "At first glance, it may seem impossible to build an open and authentic community for a company-based open source project when you need to balance the needs of the company with those of the community. In this talk, learn how to build a thriving community by understanding the intrinsic motivations of community members while providing opportunities for them to grow and have a voice in the community. There will also be a discussion on how diverse viewpoints and being responsive to contributions is beneficial to both the community and the company.",
+    "Location": "Ballroom G",
+    "StartTime": "2020-03-07T16:30:00-08:00",
+    "EndTime": "2020-03-07T17:30:00-08:00",
+    "Speakers": "Ray Paik",
+    "Topic": "Mentoring"
+  },
+  {
+    "Name": "Building Raspberry PI Supercomputers",
+    "Description": "Federico discusses what is required to integrate clusters of ARM SBCs, with a focus on Raspberry PI units due to their popularity; the software integration necessary to make them practical, what is necessary to easily configure nodes, and issue commands for system operation; and concludes with how to execute numerical workloads using the MPI interface.",
+    "Location": "Ballroom H",
+    "StartTime": "2020-03-07T16:30:00-08:00",
+    "EndTime": "2020-03-07T17:30:00-08:00",
+    "Speakers": "Federico Lucifredi",
+    "Topic": "General"
+  },
+  {
+    "Name": "What's new in Sudo 1.9",
+    "Description": "Sudo is used by millions of Linux/Unix users to run commands as root or another privileged user, but most people are not familiar with all Sudo can do. Come listen to Sudo Project Maintainer Todd Miller and Open Source Evangelist Peter Czanick talk about changes in the next major release of Sudo, version 1.9. We will highlight changes to the Sudo Plugin interface, showcase the new centralized session recording functionality, and provide a short tutorial on writing Sudo plugins in Python. Finally, we will discuss some of the lesser-known features of Sudo.",
+    "Location": "Room 101",
+    "StartTime": "2020-03-07T16:30:00-08:00",
+    "EndTime": "2020-03-07T17:30:00-08:00",
+    "Speakers": "Todd Miller, Peter Czanik",
+    "Topic": "SysAdmin"
+  },
+  {
+    "Name": "Artificial Intelligence the Next Mozart",
+    "Description": "In our advancing technological world, AI will only become more prevalent in our lives. Tensorflow, an Open-Source application, allows developers to outline, create, and teach Deep Learning technology. Students from Palisades Charter High School examine this application and its features first hand in an AI model to teach it to produce music. Come join us to listen to the music produced utilizing AI to gain practical knowledge on how you can use TensorFlow for your future projects.",
+    "Location": "Room 212",
+    "StartTime": "2020-03-07T16:30:00-08:00",
+    "EndTime": "2020-03-07T17:30:00-08:00",
+    "Speakers": "Skyler Josinger, Tyler Rowland, Morgan Greenwald",
+    "Topic": "Next Generation"
+  },
+  {
+    "Name": "A nicer numpy",
+    "Description": "Numpy is a widely-used tool for numerical computation in Python. Despite its wide reach, some of its core functionality is opaque, and in need of improvement. I will describe two libraries that aim to make numpy much more pleasant: \"numpysane\" provides facilities for reasonable manipulation of dimensions, array concatenation and broadcasting (in both Python and in C). \"gnuplotlib\" is a plotting library with gnuplot as the backend. It is fast, has a nice API, and produces the same plots as non-Python-based tools.",
+    "Location": "Room 104",
+    "StartTime": "2020-03-07T16:30:00-08:00",
+    "EndTime": "2020-03-07T17:30:00-08:00",
+    "Speakers": "Dima Kogan",
+    "Topic": "Open Data"
+  },
+  {
+    "Name": "The Open Source Way 2.0 - A Practical Guide",
+    "Description": "As a community manager or any other contributor to an open source project, you'll find yourself learning and thinking of good methods and practices for having a happy, successful, and productive project. Community managers and other contributors share these practices with each other all the time -- in talks, in person, as blog posts, and sometimes as a stand-alone book. But has anyone ever really collaborated on a guide that is for practitioners and collaboratively written BY practitioners? Actually, yes: 10 years ago The Open Source Way 1.0 was written and released. Now 2.0 is here.",
+    "Location": "Room 107",
+    "StartTime": "2020-03-07T16:30:00-08:00",
+    "EndTime": "2020-03-07T17:30:00-08:00",
+    "Speakers": "Karsten Wade",
+    "Topic": "Mentoring"
+  },
+  {
+    "Name": "Options for Deploying & Managing Kubernetes on AWS",
+    "Description": "This talk goes over an introduction to Amazon Elastic Container Service for Kubernetes (Amazon EKS) on AWS. Learn how to easily manage, deploy and scale containerized applications on Amazon EKS. We’ll dive into a hands-on demonstration on how to initially provision new k8s clusters or manage a long running cluster using eksctl, an open source CLI tool for Amazon EKS. We will explore how eksctl can be used to provision a fully managed k8s control plane and on demand right size computing for pods.",
+    "Location": "Ballroom B",
+    "StartTime": "2020-03-07T16:30:00-08:00",
+    "EndTime": "2020-03-07T17:30:00-08:00",
+    "Speakers": "Vicky Tanya Seno",
+    "Topic": "Container and Orchestrators"
+  },
+  {
+    "Name": "Make Books Great Again",
+    "Description": "People have predicted the death of print for years but that doesn’t seem to be the case. What headwinds does No Starch Press face as a book publisher and why are people still buying print?",
+    "Location": "Room 105",
+    "StartTime": "2020-03-07T16:30:00-08:00",
+    "EndTime": "2020-03-07T17:30:00-08:00",
+    "Speakers": "Bill Pollock",
+    "Topic": "General"
+  },
+  {
+    "Name": "Security after death - it is not your problem, or is it?",
+    "Description": "The talk covers practical solutions for securely storing passwords, secure ways to share those master passwords. I will also answer the question; “How do I allow others to access all my password after I am unavailable, incapacitated or dead?”",
+    "Location": "Room 106",
+    "StartTime": "2020-03-07T16:30:00-08:00",
+    "EndTime": "2020-03-07T17:30:00-08:00",
+    "Speakers": "Ty Shipman",
+    "Topic": "Security"
+  },
+  {
+    "Name": "Seeing RED",
+    "Description": "RED (Rates, Errors, Duration) is designed for monitoring microservices. RED gives you the framework to build alerting, monitoring and analysis into a flexible structure to meet the emerging needs of services-based cloud-native architectures and give you the capability to grow as your environment scales. By seeing multiple dimensions, we can monitor and focus to get to root cause faster, with less false positives and quicker resolution. We’ll look at how signals impact observability. The RED approach will help reduce your production issues and fail panics we all see.",
+    "Location": "Ballroom F",
+    "StartTime": "2020-03-07T18:00:00-08:00",
+    "EndTime": "2020-03-07T19:00:00-08:00",
+    "Speakers": "Dave McAllister",
+    "Topic": "Observability"
+  },
+  {
+    "Name": "Why an Open Source Program Office (OSPO) is key to your company and open source projects",
+    "Description": "Open source is becoming a key ingredient for companies to succeed. To achieve it, companies need to efficiently manage their relationship with open source projects. And that’s the main goal for companies’ Open Source Program Office (OSPO). So, they are key for companies' success. But, additionally, they could be very important for open source projects sustainability.",
+    "Location": "Room 105",
+    "StartTime": "2020-03-07T18:00:00-08:00",
+    "EndTime": "2020-03-07T19:00:00-08:00",
+    "Speakers": "Manrique Lopez",
+    "Topic": "Open Source in Enterprises"
+  },
+  {
+    "Name": "Fedora 31 Highlights",
+    "Description": "This introductory workshop looks at some of the key changes integrating into the Fedora 31 Linux distribution.",
+    "Location": "Ballroom H",
+    "StartTime": "2020-03-07T18:00:00-08:00",
+    "EndTime": "2020-03-07T19:00:00-08:00",
+    "Speakers": "Perry Rivera, Alex Acosta, Ivan Chavero",
+    "Topic": "General"
+  },
+  {
+    "Name": "Open source project data is not open data",
+    "Description": "Open source works in the open, that means git log, email archives, etc. are open data, right? WRONG! This talk walks through the legal and technical challenges for analyzing open source projects. Solutions and best practices will be shared. The audience is expected to have experience with open source projects and to have an interest in learning more about analyzing those projects. This can include maintainers, community managers, organizational open source program officers, academics, or data scientists with an interest in data from open source.",
+    "Location": "Room 104",
+    "StartTime": "2020-03-07T18:00:00-08:00",
+    "EndTime": "2020-03-07T19:00:00-08:00",
+    "Speakers": "Georg Link",
+    "Topic": "Open Data"
+  },
+  {
+    "Name": "Tuning Linux for MongoDB",
+    "Description": "MongoDB is a popular document-oriented database. Like most databases, MongoDB benefits from particular GNU/Linux system tuning. While GNU/Linux distributions and container distributions create good default configurations, they need some changes to get optimal performance for your database needs. Attendees will learn about the following for MongoDB: * Linux kernel tuning * memory tuning * block device tuning * filesystem tuning * network tuning",
+    "Location": "Room 101",
+    "StartTime": "2020-03-07T18:00:00-08:00",
+    "EndTime": "2020-03-07T19:00:00-08:00",
+    "Speakers": "der hans",
+    "Topic": "SysAdmin"
+  },
+  {
+    "Name": "The Practice of Practice: Teamwork in Complexity",
+    "Description": "The talk will unravel the methodology around how we humans come together and operate complex software systems by taking a closer look at intuition through the eyes of performing in a music ensemble. It will introduce the concept of Fundamental Common Ground Breakdown and how this interrupts our efforts to collaborate and respond to events and incidents. A Chaos Engineering Game Day walkthrough will show that intuition is not an act of instinct, but a developed ability based on careful analysis and practice. It shows being inspired by working together in tech is a thing, like playing in a band.",
+    "Location": "Ballroom A",
+    "StartTime": "2020-03-07T18:00:00-08:00",
+    "EndTime": "2020-03-07T19:00:00-08:00",
+    "Speakers": "Matt Davis",
+    "Topic": ""
+  },
+  {
+    "Name": "Surf and L(earn)",
+    "Description": "Brave is a free and Open-Source web-browser built on the Chromium engine. Our research purpose is to experiment with how this “reward system” function can benefit you. The primary focus is to see whether this “reward system” is worth switching over to. Over a three month time period, we’ll shed some light and provide you our perspective on this new approach to earn some extra bucks while surfing the web.",
+    "Location": "Room 212",
+    "StartTime": "2020-03-07T18:00:00-08:00",
+    "EndTime": "2020-03-07T19:00:00-08:00",
+    "Speakers": "Alexander Ziff, Anthony Langer",
+    "Topic": "Next Generation"
+  },
+  {
+    "Name": "Security N00b? Some Free Info to Explore",
+    "Description": "For the newcomer cybersecurity is a very broad field, and there is a lot of information to explore. This presentation will offer some free resources mainly organized in three areas: Management – most non-technical security issues Infrastructure – most technical items that are not created by the organization but enable the work to get done Engineering – anything the organization creates, builds, sells, or provides to customers. Additional resources will include helpful general information, local meetings to attend, certification considerations, and educating oneself.",
+    "Location": "Room 106",
+    "StartTime": "2020-03-07T18:00:00-08:00",
+    "EndTime": "2020-03-07T19:00:00-08:00",
+    "Speakers": "Nathan Chan",
+    "Topic": "Security"
+  },
+  {
+    "Name": "Lessons in Mentorship: Teaching High School Girls to Code",
+    "Description": "Women have historically been underrepresented in technology fields leading to an increased need for mentorship tailored to female students. At San Marino High School, we have been running a club with the goal of inspiring female students to understand technology and pursue careers in technology. Through success and failure we have learned a number of strategies to teach female students. This talk will present these strategies and detail lessons-learned useful to all mentors teaching all students.",
+    "Location": "Room 107",
+    "StartTime": "2020-03-07T18:00:00-08:00",
+    "EndTime": "2020-03-07T19:00:00-08:00",
+    "Speakers": "Michael Starch",
+    "Topic": "Mentoring"
+  },
+  {
+    "Name": "How to build open core that works",
+    "Description": "Open Core is a model that is becoming increasingly popular in Open Source, but it is surrounded by conjecture, controversy, and confusion. How exactly do you get the balance right between an open source project and a commercial product or service? In this new presentation from Jono Bacon, he walks through the core elements of building a successful Open Core project, covering strategy, policy, governance, engineering workflow, and much more.",
+    "Location": "Ballroom G",
+    "StartTime": "2020-03-07T18:00:00-08:00",
+    "EndTime": "2020-03-07T19:00:00-08:00",
+    "Speakers": "Jono Bacon",
+    "Topic": "General"
+  },
+  {
+    "Name": "Maven Renewed: An Old Friend Reworked for a New Release World",
+    "Description": "Primer on reworking Maven for modern, containerized CI/CD build systems using CIS automation platforms like Jenkins. Maven is a very flexible build tool that evolved over the past 15+ years using strict processes for semantic versioning. However, tagging in today's diverse release ecosystem benefits from lightweight process. While many software stacks leverage Maven's strict semantics, its legacy release process withered under large, modern codebases. We demonstrate a faster Maven build and tag approach thanks to recent software improvements that promote a modern no-release-plugin workflow.",
+    "Location": "Ballroom C",
+    "StartTime": "2020-03-07T18:00:00-08:00",
+    "EndTime": "2020-03-07T19:00:00-08:00",
+    "Speakers": "John Engelke",
+    "Topic": "Developer"
+  },
+  {
+    "Name": "Kubernetes Test Drive",
+    "Description": "Are you a Docker aficionado or are you new to the Docker ecosystem? Come see how Kubernetes (K8s) adds a mature solution for running containers in production and development. We'll start with containers, layer in pods, replica sets, deployments, and services. We'll dig into minikube and kubernetes in docker desktop. You'll leave with a solid understanding of the principles of K8s, and a practical set of skills for driving this container orchestrator throughout the software development lifecycle.",
+    "Location": "Ballroom B",
+    "StartTime": "2020-03-07T18:00:00-08:00",
+    "EndTime": "2020-03-07T19:00:00-08:00",
+    "Speakers": "Rob Richardson",
+    "Topic": "Container and Orchestrators"
+  },
+  {
+    "Name": "Rust",
+    "Description": "The Rust programming language is designed to empower everyone to build reliable and efficient software.",
+    "Location": "Ballroom A",
+    "StartTime": "2020-03-07T19:00:00-08:00",
+    "EndTime": "2020-03-07T20:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Kubernetes",
+    "Description": "This BoF is for anyone interested in Kubernetes, the open-source container-orchestration system. Do you have burning questions about Kubernetes? Strong opinions about service mesh? Just learning what a pod is? Whether you are a veteran user or are brand new to the world of Kubernetes, this BoF will provide a forum for good discussions and knowledge sharing, a place to celebrate success stories or vent about your cluster woes. This is an inclusive environment and all questions, backgrounds, and knowledge levels are welcome. Join us to connect with your community over all things Kubernetes.",
+    "Location": "Ballroom B",
+    "StartTime": "2020-03-07T19:00:00-08:00",
+    "EndTime": "2020-03-07T20:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Pull Request Night",
+    "Description": "Let's work on open source projects together. Bonus points if you can send a pull request! This event is beginner friendly, feel free to bring all your questions.",
+    "Location": "Ballroom C",
+    "StartTime": "2020-03-07T19:00:00-08:00",
+    "EndTime": "2020-03-07T20:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "LGBTQIA",
+    "Description": "For members of the LGBTQIA community to meet, network, and chat with each other. This will be a safe and inclusive environment.",
+    "Location": "Ballroom G",
+    "StartTime": "2020-03-07T19:00:00-08:00",
+    "EndTime": "2020-03-07T20:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Fediverse and decentralized social networking GetTogether",
+    "Description": "Welcome to the Fediverse! A BoF for people interested in ActivityPub, Mastodon, PixelFed, Plume, Pleroma, GNU Social, Matrix, GetTogether, Diaspora, identi.ca, Status.net, pump.io or other decentralized, Free Software social networking services.",
+    "Location": "Ballroom F",
+    "StartTime": "2020-03-07T19:00:00-08:00",
+    "EndTime": "2020-03-07T20:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Libre Graphics",
+    "Description": "Come chat about any and all graphics and arts applications!",
+    "Location": "Ballroom F",
+    "StartTime": "2020-03-07T20:00:00-08:00",
+    "EndTime": "2020-03-07T21:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Nix{OS,pkgs,Ops,-shell}",
+    "Description": "The Nix ecosystem.",
+    "Location": "Ballroom A",
+    "StartTime": "2020-03-07T20:00:00-08:00",
+    "EndTime": "2020-03-07T21:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Stammtisch",
+    "Description": "Stammtisch at SCaLE: for those who speak German or regularly attend a Free Software Stammtisch",
+    "Location": "Ballroom B",
+    "StartTime": "2020-03-07T20:00:00-08:00",
+    "EndTime": "2020-03-07T21:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Cross platform mobile app development with Flutter",
+    "Description": "Let’s talk about Flutter, an awesome cross platform mobile app development framework",
+    "Location": "Ballroom H",
+    "StartTime": "2020-03-07T20:00:00-08:00",
+    "EndTime": "2020-03-07T21:00:00-08:00",
+    "Speakers": "",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Workshop: Hosting your own media and other homelab shenanigans",
+    "Description": "The Why, the What, and the WTAF of a homelab. Looking at practical ways you can use a loose machine for personal media serving, storage management, and much, much more.",
+    "Location": "Room 211",
+    "StartTime": "2020-03-08T10:00:00-07:00",
+    "EndTime": "2020-03-08T12:00:00-07:00",
+    "Speakers": "Shea Polansky, Morgan Gangwere",
+    "Topic": ""
+  },
+  {
+    "Name": "Keynote: From Prison to Python",
+    "Description": "Sha Wallace-Stepter learned how to program in prison while serving a life sentence for assault with a firearm. He'll share how technology and entrepreneurship shaped his experience growing up in prison and eventually getting out. Continuing from Sha's story, Jessica McKellar will share actions we as technologists can take to dismantle this unjust system together.",
+    "Location": "Ballroom DE",
+    "StartTime": "2020-03-08T10:00:00-07:00",
+    "EndTime": "2020-03-08T11:00:00-07:00",
+    "Speakers": "Sha Stepter, Jessica McKellar",
+    "Topic": "Keynote"
+  },
+  {
+    "Name": "Careering with Both Sides of Your Brain - What do I want to do, and how do I go get that job?",
+    "Description": "Looking for a new career, or even just the next right position? In this creative, yet tactical talk, Lori & Bryna will help you gather feedback, explore your aspirations, and leverage your skills to go get that job.",
+    "Location": "Room 105",
+    "StartTime": "2020-03-08T11:00:00-07:00",
+    "EndTime": "2020-03-08T12:00:00-07:00",
+    "Speakers": "Bryna Kirzner, Lori Barfield",
+    "Topic": "Career Day"
+  },
+  {
+    "Name": "Open Source projects and Secure boot - natural enemies or friends?",
+    "Description": "With the latest Debian release, Secure Boot is officially supported and it follows a list of other Linux Distributions. But how does one get binaries signed off to deploy a Secure Boot compatible custom Kernel or bootloader? This presentation details how the opsi project implemented Secure Boot to provide operating system provisioning with as little administrative interaction as possible",
+    "Location": "Ballroom H",
+    "StartTime": "2020-03-08T11:30:00-07:00",
+    "EndTime": "2020-03-08T12:30:00-07:00",
+    "Speakers": "Mathias Radtke",
+    "Topic": "General"
+  },
+  {
+    "Name": "Rock the Cashbox",
+    "Description": "We take for granted so many of the modern technologies we use and see around us every day, but are they really so modern? ATMs are one such technology, which we rely on to be secure and get us the cash we need from our accounts. ATMs are all around us, but they are always just out of reach... Or are they? This talk explores obtaining ATMs, the strange world of ATM processors, and the trials and struggles to discover how ATMs really work and eventually rock the cash box.",
+    "Location": "Room 103",
+    "StartTime": "2020-03-08T11:30:00-07:00",
+    "EndTime": "2020-03-08T12:30:00-07:00",
+    "Speakers": "Joe Needleman",
+    "Topic": "Embedded Linux"
+  },
+  {
+    "Name": "Smashing Bias with Dynamic Data Versioning",
+    "Description": "Today, AI algorithms are everywhere. They are used in finance, biomedical, automotive, and other industries. They help make decisions about our health, whether you get a loan or not, and whether your resume gets through the HR to the hiring manager. AIs can predict your chances of surviving cancer. But what if that data was biased? Data Scientists need a reliable way to go back in time and analyze their steps with a version-control solution that adheres to the principles of the modern infrastructure and that works with such tools as Kubernetes and Kubeflow.",
+    "Location": "Room 104",
+    "StartTime": "2020-03-08T11:30:00-07:00",
+    "EndTime": "2020-03-08T12:30:00-07:00",
+    "Speakers": "Svetlana Karslioglu",
+    "Topic": "Open Data"
+  },
+  {
+    "Name": "Zero-Knowledge secure and compliant Backups with Bareos Open Source",
+    "Description": "Bareos (Backup Archiving Recovery Open Sourced) is a reliable network Open Source software to backup, archive and restore files from all major operating systems.When backing up sensible data, regulation and policies for retention periods and security measurements have to be considered, especially when using cloud storage for digital assets.The goal for cloud based backups is zero-knowledge-backup.This talk gives an overview of Bareos and shows, how common requirements can be met with Bareos. This includes encryption methods, secure erasure and diverse retention policies.",
+    "Location": "Room 106",
+    "StartTime": "2020-03-08T11:30:00-07:00",
+    "EndTime": "2020-03-08T12:30:00-07:00",
+    "Speakers": "Maik Außendorf",
+    "Topic": "Security"
+  },
+  {
+    "Name": "Using Godot Engine to Simulate a Rotating Space Station in VR",
+    "Description": "Being able to make video games entirely while in Linux has never been easier. Using the special case of simulating a large rotating space station in VR, Tom will explore how to implement various elements of games with Godot including its new and very experimental VR system, as well as software pipelines to create and import assets. Come to learn about VR controllers, rigid body physics, materials, low poly baking, and more.",
+    "Location": "Room 101",
+    "StartTime": "2020-03-08T11:30:00-07:00",
+    "EndTime": "2020-03-08T12:30:00-07:00",
+    "Speakers": "Tom Lechner",
+    "Topic": "LibreGraphics"
+  },
+  {
+    "Name": "FreeBSD, The Other Unix-Like Operating System and Why You Should Get Involved!",
+    "Description": "FreeBSD is one of the oldest, largest, and most successful open source projects, with a long history of innovation. Deb will take you through its long history and highlight some of the features that set FreeBSD apart from other operating systems",
+    "Location": "Ballroom G",
+    "StartTime": "2020-03-08T11:30:00-07:00",
+    "EndTime": "2020-03-08T12:30:00-07:00",
+    "Speakers": "Deb Goodkin",
+    "Topic": "General"
+  },
+  {
+    "Name": "Building Stateful Workloads in Kubernetes",
+    "Description": "It's day 2. Kubernetes is running. You have your deployments and services set. Now how do you migrate the data store? Let's journey together on this code-focused tour through Persistent Volumes, Persistent Volume Claims, and StatefulSets. We'll craft and launch a strategy to care for your users' data in this new container world. You can power your business on Kubernetes: stateless or stateful.",
+    "Location": "Ballroom B",
+    "StartTime": "2020-03-08T11:30:00-07:00",
+    "EndTime": "2020-03-08T12:30:00-07:00",
+    "Speakers": "Rob Richardson",
+    "Topic": "Container and Orchestrators"
+  },
+  {
+    "Name": "Running CentOS on the Facebook fleet",
+    "Description": "We'll focus on how we deploy and manage CentOS on our fleet at Facebook, and showcase challenges, best practices and lessons learned working with a deployment of hundreds of thousands of machines. We'll discuss challenges encountered over the years, tools that we developed to overcome them, the process used to integrate upstream updates, packaging tools and workflows and configuration management challenges. Finally, we'll talk about our approach for working and building relationships with upstream open source communities and projects.",
+    "Location": "Ballroom F",
+    "StartTime": "2020-03-08T11:30:00-07:00",
+    "EndTime": "2020-03-08T12:30:00-07:00",
+    "Speakers": "Davide Cavalca",
+    "Topic": "DevOpsDay LA"
+  },
+  {
+    "Name": "Choosing & Building Better Images",
+    "Description": "As the container ecosystem grows in adoption its key that we learn how to scale the quality of the images being produced to meet the demands of regulated entities. Companies that are required to meet various compliance standards include things like PCIDSS, SOC2, and ISO are interested in joining the container revolution but these standards impose requirements that can be difficult to meet with current images. During this session we will provide a framework for how to evaluate and build better images that make it easier to meet these standards as well improve operational efficiencies.",
+    "Location": "Ballroom A",
+    "StartTime": "2020-03-08T11:30:00-07:00",
+    "EndTime": "2020-03-08T12:30:00-07:00",
+    "Speakers": "Chet Burgess",
+    "Topic": "Cloud"
+  },
+  {
+    "Name": "3D Printing Antennas and Other Dark Arts",
+    "Description": "Antenna design is commonly regarded as one of the hardest specialties of RF engineering, and frequently called \"black magic.\" But if you're not scared of learning a little magic - and you don't have access to six-figure antenna design software - what are some cool projects you could do as an introduction to designing and building your own antennas?",
+    "Location": "Room 212",
+    "StartTime": "2020-03-08T11:30:00-07:00",
+    "EndTime": "2020-03-08T12:30:00-07:00",
+    "Speakers": "Karen Rucker",
+    "Topic": "HAM Radio"
+  },
+  {
+    "Name": "You really don't need javascript",
+    "Description": "JavaScript is your behaviour layer; the way to add interactivity to your sites, to provide a slick and delightful user experience, to make everything fast and easy and clean. But at some point everything changed: the tail started to wag the dog instead and development became Javascript-first. We'll talk about how you maybe shouldn't rely on JS as much as you're told to, and some practical strategies for how to build sites without reaching for a JS framework as first, last, and only tool for making the web happen.",
+    "Location": "Ballroom C",
+    "StartTime": "2020-03-08T11:30:00-07:00",
+    "EndTime": "2020-03-08T12:30:00-07:00",
+    "Speakers": "Stuart Langridge",
+    "Topic": "Developer"
+  },
+  {
+    "Name": "Clinic: Resumes the RaiseMe Way",
+    "Description": "An instructive how-to presentation with exercises and group feedback and support. We’ll work with you in real time on your resume language and your career situation. You'll learn about the job hunting dogma you need to avoid, and where the online resources are for researching potential employers. No registration required.",
+    "Location": "Room 105",
+    "StartTime": "2020-03-08T12:30:00-07:00",
+    "EndTime": "2020-03-08T13:30:00-07:00",
+    "Speakers": "RaiseMe Team",
+    "Topic": "Career Day"
+  },
+  {
+    "Name": "Beyond Two Cans and a String: A practical guide to building a home router",
+    "Description": "Home routers are ubiquitous hardware, but are not an excellent platform for hacking, and are generally very limited in what services or unusual use cases they can support. This talk will cover the choices a home sysadmin can make when considering building a custom router; available form-factors and their impact on the device's future upgradability, as well as the range of software options available, and different network designs that might use a custom router. There is a lab component as well that covers setting up a router, with a service supplied by a machine behind the router.",
+    "Location": "Room 211",
+    "StartTime": "2020-03-08T13:00:00-07:00",
+    "EndTime": "2020-03-08T15:30:00-07:00",
+    "Speakers": "Ben Lewis",
+    "Topic": ""
+  },
+  {
+    "Name": "Microcontroller Architecture for Embedded Programming",
+    "Description": "Coding for microcontrollers is fundamentally different from other coding. We'll cover the spectrum of differences between microcontrollers and microprocessors, and related chips and devices. We'll pragmatically cover the architectural concepts one needs to deal with hardware on a byte/bit level, including various sorts of memory, peripherals and the like.",
+    "Location": "Room 103",
+    "StartTime": "2020-03-08T13:30:00-07:00",
+    "EndTime": "2020-03-08T14:30:00-07:00",
+    "Speakers": "Todd Zebert",
+    "Topic": "Embedded Linux"
+  },
+  {
+    "Name": "How to Train Your Customers",
+    "Description": "There have always been Support horror stories about customers who drive Support staff insane. What if there was a way, though, to turn those problem children into promoters of your service? In this talk we will identify some of the common personalities that are encountered in Support and tips on how to turn them in your favor!",
+    "Location": "Ballroom G",
+    "StartTime": "2020-03-08T13:30:00-07:00",
+    "EndTime": "2020-03-08T14:30:00-07:00",
+    "Speakers": "Brandon Bruce",
+    "Topic": "General"
+  },
+  {
+    "Name": "Stream processing and Open Data, a match made in Heaven",
+    "Description": "Some countries in Europe understand the potential there's in existing data that sits behind closed fences, and passed laws to make this data available to everyone. On the other hand, the batch processing model gets more and more obsolete: users want the information as soon as possible. While there’s a trade-off between correctness of data, and its speed of delivery, most business decisions do not rely on 100% correct data.",
+    "Location": "Room 104",
+    "StartTime": "2020-03-08T13:30:00-07:00",
+    "EndTime": "2020-03-08T14:30:00-07:00",
+    "Speakers": "Nicolas Fränkel",
+    "Topic": "Open Data"
+  },
+  {
+    "Name": "A Practical Introduction to Service Mesh with Linkerd",
+    "Description": "The term Service Mesh encapsulates the concepts designed for insight into and control of a distributed application: Observability, Reliability, Security, & Traffic Management. Whether starting from scratch or migrating an application it is important to have insight into the health of the application components and control over the traffic between the components. This talk will use Linkerd as an example to explain each of these concepts and attendees will learn how the concepts work together to make applications more stable and reliable.",
+    "Location": "Ballroom A",
+    "StartTime": "2020-03-08T13:30:00-07:00",
+    "EndTime": "2020-03-08T14:30:00-07:00",
+    "Speakers": "Charles Pretzer",
+    "Topic": "Cloud"
+  },
+  {
+    "Name": "Hacking the California Consumer Privacy Act for Fun and Profit (and freedom and privacy)",
+    "Description": "The California Consumer Privacy Act (CCPA) helps shift the balance of power on the web away from the \"data brokers\" that share people's sensitive health and finance information on the Internet, and toward sites that people trust. We'll cover how to use the new law to help you automate your privacy preferences and protect your web site's users from companies that track and target them. Regulation alone can't fix the surveillance economy problem, but this new law opens up opportunities for technical measures to protect people's information and increase revenues for legit businesses.",
+    "Location": "Ballroom H",
+    "StartTime": "2020-03-08T13:30:00-07:00",
+    "EndTime": "2020-03-08T14:30:00-07:00",
+    "Speakers": "Don Marti",
+    "Topic": "General"
+  },
+  {
+    "Name": "Practices and Tactics for Surviving Oncall",
+    "Description": "As a Production Engineer on the Operating Systems team at Facebook, I'm a member of one of the more active oncalls for one of the largest fleets of servers in the world. In this talk I'm going to cover the mindset of our oncall, how the values of Production Engineering manifest in the practices of our oncalls, and how I ensure that the workload stays manageable. Ignoring internal tooling, this will focus more on best practices and mindset.",
+    "Location": "Ballroom F",
+    "StartTime": "2020-03-08T13:30:00-07:00",
+    "EndTime": "2020-03-08T14:30:00-07:00",
+    "Speakers": "Naomi Reeves",
+    "Topic": "Observability"
+  },
+  {
+    "Name": "Introduction to OpenSCAD: Coding 3D Things for Fun... and Profit?",
+    "Description": "What is OpenSCAD, what is it good for, and why might you care? OpenSCAD is coding for creating 3D CAD objects perfect for 3D printing. With it coders can create art, artists can code things and hobbyists can pick up new hobbies. This presentation will cover getting started creating with OpenSCAD, ways for both coders and non-coders to succeed, and how to get to the point of creating your first 3D printed objects. Learn some tricks to get over initial roadblocks, methods for working more efficiently, possible paths for making money, and most of all how to have fun with coding actual objects.",
+    "Location": "Room 101",
+    "StartTime": "2020-03-08T13:30:00-07:00",
+    "EndTime": "2020-03-08T14:30:00-07:00",
+    "Speakers": "Jon Cruz",
+    "Topic": "LibreGraphics"
+  },
+  {
+    "Name": "(I can't get no) satisfaction: Can SAT-solvers resolve dependency hell?",
+    "Description": "Whether you’re a software engineer or data scientist, dealing with dependency hell is often an unavoidable problem when building complex projects that require 3rd packages. This talk will explore a classic case of dependency hell, known as the diamond dependency problem, and if SAT-solvers are adequate enough to address these issues.",
+    "Location": "Ballroom C",
+    "StartTime": "2020-03-08T13:30:00-07:00",
+    "EndTime": "2020-03-08T14:30:00-07:00",
+    "Speakers": "Sean Marquez",
+    "Topic": "Developer"
+  },
+  {
+    "Name": "Intro to Git",
+    "Description": "An introduction to git. git is the main version control system used by most open source projects, most notably in the embedded linux market. All embedded engineers need a good grounding in the use of git in order to be able to access and update code over the lifetime of a product. This course will introduce practical uses of git which can be applied to your day-to-day job as a developer. This workshop is part of a 2 day hands on embedded workshop at SCALE and requires an additional fee at registration to cover hardware costs.",
+    "Location": "Ballroom B",
+    "StartTime": "2020-03-08T13:30:00-07:00",
+    "EndTime": "2020-03-08T14:30:00-07:00",
+    "Speakers": "Donald Burr",
+    "Topic": "Embedded Linux"
+  },
+  {
+    "Name": "What's happening with Ham Radio's use of 3GHz and 5GHz FCC allocations?",
+    "Description": "Recent FCC Notices for Proposed Rulemaking has put 3GHz and 5GHz Ham Radio allocations at risk. Will Ham Operators be able to repurpose commercial 802.11 devices in the future? Will Ham Operators be able to build high speed wifi like data networks?",
+    "Location": "Room 212",
+    "StartTime": "2020-03-08T13:30:00-07:00",
+    "EndTime": "2020-03-08T14:30:00-07:00",
+    "Speakers": "Joe Ayers",
+    "Topic": "HAM Radio"
+  },
+  {
+    "Name": "Let Talk About Waf (Bypass) Baby",
+    "Description": "In this talk, we will cover basic attacks against web applications using HTTP2 to bypass WAFs and Proxies. Attendees will gain knowledge of how to bypass WAF and Proxies using the HTTP2 Protocol, and steps they can take to protect themselves against these kinds of attacks.",
+    "Location": "Room 106",
+    "StartTime": "2020-03-08T13:30:00-07:00",
+    "EndTime": "2020-03-08T14:30:00-07:00",
+    "Speakers": "Brett Gravois",
+    "Topic": "Security"
+  },
+  {
+    "Name": "Open Source Your Career",
+    "Description": "Open up your career with Open Source.",
+    "Location": "Room 105",
+    "StartTime": "2020-03-08T14:00:00-07:00",
+    "EndTime": "2020-03-08T15:00:00-07:00",
+    "Speakers": "John Sicklick",
+    "Topic": "Career Day"
+  },
+  {
+    "Name": "Producing Video Tutorials With Open Source Tools",
+    "Description": "This presentation will cover tools and techniques to produce video tutorials. We look at recording footage from smartphones, webcams, and screen capture with Open Broadcaster Software Studio. We will also look at the five-shot sequence, a journalistic technique for making footage more interesting and artful using B-Roll footage edited with OpenShot. We'll also look at creating animated presentations using Sozi, Graphviz, and LaTeX/Beamer.",
+    "Location": "Room 101",
+    "StartTime": "2020-03-08T15:00:00-07:00",
+    "EndTime": "2020-03-08T16:00:00-07:00",
+    "Speakers": "Abe Kazemzadeh",
+    "Topic": "LibreGraphics"
+  },
+  {
+    "Name": "Is Your Kafka Data in Working Order? Tactics for Overcoming Kafka Data Order Issues",
+    "Description": "Ensuring reliable data storage and delivery with Apache Kafka can be challenging. Those trying to implement Kafka deal with critical questions such as: How can data order be at risk? How could data potentially be lost? How could records be accidentally duplicated? This session explores essential components of building a lasting strategy for data integrity with Kafka.",
+    "Location": "Room 104",
+    "StartTime": "2020-03-08T15:00:00-07:00",
+    "EndTime": "2020-03-08T16:00:00-07:00",
+    "Speakers": "Zeke Dean",
+    "Topic": "Open Data"
+  },
+  {
+    "Name": "Command Line Efficiency",
+    "Description": "Based on internal training given to Facebook engineers, this talk is a collection of tips and tricks for being more efficient and productive on the command line. Learn about convenient customizations, speedy shortcuts, useful utilities, and more advanced techniques to help you look like a command line pro.",
+    "Location": "Ballroom H",
+    "StartTime": "2020-03-08T15:00:00-07:00",
+    "EndTime": "2020-03-08T16:00:00-07:00",
+    "Speakers": "Simon Elmir",
+    "Topic": "SysAdmin"
+  },
+  {
+    "Name": "Go Hardware Hack Session featuring TinyGo",
+    "Description": "At the Go Hardware Hack Session featuring TinyGo you will get to program robots, drones, and sensors, all using the programming language Go!",
+    "Location": "Room 103",
+    "StartTime": "2020-03-08T15:00:00-07:00",
+    "EndTime": "2020-03-08T17:30:00-07:00",
+    "Speakers": "Ron Evans",
+    "Topic": "Embedded Linux"
+  },
+  {
+    "Name": "AREDN BoF",
+    "Description": "This BOF will provide newcomers to amateur radio networking the opportunity to ask questions and more experienced users to share solutions with others.",
+    "Location": "Room 212",
+    "StartTime": "2020-03-08T15:00:00-07:00",
+    "EndTime": "2020-03-08T16:00:00-07:00",
+    "Speakers": "Joe Ayers",
+    "Topic": "BoFs"
+  },
+  {
+    "Name": "Service Mess to Service Mesh",
+    "Description": "In our quest to secure all the things, do we jump in too quickly? We'll use Istio and Linkerd as example service meshes, and look at the features we would expect from a service mesh. We'll dive into the day-1 experience with both, and some advanced scenarios of using the service mesh. We'll compare this to border security with an app gateway, and compare and contrast the security features, complexities, and implementation costs. You'll leave with a concrete understanding of the benefits and tradeoffs you get when you pull in a service mesh, and be ready to justify the investment.",
+    "Location": "Ballroom B",
+    "StartTime": "2020-03-08T15:00:00-07:00",
+    "EndTime": "2020-03-08T16:00:00-07:00",
+    "Speakers": "Rob Richardson",
+    "Topic": "Container and Orchestrators"
+  },
+  {
+    "Name": "Clinic: Interviews and Negotiations",
+    "Description": "Are you prepared to present your best self at your next interview? After the interview process is complete, are you comfortable with negotiating your offer? Compensation parameters and working conditions have to be right for a long run match. This training is in a group environment to offer maximum support and feedback.",
+    "Location": "Room 105",
+    "StartTime": "2020-03-08T15:30:00-07:00",
+    "EndTime": "2020-03-08T16:30:00-07:00",
+    "Speakers": "RaiseMe Team",
+    "Topic": "Career Day"
+  },
+  {
+    "Name": "Continuous Learning for Developers",
+    "Description": "The constantly shifting world of technology is always providing developers with new things to learn: languages, tools, techniques. Keeping your skills current is a full-time job. There are lots of resources out there to use, but you need to evaluate which ones work for you, and how best to use them. This session will highlight the various learning formats, help you pick the one that best fits you or your group, allow you to evaluate whether it's working, and tell you what to do when it doesn't.",
+    "Location": "Ballroom F",
+    "StartTime": "2020-03-08T16:30:00-07:00",
+    "EndTime": "2020-03-08T17:30:00-07:00",
+    "Speakers": "Brian MacDonald",
+    "Topic": "Mentoring"
+  },
+  {
+    "Name": "Building the next generation of release notes for Kubernetes",
+    "Description": "Kubernetes is an open source project with a high velocity of PRs and releases. While the activity and interest in the project is awesome, communicating these changes to end users becomes difficult. For a long time, each release would generate a new release notes markdown document that required manual cleanup and curation. In recent months the format has been reconsidered and completely restructured. This talk will go over the history of Kubernetes release notes, the current state of relnotes.k8s.io, and future plans for automated publishing of release notes and notifications.",
+    "Location": "Ballroom H",
+    "StartTime": "2020-03-08T16:30:00-07:00",
+    "EndTime": "2020-03-08T17:30:00-07:00",
+    "Speakers": "Jeffrey Sica",
+    "Topic": "General"
+  },
+  {
+    "Name": "Discovery without Marketing: Lotus Petal Architecture and Parametric Geometry",
+    "Description": "In the digital age we have lost something: the experience of browsing in a vast record shop or bookstore, discovering intriguing choices by familiar ones. We are inundated by information, but most remains unseen. Lotus Petal Architecture reveals this invisible information. LPA is an interactive 3D data visualization tool set accessible from any web browser or mobile device. Built with three.js and extensible with node.js, it can dynamically render thousands of links on screen at any one time. Visual hints give context. The result is a richer, broader experience of the data ecosystem.",
+    "Location": "Room 104",
+    "StartTime": "2020-03-08T16:30:00-07:00",
+    "EndTime": "2020-03-08T17:30:00-07:00",
+    "Speakers": "Tess Gadwa",
+    "Topic": "Open Data"
+  },
+  {
+    "Name": "There and Back Again, Reproducibly!",
+    "Description": "There is an epic journey from reviewed source code to the code you actually run on your computer, and things can go quietly wrong along the way! Reproducible Builds gives a project confidence that the journey from source code to binary code gets you there and back again.",
+    "Location": "Room 106",
+    "StartTime": "2020-03-08T16:30:00-07:00",
+    "EndTime": "2020-03-08T17:30:00-07:00",
+    "Speakers": "Vagrant Cascadian",
+    "Topic": "Security"
+  },
+  {
+    "Name": "The State of LibreGraphics",
+    "Description": "Wondering what has transpired in your favorite graphics applications over the last year? Join us for a recap of project development!",
+    "Location": "Room 101",
+    "StartTime": "2020-03-08T16:30:00-07:00",
+    "EndTime": "2020-03-08T17:30:00-07:00",
+    "Speakers": "Mica Semrick, Pat David, Nathan Willis",
+    "Topic": "LibreGraphics"
+  },
+  {
+    "Name": "Easy HTTPS for Your Microservice Architectures",
+    "Description": "In the era of dynamic platforms, management of entry points is a great challenge, with the large amounts of application deployments requiring entry points to update often. Learn how to overcome this complexity, and build reliable entry points, focusing your energy on what matters to you. Our session will define what a modern edge router, reverse proxy and load-balancer are. We'll present concepts and advanced features which overcome the platform entry point challenges. Finally, we'll dig deeper and show how these solutions can scale and be fault tolerant.",
+    "Location": "Ballroom G",
+    "StartTime": "2020-03-08T16:30:00-07:00",
+    "EndTime": "2020-03-08T17:30:00-07:00",
+    "Speakers": "Julien Levesy",
+    "Topic": "General"
+  },
+  {
+    "Name": "The Young Man And The C",
+    "Description": "Programmers typically no longer learn C until they need to write an extension, patch an existing codebase, speed up a bottleneck, or take a job with some low-level coding. You're a programmer and can teach yourself syntax. Instead, we will address your three biggest hurdles, which are usually not taught systematically: using OOP skills, managing memory, and handling exceptional conditions, all without language help. We will focus on plain C, but much of the material will apply directly to C++. Some of it will even make you a better programmer in your favorite higher-level language.",
+    "Location": "Ballroom C",
+    "StartTime": "2020-03-08T16:30:00-07:00",
+    "EndTime": "2020-03-08T17:30:00-07:00",
+    "Speakers": "Dustin Laurence",
+    "Topic": "Developer"
+  },
+  {
+    "Name": "Evaluating the top 3 Kubernetes Providers: EKS vs GKE vs AKS",
+    "Description": "With Kubernetes taking over the world, most cloud service providers now offer managed Kubernetes services.",
+    "Location": "Ballroom B",
+    "StartTime": "2020-03-08T16:30:00-07:00",
+    "EndTime": "2020-03-08T17:30:00-07:00",
+    "Speakers": "Karen Bruner",
+    "Topic": "Container and Orchestrators"
+  }
+]

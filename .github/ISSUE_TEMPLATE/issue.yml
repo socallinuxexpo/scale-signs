@@ -1,0 +1,18 @@
+name: Issue
+description: Create an issue
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: Issue description here
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: AC
+      description: List of expected outcomes that resolve the issue
+      placeholder: AC text here
+    validations:
+      required: true

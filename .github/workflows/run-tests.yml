@@ -1,0 +1,19 @@
+name: Run Tests
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - uses: DeterminateSystems/nix-installer-action@main
+
+    - name: Run tests
+      run: nix build -L --show-trace .#go-signs-ci-release
