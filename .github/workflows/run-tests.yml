@@ -16,4 +16,4 @@ jobs:
     - uses: DeterminateSystems/nix-installer-action@main
 
     - name: Run tests
-      run: nix build -L --show-trace .#go-signs-ci-release
+      run: nix build -L --show-trace .#scale-signs-ci-release

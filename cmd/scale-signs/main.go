@@ -4,7 +4,7 @@ import (
 	"flag"
 	"log"
 
-	"github.com/kylerisse/go-signs/pkg/server"
+	"github.com/socallinuxexpo/scale-signs/pkg/server"
 )
 
 func run(c server.Config) error {

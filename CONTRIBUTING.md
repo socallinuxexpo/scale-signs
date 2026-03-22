@@ -1,6 +1,6 @@
 # Contributing
 
-Contributions to go-signs are welcome! If you're interested in helping improve this project, please follow these steps:
+Contributions to scale-signs are welcome! If you're interested in helping improve this project, please follow these steps:
 
 1. Fork the repository
 2. Create a feature branch
@@ -93,10 +93,10 @@ Air will detect the changes to the compiled frontend and reload everything autom
 make build
 
 # Run the server
-./out/go-signs
+./out/scale-signs
 
 # Command-line options
-./out/go-signs -port 8080 -json https://example.com/schedule.json -refresh 10
+./out/scale-signs -port 8080 -json https://example.com/schedule.json -refresh 10
 ```
 
 ## Available Endpoints

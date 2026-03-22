@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/kylerisse/go-signs/pkg/schedule"
+	"github.com/socallinuxexpo/scale-signs/pkg/schedule"
 )
 
 // TestServer validates that the server functions correctly with a test JSON file

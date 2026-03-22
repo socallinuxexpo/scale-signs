@@ -6,7 +6,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/kylerisse/go-signs/pkg/simulator"
+	"github.com/socallinuxexpo/scale-signs/pkg/simulator"
 )
 
 func main() {

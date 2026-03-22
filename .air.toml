@@ -4,7 +4,7 @@ tmp_dir = "tmp"
 
 [build]
   args_bin = ["-refresh", "1", "-json", "https://www.socallinuxexpo.org/scale/23x/signs"]
-  bin = "./out/go-signs"
+  bin = "./out/scale-signs"
   cmd = "make build-go"
   delay = 1000
   exclude_dir = ["assets", "tmp", "vendor", "testdata"]

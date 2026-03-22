@@ -1,4 +1,4 @@
-# go-signs
+# scale-signs
 
 test: build-react
 	cd react-display && npm run lint
@@ -10,7 +10,7 @@ build-react:
 
 build-go:
 	go build -o out/scale-simulator cmd/scale-simulator/main.go
-	go build -o out/go-signs cmd/go-signs/main.go
+	go build -o out/scale-signs cmd/scale-signs/main.go
 
 build: clean build-react build-go
 
@@ -35,4 +35,4 @@ bump-go-vulns:
 	go mod tidy
 
 ci-test:
-	nix build -L --show-trace .#go-signs-ci-release
+	nix build -L --show-trace .#scale-signs-ci-release

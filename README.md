@@ -1,14 +1,12 @@
-# go-signs
+# scale-signs
 
-`go-signs` is a modern Go-based service designed to power the digital signage system for the Southern California Linux Expo (SCaLE). It is specifically built to run as a single binary on Raspberry Pi devices distributed throughout the venue. Each Pi serves as a standalone digital sign displaying conference schedules, speaker information, and event logistics.
-
-This project is the successor to [scale-signs](https://github.com/socallinuxexpo/scale-signs), which has served SCaLE well for many years.
+`scale-signs` is a modern Go-based service designed to power the digital signage system for the Southern California Linux Expo (SCaLE). It is specifically built to run as a single binary on Raspberry Pi devices distributed throughout the venue. Each Pi serves as a standalone digital sign displaying conference schedules, speaker information, and event logistics.
 
 ## Demo
 
 A [DEMO](https://demo.go-signs.org) of this application is available online. It leverages the [SCaLE Simulator](./docs/SIMULATOR.md) and supports [time override](#time-override) URL parameters for any scale between 13x and 22x in addition to a simulated "current" SCaLE that is always active.
 
-> Please note that `go-signs` is currently meant to be displayed at 1080p only. Responsive design to support 720p -> 4k is planned for a later release.
+> Please note that `scale-signs` is currently meant to be displayed at 1080p only. Responsive design to support 720p -> 4k is planned for a later release.
 
 ## Features
 
@@ -25,7 +23,7 @@ A [DEMO](https://demo.go-signs.org) of this application is available online. It 
 ## Usage
 
 ```sh
-Usage of go-signs:
+Usage of scale-signs:
   -port string
         Port to listen on (1-65535) (default "2017")
   -refresh int
@@ -64,9 +62,9 @@ see [RELEASES](./docs/RELEASES.md)
 ## Project Structure
 
 ```
-go-signs/
-├─ cmd/go-signs/               # go main binaries
-│  ├─ go-signs                 # go-signs entry point
+scale-signs/
+├─ cmd/scale-signs/              # go main binaries
+│  ├─ scale-signs                # scale-signs entry point
 │  └─ scale-simulator          # scale-simulator entry point
 ├─ nix/                        # Nix devShells and Packages
 ├─ pkg/                        # Backend packages

@@ -1,6 +1,6 @@
 # Releases
 
-This project leverages [Scaled Trunk-Based Development](https://trunkbaseddevelopment.com/#scaled-trunk-based-development). Developers work on feature branches and submit [Pull Requests](https://github.com/kylerisse/go-signs/pulls) against the `master` branch to contribute to the `unstable` version of `go-signs`.
+This project leverages [Scaled Trunk-Based Development](https://trunkbaseddevelopment.com/#scaled-trunk-based-development). Developers work on feature branches and submit [Pull Requests](https://github.com/socallinuxexpo/scale-signs/pulls) against the `master` branch to contribute to the `unstable` version of `scale-signs`.
 
 ## Versions
 
@@ -11,9 +11,9 @@ This project leverages [Scaled Trunk-Based Development](https://trunkbaseddevelo
 To be performed by maintainers
 
 1. Create a `release/x.x` branch off of `master`
-1. Create a version commit directly to the release branch. (Example for `0.1.0` from [release/0.1](https://github.com/kylerisse/go-signs/commit/7415c17d05c03e9fb128b65b9bd0ad10197fcd22) branch). These commits exist to version the nix package and corresponding react application and corresponding NPM hash.
+1. Create a version commit directly to the release branch. (Example for `0.1.0` from [release/0.1](https://github.com/socallinuxexpo/scale-signs/commit/7415c17d05c03e9fb128b65b9bd0ad10197fcd22) branch). These commits exist to version the nix package and corresponding react application and corresponding NPM hash.
 1. Create a tag against the release branch. (Example `0.1.0`)
-1. Run `nix run .#go-signs-ci-release`.
+1. Run `nix run .#scale-signs-ci-release`.
 1. Upload all artifacts from `result/` to the GitHub releases page.
 
 ## Hotfix Process

@@ -10,7 +10,7 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/kylerisse/go-signs/pkg/schedule"
+	"github.com/socallinuxexpo/scale-signs/pkg/schedule"
 )
 
 // Server is the main webserver process

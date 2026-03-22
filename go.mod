@@ -1,4 +1,4 @@
-module github.com/kylerisse/go-signs
+module github.com/socallinuxexpo/scale-signs
 
 go 1.25
 

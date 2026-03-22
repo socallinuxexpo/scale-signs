@@ -3,7 +3,7 @@
 ## 0.1 - Zero Cool
 
 - Hallway Schedule view MVP
-- go-signs service MVP
+- scale-signs service MVP
 - scale-simulator service MVP
 - Nix devShell and packages
 - Live online demo
@@ -17,7 +17,7 @@
 - Layout Management System
 - Sponsor Thank You and Co-located views MVP
 - Keynote Highlight view MVP
-- go-signs optional file system persistence
+- scale-signs optional file system persistence
 - Repo Github community standards compliance
 
 ## 0.4 - Phantom Phreak

@@ -7,7 +7,7 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/kylerisse/go-signs/pkg/schedule"
+	"github.com/socallinuxexpo/scale-signs/pkg/schedule"
 	bolt "go.etcd.io/bbolt"
 )
 

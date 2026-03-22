@@ -1,6 +1,6 @@
 # AI Usage Policy
 
-The go-signs project has strict rules for AI usage. This policy is nearly identical to that of the
+The scale-signs project has strict rules for AI usage. This policy is nearly identical to that of the
 [Ghostty](https://github.com/ghostty-org/ghostty/blob/6c0e02d1138d5376e4ac2f5e311b225494514a97/AI_POLICY.md)
 project. We have huge respect for [Mitchell Hashimoto](https://github.com/mitchellh)
 and appreciate him setting the tone about this topic.
@@ -42,7 +42,7 @@ they've proven themselves trustworthy to apply good judgment.
 
 ## There are Humans Here
 
-Please remember that go-signs is maintained by humans.
+Please remember that scale-signs is maintained by humans.
 
 Every discussion, issue, and pull request is read and reviewed by
 humans (and sometimes machines, too). It is a boundary point at which
@@ -56,7 +56,7 @@ And today, most drivers of AI are just not good enough.
 
 ## AI is Welcome Here
 
-go-signs is written with plenty of AI assistance, and we embrace
+scale-signs is written with plenty of AI assistance, and we embrace
 AI in development workflow. As a project, we welcome AI as a tool!
 
 **Our reason for the strict AI policy is not due to an anti-AI stance**, but instead due to the number of highly unqualified people using AI. It's the people, not the tools, that are the problem.

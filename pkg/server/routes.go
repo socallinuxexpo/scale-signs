@@ -5,9 +5,9 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/kylerisse/go-signs/pkg/display"
-	"github.com/kylerisse/go-signs/pkg/schedule"
-	"github.com/kylerisse/go-signs/pkg/sponsor"
+	"github.com/socallinuxexpo/scale-signs/pkg/display"
+	"github.com/socallinuxexpo/scale-signs/pkg/schedule"
+	"github.com/socallinuxexpo/scale-signs/pkg/sponsor"
 )
 
 // setupRoutes configures all routes for the application

@@ -66,7 +66,7 @@ inputs.nixpkgs.lib.genAttrs systems
         pname = "scale-simulator";
         version = "unstable";
         src = builtins.path { path = ../.; };
-        goPackagePath = "github.com/kylerisse/go-signs";
+        goPackagePath = "github.com/socallinuxexpo/scale-signs";
         vendorHash = goSumSha;
         nativeBuildInputs = defaultPackages ++ [ npmDeps ];
 
@@ -93,11 +93,11 @@ inputs.nixpkgs.lib.genAttrs systems
         };
       };
 
-      go-signs = pkgs.buildGoModule rec {
-        pname = "go-signs";
+      scale-signs = pkgs.buildGoModule rec {
+        pname = "scale-signs";
         version = "unstable";
         src = builtins.path { path = ../.; };
-        goPackagePath = "github.com/kylerisse/go-signs";
+        goPackagePath = "github.com/socallinuxexpo/scale-signs";
         vendorHash = goSumSha;
         nativeBuildInputs = defaultPackages ++ [ npmDeps ];
 
@@ -107,28 +107,28 @@ inputs.nixpkgs.lib.genAttrs systems
           reactBuild
           ''
             mkdir -p out
-            go build -o out/go-signs cmd/go-signs/main.go
+            go build -o out/scale-signs cmd/scale-signs/main.go
           ''
         ];
 
         installPhase = ''
           mkdir -p $out/bin/
-          cp out/go-signs $out/bin/
+          cp out/scale-signs $out/bin/
         '';
 
         meta = with lib; {
           description = "SCaLE Digital Signage App";
           license = licenses.mit;
           maintainers = [ "kylerisse" ];
-          mainProgram = "go-signs";
+          mainProgram = "scale-signs";
         };
       };
 
-      go-signs-ci-release = pkgs.buildGoModule rec {
-        pname = "go-signs-ci";
+      scale-signs-ci-release = pkgs.buildGoModule rec {
+        pname = "scale-signs-ci";
         version = "release";
         src = builtins.path { path = ../.; };
-        goPackagePath = "github.com/kylerisse/go-signs";
+        goPackagePath = "github.com/socallinuxexpo/scale-signs";
 
         vendorHash = goSumSha;
 
@@ -151,10 +151,10 @@ inputs.nixpkgs.lib.genAttrs systems
             mkdir -p out
             for arch in ${lib.concatStringsSep " " targets}; do
               IFS="/" read goos goarch <<< "$arch"
-              echo "→ building go-signs for $goos/$goarch"
+              echo "→ building scale-signs for $goos/$goarch"
               GOOS=$goos GOARCH=$goarch go build \
-                -o out/go-signs-$goos-$goarch \
-                cmd/go-signs/main.go
+                -o out/scale-signs-$goos-$goarch \
+                cmd/scale-signs/main.go
 
               echo "→ building scale-simulator for $goos/$goarch"
               GOOS=$goos GOARCH=$goarch go build \
@@ -174,7 +174,7 @@ inputs.nixpkgs.lib.genAttrs systems
         '';
 
         meta = with lib; {
-          description = "go-signs CI release";
+          description = "scale-signs CI release";
           license = licenses.mit;
           maintainers = [ "kylerisse" ];
         };

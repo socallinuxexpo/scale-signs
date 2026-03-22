@@ -1,6 +1,6 @@
 # SCaLE Simulator
 
-The SCaLE Simulator is a development, demonstration, and testing tool for the `go-signs` project. It allows developers to test the frontend without relying on the real SCaLE website JSON endpoint, providing a consistent development environment with mostly predictable data.
+The SCaLE Simulator is a development, demonstration, and testing tool for the `scale-signs` project. It allows developers to test the frontend without relying on the real SCaLE website JSON endpoint, providing a consistent development environment with mostly predictable data.
 
 ## Overview
 
@@ -13,7 +13,7 @@ The simulator creates a mock server that:
 1. Stores data in a local BoltDB database for persistence across restarts
 1. Automatically starts a new date shifted conference when the existing one finishes
 
-This approach enables developers to test the `go-signs` application's display and scheduling logic without needing to wait for specific times of day or manually adjusting their system clock. It also allows the viewing of any previous SCaLE when used in conjunction with `go-signs` time override feature.
+This approach enables developers to test the `scale-signs` application's display and scheduling logic without needing to wait for specific times of day or manually adjusting their system clock. It also allows the viewing of any previous SCaLE when used in conjunction with `scale-signs` time override feature.
 
 ## Getting Started
 
@@ -46,7 +46,7 @@ This approach enables developers to test the `go-signs` application's display an
 1. **Historical Data Selection**: The simulator loads JSON data from previous SCaLE conferences
 2. **Date Transformation**: A random previous year is selected, duplicated, and all dates in the schedule are shifted to use the current date's tomorrow as the conference start day.
 3. **Persistence**: The simulator stores the modified schedule in a BoltDB database.
-4. **API Compatibility**: The simulator exposes a similar Drupal JSON API endpoint as the actual `go-signs` application expects.
+4. **API Compatibility**: The simulator exposes a similar Drupal JSON API endpoint as the actual `scale-signs` application expects.
 
 ### Database Structure
 
@@ -69,14 +69,14 @@ When first run, the simulator will:
 | Endpoint      | Method | Description                                                                     |
 | ------------- | ------ | ------------------------------------------------------------------------------- |
 | `/`           | GET    | Status check endpoint returning status and current time                         |
-| `/sign.json`  | GET    | Returns the simulation as JSON (main Drupal endpoint for the go-signs backend)  |
+| `/sign.json`  | GET    | Returns the simulation as JSON (main Drupal endpoint for the scale-signs backend)  |
 | `/archive/$x` | GET    | Returns any schedule from a specific scale, where `$x` is ex: `13x`, `23x`, etc |
 
 ## Use Cases
 
 ### Demo Site
 
-The `go-signs` [DEMO](https://demo.go-signs.org) site leverages an always running instance of the Simulator's [JSON endpoint](https://simulator.go-signs.org/sign.json).
+The `scale-signs` [DEMO](https://demo.go-signs.org) site leverages an always running instance of the Simulator's [JSON endpoint](https://simulator.go-signs.org/sign.json).
 
 ### Local Development
 
