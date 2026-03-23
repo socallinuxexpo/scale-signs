@@ -1,7 +1,7 @@
 {
   "name": "react-display",
   "private": true,
-  "version": "unstable",
+  "version": "0.2.0",
   "type": "module",
   "scripts": {
     "build": "tsc -b && vite build",
