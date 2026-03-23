@@ -11,8 +11,8 @@ This project leverages [Scaled Trunk-Based Development](https://trunkbaseddevelo
 To be performed by maintainers
 
 1. Create a `release/x.x` branch off of `master`
-1. Create a version commit directly to the release branch. (Example for `0.1.0` from [release/0.1](https://github.com/socallinuxexpo/scale-signs/commit/7415c17d05c03e9fb128b65b9bd0ad10197fcd22) branch). These commits exist to version the nix package and corresponding react application and corresponding NPM hash.
-1. Create a tag against the release branch. (Example `0.1.0`)
+1. Create a version commit directly to the release branch. (Example for `0.2.0` from [release/0.2](https://github.com/socallinuxexpo/scale-signs/commit/b457d01efa37a61d573eeb1a4225d5df4291b878) branch). These commits exist to version the nix package and corresponding react application and corresponding NPM hash.
+1. Create a tag against the release branch. (Example `0.2.0`)
 1. Run `nix run .#scale-signs-ci-release`.
 1. Upload all artifacts from `result/` to the GitHub releases page.
 
@@ -20,6 +20,6 @@ To be performed by maintainers
 
 1. Develop the fix as normal and merge via PR to the `master` branch.
 1. Cherry pick the corresponding fix commits to the `release/x.x` branch.
-1. Create a version commit directly to the release branch. (Example `0.1.1`)
-1. Create a tag against the release branch. (Example `0.1.1`)
+1. Create a version commit directly to the release branch. (Example `0.2.1`)
+1. Create a tag against the release branch. (Example `0.2.1`)
 1. Upload all artifacts from `result/` to the GitHub releases page.
