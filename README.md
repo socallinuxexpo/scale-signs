@@ -2,9 +2,11 @@
 
 `scale-signs` is a modern Go-based service designed to power the digital signage system for the Southern California Linux Expo (SCaLE). It is specifically built to run as a single binary on Raspberry Pi devices distributed throughout the venue. Each Pi serves as a standalone digital sign displaying conference schedules, speaker information, and event logistics.
 
+This project is a continuation of the original [PHP app](https://github.com/socallinuxexpo/scale-signs/tree/8f6ed2f4bdd10f34e123db1d557da0a7fee4f707) which was a mainstay of SCaLE through 22x (2025).
+
 ## Demo
 
-A [DEMO](https://demo.go-signs.org) of this application is available online. It leverages the [SCaLE Simulator](./docs/SIMULATOR.md) and supports [time override](#time-override) URL parameters for any scale between 13x and 22x in addition to a simulated "current" SCaLE that is always active.
+A [DEMO](https://signs.scalenoc.org) of this application is available online. It leverages the [SCaLE Simulator](./docs/SIMULATOR.md) and supports [time override](#time-override) URL parameters for any scale between 13x and 22x in addition to a simulated "current" SCaLE that is always active.
 
 > Please note that `scale-signs` is currently meant to be displayed at 1080p only. Responsive design to support 720p -> 4k is planned for a later release.
 
@@ -39,7 +41,7 @@ During development, you will often need to test how the schedule display behaves
 1. Open your development instance in a browser
 2. Add URL parameters to simulate a specific time:
    ```
-   https://demo.go-signs.org/?year=2025&month=3&day=6&hour=13&minute=53
+   https://signs.scalenoc.org/?year=2026&month=3&day=7&hour=14&minute=24
    ```
 3. The application will use this simulated time instead of the actual system time
 

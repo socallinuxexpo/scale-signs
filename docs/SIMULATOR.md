@@ -66,17 +66,17 @@ When first run, the simulator will:
 
 ## API Endpoints
 
-| Endpoint      | Method | Description                                                                     |
-| ------------- | ------ | ------------------------------------------------------------------------------- |
-| `/`           | GET    | Status check endpoint returning status and current time                         |
-| `/sign.json`  | GET    | Returns the simulation as JSON (main Drupal endpoint for the scale-signs backend)  |
-| `/archive/$x` | GET    | Returns any schedule from a specific scale, where `$x` is ex: `13x`, `23x`, etc |
+| Endpoint      | Method | Description                                                                       |
+| ------------- | ------ | --------------------------------------------------------------------------------- |
+| `/`           | GET    | Status check endpoint returning status and current time                           |
+| `/sign.json`  | GET    | Returns the simulation as JSON (main Drupal endpoint for the scale-signs backend) |
+| `/archive/$x` | GET    | Returns any schedule from a specific scale, where `$x` is ex: `13x`, `23x`, etc   |
 
 ## Use Cases
 
 ### Demo Site
 
-The `scale-signs` [DEMO](https://demo.go-signs.org) site leverages an always running instance of the Simulator's [JSON endpoint](https://simulator.go-signs.org/sign.json).
+The `scale-signs` [DEMO](https://signs.scalenoc.org) site leverages an always running instance of the Simulator's [JSON endpoint](https://simulator.scalenoc.org/sign.json).
 
 ### Local Development
 
