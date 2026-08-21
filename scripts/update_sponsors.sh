@@ -8,7 +8,7 @@
 # Requires: curl, jq, mogrify (ImageMagick)
 #
 # Fetches sponsor data from socallinuxexpo.org, clears pkg/sponsor/images/,
-# downloads each logo, and normalizes it to 220x220 with a white background.
+# downloads each logo, and normalizes it to 440x440 with a white background.
 #
 # After running:
 #   1. Update pkg/sponsor/gold.go, platinum.go, and diamond.go with the new filenames
@@ -72,7 +72,7 @@ echo "$JSON" | jq -c '.[]' | while IFS= read -r entry; do
         continue
     fi
 
-    mogrify -resize 200x220 -background white -gravity center -extent 220x220 "$OUTFILE"
+    mogrify -resize 400x440 -background white -gravity center -extent 440x440 "$OUTFILE"
     COUNT=$((COUNT + 1))
 done
 

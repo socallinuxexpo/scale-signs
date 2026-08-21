@@ -10,7 +10,7 @@ import (
 	"testing"
 )
 
-func TestSponsorImagesAre220x220(t *testing.T) {
+func TestSponsorImagesAre440x440(t *testing.T) {
 	// Create a new manager to access the embedded files
 	manager, err := NewManager()
 	if err != nil {
@@ -51,11 +51,11 @@ func TestSponsorImagesAre220x220(t *testing.T) {
 			width := bounds.Max.X - bounds.Min.X
 			height := bounds.Max.Y - bounds.Min.Y
 
-			if width != 220 || height != 220 {
-				t.Errorf("❌ Image %s has incorrect dimensions: got %dx%d, want 300x300 (format: %s)",
+			if width != 440 || height != 440 {
+				t.Errorf("❌ Image %s has incorrect dimensions: got %dx%d, want 440x440 (format: %s)",
 					filePath, width, height, format)
 			} else {
-				t.Logf("✅ Image %s has correct dimensions: 220x220 (format: %s)", filePath, format)
+				t.Logf("✅ Image %s has correct dimensions: 440x440 (format: %s)", filePath, format)
 			}
 		}
 
