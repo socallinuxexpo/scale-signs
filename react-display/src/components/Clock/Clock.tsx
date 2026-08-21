@@ -32,7 +32,7 @@ export function Clock() {
 	const dateString = displayTime.toLocaleDateString('en-US', options);
 
 	return (
-		<div className='bg-[#aeb0b5] bg-opacity-70 text-[#212121] p-4 rounded-lg text-center my-4 shadow-md inline-block min-w-[300px] font-mono'>
+		<div className='bg-[#aeb0b5] text-[#212121] p-4 rounded-lg text-center my-4 shadow-md inline-block min-w-[18.75rem] font-mono'>
 			<div className='text-4xl font-bold mb-2'>{formatTime()}</div>
 			<div className='text-lg font-bold'>{dateString}</div>
 		</div>

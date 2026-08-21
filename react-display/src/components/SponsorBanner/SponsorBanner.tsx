@@ -69,7 +69,7 @@ export function SponsorBanner({
 				{sponsorUrls.map((url, index) => (
 					<div
 						key={`${String(index)}-${url.split('/').pop() ?? url}`}
-						className='w-full max-w-[200px] mx-auto'
+						className='w-full max-w-[12.5rem] mx-auto'
 					>
 						<SponsorItem
 							url={url}

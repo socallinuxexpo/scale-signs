@@ -8,7 +8,7 @@ This project is a continuation of the original [PHP app](https://github.com/soca
 
 A [DEMO](https://signs.scalenoc.org) of this application is available online. It leverages the [SCaLE Simulator](./docs/SIMULATOR.md) and supports [time override](#time-override) URL parameters for any scale between 13x and 22x in addition to a simulated "current" SCaLE that is always active.
 
-> Please note that `scale-signs` is currently meant to be displayed at 1080p only. Responsive design to support 720p -> 4k is planned for a later release.
+> `scale-signs` is resolution-independent for 16:9 displays (tested 720p -> 4k). The entire design scales proportionally with viewport height, so it looks identical at any 16:9 resolution. Non-16:9 aspect ratios (e.g. portrait or narrow browser windows) may wrap text differently and are not a supported display target.
 
 ## Features
 

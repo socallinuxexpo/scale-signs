@@ -1,5 +1,28 @@
 @import 'tailwindcss';
 
+/*
+ * Resolution independence: the design is authored in rem against a 16px
+ * root at 1080p. Scaling the root with viewport height makes every
+ * rem-based utility scale proportionally (720p -> 4K).
+ * 16px / 1080px = 1 / 67.5
+ */
+html {
+	font-size: calc(100vh / 67.5);
+}
+
+/*
+ * Tailwind's default box shadows are defined in px and would stay
+ * hairline-thin at 4K; restate the ones in use in rem (px / 16).
+ */
+@theme {
+	--shadow-sm: 0 0.0625rem 0.1875rem 0 rgb(0 0 0 / 0.1),
+		0 0.0625rem 0.125rem -0.0625rem rgb(0 0 0 / 0.1);
+	--shadow-md: 0 0.25rem 0.375rem -0.0625rem rgb(0 0 0 / 0.1),
+		0 0.125rem 0.25rem -0.125rem rgb(0 0 0 / 0.1);
+	--shadow-lg: 0 0.625rem 0.9375rem -0.1875rem rgb(0 0 0 / 0.1),
+		0 0.25rem 0.375rem -0.25rem rgb(0 0 0 / 0.1);
+}
+
 /* Kiosk mode: hide mouse cursor */
 * {
 	cursor: none !important;
