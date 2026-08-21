@@ -11,7 +11,7 @@ with pkgs; [
   govulncheck
   imagemagick
   nodejs
-  nodePackages.prettier
   prefetch-npm-deps
+  prettier
   typescript
 ]
