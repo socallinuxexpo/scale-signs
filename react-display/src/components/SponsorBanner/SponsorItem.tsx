@@ -1,87 +1,73 @@
 // react-display/src/components/SponsorBanner/SponsorItem.tsx
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import nocPenguin from '../../assets/noc-penguin.png';
 
 interface SponsorItemProps {
 	url: string;
-	index: number; // Added index to help with unique identification
 }
 
-export function SponsorItem({ url, index }: SponsorItemProps) {
+// Must match the Tailwind duration-800 on the image layers
+const FADE_DURATION_MS = 800;
+
+export function SponsorItem({ url }: SponsorItemProps) {
 	const [currentUrl, setCurrentUrl] = useState(url);
 	const [prevUrl, setPrevUrl] = useState<string | null>(null);
 	const [loaded, setLoaded] = useState(false);
-	const timeoutRef = useRef<number | null>(null);
 
+	// When a new URL arrives, keep the old one around so it can fade out
+	// (https://react.dev/learn/you-might-not-need-an-effect#adjusting-some-state-when-a-prop-changes)
+	if (url !== currentUrl) {
+		setPrevUrl(currentUrl);
+		setCurrentUrl(url);
+		setLoaded(false);
+	}
+
+	// Drop the outgoing image once its fade-out has finished
 	useEffect(() => {
-		if (url !== currentUrl) {
-			// When a new URL is received, set the current one as previous
-			setPrevUrl(currentUrl);
-			setCurrentUrl(url);
-			setLoaded(false);
+		if (prevUrl === null) return;
 
-			// Clear any existing timeout to prevent memory leaks
-			if (timeoutRef.current !== null) {
-				clearTimeout(timeoutRef.current);
-			}
+		const timeoutId = window.setTimeout(() => {
+			setPrevUrl(null);
+		}, FADE_DURATION_MS);
 
-			// Clear previous after the fade duration (800ms)
-			timeoutRef.current = window.setTimeout(() => {
-				setPrevUrl(null);
-				timeoutRef.current = null;
-			}, 800);
-		}
-
-		// Cleanup on unmount or when URL changes
 		return () => {
-			if (timeoutRef.current !== null) {
-				clearTimeout(timeoutRef.current);
-			}
+			window.clearTimeout(timeoutId);
 		};
-	}, [url, currentUrl]);
+	}, [prevUrl]);
 
-	// Key the image with both URL and index to ensure proper re-rendering
-	const imageKey = `${String(index)}-${
-		currentUrl.split('/').pop() ?? currentUrl
-	}`;
-	const prevImageKey = prevUrl
-		? `prev-${String(index)}-${prevUrl.split('/').pop() ?? prevUrl}`
-		: null;
+	// Both layers live in one keyed list so the outgoing <img> keeps its DOM node
+	// and actually transitions from opacity-100 to opacity-0.
+	const layers = [
+		...(prevUrl !== null ? [{ url: prevUrl, visible: false }] : []),
+		{ url: currentUrl, visible: loaded },
+	];
 
 	return (
 		<div className='relative w-full aspect-square bg-white rounded-md shadow-sm overflow-hidden transition-transform'>
-			{/* Render previous image for fade-out, if available */}
-			{prevUrl && (
+			{layers.map((layer) => (
 				<img
-					key={prevImageKey}
-					src={prevUrl}
-					alt='Sponsor fading out'
-					className='absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-800 z-10'
+					key={layer.url}
+					src={layer.url}
+					alt={layer.url === currentUrl ? 'Sponsor' : 'Sponsor fading out'}
+					className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-800 ${
+						layer.visible ? 'opacity-100 z-20' : 'opacity-0 z-10'
+					}`}
+					onLoad={() => {
+						if (layer.url === currentUrl) {
+							setLoaded(true);
+						}
+					}}
 					onError={(e) => {
-						const target = e.target as HTMLImageElement;
+						const target = e.currentTarget;
 						target.src = nocPenguin;
 						target.alt = 'Sponsor (image unavailable)';
+						if (layer.url === currentUrl) {
+							setLoaded(true);
+						}
 					}}
 				/>
-			)}
-			<img
-				key={imageKey}
-				src={currentUrl}
-				alt='Sponsor'
-				className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-800 ${
-					loaded ? 'opacity-100 z-20' : 'opacity-0'
-				}`}
-				onLoad={() => {
-					setLoaded(true);
-				}}
-				onError={(e) => {
-					const target = e.target as HTMLImageElement;
-					target.src = nocPenguin;
-					target.alt = 'Sponsor (image unavailable)';
-					setLoaded(true);
-				}}
-			/>
+			))}
 			{/* Hidden preloading of fallback image */}
 			<div className='hidden'>
 				<img
