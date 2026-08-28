@@ -1,6 +1,6 @@
 // react-display/src/contexts/ScheduleContext/ScheduleProvider.tsx
 
-import React, { useState, useEffect, useCallback, useMemo } from 'react';
+import React, { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import { ScheduleContext } from './scheduleContext';
 import { ScheduleData, SessionWithStatus, Presentation } from './types';
 import { useTime } from '../TimeContext';
@@ -9,6 +9,22 @@ interface ScheduleProviderProps {
 	children: React.ReactNode;
 	refreshInterval?: number; // in milliseconds, default: 60000 (1 minute)
 	minSessionCount?: number; // minimum number of sessions to display, default: 6
+}
+
+// Data older than this is reported as stale (wall-clock time)
+const STALE_AFTER_MS = 5 * 60 * 1000;
+
+// Fetch the schedule from the server
+async function fetchScheduleData(): Promise<ScheduleData> {
+	const response = await fetch('/schedule');
+	if (!response.ok) {
+		throw new Error(
+			`Failed to fetch schedule: ${String(response.status)} ${
+				response.statusText
+			}`
+		);
+	}
+	return (await response.json()) as ScheduleData;
 }
 
 export function ScheduleProvider({
@@ -20,77 +36,72 @@ export function ScheduleProvider({
 	const [schedule, setSchedule] = useState<ScheduleData | null>(null);
 	const [isLoading, setIsLoading] = useState<boolean>(true);
 	const [error, setError] = useState<Error | null>(null);
-	const [lastHash, setLastHash] = useState<string>('');
 	const [lastRefreshTime, setLastRefreshTime] = useState<number>(0);
-	const [hasInitialLoad, setHasInitialLoad] = useState<boolean>(false);
+	const [isStaleData, setIsStaleData] = useState<boolean>(false);
 
-	const fetchSchedule = useCallback(async () => {
-		// Only show loading state on initial load
-		if (!hasInitialLoad) {
-			setIsLoading(true);
-		}
-
-		try {
-			const response = await fetch('/schedule');
-			if (!response.ok) {
-				throw new Error(
-					`Failed to fetch schedule: ${String(response.status)} ${
-						response.statusText
-					}`
-				);
-			}
-
-			const data = (await response.json()) as ScheduleData;
-
-			// If hash matches, no need to update the state
-			if (data.contentHash === lastHash && lastHash !== '') {
-				console.log('Schedule hash matches, no update needed');
-				setError(null);
-				setLastRefreshTime(Date.now());
-				return;
-			}
-
-			// Update the schedule state and hash
-			console.log(
-				`Updating schedule: ${String(
-					data.Presentations.length || 0
-				)} sessions, hash: ${data.contentHash}`
-			);
-			setSchedule(data);
-			setLastHash(data.contentHash);
-			setError(null);
-			setLastRefreshTime(Date.now());
-			setHasInitialLoad(true);
-		} catch (err) {
-			console.error('Error fetching schedule:', err);
-			// Only set error state if we don't have any schedule data yet
-			if (!schedule) {
-				setError(err instanceof Error ? err : new Error(String(err)));
-			} else {
-				// If we already have data, just log the error but don't update error state
-				console.log('Fetch failed, using cached schedule data');
-			}
-		} finally {
-			// Always set loading to false when done
-			setIsLoading(false);
-		}
-	}, [lastHash, schedule, hasInitialLoad]);
+	// Bookkeeping for the refresh loop; wall-clock, never used during render
+	const lastHashRef = useRef<string>('');
+	const lastSuccessAtRef = useRef<number>(0);
 
 	// Initial fetch and set up interval for refreshing
 	useEffect(() => {
-		// Initial fetch
-		void fetchSchedule();
+		let cancelled = false;
 
-		// Set up interval for refreshing
+		const refresh = async () => {
+			try {
+				const data = await fetchScheduleData();
+				if (cancelled) return;
+
+				// If hash matches, no need to update the schedule state
+				if (
+					lastHashRef.current !== '' &&
+					data.contentHash === lastHashRef.current
+				) {
+					console.log('Schedule hash matches, no update needed');
+				} else {
+					console.log(
+						`Updating schedule: ${String(
+							data.Presentations.length || 0
+						)} sessions, hash: ${data.contentHash}`
+					);
+					lastHashRef.current = data.contentHash;
+					setSchedule(data);
+				}
+
+				lastSuccessAtRef.current = Date.now();
+				setLastRefreshTime(lastSuccessAtRef.current);
+				setIsStaleData(false);
+				setError(null);
+			} catch (err) {
+				if (cancelled) return;
+				console.error('Error fetching schedule:', err);
+				if (lastHashRef.current !== '') {
+					// The context masks errors while we still have data
+					console.log('Fetch failed, using cached schedule data');
+				}
+				setError(err instanceof Error ? err : new Error(String(err)));
+			} finally {
+				if (!cancelled) {
+					setIsLoading(false);
+				}
+			}
+		};
+
+		void refresh();
+
 		const intervalId = setInterval(() => {
-			void fetchSchedule();
+			setIsStaleData(
+				lastSuccessAtRef.current !== 0 &&
+					Date.now() - lastSuccessAtRef.current > STALE_AFTER_MS
+			);
+			void refresh();
 		}, refreshInterval);
 
-		// Cleanup interval on unmount
 		return () => {
+			cancelled = true;
 			clearInterval(intervalId);
 		};
-	}, [fetchSchedule, refreshInterval]);
+	}, [refreshInterval]);
 
 	// Calculate session status based on current time
 	const getSessionStatus = useCallback(
@@ -209,7 +220,7 @@ export function ScheduleProvider({
 		// Process all sessions with their statuses
 		const allSessions = schedule.Presentations.map((session) => {
 			const status = getSessionStatus(session);
-			return { ...session, status } as SessionWithStatus;
+			return { ...session, status };
 		});
 
 		// Filter out past sessions (already ended)
@@ -445,21 +456,14 @@ export function ScheduleProvider({
 		isSameDay,
 	]);
 
-	// Check if we're using stale data (data older than 5 minutes)
-	const isStaleData = useMemo(() => {
-		if (!lastRefreshTime) return false;
-		return Date.now() - lastRefreshTime > 5 * 60 * 1000; // 5 minutes
-	}, [lastRefreshTime]);
-
 	// Memoize context value to prevent unnecessary renders
 	const contextValue = useMemo(
 		() => ({
 			schedule,
-			isLoading: isLoading && !hasInitialLoad,
+			isLoading,
 			error: !schedule ? error : null, // Only show error if we have no schedule data
 			isStaleData,
 			lastRefreshTime,
-			refreshSchedule: fetchSchedule,
 			getCurrentAndUpcomingSessions,
 		}),
 		[
@@ -468,9 +472,7 @@ export function ScheduleProvider({
 			error,
 			isStaleData,
 			lastRefreshTime,
-			fetchSchedule,
 			getCurrentAndUpcomingSessions,
-			hasInitialLoad,
 		]
 	);
 
