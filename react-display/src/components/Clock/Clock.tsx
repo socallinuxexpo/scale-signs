@@ -1,16 +1,9 @@
 /* react-display/src/components/Clock/Clock.tsx */
 
-import { useEffect, useState } from 'react';
 import { useTime } from '../../contexts/TimeContext';
 
 export function Clock() {
-	const { currentTime } = useTime();
-	const [displayTime, setDisplayTime] = useState<Date>(currentTime);
-
-	// Update local state when context time changes
-	useEffect(() => {
-		setDisplayTime(currentTime);
-	}, [currentTime]);
+	const { currentTime: displayTime } = useTime();
 
 	// Format the time in 12-hour format with AM/PM
 	const formatTime = () => {
