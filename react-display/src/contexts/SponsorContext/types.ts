@@ -7,9 +7,6 @@ export interface SponsorContextType {
 	// Get a specific number of random sponsor image URLs
 	getRandomSponsorUrls: (count: number) => string[];
 
-	// Force a refresh of the sponsor list from the server
-	refreshSponsors: () => Promise<void>;
-
 	// Get all available sponsor URLs
 	getAllSponsorUrls: () => string[];
 
