@@ -1,9 +1,14 @@
 // react-display/src/contexts/ScheduleContext/ScheduleProvider.tsx
 
-import React, { useState, useEffect, useCallback, useMemo, useRef } from 'react';
+import React, {
+	useState,
+	useEffect,
+	useCallback,
+	useMemo,
+	useRef,
+} from 'react';
 import { ScheduleContext } from './scheduleContext';
 import { ScheduleData, SessionWithStatus, Presentation } from './types';
-import { useTime } from '../TimeContext';
 
 interface ScheduleProviderProps {
 	children: React.ReactNode;
@@ -32,7 +37,6 @@ export function ScheduleProvider({
 	refreshInterval = 60000,
 	minSessionCount = 6,
 }: ScheduleProviderProps) {
-	const { currentTime } = useTime();
 	const [schedule, setSchedule] = useState<ScheduleData | null>(null);
 	const [isLoading, setIsLoading] = useState<boolean>(true);
 	const [error, setError] = useState<Error | null>(null);
@@ -103,48 +107,41 @@ export function ScheduleProvider({
 		};
 	}, [refreshInterval]);
 
-	// Calculate session status based on current time
-	const getSessionStatus = useCallback(
-		(session: Presentation) => {
-			// Parse start and end times - ensure proper Date objects
-			const startTime = new Date(session.StartTime);
-			const endTime = new Date(session.EndTime);
+	// Calculate session status relative to the given time
+	const getSessionStatus = useCallback((session: Presentation, now: Date) => {
+		// Parse start and end times - ensure proper Date objects
+		const startTime = new Date(session.StartTime);
+		const endTime = new Date(session.EndTime);
 
-			// Use timestamp comparison for more reliable results
-			const now = currentTime.getTime();
-			const startTimestamp = startTime.getTime();
-			const endTimestamp = endTime.getTime();
+		// Use timestamp comparison for more reliable results
+		const nowMs = now.getTime();
+		const startTimestamp = startTime.getTime();
+		const endTimestamp = endTime.getTime();
 
-			// Calculate time differences directly in milliseconds for precision
-			const millisUntilStart = startTimestamp - now;
-			const minutesUntilStart = Math.max(
-				0,
-				Math.ceil(millisUntilStart / 60000)
-			);
+		// Calculate time differences directly in milliseconds for precision
+		const millisUntilStart = startTimestamp - nowMs;
+		const minutesUntilStart = Math.max(0, Math.ceil(millisUntilStart / 60000));
 
-			const millisRemaining = endTimestamp - now;
-			const minutesRemaining = Math.max(0, Math.ceil(millisRemaining / 60000));
+		const millisRemaining = endTimestamp - nowMs;
+		const minutesRemaining = Math.max(0, Math.ceil(millisRemaining / 60000));
 
-			// Check if session is currently in progress
-			const isInProgress = now >= startTimestamp && now < endTimestamp;
+		// Check if session is currently in progress
+		const isInProgress = nowMs >= startTimestamp && nowMs < endTimestamp;
 
-			// Check if session is in the past (ended)
-			const isPast = now >= endTimestamp;
+		// Check if session is in the past (ended)
+		const isPast = nowMs >= endTimestamp;
 
-			// Check if session is starting soon (within 10 minutes)
-			const isStartingSoon =
-				!isInProgress && !isPast && minutesUntilStart <= 10;
+		// Check if session is starting soon (within 10 minutes)
+		const isStartingSoon = !isInProgress && !isPast && minutesUntilStart <= 10;
 
-			return {
-				isInProgress,
-				isStartingSoon,
-				isPast,
-				minutesUntilStart,
-				minutesRemaining,
-			};
-		},
-		[currentTime]
-	);
+		return {
+			isInProgress,
+			isStartingSoon,
+			isPast,
+			minutesUntilStart,
+			minutesRemaining,
+		};
+	}, []);
 
 	// Helper function to determine if a date is the same day as the reference date
 	const isSameDay = useCallback((date1: Date, date2: Date) => {
@@ -155,10 +152,10 @@ export function ScheduleProvider({
 		);
 	}, []);
 
-	// Helper function to group sessions by day
+	// Helper function to group sessions by day, relative to the given time
 	const groupSessionsByDay = useCallback(
-		(sessions: SessionWithStatus[]) => {
-			const today = new Date(currentTime);
+		(sessions: SessionWithStatus[], now: Date) => {
+			const today = new Date(now);
 			const tomorrow = new Date(today);
 			tomorrow.setDate(tomorrow.getDate() + 1); // Start of tomorrow
 
@@ -177,7 +174,7 @@ export function ScheduleProvider({
 				}),
 			};
 		},
-		[currentTime, isSameDay]
+		[isSameDay]
 	);
 
 	// Helper function to group sessions by start time
@@ -209,202 +206,171 @@ export function ScheduleProvider({
 		[]
 	);
 
-	// Get current and upcoming sessions based on our requirements
-	const getCurrentAndUpcomingSessions = useCallback(() => {
-		if (!schedule?.Presentations || schedule.Presentations.length === 0) {
-			return [];
-		}
-
-		console.log(`Getting sessions at ${currentTime.toLocaleTimeString()}`);
-
-		// Process all sessions with their statuses
-		const allSessions = schedule.Presentations.map((session) => {
-			const status = getSessionStatus(session);
-			return { ...session, status };
-		});
-
-		// Filter out past sessions (already ended)
-		const nonPastSessions = allSessions.filter(
-			(session) => !session.status.isPast
-		);
-
-		// Group sessions by day
-		const sessionsByDay = groupSessionsByDay(nonPastSessions);
-		console.log(
-			`Found ${String(sessionsByDay.today.length)} sessions for today, ${String(
-				sessionsByDay.tomorrow.length
-			)} for tomorrow`
-		);
-
-		// If there are no sessions for today, go directly to tomorrow's sessions
-		if (sessionsByDay.today.length === 0) {
-			console.log("No sessions for today, using tomorrow's sessions");
-
-			if (sessionsByDay.tomorrow.length === 0) {
-				console.log('No sessions for tomorrow either');
+	// Get current and upcoming sessions, as of the given time.
+	// Callers pass `now` explicitly so this callback stays stable across clock ticks.
+	const getCurrentAndUpcomingSessions = useCallback(
+		(now: Date) => {
+			if (!schedule?.Presentations || schedule.Presentations.length === 0) {
 				return [];
 			}
 
-			// Group tomorrow's sessions by start time
-			const { groups, sortedTimestamps } = groupSessionsByStartTime(
-				sessionsByDay.tomorrow
+			console.log(`Getting sessions at ${now.toLocaleTimeString()}`);
+
+			// Process all sessions with their statuses
+			const allSessions = schedule.Presentations.map((session) => {
+				const status = getSessionStatus(session, now);
+				return { ...session, status };
+			});
+
+			// Filter out past sessions (already ended)
+			const nonPastSessions = allSessions.filter(
+				(session) => !session.status.isPast
 			);
 
-			// Collect sessions until we have at least minSessionCount or run out of sessions
-			const tomorrowSessions: SessionWithStatus[] = [];
+			// Group sessions by day
+			const sessionsByDay = groupSessionsByDay(nonPastSessions, now);
+			console.log(
+				`Found ${String(sessionsByDay.today.length)} sessions for today, ${String(
+					sessionsByDay.tomorrow.length
+				)} for tomorrow`
+			);
 
-			for (const timestamp of sortedTimestamps) {
-				const sessionsAtTime = groups.get(timestamp) ?? [];
-				tomorrowSessions.push(...sessionsAtTime);
+			// If there are no sessions for today, go directly to tomorrow's sessions
+			if (sessionsByDay.today.length === 0) {
+				console.log("No sessions for today, using tomorrow's sessions");
 
-				// If we have enough sessions, we can stop
-				if (tomorrowSessions.length >= minSessionCount) {
-					break;
+				if (sessionsByDay.tomorrow.length === 0) {
+					console.log('No sessions for tomorrow either');
+					return [];
 				}
+
+				// Group tomorrow's sessions by start time
+				const { groups, sortedTimestamps } = groupSessionsByStartTime(
+					sessionsByDay.tomorrow
+				);
+
+				// Collect sessions until we have at least minSessionCount or run out of sessions
+				const tomorrowSessions: SessionWithStatus[] = [];
+
+				for (const timestamp of sortedTimestamps) {
+					const sessionsAtTime = groups.get(timestamp) ?? [];
+					tomorrowSessions.push(...sessionsAtTime);
+
+					// If we have enough sessions, we can stop
+					if (tomorrowSessions.length >= minSessionCount) {
+						break;
+					}
+				}
+
+				// Sort the final list
+				tomorrowSessions.sort((a, b) => {
+					// Then by start time
+					return (
+						new Date(a.StartTime).getTime() - new Date(b.StartTime).getTime()
+					);
+				});
+
+				console.log(
+					`Found ${String(tomorrowSessions.length)} sessions for tomorrow`
+				);
+				return tomorrowSessions;
 			}
 
-			// Sort the final list
-			tomorrowSessions.sort((a, b) => {
+			// We have some sessions for today
+			// First, get all sessions for today, filtering out in-progress sessions with <= 5 min remaining
+			const todaySessions = sessionsByDay.today.filter(
+				(session) =>
+					!session.status.isInProgress || session.status.minutesRemaining > 5
+			);
+
+			console.log(
+				`Found ${String(
+					sessionsByDay.today.length
+				)} total sessions for today, ${String(
+					todaySessions.length
+				)} after filtering out sessions ending in <= 5 minutes`
+			);
+
+			// Sort today's sessions
+			todaySessions.sort((a, b) => {
+				// Current sessions first
+				if (a.status.isInProgress && !b.status.isInProgress) return -1;
+				if (!a.status.isInProgress && b.status.isInProgress) return 1;
+
 				// Then by start time
 				return (
 					new Date(a.StartTime).getTime() - new Date(b.StartTime).getTime()
 				);
 			});
 
-			console.log(
-				`Found ${String(tomorrowSessions.length)} sessions for tomorrow`
-			);
-			return tomorrowSessions;
-		}
+			// Group today's sessions by start time for ensuring we include all sessions that start at the same time
+			const { groups: todayGroups, sortedTimestamps: todayTimestamps } =
+				groupSessionsByStartTime(todaySessions);
 
-		// We have some sessions for today
-		// First, get all sessions for today, filtering out in-progress sessions with <= 5 min remaining
-		const todaySessions = sessionsByDay.today.filter(
-			(session) =>
-				!session.status.isInProgress || session.status.minutesRemaining > 5
-		);
+			// First try the 45-minute window filter
+			const sessionsIn45Minutes: SessionWithStatus[] = [];
 
-		console.log(
-			`Found ${String(
-				sessionsByDay.today.length
-			)} total sessions for today, ${String(
-				todaySessions.length
-			)} after filtering out sessions ending in <= 5 minutes`
-		);
+			// Find all current sessions and sessions starting within 45 minutes
+			for (const timestamp of todayTimestamps) {
+				const sessionsAtTime = todayGroups.get(timestamp) ?? [];
+				const sessionSample = sessionsAtTime[0]; // Take a representative session
 
-		// Sort today's sessions
-		todaySessions.sort((a, b) => {
-			// Current sessions first
-			if (a.status.isInProgress && !b.status.isInProgress) return -1;
-			if (!a.status.isInProgress && b.status.isInProgress) return 1;
-
-			// Then by start time
-			return new Date(a.StartTime).getTime() - new Date(b.StartTime).getTime();
-		});
-
-		// Group today's sessions by start time for ensuring we include all sessions that start at the same time
-		const { groups: todayGroups, sortedTimestamps: todayTimestamps } =
-			groupSessionsByStartTime(todaySessions);
-
-		// First try the 45-minute window filter
-		const sessionsIn45Minutes: SessionWithStatus[] = [];
-
-		// Find all current sessions and sessions starting within 45 minutes
-		for (const timestamp of todayTimestamps) {
-			const sessionsAtTime = todayGroups.get(timestamp) ?? [];
-			const sessionSample = sessionsAtTime[0]; // Take a representative session
-
-			// If this session is in progress with > 5 min remaining or starts within 45 min, include it
-			if (
-				(sessionSample.status.isInProgress &&
-					sessionSample.status.minutesRemaining > 5) ||
-				(!sessionSample.status.isInProgress &&
-					sessionSample.status.minutesUntilStart <= 45)
-			) {
-				// For in-progress sessions, only include those with > 5 minutes remaining
-				if (sessionSample.status.isInProgress) {
-					// Filter each session in this time group individually
-					const filteredSessions = sessionsAtTime.filter(
-						(s) => s.status.minutesRemaining > 5
-					);
-					sessionsIn45Minutes.push(...filteredSessions);
-				} else {
-					// For non-in-progress sessions, include all
-					sessionsIn45Minutes.push(...sessionsAtTime);
+				// If this session is in progress with > 5 min remaining or starts within 45 min, include it
+				if (
+					(sessionSample.status.isInProgress &&
+						sessionSample.status.minutesRemaining > 5) ||
+					(!sessionSample.status.isInProgress &&
+						sessionSample.status.minutesUntilStart <= 45)
+				) {
+					// For in-progress sessions, only include those with > 5 minutes remaining
+					if (sessionSample.status.isInProgress) {
+						// Filter each session in this time group individually
+						const filteredSessions = sessionsAtTime.filter(
+							(s) => s.status.minutesRemaining > 5
+						);
+						sessionsIn45Minutes.push(...filteredSessions);
+					} else {
+						// For non-in-progress sessions, include all
+						sessionsIn45Minutes.push(...sessionsAtTime);
+					}
 				}
 			}
-		}
 
-		console.log(
-			`45-minute window found ${String(sessionsIn45Minutes.length)} sessions`
-		);
-
-		// Check if we have enough sessions from the 45-minute window
-		if (sessionsIn45Minutes.length >= minSessionCount) {
 			console.log(
-				`45-minute window yielded ${String(
-					sessionsIn45Minutes.length
-				)} sessions, which is enough`
+				`45-minute window found ${String(sessionsIn45Minutes.length)} sessions`
 			);
-			return sessionsIn45Minutes;
-		}
 
-		// We didn't get enough sessions from the 45-minute window
-		// Let's extend to include more of today's sessions
-		console.log(
-			`45-minute window only yielded ${String(
-				sessionsIn45Minutes.length
-			)} sessions, extending to more today's sessions`
-		);
-
-		// Find the start times we've already included
-		const includedStartTimes = new Set(
-			sessionsIn45Minutes.map((s) => new Date(s.StartTime).getTime())
-		);
-
-		// Add more sessions from today until we have enough
-		const result = [...sessionsIn45Minutes];
-
-		for (const timestamp of todayTimestamps) {
-			// Skip timestamps we've already included
-			if (includedStartTimes.has(timestamp)) continue;
-
-			const sessionsAtTime = todayGroups.get(timestamp) ?? [];
-			result.push(...sessionsAtTime);
-
-			// If we now have enough, stop adding
-			if (result.length >= minSessionCount) {
-				break;
+			// Check if we have enough sessions from the 45-minute window
+			if (sessionsIn45Minutes.length >= minSessionCount) {
+				console.log(
+					`45-minute window yielded ${String(
+						sessionsIn45Minutes.length
+					)} sessions, which is enough`
+				);
+				return sessionsIn45Minutes;
 			}
-		}
 
-		// Sort the result again to ensure proper order
-		result.sort((a, b) => {
-			// Current sessions first
-			if (a.status.isInProgress && !b.status.isInProgress) return -1;
-			if (!a.status.isInProgress && b.status.isInProgress) return 1;
-
-			// Then by start time
-			return new Date(a.StartTime).getTime() - new Date(b.StartTime).getTime();
-		});
-
-		// Check if we still don't have enough sessions, if not, look at tomorrow's sessions
-		if (result.length < minSessionCount && sessionsByDay.tomorrow.length > 0) {
+			// We didn't get enough sessions from the 45-minute window
+			// Let's extend to include more of today's sessions
 			console.log(
-				`Only found ${String(
-					result.length
-				)} sessions for today, adding tomorrow's sessions to reach minimum`
+				`45-minute window only yielded ${String(
+					sessionsIn45Minutes.length
+				)} sessions, extending to more today's sessions`
 			);
 
-			// Group tomorrow's sessions by start time
-			const { groups: tomorrowGroups, sortedTimestamps: tomorrowTimestamps } =
-				groupSessionsByStartTime(sessionsByDay.tomorrow);
+			// Find the start times we've already included
+			const includedStartTimes = new Set(
+				sessionsIn45Minutes.map((s) => new Date(s.StartTime).getTime())
+			);
 
-			// Keep adding tomorrow's sessions until we reach the minimum count
-			for (const timestamp of tomorrowTimestamps) {
-				const sessionsAtTime = tomorrowGroups.get(timestamp) ?? [];
+			// Add more sessions from today until we have enough
+			const result = [...sessionsIn45Minutes];
 
-				// Add all sessions with this timestamp
+			for (const timestamp of todayTimestamps) {
+				// Skip timestamps we've already included
+				if (includedStartTimes.has(timestamp)) continue;
+
+				const sessionsAtTime = todayGroups.get(timestamp) ?? [];
 				result.push(...sessionsAtTime);
 
 				// If we now have enough, stop adding
@@ -412,49 +378,90 @@ export function ScheduleProvider({
 					break;
 				}
 			}
-		}
 
-		// Final sort of the results - today's sessions first, then tomorrow's
-		result.sort((a, b) => {
-			// Today's sessions first
-			const aDate = new Date(a.StartTime);
-			const bDate = new Date(b.StartTime);
-			const aIsToday = isSameDay(aDate, currentTime);
-			const bIsToday = isSameDay(bDate, currentTime);
+			// Sort the result again to ensure proper order
+			result.sort((a, b) => {
+				// Current sessions first
+				if (a.status.isInProgress && !b.status.isInProgress) return -1;
+				if (!a.status.isInProgress && b.status.isInProgress) return 1;
 
-			if (aIsToday && !bIsToday) return -1;
-			if (!aIsToday && bIsToday) return 1;
+				// Then by start time
+				return (
+					new Date(a.StartTime).getTime() - new Date(b.StartTime).getTime()
+				);
+			});
 
-			// For same day: current sessions first
-			if (a.status.isInProgress && !b.status.isInProgress) return -1;
-			if (!a.status.isInProgress && b.status.isInProgress) return 1;
+			// Check if we still don't have enough sessions, if not, look at tomorrow's sessions
+			if (
+				result.length < minSessionCount &&
+				sessionsByDay.tomorrow.length > 0
+			) {
+				console.log(
+					`Only found ${String(
+						result.length
+					)} sessions for today, adding tomorrow's sessions to reach minimum`
+				);
 
-			// Then by start time
-			return aDate.getTime() - bDate.getTime();
-		});
+				// Group tomorrow's sessions by start time
+				const { groups: tomorrowGroups, sortedTimestamps: tomorrowTimestamps } =
+					groupSessionsByStartTime(sessionsByDay.tomorrow);
 
-		console.log(`Final result has ${String(result.length)} sessions`);
+				// Keep adding tomorrow's sessions until we reach the minimum count
+				for (const timestamp of tomorrowTimestamps) {
+					const sessionsAtTime = tomorrowGroups.get(timestamp) ?? [];
 
-		// Debug information
-		if (result.length > 0) {
-			const firstSessionTime = new Date(result[0].StartTime);
-			console.log(
-				`First session: "${
-					result[0].Name
-				}" at ${firstSessionTime.toLocaleTimeString()}`
-			);
-		}
+					// Add all sessions with this timestamp
+					result.push(...sessionsAtTime);
 
-		return result;
-	}, [
-		schedule,
-		getSessionStatus,
-		groupSessionsByDay,
-		groupSessionsByStartTime,
-		minSessionCount,
-		currentTime,
-		isSameDay,
-	]);
+					// If we now have enough, stop adding
+					if (result.length >= minSessionCount) {
+						break;
+					}
+				}
+			}
+
+			// Final sort of the results - today's sessions first, then tomorrow's
+			result.sort((a, b) => {
+				// Today's sessions first
+				const aDate = new Date(a.StartTime);
+				const bDate = new Date(b.StartTime);
+				const aIsToday = isSameDay(aDate, now);
+				const bIsToday = isSameDay(bDate, now);
+
+				if (aIsToday && !bIsToday) return -1;
+				if (!aIsToday && bIsToday) return 1;
+
+				// For same day: current sessions first
+				if (a.status.isInProgress && !b.status.isInProgress) return -1;
+				if (!a.status.isInProgress && b.status.isInProgress) return 1;
+
+				// Then by start time
+				return aDate.getTime() - bDate.getTime();
+			});
+
+			console.log(`Final result has ${String(result.length)} sessions`);
+
+			// Debug information
+			if (result.length > 0) {
+				const firstSessionTime = new Date(result[0].StartTime);
+				console.log(
+					`First session: "${
+						result[0].Name
+					}" at ${firstSessionTime.toLocaleTimeString()}`
+				);
+			}
+
+			return result;
+		},
+		[
+			schedule,
+			getSessionStatus,
+			groupSessionsByDay,
+			groupSessionsByStartTime,
+			minSessionCount,
+			isSameDay,
+		]
+	);
 
 	// Memoize context value to prevent unnecessary renders
 	const contextValue = useMemo(
