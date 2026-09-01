@@ -49,7 +49,7 @@ export function ScheduleItem({ session, isEmpty = false }: ScheduleItemProps) {
 
 	// Apply keynote visual effects
 	const keynoteClasses = isKeynote()
-		? 'transform translate-y-[-2px] shadow-lg ring-2 ring-yellow-300 ring-opacity-50'
+		? 'transform translate-y-[-0.125rem] shadow-lg ring-[0.125rem] ring-yellow-300'
 		: '';
 
 	return (
@@ -78,7 +78,7 @@ export function ScheduleItem({ session, isEmpty = false }: ScheduleItemProps) {
 				</div>
 
 				{/* Right side - Room, status, and time */}
-				<div className='flex flex-col items-end min-w-[180px] py-1'>
+				<div className='flex flex-col items-end min-w-[11.25rem] py-1'>
 					{/* Status indicator */}
 					{session.status.isInProgress && (
 						<span className='text-xl font-bold py-1 px-4 rounded-md whitespace-nowrap bg-[#2e8540] text-white mb-1'>
@@ -111,7 +111,7 @@ export function ScheduleItem({ session, isEmpty = false }: ScheduleItemProps) {
 
 					{/* Room and time in a row */}
 					<div className='flex justify-end mt-1 text-xl mt-auto py-2'>
-						<span className='text-white text-l font-bold px-4 py-1'>
+						<span className='text-white font-bold px-4 py-1'>
 							{formatTime(session.StartTime)} - {formatTime(session.EndTime)}
 						</span>
 						<span className='bg-[#dce4ef] text-[#212121] font-bold px-4 py-1 rounded-md'>

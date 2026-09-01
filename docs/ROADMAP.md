@@ -19,11 +19,11 @@
 - Keynote Highlight view MVP
 - scale-signs optional file system persistence
 - Repo Github community standards compliance
+- Resolution independent scaling (focus on 720P -> 4k)
+- TUI client
 
 ## 0.4 - Phantom Phreak
 
-- Responsive design (focus on 720P -> 4k)
-- TUI client
 - TBD
 
 ## 0.5 - Joey

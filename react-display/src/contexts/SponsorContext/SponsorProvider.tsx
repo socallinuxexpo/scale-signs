@@ -3,6 +3,25 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { SponsorContext } from './sponsorContext';
 
+// Fetch the list of sponsor image file names from the server
+async function fetchSponsorList(): Promise<string[]> {
+	const response = await fetch('/sponsors/all');
+	if (!response.ok) {
+		throw new Error(
+			`Failed to fetch sponsors: ${String(response.status)} ${
+				response.statusText
+			}`
+		);
+	}
+	const data: unknown = await response.json();
+	if (!Array.isArray(data)) {
+		throw new Error(
+			'Expected an array of strings but received a different data structure'
+		);
+	}
+	return data.filter((item): item is string => typeof item === 'string');
+}
+
 export function SponsorProvider({ children }: { children: React.ReactNode }) {
 	const [sponsorImages, setSponsorImages] = useState<string[]>([]);
 	const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -11,41 +30,29 @@ export function SponsorProvider({ children }: { children: React.ReactNode }) {
 	// Use a ref for used images instead of state
 	const usedImagesRef = useRef<Set<string>>(new Set());
 
-	const fetchSponsorImages = useCallback(async () => {
-		setIsLoading(true);
-		setError(null);
-		try {
-			const response = await fetch('/sponsors/all');
-			if (!response.ok) {
-				throw new Error(
-					`Failed to fetch sponsors: ${String(response.status)} ${
-						response.statusText
-					}`
-				);
-			}
-			const data: unknown = await response.json();
-			if (!Array.isArray(data)) {
-				throw new Error(
-					'Expected an array of strings but received a different data structure'
-				);
-			}
-			const images = data.filter(
-				(item): item is string => typeof item === 'string'
-			);
-			setSponsorImages(images);
-			// Reset the used images ref when new data comes in
-			usedImagesRef.current = new Set();
-		} catch (err) {
-			console.error('Error fetching sponsor images:', err);
-			setError(err instanceof Error ? err : new Error(String(err)));
-		} finally {
-			setIsLoading(false);
-		}
-	}, []);
-
+	// Load the sponsor list once on mount
 	useEffect(() => {
-		void fetchSponsorImages();
-	}, [fetchSponsorImages]);
+		let cancelled = false;
+
+		fetchSponsorList()
+			.then((images) => {
+				if (cancelled) return;
+				setSponsorImages(images);
+			})
+			.catch((err: unknown) => {
+				if (cancelled) return;
+				console.error('Error fetching sponsor images:', err);
+				setError(err instanceof Error ? err : new Error(String(err)));
+			})
+			.finally(() => {
+				if (cancelled) return;
+				setIsLoading(false);
+			});
+
+		return () => {
+			cancelled = true;
+		};
+	}, []);
 
 	const getRandomSponsorUrl = useCallback((): string => {
 		if (sponsorImages.length === 0) {
@@ -94,7 +101,6 @@ export function SponsorProvider({ children }: { children: React.ReactNode }) {
 		() => ({
 			getRandomSponsorUrl,
 			getRandomSponsorUrls,
-			refreshSponsors: fetchSponsorImages,
 			getAllSponsorUrls,
 			isLoading,
 			error,
@@ -102,7 +108,6 @@ export function SponsorProvider({ children }: { children: React.ReactNode }) {
 		[
 			getRandomSponsorUrl,
 			getRandomSponsorUrls,
-			fetchSponsorImages,
 			getAllSponsorUrls,
 			isLoading,
 			error,

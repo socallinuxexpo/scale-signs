@@ -1,6 +1,6 @@
 // react-display/src/components/ScheduleCarousel/ScheduleCarousel.tsx
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { useSchedule } from '../../contexts/ScheduleContext';
 import { SessionWithStatus } from '../../contexts/ScheduleContext/types';
 import { useTime } from '../../contexts/TimeContext';
@@ -20,35 +20,20 @@ export function ScheduleCarousel({
 }: ScheduleCarouselProps) {
 	const { isLoading, error, getCurrentAndUpcomingSessions } = useSchedule();
 	const { currentTime } = useTime();
-	const [sessions, setSessions] = useState<SessionWithStatus[]>([]);
 	const [startIndex, setStartIndex] = useState(0);
-	const lastRefreshTime = useRef<number>(0);
+
+	// Derive the session list from the schedule and the current minute, so it is
+	// recomputed at most once a minute (or immediately when the schedule changes)
+	const minuteMs = Math.floor(currentTime.getTime() / 60000) * 60000;
+	const sessions = useMemo(
+		() => getCurrentAndUpcomingSessions(new Date(minuteMs)),
+		[getCurrentAndUpcomingSessions, minuteMs]
+	);
 
 	const showLoading = isLoading || (sessions.length === 0 && !error);
 
-	// Update sessions when the schedule or current time changes
-	useEffect(() => {
-		// On initial mount or when sessions are empty, immediately load data
-		if (sessions.length === 0) {
-			const currentAndUpcoming = getCurrentAndUpcomingSessions();
-			setSessions(currentAndUpcoming);
-			lastRefreshTime.current = Date.now();
-			return;
-		}
-
-		// For subsequent updates, only refresh if it's been at least 1 minute
-		const now = Date.now();
-		if (now - lastRefreshTime.current > 60000) {
-			// 1 minute
-			const currentAndUpcoming = getCurrentAndUpcomingSessions();
-			setSessions(currentAndUpcoming);
-			// Only reset start index if we have a completely different set of sessions
-			if (currentAndUpcoming.length !== sessions.length) {
-				setStartIndex(0);
-			}
-			lastRefreshTime.current = now;
-		}
-	}, [getCurrentAndUpcomingSessions, currentTime, sessions.length]);
+	// If the list shrank under us, fall back to the first page
+	const safeStartIndex = startIndex < sessions.length ? startIndex : 0;
 
 	// Auto-rotate through sessions
 	useEffect(() => {
@@ -73,9 +58,9 @@ export function ScheduleCarousel({
 	const displaySessions =
 		sessions.length > 0
 			? sessions.slice(
-					Math.min(startIndex, Math.max(0, sessions.length - 1)),
-					Math.min(startIndex + maxDisplay, sessions.length)
-			  )
+					safeStartIndex,
+					Math.min(safeStartIndex + maxDisplay, sessions.length)
+				)
 			: [];
 
 	// Create a placeholder session object
